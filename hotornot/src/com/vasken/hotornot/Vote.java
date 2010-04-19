@@ -116,7 +116,9 @@ public class Vote extends Activity {
 	    	}
     	}
     	if (pendingQueue < DESIRED_QUEUE_LENGTH) {
-    		queueNextItem();
+    		new Thread() { public void run() {
+    			queueNextItem();
+    		}}.run();
     	}
     }
     
