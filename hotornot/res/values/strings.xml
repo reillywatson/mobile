@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HotDroid</string>
+    
+    <string name="hot">Hot!</string>
+    <string name="meh">Meh...</string>
+    <string name="not">Not</string>
+    
+    <string name="rate_url_female">"http://www.hotornot.com/?state=rate&amp;sel_sex=female</string>
+    <string name="rate_url_male">"http://www.hotornot.com/?state=rate&amp;sel_sex=male</string>
+</resources>
