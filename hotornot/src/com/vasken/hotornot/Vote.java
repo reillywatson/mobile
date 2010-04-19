@@ -42,43 +42,28 @@ public class Vote extends Activity {
     static final int DESIRED_QUEUE_LENGTH = 5;
     
     int pendingQueue = 0;
-	
-    public void onDestroy() {
-    	super.onDestroy();
-    //	Debug.stopMethodTracing();
+    
+    public OnClickListener defaultClickListener(final int rating) {
+    	return new OnClickListener() {
+	    	public void onClick(View v) {
+	    		if (!waitingForImage)
+	    			refresh(rating);
+	    	}
+    	};
     }
     
 	/** Called when the activity is first created. */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     //   Debug.startMethodTracing("hotornot");
         setContentView(R.layout.main);
         
         for (int i = 0; i < NUM_WORKERS; i++) {
         	workerPool.add(new Worker(this));
         }
-
 		
-		((Button)findViewById(R.id.hot)).setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				if (!waitingForImage)
-					refresh(HOT);
-			}
-		});
-		
-		((Button)findViewById(R.id.meh)).setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				if (!waitingForImage)
-					refresh(MEH);
-			}
-		});
-		
-		((Button)findViewById(R.id.not)).setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				if (!waitingForImage)
-					refresh(NOT);
-			}
-		});
+		((Button)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
+		((Button)findViewById(R.id.meh)).setOnClickListener(defaultClickListener(MEH));
+		((Button)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
         
 		refresh(0);
     }
