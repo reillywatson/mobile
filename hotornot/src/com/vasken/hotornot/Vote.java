@@ -3,8 +3,6 @@ package com.vasken.hotornot;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.admob.android.ads.AdManager;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -70,7 +68,7 @@ public class Vote extends Activity {
 		refresh(0);
 		
 		// You can use this to test ADMOB - Logcat should print out whatever your device ID is
-		//	AdManager.setTestDevices( new String[] { "A7078C908F25F51F01EAD8C45B005A63" } );
+		// com.admob.android.ads.AdManager.setTestDevices( new String[] { "A7078C908F25F51F01EAD8C45B005A63" } );
     }
 
 	private void refresh(final int rating) {

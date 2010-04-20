@@ -77,15 +77,15 @@ containing a value of this type.
     public static final class styleable {
         /** Attributes that can be used with a com_admob_android_ads_AdView.
            <p>Includes the following attributes:</p>
-           <table>
+           <table border="2" width="85%" align="center" frame="hsides" rules="all" cellpadding="5">
            <colgroup align="left" />
            <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_admob_android_ads_AdView_backgroundColor com.vasken.hotornot:backgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_admob_android_ads_AdView_keywords com.vasken.hotornot:keywords}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_admob_android_ads_AdView_primaryTextColor com.vasken.hotornot:primaryTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_admob_android_ads_AdView_refreshInterval com.vasken.hotornot:refreshInterval}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_admob_android_ads_AdView_secondaryTextColor com.vasken.hotornot:secondaryTextColor}</code></td><td></td></tr>
+           <tr><th>Attribute<th>Summary</tr>
+           <tr><th><code>{@link #com_admob_android_ads_AdView_backgroundColor com.vasken.hotornot:backgroundColor}</code><td></tr>
+           <tr><th><code>{@link #com_admob_android_ads_AdView_keywords com.vasken.hotornot:keywords}</code><td></tr>
+           <tr><th><code>{@link #com_admob_android_ads_AdView_primaryTextColor com.vasken.hotornot:primaryTextColor}</code><td></tr>
+           <tr><th><code>{@link #com_admob_android_ads_AdView_refreshInterval com.vasken.hotornot:refreshInterval}</code><td></tr>
+           <tr><th><code>{@link #com_admob_android_ads_AdView_secondaryTextColor com.vasken.hotornot:secondaryTextColor}</code><td></tr>
            </table>
            @see #com_admob_android_ads_AdView_backgroundColor
            @see #com_admob_android_ads_AdView_keywords
