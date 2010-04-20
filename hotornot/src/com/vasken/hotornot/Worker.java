@@ -45,7 +45,7 @@ public class Worker {
 	private HotItem requestDataFromServer(String id, int rating) {
 		sb.delete(0, sb.length());
 		try {
-			Log.d(getClass().getName(), "<<<<<<<<<< page loading");
+			Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading");
 
 			if (rating > 0 && id != null) {
 //				rate=1&state=rate&ratee=9313113&r9313113=8&minR=9&rateAction=vote
@@ -60,14 +60,10 @@ public class Worker {
 				Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 			}
 			
-			response = httpclient.execute(httpPost);
-			
+			response = httpclient.execute(httpPost);			
 
 	    	Reader in = new InputStreamReader(response.getEntity().getContent());
-	        Log.d(getClass().getName(), ">>>>>>>>>>> page loading");
 
-	        
-	        Log.d(getClass().getName(), "<<<<<<<<<< data copying"); 
 	        int bytesRead = in.read(buffer, 0, buffer.length);
 	        int totalBytesRead = 0;
 	        while (bytesRead>=0) {
@@ -83,23 +79,22 @@ public class Worker {
 		            
 		            if(matches) {
 		            	try {
-				        	Log.d(getClass().getName(), "<<<<<<<<<< ImageUrl loading");
 		                	URL url = new URL(m.group(1));
 		        	    	InputStream is = (InputStream)url.getContent();
-					    	Log.d(getClass().getName(), ">>>>>>>>>> ImageUrl loading");
 		        			Drawable d = Drawable.createFromStream(is, "src");
 		                	HotItem theHotItem = new HotItem(d, m.group(2));
 		                	in.close();
+		        	        Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
 		                	return theHotItem;
 						} catch (Exception e) { Log.d(this.getClass().toString(), "Not a valid imageUrl: " + m.group(1));	}
 		            }
 	        	}
 	        }
-	        Log.d(getClass().getName(), ">>>>>>>>>>>  data copying");
 		} catch (Exception e) {
 			Log.d(this.getClass().getName(), Log.getStackTraceString(e));
 		}
-		
+
+		Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
 		return null;
 	}
 }

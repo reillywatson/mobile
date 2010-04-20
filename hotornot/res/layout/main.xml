@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.hotornot"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -13,9 +14,23 @@
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content"></ImageView>
 		
+		<!-- Place an AdMob ad at the bottom of the screen. -->
+        <!-- It has white text on a black background. -->
+        <!-- The description of the surrounding context is 'Android game'. -->
+        <com.admob.android.ads.AdView
+          android:id="@+id/ad" 
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Android game"
+          android:layout_alignParentBottom="true"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+        />
+		
 		<LinearLayout 
 			android:orientation="horizontal" 
-			android:layout_alignParentBottom="true" 
+			android:layout_above="@id/ad"
 			android:layout_centerHorizontal="true"
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
@@ -25,7 +40,5 @@
 			<Button android:id="@+id/hot" android:text="@string/hot" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 			
 		</LinearLayout>
-		
-		<RadioGroup android:id="@+id/votepicker" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioGroup>
 	</RelativeLayout>
 </LinearLayout>
