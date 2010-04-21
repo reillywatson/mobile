@@ -38,12 +38,12 @@
 			<ImageButton
 				android:id="@+id/not"
 				android:background="@drawable/thumbs_down"
-				android:layout_marginRight="5px"
+				android:layout_marginRight="15px"
 				android:text="@string/not" android:layout_width="64px" android:layout_height="64px" />
 			
 			<ImageButton android:id="@+id/meh" 
 				android:background="@drawable/drunk"
-				android:layout_marginRight="5px" android:layout_width="64px" android:layout_height="64px"></ImageButton>
+				android:layout_marginRight="15px" android:layout_width="64px" android:layout_height="64px"></ImageButton>
 			
 			<ImageButton
 				android:id="@+id/hot"
