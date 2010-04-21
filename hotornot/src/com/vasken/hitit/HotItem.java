@@ -1,17 +1,17 @@
 package com.vasken.hitit;
 
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
 
 public class HotItem {
-	private Drawable image;
+	private Bitmap image;
 	private String rateID;
 	
-	public HotItem(Drawable img, String rate) {
+	public HotItem(Bitmap img, String rate) {
 		image = img;
 		rateID = rate;
 	}
 	
-	public Drawable getImage() {
+	public Bitmap getImage() {
 		return image;
 	}
 	

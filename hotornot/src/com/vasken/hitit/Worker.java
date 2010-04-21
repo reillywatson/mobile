@@ -15,6 +15,8 @@ import org.apache.http.params.HttpParams;
 import com.vasken.hitit.R;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 
@@ -26,7 +28,7 @@ public class Worker {
     
 	private HttpResponse response;
 	
-	private final char[] buffer = new char[0x10000];
+	private final char[] buffer = new char[4096];
 	private final StringBuilder sb = new StringBuilder(64*1024);
 
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL); //Pattern.compile("<img.*? src=\"(.*?)\".*?id=\"mainPic\">");
@@ -46,6 +48,8 @@ public class Worker {
 	
 	private HotItem requestDataFromServer(String id, int rating) {
 		sb.delete(0, sb.length());
+		System.gc(); // I'm so sad!
+		HotItem theHotItem = null;
 		try {
 			Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading");
 
@@ -83,20 +87,31 @@ public class Worker {
 		            	try {
 		                	URL url = new URL(m.group(1));
 		        	    	InputStream is = (InputStream)url.getContent();
-		        			Drawable d = Drawable.createFromStream(is, "src");
-		                	HotItem theHotItem = new HotItem(d, m.group(2));
-		                	in.close();
-		        	        Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
-		                	return theHotItem;
+		        	    	BitmapFactory.Options opts = new BitmapFactory.Options();
+		        	    	opts.inJustDecodeBounds = true;
+		        	    	int DESIRED_WIDTH = 300;
+		        	    	BitmapFactory.decodeStream(is, null, opts);
+		        	    	is.close();
+		        	    	int width = opts.outWidth;
+		        	    	opts.inSampleSize = Math.max(width / DESIRED_WIDTH, 1);
+		        	    	Log.d("SCALING!", Integer.toString(opts.inSampleSize));
+		        	    	opts.inJustDecodeBounds = false;
+		        	    	is = (InputStream)url.getContent();
+		        	    	Bitmap b = BitmapFactory.decodeStream(is, null, opts);
+		        			theHotItem = new HotItem(b, m.group(2));
+		                	is.close();
+		                	break;
 						} catch (Exception e) { Log.d(this.getClass().toString(), "Not a valid imageUrl: " + m.group(1));	}
 		            }
 	        	}
 	        }
+	        in.close();
 		} catch (Exception e) {
 			Log.d(this.getClass().getName(), Log.getStackTraceString(e));
 		}
+		
 
 		Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
-		return null;
+		return theHotItem;
 	}
 }

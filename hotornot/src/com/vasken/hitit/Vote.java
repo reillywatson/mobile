@@ -86,12 +86,12 @@ public class Vote extends Activity {
 	}
     
     public void showItem(final HotItem item) {
-    	if (item == null || item.getImage() == null || item.getImage().getIntrinsicHeight() < 10) {
+    	if (item == null || item.getImage() == null || item.getImage().getHeight() < 10) {
     		Log.d(getClass().getName(), "Couldn't find enough data for this page.");
     		return;
     	}
     	runOnUiThread(new Runnable() { public void run() { 
-			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
+			((ImageView)findViewById(R.id.photo)).setImageBitmap(item.getImage());
 			waitingForImage = false;
 		}});
     }
