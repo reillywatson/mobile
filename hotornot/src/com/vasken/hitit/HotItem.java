@@ -1,4 +1,4 @@
-package com.vasken.hotornot;
+package com.vasken.hitit;
 
 import android.graphics.drawable.Drawable;
 

@@ -1,7 +1,9 @@
-package com.vasken.hotornot;
+package com.vasken.hitit;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
+import com.vasken.hitit.R;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Vote extends Activity {
@@ -61,9 +64,9 @@ public class Vote extends Activity {
         	workerPool.add(new Worker(this));
         }
 		
-		((Button)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
-		((Button)findViewById(R.id.meh)).setOnClickListener(defaultClickListener(MEH));
-		((Button)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
+		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
+		((ImageButton)findViewById(R.id.meh)).setOnClickListener(defaultClickListener(MEH));
+		((ImageButton)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
         
 		refresh(0);
 		

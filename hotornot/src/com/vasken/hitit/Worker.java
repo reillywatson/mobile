@@ -1,4 +1,4 @@
-package com.vasken.hotornot;
+package com.vasken.hitit;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,6 +11,8 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.HttpParams;
+
+import com.vasken.hitit.R;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
