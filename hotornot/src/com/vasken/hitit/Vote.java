@@ -3,8 +3,6 @@ package com.vasken.hitit;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.vasken.hitit.UserTask.Status;
-
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -14,6 +12,9 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import com.vasken.hitit.UserTask.Status;
 
 public class Vote extends Activity {
 	 
@@ -27,6 +28,7 @@ public class Vote extends Activity {
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
+	private boolean notConnectedToastAppeared;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
@@ -127,6 +129,13 @@ public class Vote extends Activity {
 				if (worker != null) {
 					nextItem = worker.getPageData(rating.id,rating.rating);
 					workerPool.add(worker);
+					
+					if (nextItem == null) {
+						// We're most likely not connected to the internet.
+						// Either way, let's not crash. Maybe we should show a toast or something....
+						return null;						
+					}
+					
 					if (isUsableImage(nextItem.getImage())) {
 						itemReady(nextItem);
 					}
