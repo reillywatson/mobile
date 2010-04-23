@@ -6,14 +6,21 @@
     android:layout_height="fill_parent">
     <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
     	
-    	<ImageView android:id="@+id/photo" 
-    		android:clickable="true" 
+    	<ImageView android:id="@+id/photo"
     		android:minHeight="100px" 
-    		android:minWidth="100px" 
+    		android:minWidth="100px"
 			android:layout_centerHorizontal="true" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content"></ImageView>
 		
+		<ProgressBar 
+			android:id="@+id/progress_bar"
+			android:indeterminateOnly="true"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+			
 		<!-- Place an AdMob ad at the bottom of the screen. -->
         <!-- It has white text on a black background. -->
         <!-- The description of the surrounding context is 'Android game'. -->

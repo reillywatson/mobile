@@ -3,46 +3,36 @@ package com.vasken.hitit;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.vasken.hitit.R;
+import com.vasken.hitit.UserTask.Status;
 
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 public class Vote extends Activity {
+	 
+	private int NOT = 1;	// Maybe this should be 3, to be nice
+	private int MEH = 5;
+	private int HOT = 10;	// Maybe this should be 8, to be realistic 
 	
-	class RatingInfo {
-		public String id;
-		public int rating;
-		public RatingInfo(String id, int rating) {
-			this.id = id;
-			this.rating = rating;
-		}
-	}
+	static final int NUM_WORKERS = 2;
+    static final int DESIRED_QUEUE_LENGTH = 5;
 	
-	private HotItem currentItem;
+	private boolean waitingForImage;
+	private DownloaderTask downloadTask;
+	private ProgressBar progressBar;
 	
-	boolean waitingForImage;
-
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
 	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
-	 
-	private int NOT = 1;
-	private int MEH = 5;
-	private int HOT = 10;
-	
-	static final int NUM_WORKERS = 2;
-	// This queue is small because we keep running out of memory, and it's not that clear why.
-	// I think our HotItems aren't being GCed, or we occasionally get back a really big image (1/2 meg)
-    static final int DESIRED_QUEUE_LENGTH = 5;
     
     int pendingQueue = 0;
     
@@ -60,6 +50,8 @@ public class Vote extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+        downloadTask = null;
+        
         for (int i = 0; i < NUM_WORKERS; i++) {
         	workerPool.add(new Worker(this));
         }
@@ -69,29 +61,41 @@ public class Vote extends Activity {
 		((ImageButton)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
         
 		refresh(0);
-		
-		// You can use this to test ADMOB - Logcat should print out whatever your device ID is
-		// com.admob.android.ads.AdManager.setTestDevices( new String[] { "A7078C908F25F51F01EAD8C45B005A63" } );
     }
 
 	private void refresh(final int rating) {
-		getNext();
-		new Thread() {
-		    public void run() {
-		    	String id = currentItem == null ? null : currentItem.getRateId();
-		    	ratingsQueue.add(new RatingInfo(id, rating));
-		    	queueNextItem();
-		    }
-		  }.start();
+	   	waitingForImage = true;
+
+	   	progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+		progressBar.setVisibility(View.VISIBLE);
+		
+    	HotItem item = itemQueue.poll();
+    	if (item != null) {
+    		pendingQueue--;
+    		showItem(item);
+    	}
+    	
+    	
+    	if (downloadTask == null || downloadTask.getStatus() == Status.FINISHED || downloadTask.isCancelled()) {
+    		downloadTask = null;
+    		downloadTask = new DownloaderTask();
+        	downloadTask.execute();
+    	}else if (downloadTask.getStatus() == Status.RUNNING){
+    		Log.d( getClass().getName(), "Don't do anything. We've already got a running task");
+    	}else{
+    		Log.d( getClass().getName(), "WTF. How did I get here?");
+    	}
 	}
     
-    public void showItem(final HotItem item) {
+    public void showItem(final HotItem item) {    	
     	if (item == null || item.getImage() == null || item.getImage().getIntrinsicHeight() < 10) {
-    		Log.d(getClass().getName(), "Couldn't find enough data for this page.");
+    		Log.w(getClass().getName(), "Couldn't find enough data for this page. THIS SHOULDN'T HAPPEN! ");
     		return;
     	}
     	runOnUiThread(new Runnable() { public void run() { 
 			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
+			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
 		}});
     }
@@ -106,33 +110,46 @@ public class Vote extends Activity {
 	    		itemQueue.add(item);
 	    	}
     	}
-    	if (pendingQueue < DESIRED_QUEUE_LENGTH || itemQueue.size() < NUM_WORKERS) {
-    		new Thread() { public void run() {
-    			queueNextItem();
-    		}}.run();
-    	}
     }
     
-    void queueNextItem() {
-    	Worker worker = workerPool.poll();
-		if (worker != null) {
-			pendingQueue++;
-			RatingInfo rating = ratingsQueue.poll();
-			if (rating == null)
-				rating = new RatingInfo(null, 0);
-			Log.d("QUEUE LENGTH", Integer.toString(itemQueue.size()));
-    		HotItem nextItem = worker.getPageData(rating.id,rating.rating);
-    		workerPool.add(worker);
-    		itemReady(nextItem);
+    private class DownloaderTask extends UserTask<Void, HotItem, HotItem> {
+
+		@Override
+		public HotItem doInBackground(Void... params) {
+			HotItem nextItem = null;
+			
+			while(itemQueue.size() < DESIRED_QUEUE_LENGTH) {
+				RatingInfo rating = ratingsQueue.poll();
+				if (rating == null)
+					rating = new RatingInfo(null, 0);
+				
+				Worker worker = workerPool.poll();
+				if (worker != null) {
+					nextItem = worker.getPageData(rating.id,rating.rating);
+					workerPool.add(worker);
+					if (isUsableImage(nextItem.getImage())) {
+						itemReady(nextItem);
+					}
+				}
+	
+				Log.d("QUEUE LENGTH", Integer.toString(itemQueue.size()));
+			}
+			
+			return nextItem;
 		}
+		
+		private boolean isUsableImage(Drawable d) {
+			return d != null && d.getIntrinsicHeight() > 10 && d.getIntrinsicWidth() > 10;
+		}
+    	
     }
-    
-    public void getNext() {
-    	waitingForImage = true;
-    	HotItem item = itemQueue.poll();
-    	if (item != null) {
-    		pendingQueue--;
-    		showItem(item);
-    	}
-    }
+	
+	class RatingInfo {
+		public String id;
+		public int rating;
+		public RatingInfo(String id, int rating) {
+			this.id = id;
+			this.rating = rating;
+		}
+	}
 }
