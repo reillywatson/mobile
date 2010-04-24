@@ -12,7 +12,6 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.vasken.hitit.UserTask.Status;
 
@@ -28,7 +27,6 @@ public class Vote extends Activity {
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
-	private boolean notConnectedToastAppeared;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe

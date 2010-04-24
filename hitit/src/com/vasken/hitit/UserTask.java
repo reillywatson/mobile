@@ -189,7 +189,8 @@ public abstract class UserTask<Params, Progress, Result> {
         };
 
         mFuture = new FutureTask<Result>(mWorker) {
-            @Override
+            @SuppressWarnings("unchecked")
+			@Override
             protected void done() {
                 Message message;
                 Result result = null;
@@ -276,7 +277,6 @@ public abstract class UserTask<Params, Progress, Result> {
      * @see #publishProgress(Object[])
      * @see #doInBackground(Object[])
      */
-    @SuppressWarnings({"UnusedDeclaration"})
     public void onProgressUpdate(Progress... values) {
     }
 
@@ -419,8 +419,8 @@ public abstract class UserTask<Params, Progress, Result> {
     }
 
     private static class InternalHandler extends Handler {
-        @SuppressWarnings({"unchecked", "RawUseOfParameterizedType"})
-        @Override
+        @SuppressWarnings("unchecked")
+		@Override
         public void handleMessage(Message msg) {
             UserTaskResult result = (UserTaskResult) msg.obj;
             switch (msg.what) {
@@ -442,7 +442,7 @@ public abstract class UserTask<Params, Progress, Result> {
         Params[] mParams;
     }
 
-    @SuppressWarnings({"RawUseOfParameterizedType"})
+    @SuppressWarnings("unchecked")
     private static class UserTaskResult<Data> {
         final UserTask mTask;
         final Data[] mData;
