@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.vasken.hitit.UserTask.Status;
 
@@ -90,7 +91,32 @@ public class Vote extends Activity {
     	}
 	}
     
-    public void showItem(final HotItem item) {    	
+    public void setTotals(Drawable image, String totals, double results) {
+    	if (image == null ) {
+    		findViewById(R.id.rate_result).setVisibility(View.INVISIBLE);
+    	}else {
+    		findViewById(R.id.rate_result).setVisibility(View.VISIBLE);
+    	}
+    	
+    	if ( totals == null ) {
+    		((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageDrawable(null);
+    		((TextView)findViewById(R.id.rate_result_totals)).setText("Not enough votes");
+    	}else{
+	    	((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageDrawable(image);
+	    	
+	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totals + " votes");
+	    	
+	    	if (results < 5) {
+	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_down);
+	    	}else if(results < 8) {
+	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_bottle);
+	    	}else {
+	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_up);
+	    	}
+    	}
+    }
+	
+	public void showItem(final HotItem item) {    	
     	if (item == null || item.getImage() == null || item.getImage().getIntrinsicHeight() < 10) {
     		Log.w(getClass().getName(), "Couldn't find enough data for this page. THIS SHOULDN'T HAPPEN! ");
     		return;
@@ -101,6 +127,8 @@ public class Vote extends Activity {
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
+			
+			setTotals(item.getImage(), "1000", 9.4);
 		}});
     }
     
