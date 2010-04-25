@@ -1,7 +1,9 @@
 package com.vasken.hitit;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -27,21 +29,19 @@ public class Vote extends Activity {
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
+	private String currentId = null;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
 	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
-	private HotItem currentItem;
+    private Set<String> seenItems = new HashSet<String>();
 	
-    int pendingQueue = 0;
-    
     public OnClickListener defaultClickListener(final int rating) {
     	return new OnClickListener() {
 	    	public void onClick(View v) {
 	    		if (!waitingForImage)
-	    			ratingsQueue.add(new RatingInfo(currentItem.getRateId(), rating));
 	    			refresh(rating);
 	    	}
     	};
@@ -67,13 +67,14 @@ public class Vote extends Activity {
 
 	private void refresh(final int rating) {
 	   	waitingForImage = true;
+	   	
+	   	ratingsQueue.add(new RatingInfo(currentId, rating));
 
 	   	progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 		progressBar.setVisibility(View.VISIBLE);
 		
     	HotItem item = itemQueue.poll();
     	if (item != null) {
-    		pendingQueue--;
     		showItem(item);
     	}
     	
@@ -95,7 +96,6 @@ public class Vote extends Activity {
     		return;
     	}
     	runOnUiThread(new Runnable() { public void run() { 
-    		currentItem = item;
 			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
@@ -104,9 +104,8 @@ public class Vote extends Activity {
     }
     
     void itemReady(final HotItem item) {
-    	if (item != null) {
+    	if (item != null && !seenItems.contains(item.getRateId())) {
 	    	if (waitingForImage) {
-	    		pendingQueue--;
 				showItem(item);
 	    	}
 	    	else {
@@ -141,8 +140,6 @@ public class Vote extends Activity {
 						itemReady(nextItem);
 					}
 				}
-	
-				Log.d("QUEUE LENGTH", Integer.toString(itemQueue.size()));
 			}
 			
 			return nextItem;
