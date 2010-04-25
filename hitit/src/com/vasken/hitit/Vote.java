@@ -106,9 +106,7 @@ public class Vote extends Activity {
     
     void itemReady(final HotItem item) {
     	if (item != null && !seenItems.contains(item.getRateId())) {
-    		currentId = item.getRateId();
-    		ratingsQueue.add(new RatingInfo(currentId, 5));
-	    	if (waitingForImage) {
+    		if (waitingForImage) {
 				showItem(item);
 	    	}
 	    	else {
