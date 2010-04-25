@@ -33,7 +33,8 @@ public class Worker {
 	private final StringBuilder sb = new StringBuilder(64*1024);
 
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
-    
+    private Pattern prevRatingRegex = Pattern.compile("class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes", Pattern.DOTALL);
+
 	public Worker(Context context) {
 		httpPost = new HttpPost(context.getString(R.string.rate_url_female));
         httpclient = new DefaultHttpClient();
@@ -82,6 +83,10 @@ public class Worker {
 		            
 		            if(matches) {
 		            	try {
+		            		if (id != null && rating > 0) {
+		            			addRatingResults(id, sb);
+		            		}
+		            		
 		                	URL url = new URL(m.group(1));
 		        	    	InputStream is = (InputStream)url.getContent();
 		        			Drawable d = Drawable.createFromStream(is, "src");
@@ -99,5 +104,17 @@ public class Worker {
 
 		Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
 		return null;
+	}
+	
+	void addRatingResults(String id, StringBuilder sb) {
+		Matcher m = prevRatingRegex.matcher(sb);
+		if (m.find()) {
+			double avgRating = Double.parseDouble(m.group(1));
+			int numRatings = Integer.parseInt(m.group(2));
+			Log.d(getClass().getName(), "Rating ID: " + id);
+			Log.d(getClass().getName(), "Average Rating: " + Double.toString(avgRating));
+			Log.d(getClass().getName(), "Num ratings: " + Integer.toString(numRatings));
+			
+		}
 	}
 }

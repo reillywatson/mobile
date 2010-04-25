@@ -96,6 +96,7 @@ public class Vote extends Activity {
     		return;
     	}
     	runOnUiThread(new Runnable() { public void run() { 
+    		currentId = item.getRateId();
 			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
