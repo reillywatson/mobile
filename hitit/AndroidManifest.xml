@@ -13,12 +13,11 @@
         </activity>
         
         <!-- The application's publisher ID assigned by AdMob -->
-        <meta-data android:value="a14bcd28fa7624c" android:name="ADMOB_PUBLISHER_ID" />
+        <meta-data android:value="a14bd273e643f6a" android:name="ADMOB_PUBLISHER_ID" />
         
     </application>
 
-<!-- As far as I can tell, we don't use anything newer than API 1, but my phone has API 4 so I haven't tried it -->
-<uses-sdk android:minSdkVersion="4" />
+<uses-sdk android:minSdkVersion="3" />
 
 <!-- AdMob SDK permissions -->
 <uses-permission android:name="android.permission.INTERNET" />
