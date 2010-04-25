@@ -33,13 +33,15 @@ public class Vote extends Activity {
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
 	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
-    
+	private HotItem currentItem;
+	
     int pendingQueue = 0;
     
     public OnClickListener defaultClickListener(final int rating) {
     	return new OnClickListener() {
 	    	public void onClick(View v) {
 	    		if (!waitingForImage)
+	    			ratingsQueue.add(new RatingInfo(currentItem.getRateId(), rating));
 	    			refresh(rating);
 	    	}
     	};
@@ -93,6 +95,7 @@ public class Vote extends Activity {
     		return;
     	}
     	runOnUiThread(new Runnable() { public void run() { 
+    		currentItem = item;
 			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);

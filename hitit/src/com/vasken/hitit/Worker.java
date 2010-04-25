@@ -4,15 +4,18 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.params.HttpParams;
-
-import com.vasken.hitit.R;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -29,7 +32,7 @@ public class Worker {
 	private final char[] buffer = new char[0x10000];
 	private final StringBuilder sb = new StringBuilder(64*1024);
 
-    private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL); //Pattern.compile("<img.*? src=\"(.*?)\".*?id=\"mainPic\">");
+    private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
     
 	public Worker(Context context) {
 		httpPost = new HttpPost(context.getString(R.string.rate_url_female));
@@ -47,24 +50,22 @@ public class Worker {
 	private HotItem requestDataFromServer(String id, int rating) {
 		sb.delete(0, sb.length());
 		try {
-			Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading");
+			Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading" + rating +"    " + id);
 
 			if (rating > 0 && id != null) {
-//				rate=1&state=rate&ratee=9313113&r9313113=8&minR=9&rateAction=vote
-				HttpParams params = httpPost.getParams();
-				params.setIntParameter("rate", 1);
-				params.setParameter("state", "rate");
-				params.setIntParameter("minR", 9 );
-				params.setParameter("rateAction", "vote" );
-				params.setParameter("ratee", id);
-				params.setParameter("r"+id, rating );
+				List<NameValuePair> params = new ArrayList<NameValuePair>();
+		        params.add(new BasicNameValuePair("rate", "1"));
+		        params.add(new BasicNameValuePair("state", "rate"));
+		        params.add(new BasicNameValuePair("minR", "9"));
+		        params.add(new BasicNameValuePair("rateAction", "vote"));
+		        params.add(new BasicNameValuePair("ratee", id));
+		        params.add(new BasicNameValuePair("r"+id, ""+rating));
+		        httpPost.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 				
 				Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 			}
-			
-			response = httpclient.execute(httpPost);			
-
-	    	Reader in = new InputStreamReader(response.getEntity().getContent());
+			response = httpclient.execute(httpPost);
+            Reader in = new InputStreamReader(response.getEntity().getContent());
 
 	        int bytesRead = in.read(buffer, 0, buffer.length);
 	        int totalBytesRead = 0;
