@@ -6,7 +6,7 @@ import java.util.Queue;
 import java.util.Set;
 
 import android.app.Activity;
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,7 +25,7 @@ public class Vote extends Activity {
 	private int HOT = 10;	// Maybe this should be 8, to be realistic 
 	
 	static final int NUM_WORKERS = 2;
-    static final int DESIRED_QUEUE_LENGTH = 5;
+    static final int DESIRED_QUEUE_LENGTH = 4;
 	
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
@@ -62,7 +62,9 @@ public class Vote extends Activity {
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
 		((ImageButton)findViewById(R.id.meh)).setOnClickListener(defaultClickListener(MEH));
 		((ImageButton)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
-        
+
+	   	progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+	   	
 		refresh(0);
     }
 
@@ -70,15 +72,12 @@ public class Vote extends Activity {
 	   	waitingForImage = true;
 	   	
 	   	ratingsQueue.add(new RatingInfo(currentId, rating));
-
-	   	progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 		progressBar.setVisibility(View.VISIBLE);
 		
     	HotItem item = itemQueue.poll();
     	if (item != null) {
     		showItem(item);
     	}
-    	
     	
     	if (downloadTask == null || downloadTask.getStatus() == Status.FINISHED || downloadTask.isCancelled()) {
     		downloadTask = null;
@@ -91,24 +90,24 @@ public class Vote extends Activity {
     	}
 	}
     
-    public void setTotals(Drawable image, String totals, double results) {
+    public void setTotals(Bitmap image, String totals, double results) {
     	if (image == null ) {
     		findViewById(R.id.rate_result).setVisibility(View.INVISIBLE);
     	}else {
     		findViewById(R.id.rate_result).setVisibility(View.VISIBLE);
     	}
-    	
+
+    	((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageBitmap(image);
     	if ( totals == null ) {
-    		((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageDrawable(null);
+    		((ImageView)findViewById(R.id.rate_result_image)).setImageBitmap(null);
     		((TextView)findViewById(R.id.rate_result_totals)).setText("Not enough votes");
     	}else{
-	    	((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageDrawable(image);
+	    	String totalsString = Integer.valueOf(totals) > 5000 ? "Over 5000" : totals; 
+	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totalsString + " votes");
 	    	
-	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totals + " votes");
-	    	
-	    	if (results < 5) {
+	    	if (results < 6) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_down);
-	    	}else if(results < 8) {
+	    	}else if(results < 8.5) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_bottle);
 	    	}else {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_up);
@@ -116,19 +115,15 @@ public class Vote extends Activity {
     	}
     }
 	
-	public void showItem(final HotItem item) {    	
-    	if (item == null || item.getImage() == null || item.getImage().getIntrinsicHeight() < 10) {
-    		Log.w(getClass().getName(), "Couldn't find enough data for this page. THIS SHOULDN'T HAPPEN! ");
-    		return;
-    	}
+	public void showItem(final HotItem item) {
     	runOnUiThread(new Runnable() { public void run() { 
     		currentId = item.getRateId();
-			((ImageView)findViewById(R.id.photo)).setImageDrawable(item.getImage());
+			((ImageView)findViewById(R.id.photo)).setImageBitmap(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
 			
-			setTotals(item.getImage(), "1000", 9.4);
+			setTotals(item.getResultImage(), item.getResultTotals(), item.getResultAverage());
 		}});
     }
     
@@ -150,6 +145,7 @@ public class Vote extends Activity {
 		public HotItem doInBackground(Void... params) {
 			HotItem nextItem = null;
 			
+			HotItem lastItem = new HotItem(null, "5");
 			while(itemQueue.size() < DESIRED_QUEUE_LENGTH) {
 				RatingInfo rating = ratingsQueue.poll();
 				if (rating == null)
@@ -157,7 +153,7 @@ public class Vote extends Activity {
 				
 				Worker worker = workerPool.poll();
 				if (worker != null) {
-					nextItem = worker.getPageData(rating.id,rating.rating);
+					nextItem = worker.getPageData(lastItem.getRateId(), 5);
 					workerPool.add(worker);
 					
 					if (nextItem == null) {
@@ -167,7 +163,14 @@ public class Vote extends Activity {
 					}
 					
 					if (isUsableImage(nextItem.getImage())) {
+						if (lastItem.getImage() != null) {
+							nextItem.setResultImage(lastItem.getImage());
+						}
+						
+						Log.d("---", nextItem.getRateId() + " " + nextItem.getResultTotals() + " " + nextItem.getResultAverage());
 						itemReady(nextItem);
+						
+						lastItem = nextItem;
 					}
 				}
 			}
@@ -175,8 +178,8 @@ public class Vote extends Activity {
 			return nextItem;
 		}
 		
-		private boolean isUsableImage(Drawable d) {
-			return d != null && d.getIntrinsicHeight() > 10 && d.getIntrinsicWidth() > 10;
+		private boolean isUsableImage(Bitmap d) {
+			return d != null && d.getHeight() > 10 && d.getWidth() > 10;
 		}
     	
     }

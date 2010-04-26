@@ -1,24 +1,36 @@
 package com.vasken.hitit;
 
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
 
 public class HotItem {
-	private Drawable image;
+	private Bitmap image;
 	private String rateID;
 	private String resultTotals;
-	private double resultAverage;	
+	private double resultAverage;
+	private Bitmap resultImage;	
 	
-	public HotItem(Drawable img, String rate) {
+	public HotItem(Bitmap img, String rate) {
 		image = img;
 		rateID = rate;
 	}
 	
-	public Drawable getImage() {
+	public HotItem() {
+	}
+
+	public Bitmap getImage() {
 		return image;
+	}
+	
+	public void setImage(Bitmap i) {
+		image = i;
 	}
 	
 	public String getRateId() {
 		return rateID;
+	}
+	
+	public void setRateId(String s) {
+		rateID = s;
 	}
 
 	public void setResultTotals(String totals) {
@@ -35,5 +47,13 @@ public class HotItem {
 
 	public void setResultAverage(double average) {
 		resultAverage = average;
+	}
+
+	public void setResultImage(Bitmap img) {
+		resultImage = img;
+	}
+	
+	public Bitmap getResultImage() {
+		return resultImage;
 	}
 }

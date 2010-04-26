@@ -18,7 +18,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 
 public class Worker {
@@ -83,14 +84,17 @@ public class Worker {
 		            
 		            if(matches) {
 		            	try {
+		            		HotItem theHotItem = new HotItem();
 		            		if (id != null && rating > 0) {
-		            			addRatingResults(id, sb);
+		            			addRatingResults(id, sb, theHotItem);
 		            		}
 		            		
 		                	URL url = new URL(m.group(1));
 		        	    	InputStream is = (InputStream)url.getContent();
-		        			Drawable d = Drawable.createFromStream(is, "src");
-		                	HotItem theHotItem = new HotItem(d, m.group(2));
+		        	    	Bitmap image = BitmapFactory.decodeStream(is);
+		        			
+		        			theHotItem.setImage(image);
+		        			theHotItem.setRateId( m.group(2));
 		                	in.close();
 		        	        Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
 		                	return theHotItem;
@@ -106,15 +110,18 @@ public class Worker {
 		return null;
 	}
 	
-	void addRatingResults(String id, StringBuilder sb) {
+	void addRatingResults(String id, StringBuilder sb, HotItem item) {
 		Matcher m = prevRatingRegex.matcher(sb);
 		if (m.find()) {
-			double avgRating = Double.parseDouble(m.group(1));
-			int numRatings = Integer.parseInt(m.group(2));
-			Log.d(getClass().getName(), "Rating ID: " + id);
-			Log.d(getClass().getName(), "Average Rating: " + Double.toString(avgRating));
-			Log.d(getClass().getName(), "Num ratings: " + Integer.toString(numRatings));
+			String avgRating = m.group(1);
+			String numRatings = m.group(2);
 			
+			item.setResultAverage(Double.parseDouble(avgRating));
+			item.setResultTotals(numRatings);
+			
+			Log.d(getClass().getName(), "Rating ID: " + id);
+			Log.d(getClass().getName(), "Average Rating: " + avgRating);
+			Log.d(getClass().getName(), "Num ratings: " + numRatings);
 		}
 	}
 }
