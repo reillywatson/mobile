@@ -33,4 +33,14 @@ public class QuoteStore {
 	public SimpsonsQuote randomQuote() {
 		return quotes.get(rand.nextInt(quotes.size()));
 	}
+	
+	// performance on this isn't so great...
+	// returns quotes from seasons 2-9, "the good Simpsons"
+	public SimpsonsQuote randomQuoteThatIsntTerrible() {
+		SimpsonsQuote quote = randomQuote();
+		while (quote.season.startsWith("Season 1")) {
+			quote = randomQuote();
+		}
+		return quote;
+	}
 }

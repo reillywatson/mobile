@@ -22,18 +22,18 @@ public class Main extends Activity {
 			e.printStackTrace();
 		}
 		loadNewQuote();
-    }
-    
-    void loadNewQuote() {
-    	WebView quoteview = (WebView)findViewById(R.id.quote);
-		SimpsonsQuote quote = quotestore.randomQuote();
-    	quoteview.loadData(quote.quote, "text/html", "utf-8");
-		quoteview.setOnTouchListener(new OnTouchListener() {
+		((WebView)findViewById(R.id.quote)).setOnTouchListener(new OnTouchListener() {
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_UP) {
 					loadNewQuote();
 				}
 				return true;
 			}});
+    }
+    
+    void loadNewQuote() {
+    	WebView quoteview = (WebView)findViewById(R.id.quote);
+		SimpsonsQuote quote = quotestore.randomQuoteThatIsntTerrible();
+    	quoteview.loadData(quote.quote, "text/html", "utf-8");
     }
 }
