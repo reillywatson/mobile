@@ -1,3 +1,5 @@
-artifacts
+HitIt.Artifacts
 bin 
 gen
+.metadata
+vasken.keystore
