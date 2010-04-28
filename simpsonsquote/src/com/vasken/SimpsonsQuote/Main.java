@@ -2,6 +2,7 @@ package com.vasken.SimpsonsQuote;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Callable;
@@ -59,20 +60,7 @@ public class Main extends Activity {
 			loadNewQuote();
 		}};
     
-    // Fischer-Yeates shuffle
-    static Random rng = new Random();
-    <T extends Object>void shuffle(List<T> list) {
-        // n is the number of items remaining to be shuffled.
-        for (int n = list.size(); n > 1; n--) {
-            // Pick a random element to swap with the nth element.
-            int k = rng.nextInt(n);  // 0 <= k <= n-1 (0-based array)
-            // Swap array elements.
-            T tmp = list.get(k);
-            list.set(k, list.get(n - 1));
-            list.set(n - 1, tmp);
-        }
-    }
-    
+	// Man this is suuuuper generic, maybe such a function already exists?
     <T extends Object>void populateListWithUniqueElements(List<T> list, int desiredSize, Callable<T> generator) {
     	try {
 	    	while (list.size() < desiredSize) {	
@@ -100,7 +88,7 @@ public class Main extends Activity {
 				return quotestore.randomEpisode();
 			}});
 		
-		shuffle(episodes);
+		Collections.shuffle(episodes);
     	quoteview.loadData(quote.quote, "text/html", "utf-8");
     	opt1.setText(episodes.get(0));
     	opt2.setText(episodes.get(1));

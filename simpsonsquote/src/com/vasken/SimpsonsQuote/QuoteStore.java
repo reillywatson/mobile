@@ -5,9 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import android.content.Context;
 import android.util.Log;
@@ -18,10 +21,6 @@ public class QuoteStore {
 	private Random rand = new Random();
 	
 	public QuoteStore(Context context) throws IOException {
-		// If we get a TV show with more than 64 seasons, this'll have to change!
-		for (int i = 1; i <= 64; i++) {
-			quotesBySeason.put("Season " + Integer.toString(i), new ArrayList<SimpsonsQuote>());
-		}
 		InputStream in = context.getResources().openRawResource(R.raw.arrested_development);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 		String season = reader.readLine();
@@ -31,6 +30,11 @@ public class QuoteStore {
 			if (season != null && epTitle != null && quote != null) {
 				SimpsonsQuote sq = new SimpsonsQuote(season, epTitle, quote);
 				quotes.add(sq);
+				List<SimpsonsQuote> seasonList = quotesBySeason.get(season);
+				if (seasonList == null) {
+					seasonList = new ArrayList<SimpsonsQuote>();
+					quotesBySeason.put(season, seasonList);
+				}
 				quotesBySeason.get(season).add(sq);
 			}
 			season = reader.readLine();
@@ -51,7 +55,9 @@ public class QuoteStore {
 	}
 	
 	public SimpsonsQuote quoteBySeason(int season) {
-		return randomQuoteFromList(quotesBySeason.get("Season " + Integer.toString(season)));
+		List<String> seasons = new ArrayList<String>(quotesBySeason.keySet());
+		Collections.sort(seasons);
+		return randomQuoteFromList(quotesBySeason.get(seasons.get(season - 1)));
 	}
 	
 	public String randomEpisode() {
