@@ -18,7 +18,8 @@ public class QuoteStore {
 	private Random rand = new Random();
 	
 	public QuoteStore(Context context) throws IOException {
-		for (int i = 1; i <= 21; i++) {
+		// If we get a TV show with more than 64 seasons, this'll have to change!
+		for (int i = 1; i <= 64; i++) {
 			quotesBySeason.put("Season " + Integer.toString(i), new ArrayList<SimpsonsQuote>());
 		}
 		InputStream in = context.getResources().openRawResource(R.raw.arrested_development);
@@ -35,6 +36,10 @@ public class QuoteStore {
 			season = reader.readLine();
 		}
 		Log.d(getClass().getName(), "Found " + Integer.toString(quotes.size()) + " quotes");
+	}
+	
+	public int numSeasons() {
+		return quotesBySeason.size();
 	}
 	
 	public SimpsonsQuote randomQuoteFromList(List<SimpsonsQuote> list) {

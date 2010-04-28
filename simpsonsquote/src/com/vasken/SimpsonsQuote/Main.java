@@ -89,7 +89,7 @@ public class Main extends Activity {
     
     void loadNewQuote() {
     	questionNumber++;
-    	if (questionNumber > 20)
+    	if (questionNumber > quotestore.numSeasons())
     		questionNumber = 1;
     	WebView quoteview = (WebView)findViewById(R.id.quote);
     	SimpsonsQuote quote = quotestore.quoteBySeason(questionNumber);
