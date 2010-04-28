@@ -4,16 +4,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.Callable;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;

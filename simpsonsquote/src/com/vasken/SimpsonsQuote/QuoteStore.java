@@ -9,9 +9,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 import android.content.Context;
 import android.util.Log;
 
