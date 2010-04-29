@@ -1,0 +1,33 @@
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <i>  [Upon learning and disapproving of the Dragit's plans] </i></dd><dd> <b>  Rafe </b> : Treason!</dd><dd> <b>  Dragit </b> : Revolution.</dd></dl>
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <b>  Rita Carter </b> : I'm Rita. Oh, uh- you put your hand in mine, and then up, and down. It's this little custom we have on Earth.</dd><dd> <b>  Cale Oosha </b> : Yosh. I have read of this.</dd><dd> <b>  Rita </b> : You really are from out there!</dd></dl>
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <i>  [Cale hands Rita orb] </i></dd><dd> <b>  Cale </b> : Keep this. It is your path to me.</dd><dd> <b>  Rita </b> : How?</dd><dd> <b>  Cale </b> : You'll know when the time comes.</dd></dl>
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <i>  [telling Rafe to stay behind] </i></dd><dd> <b>  Cale </b> : They need you. Serve them as you served me. Protect them as you protected me. And, Rafe...teach him, as you taught me. He is our future.</dd></dl>
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <b>  Gen. Konrad </b> : Your lab work is outstanding Major Stark. Think of it- a species not of this Earth- and the tabloids got it right for a change.</dd></dl>
+Season 1
+The Legend[1.1, 1.2]
+<dl><dd> <b>  David </b> : In one day my world has been taken from me- my home, my mom- my life. Why? Why is this happening to me?</dd></dl>
+Season 1
+Assault[1.3, 1.4]
+<dl><dd> <i>  [about an attacking Tyrusian soldier] </i></dd><dd> <b>  David </b> : He looks American.</dd><dd> <b>  Rafe </b> : So do I.</dd></dl>
+Season 1
+Assault[1.3, 1.4]
+<dl><dd> <i>  [David grabs Rafe's second gun] </i></dd><dd> <b>  Rafe </b> : Do you know how to use that?</dd><dd> <b>  David </b> : I go to the movies.</dd></dl>
+Season 1
+Assault[1.3, 1.4]
+<dl><dd> <b>  Major Phil Stark </b> : I do not like being shot at.</dd></dl>
+Season 1
+Renewal[1.5, 1.6]
+<dl><dd> <i>  [after being rescued from mangler] </i></dd><dd> <b>  David </b> : <i>  [panting] </i> Thanks, I owe you one.</dd><dd> <b>  Doc </b> : Huh. You owe me a freezer full of good meat.</dd></dl>
+Season 1
+Final Mission[1.11, 1.12, 1.13]
+<dl><dd> <b>  Doc </b> : I couldn't stop the meteor launch, so I reversed it.</dd><dd> <b>  David </b> : You <i>  what? </i></dd><dd> <b>  Doc </b> : It seemed like a good idea at the time.</dd></dl>

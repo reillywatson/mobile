@@ -17,8 +17,8 @@ public class QuoteStore {
 	private HashMap<String, List<SimpsonsQuote>> quotesBySeason = new HashMap<String, List<SimpsonsQuote>>();
 	private Random rand = new Random();
 	
-	public QuoteStore(Context context) throws IOException {
-		InputStream in = context.getResources().openRawResource(R.raw.arrested_development);
+	public QuoteStore(Context context, int storeid) throws IOException {
+		InputStream in = context.getResources().openRawResource(storeid);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 		String season = reader.readLine();
 		while (season != null) {

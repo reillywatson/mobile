@@ -1,0 +1,1215 @@
+Season 1
+Emissary[1.1]
+<dl><dd> <i>  [Opening introduction text of the series] </i></dd><dd> On Stardate 43997, Captain Jean-Luc Picard of the Federation starship Enterprise was kidnapped for six days by an invading force known as the Borg. Surgically altered, he was forced to lead an assault on Starfleet at Wolf 359.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Kira Nerys </b> : I suppose you want the office.</dd><dd> <b>  Benjamin Sisko </b> : Well I thought I would say hello first and <i>  then </i> take the office, but we can do it in any order you like.</dd><dd> <b>  Kira Nerys </b> : <i>  [sarcastically] </i> Hello!</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Locutus of Borg </b> : If you attempt to intervene, we will destroy you.</dd><dd> <b>  Vulcan Captain </b> : Red alert. Load all torpedo bays, ready phasers.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Jean-Luc Picard </b> : Have we met before?</dd><dd> <b>  Benjamin Sisko </b> : Yes sir, we met in battle. I was on the Saratoga at Wolf 359.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <i>  [Discussing Bajor's possible membership in the Federation] </i></dd><dd> <b>  Benjamin Sisko </b> : Sounds like they're not ready.</dd><dd> <b>  Jean-Luc Picard </b> : Your job, short of violating the Prime Directive, is to make sure that they are.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Kira Nerys </b> : You are throwing it all away... all of you!</dd><dd> <b>  Bajoran Bureaucrat </b> : You're being a fool!</dd><dd> <b>  Kira Nerys </b> : Well, then, don't ask my opinion next time!</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <i>  [about Sisko] </i></dd><dd> <b>  Kai Opaka </b> : How ironic... one who does not wish to be among us is to be the Emissary.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Julian Bashir </b> : This is where the adventure is. This is where heroes are made. Right here... in the wilderness.</dd><dd> <b>  Kira Nerys </b> : This "wilderness" is my <i>  home! </i></dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Miles O'Brien </b> : Sir, have you ever served with any Bajoran women?</dd><dd> <b>  Benjamin Sisko </b> : No. Why?</dd><dd> <b>  Miles O'Brien </b> : I was just wondering, sir.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Benjamin Sisko </b> : It's really quite simple, Quark. You're not going to leave.</dd><dd> <b>  Quark </b> : Not going to leave? But we're packed and ready to go.</dd><dd> <b>  Benjamin Sisko </b> : Unpack.</dd><dd> <b>  Quark </b> : I don't understand, Commander. Why would you want me to stay?</dd><dd> <b>  Odo </b> : I'm curious myself. The man is a gambler and a thief.</dd><dd> <b>  Quark </b> : I'm not a thief.</dd><dd> <b>  Odo </b> : You are a thief!</dd><dd> <b>  Quark </b> : If I am, you haven't been able to prove it for four years.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Quark </b> : Commander, I've made a career out of knowing when to leave. And this provisional government is far too provisional for my taste and when governments fall, people like me are lined up and shot.</dd><dd> <b>  Benjamin Sisko </b> : There is that risk, but then, you are a gambler, Quark.</dd><dd> <b>  Odo </b> : And a thief.</dd><dd> <b>  Benjamin Sisko </b> : You know, Quark, that poor boy is about to spend the best years of his life in a Bajoran prison. I'm a father myself. I know what your brother must be going through. The boy should be with his family, not in some cold jail cell. Think about it. It's up to you.</dd><dd> <i>  [He exits] </i></dd><dd> <b>  Odo </b> : You know, at first, I didn't think I was going to like him.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [To Captian Picard] </i> In the meantime, I will do the job I've been ordered to do to the best of my ability, sir!</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Kira Nerys </b> : Quark, if you don't take your hand off my hip, you'll never be able to raise a glass with it again.</dd><dd> <b>  Quark </b> : Oh, I love a woman in uniform.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Benjamin Sisko </b> : That may be the most important thing to understand about humans. It is the unknown that defines our existence. We are constantly searching, not just for answers to our questions, but for new questions. We are explorers. We explore our lives day by day, and we explore the galaxy trying to expand the boundaries of our knowledge. And that is why I am here: not to conquer you with weapons or ideas, but to coexist and learn.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Kai Opaka </b> : Nine orbs, like this one, have appeared in the skies over the past 10,000 years. The Cardassians took the others. You must find the Celestial Temple before they do.</dd><dd> <b>  Benjamin Sisko </b> : The Celestial Temple?</dd><dd> <b>  Kai Opaka </b> : Tradition says that the orbs were sent by the prophets to teach us. What we have learned has shaped our theology. The Cardassians will do <i>  anything </i> to decipher their powers. If they discover the Celestial Temple, they could destroy it.</dd><dd> <b>  Benjnamin Sisko </b> : What makes you think I can find your... temple?</dd><dd> <b>  Kai Opaka </b> : <i>  [gives Sisko the orb ark] </i> This will help you.</dd><dd> <b>  Benjamin Sisko </b> : Kai Opaka, I...</dd><dd> <b>  Kai Opaka </b> : I can't unite my people until I know the prophets have been warned. You will find the temple. Not for Bajor, not for the Federation, but for your own pagh. It is quite simply, Commander, the journey you have always been destined to take.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Vedek </b> : Welcome, Commander. Please enter. The Prophets await you.</dd><dd> <b>  Benjamin Sisko </b> : Another time, perhaps.</dd><dd> <b>  Vedek </b> : <i>  [Nods] </i> Another time.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Kira Nerys </b> : [to Sisko] This government will be gone in a week and so will you.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Quark </b> : I love the Bajorans, such a deeply spiritual people, but they make a dreadful ale.</dd></dl>
+Season 1
+Emissary[1.1]
+<dl><dd> <b>  Julian Bashir </b> : So, where can someone practice with his phaser around here?</dd></dl>
+Season 1
+Past Prologue[1.3]
+<dl><dd> <b>  Julian Bashir </b> : You know, some people say that you remained on DS9 as the eyes and ears of your fellow Cardassians.</dd><dd> <b>  Garak </b> : You don't say! Doctor, you're not intimating that I'm some sort of spy, are you?</dd><dd> <b>  Julian Bashir </b> : I wouldn't know, sir.</dd><dd> <b>  Garak </b> : Ah, an open mind. The essence of intellect.</dd></dl>
+Season 1
+Past Prologue[1.3]
+<dl><dd> <b>  Odo </b> : You can leave your weapons or leave the station. Please choose now.</dd><dd> <b>  B'Etor </b> : Who are you?</dd><dd> <b>  Odo </b> : The one giving you the choice.</dd></dl>
+Season 1
+Past Prologue[1.3]
+<dl><dd> <b>  Benjamin Sisko </b> : In war, both sides commit atrocities.</dd></dl>
+Season 1
+Past Prologue[1.3]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [To Kira] </i> Go over my head again, and I'll have yours on a platter.</dd></dl>
+Season 1
+Past Prologue[1.3]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [to Dr. Bashir] </i> I think doctor, that you could definitely use a new suit.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Odo </b> : I'll never understand the humanoid need to ... couple.</dd><dd> <b>  Quark </b> : You've never "coupled"?</dd><dd> <b>  Odo </b> : I choose not to. Too many compromises. You want to watch the Karo-Net tournament, she wants to listen to music, so you compromise: you listen to music. You like Earth jazz, she prefers Klingon opera, so you compromise: you listen to Klingon opera. So here you were ready to have a nice night watching the Karo-net match and you wind up spending an agonizing evening listening to Klingon opera.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Odo </b> : Killing your own clone is still murder.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Odo </b> : Laws change depending on who's making them, but justice is justice.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [to Odo] </i> If you can't work within the rules I'll find someone who can.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Jadzia Dax </b> : Just sit comfortably and release your tension into my hands.</dd><dd> <b>  Julian Bashir </b> : Your hands - they're cold.</dd><dd> <b>  Jadzia Dax </b> : It's a peculiarity of the Trill.</dd><dd> <b>  Julian Bashir </b> : Cold hands, warm heart.</dd><dd> <b>  Jadzia Dax </b> : <i>  Concentrate </i> on the sphere. Clear your mind. This requires focus and clarity of thought.</dd><dd> <b>  Julian Bashir </b> : I understand completely...what is that exotic scent you're wearing?</dd><dd> <b>  Jadzia Dax </b> : <i>  Focus </i> and clarity of thought.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Quark </b> : Everyone wants a piece of the new frontier.</dd><dd> <b>  Odo </b> : And I'm sure you've already tried to sell it to a few of them.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Rom </b> : My son cannot learn anything from a female human teacher.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Benjamin Sisko </b> : I want you to know I don't personally believe that you're responsible for this.</dd><dd> <b>  Odo </b> : Really? Now, how can that be true? You don't know me. You have no reason to believe I wouldn't kill Ibudan if it suited my fancy, so don't tell me there isn't some doubt inside of you, some question about whether or not I murdered the man.</dd></dl>
+Season 1
+A Man Alone[1.4]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [On Odo] </i> Do not condemn this man because he is different than you are.</dd></dl>
+Season 1
+Babel[1.5]
+<dl><dd> <b>  Jadzia Dax </b> : I forgot how different it was.</dd><dd> <b>  Kira Nerys </b> : How different what was?</dd><dd> <b>  Jadzia Dax </b> : Being female. I haven't been one for over eighty years. All this attention...</dd><dd> <b>  Kira Nerys </b> : I imagine it must take some getting used to.</dd><dd> <b>  Jadzia Dax </b> : Actually, I find it quite enjoyable.</dd></dl>
+Season 1
+Babel[1.5]
+<dl><dd> <b>  Odo </b> : Unauthorized entry into crew quarters is a crime, Quark. You could have just asked to use the replicators.</dd><dd> <b>  Quark </b> : There's an old Ferengi saying: "Never ask when you can take." How did you figure it out?</dd><dd> <b>  Odo </b> : You claimed Rom fixed your replicators.</dd><dd> <b>  Quark </b> : So?</dd><dd> <b>  Odo </b> : Rom's an idiot. He couldn't fix a straw if it was bent.</dd><dd> <b>  Quark </b> : You're right, Rom is an idiot. Remind me to get rid of him tomorrow.</dd></dl>
+Season 1
+Babel[1.5]
+<dl><dd> <i>  [Quark is yelling at an aphasia victim] </i></dd><dd> <b>  Quark </b> : Food...Dabo...drinks...money...hand...mine...give!</dd><dd> <b>  Benjamin Sisko </b> : Well, Quark, I see even you couldn't weasel your way clear of this one.</dd><dd> <b>  Quark </b> : You underestimate the Ferengi immune system, Commander. I'm merely here visiting my less-fortunate customers to make sure they're not <i>  faking </i> the illness to avoid <i>  paying </i> their bills.</dd><dd> <b>  Benjamin Sisko </b> : No one could be that devious.</dd><dd> <b>  Quark </b> : I am. <i>  [To patient] </i> You...gold...owe...ME!</dd></dl>
+Season 1
+Babel[1.5]
+<dl><dd> <b>  Odo </b> : Quark, am I to believe that you're volunteering to help?</dd><dd> <b>  Quark </b> : Who said anything about volunteering? We can haggle over price later.</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <b>  Tosk </b> : I have no use for fantasy adventure. I live the greatest adventure one could ever desire.</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <b>  Tosk </b> : I am Tosk.</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <b>  Miles O'Brien </b> : Hey, barkeep!</dd><dd> <b>  Quark </b> : Don't call me barkeep! I'm not a barkeep! I'm your host, the proprietor, a sympathetic ear to the wretched souls that pass through these portals.</dd><dd> <b>  Miles O'Brien </b> : And a man that will exploit any vice you may have. Two synthales, barkeep.</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <b>  Miles O'Brien </b> : As the Vulcans say, "we're here to serve."</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <i>  [Handing Odo a phaser] </i></dd><dd> <b>  Kira Nerys </b> : You may need this.</dd><dd> <b>  Odo </b> : Thanks, major. You know I never use them.</dd></dl>
+Season 1
+Captive Pursuit[1.6]
+<dl><dd> <b>  Tosk </b> : Die with honor, O'Brien.</dd><dd> <b>  Miles O'Brien </b> : Die with honor, Tosk.</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Vash </b> : It's over Q, I want you out of my life. You are arrogant, you're overbearing and you think you know everything.</dd><dd> <b>  Q </b> : But I do know everything.</dd><dd> <b>  Vash </b> : That makes it even worse.</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Quark </b> : Remember, bid high and bid often.</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Julian Bashir </b> : No sign of disease or malnutrition or parasitic infection.</dd><dd> <b>  Vash </b> : You sound disappointed.</dd><dd> <b>  Julian Bashir </b> : I am. Now I have no reason to keep you here.</dd><dd> <b>  Vash </b> : You're almost making me wish I wasn't feeling well.</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Vash </b> : They weren't exactly thrilled to see you on Brax, either. What do they call you there? "The God of Lies"?</dd><dd> <b>  Q </b> : They meant it affectionately.</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Q </b> : Do I know you.</dd><dd> <b>  O'Brien </b> : O'Brien, from the Enterprise.</dd><dd> <b>  Q </b> : Enterprise, ah yes! Weren't you one of the <i>  little </i> people?</dd></dl>
+Season 1
+Q-Less[1.7]
+<dl><dd> <b>  Q </b> : An abysmal place, Earth. A thousand years ago it had character: Crusades , Spanish Inquisition , Watergate ... Now its just incredibly dull.</dd></dl>
+Season 1
+Dax[1.8]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [referring to Dax] </i> He taught me to appreciate life in ways I'd never thought about before. He taught me about art, and science and diplomacy. Whatever sense of honor I have today, he nurtured.</dd></dl>
+Season 1
+Dax[1.8]
+<dl><dd> <b>  Madame Arbiter </b> : <i>  [referring to the extradition hearing proceedings] </i> I intend to be here until supper, not senility.</dd></dl>
+Season 1
+The Passenger[1.9]
+<dl><dd> <b>  Odo </b> : I have my eye on you, Quark.</dd><dd> <b>  Quark </b> : <i>  [Jadzia Dax walks by] </i> And I have my eye on you, Jadzia.</dd></dl>
+Season 1
+Move Along Home[1.10]
+<dl><dd> <b>  Jake Sisko </b> : Dad, I'm <i>  fourteen </i> .</dd><dd> <b>  Benjamin Sisko </b> : I'm glad we agree on something. Go to bed.</dd></dl>
+Season 1
+Move Along Home[1.10]
+<dl><dd> <b>  Benjamin Sisko </b> : Major, I gave you a direct order.</dd><dd> <b>  Kira Nerys </b> : Court-martial me.</dd><dd> <b>  Benjamin Sisko </b> : I can't. You're not in Starfleet.</dd><dd> <b>  Jadzia Dax </b> : If I were your superior officer, I'd court-martial both of you.</dd></dl>
+Season 1
+Move Along Home[1.10]
+<dl><dd> <b>  Chandra </b> : <i>  [chanting] </i> Allamaraine count to four./Allamaraine then three more./Allamaraine if you can see./Allamaraine you'll come with me.</dd></dl>
+Season 1
+The Nagus[1.11]
+<dl><dd> <i>  [Rom has returned a lost wallet] </i></dd><dd> <b>  Quark </b> : Have you forgotten the First Rule of Acquisition?</dd><dd> <b>  Rom </b> : No, brother.</dd><dd> <b>  Quark </b> : Then repeat it!</dd><dd> <b>  Rom </b> : "Once you have their money, you never give it back."</dd></dl>
+Season 1
+The Nagus[1.11]
+<dl><dd> <b>  Quark </b> : The Sixth Rule of Acquisition clearly states...</dd><dd> <b>  Zek </b> : "Never allow family to stand in the way of opportunity." I certainly never have.</dd></dl>
+Season 1
+The Storyteller[1.14]
+<dl><dd> <b>  Nog </b> : Rule of Acquisition Number Nine: Opportunity plus instinct equals profit.</dd></dl>
+Season 1
+Progress[1.15]
+<dl><dd> <b>  Kira </b> : When I was very small, I remember there was this tree right outside my window. It was the ugliest, most knarled and battered old tree I'd ever seen. Even the birds stayed away from it.</dd><dd> <b>  Mullibok </b> : But you loved it.</dd><dd> <b>  Kira </b> : I <i>  hated </i> it, because it had grown so huge, its branches blocked out the sun for kelipates, and its roots buried themselves so deep in the soil nothing else could grow there. It was a big, selfish, annoying...</dd><dd> <b>  Mullibok </b> : Nasty...</dd><dd> <b>  Kira </b> : Nasty! Nasty old tree.</dd><dd> <b>  Mullibok </b> : Sounds to me like it had a lot of character.</dd><dd> <b>  Kira </b> : <i>  [after a pause] </i> A lot.</dd></dl>
+Season 1
+If Wishes Were Horses[1.16]
+<dl><dd> <b>  Odo </b> : Ladies and gentlemen... and all androgynous creatures, please stop using your imaginations!</dd></dl>
+Season 1
+If Wishes Were Horses[1.16]
+<dl><dd> <b>  Kira Nerys </b> : Yellow alert? Against our own imaginations?</dd></dl>
+Season 1
+If Wishes Were Horses[1.16]
+<dl><dd> <b>  Julian Bashere </b> : She has a sense of humour, as I've always imagined you do.</dd><dd> <b>  Jadzia Dax </b> : I could use one about now.</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <b>  Odo </b> : Madam, I am not like you! Every eighteen hours, I turn into a liquid!</dd><dd> <b>  Lwaxana Troi </b> : I can swim.</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <b>  Odo </b> : Procreation does not require changing how you smell, or writing bad poetry, or sacrificing various plants to serve as tokens of affection!</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <i>  [Mrs. Troi has lost a piece of jewelry and is accusing Quark of theft, grabbing his ears] </i></dd><dd> <b>  Quark </b> : Ow! My Ears!</dd><dd> <b>  Lwaxana Troi </b> : Yes, and I know where it hurts the most, you little troll.</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <b>  Lwaxana Troi </b> : What are you looking at?.</dd><dd> <b>  Odo </b> : Oh, I was just wondering how many volts are in that exposed socket...</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <i>  [Bashir has been assigned to chaperone a trio of visiting diplomats] </i></dd><dd> <b>  Benjamin Sisko </b> : Cheer up, Doctor. If you do well, it could help your career.</dd><dd> <b>  Julian Bashir </b> : Another hour with them could destroy my career!</dd><dd> <b>  Benjamin Sisko </b> : It's a simple job: just keep them happy, and away from me.</dd><dd> <b>  Julian Bashir </b> : Simple? Nothing makes them happy! They are dedicated to being UN-happy, and to spreading that unhappiness wherever they go! They are the Ambassadors of Unhappy!</dd></dl>
+Season 1
+The Forsaken[1.17]
+<dl><dd> <b>  Benjamin Sisko </b> : All of us have had these assignments, Doctor.</dd><dd> <b>  Julian Bashir </b> : Have you, sir?</dd><dd> <b>  Benjamin Sisko </b> : As a matter of fact, Curzon Dax used to take perverse pleasure in assigning me to take care of VIP guests.</dd><dd> <b>  Julian Bashir </b> : Ah, and now you take the same perverse pleasure in doing it to me.</dd><dd> <b>  Benjamin Sisko </b> : Exactly.</dd></dl>
+Season 1
+Duet[1.19]
+<dl><dd> <i>  [Bajoran survivors of a Cardassian labor camp have gathered on DS9] </i></dd><dd> <b>  Quark </b> : Who are they?</dd><dd> <b>  Odo </b> : Survivors of Gallitep. They arrived here this morning. They've come to see justice done.</dd><dd> <b>  Quark </b> : Gallitep... imagine living through that hellhole... the pain... the sorrow... Do you think they like to gamble?</dd></dl>
+Season 1
+Duet[1.19]
+<dl><dd> <b>  Kira Nerys </b> : You're Marritza, aren't you?</dd><dd> <b>  Gul Darhe'el </b> : You mistake me for that bug? That whimpering nothing? Ho-ho, you stupid Bajoran girl! Don't you know who I am? I'm youre nemesis! I'm your nightmare! I'm the Butcher of Gallitep!</dd><dd> <b>  Kira </b> : The Butcher of Gallitep died six years ago. You're Amon Marritza, his filing clerk.</dd><dd> <b>  Gul Darhe'el </b> : That's not true, I am alive! I will always be alive! It's Marritza who's dead! Marritza, who was good for nothing but cowering under his bunk and weeping like a woman! Who would, every night, cover his ears, because he couldn't bear to hear the screaming for mercy of the Bajorans...</dd><dd> <i>  [He breaks down and sinks onto his bunk, sobbing uncontrollably.] </i></dd><dd> <b>  Amon Marritza </b> : I covered my ears every night. But I couldn't bear to hear those horrible screams. You have no idea what it's like to be a coward. To see these horrors... and do nothing. Marritza's dead, he deserves to be dead.</dd></dl>
+Season 1
+Duet[1.19]
+<dl><dd> <i>  [Amon Marritza has just been stabbed by Kainon on the promenade] </i></dd><dd> <b>  Kira, holding the rapidly dying Marritza </b> : Why!?! He wasn't Darhe'el!</dd><dd> <b>  Kainon </b> : He was Cardassian! That's reason enough!</dd><dd> <b>  Kira </b> : No... No it's not.</dd></dl>
+Season 1
+In the Hands of the Prophets[1.20]
+<dl><dd> <b>  Kira Nerys </b> : But she's teaching a fundamentally different philosophy -</dd><dd> <b>  Keiko O'Brien </b> : I'm not teaching any "philosophy." What I'm trying to teach is pure science.</dd><dd> <b>  Kira Nerys </b> : Some might say pure science taught without a spiritual context is a philosophy, Mrs O'Brien.</dd></dl>
+Season 1
+In the Hands of the Prophets[1.20]
+<dl><dd> <b>  Odo </b> : What do you know about the death of Ensign Aquino?</dd><dd> <b>  Quark </b> : You wound me. We have known each other for many years. Odo, I am not a killer!</dd><dd> <b>  Odo </b> : No, but most of your friends are.</dd><dd> <b>  Quark </b> : True, and I would gladly sell one of them to you if I could. But unfortunately, no one has come forward confessing to the death of the Starfleet officer.</dd></dl>
+Season 1
+In the Hands of the Prophets[1.20]
+<dl><dd> <b>  Odo </b> : Keep your ears open.</dd><dd> <b>  Quark </b> : Are you kidding? That's the Seventh Rule of Acquisition.</dd></dl>
+Season 2
+The Homecoming[2.1]
+<dl><dd> <b>  Quark </b> : Every once in a while, declare peace. It confuses the hell out of your enemies.</dd></dl>
+Season 2
+The Circle[2.2]
+<dl><dd> <i>  [after Quark informs Odo that The Circle is being supplied with weapons from the Kressari and Odo tells him to get more information] </i></dd><dd> <b>  Odo </b> : Quark, I hate to do this, but I guess I'll have to...</dd><dd> <b>  Quark </b> : That's not fair!</dd><dd> <b>  Odo </b> : I haven't done anything yet.</dd><dd> <b>  Quark </b> : Whatever you're going to do, it's not fair.</dd><dd> <b>  Odo </b> : You're a deputy.</dd><dd> <b>  Quark </b> : It's not...! What?</dd><dd> <b>  Odo </b> : You're a deputy. I want you to find out where the weapons are going on Bajor. Meanwhile, I'm going to find out exactly where they're coming from.</dd><dd> <b>  Quark </b> : You and me, a team?</dd><dd> <b>  Odo </b> : That's right.</dd><dd> <i>  [Quark bellows his head off with laughter, then sobers and hastily turns to leave.] </i></dd><dd> <b>  Quark </b> : Goodbye.</dd><dd> <b>  Odo </b> : Either that or I'm putting you in a cell.</dd><dd> <b>  Quark </b> : <b>  That's </b> not fair. On what charge?</dd><dd> <b>  Odo </b> : Impeding an investigation. Unless you want to reveal the identities of the people you've been talking to.</dd><dd> <b>  Quark </b> : You know I can't do that.</dd><dd> <b>  Odo </b> : It's your choice. You're a deputy or you're a prisoner.</dd><dd> <b>  Quark </b> : <i>  [with fake enthusiasm] </i> I'm a deputy.</dd></dl>
+Season 2
+The Siege[2.3]
+<dl><dd> <i>  [Quark is pushing a heavy chest down the access tunnel] </i></dd><dd> <b>  Julian Bashir </b> : Quark, leave it!</dd><dd> <b>  Quark </b> : I can't leave it, it's all that I have. My personal mementos, my family album...</dd><dd> <b>  Julian Bashir </b> : It's full of gold-pressed latinum, and you know it.</dd><dd> <b>  Quark </b> : ...Who told you?</dd><dd> <b>  Julian Bashir </b> : Your mother did, the day you were born.</dd><dd> <i>  [Quark shoves the chest aside and speed-crawls down the tunnel until he's nose-to-nose with Bashir] </i></dd><dd> <b>  Quark </b> : NEVER-MAKE-FUN-OF-A-FERENGI'S-MOTHER. Rule of Acquisition Number 31!</dd></dl>
+Season 2
+The Siege[2.3]
+<dl><dd> <b>  Jadzia Dax </b> : Without navigational sensors...</dd><dd> <b>  Kira Nerys </b> : We'll have to fly by the seat of our pants.</dd><dd> <b>  Jadzia Dax </b> : Great! Seat-of-the-pants technology.</dd><dd> <b>  Kira Nerys </b> : You Starfleet types are too dependent on gadgets and gizmos. You lose your natural instinct for survival.</dd><dd> <b>  Jadzia Dax </b> : My natural instincts for survival told me not to climb aboard this thing. I'd say they're functioning pretty well.</dd></dl>
+Season 2
+The Siege[2.3]
+<dl><dd> <b>  Odo </b> : That's a very personal question.</dd><dd> <b>  Dax </b> : I'm sorry, but after seven lifetimes, impersonal questions aren't much fun anymore.</dd></dl>
+Season 2
+The Siege[2.3]
+<dl><dd> <b>  Jadzia Dax </b> : <i>  [scared by a crawling animal] </i> Oh! Whoah! What's that, is that a spider or a dog?</dd><dd> <b>  Kira Nerys </b> : Palucko. The Bajoran moons are full of them.</dd><dd> <b>  Jadzia Dax </b> : Oh. I suppose you used to make them your pets, and sing songs about them round the campfire.</dd><dd> <b>  Kira Nerys </b> : No. We used to eat 'em.</dd></dl>
+Season 2
+The Siege[2.3]
+<dl><dd> <b>  Jadzia Dax </b> : I've been a mother three times and a father twice.</dd><dd> <b>  Benjamin Sisko </b> : Which was easier?</dd><dd> <b>  Jadzia Dax </b> : Actually, I wasn't very successful either way.</dd></dl>
+Season 2
+Cardassians[2.5]
+<dl><dd> <b>  Elim Garak </b> : I believe in coincidences. Coincidences happen every day. I don't <i>  trust </i> coincidences.</dd></dl>
+Season 2
+Melora[2.6]
+<dl><dd> <b>  Unidentified </b> : 16 - A deal is a deal is a deal...Until a better one comes along.</dd></dl>
+Season 2
+Melora[2.6]
+<dl><dd> <b>  Klingon Restaurant Owner </b> : - I like a customer, who knows what she wants.</dd></dl>
+Season 2
+Melora[2.6]
+<dl><dd> <b>  Julian Bashir </b> : - Out here in space, no one is completely independent. We all depend on one another.</dd><dd> <b>  Melora </b> : - Well, you can depend on me.</dd><dd> <b>  Julian Bashir </b> : - And you've proven that. So what is it going to take for the rest of us to prove to you, that you can depend on us?</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 21 - Never place friendship above profit.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 22 - A wise man can hear profit in the wind.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 23 - Nothing is more important than your health -except for your money.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 33 - It never hurts to suck up to the boss.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 48 - The bigger the smile, the sharper the knife.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 59 - Free advice is seldom cheap.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 62 - The riskier the road, the greater the profit.</dd></dl>
+Season 2
+Rules of Acquisition[2.7]
+<dl><dd> <b>  Unidentified </b> : 103 - Sleep can interfere with [opportunity]. (incomplete)</dd></dl>
+Season 2
+Necessary Evil[2.8]
+<dl><dd> <b>  Odo </b> (suspecting Rom of being behind an murder attempt on Quark): 139 - Wives serve, brothers inherit.</dd></dl>
+Season 2
+Rivals[2.11]
+<dl><dd> <b>  Unidentified </b> : 47 - Don't trust a man wearing a better suit than your own.</dd></dl>
+Season 2
+Rivals[2.11]
+<dl><dd> <b>  Martus Mazur </b> : I bet you're enjoying this.</dd><dd> <b>  Quark </b> : Taken in by one of your own victims, and no one to turn to but me? Ha-ha-ha! I can't remember when I've been so entertained.</dd></dl>
+Season 2
+Rivals[2.11]
+<dl><dd> <b>  Martus Mazur </b> : I still have my dignity.</dd><dd> <b>  Quark </b> : "Dignity and an empty sack is worth the sack." Rule of Acquisition Number 109.</dd></dl>
+Season 2
+Armageddon Game[2.13]
+<dl><dd> <b>  Unidentified </b> : 57 - Good customers are as rare as latinum -treasure them.</dd></dl>
+Season 2
+Whispers[2.14]
+<dl><dd> <b>  Unidentified </b> : 194 - It's always good business to know about new customers before they walk in your door.</dd></dl>
+Season 2
+Whispers[2.14]
+<dl><dd> <i>  [O'Brien is getting a physical] </i></dd><dd> <b>  Julian Bashir </b> : Well, your sense of humour seems normal enough.</dd><dd> <b>  Miles O'Brien </b> : I don't have a sense of humour.</dd><dd> <b>  Julian Bashir </b> : Cough. <i>  [O'Brien coughs] </i> How's the sex life?</dd><dd> <b>  Miles O'Brien </b> : I don't <i>  have </i> a sense of humour.</dd></dl>
+Season 2
+Playing God[2.17]
+<dl><dd> <b>  Unidentified </b> : 112 - Never have sex with the boss' sister.</dd></dl>
+Season 2
+Profit and Loss[2.18]
+<dl><dd> <b>  Julian Bashir </b> : If you're not a spy, maybe you're an outcast.</dd><dd> <b>  Elim Garak </b> : Or maybe I'm an outcast spy.</dd><dd> <b>  Julian Bashir </b> : How can you be both?</dd><dd> <b>  Elim Garak </b> : I never said I was either.</dd></dl>
+Season 2
+Blood Oath[2.19]
+<dl><dd> <i>  [Odo discovers an aged Klingon entered his office undetected while his back was turned] </i></dd><dd> <b>  Odo </b> : How did you get in here?</dd><dd> <b>  Koloth </b> : I am Koloth.</dd><dd> <b>  Odo </b> : That doesn't answer my question.</dd><dd> <b>  Koloth </b> : Yes, it does.</dd></dl>
+Season 2
+Blood Oath[2.19]
+<dl><dd> <b>  Kira Nerys </b> : Jadzia, your questions about my experience with killing...if you're wondering what it's like... When you take someone else's life, you lose a part of your own as well.</dd></dl>
+Season 2
+Blood Oath[2.19]
+<dl><dd> <b>  Jadzia Dax </b> : What is this preoccupation you have with dying? I think living is much more attractive.</dd></dl>
+Season 2
+Blood Oath[2.19]
+<dl><dd> <b>  Jadzia Dax </b> : Its never a good day to lose a friend.</dd></dl>
+Season 2
+The Maquis, Part I[2.20]
+<dl><dd> <b>  Quark </b> : Never begin a negotiation on an empty stomach.</dd></dl>
+Season 2
+The Maquis, Part I[2.20]
+<dl><dd> <b>  Gul Dukat </b> : Now do you see Commander? That without any help from either of us, they have managed to start their own little war out here.</dd></dl>
+Season 2
+The Maquis, Part I[2.20]
+<dl><dd> <b>  Gul Dukat </b> : A good interrogator doesn't allow his subject to die; you lose the advantage.</dd></dl>
+Season 2
+The Maquis, Part II[2.21]
+<dl><dd> <b>  Quark </b> : 3 - Never pay more for an acquisition than you have to.</dd></dl>
+Season 2
+The Maquis, Part II[2.21]
+<dl><dd> <b>  Benjamin Sisko </b> : It's easy to be a saint in paradise.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Julian Bashir </b> : What I want to know is, out of all the stories you told me which ones were true and which ones weren't?</dd><dd> <b>  Elim Garak </b> : My dear doctor...they're all true.</dd><dd> <b>  Julian Bashir </b> : Even the lies?</dd><dd> <b>  Elim Garak </b> : Especially the lies.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Elim Garak </b> : I am no more a spy than you are...</dd><dd> <b>  Julian Bashir </b> : ...a doctor.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Julian Bashir </b> : Still the man of mystery.</dd><dd> <b>  Elim Garak </b> : Oh, you wouldn't have me any other way.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Julian Bashir </b> : Well, in my medical opinion, it's sick.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Julian Bashir </b> : I'm a doctor, not a botanist.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Elim Garak </b> : Doctor, has anyone ever told you that you are an infuriating pest?</dd><dd> <b>  Julian Bashir </b> : Chief O'Brien <i>  all </i> the time, and I never pay any attention to <i>  him </i> either!</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Julian Bashir </b> : And so they exiled you.</dd><dd> <b>  Elim Garak </b> : That's right! And left me to live out my days with nothing to look forward to but having lunch with you.</dd><dd> <b>  Julian Bashir </b> : I'm sorry you feel that way. I thought you enjoyed my company.</dd><dd> <b>  Elim Garak </b> : Oh, I did! And that's the worst part. I can't believe that I actually enjoyed eating mediocre food and staring into your smug sanctimonious face.</dd></dl>
+Season 2
+The Wire[2.22]
+<dl><dd> <b>  Bashir </b> : Try not to yell at any more admirals for a while.</dd><dd> <b>  Sisko </b> : I wasn't yelling. I was expressing my opinion loudly.</dd></dl>
+Season 2
+Crossover[2.23]
+<dl><dd> <b>  Kira Nerys </b> : I'm Kira Nerys.</dd><dd> <b>  Intendant </b> : That makes two of us.</dd></dl>
+Season 2
+The Collaborator[2.24]
+<dl><dd> <b>  Quark </b> : 285 - No good deed ever goes unpunished.</dd></dl>
+Season 2
+The Jem'Hadar[2.26]
+<dl><dd> <b>  Quark </b> : 102 - Nature decays, but latinum lasts forever.</dd></dl>
+Season 2
+The Jem'Hadar[2.26]
+<dl><dd> <b>  Quark </b> : I think I figured out why humans don't like Ferengi ...</dd><dd> <b>  Benjamin Sisko </b> : Not now, Quark.</dd><dd> <b>  Quark </b> : The way I see it, humans used to be a lot like Ferengi: greedy, acquisitive, interested only in profit. We're a constant reminder of a part of your past you'd like to forget.</dd><dd> <b>  Benjamin Sisko </b> : Quark, we don't have time for this.</dd><dd> <b>  Quark </b> : You're overlooking something. Humans used to be a lot worse than Ferengi: slavery, concentration camps, interstellar war. We have nothing in our past that approaches that kind of barbarism. You see? We're nothing like you... we're better.</dd></dl>
+Season 2
+The Jem'Hadar[2.26]
+<dl><dd> <i>  [Sisko and Quark have been captured by the Jem'Hadar] </i></dd><dd> <b>  Third Talak'talan </b> : A Ferengi and a human. I was hoping the first race I'd meet from the other side of the anomaly would be the Klingons.</dd><dd> <b>  Benjamin Sisko </b> : I'm sorry to disappoint you.</dd><dd> <b>  Third Talak'talan </b> : It's too late for apologies. The Dominion will no longer stand by and allow ships from your side to violate our territory.</dd></dl>
+Season 3
+The Search, Part II[3.2]
+<dl><dd> <b>  Julian Bashir </b> : Well, I guess this means the end of our Starfleet careers.</dd><dd> <b>  Garak </b> : Well, I wouldn't worry about that, Doctor.</dd><dd> <b>  Jadzia Dax </b> : That's easy for you to say.</dd><dd> <b>  Garak </b> : Oh, you misunderstand me, Lieutenant. All I meant was, it's a little foolish to worry about your careers at a time like this, when there's a good chance we're all about to be killed.</dd></dl>
+Season 3
+The Search, Part II[3.2]
+<dl><dd> <b>  Garak </b> : Didn't anyone tell you? You see, I pretend to be their friend - then I shoot you.</dd></dl>
+Season 3
+The House of Quark[3.3]
+<dl><dd> <b>  Quark </b> : When Morn leaves, it's all over.</dd></dl>
+Season 3
+The House of Quark[3.3]
+<dl><dd> <b>  Grilka </b> : I really am very grateful for all you have done, Quark. That is why I'm going to let you take your hand off my thigh instead of shattering every bone in your body.</dd></dl>
+Season 3
+The House of Quark[3.3]
+<dl><dd> <b>  Quark </b> : I am Quark, son of Keldar. And I have come to answer the challenge of D'Ghor, son of <i>  (pause) </i> whoever.</dd></dl>
+Season 3
+The House of Quark[3.3]
+<dl><dd> <b>  Quark </b> : Having me fight D'Ghor is nothing more than an execution. Well if that's what you want, then that's what you'll get, an execution. No glory. No honor. And when you one day tell your children how you came to power and took Grika's house from her, I hope you remember to tell them how you heroically killed an unarmed Ferengi, half your size.</dd><dd> <b>  D'Ghor </b> : <i>  (getting ready to swing the Bat'leth at Quark) </i> Whatever you say Ferengi!</dd><dd> <b>  Gowron </b> : <i>  (stopping D'Ghor midswing) </i> D'Ghor! What are you doing. I didn't want to believe the things he said about you yesterday. But if you can stand here and murder this pathetic little man, then you have no honor. <i>  (takes the Bat'leth from him and tosses it to the ground) </i> You have no place in this hall.</dd></dl>
+Season 3
+The House of Quark[3.3]
+<dl><dd> <b>  Gowron </b> : A brave Ferengi, who would have thought it possible.</dd></dl>
+Season 3
+Equilibrium[3.4]
+<dl><dd> <b>  Jadzia Dax </b> : If you want to know who you are, it's important to know who you've been.</dd></dl>
+Season 3
+Second Skin[3.5]
+<dl><dd> <b>  Garak </b> : Commander, this is extortion.</dd><dd> <b>  Sisko </b> : Hmm...yes, it is.</dd></dl>
+Season 3
+Civil Defense[3.7]
+<dl><dd> <b>  Quark </b> : 75 - Home is where the heart is...But the stars are made of latinum.</dd></dl>
+Season 3
+Civil Defense[3.7]
+<dl><dd> <i>  [Dukat has accidentally activated an old recording left by his former commanding officer] </i></dd><dd> <b>  Legate Kell </b> : Dukat... if you are seeing this recording, it means you tried to abandon your post while the station's self-destruct sequence was engaged. That will not be permitted. You have lost control of Terok Nor, disgracing yourself and Cardassia. Your attempt to escape is no doubt a final act of cowardice. All fail-safes have been eliminated. Your personal access codes have been rescinded. The destruct sequence can no longer be halted. All you can do now is contemplate the depth of your disgrace... and try to die like a Cardassian.</dd></dl>
+Season 3
+Defiant[3.9]
+<dl><dd> <b>  Gul Dukat </b> : ...but someone has to pay for what's happened here, and I don't want that someone to be <i>  me </i> .</dd><dd> <b>  Thomas Riker </b> <i>  [saying the same thing about the Defiant as William T. Riker in Star Trek: First Contact] </i> : Tough little ship.</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Jadzia Dax </b> : <i>  [after punching out Bareil] </i> Sorry, Benjamin. He was just beginning to annoy me.</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Jake Sisko </b> : Dad, you <i>  promised </i> Nerys would be here!</dd><dd> <b>  Benjamin Sisko </b> : She will be, and stop calling her Nerys.</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Lwaxana Troi </b> : Zanthi Fever?!? Oh, that- that's ridicu- that's impossible. That only affects older Betazoids.</dd><dd> <b>  Julian Bashir </b> : Well, that may be, but according to my tests, you show all the symptoms. Zanthi Fever is a virus which affects the empathic abilities of um... mature Betazoids. It causes them to project their emotions onto others.</dd><dd> <b>  Benjamin Sisko </b> : Then Mrs. Troi's amorous feelings for... [ <i>  knowing smile </i> ] someone on the station were being passed along to the people around her.</dd><dd> <b>  Julian Bashir </b> : Not everyone, only those within close proximity to her when she had an attack; and even then, there would have had to have been some pre-existing latent attraction.</dd><dd> <b>  Benjamin Sisko </b> : <i>  [concerned] </i> You're saying Dax--</dd><dd> <b>  Julian Bashir </b> : Only on a subconscious level. Best not think about it too much, if you ask me.</dd><dd> <b>  Lwaxana Troi </b> : I'm terribly sorry, Commander. I hope I haven't caused too much trouble.</dd><dd> <b>  Benjamin Sisko </b> : I'm sure no permanent harm was done. Right, Doctor?</dd><dd> <b>  Julian Bashir </b> : A simple wide-spectrum anti-viral agent should cure Mrs. Troi, and as for everyone else, well, they'll be back to normal in a day or two. Excuse me. <i>  [to Sisko] </i> I promised Nerys that I'd meet her in her quarters this evening.</dd><dd> <b>  Benjamin Sisko </b> : <i>  [stopping him] </i> I think you ought to postpone that visit... for a day or two.</dd><dd> <b>  Julian Bashir </b> : <i>  [disappointed sigh] </i></dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <i>  [Infatuated with Keiko] </i></dd><dd> <b>  Quark </b> : My ears tingle at the sight of you...</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Julian Bashir </b> : Nervous, Chief?</dd><dd> <b>  Miles O'Brien </b> : What are you talking about?</dd><dd> <b>  Julian Bashir </b> : That's your fifth cup of coffee in twenty minutes.</dd><dd> <b>  Miles O'Brien </b> : I didn't realize you were keeping track.</dd><dd> <b>  Julian Bashir </b> : Oh, nervous and irascible.</dd><dd> <b>  Miles O'Brien </b> : If you hadn't seen your wife and child for two months, you'd be irascible too.</dd><dd> <b>  Julian Bashir </b> : Well, believe me, I'm looking forward to Keiko and Molly's visit as much as you are.</dd><dd> <b>  Miles O'Brien </b> : Ha, I doubt that.</dd><dd> <b>  Julian Bashir </b> : How many games of raquetball have we played in the last two months?</dd><dd> <b>  Miles O'Brien </b> : I don't know. Fifteen, maybe twenty.</dd><dd> <b>  Julian Bashir </b> : Try seventy. I've been keeping track of that, too, and do you know what all those games have proved to me? That I'm a poor substitute for your wife.</dd><dd> <b>  Miles O'Brien </b> : I could have told you that sixty games ago.</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Kira Nerys </b> : Now, Jake, what can I do for you?</dd><dd> <b>  Jake Sisko </b> : I need some advice. See, there's this older woman and I think we're perfect for each other.</dd><dd> <b>  Kira Nerys </b> : Ah, and she doesn't.</dd><dd> <b>  Jake Sisko </b> : I don't know what she thinks.</dd><dd> <b>  Kira Nerys </b> : Well, Jake, my advice to you is to tell Marta how you feel. That way you'll know...</dd><dd> <b>  Jake Sisko </b> : Marta and I broke up.</dd><dd> <b>  Kira Nerys </b> : You broke up? Well then, who?</dd><dd> <b>  Jake Sisko </b> : <i>  You </i> .</dd><dd> <b>  Kira Nerys </b> : ...Me?</dd><dd> <b>  Jake Sisko </b> : I love you, Nerys. Wanna go out with me?</dd></dl>
+Season 3
+Fascination[3.10]
+<dl><dd> <b>  Quark </b> : You humans, you never learn. You let your women go out in public, hold jobs, wear clothing, and you wonder why your marriages fall apart.</dd></dl>
+Season 3
+Past Tense, Part I[3.11]
+<dl><dd> <b>  Julian Bashir </b> : Causing people to suffer because you hate them is terrible, but causing people to suffer because you have forgotten how to care... that's really hard to understand.</dd></dl>
+Season 3
+Past Tense, Part I[3.11]
+<dl><dd> <b>  Quark </b> : You can't free a fish from water.</dd></dl>
+Season 3
+Past Tense, Part II[3.12]
+<dl><dd> <b>  Biddle Coleridge </b> : You really gonna shoot me Bell? I don't think so</dd><dd> <b>  Benjamin Sisko </b> : Think again</dd><dd> <b>  Biddle Coleridge </b> : I thought we were on the same side here!</dd><dd> <b>  Benjamin Sisko </b> : We are but you get on my nerves, and I don't like your hat. Now put the gun down.</dd></dl>
+Season 3
+Past Tense, Part II[3.12]
+<dl><dd> <b>  Doctor Bashir </b> : There is one thing I don't understand, how could they have let things get so bad?</dd><dd> <b>  Benjamin Sisko </b> : That's a good question, Doctor, I wish I had an answer.</dd></dl>
+Season 3
+Heart of Stone[3.14]
+<dl><dd> <b>  Unidentified </b> : 18 - A Ferengi without profit is no Ferengi at all.</dd></dl>
+Season 3
+Destiny[3.15]
+<dl><dd> <b>  Jadzia Dax </b> : And as the 34th Rule of Acquisition states "Peace is good for business."</dd><dd> <b>  Quark </b> : That's the 35th Rule.</dd><dd> <b>  Jadzia Dax </b> : Oh, you're right. What's the 34th?</dd><dd> <b>  Quark </b> : "War is good for business." It's easy to get them confused.</dd></dl>
+Season 3
+Prophet Motive[3.16]
+<dl><dd> <b>  Unidentified </b> : Greed is eternal.</dd></dl>
+Season 3
+Distant Voices[3.18]
+<dl><dd> <b>  Julian Bashir </b> : And you, Chief, you represent my uncertainty and my doubt.</dd><dd> <b>  Miles O'Brien </b> : No I don't!</dd></dl>
+Season 3
+Improbable Cause[3.20]
+<dl><dd> <i>  [after Bashir tells the story of The Boy Who Cried Wolf] </i></dd><dd> <b>  Julian Bashir </b> : The point is, if you lie all the time, nobody's going to believe you, even when you're telling the truth.</dd><dd> <b>  Elim Garak </b> : Are you sure that's the point, doctor?</dd><dd> <b>  Julian Bashir </b> : Of course. What else could it be?</dd><dd> <b>  Elim Garak </b> : That you should never tell the same lie twice.</dd></dl>
+Season 3
+The Die is Cast[3.21]
+<dl><dd> <b>  Colonel Lovok </b> : The fleet has re-cloaked and is heading to our destination at Warp six.</dd><dd> <b>  Elim Garak </b> : Warp six? That's a little slow isn't it?</dd></dl>
+Season 3
+The Die is Cast[3.21]
+<dl><dd> <i>  [the Jem'Hadar is firing on their ship] </i></dd><dd> <b>  Enabran Tain </b> : How could this be? What could have happened?</dd><dd> <b>  Elim Garak </b> : I'm afraid the fault, dear Tain, is not in our stars, but in ourselves.</dd><dd> <b>  Enabran Tain </b> : What?</dd><dd> <b>  Elim Garak </b> : Something I learned from Doctor Bashir.</dd></dl>
+Season 3
+The Die is Cast[3.21]
+<dl><dd> <b>  Chief Miles O'Brien </b> : My mother always said, 'If you try to combine talking and eating, you'll end up doing neither very well.'</dd></dl>
+Season 3
+Facets[3.25]
+<dl><dd> <b>  Jadzia Dax </b> : If you want to know who you are, it's important to know who you've been.</dd></dl>
+Season 3
+The Adversary[3.26]
+<dl><dd> <b>  Kira Nerys </b> : Well, now that you have another pip on your collar, does that mean I can't disagree with you anymore?</dd><dd> <b>  Benjamin Sisko </b> : No. It just means I'm never wrong.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Chief O'Brien </b> : I never thought I'd say this, but right now I'm glad the Dominion's around. Otherwise, we'd never would have started these upgrades, let alone have them almost finished by now.</dd><dd> <b>  Major Kira </b> : There's something to be said for incentive</dd><dd> <b>  Chief O'Brien </b> : Uh-huh...I just hope everything works okay.</dd><dd> <b>  Major Kira </b> : You're saying you're not sure?</dd><dd> <b>  Chief O'Brien </b> : The way I see it there are two possibilities: either everything will be fine, or...</dd><dd> <b>  Major Kira </b> : Or?</dd><dd> <b>  Chief O'Brien </b> : [slightly hesitant] ...or we end up blowing the station to pieces [chuckles].</dd><dd> <b>  Major Kira </b> : [deadpan] Oh. [normal] Well, let's hope we don't have to find out.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Elim Garak </b> : I find this hand to hand combat really quite distasteful.</dd><dd> <b>  Gul Dukat </b> : I suppose you prefer the simplicity of an interrogation chamber?</dd><dd> <b>  Elim Garak </b> : You have to admit, it's much more civilized.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Benjamin Sisko </b> : Arm quantum torpedoes. Drop the cloak and raise shields. We're going in.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Benjamin Sisko </b> : I finally realized that it wasn't Starfleet that I was trying to get away from. I was trying to escape the pain I felt, after my wife's death. I thought I could take the uniform, wrap it around the pain and toss them both away. But it doesn't work like that. Running may help for a little while, but sooner or later the pain catches up with you, and the only way to get rid of it is to stand your ground and face it.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Julian Bashir </b> : I'm sure there's more than one Klingon who thinks that slaying a changeling would be worthy of a song or two.</dd><dd> <b>  Odo </b> : Doctor, if a Klingon were to kill me, I'd expect an entire opera on the subject.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Quark </b> :... This is my bar and I'm going to defend it</dd><dd> <b>  Odo </b> : Really? And how do you plan to do that?</dd><dd> <b>  Quark </b> : With this. (holds up a closed box)</dd><dd> <b>  Odo </b> : You're going to hit them with a box?</dd><dd> <b>  Quark </b> : No, this is my disruptor pistol, the one I used to carry in the old days when I was serving on that Ferengi freighter.</dd><dd> <b>  Odo </b> :I thought you were the ship's cook.</dd><dd> <b>  Quark </b> :That's right, and every member of that crew thought he was a food critic. If the Klingons try to get through these doors, I'll be ready for them. (Opens box, which is empty save for a note)</dd><dd> <b>  Odo </b> :(Takes the note, reads aloud) 'Dear Quark, I used parts of your disruptor to repair the replicators, will return them soon. -Rom'</dd><dd> <b>  Quark </b> :I will kill him!</dd><dd> <b>  Odo </b> :With what?</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Julian Bashir </b> : I can't believe you're not pressing charges.</dd><dd> <b>  Elim Garak </b> : Constable Odo and Captain Sisko expressed a similar concern, but really doctor, there was no harm done.</dd><dd> <b>  Julian Bashir </b> : They broke seven of your transverse ribs and fractured your clavicle.</dd><dd> <b>  Elim Garak </b> : Ah, but I got off several cutting remarks which no doubt did serious damage to their egos.</dd><dd> <b>  Julian Bashir </b> : Garak, this isn't funny.</dd><dd> <b>  Elim Garak </b> : I'm serious, doctor! Thanks to your ministrations I'm almost completely healed but the damage I did to them will last a lifetime.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <i>  [a group of Klingons invade the tailor's shop] </i></dd><dd> <b>  Elim Garak </b> : Well, let me guess. You're either lost, or desperately searching for a good tailor.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <i>  [Garak takes a drink of root beer] </i></dd><dd> <b>  Quark </b> : What do you think?</dd><dd> <b>  Elim Garak </b> : It's vile.</dd><dd> <b>  Quark </b> : I know. It's so bubbly and cloying and happy.</dd><dd> <b>  Elim Garak </b> : Just like the Federation.</dd><dd> <b>  Quark </b> : And you know what's really frightening? If you drink enough of it, you begin to like it.</dd><dd> <b>  Elim Garak </b> : It's insidious.</dd><dd> <b>  Quark </b> : Just like the Federation.</dd><dd> <i>  [pause] </i></dd><dd> <b>  Elim Garak </b> : Do you think they can save us?</dd><dd> <b>  Quark </b> : I hope so.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Benjamin Sisko </b> : We have had a year to prepare this station for a dominion attack, and we are more than ready. If you do not believe me feel free to scan this station.</dd><dd> <i>  [Both Martok and Gowron look to across the bridge to their sensor officer, who confirms it with a nod.] </i></dd><dd> <b>  Martok </b> : It is a illusion created by duranium shadows and thoron fields.</dd><dd> <b>  Benjamin Sisko </b> : It is no illusion.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Gowron </b> : Your shield are down, your station boarded, and more Klingon ships are on their way! Surrender while you can!</dd><dd> <b>  Benjamin Sisko </b> : I don't think so. My shields are holding, your boarding parties are contained, and my reinforcements are closer than yours.</dd></dl>
+Season 4
+The Way of the Warrior[4.1]
+<dl><dd> <b>  Benjamin Sisko </b> : So what do you want me to tell them. (referring to the Federation reinforcements) To stand down or coming in firing?</dd><dd> <b>  Gowron </b> : It is we who shall stand down.</dd><dd> <b>  Martok </b> : Agh Dogh!</dd><dd> <b>  Gowron </b> : Enough, I do not intend to hand victory to Dominion! But hear this. You have sided against us in battle! And THIS we do not forgive or forget!</dd></dl>
+Season 4
+The Visitor[4.3]
+<dl><dd> <b>  Benjamin Sisko </b> : I'm no writer, but if I were it seems to me I'd wanna poke my head up every once in a while and take a look around - see what's going on. It's life, Jake! You can miss it if you don't open your eyes!</dd></dl>
+Season 4
+The Visitor[4.3]
+<dl><dd> <b>  Jake Sisko </b> : This is the last chance I'm ever going to have to help you. [Jake fades in and out] [Pained] No!</dd><dd> <b>  Benjamin Sisko </b> : Jake it's over. It's not going to work.</dd><dd> <b>  Jake </b> : It has to.</dd><dd> <b>  Benjamin </b> : Let go, Jake! If not for yourself, then for me. You still have time to make a better life for yourself. Promise me you'll do that. [Pleading] Promise me!</dd></dl>
+Season 4
+The Visitor[4.3]
+<dl><dd> <b>  Jake </b> : Read the dedication.</dd><dd> <b>  Benjamin </b> : To my father, who's coming home. Thank you, but I, I don't understand.</dd><dd> <b>  Jake </b> : It was me, it was me all along. I've been dragging you through time like an anchor and now it's time to cut you lose.</dd><dd> <b>  Benjamin </b> : Jake, what are you saying?</dd><dd> <b>  Jake </b> : It won't be long now.</dd></dl>
+Season 4
+The Visitor[4.3]
+<dl><dd> <b>  Benjamin </b> : Jake, you didn't have to do this, not for me.</dd><dd> <b>  Jake </b> : For you, and the boy that I was. He needs you more than you know. Don't you see? We're going to get a second chance.</dd></dl>
+Season 4
+Hippocratic Oath[4.4]
+<dl><dd> <b>  Miles O'Brien </b> : Keiko only spends a few days at a time on the station. I'm the one living in those quarters, and if I want to set up a little workshop in the bedroom...</dd><dd> <b>  Julian Bashir </b> : You set up a workshop in the bedroom?</dd><dd> <b>  Miles O'Brien </b> : Yeah. I don't use it when she's visiting.</dd><dd> <b>  Julian Bashir </b> : No, of course not.</dd><dd> <b>  Miles O'Brien </b> : She says I'm trying to live like a bachelor again, that I'm expressing a subconscious desire to push her out of our quarters.</dd><dd> <b>  Julian Bashir </b> : Now that <i>  is </i> ridiculous.</dd><dd> <b>  Miles O'Brien </b> : That's what I said!</dd><dd> <b>  Julian Bashir </b> : I mean, if anything, by spending your free time in the bedroom, a place you intimately associate with Keiko, you are actually expressing...a desire to be closer to her...during her absence. It's quite touching, really.</dd><dd> <b>  Miles O'Brien </b> : Exactly! Exactly! See, you understand. Why can't she see that? Why can't she be more like...</dd><dd> <b>  Julian Bashir </b> : ...more like...?</dd><dd> <b>  Miles O'Brien </b> : <i>  [Beat] </i> ...uh, a man. Y-you know, more like a man.</dd><dd> <b>  Julian Bashir </b> : So...you wish that Keiko...was a man.</dd><dd> <b>  Miles O'Brien </b> : I wish I was on this trip with someone else, that's what I wish.</dd></dl>
+Season 4
+Hippocratic Oath[4.4]
+<dl><dd> <b>  Bashir </b> : What a lovely place. Smells like a garbage dump.</dd><dd> <b>  O'Brien </b> : I'm sorry I couldn't find a nicer place to crash-land. Should we try again?</dd></dl>
+Season 4
+Indiscretion[4.5]
+<dl><dd> <b>  Kira Nerys </b> : Tell me something... Who's Tora Ziyal? When I reactivated the Ravinok's computer, I downloaded the manifest. There were two civilians on board, in addition to the prisoners and the crew. Your... friend Tora Naprem and a Tora Ziyal, a thirteen year-old girl.</dd><dd> <b>  Gul Dukat </b> : I suppose you wouldn't believe me if I told you she was Naprem's sister?</dd><dd> <b>  Kira Nerys </b> : Ziyal is a Cardassian name.</dd></dl>
+Season 4
+Rejoined[4.6]
+<dl><dd> <b>  Jadzia Dax </b> : Quite an audience.</dd><dd> <b>  Lenara Kahn </b> : Seems a shame to disappoint them. We should probably do something.</dd><dd> <b>  Jadzia Dax </b> : We could get into a screaming match. Start throwing things at each other?</dd><dd> <b>  Lenara Kahn </b> : Not bad. Or I suppose we could throw ourselves at each other...profess our undying love and complete disregard for Trill society?</dd><dd> <b>  Jadzia Dax </b> : Doctor Pren would probably have a heart attack!</dd></dl>
+Season 4
+Rejoined[4.6]
+<dl><dd> <b>  Kira Nerys </b> : What do Klingons dream about?</dd><dd> <b>  Worf </b> : Things that will send cold chills down your spine and wake you in the middle of the night. No, it is better that you do not know. Excuse me. <i>  [He leaves] </i></dd><dd> <b>  Kira Nerys </b> : I can never tell when he's joking.</dd><dd> <b>  Lenara Kahn </b> : Perhaps it is better that we 'do not know'.</dd></dl>
+Season 4
+Rejoined[4.6]
+<dl><dd> <b>  Jadzia Dax </b> : Everyone's trying to... look out for us. Protect us from ourselves. But in the end, all that matters is how we feel... and what we do about it. Because either way, we're the ones who have to live with the consequences.</dd><dd> <b>  Lenara Kahn </b> : That's the tricky part though, isn't it? Living with the consequences. When I'm not with you, when you're not around, it's like part of me is missing. I want to be with you more than anything...But I don't think I can do this.</dd><dd> <b>  Jadzia Dax </b> : Can you really walk away from me... from us? After all this time we're back together. Don't throw that away.</dd><dd> <b>  Lenara Kahn </b> : I don't want to...Maybe I need more time...maybe if I go back to Trill for a while...think it over...I could always come back later...</dd><dd> <b>  Jadzia Dax </b> : I wish I could believe that. But ultimately, it comes down to this... if you feel about me the way I feel about you... you won't get on that transport tomorrow. And if you do leave... I think we both know you're never coming back.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <b>  Quark </b> : All I ask is a tall ship...and a load of contraband to fill her with.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <b>  Quark </b> : All hu-mons look alike.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <b>  Rom </b> : New customers are like razor-tooth gree-worms; they can be succulent, but sometimes they bite back.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <i>  [Rom has explained how he'll save their lives with a long string of technobabble] </i></dd><dd> <b>  Quark </b> : Rom! You're a genius!</dd><dd> <b>  Rom </b> : You think so?</dd><dd> <b>  Quark </b> : How should I know? I have no idea what you're talking about.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <b>  General Denning </b> : What do you know about atom bombs?</dd><dd> <b>  Quark </b> : My people have been watching your world for years. We know all about you: baseball, root beer, darts, atom bombs.</dd></dl>
+Season 4
+Little Green Men[4.8]
+<dl><dd> <i>  [Quark's cousin has tried to kill him earlier] </i></dd><dd> <b>  Quark </b> : I'm innocent, I tell ya! This is all a misunderstanding! Rom, get me a lawyer!</dd><dd> <b>  Rom </b> : I'll call Cousin Gaila. I'm sure he'll know a good one.</dd><dd> <b>  Quark </b> : <i>  [as he's being dragged away] </i> ROM, YOU IDIOT!</dd><dd> <b>  Rom </b> : <i>  [grins] </i> See you in a few weeks, brother!</dd></dl>
+Season 4
+The Sword of Kahless[4.9]
+<dl><dd> <b>  Quark </b> : You know what I like about Klingon stories? Nothing. Lots of people die and nobody makes a profit.</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <b>  Elim Garak </b> : Kiss the girl, get the key, they never taught me <i>  that </i> in the Obsidian Order</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <b>  Elim Garak </b> : You saved the day, by destroying the world.</dd><dd> <b>  Julian Bashir </b> : I'll bet they didn't teach you <i>  that </i> in the Obsidian Order.</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <i>  [Re: the decor in the holodeck, circa 1964] </i></dd><dd> <b>  Elim Garak </b> : Another decorator's nightmare. This era had a distinct lack of taste.</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <i>  [Bashir has shot at Garak, who is lightly bleeding from his neck] </i></dd><dd> <b>  Julian Bashir </b> : You'll be fine. It's just a flesh wound.</dd><dd> <b>  Elim Garak </b> : That was awfully close. What if you'd killed me?</dd><dd> <b>  Julian Bashir </b> : What makes you think I wasn't trying?</dd><dd> <b>  Elim Garak </b> : <i>  [Brightening] </i> Doctor, I believe there's hope for you yet.</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <b>  Caprice </b> : Thank you, Mister...Mister...</dd><dd> <b>  Julian Bashir </b> : Bashir. Julian Bashir.</dd><dd> <i>  [They kiss] </i></dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <b>  Elim Garak </b> : Is that your plan?</dd><dd> <b>  Julian Bashir </b> : Shut up!</dd></dl>
+Season 4
+Our Man Bashir[4.10]
+<dl><dd> <b>  Julian Bashir </b> : Baccarat and geology are my life.</dd></dl>
+Season 4
+Paradise Lost[4.12]
+<dl><dd> <b>  Nog </b> : I'm sorry captain, the names of Red Squad members are supposed to be secret.</dd><dd> <b>  Benjamin Sisko </b> : But you know who they are?</dd><dd> <b>  Nog </b> : He-he. It's not easy keeping secrets from a Ferengi, and I feel funny telling anyone else. Besides if they found out I told you, I'd never get in.</dd><dd> <b>  Benjamin Sisko </b> : Cadet, you are obviously under the mistaken impression that I am asking a favor. <i>  [increasingly hostile voice] </i> I want a name and I want it now and that is an order. Understood Mr. Nog?</dd><dd> <b>  Nog </b> : Yes sir.</dd></dl>
+Season 4
+Paradise Lost[4.12]
+<dl><dd> <i>  [Sisko interrogating a Cadet] </i></dd><dd> <b>  Cadet Shepherd </b> : ...and our role would go unrecognized, at least for now.</dd><dd> <b>  Benjamin Sisko </b> : Maybe if you had done your job right it would have. But you fouled it up didn't you? You cadets did some sloppy work - some <i>  damn </i> sloppy work.</dd></dl>
+Season 4
+Paradise Lost[4.12]
+<dl><dd> <i>  [Sisko enters Leyton's office pointing a phaser at him] </i></dd><dd> <b>  Admiral Leyton </b> : Are you planning on using that?</dd><dd> <b>  Benjamin Sisko </b> : Against a fellow officer? I hope not. <i>  [Takes off Leyton's combadge] </i> But I will have to ask for your resignation.</dd><dd> <b>  Admiral Leyton </b> : You'll forgive me if I don't leap at the opportunity.</dd><dd> <b>  Benjamin Sisko </b> : I have enough evidence to convict you of treason. We have Lieutenant Arriaga in custody on the Defiant and he is ready to admit that under your orders, he attached a subspace modulator to the relay satellite on the far side of the wormhole. That's why it was opening and closing at random.</dd><dd> <b>  Admiral Leyton </b> : Why would anyone want to do that?</dd><dd> <b>  Benjamin Sisko </b> : To make it look like a cloaked Dominion fleet was coming through the wormhole. That way when Earth's power relays were sabatoged, people would think that an invasion was imminent.</dd><dd> <b>  Admiral Leyton </b> : That's a very interesting theory, but it's not going to do you much good. Lieutenant Arriaga... isn't going to get to Earth. I've sent the Lakota to intercept the Defiant.</dd><dd> <b>  Benjamin Sisko </b> : You really think one Starfleet starship will fire on another?</dd><dd> <b>  Admiral Leyton </b> : As far as Benteen's crew is concerned, the Defiant isn't a Starfleet ship. They've been told that everyone on the Defiant's been replaced by shapeshifters.</dd></dl>
+Season 4
+Crossfire[4.13]
+<dl><dd> <b>  Kira Nerys </b> : I've been meaning to ask you, why don't you wear that belt anymore?</dd><dd> <b>  Odo </b> : I don't know. Didn't seem to serve a purpose. It's not as if I needed it to hold my pants up.</dd><dd> <b>  Kira Nerys </b> : I just thought it looked good on you, that's all.</dd><dd> <b>  Odo </b> : <i>  [Brightening considerably] </i> Really?</dd><dd> <b>  Kira Nerys </b> : <i>  [Smiles] </i> Really.</dd><dd> <i>  [Odo morphs his waist to include a belt on his uniform] </i></dd><dd> <b>  Odo </b> : Better?</dd><dd> <b>  Kira Nerys </b> : Much.</dd></dl>
+Season 4
+Crossfire[4.13]
+<dl><dd> <i>  [Talking to Odo about Kira] </i></dd><dd> <b>  Quark </b> : You've either got to tell her how you feel or forget about her and get on with your life.</dd></dl>
+Season 4
+Crossfire[4.13]
+<dl><dd> <b>  Miles O'Brien </b> : I don't know why Captain Sisko insists on me being here. I'm not a senior officer.</dd><dd> <b>  Julian Bashir </b> : Maybe he just wanted to see you in your dress uniform. It does show off your figure.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Tora Ziyal </b> : When I look at my father, I have a hard time seeing a murderer.</dd><dd> <b>  Kira Nerys </b> : And when I look at him, I have a hard time seeing anything else.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Gul Dukat </b> : What is this I hear about you and Shakaar?</dd><dd> <b>  Kira Nerys </b> : I don't know what you've heard.</dd><dd> <b>  Gul Dukat </b> : First it was Vedek Bareil and now it's the head of the Bajoran government. You do like powerful men, don't you?</dd><dd> <b>  Kira Nerys </b> : First of all, Shakaar's an old friend. Second of all, what <i>  business </i> is it of yours?</dd><dd> <b>  Gul Dukat </b> : Let's just say it's further incentive for me to regain my former position.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Tora Ziyal </b> : You don't like my father very much, do you?</dd><dd> <b>  Kira Nerys </b> : No, I don't.</dd><dd> <b>  Tora Ziyal </b> : I understand. He did some very bad things during the occupation.</dd><dd> <b>  Kira Nerys </b> : Yes, he did.</dd><dd> <b>  Tora Ziyal </b> : It bothers him, you know?</dd><dd> <b>  Kira Nerys </b> : <i>  [Disbelieving] </i> Does it?</dd><dd> <b>  Tora Ziyal </b> : Very much. He talks about it sometimes. He'd never admit it to anyone else, but he thinks the Occupation was a mistake.</dd><dd> <b>  Kira Nerys </b> : Somehow, I don't think he'd say that if the Cardassians had won.</dd><dd> <b>  Tora Ziyal </b> : Maybe not, but maybe losing made him a better person.</dd><dd> <b>  Kira Nerys </b> : Well, then a lot of innocent people died for his education.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Gul Dukat </b> : You judge me too harshly. Maybe I am seeking to regain my former position, one which I earned through hard work, dedication, and sacrifice, but redemption is not my sole motivation. I care about my people and I don't intend to allow the Klingons to get away with murdering them. I'm a much more complicated man than you give me credit for.</dd><dd> <b>  Kira Nerys </b> : Well, if that's true, I suppose I prefer simpler men.</dd><dd> <b>  Gul Dukat </b> : Like Shakaar? It amazes me that a woman as intelligent and sophisticated as you could be attracted to such a lumbering, simplistic fieldhand. I mean, what could the two of you possibly talk about?</dd><dd> <b>  Kira Nerys </b> : That lumbering fieldhand is the First Minister of Bajor, and he knows more about how to talk to me than you ever will.</dd><dd> <b>  Gul Dukat </b> : How can you be so sure? After all, you don't know me well enough to make a comparison.</dd><dd> <b>  Kira Nerys </b> : I don't want to know you well enough. And if you want to keep working with me, I suggest you stick to business.</dd><dd> <b>  Gul Dukat </b> : I'm sorry, Major. I didn't mean any harm. I was just making conversation.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Gul Dukat </b> : Major, is it my imagination, or do you have a hard time accepting compliments?</dd><dd> <b>  Kira Nerys </b> : I have a hard time accepting compliments from 'you'.</dd><dd> <b>  Gul Dukat </b> : Well, I'll try to restrain my enthusiasm <i>  [Leans in and whispers] </i> but I can't make you any promises.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <i>  [Dukat has asked Kira to join him in his fight against the Klingons] </i></dd><dd> <b>  Gul Dukat </b> : You know how to organize a resistance cell, you're an expert at terrorist tactics, you have close ties with Bajoran and Federation officials and besides all that, it would give you a chance to do what you were meant to do.</dd><dd> <b>  Kira Nerys </b> : No thanks. I've already got a job.</dd><dd> <b>  Gul Dukat </b> : What do you mean? On that space station? We both know your talents are being wasted there, co-ordinating docking assignments and leading training exercises. On Deep Space Nine you're nothing but a bureaucrat, an administrator. If you come with me, you can be a soldier again. Think about it, Major, the chance to fight again against a superior foe in a righteous cause, to protect a defeated and broken people from a cruel aggressor. You know as well as I do that if Cardassia falls, Bajor is next. Help me stop the Klingons before you become their next target.</dd><dd> <b>  Kira Nerys </b> : You're really serious about this.</dd><dd> <b>  Gul Dukat </b> : Absolutely! Look, Major, I'm not asking you to like me or to be my friend. I'm asking you to join me, to fight at my side. You know what I'm doing is right, and it's what you want to do as well. I know that our past makes it difficult for you to accept me as an ally. I also know that every fiber of your being is telling you to say "No, No, No," but somewhere I know there's a "Yes." You need to listen to that "Yes," not for my sake, not for Cardassia's, not even for Bajor's, but for your sake.</dd></dl>
+Season 4
+Return to Grace[4.14]
+<dl><dd> <b>  Gul Dukat </b> : Well, Major, it appears that whether you like it or not, our lives have become deeply intertwined.</dd><dd> <b>  Kira Nerys </b> : <i>  [Smiles] </i> That really pleases you, doesn't it?</dd><dd> <b>  Gul Dukat </b> : Pleases me? Major, it gives me reason to live.</dd></dl>
+Season 4
+Sons of Mogh[4.15]
+<dl><dd> <b>  (Altered)Kurn </b> : Are you part of my family?</dd><dd> <b>  Worf </b> : <i>  [Pauses a moment] </i> I have no family.</dd></dl>
+Season 4
+Bar Association[4.16]
+<dl><dd> <b>  Julian Bashir </b> : What you have there is a sebaceous cyst.</dd><dd> <b>  Miles O'Brien </b> : I know it's a cyst, but it's getting bigger.</dd><dd> <b>  Julian Bashir </b> : There's nothing to worry about. Dermatalogically speaking you're perfectly healthy.</dd><dd> <b>  Miles O'Brien </b> : Oh, I'm perfectly healthy, except I've got a disgusting cyst on the back of my neck. Now either I paint a nose, eyes, and mouth on it and pretend I've got two heads or you take it off.</dd><dd> <b>  Julian Bashir </b> : I'll get you some paint.</dd><dd> <b>  Miles O'Brien </b> : Julian! Get it off me!</dd><dd> <b>  Julian Bashir </b> : Alright, alright. But you know what they say: two heads are better than one.</dd><dd> <b>  Miles O'Brien </b> : Julian, I'm waiting!</dd></dl>
+Season 4
+Bar Association[4.16]
+<dl><dd> <b>  Unidentified </b> : 211 - Employees are the rungs on the ladder of success; don't hesitate to step on them.</dd></dl>
+Season 4
+Bar Association[4.16]
+<dl><dd> <b>  Rom </b> : Never allow doubt to tarnish your lust for latinum.</dd></dl>
+Season 4
+Accession[4.17]
+<dl><dd> <b>  Kira Nerys </b> : That's the thing about faith. If you don't have it, you can't understand it, and if you do have it, no explanation is necessary.</dd></dl>
+Season 4
+Accession[4.17]
+<dl><dd> <b>  Kira Nerys </b> : Who are you?</dd><dd> <b>  Akorem Laan </b> : I am the Emissary.</dd></dl>
+Season 4
+Accession[4.17]
+<dl><dd> <i>  [O'Brien's quarters are a mess. He begins to straighten up for his wife Keiko, who is returning after a year away] </i></dd><dd> <b>  Julian Bashir </b> : It is sort of a shame to pack this stuff away.</dd><dd> <b>  Miles O'Brien </b> : Wish we didn't have to.</dd><dd> <b>  Julian Bashir </b> : It's like a sculpture, a monument to your year as a bachelor.</dd><dd> <b>  Miles O'Brien </b> : I suppose it is.</dd><dd> <b>  Julian Bashir </b> : Who are we to dismantle this piece of art?</dd><dd> <b>  Miles O'Brien </b> : I don't know. But if we don't, Keiko will dismantle me.</dd></dl>
+Season 4
+Rules of Engagement[4.18]
+<dl><dd> <b>  Benjamin Sisko </b> : Part of being a captain is knowing when to smile. Make the troops happy! Even when it's the last thing in the world you want to do. Because they are your troops, and you have to take care of them.</dd><dd> <b>  Worf </b> : Life is a great deal more complicated in this red uniform.</dd><dd> <b>  Benjamin Sisko </b> : Wait till you get four pips on that collar. You'll wish you had gone into botany.</dd></dl>
+Season 4
+Hard Time[4.19]
+<dl><dd> <i>  [O'Brien is preparing to commit suicide] </i></dd><dd> <b>  Julian Bashir </b> : Chief?</dd><dd> <b>  Miles O'Brien </b> : Get outta here, Julian.</dd><dd> <b>  Julian Bashir </b> : You don't want to do this, Chief.</dd><dd> <b>  Miles O'Brien </b> : The hell I don't.</dd><dd> <b>  Julian Bashir </b> : Look, I don't claim to know what you're going through, but whatever it is, it's not worth dying for.</dd><dd> <b>  Miles O'Brien </b> : You don't understand at all. I'm not doing this for me. I'm doing it to protect Keiko and Molly and everyone else on this station.</dd><dd> <b>  Julian Bashir </b> : Protect us from what?</dd><dd> <b>  Miles O'Brien </b> : From me. I'm not the man I used to be. I'm dangerous. I nearly hit Molly today. All she wanted was a little attention, and I nearly hit her.</dd><dd> <b>  Julian Bashir </b> : But you didn't. You're a good man, Miles Edward O'Brien, and whatever it is you think you've done wrong, you don't deserve to die.</dd></dl>
+Season 4
+Shattered Mirror[4.20]
+<dl><dd> <b>  Mirror O'Brien </b> : Shields are down to 40 percent. That cruiser has us in weapons range. Do we make a run for it?</dd><dd> <b>  Captain Sisko </b> : We run all right...right at it.</dd><dd> <b>  Mirror O'Brien </b> : [sarcastic understanding] Ahh...pattern "suicide". <i>  (reference to earlier confusion over what "Pattern delta" was) </i></dd></dl>
+Season 4
+For the Cause[4.22]
+<dl><dd> <i>  [Eddington has joined the Maquis] </i></dd><dd> <b>  Michael Eddington </b> : I know you. I was like you once, but then I opened my eyes. Open your eyes, Captain. Why is the Federation so obsessed about the Maquis? We've never harmed you. And yet we're constantly arrested and charged with terrorism. Starships chase us through the Badlands, and our supporters are harassed and ridiculed. Why? Because we've left the Federation, and that's the one thing you can't accept. Nobody leaves paradise. Everyone should want to be in the Federation. Hell, you even want the Cardassians to join. You're only sending them replicators so that one day they can take their rightful place on the Federation Council. You know, in some ways you're worse than the Borg. At least they tell you about their plans for assimilation. You're more insidious... you assimilate people and they don't even know it.</dd><dd> <b>  Benjamin Sisko </b> : You know what, Mr. Eddington... I don't give a damn what you think of the Federation, or the Maquis, or anything else. All I know is that you betrayed your oath, your duty and me. And if it takes me the rest of my life, I'll see you standing before a court-martial that'll break you and send you to a penal colony where you'll spend the rest of your days growing old and wondering whether a ship full of replicators was really worth it.</dd></dl>
+Season 4
+To the Death[4.23]
+<dl><dd> <b>  Weyoun </b> : Captain Benjamin Sisko. Your psychological profile is required reading for Vorta Field Supervisors. I probably know things about you that you don't know yourself.</dd><dd> <b>  Benjamin Sisko </b> : If you're trying to impress me, you can forget it.</dd><dd> <b>  Weyoun </b> : What would you say if I offered to make you absolute ruler of the Federation? No President, no Starfleet Chief of Staff, just you.</dd><dd> <b>  Benjamin Sisko </b> : I'd say your psychological profile of me isn't as good as you think.</dd></dl>
+Season 4
+To the Death[4.23]
+<dl><dd> <b>  Worf </b> : It has come to my attention that Omet'iklan has made a threat against your life.</dd><dd> <b>  Benjamin Sisko </b> : I didn't think it was public knowledge.</dd><dd> <b>  Worf </b> : You told Commander Dax.</dd><dd> <b>  Benjamin Sisko </b> : Well, that explains it.</dd></dl>
+Season 4
+To the Death[4.23]
+<dl><dd> <i>  [Dax is trying to work, but Virak'kara is staring at her] </i></dd><dd> <b>  Jadzia Dax </b> : You've been staring at me for the last hour.</dd><dd> <b>  Virak'kara </b> : You are in my unit. I must learn all I can about you if we are to survive.</dd><dd> <b>  Jadzia Dax </b> : Maybe you should stop for a while, get some sleep.</dd><dd> <b>  Virak'kara </b> : We don't sleep.</dd><dd> <b>  Jadzia Dax </b> : Well, then, something to eat?</dd><dd> <b>  Virak'kara </b> : The white provides all we need.</dd><dd> <b>  Jadzia Dax </b> : No sleep, no food... I'm glad I'm not a Jem'Hadar woman.</dd><dd> <b>  Virak'kara </b> : There are no Jem'Hadar women.</dd><dd> <b>  Jadzia Dax </b> : So, what do you do? Lay eggs?</dd><dd> <b>  Virak'kara </b> : Jem'Hadar are bred in birthing chambers. We can fight within three days of our emergence.</dd><dd> <b>  Jadzia Dax </b> : So, no sleep, no food, no women. After forty or fifty years of that, I'd be ready to kill someone too.</dd><dd> <b>  Virak'kara </b> : No Jem'Hadar has ever lived fifty years. Most of us only last a few years in battle.</dd><dd> <b>  Jadzia Dax </b> : Well, how old are you?</dd><dd> <b>  Virak'kara </b> : I am eight.</dd><dd> <b>  Jadzia Dax </b> : I would have thought you were at least fifteen.</dd><dd> <b>  Virak'kara </b> : Few Jem'Hadar live that long. Those of us that reach twenty are considered honored elders.</dd><dd> <i>  [leans in] </i></dd><dd> <b>  Virak'kara </b> : How old are you?</dd><dd> <b>  Jadzia Dax </b> : I stopped counting after three hundred.</dd><dd> <b>  Virak'kara </b> : ...You don't look it.</dd><dd> <b>  Jadzia Dax </b> : Thank you.</dd></dl>
+Season 4
+To the Death[4.23]
+<dl><dd> <b>  Omet'iklan </b> : I am First Omet'iklan, and I am dead. As of this moment, we are all dead. We go into battle to reclaim our lives. This we do gladly, for we are Jem'Hadar. Remember, victory is life.</dd><dd> <b>  Miles O'Brien </b> : I am Miles Edward O'Brien. I am very much alive and I intend to stay that way.</dd><dd> <b>  Benjamin Sisko </b> : Amen!</dd></dl>
+Season 4
+The Quickening[4.24]
+<dl><dd> <b>  Julian Bashir </b> : I was looking forward to tomorrow - to see Kira again, asking, "How was the nebula? And by the way, I cured that blight thing those people had."</dd><dd> <b>  Jadzia Dax </b> : It's not a crime to believe in yourself.</dd><dd> <b>  Julian Bashir </b> : These people believed in me, and look where it got them. Trevian was right: there is no cure. The Dominion made sure of that, and I was so arrogant, I thought I could find one in a week!</dd><dd> <b>  Jadzia Dax </b> : Maybe it was arrogant to think that. But it's even more arrogant to think that there isn't a cure just because <i>  you </i> couldn't find it.</dd></dl>
+Season 4
+Body Parts[4.25]
+<dl><dd> <i>  [Garak sneaks up behind a holographic 'Quark' and breaks his neck] </i></dd><dd> <b>  Elim Garak </b> : Well, How was that?</dd><dd> <b>  Quark </b> : Awful! Did you hear that sound of bone snapping? I don't want that to be the last sound I hear!</dd><dd> <b>  Elim Garak </b> : It wasn't that loud.</dd><dd> <b>  Quark </b> : You don't have these ears.</dd><dd> <b>  Elim Garak </b> : We're running out of options here Quark. You didn't want to be phasered because you need a body. The knife was too savage, the nerve gas smelled bad, hanging took too long, and poison...what was was wrong with poison?</dd><dd> <b>  Quark </b> : It doesn't work. If I know the food is poisoned I won't eat it.</dd><dd> <b>  Elim Garak </b> : For someone who wants to die you're strangely intent on living.</dd><dd> <b>  Quark </b> : I'm going to die, don't you worry about that. I just don't want to see it coming, or hear it, or taste it, or smell it.</dd><dd> <b>  Elim Garak </b> : I see. You want to be surprised.</dd><dd> <b>  Quark </b> : I want to wake up in the divine treasure and have no idea how I got there.</dd><dd> <b>  Elim Garak </b> : That can be arranged.</dd></dl>
+Season 4
+Body Parts[4.25]
+<dl><dd> <b>  Unidentified </b> : 17 - A contract is a contract is a contract...But only between Ferengi.</dd></dl>
+Season 4
+Body Parts[4.25]
+<dl><dd> <b>  Grand Nagus Gint </b> : Never be afraid to mislabel a product.</dd></dl>
+Season 4
+Broken Link[4.26]
+<dl><dd> <b>  Miles O'Brien </b> : It's funny. I've served on half a dozen different ships and none of them have had cloaking devices except the Defiant. Now that we're not using it, I feel naked.</dd><dd> <b>  Worf </b> : It is disconcerting, to say the least.</dd><dd> <b>  Benjamin Sisko </b> : Gentlemen, I feel the same breeze you do.</dd><dd> <i>  [Dax smiles] </i></dd><dd> <b>  Miles O'Brien </b> : What are you smiling at?</dd><dd> <b>  Jadzia Dax </b> : I don't know, I guess it's just being in the same room as so many naked men.</dd></dl>
+Season 5
+Apocalypse Rising[5.1]
+<dl><dd> <b>  Benjamin Sisko </b> : Brag all you want, but don't get between me and the bloodwine!</dd></dl>
+Season 5
+Apocalypse Rising[5.1]
+<dl><dd> <b>  Miles O'Brien </b> : So, let me get this straight: all we have to do is get past an enemy fleet, avoid a tachyon detection grid, beam into the middle of Klingon headquarters and avoid the Brotherhood of the Sword long enough to set these things up and activate them in front of Gowron?</dd><dd> <b>  Worf </b> : If we succeed, there will be many songs sung in our honor.</dd><dd> <b>  Miles O'Brien </b> : Let's hope we're there to hear them.</dd></dl>
+Season 5
+Apocalypse Rising[5.1]
+<dl><dd> <b>  Gul Dukat </b> : Major, I must say I'm shocked. You use my daughter to lure me here, you're asking me to risk my ship on some fool's errand into the Klingon Empire, and you're pregnant. I hope First Minister Shakaar appreciates what a lucky man he is.</dd><dd> <b>  Kira Nerys </b> : Shakaar's not the father.</dd><dd> <b>  Gul Dukat </b> : Then who is?</dd><dd> <b>  Kira Nerys </b> : Chief O'Brien.</dd></dl>
+Season 5
+Apocalypse Rising[5.1]
+<dl><dd> <b>  Odo </b> : <i>  (about bloodwine) </i> It's a pity it doesn't have any bubbles.</dd></dl>
+Season 5
+Apocalypse Rising[5.1]
+<dl><dd> <b>  Miles O'Brien </b> : I hate prototypes.</dd></dl>
+Season 5
+...Nor the Battle to the Strong[5.4]
+<dl><dd> <b>  Benjamin Sisko </b> : It takes courage to look inside yourself and even more courage to write it for other people to see.</dd></dl>
+Season 5
+The Assignment[5.5]
+<dl><dd> <i>  [Preparing for a top secret assignment] </i></dd><dd> <b>  Rom </b> : I won't even tell them my name.</dd><dd> <b>  Miles O'Brien </b> : Rom, everyone on the station knows your name.</dd><dd> <b>  Rom </b> : Well...I won't confirm it.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  DTI Agent Dulmer </b> : Captain, why'd you take The Defiant back in time?</dd><dd> <b>  Benjamin Sisko </b> : It was an accident.</dd><dd> <b>  DTI Agent Lucsly </b> : So you're not contending it was a predestination paradox.</dd><dd> <b>  Dulmer </b> : A time loop? That you were meant to go back into the past?</dd><dd> <b>  Sisko </b> : No.</dd><dd> <b>  Dulmer </b> : Good.</dd><dd> <b>  Lucsly </b> : We hate those. So... what happened?</dd><dd> <b>  Sisko </b> : This may take some time.</dd><dd> <b>  Dulmer </b> : Is that a joke?</dd><dd> <b>  Sisko </b> : No.</dd><dd> <b>  Lucsly </b> : Good.</dd><dd> <b>  Dulmer </b> : We hate those too.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Miles O'Brien </b> : Don't take it personally, Worf.</dd><dd> <b>  Julian Bashir </b> : I... rather like the way you smell.</dd><dd> <b>  O'Brien </b> : Yeah, sort of... earthy, peaty aroma.</dd><dd> <b>  Bashir </b> : With a touch of... lilac.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Sisko </b> : The Enterprise.</dd><dd> <b>  Dulmer </b> : Be specific, Captain, <i>  which </i> Enterprise? There have been five.</dd><dd> <b>  Lucsly </b> : Six.</dd><dd> <b>  Sisko </b> : This was the first Enterprise. Constitution class.</dd><dd> <i>  [both agents sit back, astonished] </i></dd><dd> <b>  Dulmer </b> : His ship.</dd><dd> <b>  Lucsly </b> : James T. Kirk.</dd><dd> <b>  Sisko </b> : <i>  [grins] </i> The one and only.</dd><dd> <b>  Dulmer </b> : <i>  Seventeen temporal violations </i> ; the biggest file on record.</dd><dd> <b>  Lucsly </b> : The man was a menace.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Bashir </b> : I'm a doctor, not an historian.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Sisko </b> : In the old days, operations officers wore red, command officers wore gold.</dd><dd> <b>  Jadzia Dax </b> : And women wore less. <i>  [shows off her outfit] </i></dd><dd> <b>  Bashir </b> : ...I think I'm going to like history.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Worf </b> : <i>  [on the appearance of 23rd-century Klingons] </i> We do not discuss it with outsiders.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Montgomery Scott </b> : Laddie... don't you think you should... rephrase that?</dd><dd> <b>  Korax </b> : You're right. I should. I didn't mean to say that the <i>  Enterprise </i> should be hauling garbage. I meant to say that it should be hauled away <i>  as </i> garbage.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  Leonard McCoy </b> : <i>  [about tribbles] </i> They're <i>  born </i> pregnant.</dd></dl>
+Season 5
+Trials and Tribble-ations[5.6]
+<dl><dd> <b>  James T. Kirk </b> : I want these things off the ship. I don't care if it takes every man we've got. I want them off the ship.</dd></dl>
+Season 5
+Let He Who Is Without Sin...[5.7]
+<dl><dd> <b>  Worf </b> : Do not hug me.</dd></dl>
+Season 5
+Things Past[5.8]
+<dl><dd> <b>  Odo </b> : Interesting that a simple tailor should just happen to have a high-level security code.</dd><dd> <b>  Elim Garak </b> : Yes, isn't it? And if my nose didn't hurt so much I'd tell you a fascinating story about how I came to possess it.</dd></dl>
+Season 5
+Things Past[5.8]
+<dl><dd> <b>  Odo </b> : I see I'm going to have to add the word "pickpocket" to your resume.</dd><dd> <b>  Elim Garak </b> : It's only a hobby.</dd></dl>
+Season 5
+The Ascent[5.9]
+<dl><dd> <b>  Quark </b> : I'm not trying to rescue you, I'm taking you along as emergency rations. If you die, I'm going to eat you.</dd></dl>
+Season 5
+The Ascent[5.9]
+<dl><dd> <b>  Nog </b> : I'll do the cleaning on the odd-numbered days, you do the cleaning on the even days.</dd><dd> <b>  Jake Sisko </b> : We're going to clean <i>  every </i> day?</dd><dd> <b>  Nog </b> : No, just the odd and even ones.</dd></dl>
+Season 5
+The Ascent[5.9]
+<dl><dd> <b>  Nog </b> : Healthy body, healthy mind.</dd><dd> <b>  Jake Sisko </b> : Please, Nog. No cliches before breakfast.</dd></dl>
+Season 5
+Rapture[5.10]
+<dl><dd> <b>  Worf </b> : There is an ancient Klingon proverb that says, "You cannot loosen a man's tongue with root beer."</dd></dl>
+Season 5
+The Darkness and the Light[5.11]
+<dl><dd> <b>  Worf </b> : I do not smirk. But if I did, this would be a good opportunity.</dd></dl>
+Season 5
+The Darkness and the Light[5.11]
+<dl><dd> <b>  Worf </b> : Quark may lend you the money, but remember Rule of Acquisition Number 111: "Treat people in your debt like family-- exploit them."</dd></dl>
+Season 5
+The Begotten[5.12]
+<dl><dd> <b>  Dr. Mora Pol </b> : By the Prophets, Odo I wasn't even sure you were a life-form.</dd><dd> <b>  Odo </b> : I wasn't sure about you either.</dd></dl>
+Season 5
+For the Uniform[5.13]
+<dl><dd> <i>  [Sisko is trying to arrest a former security officer turned traitor] </i></dd><dd> <b>  Odo </b> : Sir, have you ever reminded Starfleet Command that they stationed Eddington here because they didn't trust me?</dd><dd> <b>  Benjamin Sisko </b> : No.</dd><dd> <b>  Odo </b> : Please do.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <i>  [Opening dedication text] </i></dd><dd> In memory of Derek Garth</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Tora Ziyal </b> : It's just that... you're intelligent and cultured... and kind.</dd><dd> <b>  Elim Garak </b> : My dear, you're young so I realize that you're a poor judge of character.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Elim Garak </b> : <i>  [to Gul Dukat] </i> You do have a lovely daughter. She must take after her mother.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Elim Garak </b> : Because lying is a skill like any other and if you want to maintain a level of excellence, you have to practice constantly.</dd><dd> <b>  Worf </b> Practice on someone else.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Elim Garak </b> : I'd like to get my hands on that fellow Earl Grey and tell him a thing or two about tea leaves.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Enabran Tain </b> : You have always been a weakness I can't afford.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Worf </b> : At the first sign of betrayal I will kill him, but I promise to return the body intact.</dd><dd> <b>  Benjamin Sisko </b> : I assume that's a joke.</dd><dd> <b>  Worf </b> : We will see.</dd></dl>
+Season 5
+In Purgatory's Shadow[5.14]
+<dl><dd> <b>  Elim Garak </b> : You've come a long way from the naive young man I met five years ago. You've become distrustful and suspicious. It suits you.</dd><dd> <b>  Julian Bashir </b> : I had a good teacher.</dd></dl>
+Season 5
+By Inferno's Light[5.15]
+<dl><dd> <b>  Elim Garak </b> : I only wish I were still a member of the Obsidian Order. This would make a wonderful interrogation chamber. Tight quarters. No air, bad lighting, random electric shocks. It's perfect.</dd></dl>
+Season 5
+By Inferno's Light[5.15]
+<dl><dd> <b>  Gul Dukat </b> : <i>  [To Kira] </i> You and me on the same side? It never seemed quite right, did it?</dd></dl>
+Season 5
+By Inferno's Light[5.15]
+<dl><dd> <b>  Gul Dukat </b> : <i>  [speaking to his people] </i> You might ask, should we fear joining the Dominion? And I answer you: Not in the least. We should embrace the opportunity. The Dominion recognizes us for what we are, the true leaders of the Alpha Quadrant. And now that we are joined together, equal partners in all endeavors, the only people with anything to fear will be our enemies. My oldest son's birthday is in five days. To him, and to Cardassians everywhere, I make the following pledge: By the time his birthday dawns, there will not be a single Klingon alive inside Cardassian territory. Or a single Maquis colony left within our borders. Cardassia will be made whole, all that we have lost will be ours again. And anyone who stands in our way will be destroyed. This I vow with my life's blood, for my son, for all our sons.</dd></dl>
+Season 5
+By Inferno's Light[5.15]
+<dl><dd> <b>  Martok </b> : There is no greater enemy than one's own fears.</dd></dl>
+Season 5
+By Inferno's Light[5.15]
+<dl><dd> <b>  Quark </b> : The Jem Hadar don't eat, don't drink, and they don't have sex. And if that wasn't bad enough, the Founders don't eat, and don't drink, and they don't have sex, either. Which, between you and me, makes my financial future less than promising.</dd><dd> <b>  Ziyal </b> : It might not be so bad. For all we know the Vorta might be gluttonous, alcoholic sex maniacs.</dd></dl>
+Season 5
+Doctor Bashir, I Presume?[5.16]
+<dl><dd> <i>  [Leeta and Rom have just professed their love for each other] </i></dd><dd> <b>  Leeta </b> : Oh, doctor, I'm sorry.</dd><dd> <b>  Lewis Zimmerman </b> : No, don't be. True love should always win. <i>  [Unconvincingly] </i> I'm happy for you. Really.</dd><dd> <b>  Leeta </b> : You're a sweet, wonderful, and brilliant man. There's someone out there for you, doctor. I know it.</dd><dd> <b>  Lewis Zimmerman </b> : I don't think so. Perhaps I'm better suited to a life of solitary research...</dd><dd> <i>  [attractive alien woman walks by] </i> ...and dedication to my chosen field of study. Don't worry about me, I'll be fine. Goodbye.</dd><dd> <b>  Leeta </b> : <i>  [focused on Rom] </i> Bye.</dd><dd> <b>  Lewis Zimmerman </b> : <i>  [to alien woman] </i> Excuse me, are you familiar with an ancient text known as the Kama Sutra?</dd></dl>
+Season 5
+Doctor Bashir, I Presume?[5.16]
+<dl><dd> <i>  [O'Brien wins at darts] </i></dd><dd> <b>  Julian Bashir </b> : So I guess it's your game again.</dd><dd> <b>  Miles O'Brien </b> : What's that, five in a row?</dd><dd> <b>  Julian Bashir </b> : At least.</dd><dd> <b>  Miles O'Brien </b> : Wait a minute. You haven't been letting me win, have you?</dd><dd> <b>  Julian Bashir </b> : What makes you think that?</dd><dd> <b>  Miles O'Brien </b> : You said your hand-eye coordination had been genetically enhanced.</dd><dd> <b>  Julian Bashir </b> : Well, maybe I have been letting you win, a little bit.</dd><dd> <b>  Miles O'Brien </b> : I don't believe it. I don't need you to patronize me. I can play at your level.</dd><dd> <b>  Julian Bashir </b> : I never said you couldn't.</dd><dd> <b>  Miles O'Brien </b> : Well, play then. Really play!</dd><dd> <i>  [Bashir quickly throws his darts. O'Brien sees Bashir has thrown three straight bulls-eyes] </i></dd><dd> <b>  Miles O'Brien </b> : Alright, from now on, you play from over here,</dd><dd> <i>  [moves Bashir behind a pole] </i></dd><dd> <b>  Miles O'Brien </b> : I play from up here,</dd><dd> <i>  [stands in his usual spot] </i></dd><dd> <b>  Miles O'Brien </b> : If that doesn't work, we'll try a blindfold.</dd></dl>
+Season 5
+Ties of Blood and Water[5.19]
+<dl><dd> <b>  Gul Dukat </b> : Major. Sorry to disturb you.</dd><dd> <b>  Kira Nerys </b> : Sorry enough to leave?</dd></dl>
+Season 5
+Ties of Blood and Water[5.19]
+<dl><dd> <b>  Odo </b> : There's enough poison in this bottle to kill twenty Cardassians.</dd></dl>
+Season 5
+Ties of Blood and Water[5.19]
+<dl><dd> <b>  Weyoun </b> : <i>  (chuckling) </i> Oh, yes, that is quite toxic.</dd><dd> <b>  Gul Dukat </b> : Are you insane?</dd><dd> <b>  Weyoun </b> : The Vorta are immune to most poisons. Comes in very handy when you're a diplomat.</dd></dl>
+Season 5
+Ferengi Love Songs[5.20]
+<dl><dd> <b>  Zek </b> : Sometimes the only thing more dangerous than a question is an answer.</dd><dd> <b>  Quark </b> : Rule of Acquisition 208.</dd></dl>
+Season 5
+Ferengi Love Songs[5.20]
+<dl><dd> <b>  Rom </b> : Females and finances don't mix. Rule of Acquisition 94.</dd></dl>
+Season 5
+Ferengi Love Songs[5.20]
+<dl><dd> <b>  Rom </b> : Latinum lasts longer than lust. Rule of Acquisition 229.</dd></dl>
+Season 5
+Soldiers of the Empire[5.21]
+<dl><dd> <b>  Worf </b> : I am Worf, son of Mogh. I now take my place as first officer. I serve the captain, but I stand for the crew.</dd></dl>
+Season 5
+Soldiers of the Empire[5.21]
+<dl><dd> <b>  Worf </b> : It is clear to me that none of you are worthy of my blood or my life, but I will stand for you.</dd></dl>
+Season 5
+Soldiers of the Empire[5.21]
+<dl><dd> <b>  Worf </b> : May glory and honor follow you on your journey.</dd></dl>
+Season 5
+Children of Time[5.22]
+<dl><dd> <i>  [Worf's young descendent is awestruck by him] </i></dd><dd> <b>  Young boy </b> : Are you the son of Mogh?</dd><dd> <b>  Worf </b> : Yes.</dd><dd> <b>  Young boy </b> : Is it true you can kill someone just by looking at them?</dd><dd> <b>  Worf </b> : Only when I am angry.</dd></dl>
+Season 5
+Children of Time[5.22]
+<dl><dd> <b>  Worf </b> : Our enemy is time</dd></dl>
+Season 5
+Blaze of Glory[5.23]
+<dl><dd> <i>  (Sisko and Eddington are being attacked by Jem'Hadar) </i></dd><dd> <b>  Sisko </b> : Take this <i>  (phaser) </i> , I'll go around, try to draw their fire. Should be able to catch them off-guard when they go after me.</dd><dd> <b>  Eddington </b> : I can barely see two meters in front of me. How will I know what I'm aiming at?</dd><dd> <b>  Sisko </b> :I'll be the one holding the pipe.</dd><dd> <b>  Eddington </b> : <i>  (sarcastic) </i> Attacking 2 Jem'Hadar soldiers with a pipe. That's a brilliant plan.</dd><dd> <b>  Sisko </b> : It could be worse</dd><dd> <b>  Eddington </b> : I know; it could be me holding the pipe.</dd><dd> <b>  Sisko </b> : Exactly. <i>  (runs off with pipe) </i></dd></dl>
+Season 5
+Blaze of Glory[5.23]
+<dl><dd> <i>  (After Eddington shoots a Jem'Hadar about to kill Sisko) </i></dd><dd> <b>  Sisko </b> : You have sharp eyes.</dd><dd> <b>  Eddington </b> : Not really; I just which of you was knocked down first and then I shot the one still standing.</dd><dd> <b>  Sisko </b> : Thank you for your vote of confidence.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Jake Sisko </b> : We work to better ourselves and the rest of humanity.</dd><dd> <b>  Nog </b> : What does that mean exactly?</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Dr. Elias Giger </b> : I haven't done anything wrong and I won't be hounded by you and your soulless minions of orthodoxy.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Dr. Elias Giger </b> : Since you are not, in fact working for the soulless minions of orthodoxy that have hounded my work and plagued my existence I have decided to open negotiations regarding the sale of a mint condition 1951 Willie Mays rookie card-- without the original packaging or chewing gum.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Dr. Elias Giger </b> : And while the soulless minions of orthodoxy refuse to follow up on his important research I could hear the clarion call of destiny ringing in my ears.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Nog </b> : Maybe the soulless minions of orthodoxy finally caught up with him.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Dr. Elias Giger </b> : You turned me over to these soulless minions of orthodoxy.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <i>  [Working for a scientist named Geiger, and also searching for a missing teddy bear] </i></dd><dd> <b>  Jake Sisko </b> : We're going to beard the lion in its den.</dd><dd> <b>  Nog </b> : <i>  [Confused] </i> Lions, Geigers, bears...</dd><dd> <b>  Jake Sisko </b> : Oh my.</dd></dl>
+Season 5
+In the Cards[5.25]
+<dl><dd> <b>  Benjamin Sisko </b> : Even in the darkest moments, you can always find something that will make you smile.</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Rom </b> : <i>  [to Sisko] </i> Would you marry me? I mean us. I mean, would you perform our wedding ceremony?</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Benjamin Sisko </b> : Just don't forget the 190th Rule of Acquisition.</dd><dd> <b>  Nog </b> : "Hear all, trust nothing."</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Odo </b> : You'd shoot a man in the back?</dd><dd> <b>  Elim Garak </b> : Well, it's the safest way, isn't it?</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Benjamin Sisko </b> : When I first took command of this post all I wanted was to be somewhere else... anywhere but here. But now, five years later this has become my home, and you have become my family. And leaving this station-- leaving you-- is one of the hardest things I've ever had to do. But this war isn't over yet. I want you to know that while we were keeping the Dominion occupied, a Starfleet-Klingon task force crossed the border into Cardassia and destroyed the Dominion shipyards on Torros III. Your sacrifices... our sacrifices made that victory possible. But no victory can make this moment any easier for me. And I promise, I will not rest until I stand with you again... here... in this place where I belong.</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Quark </b> : All I know is that any marriage where the female is allowed to speak and wear clothing is doomed to failure.</dd></dl>
+Season 5
+Call to Arms[5.26]
+<dl><dd> <b>  Weyoun </b> : It would appear Captain Sisko removed or destroyed everything of value.</dd><dd> <b>  Gul Dukat </b> : <i>  [Noticing Sisko's baseball] </i> Not everything.</dd><dd> <b>  Weyoun </b> : What is that?</dd><dd> <b>  Gul Dukat </b> : A message from Sisko.</dd><dd> <b>  Weyoun </b> : I don't understand.</dd><dd> <b>  Gul Dukat </b> : He's letting me know... he'll be back.</dd></dl>
+Season 6
+A Time to Stand[6.1]
+<dl><dd> <b>  Kira Nerys </b> : Are you so deluded, you actually believe that we're going to have some sort of intimate relationship?</dd><dd> <b>  Gul Dukat </b> : We already do.</dd></dl>
+Season 6
+A Time to Stand[6.1]
+<dl><dd> <b>  Jadzia Dax </b> : First we shed blood, then we feast.</dd><dd> <b>  Worf </b> : As it should be.</dd></dl>
+Season 6
+A Time to Stand[6.1]
+<dl><dd> <b>  Jadzia Dax </b> : So, what do you plan on doing for the next couple of hours?</dd><dd> <b>  Benjamin Sisko </b> : I hadn't given it much thought.</dd><dd> <b>  Jadzia Dax </b> : Maybe now would be a good time to contact your father.</dd><dd> <b>  Benjamin Sisko </b> : Maybe.</dd><dd> <b>  Jadzia Dax </b> : Benjamin, you haven't spoken to him for months. And Jake is his grandson.</dd><dd> <b>  Benjamin Sisko </b> : How do I explain that I evacuated every Federation citizen off Deep Space Nine except his grandson?</dd><dd> <b>  Jadzia Dax </b> : You'll think of something. You always do.</dd></dl>
+Season 6
+Rocks and Shoals[6.2]
+<dl><dd> <b>  Benjamin Sisko </b> : Do you really want to give up your life for "the order of things"?</dd><dd> <b>  Remata'Klan </b> : It is not my life to give, and it never was.</dd></dl>
+Season 6
+Rocks and Shoals[6.2]
+<dl><dd> <b>  Nog </b> : I've learned never to turn my back on you.</dd><dd> <b>  Elim Garak </b> : Cadet, there may be hope for you yet.</dd></dl>
+Season 6
+Rocks and Shoals[6.2]
+<dl><dd> <b>  Keevan </b> : I assume you've brought along one of those famed Starfleet engineers who can turn rocks into replicators.</dd></dl>
+Season 6
+Sons and Daughters[6.3]
+<dl><dd> <b>  Martok </b> : I tell you Worf, war is much more fun when you are <i>  winning </i> . Defeat makes my wounds ache.</dd></dl>
+Season 6
+Sons and Daughters[6.3]
+<dl><dd> <b>  Martok </b> : You see. They <i>  (the crew) </i> have accepted him.</dd><dd> <b>  Worf </b> : The have accepted him <i>  (Alexander) </i> , as the ship's fool</dd></dl>
+Season 6
+Sons and Daughters[6.3]
+<dl><dd> <b>  Alexander </b> : Do you ask this of every crew member?</dd><dd> <b>  Martok </b> : I do not need to ask them. I look into their eyes and I know they have answered the call of Kahless. I ask you one more time, why are you here?</dd><dd> <b>  Alexander </b> : I too have answered the call of Kahless.</dd><dd> <b>  Martok </b> : Lie to yourself if you must, but we both know you have not.</dd></dl>
+Season 6
+Behind the Lines[6.4]
+<dl><dd> <b>  Benjamin Sisko </b> : We will fight, and we will keep on fighting, until we can't fight anymore!</dd></dl>
+Season 6
+Favor the Bold[6.5]
+<dl><dd> <b>  Benjamin Sisko </b> : There's an old saying -- fortune favors the bold. Well, I guess we're about to find out...</dd></dl>
+Season 6
+Favor the Bold[6.5]
+<dl><dd> <b>  Garak </b> : That's the eleventh ship to fall out of formation.</dd><dd> <b>  Dax </b> : How nice of you to keep track of it.</dd><dd> <b>  Bashir </b> : He can't help being negative. It's in his nature.</dd><dd> <b>  Garak </b> : On the contrary, doctor. I always hope for the best. Experience, unfortunately, has taught me to always expect the worst.</dd></dl>
+Season 6
+Favor the Bold[6.5]
+<dl><dd> <b>  Gul Dukat </b> : A true victory is to make your enemy realize they were wrong to oppose you in the first place; to <i>  force </i> them to acknowledge your greatness!</dd><dd> <b>  Weyoun </b> : Then you kill them.</dd><dd> <b>  Gul Dukat </b> : Only if it's necessary.</dd></dl>
+Season 6
+Favor the Bold[6.5]
+<dl><dd> <b>  Nog </b> : Can you believe it? They made me an ensign.</dd><dd> <b>  Miles O'Brien </b> : I didn't realize things were going so bad.</dd><dd> <b>  Nog </b> : Scary, isn't it?</dd></dl>
+Season 6
+Favor the Bold[6.5]
+<dl><dd> <b>  Odo </b> : <i>  [calling out] </i> Kira!</dd><dd> <b>  Kira Nerys </b> : I have nothing to say to you!</dd><dd> <b>  Odo </b> : Major, I know you're angry...</dd><dd> <b>  Kira Nerys </b> : Oh, you bet I'm angry. Do you have any idea what's going on?</dd><dd> <b>  Odo </b> : Yes... well, sort of. I've been... occupied.</dd><dd> <b>  Kira Nerys </b> : Dukat is bringing down the mine field, the Federation fleet is about to be overrun by Dominion reinforcements and Weyoun has ordered Rom's execution and you have been <i>  occupied </i> ?</dd><dd> <b>  Odo </b> : I just wanted to say I'm sorry.</dd><dd> <b>  Kira Nerys </b> : <i>  Sorry </i> ? That's all you have to say? Well, let me tell you something. We are way, way past sorry.</dd></dl>
+Season 6
+Sacrifice of Angels[6.6]
+<dl><dd> <b>  Kira Nerys </b> : <i>  [talking about the recently deceased Ziyal] </i> She loved you.</dd><dd> <b>  Garak </b> : I could never figure out why.....I guess I never will.</dd></dl>
+Season 6
+Sacrifice of Angels[6.6]
+<dl><dd> <b>  Damar </b> : <i>  [on Weyoun] </i> I'd like to toss that smug little Vorta out the nearest airlock and his Founder with him.</dd><dd> <b>  Gul Dukat </b> : <i>  [laughs] </i> Now, now Damar. That's no way to talk about our valued allies. Not until this war is over, anyway.</dd></dl>
+Season 6
+Sacrifice of Angels[6.6]
+<dl><dd> <b>  Gul Dukat </b> : <i>  [to Weyoun] </i> Have you ever been diagnosed as anhedonic?</dd></dl>
+Season 6
+Sacrifice of Angels[6.6]
+<dl><dd> <b>  Prophets </b> : That <i>  (the Dominion reinforcements) </i> is a corporeal matter. Corporeal matters do not concern us.</dd><dd> <b>  Benjamin Sisko </b> : The hell they don't. What about Bajor. You sent the Bajorians orbs and emissaries. You even encouraged them to create an entire RELIGION around you. So don't you tell me corporeal matters don't concern you. You even told me once, that you are of Bajor. You don't want me to end my life? Well fine, niether do I. You want to be gods, then be gods. Look, I need a miracle here. Bajor needs a miracle. Stop those ships!</dd><dd> <b>  Prophet Gul Dukat </b> : We are of Bajor.</dd><dd> <b>  Prophet Odo </b> : But what of the Emmissary?</dd><dd> <b>  Prophet Weyoun </b> : He is intrusive,...</dd><dd> <b>  Prophet Odo </b> : belligerent,...</dd><dd> <b>  Prophet Damar </b> : adverseral.</dd><dd> <b>  Prophet Gul Dukat </b> : He tries to control the game</dd><dd> <b>  Prophet Jake Sisko </b> : A pennance must be exacted.</dd><dd> <b>  Prophet Gul Dukat </b> : We agree.</dd><dd> <b>  Prophet Weyoun </b> : You are the Sisko.</dd><dd> <b>  Prophet Odo </b> : The Emmissary is of Bajor, but he will find no rest there.</dd><dd> <b>  Prophet Kira </b> : His pagh will take another path.</dd><dd> <b>  Benjamin Sisko </b> : And what path would that be?</dd><dd> <i>  (Vision ends) </i></dd></dl>
+Season 6
+You Are Cordially Invited...[6.7]
+<dl><dd> <b>  Julian Bashir </b> : There's nothing more romantic than a wedding on DS9 in the springtime.</dd><dd> <b>  Miles O'Brien </b> : When the neutrinos are in bloom.</dd></dl>
+Season 6
+You Are Cordially Invited...[6.7]
+<dl><dd> <i>  [Bashir and O'Brien, starving, thirsty and hanging off a pole during Kal'Hyah (The Path of Clarity) before Worf's marriage] </i></dd><dd> <b>  Julian Bashir </b> : Miles?</dd><dd> <b>  Miles O'Brien </b> : Yeah?</dd><dd> <b>  Julian Bashir </b> : It works... I've had a vision about the future... I can see it so clearly.</dd><dd> <b>  Miles O'Brien </b> : What is it?</dd><dd> <b>  Julian Bashir </b> : I'm going to kill Worf... I'm going to kill Worf!... that's what I'm going to do... I see it so clearly!</dd><dd> <b>  Miles O'Brien </b> : Kill Worf.</dd><dd> <b>  Julian Bashir </b> : Yeah, kill Worf.</dd></dl>
+Season 6
+You Are Cordially Invited...[6.7]
+<dl><dd> <b>  Martok </b> : We are Klingons. We don't embrace other cultures, we conquer them.</dd></dl>
+Season 6
+You Are Cordially Invited...[6.7]
+<dl><dd> <b>  Martok </b> : <i>  [to Worf, before his wedding] </i> We are not accorded the luxury of choosing the women we fall in love with. Do you think Sirella is anything like the woman I thought I'd marry? She is a mercurial, arrogant, prideful woman who shares my bed far too infrequently for my taste. And yet... I love her deeply. We Klingons often tout our prowess in battle and our desire for honor and glory above all else... but how hollow is the sound of victory without someone to share it with. And Honor gives little comfort to a man alone in his home... and in his heart.</dd></dl>
+Season 6
+Statistical Probabilities[6.9]
+<dl><dd> <b>  Jack </b> : There are rules! Don't talk with your mouth full. Don't open an airlock when someone's inside it. And don't lie about your genetic status.</dd></dl>
+Season 6
+The Magnificent Ferengi[6.10]
+<dl><dd> <b>  Brunt </b> :Maybe we should start off with something easier.</dd><dd> <b>  Nog </b> :Like what?</dd><dd> <b>  Brunt </b> :Like ambushing a couple of Bollians.</dd><dd> <b>  Nog </b> :You couldn't ambush a Bollian, if he was blindfolded and tied to a tree!</dd></dl>
+Season 6
+The Magnificent Ferengi[6.10]
+<dl><dd> <b>  Quark </b> : Everybody, meet Keevan.</dd><dd> <b>  Rom </b> : Hi. I'm Rom, and this is Nog, and this is Brunt, and...</dd><dd> <b>  Quark </b> : Rom, he doesn't care.</dd><dd> <b>  Keevan </b> : Truer words have never been spoken. Anyway, I'd advise all of you to say goodbye to your loved ones and make your last wills.</dd><dd> <b>  Rom </b> : Why?</dd><dd> <b>  Keevan </b> : Because as soon as we've left this station, you all will have signed your death warrants. Now, if anyone doesn't mind, I'm going to take a nap.</dd></dl>
+Season 6
+The Magnificent Ferengi[6.10]
+<dl><dd> <i>  [trying to negotiate with a group of Ferengi] </i></dd><dd> <b>  Yelgrun </b> : And I thought the Breen were annoying.</dd></dl>
+Season 6
+The Magnificent Ferengi[6.10]
+<dl><dd> <b>  Quark </b> : No-one's hiding, no-one's escaping, and no-one's surrendering! What's the matter with you people? Have you forgotten the Battle of Prexnak?</dd><dd> <b>  Rom </b> : Who could forget the most important battle in Ferengi history?</dd><dd> <b>  Quark </b> : Ten Ferengi stood alone against two hundred and seventy-three Lytasians.</dd><dd> <b>  Gaila </b> : As I recall, all ten Ferengi were slaughtered.</dd><dd> <b>  Quark </b> : The point is, we Ferengi are just as tough as anybody in the galaxy. And this is our chance to prove it once and for all.</dd><dd> <b>  Leck </b> : Quark's right. Let's do it for Ishka. Let's do it for the Grand Nagus. Let's do it for Ferengis everywhere .</dd><dd> <b>  Brunt </b> : Let's do it for an equal share of fifty bars of gold-pressed latinum. That they can all agree on.</dd><dd> <b>  Gaila </b> : It always comes down to profit with you people, doesn't it?</dd><dd> <b>  Brunt </b> : We're Ferengi.</dd><dd> <b>  Quark </b> : And that's why I love you. Fifty bars it is. Minus my usual finder's fee.</dd></dl>
+Season 6
+Waltz[6.11]
+<dl><dd> <b>  Gul Dukat </b> : I should have killed every last one of them! I should have turned their planet into a graveyard the likes of which the galaxy has never seen! I should have killed them all...</dd><dd> <i>  [Sisko clubs him over the head with a metal pole] </i></dd><dd> <b>  Benjamin Sisko </b> : And that is why you're not an evil man.</dd></dl>
+Season 6
+Far Beyond The Stars[6.13]
+<dl><dd> <b>  Quark/Herb </b> : Would someone please shoot me and put me out of my misery?</dd><dd> <b>  Bashir/Jules </b> : Oh, how I long for a gun.</dd></dl>
+Season 6
+Far Beyond The Stars[6.13]
+<dl><dd> <b>  Benjamin Sisko </b> : Maybe, just maybe, Benny isn't the dream: we are. Maybe we're nothing more than figments of his imagination. For all we know, at this very moment, somewhere, far beyond all those distant stars... Benny Russell is dreaming of us.</dd></dl>
+Season 6
+Far Beyond The Stars[6.13]
+<dl><dd> <i>  [Benny is told to stay home during a photo shoot because he is African-American] </i></dd><dd> <b>  Douglas Pabst </b> : It's just a photo.</dd><dd> <b>  Benny Russell </b> : I'll try to remember that.</dd></dl>
+Season 6
+One Little Ship[6.14]
+<dl><dd> <b>  Odo </b> : Are you sure that you two returned to your original height?</dd><dd> <b>  Miles O'Brien </b> : Why do you ask?</dd><dd> <b>  Odo </b> : It's just that you both seem to be a couple of centimeters shorter. A changeling notices these sort of things.</dd><dd> <b>  Quark </b> : Actually now that I think about it, you both do seem a little on the petite side.</dd><dd> <b>  Julian Bashir </b> : Infirmary</dd><dd> <i>  [Both run to the infirmary] </i></dd><dd> <b>  Quark </b> : <i>  [to Odo] </i> And they say you don't have a sense of humor.</dd><dd> <i>  [Quark and Odo chuckle] </i></dd></dl>
+Season 6
+One Little Ship[6.14]
+<dl><dd> <i>  [O'Brien, Bashir and Dax are all 1 centimeter tall] </i></dd><dd> <b>  Miles O'Brien </b> : Are you telling me I'm going to be this bloody tall for the rest of my life?</dd><dd> <b>  Julian Bashir </b> : <i>  [indicating smaller] </i> This bloody tall.</dd></dl>
+Season 6
+Honor Among Thieves[6.15]
+<dl><dd> <b>  Liam Bilby </b> : Let me ask you something. Back home, wherever that is, you got a family?</dd><dd> <b>  Miles O'Brien </b> : Yeah.</dd><dd> <b>  Liam Bilby </b> : Good. After all, that's the most important thing.</dd></dl>
+Season 6
+Change of Heart[6.16]
+<dl><dd> <b>  Worf </b> : I have a sense of humor. On the Enterprise, I was considered to be quite amusing.</dd><dd> <b>  Jadzia Dax </b> : That must've been one dull ship.</dd><dd> <b>  Worf </b> : That is a joke. I get it. It is not funny, but I get it.</dd></dl>
+Season 6
+Change of Heart[6.16]
+<dl><dd> <b>  Worf </b> : Your problem is that you can't accept change.</dd><dd> <b>  Jadzia Dax </b> : I can't accept change?</dd><dd> <b>  Worf </b> : That's right.</dd><dd> <b>  Jadzia Dax </b> : You've got to be kidding. I've changed bodies six times!</dd></dl>
+Season 6
+Change of Heart[6.16]
+<dl><dd> <b>  Lasaran </b> : A Klingon... why did they have to send a Klingon?</dd><dd> <b>  Jadzia Dax </b> : I'm a Trill. Does that make you feel any better?</dd><dd> <b>  Lasaran </b> : Are you trying to be funny?</dd><dd> <b>  Jadzia Dax </b> : Not at all. <i>  [nods to Worf] </i> He's the funny one.</dd></dl>
+Season 6
+Wrongs Darker than Death or Night[6.17]
+<dl><dd> <b>  Odo </b> : Well, if you won't talk about it, perhaps you should consider <i>  doing </i> something about it.</dd></dl>
+Season 6
+Inquisition[6.18]
+<dl><dd> <b>  Julian Bashir </b> : So what does Section 31 do, aside from kidnapping and interrogating Starfleet officers?</dd><dd> <b>  Luther Sloan </b> : We seek out and identify threats to the Federation.</dd><dd> <b>  Julian Bashir </b> : And once these threats have been identified?</dd><dd> <b>  Luther Sloan </b> : We deal with them.</dd><dd> <b>  Julian Bashir </b> : How?</dd><dd> <b>  Luther Sloan </b> : Quietly.</dd><dd> <b>  Julian Bashir </b> : So if you had been right, and I had been a spy for the Dominion...</dd><dd> <b>  Luther Sloan </b> : We wouldn't be having this conversation.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Quark </b> : Thank you, captain. Thank you for restoring my faith in the 98th Rule of Acquisition: "Every man has his price."</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Benjamin Sisko </b> : My father always used to say that "The road to Hell is paved with good intentions." I laid the first stone right there. I'd committed myself, I'd pay any price, go to any lengths, because my cause was righteous, my... intentions were good.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Benjamin Sisko </b> : That was my first moment of real doubt, when I started to wonder if this whole thing was a mistake. So then I went back to my office. And there was a new casualty list waiting for me. People are dying out there, everyday! Entire worlds are struggling for their freedom, and here I am still worrying about the finer points of morality! No, I... I had to keep my eye on the ball, win the war, stopping the bloodshed, those were the priorities. So I pushed on, and every time another doubt appeared before me, I just found another way to shove it aside.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Benjamin Sisko </b> : Welcome aboard Senator, I'm Captain Benjamin Sisko.</dd><dd> <b>  Vreenak </b> : So... you're the Commander of Deep Space Nine and the Emissary to the Prophets, decorated combat officer, widower, father, mentor and oh yes, the man who started the war with the Dominion. Some how I thought you'd be taller.</dd><dd> <b>  Benjamin Sisko </b> : Sorry to disappoint you.</dd><dd> <b>  Vreenak </b> : To be honest my opinion of Starfleet Officers is so low, you'd have to work very hard indeed to disappoint me.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Benjamin Sisko </b> : Where's Tolar?</dd><dd> <b>  Elim Garak </b> : I've locked him in his room. I've also given him the distinct impression that if he tries to force the door open, it may explode.</dd><dd> <b>  Benjamin Sisko </b> : I hope that's <i>  just </i> an impression.</dd><dd> <b>  Elim Garak </b> : It's best not to dwell on such minutiae.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Elim Garak </b> : If you can let your anger subside for a moment, Captain, you will see that they did <i>  not </i> die in vain! The Romulans will enter the war!</dd><dd> <b>  Benjamin Sisko </b> : There's no guarantee of that!</dd><dd> <b>  Elim Garak </b> : Oh, but I think there is. You see. When the Tal Shiar finishes examining the wreckage of Vreenak's shuttle, they'll find the burnt remnants of a Cardassian optolithic data rod that somehow miraculously survived the explosion. After painstaking forensic examination, they'll discover that the rod contains a recording of a high level Dominion meeting at which the invasion of Romulus was being planned.</dd><dd> <b>  Benjamin Sisko </b> : And then they will discover that it is a fraud!</dd><dd> <b>  Elim Garak </b> : No, but I don't think that they will! Because any imperfections in the forgery will thought to be as a result of the explosion! So, with a seemingly legitimate rod in one hand, and a dead senator in the other, I ask you Captain, what conclusions would you draw?</dd><dd> <b>  Benjamin Sisko </b> : <i>  [sighs] </i> That Vreenak obtained the rod on Zukara, and that the Dominion killed him to prevent him from returning to Romulus with it.</dd><dd> <b>  Elim Garak </b> : Precisely. And the more they deny it, the more the Romulans will think that they are guilty because it is exactly what they would have done in their place. [ <i>  pauses </i> ]That's why you came to me. Isn't it, Captain? Because you knew I could do those things that you weren't capable of doing. Well, it worked. And you'll get what you want: a war between the Romulans and the Dominion. And if your conscience is bothering you, you should soothe it with the knowledge that you may have just saved the entire Alpha Quadrant. And in the end all it cost was the life of one Romulan senator, one criminal, and the self-respect of one Starfleet officer. I don't know about you, but I'd call that a bargain.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Benjamin Sisko </b> : At 0800 Hours station time, the Romulan Empire formally declared war on the Dominion. They have already struck fifteen bases along the Cardassian border. So this is a huge victory for the good guys! This may even be the turning point of the entire war. There is even a 'Welcome to the Fight' party tonight in the ward room. So... I lied; I cheated; I bribed men to cover the crimes of other men; I am an accessory to murder. But the most damning thing of all is... I think I can live with it. And if I'd have to do it all over again... I would. Garak was right about one thing...a guilty conscience is a small price to pay for the safety of the Alpha Quadrant. So I will learn to live with it...because I can live with it. [ <i>  pauses </i> ] I can live with it. [ <i>  pauses </i> ] Computer, erase that entire personal log.</dd></dl>
+Season 6
+In the Pale Moonlight[6.19]
+<dl><dd> <b>  Vreenak </b> : It's a fake!!</dd></dl>
+Season 6
+His Way[6.22]
+<dl><dd> <b>  Kira Nerys </b> : I thought we could have dinner.</dd><dd> <b>  Odo </b> : And then what?</dd><dd> <b>  Kira Nerys </b> : I don't know, maybe we could go dancing!</dd><dd> <b>  Odo </b> : And then I suppose you'll want me to kiss you!</dd><dd> <b>  Kira Nerys </b> : It's possible!</dd><dd> <b>  Odo </b> :Well, then, who needs dinner? Why don't I just kiss you now and get it over with?!</dd><dd> <b>  Kira Nerys </b> : Well why don't you?!</dd></dl>
+Season 6
+Valiant[6.22]
+<dl><dd> <b>  Jake Sisko </b> : I don't even know who you are anymore.</dd><dd> <b>  Nog </b> : I'm the chief engineer of the starship Valiant.</dd><dd> <b>  Jake Sisko </b> : I'll have them put that on your tombstone.</dd></dl>
+Season 6
+Valiant[6.22]
+<dl><dd> <b>  Nog </b> : You gonna write a story about all this?</dd><dd> <b>  Jake Sisko </b> : Probably.</dd><dd> <b>  Nog </b> : What are you going to say?</dd><dd> <b>  Jake Sisko </b> : What do you think I should say?</dd><dd> <b>  Nog </b> : That it was a good ship, with a good crew, that made a mistake. We let ourselves blindly follow Captain Watters, and he led us over a cliff.</dd><dd> <b>  Dorian Collins </b> : That's not true. Captain Watters was a great man.</dd><dd> <b>  Nog </b> : Dorien, he got everyone killed.</dd><dd> <b>  Dorian Collins </b> : If he failed, it was because we failed him.</dd><dd> <b>  Nog </b> : <i>  [to Jake] </i> Put that in your story too. Let people read it, decide for themselves.</dd><dd> <i>  [Nog gives her his Red Squad insignia] </i></dd><dd> <b>  Nog </b> : He may have been a hero. He may have even been a great man. But in the end, he was a bad captain.</dd></dl>
+Season 6
+Time's Orphan[6.24]
+<dl><dd> <b>  Jadzia Dax </b> : By the way, what does... "gung-gung-gung" mean?</dd><dd> <b>  Worf </b> : <i>  [suddenly intrigued] </i> Why do you ask?</dd><dd> <b>  Jadzia Dax </b> : It was the strangest thing. When I was taking Yoshi home, he kept shaking his rattle and saying "gung-gung-gung."</dd><dd> <b>  Worf </b> : <i>  [brightening] </i> He did?</dd><dd> <b>  Jadzia Dax </b> : He seemed to be getting a kick out of it. What does it mean?</dd><dd> <b>  Worf </b> : That is between Yoshi and me.</dd></dl>
+Season 6
+The Sound of Her Voice[6.25]
+<dl><dd> <b>  Quark, quoting the Ferengi Rules of Acquisition </b> : 285 - No good deed ever goes unpunished.</dd></dl>
+Season 6
+Tears of the Prophets[6.26]
+<dl><dd> <b>  Weyoun </b> : Pah-Wraiths and Prophets? All this talk of gods strikes me as nothing more than superstitious nonsense.</dd><dd> <b>  Damar </b> : You believe the Founders are gods, don't you?</dd><dd> <b>  Weyoun </b> : That's different.</dd><dd> <b>  Damar </b> : <i>  [Laughs] </i> In what way?</dd><dd> <b>  Weyoun </b> : The Founders <i>  are </i> gods.</dd></dl>
+Season 7
+Image in the Sand[7.1]
+<dl><dd> <b>  Quark </b> : What makes you think she <i>  wants </i> to spend eternity in Sto-Vo-Kor? I know I wouldn't. Imagine what it must be like. Hoards of rampaging Klingons - fighting and singing, sweating and belching.</dd><dd> <b>  Miles O'Brien </b> : Sound like this place on a Saturday night.</dd><dd> <b>  Quark </b> : Exactly! Would <i>  you </i> want to spend eternity here?</dd></dl>
+Season 7
+Shadows and Symbols[7.2]
+<dl><dd> <b>  Odo </b> : <i>  [To Kira] </i> Well, I was hoping that our relationship would be a long and happy one, but I suppose I'm willing to settle for short and exciting.</dd></dl>
+Season 7
+Shadows and Symbols[7.2]
+<dl><dd> <i>  [after first seeing Ezri Dax] </i></dd><dd> <b>  Jake Sisko </b> : She is <i>  so </i> cute.</dd><dd> <b>  Benjamin Sisko </b> : She is also about three hundred years too old for you.</dd></dl>
+Season 7
+Shadows and Symbols[7.2]
+<dl><dd> <b>  Benjamin Sisko </b> :Dax, I can't belive it.</dd><dd> <b>  Ezri Dax </b> :I can hardly belive it myself. But I'm Dax. I mean I'm not Jadzia Dax. I'm Ezri Dax. But I have all of Jadzia's memories. Not to mention Lela's, Tobin's, Emony's, Audrid's, Joran's, Curzon's. Am I forgetting anyone?</dd><dd> <b>  Benjamin Sisko </b> : Torias.</dd><dd> <b>  Ezri Dax </b> : Right. You are probably asking yourself, who is this person? How did she get the symbiont? Do I want another Dax in my life? Does she alway talk this much? These are very good questions. And I wish I had good answers for you.</dd></dl>
+Season 7
+Afterimage[7.3]
+<dl><dd> <b>  Elim Garak </b> : I don't need someone to walk in here and hold my hand. I want someone to help me get back to work and you, my dear, are not up to this task. Well, look at you; you're pathetic. A confused child trying to live up to a legacy left by her predecessors. You're not worthy of the name Dax. I knew Jadzia. She was vital, alive. She owned herself, and you, you don't even know who you are. How dare you presume to help me? You can't even help yourself. Now get out of here, before I say something unkind.</dd></dl>
+Season 7
+Afterimage[7.3]
+<dl><dd> <b>  Ezri Dax </b> : It's a strange sensation, dying. No matter how many times it happens to you, you never get used to it.</dd></dl>
+Season 7
+Take Me Out to the Holosuite[7.4]
+<dl><dd> <i>  [playing baseball] </i></dd><dd> <b>  Benjamin Sisko </b> : All right Niners, let's hear some chatter!</dd><dd> <b>  Niners </b> : [chants along the lines of "Hey batter batter batter!"]</dd><dd> <b>  Worf </b> : Death to the opposition.</dd></dl>
+Season 7
+Take Me Out to the Holosuite[7.4]
+<dl><dd> <i>  [during a baseball game, the umpire didn't make a call after a player scored] </i></dd><dd> <b>  Nog </b> : What? What happened?</dd><dd> <b>  Miles O'Brien </b> : He didn't touch home, Nog!</dd><dd> <b>  Nog </b> : Well, what do I do?</dd><dd> <b>  Worf </b> : Find him and kill him!</dd></dl>
+Season 7
+Take Me Out to the Holosuite[7.4]
+<dl><dd> <b>  Julian Bashir </b> : What are you eating?</dd><dd> <b>  Miles O'Brien </b> : I'm not eating; I'm chewing.</dd><dd> <b>  Julian Bashir </b> : Chewing what?</dd><dd> <b>  Miles O'Brien </b> : Gum. It's traditional. I had the replicator create me some.</dd><dd> <b>  Julian Bashir </b> : They just chewed it?</dd><dd> <b>  Miles O'Brien </b> : No, they infused it with flavor.</dd><dd> <b>  Julian Bashir </b> : What did you infuse it with?</dd><dd> <b>  Miles O'Brien </b> : Scotch.</dd></dl>
+Season 7
+Take Me Out to the Holosuite[7.4]
+<dl><dd> <b>  Benjamin Sisko </b> : <i>  [shouting] </i> You stole the run from us. You stole just as if you reached up and tore it off the score board.</dd><dd> <i>  [Begins poking Odo in the chest] </i></dd><dd> <b>  Benjamin Sisko </b> : You stole it from us.</dd><dd> <b>  Odo </b> : You. You're out of here.</dd><dd> <b>  Benjamin Sisko </b> : What?</dd><dd> <b>  Odo </b> : No player shall at anytime make contact with the umpire in any manner. The perscribed penalty for the violation is immediated ejection from the game, rule number four-point-zero-six, subsection A, paragraph four. Look it up but do it in the stands, you're gone!</dd></dl>
+Season 7
+Chrysalis[7.4]
+<dl><dd> <b>  Jack </b> : The fact is that the universe is going to stop expanding and it is going to collapse in on itself. We have to do something before it is too late</dd><dd> <b>  Patrik </b> : How much time do we have left?</dd><dd> <b>  Jack </b> : 60 trillion years. 70 at the most.</dd><dd> <b>  Patrik </b> : Oh no.</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Nog </b> : Whisper your way to success.</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Kira Nerys </b> : <i>  [to Odo] </i> I know to Starfleet the Prophets are nothing more than wormhole aliens, but to me, they're gods. I can't prove it. Then, again, I don't have to because my faith in them is enough just as Weyoun's faith in you was enough for him.</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Odo </b> : Has it ever occurred to you that the reason you believe the Founders are gods is because that's what they want you to believe? That they built it into your genetic code?</dd><dd> <b>  Weyoun </b> : Of course they did, that's what gods do. After all, why be a god if there's no one to worship you?</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Odo </b> : You still haven't answered my question. Why did you decide to defect?</dd><dd> <b>  Weyoun </b> : I realize my place is with you.</dd><dd> <b>  Odo </b> : You can do better than that.</dd><dd> <b>  Weyoun </b> : Then let's just say I left Cardassia because my life was in danger.</dd><dd> <b>  Odo </b> : From whom?</dd><dd> <b>  Weyoun </b> : Everyone.</dd><dd> <b>  Odo </b> : Aren't you being a little paranoid?</dd><dd> <b>  Weyoun </b> : Of course I'm paranoid, everyone's trying to kill me.</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Miles O'Brien </b> : How could he do this to me? How could he leave me adrift, mid-river, without a paddle?</dd><dd> <b>  Rom </b> : What river would that be?</dd><dd> <b>  Miles O'Brien </b> : You know, the Great Material Continuum.</dd><dd> <b>  Rom </b> : That river. It can be very treacherous.</dd><dd> <b>  Miles O'Brien </b> : Tell me about it. Well, I suppose the good news is with Nog gone, nothing else can go missing.</dd><dd> <i>  [in a cargo bay, General Martok knocks over a crate] </i></dd><dd> <b>  Martok </b> : Where are my case of bloodwine?!</dd><dd> <b>  Worf </b> : I do not know, General, but I promise you I will find out.</dd></dl>
+Season 7
+Treachery, Faith, and the Great River[7.6]
+<dl><dd> <b>  Weyoun </b> : "We become the ice". Only a god could think of such a thing.</dd><dd> <b>  Odo </b> : Well, let's just hope the Jem'Hadar give up their search before we freeze to death.</dd><dd> <b>  Weyoun </b> : My faith will keep me warm.</dd><dd> <b>  Odo </b> : Perhaps. But in an hour, you may want to trade in that faith for a thermal blanket.</dd></dl>
+Season 7
+The Siege of AR-558[7.8]
+<dl><dd> <b>  Quark </b> : Let me tell you something about hu-mons, nephew. They're a wonderful, friendly people as long as their bellies are full and their holosuites are working... but take away their creature comforts deprive them of food, sleep, sonic showers... put their lives in jeopardy over an extended period of time and those same, friendly, intelligent, wonderful people will become as nasty and as violent as the most bloodthirsty Klingon. You don't believe me? Look at those faces. Look in their eyes.</dd></dl>
+Season 7
+The Siege of AR-558[7.8]
+<dl><dd> <b>  Quark </b> : You can't make a deal if you're dead.</dd></dl>
+Season 7
+It's Only a Paper Moon[7.10]
+<dl><dd> <i>  [Nog has chosen Vic Fontaine's holoprogram as his Rehab] </i></dd><dd> <b>  Ezri Dax </b> : At first, it struck me as a little... peculiar. But after I thought it over, I began to think that maybe this is a good sign after all.</dd><dd> <b>  Quark </b> : How can hiding in one of Julian's adolescent programs be a good sign?</dd><dd> <b>  Julian Bashir </b> : Hey...</dd><dd> <b>  Jake Sisko </b> : It could be worse. He could be hiding in the Alamo program.</dd><dd> <b>  Leeta </b> : Or that ridiculous secret agent program.</dd><dd> <b>  Julian Bashir </b> : Hey.</dd><dd> <b>  Rom </b> : Or that stupid Viking program.</dd><dd> <b>  Julian Bashir </b> : HEY!</dd></dl>
+Season 7
+Badda-Bing Badda-Bang[7.15]
+<dl><dd> <b>  Benjamin Sisko </b> : You want to know? You really want to know what my problem is? I'll tell you: Las Vegas, 1962. <i>  That's </i> my problem. In 1962, black people weren't very welcome there! Oh, sure, they could be performers or janitors, but customers? Never!</dd><dd> <b>  Kasidy Yates </b> : Maybe that's the way it was in the real Vegas, but that's not the way it is at Vic's. I have never felt uncomfortable there, and neither has Jake.</dd><dd> <b>  Benjamin Sisko </b> : But don't you see?! That's the lie! In 1962, the Civil Rights Movement was still in its infancy! It wasn't an easy time for our people, and I'm not going to pretend that it was!</dd><dd> <b>  Kasidy Yates </b> : Baby... I know that Vic's isn't a totally accurate representation of the way things were, but... it isn't meant to be. It shows us the way things <i>  could </i> have been - the way they <i>  should </i> have been.</dd><dd> <b>  Benjamin Sisko </b> : We cannot ignore the truth about the past.</dd><dd> <b>  Kasidy Yates </b> : Going to Vic's isn't going to make us forget who we are or where we came from. What it does is reminds us that we are no longer bound by any limitations - except the ones we impose on ourselves.</dd></dl>
+Season 7
+Badda-Bing Badda-Bang[7.15]
+<dl><dd> <b>  Julian Bashir </b> : A vodka martini. Stirred, not shaken.</dd><dd> <b>  Ezri Dax </b> : Right away, sir.</dd></dl>
+Season 7
+Inter Arma Enim Silent Leges[7.16]
+<dl><dd> <b>  Julian Bashir </b> : This war isn't even over, and you're already preparing for the next one!</dd><dd> <b>  Luther Sloan </b> : Very astute, Doctor.</dd></dl>
+Season 7
+Inter Arma Enim Silent Leges[7.16]
+<dl><dd> <b>  Admiral Ross </b> : Inter arma enim silent leges.</dd><dd> <b>  Julian Bashir </b> : In times of war, the law falls silent. Cicero. Is that what we've become -- a 24th Century Rome driven on nothing more the certainty that <i>  Caesar can do no wrong </i> ?</dd></dl>
+Season 7
+Inter Arma Enim Silent Leges[7.16]
+<dl><dd> <b>  Julian Bashir </b> : Admiral, where's Sloan?</dd><dd> <b>  Admiral Ross </b> : Sloan's dead</dd><dd> <b>  Julian Bashir </b> : Admiral, where's Sloan?</dd></dl>
+Season 7
+Inter Arma Enim Silent Leges[7.16]
+<dl><dd> <b>  Garak </b> : I trust that Starfleet Intelligence will be sending someone along to make good use of this opportunity?</dd><dd> <b>  Bashir </b> : What do you mean?</dd><dd> <b>  Garak </b> : Well isn't it obvious? This is a golden opportunity to gather intelligence on Romulan intentions and military capabilities.</dd><dd> <b>  Bashir </b> : They are allies, Garak. With any luck this could be the beginning of an entirely new friendship between our peoples.</dd><dd> <b>  Garak </b> : (turns his eyes) The eternal optimist.</dd><dd> <b>  Bashir </b> : Guilty as charged.</dd><dd> <b>  Garak </b> : How sad. I must tell you, I'm disappointed and hearing you mouth the usual platitudes of peace and friendship regarding an implacable foe like the Romulans. But I live in hope that one day you'll come to see this universe for what it truly is, rather than what you do wish it to be.</dd><dd> <b>  Bashir </b> : Than I shall endeavour to become more cynical with each passing day, look gift horses squarely in the mouth and find clouds in every silver lining.</dd><dd> <b>  Garak </b> : If only you meant it.</dd></dl>
+Season 7
+Strange Bedfellows[7.19]
+<dl><dd> <b>  Damar </b> : You should have killed me. There's only one Damar.</dd><dd> <b>  Worf </b> : I will keep that in mind.</dd></dl>
+Season 7
+Strange Bedfellows[7.19]
+<dl><dd> <b>  Damar </b> : <i>  [to Weyoun Eight] </i> Oh, I'm sure she'll understand. But if she doesn't... I look forward to meeting Weyoun Nine.</dd></dl>
+Season 7
+The Changing Face of Evil[7.20]
+<dl><dd> <b>  Weyoun </b> : There's something different about you today Damar, I can't quite put my finger on it... it's almost as if you're half dressed...</dd><dd> <b>  Damar </b> : What are you talking about?</dd><dd> <b>  Weyoun </b> : You don't have a bottle in your hand.</dd></dl>
+Season 7
+The Changing Face of Evil[7.20]
+<dl><dd> <b>  Damar </b> : I call upon Cardassians everywhere. Resist. Resist today. Resist tomorrow. Resist until the last Dominion soldier has been driven from our soil!</dd></dl>
+Season 7
+Extreme Measures[7.25]
+<dl><dd> <b>  Julian Bashir </b> : Recognize these? Romulan mind probes. Not the most pleasant devices, but very efficient.</dd><dd> <b>  Luther Sloan </b> : They're also illegal in the Federation.</dd><dd> <b>  Julian Bashir </b> : Oh, I hope you can appreciate the irony in that statement.</dd></dl>
+Season 7
+The Dogs of War[7.24]
+<dl><dd> <b>  Quark </b> : I'm not going to preside over the demise of Ferengi civilization. Not me. The line must be drawn here -- this far and no further.</dd></dl>
+Season 7
+The Dogs of War[7.24]
+<dl><dd> <b>  Quark </b> : Taxes go against the very foundation of free enterprise! That's why its called "free"!</dd></dl>
+Season 7
+The Dogs of War[7.24]
+<dl><dd> <b>  Quark </b> : Whatever happened to the survival of the fittest? Whatever happened to the rich getting richer and the poor getting poorer? Whatever happened to pure, unadultered greed?</dd></dl>
+Season 7
+The Dogs of War[7.24]
+<dl><dd> <b>  Mila </b> : You should hear the stories. "Damar's alive, my cousin saw him on Kelvas Prime." "He faked his own death." "He's plotting a new offensive from his secret mountain hideaway."</dd><dd> <b>  Garak </b> : You never told me you had a secret mountain hideaway.</dd><dd> <b>  Damar </b> : I was going to surprise you.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Benjamin Sisko </b> : Ensign, I believe you know the way to Cardassia?</dd><dd> <b>  Nog </b> : Well if I get lost, I'll just follow the ship in front of us.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  [Prophet Sarah Sisko] </b> : Your greatest challenge is not before you but behind you.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Ezri Dax </b> : I hope you understand.</dd><dd> <b>  Worf </b> : Actually I am very happy for you two. But I am going to kill him <i>  (Julian Bashir) </i> .</dd><dd> <b>  Ezri Dax </b> : Are you serious?</dd><dd> <b>  Worf </b> : And Jadzia said I didn't have a sense of humor.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Weyoun </b> : Citizens of Cardassia, this latest wave of vandalism directed against your Dominion allies must stop.</dd><dd> <b>  Garak </b> : I wouldn't count on it.</dd><dd> <b>  Weyoun </b> : We know that theses disgraceful acts of sabotage were carried out by a mere handful of extremists, but these radicals must come to realize that their disobedience will not be tolerated, and that you, the Cardassian people will suffer the consequences of their cowardly actions. Which is why, I must inform you, just a few moments ago, Dominion troops reduced Lakarian city to ashes. There were no survivors. Two million men, women, and children, gone in a matter of a moment.</dd><dd> <b>  Damar </b> : I should have killed that Vorta jackal when I had the chance!</dd><dd> <b>  Weyoun </b> : For each act of terrorism against the Dominion, another Cardassian city will be destroyed. I implore you not to let that happen. Let us return the spirit of friendship and cooperation between our peoples, so that together we can destroy our common enemies: the Federation, the Klingons, the Romulans, and all others who stand against us. Thank you.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Jem'Hadar First </b> : On your feet.</dd><dd> <b>  Kira </b> : Why?</dd><dd> <b>  Jem'Hadar First </b> : We prefer our prisoners standing when they die.</dd><dd> <b>  Garak </b> : Anyone have any last words?</dd><dd> <b>  Damar </b> : You may kill us but Cardassia will never...!</dd><dd> <b>  Jem'Hadar First </b> : <i>  {interrupting Damar} </i> Silence. Final words are not permitted.</dd><dd> <b>  Garak </b> : How disappointing.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Weyoun </b> : I don't believe it.</dd><dd> <b>  Female Changeling </b> : What now?</dd><dd> <b>  Weyoun </b> : The Cardassian fleet has turned against us.</dd><dd> <b>  Female Changeling </b> : Tell our forces to pull back to Cardassia Prime. There will be no more running. We should have rid ourselves of the Cardassians at the first sign of rebellion.</dd><dd> <b>  Legate Broca </b> : If I could talk to them. Get them to change their minds.</dd><dd> <b>  Weyoun </b> : You might be able to reawaken their patriotic spirit.</dd><dd> <b>  Legate Broca </b> : Exactly.</dd><dd> <b>  Weyoun </b> : On the other hand they might just as easily convince <i>  you </i> to betray us.</dd><dd> <b>  Legate Broca </b> : Me betray you, never.</dd><dd> <b>  Female Changeling </b> : Correct we are not going to give you that opportunity.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Damar </b> : <i>  (rallying the men) </i> Once we are inside Dominion headquarters, we stop at nothing until we capture the Female Changling!</dd><dd> <b>  Cardassian soldiers </b> : Let be done! We're with you!</dd><dd> <b>  Damar </b> : For Cardassia!</dd><dd> <b>  Cardassian soldiers </b> : For Cardassia!</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Garak </b> : <i>  {as Jem'Hadar soldiers destroy his childhood home} </i> All during the years of my exile I imagined what it would be like to come home. I even thought of living in this house again, with Mila. But now she's dead, and this house is about to be reduced to a pile of rubble. My Cardassia is gone.</dd><dd> <b>  Kira </b> : Then fight for a new Cardassia.</dd><dd> <b>  Garak </b> : I have an even better reason, Commander: <i>  revenge </i> .</dd><dd> <b>  Kira </b> : <i>  {to herself} </i> ...that works too.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <i>  {Garak begins to laugh} </i></dd><dd> <b>  Damar </b> : I fail to see what is so amusing</dd><dd> <b>  Garak </b> : Isn't obvious. Here we are ready at the gates to strike a blow against the Dominion. Ready to sacrifice our lives, to destroy the Dominion beast inside, <i>  {Kira begins to laugh uncontrollably} </i> and we can't even get through the front gates. <i>  {they all begin to laugh} </i></dd><dd> <b>  Kira </b> : Perhaps, perhaps we should knock and ask the Jem'Hadar to open the gates.</dd><dd> <b>  Damar </b> : Or to just send the shapshifter out to us. <i>  {they group laughs even louder} </i></dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Female Changeling </b> : I wish you hadn't done that. That was Weyoun's last clone.</dd><dd> <b>  Garak </b> : I was hoping you would say that.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Kira </b> : This war is over.</dd><dd> <b>  Female Changeling </b> : I doubt the Breen or the Jem'Hadar will agree with that assessment. They will fight to the last man.</dd><dd> <b>  Kira </b> : What will that accomplish?</dd><dd> <b>  Female Changeling </b> : Isn't it obvious? You may win this war, Commander. But I promise you, by the time its over you will have lost so many ships, so many lives, that your victory will taste as bitter as defeat.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Female Changeling </b> : It is always good to see you, Odo. But I have no intention of surrendering my forces. It would be sign of weakness, an invitation to the Solids cross into the Gamma Quadrant and destroy the Great Link.</dd><dd> <b>  Odo </b> : Believe me when I say that the Federation has its flaws, but a desire for conquest is not one of them.</dd><dd> <b>  Female Changeling </b> : And what of the Romulans and the Klingons? Can you say the same for them?</dd><dd> <b>  Odo </b> : The Romulan and Klingon empires are in no position to invade anyone. Besides the Federation would not allow it.</dd><dd> <b>  Female Changeling </b> : The Dominion has spent the last two years trying to destroy the Federation, and now you're asking me to put our fate in their hands?</dd><dd> <b>  Odo </b> : Yes.</dd><dd> <b>  Female Changeling </b> : I'm sorry, Odo. I do not have your kind of faith in the Solids.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Martok </b> : Before you shed too many tears, let me remind you these are <i>  Cardassians </i> who lie dead at your feet! Bajorans would call this poetic justice.</dd><dd> <b>  Benjamin Sisko </b> : Yes but it still doesn't mean I have to drink a toast over their bodies.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Bashir </b> : 800 million dead.</dd><dd> <b>  Garak </b> : And the figures are still coming in.</dd><dd> <b>  Bashir </b> : I'm sorry.</dd><dd> <b>  Garak </b> : Oh its quite alright, doctor. Some would say we got exactly what we deserved. After all we are not completely innocent here. And I'm not just referring to the occupation of Bajor. Our history is FILLED with arrogant aggression. We joined the Dominion and betrayed the entire Alpha Quadrant. Yes..., we are <i>  GUILTY </i> .</dd><dd> <b>  Bashir </b> : But Cardassian people are strong they will survive. Cardassia will survive.</dd><dd> <b>  Garak </b> : Oh please, doctor, spare me your insufferable Federation optimism. Of course, Cardassia will survive. But not the Cardassia I knew. Our art and literature was second to none. And now look at us. So many of our best minds all... gone.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Admiral Ross </b> : <i>  (to Worf) </i> How would you feel being named Federation Ambassdor to Qo'noS ?</dd><dd> <b>  Worf </b> : I am not a diplomat.</dd><dd> <b>  Martok </b> : And I am not a politician. But sometimes fate plays cruel tricks on us. Come, Worf. Qo'noS needs you. More importantly I need you.</dd><dd> <b>  Ezri Dax </b> : Well you did help him become chancellor. You can't well turn your back on him now.</dd><dd> <b>  Worf </b> : Well my first duty is to you, Captain.</dd><dd> <b>  Benjamin Sisko </b> : I'll probably regret this in the morning but if its what you really want.</dd><dd> <b>  Worf </b> : Its been a great honor.</dd><dd> <b>  Benjamin Sisko </b> : The honor's all mine.</dd><dd> <b>  Worf </b> : I accept.</dd><dd> <b>  Martok </b> : Excellent. haha An ambassador who can go Targ hunting with me! Perhaps being chancellor won't be that bad after all.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Admiral Ross </b> : <i>  Four hundred years ago, a victorious general spoke the words at the end of another costly war. "Today the guns are silent. A great tragedy has ended. We have known the bitterness of defeat and the exultation of triumph, and from both we have learned there can be no going back. We must move forward to preserve in peace what we've won in war." </i></dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Benjamin Sisko </b> : To the best crew any captain ever had. This may be the last time we're all together. But no matter what the future holds, no matter how far we travel, a part of us... a very important part will always be here, at Deep Space Nine.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Dukat </b> : <i>  [to Winn] </i> Did you really think the Pah-Wraiths would choose you as their Emissary? Soon, the Pah-Wraiths will burn across Bajor, the Celestial Temple, the Alpha Quadrant. Can you picture it? An entire universe set in flames!!! To burn for all eternity. <i>  [Sisko enters] </i> The Prophets have sent me a gift. Their beloved Emissary, set forth like an avenging angel to slay the demon.</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Benjamin Sisko </b> : You are pathetic!</dd><dd> <b>  Dukat </b> : Then why are you the one on your knees?</dd><dd> <b>  Benjamin Sisko </b> : First the Dominion, now the Pah-Wraiths. You have a talent for picking the losing sides!</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Ezri Dax </b> : Thermopylae ?</dd><dd> <b>  Julian Bashir </b> : Its a story of how 300 Spartans, lead by King Leonidas , hold off a mountain pass from a vast army of Persians.</dd><dd> <b>  Ezri Dax </b> : So how does it go?</dd><dd> <b>  Julian Bashir </b> : Well for three days the Spartans lead a heroic struggle...</dd><dd> <b>  Ezri Dax </b> : Let me guess, until they are wiped out.</dd><dd> <b>  Julian Bashir </b> : How did you know?</dd><dd> <b>  Ezri Dax </b> : Lucky guess. Have you ever seen anyone about these annihilation fantasies you have?</dd></dl>
+Season 7
+What You Leave Behind[7.25]
+<dl><dd> <b>  Quark </b> : It's like I said: the more things change, the more they stay the same</dd></dl>

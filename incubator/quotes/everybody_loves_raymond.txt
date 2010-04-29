@@ -1,0 +1,270 @@
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Okay, alright, I'm gonna ask you quickly and quietly to move to your nearest exit.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Debra </b> : How did he ever become a police sergeant?</dd><dd> <b>  Ray </b> : Cause he's a good cop, and they didn't make him count. Or eat.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Listen, Ma, I want to talk about Debra's birthday...</dd><dd> <b>  Marie </b> : My god, talk about birthdays. Your birthday gift to me finally came this morning. Did you know they sent me a box of pears?</dd><dd> <b>  Ray </b> : Yeah.</dd><dd> <b>  Marie </b> : From a place called "Fruit Of The Month"?</dd><dd> <b>  Ray </b> : That's right, how are they?</dd><dd> <b>  Marie </b> : They're very nice pears. But, there are <i>  so </i> many of them. There are over a dozen pears. What am I supposed to do with all those pears?</dd><dd> <b>  Ray </b> : I think you're supposed to eat them.</dd><dd> <b>  Marie </b> : Myself?</dd><dd> <b>  Ray </b> : You and Dad and Robert.</dd><dd> <b>  Marie </b> : How many pears can Robert eat? I appreciate the thought, but please, don't ever send us any more fruit again. Thanks.</dd><dd> <b>  Ray </b> : Another box is coming next month.</dd><dd> <b>  Marie </b> : What??!! More pears??!!</dd><dd> <b>  Ray </b> : No, it's a different fruit every month.</dd><dd> <b>  Marie </b> : Every month??!!</dd><dd> <b>  Ray </b> : Yes, that's why it's called "Fruit Of The Month" Club.</dd><dd> <b>  Marie </b> : It's a club??!! Oh, my god! What do I do with all this fruit?</dd><dd> <b>  Ray </b> : Most people like it, Ma, they share it with their friends.</dd><dd> <b>  Marie </b> : Which friends?</dd><dd> <b>  Ray </b> : I don't know. Lee and Stan?</dd><dd> <b>  Marie </b> : Lee and Stan buy their own fruit. Why did you do this to me? I can't talk, there's too much fruit in the house.</dd><dd> [ <i>  Frank walks in. </i> ]</dd><dd> <b>  Marie </b> : [ <i>  to Frank </i> ] Do you know the fruit keeps coming, month after month? [ <i>  pointing at Ray </i> ] He's got us in some kind of a cult.</dd><dd> <b>  Ray </b> : It's not a cult, it's a <i>  club </i> .</dd><dd> <b>  Frank </b> : What do you mean, month after month? For how long?</dd><dd> <b>  Ray </b> : A year.</dd><dd> <b>  Frank </b> : My god, are you out of your mind? What do you think we are? Invalids? We can't go out and get our own fruit?</dd><dd> <b>  Marie </b> : I tried to tell him.</dd><dd> <b>  Ray </b> : Alright, I'll cancel the Fruit Club.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Frank </b> : Marie--</dd><dd> <b>  Marie </b> : I can't talk! There's too much fruit in the house!</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Let's see, when I proposed you were 23. You said no.</dd><dd> <b>  Debra </b> : Right.</dd><dd> <b>  Ray </b> : Then I proposed; you were 24</dd><dd> <b>  Ray &amp; Debra </b> : No again.</dd><dd> <b>  Ray </b> : Right, then I took a year off to regroup then I came back with a job; BOOM, married. That would make you 32----ish.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Robert </b> : When did he get this?</dd><dd> <b>  Marie </b> : Oh, that's an award your brother got for his sports-column.</dd><dd> <b>  Robert </b> : Never ends for Raymond...</dd><dd> <b>  Marie </b> : Oh, poor Robbie.</dd><dd> <b>  Robert </b> : Everybody loves Raymond. I go to work people shoot at me, Ray goes to work and people do the wave. Then he sits down, has a hotdog, doodles on a piece of paper and they give him a trophy.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Marie </b> : I've got baking soda! I smelled something questionable in the fridge.</dd><dd> <b>  Ray </b> : From across the street?</dd><dd> <b>  Marie </b> : No, when I was here yesterday. Oh, It's worse!</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Time to leave, Dad. Buckle up... What're you doing?</dd><dd> <b>  Frank </b> : <i>  [sniffing the twins' heads] </i> I'm sucking the youth!</dd><dd> <i>  [Later] </i></dd><dd> <b>  Debra </b> : The twins' heads smell like Old Spice. Your dad was here. Sucking the youth.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Why don't you go out with Linda tomorrow?</dd><dd> <b>  Debra </b> : And leave the kids with your parents?</dd><dd> <b>  Ray </b> : No, I'll do the kids</dd><dd> <b>  Debra </b> : Pffff...</dd><dd> <b>  Ray </b> : I can do it. What about the time when you went to your aunt's for three days?</dd><dd> <b>  Debra </b> : I took the kids with me!</dd><dd> <b>  Ray </b> : Yeah, but I fed myself.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Marie </b> : But where is Debra?</dd><dd> <b>  Ray </b> : She went to the movies with Linda.</dd><dd> <b>  Marie </b> : The movies? Some people get to live it up.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Ray </b> : Hey, look at this, Cal Ripken signed my hat!</dd><dd> <b>  Debra </b> : Oh that's great, look at this, Gregory spit up on my shirt.</dd><dd> <b>  Ray </b> : I'm not trading.</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : Are you ok?</dd><dd> <b>  Debra </b> : I'm fine.</dd><dd> <b>  Ray </b> : Uh oh, fine is bad. What is it? What's the matter?</dd><dd> <b>  Debra </b> : Nothing.</dd><dd> <b>  Ray </b> : Nothing...nothing is worse!</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Debra </b> : I love you</dd><dd> <b>  Ray </b> : ...And I you</dd><dd> <i>  [Debra walks off] </i></dd><dd> <b>  Ray </b> : Debra! DEBRA!</dd><dd> <b>  Ally </b> : STELLA!</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Frank </b> : <i>  [to Marie and Robert] </i> This love stuff....we never mention it again.</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : Oh, now I don't love you?</dd><dd> <b>  Debra </b> : You don't say it.</dd><dd> <b>  Ray </b> : I do.</dd><dd> <b>  Debra </b> : No, you don't.</dd><dd> <b>  Ray </b> : I do!</dd><dd> <b>  Debra </b> : When do you say it?</dd><dd> <b>  Ray </b> : WITH MY EYES!</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : Listen dad, when was the last time you said I love you to someone?</dd><dd> <b>  Frank </b> : What? Do you live in a freaking fairyland?</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Marie </b> : When we first got married, I said "I love you" all the time.</dd><dd> <b>  Frank </b> : When? When did you say it?</dd><dd> <b>  Marie </b> : I said it all the time!</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : Were you in my office, mom?</dd><dd> <b>  Marie </b> : Yeah I was trying to get a pen to do the crossword puzzles. You know, your desk drawer is locked.</dd><dd> <b>  Debra and Ray </b> : Yeah we lock it now. It keeps the kids out.</dd><dd> <b>  Marie </b> : Oh, that's a good idea! I broke a knife in it.</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Robert </b> : You know that shampoo that says "no more tears" on the bottle? There's tears.</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Waitress </b> : Extra sauce!</dd><dd> <b>  Bernie </b> : She's the saucy one.</dd><dd> <b>  Waitress </b> : And the assorted fried cheeses plate.</dd><dd> <b>  Ray </b> : He's the fat one!</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : Hey, that's tongue. I thought you were a vegetarian.</dd></dl>
+Season 1
+I Love You[1.02]
+<dl><dd> <b>  Ray </b> : <i>  [on the phone] </i> Yea, I miss you too. Okay, yea, I'll see you tomorrow. And honey, I love you. Good, well, get used to it because I'm gonna say it all the time. Okay. Now give the phone to mommy.</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Frank </b> : Ray, I've got some news. I don't know the best way to break this... Your great-uncle Gus, dead!</dd><dd> <b>  Ray </b> : Oh, no I liked him</dd><dd> <b>  Robert </b> : Yeah me too... Hey nuts!(referring to a bowl of nuts on the table)</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Frank </b> : He wants you to deliver his eulogy</dd><dd> <b>  Ray </b> : Why? I hardly knew the guy.</dd><dd> <b>  Frank </b> : It was his dying wish.</dd><dd> <b>  Robert </b> : Even dead people love Raymond.</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Alda </b> : What's your problem Marie? I can't even say a word without you topping me.</dd><dd> <b>  Marie </b> : I can't help it, you're easily topped!</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Marie </b> : You never even sent a gift</dd><dd> <b>  Alda </b> : My gift was that I came at all</dd><dd> <b>  Marie </b> : What kind of a horse's ass gift is that?</dd><dd> <b>  Alda </b> : You'd be lucky to have a horse's ass!</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <i>  [Ally drew a moustache on Geoffrey] </i></dd><dd> <b>  Frank </b> : Can Hitler have a juice-box?</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Debra </b> : Hey, do you know what I think is really sexy?</dd><dd> <b>  Ray </b> : What?</dd><dd> <b>  Debra </b> : A man who does the dishes</dd><dd> <b>  Ray </b> : No, does nothing for me... Do you know what does it for me? A woman who does the dishes... with another woman!</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Ray </b> : Some funeral, huh?</dd><dd> <b>  Debra </b> : Yeah.</dd><dd> <b>  Ray </b> : Wanna do it?</dd></dl>
+Season 1
+I Wish I Were Gus[1.03]
+<dl><dd> <b>  Ray </b> : Hi, I'm Ray. I'm here to talk about...Gus Batrone.</dd><dd> <b>  Robert </b> : Haaaaarrrr!!!</dd><dd> <b>  Ray </b> : Thank you.</dd></dl>
+Season 1
+Standard Deviation[1.04]
+<dl><dd> <b>  Ray </b> : You know I read somewhere where the happiest marriages are the ones where the man is smarter.</dd><dd> <b>  Debra </b> : Oh, guess who wrote that...</dd></dl>
+Season 1
+Standard Deviation[1.04]
+<dl><dd> <i>  [Ray puts away tax papers and sits next to Debra] </i></dd><dd> <b>  Debra </b> : You promised you'd get this done!</dd><dd> <b>  Ray </b> : That's not the point. The point is that... I will rub your feet!</dd><dd> <b>  Debra </b> : You gotta, you gotta get this done.</dd><dd> <i>  [Ray pulls off Debra's socks and starts rubbing her bare feet] </i></dd><dd> <b>  Ray </b> : Don't worry, in fact the whole idea of rubbing feet makes me sick.</dd><dd> <b>  Debra </b> : Just shut up and rub.</dd><dd> <i>  [Ray continues to massage her feet, but starts tickling them as well] </i></dd><dd> <b>  Debra </b> : That's not rubbing, that's tickling!</dd><dd> <i>  [Robert walks in] </i></dd><dd> <b>  Robert </b> : Glad to see you're not busy.</dd><dd> <i>  [Ray is still caressing Debra's bare feet] </i></dd><dd> <b>  Ray </b> : What makes you think we're not busy, Rob?</dd></dl>
+Season 1
+Standard Deviation[1.04]
+<dl><dd> <b>  Debra </b> : There's more than one kind of intelligence Ray.</dd><dd> <b>  Frank </b> : That's right. There's STREET SMARTS!</dd></dl>
+Season 1
+Standard Deviation[1.04]
+<dl><dd> <i>  [Debra smashes a bowl of ice cream into Ray's lap] </i></dd><dd> <b>  Ray </b> : Mmm, fudgey.</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> [ <i>  Andy is staring at Angelina, the attractive waitress. </i> ]</dd><dd> <b>  Andy </b> : So, Angelina, how are you?</dd><dd> <b>  Angelina </b> : Did you want something?</dd><dd> <b>  Andy </b> : No, thanks. I just thought we could talk.</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> <b>  Bernie </b> : <i>  [Angelina walks away] </i> Ahh, did you smell her?</dd><dd> <b>  Ray </b> : No, I read the sign Bernie, "Thank You for not smelling the help."</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> <b>  Bernie </b> : Oh, man look at her. If I wasn't married, do you know what I'd do?</dd><dd> <b>  Ray </b> : You'd wear the same underwear every day.</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> <b>  Frank </b> : Hello, ladies!</dd><dd> <b>  Ray </b> : What are you doing here?</dd><dd> <b>  Frank </b> : Hehehe, I came to check out the new waitress.</dd><dd> <b>  Ray </b> : Oh god.</dd><dd> <b>  Angelina </b> : Hello, will you be staying for lunch?</dd><dd> <b>  Frank </b> : Holy Crap! Uh....yes, I will, thank you.</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> [ <i>  Marie thinks Ray might have an affair with Angelina, the attractive waitress </i> ]</dd><dd> <b>  Debra </b> : Marie, I'm not worried. I trust Ray.</dd><dd> <b>  Marie </b> : Oh, I'm not worried about Raymond either, dear. I'm worried about that pizza parlor putana!</dd></dl>
+Season 1
+Look Don't Touch[1.05]
+<dl><dd> <b>  Ray </b> : <i>  [to Angelina] </i> I'm sorry that was rude of me. This is Debra, the little lady. I don't mean little in a size way, or that she doesn't matter. She's my lady. She's my great big lady.</dd></dl>
+Season 1
+Frank, the Writer[1.06]
+<dl><dd> <b>  Robert </b> : Michael threw his milk at me!</dd><dd> <b>  Frank </b> : Isn't that great? That could be my second story! The digest loves a naughty baby.</dd></dl>
+Season 1
+Frank, the Writer[1.06]
+<dl><dd> <b>  Debra </b> : Ray, Robert is still here.</dd><dd> <b>  Ray </b> : Hey, Robert! What are you doing here?</dd><dd> <b>  Robert </b> : I had a suspicion I needed to confirm.</dd><dd> <b>  Debra </b> : Robert, what's wrong?</dd><dd> <b>  Robert </b> : I don't think Michael loves me anymore.</dd><dd> <b>  Debra </b> : What are you talking about?</dd><dd> <b>  Robert </b> : He's not like Geoffery, he seems standoffish.</dd><dd> <b>  Ray </b> : You do know Michael is a baby, right?</dd><dd> <b>  Robert </b> : Just a feeling. Cop's instinct. He wants nothing to do with me.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> [Ray and Debra are going over their bills.]</dd><dd> <b>  Debra: </b> According to this, we can afford a car phone.</dd><dd> <b>  Ray: </b> No. No car phone.</dd><dd> <b>  Debra: </b> Why? Why do you fight technology?</dd><dd> <b>  Ray: </b> I'm against technology?</dd><dd> <b>  Debra: </b> Yeah.</dd><dd> <b>  Ray: </b> Who introduced you to Wonderbra?</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Ray: </b> All three kids asleep. You thought I couldn't get Ally to take a nap.</dd><dd> <b>  Debra: </b> Good job, honey.</dd><dd> <b>  Ray: </b> Yeah. By the way, tomorrow we have to buy a pony.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Debra: </b> Would you look at this great big stain here? The carpet guy swore up and down that he could get it out.</dd><dd> <b>  Ray: </b> I don't want to hear about stains. The kids are asleep, the house is quiet. Now it's quality time. Just me and you.</dd><dd> [Ray starts reading the newspaper.]</dd><dd> <b>  Debra: </b> You better be looking at jewelery ads.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <i>  [Marie barges into the house.] </i></dd><dd> <b>  Marie: </b> Your father has finally done it.</dd><dd> <b>  Ray: </b> What's that, learned to buckle his pants?</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Frank </b> : I've got the complete works of Arnold Schwarzenegger, except the one where he gets pregnant.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Debra </b> : Where's Frank?</dd><dd> <b>  Ray </b> : By now he's probably taping the toilet seat so he never has to flush.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Debra </b> : Ray! She's in there chiseling my head stone!</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Debra </b> : <i>  [To Ray, about Marie] </i> Anything she cooks for me you're tasting first.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Frank </b> : It's the celery that makes "tuna salad" tuna salad. What you gave me was tuna slop!</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Frank </b> : I can be sweet....it takes people time to discover that.</dd></dl>
+Season 1
+Your Place or Mine?[1.07]
+<dl><dd> <b>  Debra </b> : Robert, just do what I do; tell him you're tired and he'll climb off.</dd></dl>
+Season 1
+In-Laws[1.08]
+<dl><dd> <b>  Lois </b> : So, how are things going with you, Robert?</dd><dd> <b>  Robert </b> : Well, you know, one day you're rescuing a puppy, the next you're fishing a skull out of a toilet.</dd></dl>
+Season 1
+In-Laws[1.08]
+<dl><dd> <b>  Ray </b> : These people shouldn't be at the same table together. They shouldn't be in the same state!</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Debra </b> : You lost $2300 to your father?!?!</dd><dd> <b>  Ray </b> : Relax, alright? We're gonna get the money back.</dd><dd> <b>  Debra </b> : How?</dd><dd> <b>  Ray </b> : When he dies.</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> [ <i>  Robert interrogates Ray and Frank for illegally gambling. </i> ]</dd><dd> <b>  Ray </b> : What the hell are you doing?</dd><dd> <b>  Robert </b> : "Good Cop/Bad Cop". It's just taking a little longer because there's only one of me.</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Marie </b> : You're giving him back that money!</dd><dd> <b>  Frank </b> : Like hell, I am! I want to teach him a lesson. You up the stakes, you lose a lot. Play with fire, you're going to get burned.</dd><dd> <i>  [Waves check in front of Raymond] </i></dd><dd> <b>  Frank </b> : AND ALWAYS, THANK YOU, COME AGAIN!</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Frank </b> : You're not talking to me?</dd><dd> <b>  Marie </b> : Nope.</dd><dd> <b>  Frank </b> : <i>  [smiling] </i> I just keep winning.</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Marie </b> : This is for you.</dd><dd> <b>  Debra </b> : Ahh. But I thought Frank said...</dd><dd> <b>  Marie </b> : No, he doesn't know anything about that. This is <i>  my </i> money.</dd><dd> <b>  Debra </b> : You have money?</dd><dd> <b>  Marie </b> : Oh... My father, oh, such a wise man. On my wedding day, he took me aside, gave me $200, and said, "Here". This is if you come to your senses and leave Frank.</dd><dd> <b>  Debra </b> : Wow. My dad only gave me fifty.</dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Ray </b> : For the last time I'm not taking the money. I lost it, that's all. I'm a big boy alright? If I take the money what kind of message does that send to my kids? That no matter what happened you can go to your father and he'll make everything ok?</dd><dd> <b>  Frank </b> : You're right. You're right.</dd><dd> <b>  Ray </b> : What, what am I right about?</dd><dd> <b>  Frank </b> : You should be able to go to your father, and he should be able to make it ok. <i>  [Gives Ray his money back] </i></dd></dl>
+Season 1
+Win, Lose or Draw[1.09]
+<dl><dd> <b>  Frank </b> : So Ray, you feel like a winner?</dd><dd> <b>  Ray </b> : Not really.</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Ally </b> : My teacher says they had fish at the first Thanksgiving.</dd><dd> <b>  Ray </b> : Yeah, well, people were stupid then, sweetie!</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Debra </b> : Look, Ray, we want to start our own tradition, and Ally wants it to be like the first Thanksgiving.</dd><dd> <b>  Ray </b> : Well, why don't we have some smallpox then, too?</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Ray </b> : You want me to convince my parents to come here, and my sales pitch is, "mmm, mmm, fish!"</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Ray </b> : I got the last of the baking powder. I had to fight two old ladies to get it.</dd><dd> <b>  Debra </b> : What did you do?</dd><dd> <b>  Ray </b> : Nothing I'm proud of.</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Ray </b> : Debra, calm down. You're reacting to missing squash like the time we left Ally at the mall!</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Debra </b> : I can't compete with your mother's turkey Ray, the woman has giblets in her blood!</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Ray </b> : My mom is such a great cook. Thanksgiving, that's kinda what makes my mom...worth it.</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Frank </b> : <i>  [Looking at the TV] </i> What the hell is this crap?</dd><dd> <b>  Warren </b> : That's soccer. Frank, only in America is football the game that you're familiar with. In many countries, when people refer to football, they actually mean soccer!</dd><dd> <b>  Frank </b> : In many countries people eat cats.</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Uncle Mel </b> : My god! That fish smell is like a....a punch in the face.</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Marie </b> : Where do you want me to put this turkey?</dd><dd> <b>  Debra </b> : I'll tell you where you can put it...</dd></dl>
+Season 1
+Turkey or Fish[1.10]
+<dl><dd> <b>  Debra's Mother </b> : You want some yams?</dd><dd> <b>  Uncle Mel </b> : No, I hate yams.</dd><dd> <b>  Ally </b> <i>  [dressed up as a yam] </i> : You hate yams?</dd><dd> <b>  Debra </b> : Aw, honey, he doesn't hate ALL yams.</dd><dd> <b>  Uncle Mel </b> : Yes, I do, I hate them, they're very binding!</dd></dl>
+Season 1
+Captain Nemo[1.11]
+<dl><dd> <b>  Ally </b> : Mommy, that man over there is smoking!</dd><dd> <b>  Dave </b> : Narc!</dd></dl>
+Season 1
+Captain Nemo[1.11]
+<dl><dd> <b>  Ally </b> : Good morning, Mommy.</dd><dd> <b>  Debra </b> : Hi, honey. Where's Daddy?</dd><dd> <b>  Ally </b> : In the shower singing. He's terrible!</dd></dl>
+Season 1
+Captain Nemo[1.11]
+<dl><dd> <b>  Debra </b> : You know I gave up some stuff when we had kids.</dd><dd> <b>  Ray </b> : I know...did it have to be sex?</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Marie </b> : Why do you insist on making this car wreck our Christmas tree every year? I want a real tree.</dd><dd> <b>  Frank </b> : An artificial tree saves water, saves the forest, and saves the planet. I'm a conservationist.</dd><dd> <b>  Marie </b> : You're cheap.</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Debra </b> : Mommy is just wrestling daddy.</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Ray </b> : Wait, Mickey Mantle didn't sign this ball? It isn't real?</dd><dd> <b>  Frank </b> : It's a real ball.</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Marie </b> : What's the matter?</dd><dd> <b>  Ray </b> : Nothing, nothing's the matter.</dd><dd> <b>  Debra </b> : Oh nothing at all, except Ray was just about to tell Ally the truth about Santa Claus.</dd><dd> <b>  Marie </b> : You what?!?!</dd><dd> <b>  Ray </b> : NO, I didn't tell her.</dd><dd> <b>  Marie </b> : My own son, an atheist?!?!</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Robert </b> : <i>  [to Ray] </i> Ma told me what you did... nice.</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <i>  [Robert enters dressed as Santa Claus.] </i></dd><dd> <b>  Robert </b> : Merry Christmas! Is Ally here? I understand there are doubts about me in this house!</dd><dd> <b>  Ray </b> : There are now. Come on, Robert--</dd><dd> <b>  Robert </b> : No, you have me mistaken for some other party for I'm jolly old Saint Nick.</dd><dd> <i>  [Ally walks in.] </i></dd><dd> <b>  Debra </b> : Look, Ally, it's Santa Claus.</dd><dd> <b>  Ally </b> : Santa?</dd><dd> <b>  Robert </b> : Yes, it is really I, and I came to see you Ally because I heard you were a very good girl this year and you're going to get everything you want. <i>  [to Ray] </i> Unlike some other people. [ <i>  in disgust </i> ] Ho ho ho ho ho.</dd><dd> <b>  Ray </b> : Hold the ho's, I want to talk to you for a minute.</dd><dd> <b>  Robert </b> : I'm sorry, I'm with a client. And you may call me Mr. Claus.</dd><dd> <i>  [Frank enters, dressed as Santa.] </i></dd><dd> <b>  Frank </b> : Where's Ally?</dd><dd> <i>  [Frank notices Robert.] </i></dd><dd> <b>  Frank </b> : Ho-ho-holy crap. What are you doing here?</dd><dd> <b>  Robert </b> : I'm Santa Claus.</dd><dd> <b>  Frank </b> : You're Santa?</dd><dd> <b>  Ray </b> : Okay, will you guys cut it out already. She's confused enough as it is.</dd><dd> <b>  Frank </b> : What's there to be confused about? I'm the real Santa! Who is this imposter?</dd><dd> <b>  Debra </b> : Well, you couldn't both be Santa. You must be Santa's helpers.</dd><dd> <b>  Frank </b> : Right! He's my helper. Helper, why don't you warm up the reindeer and bring the sled around?</dd><dd> <b>  Robert </b> : I bet you can't even name the reindeer.</dd><dd> <b>  Frank </b> : Ruldoph! Donner, Blitzen... those are the main ones. We rotate them so they wear evenly. Cupid! Ajax! And... Lefty!</dd><dd> <b>  Robert </b> : Now we know the truth.</dd><dd> <i>  [Ally pulls off Robert's Santa beard] </i></dd><dd> <b>  Ally </b> : It's Uncle Robert!</dd><dd> <b>  Robert </b> : <i>  [in Santa voice] </i> No, no. I have merely assumed the body of a life form suitable to you.</dd><dd> <b>  Ray </b> : Robert ... you're Santa, not a Klingon.</dd></dl>
+Season 1
+The Ball[1.12]
+<dl><dd> <b>  Frank </b> : You mean that even though you know that ball's a fake it still means something to you?</dd><dd> <b>  Ray </b> : Yeah, yeah dad.</dd><dd> <b>  Frank </b> : Then this Christmas you're gonna love the Rolex I got you.</dd></dl>
+Season 1
+The Game[1.17]
+<dl><dd> <b>  Marie </b> : Oooh, suddenly you have scruples.</dd><dd> <b>  Frank </b> : I have scruples Marie. I've got scruples the size of basketballs.</dd></dl>
+Season 1
+Neighbors[1.20]
+<dl><dd> <b>  Priest </b> : ...There was a man on our church council a few years ago. A decent enough fellow but a little abrasive. Oblivious to anyone else's feelings. I used to fantasize about him converting to Judaism. I wanted to get him out of my hair. One day I said Frank...</dd><dd> <b>  Ray </b> : Wait, the man's name was Frank?</dd><dd> <b>  Priest </b> : That's not important. What's important is...</dd><dd> <b>  Ray </b> : Frank Barone?</dd><dd> <b>  Priest </b> : You know Frank Barone?!</dd><dd> <b>  Ray </b> : He's my father!</dd><dd> <b>  Priest </b> : Your parents are Frank and Marie Barone?!</dd><dd> <b>  Ray </b> : Yes!!!</dd><dd> <b>  Priest </b> : You're absolved.</dd><dd> <b>  Ray </b> : What?</dd><dd> <b>  Priest </b> : Our Lord forgives your thoughts.</dd><dd> <b>  Ray </b> : Really?</dd><dd> <b>  Priest </b> : Well, I could look it up but I'm almost positive.</dd></dl>
+Season 1
+Why Are We Here?[1.22]
+<dl><dd> <b>  Ray </b> : So God made us smart enough to know there's an answer, but not smart enough to figure it out?</dd></dl>
+Season 1
+Why Are We Here?[1.22]
+<dl><dd> <b>  Frank </b> : You want to know the meaning of life? You're born, you go to school, you go to work, you die. Marie... Canole</dd></dl>
+Season 2
+The Letter[2.11]
+<dl><dd> <i>  [after reading an insulting letter from Debra to Marie] </i></dd><dd> <b>  Frank </b> : Is this a pettition? Where do I sign?</dd></dl>
+Season 2
+The Letter[2.11]
+<dl><dd> <i>  [Debra walks in] </i></dd><dd> <b>  Frank </b> : You're my favorite writer!</dd></dl>
+Season 2
+Civil War[2.13]
+<dl><dd> [ <i>  Frank is showing Ray and Robert how to act at a Civil War Re-enactment. </i> ]</dd><dd> <b>  Frank </b> : Okay, I was just about to show Robert how to act when you get shot.</dd><dd> <b>  Ray </b> : What, like upset?</dd><dd> <b>  Frank </b> : No, it's got to be realistic. Here, let me show you. Robert, make a gunshot noise.</dd><dd> <b>  Robert </b> : What caliber, .22 or .45?</dd><dd> <b>  Frank </b> : Ray.</dd><dd> <b>  Ray </b> : Bang.</dd><dd> [ <i>  Frank grabs his chest and backs off. </i> ]</dd><dd> <b>  Frank </b> : [ <i>  yelling </i> ] I'm hit! Keep fighting, men. Kill those rebel bastards!</dd><dd> [ <i>  Frank backs away some more, in an overly dramatic pose and after a few seconds lies still. </i> ]</dd><dd> <b>  Frank </b> : Abigail. Dear Abigail, my pretty non-nagging Civil War wife.</dd><dd> [ <i>  Frank gurgles and then finishes his acting by rolling his eyes. Ray and Robert stare on in disbelief. Frank gets up. </i> ]</dd><dd> <b>  Frank </b> : See? Getting shot is fun.</dd><dd> <b>  Ray </b> : Not if you're watching.</dd></dl>

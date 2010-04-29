@@ -31,7 +31,7 @@ public class Main extends Activity {
         opt2 = (Button)findViewById(R.id.opt2);
         opt3 = (Button)findViewById(R.id.opt3);
         try {
-			quotestore = new QuoteStore(this);
+			quotestore = new QuoteStore(this, R.raw.its_always_sunny_in_philadelphia);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -52,7 +52,6 @@ public class Main extends Activity {
 			else {
 				status = "Wrong, dummy!  That was from " + currentEpisode;
 			}
-			Log.d("WHERE'S MY TOAST!", status);
 			Toast.makeText(Main.this, status, Toast.LENGTH_SHORT).show();
 			loadNewQuote();
 		}};
@@ -74,10 +73,8 @@ public class Main extends Activity {
     
     void loadNewQuote() {
     	questionNumber++;
-    	if (questionNumber > quotestore.numSeasons())
-    		questionNumber = 1;
     	WebView quoteview = (WebView)findViewById(R.id.quote);
-    	SimpsonsQuote quote = quotestore.quoteBySeason(questionNumber);
+    	SimpsonsQuote quote = quotestore.randomQuote();
 		List<String> episodes = new ArrayList<String>();
 		currentEpisode = quote.episode;
 		episodes.add(quote.episode);
@@ -87,6 +84,9 @@ public class Main extends Activity {
 		
 		Collections.shuffle(episodes);
     	quoteview.loadData(quote.quote, "text/html", "utf-8");
+    	// otherwise if we go from something that fits on one page to something that doesn't, the
+    	// scroll indicator doesn't show up
+    	quoteview.setVerticalScrollbarOverlay(true);
     	opt1.setText(episodes.get(0));
     	opt2.setText(episodes.get(1));
     	opt3.setText(episodes.get(2));

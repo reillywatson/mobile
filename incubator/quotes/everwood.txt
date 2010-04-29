@@ -1,0 +1,384 @@
+Season One
+Pilot[1.1]
+<dl><dd> <b>  Ephram </b> : You know what? Everyone said you were crazy. And you know what? News flash, you are. All right, you quit your job, you grow this ugly ass beard, you look like you wear your clothes to bed and you move us to No-wheres-ville U.S.A.! And why? Because someone told you it was pretty once.!? And if that's not enough, you talk to mom like she's still here, I've seen you and Delia has too. What do I have to say to myself?! What do you have to say to yourself?!</dd><dd> <b>  Dr. Brown </b> : I can't believe you think my beard is ugly.</dd><dd> <b>  Ephram </b> : Mom would have never had done this to us! She never would've moved us here and gone crazy!</dd><dd> <b>  Dr. Brown </b> : Don't be so sure of that!</dd><dd> <b>  Ephram </b> : I am sure! All right, I knew her. You didn't know her. We all just tolerated you!</dd><dd> <b>  Dr. Brown </b> : Hey, that's pretty good, what else you got?!</dd><dd> <b>  Ephram </b> : I wish you died instead of her!</dd><dd> <b>  Dr. Brown </b> : Well, I wish I did too you little bastard!</dd><dd> <b>  Ephram </b> : I hate you!</dd><dd> <b>  Dr. Brown </b> : Well, I hate you right back! Now get in that house!</dd><dd> <b>  Ephram </b> : I'm going for a ride! (He grabs his bike)</dd><dd> <b>  Dr. Brown </b> : Oh, yeah?!</dd><dd> <b>  Ephram </b> : "Yeah!</dd><dd> <b>  Dr. Brown </b> : At some point you're getting in that house!</dd></dl>
+Season One
+Pilot[1.1]
+<dl><dd> <b>  Ephram </b> : [to Bright] I'm sorry, I don't speak Dumbass.</dd></dl>
+Season One
+Pilot[1.1]
+<dl><dd> <b>  Nina </b> : You want a cup of coffee?</dd><dd> <b>  Dr. Brown </b> : Only if it's spiked.</dd></dl>
+Season One
+Pilot[1.1]
+<dl><dd> <b>  Nina </b> : Hi, I'm Nina Feeny. I'm your neighbor.</dd><dd> <b>  Dr. Brown </b> : That's a weird coincidence because I'm your neighbor.</dd></dl>
+Season One
+Pilot[1.1]
+<dl><dd> <b>  Amy </b> : Smell. The cold smells like pine... or the pine smells like cold... something.</dd></dl>
+Season One
+The Great Doctor Brown[1.2]
+<dl><dd> <b>  Dr. Brown </b> : Willy Wonka and the Chocolate Factory, excellent choice, Delia.</dd><dd> <b>  Ephram </b> : Don't let her watch it.</dd><dd> <b>  Delia </b> : Be quiet.</dd><dd> <b>  Dr. Brown </b> : Am I missing something?</dd><dd> <b>  Ephram </b> : Eight years of raising her. She can't watch that movie, it upsets her.</dd><dd> <b>  Delia </b> : It does not.</dd><dd> <b>  Ephram </b> : Well, that is if you don't count the screaming and nights on my floor.</dd><dd> <b>  Dr. Brown </b> : Delia?</dd><dd> <b>  Delia </b> : Well, it used to scare me, but it doesn't anymore.</dd><dd> <b>  Ephram </b> : Ah, that's what she always says. Like a junkie begging for more smack.</dd><dd> <b>  Delia </b> : I'm not a junkie, you're a junkie.</dd><dd> <b>  Dr. Brown </b> : Nobody's a junkie in this house.</dd></dl>
+Season One
+The Great Doctor Brown[1.2]
+<dl><dd> <b>  Ephram </b> : So what do people do up here, besides wait for an early demise... and ask really dumb questions</dd><dd> <b>  Amy </b> : Actually I brought you up here to tell you something very important. Grover.</dd><dd> <b>  Ephram </b> : Grover?</dd><dd> <b>  Amy </b> : It's my nickname.</dd></dl>
+Season One
+Deer God[1.5]
+<dl><dd> <b>  Dr. Brown </b> : What is that out front?</dd><dd> <b>  Ephram </b> : Doe, a deer. A female deer.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : What?</dd><dd> <b>  Ephram </b> : You're talking faster than my brain processes language.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Do me a favor, you know how you normally behave? <dl>  <dd>   <b>    Ephram   </b>   : Distant and miserable?  </dd> </dl></dd><dd> <b>  Dr. Brown </b> : Yeah. Do the opposite.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : [to dad] Look. I'm Superdad let's fish and make waffles.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : You know, when your mother died, a thousand people said a thousand stupid things to me and I just wanted one of them to give me a reason not to die.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : [to Ephram] You know, you're grandfather thinks I'm only half a person - and if you leave - he'll be right.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Abbott </b> : And behold the people, who had every attribute of dogs, except loyalty.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : You know, no offense, but he's really my least favorite thing about you.</dd><dd> <b>  Bright </b> : Yeah, well, you're really my least favorite thing about you.</dd><dd> <b>  Ephram </b> : Dude, you really gotta work on the insults</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : You gotta stop doing that.</dd><dd> <b>  Amy </b> : What?</dd><dd> <b>  Ephram </b> : Saying things that make me wanna kiss you.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : Ephram Brown, the melting man. The melting man, Ephram Brown.</dd><dd> <b>  Ephram </b> : He's quiet.</dd><dd> <b>  Amy </b> : He's not having the best day. They say it's his last</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : [to Amy] I haven't made anything for myself here... except you.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : [to Bright] You guys choreograph the bathroom stall exit, and I'm the loser?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : What exactly is going on between you and Colin? I mean, why are you being all buddy buddy with him?</dd><dd> <b>  Ephram </b> : First of all, I'm not being all buddy buddy with anyone, all right? He approached me.</dd><dd> <b>  Amy </b> : He did, why? I-I mean, why?</dd><dd> <b>  Ephram </b> : I don't know, maybe he thinks I'm pretty.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Are you two friends now?</dd><dd> <b>  Ephram </b> : Kinda. Turns out we have some stuff in common.</dd><dd> <b>  Dr. Brown </b> : You mean Amy?</dd><dd> <b>  Ephram </b> : Surprisingly, it has nothing to do with Amy.</dd><dd> <b>  Dr. Brown </b> : So why don't you go sit with him?</dd><dd> <b>  Ephram </b> : Because of Amy.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : We were like Mike and Scottie. Only shorter... and whiter.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Now, if you choose not to respond to my parental authority, I should warn you, I have mind altering drugs in the other room and I'm not afraid to use them.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Are you dilated yet?</dd><dd> <b>  Rev. Keyes </b> : I'm not sure, but everything has a rainbow halo around it. You look like Jesus.</dd><dd> <b>  Dr. Brown </b> : I get that a lot.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : You know, you're the only guy I know who's so dark it turns me into an optimist. It's kinda scary.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : I melt down, you practically carry me home, and YOU want to say sorry? You - you're like a saint, only annoying.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : I have to go help my dad. If I die and don't go to Heaven, I'm gonna be so pissed</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : How long were you there?</dd><dd> <b>  Ephram </b> : Long enough to move on.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Clue doesn't come travel sized?</dd><dd> <b>  Ephram </b> : One of the world's greater atrocities.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : You know, there's a reason men don't wear ruffles.</dd><dd> <b>  Colin </b> : It's not that bad. If this were 1775, you'd be a total chick magnet.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : Uh, Dad, depending on how many people are there today, do you think I could borrow that rifle to shoot myself?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Delia </b> : I don't think I'm going to be a brain surgeon when I grow up.</dd><dd> <b>  Dr. Brown </b> : No? Why not?</dd><dd> <b>  Delia </b> : Well, for one thing, you have to wake up early. Even on Saturday.</dd><dd> <b>  Dr. Brown </b> : Yeah, that can be a drawback.</dd><dd> <b>  Delia </b> : And because I'm probably going to be a tap dancer.</dd><dd> <b>  Dr. Brown </b> : I thought you were going to be a fireman.</dd><dd> <b>  Delia </b> : I'm going to do that, too. During the day.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : So, what's he like? Colin.</dd><dd> <b>  Nina </b> : He's a charmer. You know, he's the kind of kid who forgets to mow your lawn for two weeks, then when he finally comes, you end up paying him for three. I think he was All State football. And pretty smart, too.</dd><dd> <b>  Ephram </b> : So he's basically like God.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Colin </b> : [to Bright] Hey, Johnny Tremain. Wanna see something that will knock your pantaloons off?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Mole </b> : Nice truck, Hart. Too bad it's your Daddy's.</dd><dd> <b>  Colin </b> : Whatever, McNally. Like I can't drive this whenever I want.</dd><dd> <b>  Mole </b> : I'm sure you can.</dd><dd> <b>  Colin </b> : Besides your brother there is still the kid who threw up on the DMV guy during his driving test.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Somewhere, Jerry Garcia is weeping.</dd><dd> <b>  Rose </b> : I just don't know what Irma was doing with all this marijuana.</dd><dd> <b>  Dr. Brown </b> : Well, I can certainly guess what she was doing with some of it.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : This is totally great. The dudes at school are not gonna believe this.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Rose </b> : [seeing her husband peer out the window] What are you looking for?</dd><dd> <b>  Dr. Abbott </b> : Trouble.</dd><dd> <b>  Rose </b> : Which starts with 'T', which rhymes with 'P' and that stands for 'pot'?</dd><dd> <b>  Dr. Abbott </b> : Oh, joke away my dear. Once word gets out, every dope fiend and pot head within 50 miles is gonna come sniffing around this house.</dd><dd> <b>  Rose </b> : And do what? Roll around on the front lawn stoned? Its not catnip, Harold.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : He's not like us, Colin. Trust me, I know him and I know you. It's like ketchup and peanut butter... really bad.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Let's talk about this "E" thing. Who came up with that?</dd><dd> <b>  Colin </b> : Probably Bright...</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : What are you wearing to Colin's?</dd><dd> <b>  Bright </b> : Clothes...</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : How are things with you and Amy?</dd><dd> <b>  Ephram </b> : I don't know, we haven't been talking that much.</dd><dd> <b>  Dr. Brown </b> : oh yeah... when did this happen?</dd><dd> <b>  Ephram </b> : A while ago, you were too busy being clueless.</dd><dd> <b>  Dr. Brown </b> : Oh. What happened? Did you kiss her?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : I'm not that clueless.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Did you two find God nicely?</dd><dd> <b>  Delia </b> : Yup.</dd><dd> <b>  Dr. Brown </b> : Where was He?</dd><dd> <b>  Delia </b> : In the gas tank.</dd><dd> <b>  Dr. Brown </b> : I knew it.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : [drunk] Greetings tree, I am your sprinkler.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Abbott </b> : Newsflash Dr Brown, you're not here to save the world. Only to annoy it.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : So how's the Amy situation working out?</dd><dd> <b>  Ephram </b> : What Amy situation?</dd><dd> <b>  Dr. Brown </b> : Ohh... that good huh?</dd><dd> <b>  Ephram </b> : Oh it's fantastic. I'm a really important friend.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : So have you heard? Everwood is now officially dope-free.</dd><dd> <b>  Ephram </b> : Bright moved?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Come on, you're a sock. Why do you have to fight me all the way up?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Laynie </b> : I hate that the egg rolls at Gino Chang's smell like lasagna.</dd><dd> <b>  Ephram </b> : I hate that everything's a fest. Thaw fest, fly fest, pie fest. What does that even mean? What's so festive about catching a fish or watching a guy melt?</dd><dd> <b>  Laynie </b> : I hate that they call it "Main Street" even though it's pretty much the only one. Why don't they just call it "street"?</dd><dd> <b>  Ephram </b> : Do you have a subway map of another city covering one of the walls in your room?</dd><dd> <b>  Laynie </b> : Do you pick colleges based on how far away they are from here?</dd><dd> <b>  Ephram </b> : Have you ever had that dream where you're trapped in a sewer for life, and you wake up and you're disappointed that you're still in Everwood?</dd><dd> <b>  Laynie </b> : Do you have a packed bag and a plane ticket in your room?</dd><dd> <b>  Ephram </b> : Oh come on.</dd><dd> <b>  Laynie </b> : You don't believe me? I'll show you!</dd><dd> <b>  Ephram </b> : No, I believe you. I've kept the bag around for a while, I just haven't gotten around to buying the ticket yet.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : [to Amy] You've turned your entire schedule into something the President couldn't even handle! Not that that's saying much!</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : I'll make it up to you, I promise I won't cook dinner for a whole week.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : Do you think if aliens would probe you, you'd still be considered a virgin?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Do you have a boyfriend?</dd><dd> <b>  Amy </b> : Yes. But I want you to meet him. If you do, you'll understand.</dd><dd> <b>  Ephram </b> : That was right on my list of things to do today, right between picking up my dry cleaning and chopping off my hand.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : I'd like to take a moment and point out that this is by far the weirdest restaurant we've ever been to, and we're from New York City where we're regularly served by drag queens named Frank.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : Hey, I gotta talk to you about something.</dd><dd> <b>  Ephram </b> : What? You got the results back from your IQ test? You failed?</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Look, Amy, I know this sucks for you because of Colin and I want to be there for you, I do, but I can't do this anymore. I can't keep being your second choice, not when you're my first.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : Maybe love's like math. You don't get better at it but you just get used to it. Simple equations with the occasional variable.</dd><dd> <b>  Ephram </b> : I hope not. I suck at math.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : You might wanna work on your bedside manner, Ephram. You just cleared the room.</dd><dd> <b>  Ephram </b> : Yeah, I noticed that. Thank you.</dd><dd> <b>  Delia </b> : Set the table doofus, if you can even do that...</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Harold </b> : We got here as fast as we could, which wasn't very fast.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Brenda Baxworth </b> : Just what makes you so sure he's innocent, doc?</dd><dd> <b>  Dr. Abbott </b> : Because Marvin Harrison was my father's closest friend. He's no more a murderer than any of you are civilized.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Laynie </b> : Nightmare, isn't it?</dd><dd> <b>  Ephram </b> : What's going on, except my exact version of 'hell on earth'?</dd><dd> <b>  Laynie </b> : Spoils of war. The result of a commercially financed assault against the unattached individual.</dd><dd> <b>  Ephram </b> : Valentines Day?</dd><dd> <b>  Laynie </b> : Week after is always the hardest. These newbie couples have the lifespan of a monarch butterfly. By Friday, the halls will be littered with their crispy corpses.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Laynie </b> : You looked so uncomfortable the other day. Like I embarrassed you or something.</dd><dd> <b>  Ephram </b> : Look, I'm gonna mess up because that's just what I do. But at least give me a chance to mess up. I mean, I'm capable of such stupidity that you'd be wasting my talent by ending this now.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Irv </b> : I know I bore Edna.</dd><dd> <b>  Dr. Abbott </b> : I've bored Rose since the day we met. I think she makes shopping lists in her head while I'm talking to her.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : I did pick up a thing or two from my 'rumble in the jungle'. Maybe they'd apply.</dd><dd> <b>  Dr. Brown </b> : As long as you don't ask the cast to make necklaces out of ears, then, yeah, go for it.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : There's someone in my office...</dd><dd> <b>  Edna </b> : Gee, no wonder you brain surgeons make so much money.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Isn't he supposed to be dead?</dd><dd> <b>  Edna </b> : Yeah, I thought that was a little weird, too.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : I say we keep walking until we run out of fries.</dd><dd> <b>  Amy </b> : You know, we can always buy more fries.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Laynie </b> : I found him after school at the post office hanging around the outbound mail box. I think someone was trying to return him.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Laynie </b> : Happy people depress me. Drunk, happy people make me want to slit my wrists.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : The way you handled those guys at the party... that was... you were...</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Delia </b> : Are you having a fight?</dd><dd> <b>  Dr. Abbott </b> : Perpetually, child.</dd></dl>
+Season One
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : [in a letter to Julia] Dear Valentine, come away with me. If I had a day with you and you only, I would enjoy the simple things. The things that, in the end, when time steals the rest away, are the only things we'll remember. I would paddle you across a still lake in a rowboat and read poetry to you until you fall asleep and I would never think about the hours. Dear Valentine, if I had one day with you and you only... I would admire every line of your face, every strand of your hair... Every graceful movement of your hands or your eyes or your body. If I had one perfect day... Don't you see? My heart beats only for you. Dear Valentine, these are the things I remember of my love. A warm hand, a warm breath. Your warm mouth. Your arms around mine... I remember feeling safe, cease-less. Like one person. The two of us still, at rest, entwined... I remember how I felt the first time I kissed you. It felt like the high dive. What do you remember? How will I ever know what was inside your heart? Where did they go? All the things we think and feel but don't say. Dear Valentine... These are the things I never told you. These are the things I need you to know. That I loved you always. And my love was so big, it lives still after you're gone. I'd like to tell you that I would do it differently. That if I had one more day I would do everything right. But I know that isn't true. I'd make all the same mistakes. That is except one. I wouldn't say goodbye.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Hey, can Linda come out and play?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Mindy Wheeler </b> : [planning a surprise party for her friend] She's clueless as a playboy bunny, so don't spill the beans.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : [talking about Hannah, dismayed] She's not going to have premarital sex until she's *married.*</dd><dd> <b>  Ephram </b> : That's...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : ...never mind.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Brittany, hand me that watch and step away from the door.</dd><dd> <b>  Brittany </b> : Umm...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Brittany </b> : abort... abort.</dd><dd> <b>  Dr. Brown </b> : Oh, very subtle.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Andy </b> : ABORT! ABORT!</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Delia </b> : What is it, Dad?</dd><dd> <b>  Dr. Brown </b> : Ohhhh, nothin'. A patient I diagnosed with the flue has life-threatening meningitis. And Phil the mechanic is psychic.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : The uhhh nurse at school was very grateful when I told her too.</dd><dd> <b>  Phil Drebbles </b> : You told Hazel? Great, there'll be a mob here by lunch.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Madison </b> : This isn't the first time Jay's walked out. He loves drama.</dd><dd> <b>  Ephram </b> : How long's he been with the band?</dd><dd> <b>  Madison </b> : Uhhh, he came in a couple months ago to replace this guy Kip who moved to Oregon to find himself.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : How 1978.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Louise </b> : The proliferation of 15 minute coffee breaks to include more than three per day or the extension of said breaks to encompass greater than 20 minutes of downtime in the span of a three hour period should be avoided.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Abbott </b> : Thank you, Louise. Ahhhh, moving onto this month's management topics.</dd><dd> <b>  Linda </b> : You mean there's something left uncovered in the October management summit of 2003? I'm stunned.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : Phil Drebbles, Marcus Welby of the paranormal. Phil's just your average guy. Has a repair shop, sells a few cars here and there. Some years back, word gets out: he has predicted Sam and Jenny Hess will have a male child before the year is out. Only everyone knows Jenny can't get pregnant on account of her ovaries were malformed at birth. By St. Patrick's Day, Jenny knew she was pregnant. And around Halloween, Baxter was born. Well, you can imagine. The whole town beat for a path to Phil's repair shop. Finally about eight months or so, he makes the mother of all predictions: a flood is gonna hit Everwood...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : ...and, well, by now, his word is golden. Everybody packs up, evacuates the town and...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : No flood!</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : Not a drop. Drought that year as I recall...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Voted safest...</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Boat in the Navy?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Thank God the mad genius is back. You know, you guys can really use a visionary like him?</dd><dd> <b>  Madison </b> : He just likes to make sure his presence is felt.</dd><dd> <b>  Ephram </b> : Oh believe me. I'm feelin' it.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Madison </b> : Why didn't you tell me you were some kind of prodigy?</dd><dd> <b>  Ephram </b> : Well, prodigy would imply youth while I'm actually an</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : old soul. At least somebody once told me that. So, you like it?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : Sure, you wouldn't rather take Irv's rifle?</dd><dd> <b>  Linda </b> : Don't tempt me.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Well, what do you want me to do Edna? I offered to help her yesterday and she didn't want it.</dd><dd> <b>  Edna </b> : You're a grown man with a post graduate degree! Figure it out!</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : Besides, you know I-I-I think, you might be overestimating Linda's...</dd><dd> <b>  Edna </b> : I KNOW that girl. I know how she looks when she's excited about something. And for reasons unknown given your complete incompetence in the dating arena, she's excited about you.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Why didn't you tell me Jay was your boyfriend?</dd><dd> <b>  Madison </b> : He's not my boyfriend. We just hang out, sometimes.</dd><dd> <b>  Ephram </b> : Like now? Like when you, when he's got his tongue so far down your throat I thought I was gonna have to give you oxygen?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Linda </b> : Well, I probably won't move again for another year.</dd><dd> <b>  Dr. Brown </b> : You mean I gotta do this again in another 12 months?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright </b> : I go where the booty goes.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : I thought that that was a code!</dd><dd> <b>  Madison </b> : What? When I said my roommate was going out of town and I wanted you to come over, that's ALL I meant!</dd><dd> <b>  Ephram </b> : I thought we were gonna... ya know.</dd><dd> <b>  Madison </b> : Okay, you're not allowed to hang out with Bright anymore.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Would it be bad if I said I wished I'd been there? I mean, not in a creepy "I'd like to watch" sort of way, I just don't like the idea of you ever being unhappy - even in the past.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Bright: </b> : Sometimes your pride comes before your nads. Not often, but sometimes.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Let's face it. We were never really friends, we were just...</dd><dd> <b>  Madison </b> : ...in love.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Linda </b> : Every time I come here I feel like I've fallen down a rabbit whole into some other time and place.</dd><dd> <b>  Dr. Brown </b> : I have similar thoughts every day.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Madison </b> : Listen, if you need any help with your homework or anything later, let me know, ok? And if you're going to be gone more than an hour, let me know. I don't want to worry.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Abbott </b> : My daughter is dating a parolled addict.</dd><dd> <b>  Dr. Brown </b> : My 16 year-old son is dating his 20 year old baby sitter.</dd><dd> <b>  Dr. Abbott </b> : Barkeep, two more.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Look, I, last night, what I said, I, uh, I didn't, I mean, I uh think that you're a really really great singer and I, I uh shouldn't have said anything. OK? I'm sorry.</dd><dd> <b>  Madison </b> : Was that an apology?</dd><dd> <b>  Ephram </b> : It was supposed to be, uh yeah.</dd><dd> <b>  Madison </b> : Not great.</dd><dd> <b>  Ephram </b> : Oh well. It was a rough draft I was gonna polish it up and give it to ya a little later.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : What?</dd><dd> <b>  Delia </b> : Boys are so obvious.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : You like Linda, she likes you, and you're both nincompoops who do nothing about it.</dd><dd> <b>  Dr. Brown </b> : The thing is, I promised Delia I wouldn't go out with her.</dd><dd> <b>  Edna </b> : You also promised Delia a horse. I don't see Mr. Ed galloping around here.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Linda </b> : I tried living by Buddha's rule "Live simply". Then I started collecting Buddhas.</dd><dd> <b>  Dr. Brown </b> : Enlightenment has a lot of props.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Abbott </b> : You never take any responsibility for your own actions. Do you blame Colin, Dr. Brown, us?</dd><dd> <b>  Amy </b> : No, I just blame you.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Harold </b> : Okay, then, Amy, you want a prescription? Here, I'll write you a prescription.</dd><dd> <b>  Rose </b> : Harold.</dd><dd> <b>  Harold </b> : No, Rose, I don't know what else to do. I'm at my wits end.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Harold </b> : Here's your prescription for Amy Abbott. Not my daughter because my daughter would never do this.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Phil Drebbles </b> : People don't really want the truth, they just want good news.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Linda </b> : Mom, I'm not putting up my own roadblocks.</dd><dd> <b>  Edna </b> : Well you sure as hell aren't pulling any down.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Edna </b> : Why didn't you tell me?</dd><dd> <b>  Linda </b> : Because I didn't want to worry you. Besides, I didn't want the whole town to know.</dd><dd> <b>  Edna </b> : I'm not the whole town.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Madison </b> : Ephram, you don't even know me.</dd><dd> <b>  Ephram </b> : I may not know everything about you but I know that you're the only one who makes my little sister think that it's okay to be a girl. And I know that you're only with Jay because you think he can take you where he can't. Because it's easier to say that I'm too young than to risk something you think you want. And I also know that ever since I kissed you at the DMV and every time I've seen you, I've wanted to kiss you again. And I don't know for sure, but I'm pretty certain, that you have, too.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : Thought so.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Dr. Brown </b> : There she blows!</dd><dd> <b>  Delia </b> : You can say that again.</dd><dd> <b>  Ephram </b> : Emphasis on blows.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Phil Drebbles </b> : Hop In. Your future awaits.</dd><dd> <b>  Ephram </b> : If this is my future, even my past is startin' to look good.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Older Car Salesman </b> : She ain't much to look at that's true, but your girl will like her.</dd><dd> <b>  Ephram </b> : Oh, I don't have a girl and I don't think that I'm going to be getting any with this thing. No offence, but this is kinda a mojo killer and I don't have any to spare.</dd><dd> <b>  Older Car Salesman </b> : No the girl that's right for you - she'll like this car.</dd><dd> <b>  Ephram </b> : What, some kind of weed out? Thanks but my face has that covered.</dd><dd> <b>  Older Car Salesman </b> : There's a girl who you like, who likes you. She like's the car.</dd><dd> <b>  Ephram </b> : A specific girl who likes this car?</dd><dd> <b>  Older Car Salesman </b> : Don't listen to me. What does a guy with grease under his nails know about romance? Here, hop in your future awaits.</dd><dd> <b>  Ephram </b> : If this is my future that even my past is starting to look good.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Madison </b> : Ephram, you left the house. Why, was it on fire?</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Ephram </b> : The more things change, the more they stay the same. I'm not sure who the first person was who said that. Probably Shakespeare. Or maybe Sting. But at the moment, it's the sentence that best explains my tragic flaw, my inability to change. I don't think I'm alone in this. The more I get to know other people, the more I realize it's kind of everyone's flaw. Staying exactly the same for as long as possible, standing perfectly still... It feels safer somehow. And if you are suffering, at least the pain is familiar. Because if you took that leap of faith, went outside the box, did something unexpected... Who knows what other pain might be out there, waiting for you. Chances are it could be even worse. So you maintain the status quo. Choose the road already traveled and it doesn't seem that bad. Not as far as flaws go. You're not a drug addict. You're not killing anyone... Except maybe yourself a little. When we finally do change, I don't think it happens like an earthquake or an explosion, where all of a sudden we're like this different person. I think it's smaller than that. The kind of thing most people wouldn't even notice unless they looked at us really close. Which, thank God, they never do. But you notice it. Inside you that change feels like a world of difference. And you hope this is it. This is the person you get to be forever... that you'll never have to change again.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Andy </b> : You haven't even touched your... millet pilaf, at least try it.</dd><dd> <b>  Delia </b> : I don't want to.</dd><dd> <b>  Andy </b> : Delia, this is not a request.</dd><dd> <b>  Delia </b> : It tastes like shit.</dd><dd> <b>  Andy </b> : What did you just say?</dd><dd> <b>  Delia </b> : I said... it tastes... like shit.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Andy </b> : All right, that's it. You go to your room right now. Ephram, stop laughing.</dd><dd> <b>  Ephram </b> : [still laughing] I'm trying.</dd><dd> <b>  Andy </b> : All right, you go to your room too. Everyone, go to their room this instant.</dd><dd> <b>  Linda </b> : I actually don't have a room here.</dd></dl>
+Season Two
+Till Death Do Us Part[1.8]
+<dl><dd> <b>  Amy </b> : ...And if you love someone... it should be easy... I love you Ephram.</dd><dd> <b>  Ephram </b> : [beat] I love you too, Amy.</dd><dd> <b>  Amy </b> : Yea?</dd><dd> <b>  Ephram </b> : Yea.</dd><dd> <b>  Amy </b> : Cool.</dd></dl>

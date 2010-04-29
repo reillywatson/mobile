@@ -1,14 +1,30 @@
 import BeautifulSoup
+import urllib
 import urllib2
-import os
+import sys
 
-def main():
-	quotes = open("quotesout.txt", "w")
-	os.system("wget http://en.wikiquote.org/wiki/Arrested_Development --output-document=wgetoutput")
-	infile = open("wgetoutput", "r")
-	instr = infile.read();
-	infile.close();
-	os.remove("wgetoutput")
+def responsestrwithfakemadness(url):
+	user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
+	values = {'name' : 'Michael Foord',
+		  'location' : 'Northampton',
+		  'language' : 'Python' }
+	headers = { 'User-Agent' : user_agent }
+
+	data = urllib.urlencode(values)
+	req = urllib2.Request(url, data, headers)
+	response = urllib2.urlopen(req)
+	return response.read()
+
+def striplinks(tag):
+	for sub in tag.findAll('a'):
+		sub.replaceWith(sub.text)
+
+def parse(url):
+	urlparts = url.split('/')
+	outputfile = urlparts[len(urlparts) - 1].lower()
+	quotes = open(outputfile + ".txt", "w")
+	print "Retrieving data from URL: " + url
+	instr = responsestrwithfakemadness(url)
 	soup = BeautifulSoup.BeautifulSoup(instr)
 	seasonName = ""
 	eptitle = ""
@@ -18,21 +34,22 @@ def main():
 			pass
 		else:
 			if tag.name == "h2":
-				seasonName = tag.text.replace("[edit]", "")
+				seasonName = tag.text.replace("[edit]", "").strip()
 				print seasonName
-				if seasonName.lower().find('season') > -1:
+				if seasonName.lower().startswith('season ') or seasonName.lower().startswith('series '):
 					seasonName = seasonName + '\n'
 				else:
 					seasonName=""
 			if seasonName != "":
 				if tag.name == "h3":
-					eptitle = tag.text.replace("[edit]", "")
+					eptitle = tag.text.replace("[edit]", "").strip()
+					# [TODO] html decoding?
+					eptitle = eptitle.replace('&amp;','&').replace('&gt;','>').replace('&lt;','<')
 					print eptitle
 					eptitle = eptitle + '\n'
 				elif tag.name == "dl":
-					for sub in tag.findAll('a'):
-						sub.replaceWith(sub.text)
-					epquote = tag.prettify().replace("\n", "")
+					striplinks(tag)
+					epquote = tag.prettify().replace("\n", "").replace('%','&#37;')
 					try:
 						quotes.write(seasonName + eptitle + epquote + '\n')
 					except UnicodeDecodeError:
@@ -40,6 +57,13 @@ def main():
 					except UnicodeEncodeError:
 						pass
 
+
+def main():
+	if len(sys.argv) != 2:
+		print "usage: simparse url"
+		return
+	url = sys.argv[1]
+	parse(url)
 
 if __name__ == '__main__':
 	main()
