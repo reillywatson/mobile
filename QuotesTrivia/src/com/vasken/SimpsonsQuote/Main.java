@@ -44,6 +44,21 @@ public class Main extends Activity {
 		opt1.setOnClickListener(buttonClicked);
 		opt2.setOnClickListener(buttonClicked);
 		opt3.setOnClickListener(buttonClicked);
+		
+		final WebView quoteview = (WebView)findViewById(R.id.quote);
+    	quoteview.setBackgroundColor(0);
+    	quoteview.getSettings().setJavaScriptEnabled(true);  
+    	  
+    	/* WebViewClient must be set BEFORE calling loadUrl! */  
+    	quoteview.setWebViewClient(new WebViewClient() {  
+    	    @Override  
+    	    public void onPageFinished(WebView view, String url)  
+    	    {  
+    	    	quoteview.loadUrl("javascript:(function() { " +  
+    	                "document.getElementsByTagName('body')[0].style.color = 'white'; " +  
+    	                "})()");  
+    	    }  
+    	});  
     }
     
     OnClickListener buttonClicked = new OnClickListener() {
@@ -116,23 +131,9 @@ public class Main extends Activity {
 
 		answers.add(currentAnswer);
 		populateListWithUniqueElements(answers, 3, generator);
-		
-		
 		Collections.shuffle(answers);
+		
     	quoteview.loadData(question, "text/html", "utf-8");
-    	quoteview.setBackgroundColor(0);
-    	quoteview.getSettings().setJavaScriptEnabled(true);  
-    	  
-    	/* WebViewClient must be set BEFORE calling loadUrl! */  
-    	quoteview.setWebViewClient(new WebViewClient() {  
-    	    @Override  
-    	    public void onPageFinished(WebView view, String url)  
-    	    {  
-    	    	quoteview.loadUrl("javascript:(function() { " +  
-    	                "document.getElementsByTagName('body')[0].style.color = 'white'; " +  
-    	                "})()");  
-    	    }  
-    	});  
     	// otherwise if we go from something that fits on one page to something that doesn't, the
     	// scroll indicator doesn't show up
     	quoteview.setVerticalScrollbarOverlay(true);
