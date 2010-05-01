@@ -9,6 +9,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import android.content.Context;
 import android.util.Log;
 
@@ -16,6 +19,8 @@ public class QuoteStore {
 	private List<SimpsonsQuote> quotes = new ArrayList<SimpsonsQuote>();
 	private HashMap<String, List<SimpsonsQuote>> quotesBySeason = new HashMap<String, List<SimpsonsQuote>>();
 	private Random rand = new Random();
+	private Pattern speakerPattern =  Pattern.compile("<b>(.*?)</b>", Pattern.DOTALL);
+	 
 	
 	public QuoteStore(Context context, int storeid) throws IOException {
 		InputStream in = context.getResources().openRawResource(storeid);
@@ -25,7 +30,8 @@ public class QuoteStore {
 			String epTitle = reader.readLine();
 			String quote = reader.readLine();
 			if (season != null && epTitle != null && quote != null) {
-				SimpsonsQuote sq = new SimpsonsQuote(season, epTitle, quote);
+				String speaker = speakerOfQuote(quote);
+				SimpsonsQuote sq = new SimpsonsQuote(season, epTitle, quote, speaker);
 				quotes.add(sq);
 				List<SimpsonsQuote> seasonList = quotesBySeason.get(season);
 				if (seasonList == null) {
@@ -37,6 +43,19 @@ public class QuoteStore {
 			season = reader.readLine();
 		}
 		Log.d(getClass().getName(), "Found " + Integer.toString(quotes.size()) + " quotes");
+	}
+	
+	private String speakerOfQuote(String quote) {
+		Log.d("PARSING SPEAKER", quote);
+		Matcher m = speakerPattern.matcher(quote);
+		if (m.find()) {
+			String speaker = m.group(1).trim();
+			if (!m.find()) {
+				Log.d("SPEAKER FOUND", speaker);
+				return speaker;
+			}
+		}
+		return null;
 	}
 	
 	public int numSeasons() {
