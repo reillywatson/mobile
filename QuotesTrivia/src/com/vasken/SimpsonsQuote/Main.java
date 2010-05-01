@@ -35,7 +35,7 @@ public class Main extends Activity {
         opt2 = (Button)findViewById(R.id.opt2);
         opt3 = (Button)findViewById(R.id.opt3);
         try {
-			quotestore = new QuoteStore(this, R.raw.simpsons);
+			quotestore = new QuoteStore(this, R.raw.how_i_met_your_mother);
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
@@ -69,7 +69,7 @@ public class Main extends Activity {
 				status = "Correct, you are clearly amazing!";
 			}
 			else {
-				status = "Wrong, dummy!  That was " + currentAnswer;
+				status = "Wrong, dummy!  That was " + currentAnswer + ".";
 			}
 			Toast.makeText(Main.this, status, Toast.LENGTH_SHORT).show();
 			loadNewQuote();
@@ -100,7 +100,7 @@ public class Main extends Activity {
     	return noSpeaker;
     }
     
-    private String nameSpeakerPrefix = "<b>Name that speaker:</b><p>";
+    private String nameSpeakerPrefix = "<b>Name that character:</b><p>";
     
     void loadNewQuote() {
     	questionNumber++;
@@ -108,9 +108,15 @@ public class Main extends Activity {
     	SimpsonsQuote quote = quotestore.randomQuote();
 		List<String> answers = new ArrayList<String>();
 		
-		boolean canBeSpeakerQuestion = (quote.speaker != null && quotestore.getNumSpeakerQuestions() > 10 && quotestore.getNumSpeakers() > 3);
-				
-		boolean isSpeakerQuestion = canBeSpeakerQuestion && rand.nextInt(3) == 1;
+		boolean isSpeakerQuestion = false;
+		int desiredPercentOfSpeakerQuestions = 20;
+		if (quotestore.canDoSpeakerQuestions() && rand.nextInt(100) <= desiredPercentOfSpeakerQuestions) {
+			isSpeakerQuestion = true;
+			while (quote.speaker == null) {
+				quote = quotestore.randomQuote();
+			}
+		}
+		
 		Callable<String> generator;
 		
 		String question = quote.quote;

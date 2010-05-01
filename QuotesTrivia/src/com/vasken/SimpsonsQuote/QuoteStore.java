@@ -66,6 +66,10 @@ public class QuoteStore {
 		return speakers.size();
 	}
 	
+	public boolean canDoSpeakerQuestions() {
+		 return getNumSpeakerQuestions() > 10 && getNumSpeakers() > 3;
+	}
+	
 	private String speakerOfQuote(String quote) {
 		Log.d("PARSING SPEAKER", quote);
 		Matcher m = speakerPattern.matcher(quote);
