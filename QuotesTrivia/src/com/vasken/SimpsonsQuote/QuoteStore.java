@@ -71,12 +71,10 @@ public class QuoteStore {
 	}
 	
 	private String speakerOfQuote(String quote) {
-		Log.d("PARSING SPEAKER", quote);
 		Matcher m = speakerPattern.matcher(quote);
 		if (m.find()) {
 			String speaker = m.group(1).trim();
 			if (!m.find()) {
-				Log.d("SPEAKER FOUND", speaker);
 				if (speaker.endsWith(":")) {
 					speaker = speaker.substring(0, speaker.length() - 1).trim();
 				}

@@ -35,7 +35,7 @@ public class Main extends Activity {
         opt2 = (Button)findViewById(R.id.opt2);
         opt3 = (Button)findViewById(R.id.opt3);
         try {
-			quotestore = new QuoteStore(this, R.raw.how_i_met_your_mother);
+			quotestore = new QuoteStore(this, R.raw.seinfeld);
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
@@ -69,7 +69,8 @@ public class Main extends Activity {
 				status = "Correct, you are clearly amazing!";
 			}
 			else {
-				status = "Wrong, dummy!  That was " + currentAnswer + ".";
+				String answerStr = currentAnswer.replaceAll("\\[(.*?)\\]", "").trim();
+				status = "Wrong, dummy!  That was " + answerStr + ".";
 			}
 			Toast.makeText(Main.this, status, Toast.LENGTH_SHORT).show();
 			loadNewQuote();
