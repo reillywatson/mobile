@@ -91,7 +91,11 @@ public class Worker {
 		            		
 		                	URL url = new URL(m.group(1));
 		        	    	InputStream is = (InputStream)url.getContent();
-		        	    	Bitmap image = BitmapFactory.decodeStream(is);
+		        	    	
+		        	    	// This seemed promissing, but it's incredibly slow
+//		        	    	BitmapFactory.Options options = new BitmapFactory.Options();
+//		        	    	options.inSampleSize = 2;		        	    	
+		        	    	Bitmap image = BitmapFactory.decodeStream(is, null, null);
 		        			
 		        			theHotItem.setImage(image);
 		        			theHotItem.setRateId( m.group(2));

@@ -25,7 +25,7 @@ public class Vote extends Activity {
 	private int HOT = 10;	// Maybe this should be 8, to be realistic 
 	
 	static final int NUM_WORKERS = 2;
-    static final int DESIRED_QUEUE_LENGTH = 4;
+    static final int DESIRED_QUEUE_LENGTH = 5;
 	
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
@@ -105,9 +105,9 @@ public class Vote extends Activity {
 	    	String totalsString = Integer.valueOf(totals) > 5000 ? "Over 5000" : totals; 
 	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totalsString + " votes");
 	    	
-	    	if (results < 6) {
+	    	if (results < 7) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_down);
-	    	}else if(results < 8.5) {
+	    	}else if(results < 8.8) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_bottle);
 	    	}else {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_up);
@@ -164,16 +164,17 @@ public class Vote extends Activity {
 					
 					if (isUsableImage(nextItem.getImage())) {
 						if (lastItem.getImage() != null) {
+							Log.d("---------------------", "Setting the result image" + nextItem.getImage().getHeight() + " " + nextItem.getResultTotals() + " " + nextItem.getResultAverage());
 							nextItem.setResultImage(lastItem.getImage());
 						}
-						
-						Log.d("---", nextItem.getRateId() + " " + nextItem.getResultTotals() + " " + nextItem.getResultAverage());
 						itemReady(nextItem);
 						
 						lastItem = nextItem;
 					}
 				}
+				Log.d("-------------", "Queue Length: " + itemQueue.size());
 			}
+			Log.d("-------------", "The worker's done");
 			
 			return nextItem;
 		}
