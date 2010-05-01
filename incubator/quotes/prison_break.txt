@@ -1,0 +1,804 @@
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Judge </b> : Given your lack of prior criminal conduct, I am inclined to a probation. However, the fact that you discharged a deadly weapon during the commission of the crime suggests malice to me. For that reason, I find it incumbent that you see the inside of a prison cell, Mr. Scofield.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Kellerman </b> : You have a habit of answering a question with a question.</dd><dd> <b>  Bishop McMorrow </b> : And you have a way of asking questions that beg more questions.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Veronica </b> : <i>  [referring to Lincoln] </i> I loved him as much as you did.</dd><dd> <b>  Michael </b> : Past tense for you maybe, not me.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Veronica </b> : The evidence was there.</dd><dd> <b>  Michael </b> : The evidence was cooked.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Michael </b> : Find out who is trying to bury him</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Sucre </b> : <i>  [about the word Michael suggested to be used in a letter Sucre was writing to his girlfriend] </i> 'Passion', what were you thinking?</dd><dd> <b>  Michael </b> : Hey, you went for it.</dd><dd> <b>  Sucre </b> : She probably thinks I went sissy up in here.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Sara </b> : I've got news for you, Michael. "Trust me" means absolutely zero inside these walls.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Lincoln </b> : <i>  [to Michael] </i> All I keep thinking, looking back onto this, I was set up. I know whoever it was who set me up wants me in the ground as quickly as possible.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Sucre </b> : <i>  [to Michael] </i> Welcome to Prisneyland, Fish.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Veronica </b> : What if they'd sent you to Taylorville or Marion and not here?</dd><dd> <b>  Michael </b> : I think I'd be doing the same thing I'm doing in here. Eating Jell-O, drinking Kool-Aid.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Lincoln: </b> I'm not asking you to love me, I already screwed that chance up long ago. I'm asking you to love yourself. You still can put the break on this thing.</dd><dd> <b>  LJ: </b> So, that's what fatherly advice is like? (LJ stands up)</dd><dd> <b>  Lincoln: </b> (looking at LJ) Where are you going?</dd><dd> <b>  LJ: </b> (to Lincoln) I got homework.</dd><dd> <b>  Lincoln: </b> They're putting me to death, L.J. In a month's time I'll be dead. You get that?</dd><dd> <b>  LJ: </b> You're already dead to me.</dd></dl>
+Season 1
+Allen[1.2]
+<dl><dd> <b>  Bellick </b> : You're in the old man's back pocket, are you? I got news for you fish, he may run this place during the day, but I run it during the night.</dd></dl>
+Season 1
+Allen[1.2]
+<dl><dd> <b>  Michael </b> : You ever think about Boston?</dd><dd> <b>  Westmoreland </b> : Sure.</dd><dd> <b>  Michael </b> : Think you'll ever see it again?</dd><dd> <b>  Westmoreland </b> : I'm a sixty year old man with sixty years still left on my ticket. What do you think?</dd><dd> <b>  Michael </b> : I'm thinking of going.</dd><dd> <b>  Westmoreland </b> : Well there's going, and then there's going. Which one do you mean?</dd><dd> <b>  Michael </b> : The one you think I mean.</dd></dl>
+Season 1
+Allen[1.2]
+<dl><dd> <b>  Abruzzi </b> : Keep your friends close, your enemies closer..!</dd></dl>
+Season 1
+Cell Test[1.3]
+<dl><dd> <b>  CO </b> : We need some help here! [They rush him in through the hall till they find Sara]</dd><dd> <b>  Sara </b> : Take him up in the three. Katie I'm gonna need ten cc's of xylocaine. [The CO's bring Michael into the infirmary and help him to seat in the stretcher. He's almost crying and covers his eyes to hide it. Sara puts her gloves on and looks at the CO's]</dd><dd> <b>  Sara </b> : Thanks guys, I'll take him from here. [They hesitate. Sara looks them again firmly] I said 'Thank you, I'll take him from here'.[One of the CO's threws Michael's boot to the floor]</dd><dd> <b>  CO </b> : Let's go. [They leave. Michael's foot is cover with a sock and and is bleeding badly. Sara looks the CO's leaving and then she turns to Michael]</dd><dd> <b>  Sara </b> : Ok, let's take a look at you. [Michael is finally crying. Sara's going to remove the bleeding sock but Michael stops her for a second, maybe cause he's not able to see what's happened to his foot.]</dd><dd> <b>  Sara </b> : [Sweet, softly, gentle while she's uncovering the wound] You're Ok, you're ok. [When Michael sees that two of his toes have been cut off a big tear escapes from his eyes, then he lays back in the stretcher covering his eyes with his hands. Sara looks at him, still gentle]</dd><dd> <b>  Sara </b> : What happened? [Michael takes a deep breath and swallow]</dd><dd> <b>  Michael </b> : Uh, nothing.</dd><dd> <b>  Sara </b> : [Worried] This isn't nothing Michael, I need you to tell me what happened.</dd><dd> <b>  Michael </b> : [Painfully] Don't make me lie to you. [Sara looks at him, surprised by the answer. Michael takes another deep breath trying to bear the pain] Please.</dd></dl>
+Season 1
+Cell Test[1.3]
+<dl><dd> <b>  Sara </b> : I think you'd better have I.A. [Internal Affairs] start an investigation. [Offering him a report. He doesn't take it]</dd><dd> <b>  Bellick </b> : Oh, there's no need. We know what happened.</dd><dd> <b>  Sara </b> : [Ironic] Uh, perhaps you'd be good enough to enlighten me?</dd><dd> <b>  Bellick </b> : There was a pair of gardening shears left on the floor of the shed. Evidently, he stepped on them.</dd><dd> <b>  Sara </b> : Blade went right through his boot huh? [Trying to expose the lie.]</dd><dd> <b>  Bellick </b> : Yeah.</dd><dd> <b>  Sara </b> : So, uh, why wasn't the boot still on his foot?</dd></dl>
+Season 1
+Cell Test[1.3]
+<dl><dd> <b>  Bellick </b> : Like a said, doc. We've got it taken care. [Puts his cap on again and talks to the CO's] Let's go.</dd></dl>
+Season 1
+Cell Test[1.3]
+<dl><dd> <b>  Michael </b> : Lincoln, we have a problem.</dd></dl>
+Season 1
+Cell Test[1.3]
+<dl><dd> <b>  Michael </b> : Preparation will only take you so far. After that you got to take a few leaps of faith.</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Sara: </b> Good afternoon Mr. Scofield. (She closes the door behind her)</dd><dd> <b>  Michael: </b> Hello.</dd><dd> <b>  Sara: </b> How you feeling today? (Takes a look at him)</dd><dd> <b>  Michael: </b> We're good. (Rolling up his sleeve)</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <i>  [She looks at him again and sees the band aid on his eyebrow. Leaves the tray at a table and sits down next to him.] </i></dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Sara: </b> What happened?</dd><dd> <b>  Michael: </b> Uh, caught an elbow playing basketball.</dd><dd> <b>  Sara: </b> Uh-huh [Looks at him, doesn't believe it][Looks down to put her gloves]. Mind if I take a look&#160;?</dd><dd> <b>  Michael: </b> By all means. (Charming)</dd><dd> <i>  [She removes the band aid and takes a look. Her face turns more serious.] </i></dd><dd> <b>  Sara: </b> (Takes a small breath) You know you're going to get killed in here, right? If you're not careful.</dd><dd> <i>  [Michael is looking at her with a little smile on his face. Then looks away and back to her again] </i></dd><dd> <b>  Michael: </b> I'll make you a bet. When I get out of here... alive, I'll take you to dinner... [She's still serious and doesn't answer. Starts cleaning the wound] ...lunch? ...cup of coffe?</dd><dd> <b>  Sara: </b> Michael. This, um... (looks at him) ...this charm act could be exactly what's getting you into trouble out in the yard.</dd><dd> <i>  [They look at each other. Michael doesn't keep the eye contact and that makes Sara looks away.] </i></dd><dd> <b>  Sara: </b> Lean forward.</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <i>  [He does it, little pensative, with a sweet gesture in his face, maybe in response to the sweetness of Sara changing the band aid of his eyebrow, worried for him. We hear the effervescence noise at the sewer again and see how both liquids are reacting over the pipes.] </i></dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Sucre </b> : You see these hands? They're digging machines. You want to go to China? I'll get you to China. I'll dig like a psychotic rodent if I have to!</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Haywire </b> : He's got the pathway on his body. It leads somewhere. It leads to hell. It's the pathway to hell.</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Michael </b> : Let's just say someone's gonna get hurt.</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Haywire </b> : There is a maze in your tattoos. Where does the maze take me?</dd><dd> <b>  Michael </b> : Get the hell away from me.</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <i>  [Michael is banging his head against the bars] </i></dd><dd> <b>  Haywire </b> : What, are you nuts?</dd><dd> <b>  Michael </b> : Officer... I need an officer.</dd><dd> <b>  C.O Patterson </b> : What the hell is the problem down here. What. Son of a bitch open up on 40. [takes out his mace] Back off, Haywire.</dd><dd> <b>  Haywire </b> : He's got the pathway in his body.</dd><dd> <b>  C.O Patterson </b> : Haywire, I said back off. You want a hot shot?</dd><dd> <b>  Haywire </b> : I'm telling you look at his [screams after C.o Patterson maces his face].</dd></dl>
+Season 1
+Cute Poison[1.4]
+<dl><dd> <b>  Haywire </b> : (While Michael is pouring out toothpaste)I crapped myself once in junior high. We were playing badminton, and I had to walk past the other kids to get to the locker room. So I thought I would make fun of it- you know before the other kids had a chance to- so I said "Look I have a tail!"... I just told you a secret.</dd><dd> <b>  Michael </b> : You want to know what the tattoos mean?</dd><dd> <b>  Haywire </b> : Yeah!</dd><dd> <b>  Michael </b> : Nothing!</dd><dd> <b>  Bellick </b> : [while the inmates are yelling and Sucre is singing] NOT ONE MORE WORD. NEXT INMATE THAT OPENS HIS MOUTH GOES IN THE HOLE.</dd></dl>
+Season 1
+English, Fitz or Percy[1.5]
+<dl><dd> <b>  Pope </b> : The thing is, Mr. Scofield is not our problem any more. Seems there was an error in his paperwork. He's going to be transferred after all.</dd><dd> <b>  Michael </b> : That's not possible.</dd><dd> <b>  Pope </b> : Escort the prisoner back to his cell.</dd><dd> <b>  Michael </b> : Warden, all I need is three weeks. Get off of me! Henry, please! I just need a little time, just give me the time.</dd></dl>
+Season 1
+English, Fitz or Percy[1.5]
+<dl><dd> <b>  Michael </b> : We're not breaking out of a Jamba Juice , gentlemen.</dd></dl>
+Season 1
+English, Fitz or Percy[1.5]
+<dl><dd> <b>  Abruzzi </b> : And how do you plan to do that, Fish?</dd><dd> <b>  Michael </b> : With a little help from my friends.</dd></dl>
+Season 1
+English, Fitz or Percy[1.5]
+<dl><dd> <b>  Kellerman </b> : Mr. Pope, in our line of work, we've discovered that just about everyone has done something that someone doesn't know about.</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  T-Bag </b> : So you see, "friends", either I'm through that hole with you, or I'm gonna sing like Johnny Cash !</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  Michael </b> : I need you down there. It's a two man job. Let's hang a sheet.</dd><dd> <b>  Sucre </b> : No way, man. You only hang a sheet when you and your cellie want to get friendly, you know?</dd><dd> <b>  Michael </b> : You wanna protect your prison rep, or do you wanna get out of here?</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  T-Bag </b> : Not that hot?!</dd><dd> <i>  [He points to a black inmate] </i></dd><dd> <b>  T-Bag </b> : When this guy woke up this morning, he was white!</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  Inmate </b> : We got you a little get well gift.</dd><dd> <b>  T-Bag </b> : Awww. Its just the right size. Thank you, boys. I'll catch up with you later.</dd><dd> <i>  [T-Bag walks into the cell] </i></dd><dd> <b>  T-Bag </b> : Whats your name?</dd><dd> <b>  Seth </b> : Seth.</dd><dd> <b>  T-Bag </b> : You new, Seth?</dd><dd> <i>  [Seth nods his head] </i></dd><dd> <b>  T-Bag </b> : Look at me, boy. You probably heard stories about me. They're not all true.</dd><dd> <i>  [T-Bag pulls out his left trouser pocket] </i></dd><dd> <b>  T-Bag </b> : What do you say we go for a walk.</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  T-Bag </b> : Why don't you send us all someplace cooler- like Africa.</dd></dl>
+Season 1
+Riots, Drills and the Devil[1.6]
+<dl><dd> <b>  T-Bag </b> : What do you call a guy who couldn't pass the cop's exam and now makes less than a mailman? A CO.</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Abruzzi </b> : Give me that thing! Demolition runs in the family...</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Abruzzi </b> : You're drilling holes with an eggbeater?</dd><dd> <b>  Sucre </b> : I know. Crazy, huh? It's the Fish's idea. It's called the "Hooker Law." It says that if you poke the exact right holes in something big and strong, it gets very weak. that's the plan.</dd><dd> <b>  Abruzzi </b> : yeah, it's always the plan!</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <i>  [After T-Bag kills the rookie guard] </i></dd><dd> <b>  T-Bag </b> : One for the team.</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <i>  [Michael has a red dot on his chest] </i></dd><dd> <b>  Sara </b> : Michael!</dd><dd> <b>  Michael </b> : What?</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Michael </b> : <i>  [to Sara] </i> Come on, I won't hurt you.</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Michael </b> : <i>  [to Sara] </i> You needed help and I..I came to find you...</dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Sara </b> : Michael, if you're trying to calm me down, you're doing a pretty poor job.</dd><dd> <b>  Michael </b> : But I <i>  am </i> trying. <i>  [both laugh] </i></dd></dl>
+Season 1
+Riots, Drills and the Devil Part 2[1.7]
+<dl><dd> <b>  Sara </b> : Wait, I can't leave you here.</dd><dd> <b>  Michael </b> : You have no choice. I'm one of the bad guys, remember?</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Michael </b> : Think of this place like it is a map of the U.S. Our cell over there, that's New York City. The infirmary, our exit, is California. The pipes beneath our feet that connect the two...</dd><dd> <b>  Sucre </b> : Route 66.</dd><dd> <b>  Michael </b> : Route 66. Our ticket out of here.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  T-Bag </b> : I'm feelin' kinda left out. New York, California, St. Louis. What are we discussing?</dd><dd> <b>  Michael </b> : Talkin' baseball actually.</dd><dd> <b>  T-Bag </b> : Huh. Now that's a subject I just happen to know quite a bit about.</dd><dd> <b>  Abruzzi </b> : What a shame. The conversation's over.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  T-Bag </b> : Ugh,ugh yeah, Hold up here a minute, oh, hold up here huh... Seems to be a little confusion... I'm suppose to be on this brigade...</dd><dd> <b>  Abruzzi </b> : <i>  [to the C.O] </i> I don't think so.</dd><dd> <b>  T-Bag </b> : Huh, John, you can't be serious, not after all the long and illustrious histories we shared together. All those nights in New York City, in California, in St. Louis. They were good times, weren't they John?.. Tell the badge here about it... but if you don't want to... I certainly could.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Bellick </b> : <i>  [to Westmoreland] </i> If you don't tell me who killed Bob before I leave this cell, our friendship goes with it. <i>  [Bellick rises] </i> That's a nice cat.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Sue Parsons </b> : I have a source that tells me, if you accept what happened and stop fighting your execution, your son will be left out of this. If not, I hope you said goodbye to him when he left here this morning.</dd><dd> <b>  Lincoln </b> : Who are you?</dd><dd> <b>  Sue Parsons </b> : One Burrows is going to die. Up to you which one.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Westmoreland </b> : Maybe I did hurt my knee. I did steal that car, and I did accidentally hit that poor lady. But how could I have hijacked a plane in Portland on November 24 when I was in Folsom finishing up a 30-day drunk and disorderly?</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Guard </b> : What the hell are you doing' here?</dd><dd> <b>  Michael </b> : Clean-up detail - we thought this was storage.</dd><dd> <b>  Guard </b> : This look like storage to you, you idiot? It's a restricted area. It's the CO break room. Now back it up!</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  Nick </b> : If I didn't know any better, I'd say Lucas is sweet on you.</dd></dl>
+Season 1
+The Old Head[1.8]
+<dl><dd> <b>  T-Bag </b> : I'm comin' along on this endeavor whether you like it or not. I've got a hell of a singin' voice otherwise.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  T-Bag </b> : <i>  [about Tweener] </i> Boy's a bit confused about his pigmentation, but he sure does have spunk.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  T-Bag </b> : <i>  [to Tweener] </i> Blacks don't want you... Whites don't want you. You're a regular tweener.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  T-Bag </b> : <i>  Freshman! </i></dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Michael </b> : <i>  [to T-Bag] </i> If you want to sing, then sing.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Veronica </b> : <i>  [in text message to LJ] </i> Dump the phone, they're tracking you. We're in New Glarus.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Michael </b> : The man you're talking about died the moment I stepped inside these walls.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Mrs. Steadman </b> : If we talked about who had motive to kill Terrence, we'd be here all day.</dd><dd> <b>  Veronica </b> : I'm sorry?</dd><dd> <b>  Mrs. Steadman </b> : Look around. Half the people in this place were shareholders in his company.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Kellerman </b> : <i>  [cocks pistol] </i> Did you hear that? Did you hear it? Know what that means? Why don't you ask your mom what that means? Oh, sorry, you might have trouble getting an answer out of her right about now.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Lincoln </b> : Are you alright?</dd><dd> <b>  L.J. </b> : No. Nowhere near it.</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Sucre </b> : You think he found the hole?</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Bellick </b> : I checked my balance online, it is looking seriously deficient.</dd><dd> <b>  Abruzzi </b> : It's gotta be some kind of mistake, like an accounting error or something.</dd><dd> <b>  Bellick </b> : Yeah. Tell Falzone I don't stand for "accounting errors."</dd></dl>
+Season 1
+Tweener[1.9]
+<dl><dd> <b>  Nick </b> : You know, I think you seem to be forgetting something here. I'm in the crosshairs same way you are, all for your ex-boyfriend who, unlike my father, is a scumbag criminal who just happens to be in prison for the one crime he didn't commit.</dd></dl>
+Season 1
+Sleight of Hand [1.10]
+<dl><dd> <b>  C-Note </b> : <i>  [to Michael] </i> Concrete is my specialty. Can you dig it?</dd></dl>
+Season 1
+Sleight of Hand [1.10]
+<dl><dd> <b>  Kellerman </b> : <i>  [to the Vice-President, about Quinn] </i> You woke a sleeping beast when you called these guys in. They have a bigger agenda than any of us and they get real nasty, real quick if things don't go their way.</dd></dl>
+Season 1
+Sleight of Hand [1.10]
+<dl><dd> <b>  Hale </b> : I swear to God, it just gets deeper and deeper.</dd><dd> <b>  Kellerman </b> : What's that supposed to mean?!</dd><dd> <b>  Hale </b> : I'm saying that if I knew that this was how things were gonna turn out, I would have taken that crap job with the feds. Sitting by a desk all day drinking coffe and sharpening pencils. God, that sounds good.</dd><dd> <b>  Kellerman </b> : Keep talking like that, I'll be forced to put a bullet in your head.</dd></dl>
+Season 1
+Sleight of Hand [1.10]
+<dl><dd> <b>  Michael </b> : You threw away your flowers.</dd><dd> <b>  Sara </b> : Like I said, they don't last.</dd><dd> <b>  Michael </b> : I don't think they're dead yet.</dd><dd> <b>  Sara </b> : I don't like getting attached to things if I know they won't last.</dd><dd> <b>  Michael </b> : Why are you so cynical?</dd><dd> <b>  Sara </b> : Michael, I think there's cynicism and then there's realism -</dd><dd> <b>  Michael </b> : - and there's optimism? Hope? Faith?</dd><dd> <b>  Sara </b> : This coming from an eight-toed guy locked away in a penitentiary!</dd><dd> <b>  Michael </b> : <i>  (smiles) </i> Toes are over-rated.</dd><dd> <b>  Sara </b> : Thank you for trying to make me smile. Not today</dd><dd> <b>  Michael </b> : You never know</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Michael </b> : Still interested in getting in on P.I.?</dd><dd> <b>  Tweener </b> : Does my momma got big breasteses?</dd><dd> <b>  Michael </b> : I wouldn't know.</dd><dd> <b>  Tweener </b> : Hell yeah she does and hell yeah I do.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Michael </b> : <i>  [Referring to PI pay] </i> It pays 19 cents an hour.</dd><dd> <b>  Tweener </b> : 19 cents an hour?! That's slavery, yo!</dd><dd> <b>  Michael </b> : It's prison, yo.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  C-Note </b> : <i>  [to T-Bag] </i> Are you telling me that there's a hole in Fox River that you don't want to get into?</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Abruzzi </b> : OK, let's rotate! <i>  [to T-Bag] </i> Sergeant Sodomy, you're up next!</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Michael </b> : We've got too many people. One of them has to go.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Sara </b> : I'm not a jealous woman. But I'm a careful one. And for some reason, when I'm around you, I'm not...careful.</dd><dd> <b>  Michael </b> : You don't have to be.</dd><dd> <b>  Sara </b> : Yes, I do. There are so many questions surrounding you, Michael. There are way too many.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Sara </b> : So you're married.</dd><dd> <b>  Michael </b> : Uh, well, not in the traditional sense of the word.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Tweener </b> : Why you need this watch so bad anyway?</dd><dd> <b>  Michael </b> : Let's just say it means a lot to someone in my family.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Bellick </b> : Says here they got married the day before Scofield robbed that bank.</dd><dd> <b>  Geary </b> : Why the hell would he do that?</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  C-Note </b> : You know, your parents must be so proud of you, man. I mean, hitting the trailer-park trifecta: racist, pedophile, and stupid.</dd><dd> <b>  T-Bag </b> : You know, it, it vexes me that I'm made out to me the bad guy in the room. It's not like y'all were incarserated for stealin' girl scout cookies.</dd><dd> <b>  Abruzzi </b> : Well, none of us murdered any girl scouts in the process.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Guard </b> : Scofield, move it. It's time for your conjugal - your wife is here.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Nick </b> : We just learned that Vice President Reynolds funneled millions of dollars in research grants into her brother's company. That money was filtered into millions of small accounts that made millions of small donations to her campaign, setting her up to be the next leader of the free world. This doesn't end with us stopping an execution any more.</dd><dd> <b>  Veronica </b> : For me it does.</dd></dl>
+Season 1
+And Then There Were 7[1.11]
+<dl><dd> <b>  Michael </b> : You kept it.</dd><dd> <b>  Sara </b> : Kept what?</dd><dd> <b>  Michael </b> : The flower.</dd><dd> <b>  Sara </b> : Well, I'm a pack rat, I never throw anything out.</dd><dd> <b>  Michael </b> : Yeah. The clutter in here is, uh... overwhelming.</dd><dd> <b>  Sara </b> : You should see my apartment.</dd><dd> <b>  Michael </b> : Whoa! We haven't even been on our first date and you're already inviting me in. I thought you were a nice girl.</dd><dd> <b>  Sara </b> : Michael, everyone knows that nice girls finish last.</dd><dd> <b>  Michael </b> : So where do you finish?</dd><dd> <b>  Sara </b> : That depends on where I start. Deep breath.</dd></dl>
+Season 1
+Odd Man Out[1.12]
+<dl><dd> <b>  T-Bag </b> : <i>  [to Westmoreland] </i> You know what I can't understand is why somebody like you wants to get out of here anyways. How you gonna survive, huh? The world is all different now, scary. They got computer phones, boobies made out of silicone, you won't know what to do!</dd></dl>
+Season 1
+Odd Man Out[1.12]
+<dl><dd> <b>  Bellick </b> : Maybe "whore" is too strong. What do you call a girl who married a felon to get into the United States? What'd she have to come here for anyway? No strip clubs in Whatzit-stan?</dd></dl>
+Season 1
+Odd Man Out[1.12]
+<dl><dd> <b>  T-Bag </b> : What's that smell? It smells a little like... conspiracy.</dd></dl>
+Season 1
+Odd Man Out[1.12]
+<dl><dd> <b>  T-Bag </b> : After all I've done, maybe I do deserve to die. Maybe I do, but you are no better than me.</dd><dd> <b>  Abruzzi </b> : But I <i>  can </i> be, if I want! God has given me the chance to choose. Maybe I should give you a chance as well.</dd></dl>
+Season 1
+Odd Man Out[1.12]
+<dl><dd> <b>  T-Bag </b> : Hey John, you know actually, about Jesus, <i>  [slits Abbruzi's throat] </i> say hi to him for me, will ya?</dd></dl>
+Season 1
+End of the Tunnel[1.13]
+<dl><dd> <b>  Michael </b> : We're not getting out of here.</dd><dd> <b>  T-Bag </b> : Unfortunately, pretty, that ain't an option.</dd></dl>
+Season 1
+End of the Tunnel[1.13]
+<dl><dd> <b>  T-Bag </b> : Remember Pretty, I am serving life plus one. So if I get busted for attempted escape, I'ma throw in a homicide, no problem, that's like a parking ticket to me!</dd></dl>
+Season 1
+End of the Tunnel[1.13]
+<dl><dd> <b>  Sucre </b> : <i>  [on the phone with the hospital] </i> The name is John Abruzzi, A-B-R-U-Z-Z...I don't care what protocol is, I just wanna know if he's okay. Hello? Hello? <i>  [dial tone] </i></dd></dl>
+Season 1
+End of the Tunnel[1.13]
+<dl><dd> <b>  C-Note </b> : Now, you know what? There are two things that everybody needs to get with here. <i>  [to T-Bag] </i> First, hillbilly, you have got to learn some respect. The man here made everything possible. <i>  [to Michael] </i> And you, Fish, you have got to get with that we are doing this thing this afternoon, as soon as we get on PI.</dd><dd> <b>  Michael </b> : <i>  [laughing] </i> So you're just gonna make a run for it, in the middle of the day?</dd><dd> <b>  C-Note </b> : Well, you gotta do what you gotta do, huh, baby?</dd><dd> <b>  Michael </b> : You are gonna screw this whole thing up...</dd><dd> <b>  C-Note </b> : It's not for you to decide anymore. Now, this train is leaving the station, and I suggest you get on it.</dd><dd> <b>  T-Bag </b> : Get on the train, Fish, get on the train...</dd><dd> <b>  Michael </b> : Well you know what, you sons of bitches? I won't let you do it.</dd><dd> <b>  T-Bag </b> : What you gonna do, blow the whistle on your own escape?</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Lincoln </b> : I came in here a man. Give me the strength to walk out of here a man.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Lincoln </b> : I've never given a damn about what people thought of me. Never. Last couple of days - got to admit, you know... Lee Harvey Oswald, John Wilkes Booth... Lincoln Burrows. I'm going to go down in history with these freaks. <i>  [pauses] </i> Bitch of it all is - I didn't do it.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Governor Tancredi </b> : <i>  [to Sara] </i> It's not like you're asking me for a new bike here, kid.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <i>  [Michael hums tunelessly while looking at a hand of cards] </i></dd><dd> <b>  Lincoln </b> : You letting me win, Michael?</dd><dd> <b>  Michael </b> : No...</dd><dd> <b>  Lincoln </b> : Mm hmm, show me your cards.</dd><dd> <b>  Michael </b> : I'm not going to show you my cards.</dd><dd> <b>  Lincoln </b> : Show me your cards.</dd><dd> <b>  Michael </b> : I'm not going to show you my cards!</dd><dd> <b>  Lincoln </b> : Give me your cards!</dd><dd> <i>  [grabs the cards out of Michael's hand and slaps them on the table] </i></dd><dd> <b>  Michael </b> : <i>  [sheepishly] </i> Gin.</dd><dd> <b>  Lincoln </b> : Funny that...</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Michael </b> : Is there any news on the appeal?</dd><dd> <b>  Lincoln </b> : Don't know.</dd><dd> <b>  Michael </b> : 'Cause there could still be a ch....</dd><dd> <b>  Lincoln </b> : Stop... Michael, please - this is going to happen. I gotta get my head straight. Let's just share memories, swap stories, talk about the damn weather - anything but torturing myself with the idea of hope. I can't take it anymore.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Michael </b> : So if something happenes to the chair, he's got three more weeks?</dd><dd> <b>  Westmoreland </b> : There's a lot of protocol in killin' a man, new death warrant, another medical clearance.</dd><dd> <b>  Michael </b> : A lot can happen in three weeks.</dd><dd> <b>  Tweener </b> : Yo, what scripes yo.</dd><dd> <b>  Michael </b> : Thanks,</dd><dd> <b>  Tweener </b> : What y'all talkin' bout?</dd><dd> <b>  Westmoreland </b> : Nothing.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  T-Bag </b> : Remember, pretty, I am servin' life plus one. So if I get busted for attempted escape, I'm goin' to throw in a homicide no problem, that's like a parkin' ticket to me.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  T-Bag </b> : <i>  [to Michael] </i> You owe me a ticket out of here, pretty. And I will collect.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Guard </b> : Is everything alright, Doc?</dd><dd> <b>  Sara </b> : Yeah, everything's fine.</dd><dd> <b>  Guard </b> : <i>  [referring to Lincoln] </i> Why isn't he handcuffed to the table?</dd><dd> <b>  Sara </b> : What's he gonna do? Steal a cotton ball?</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Bellick </b> : So you like doing that too?</dd><dd> <b>  Tweener </b> : Dippin' the fry in the shake? Hells yeah.</dd><dd> <b>  Bellick </b> : Mmm, good times, good times.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Bellick </b> : How's it going in here?</dd><dd> <b>  Jerry </b> : Ready for lift-off.</dd></dl>
+Season 1
+The Rat[1.14]
+<dl><dd> <b>  Bellick </b> : <i>  [to Tweener] </i> You better start selling your ass.</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  Bellick </b> : My God, you cons are slower than a spelling bee full of stutterers!</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  C-Note </b> : Wait a minute - why are you changing the plan, man? We're already through that room beneath the infirmary, that's all we gotta do is get through that pipe and we're home free!</dd><dd> <b>  Michael </b> : There's a reason they replaced it with a twelve-inch pipe, Darwin - people can't get through it.</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  T-Bag </b> : You tellin' me to get to the infirmary we gotta go through the Whack Shack?!</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  C-Note </b> : We'll be like ducks in a shooting range, you feel me?</dd><dd> <b>  Guard </b> : Hurry it up con!</dd><dd> <b>  C-Note </b> : Your plan sucks, snowflake.</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  Veronica (while sayin goodbye to Lincoln) </b> : I've loved you since the first time I saw you!</dd></dl>
+Season 1
+By the Skin and the Teeth[1.15]
+<dl><dd> <b>  Lincoln </b> : <i>  [while in the electric chair about to be electrocuted] </i> It's him! Michael!</dd><dd> <b>  Veronica </b> : What's he saying?</dd><dd> <b>  Lincoln </b> : Michael, turn around! It's him!</dd><dd> <b>  Veronica </b> : What do you think he's saying?</dd><dd> <b>  Lincoln </b> : Michael, turn around!</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : Rough night? I got your message, what's the problem?</dd><dd> <b>  Lincoln </b> : I lost my keys. <i>  [Michael drops them into Lincoln's hands] </i> Where'd you find them?</dd><dd> <b>  Michael </b> : About four feet that way.</dd><dd> <b>  Lincoln </b> : I must have dropped them.</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : I have to get back to work. Speaking of which, I heard you got fired a few weeks ago, what was it this time?</dd><dd> <b>  Lincoln </b> : Do you really wanna know, or are you just enjoying the view from your high horse?</dd><dd> <b>  Michael </b> : You know what I want, to not have to be the older brother for my older brother.</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Veronica </b> : You want to know what the 90 grand was for?</dd><dd> <b>  Michael </b> : I think I do.</dd><dd> <b>  Veronica </b> : You!</dd><dd> <b>  Michael </b> : What do you mean?</dd><dd> <b>  Veronica </b> : The money you got when you were 18, from your mother's life insurance, the money that paid for your degree, that got you this job, that bought you your loft. Your mother never had life insurance, that money came from Lincoln.</dd><dd> <b>  Michael </b> : How?</dd><dd> <b>  Veronica </b> : He borrowed it, knew it'd be tough to pay back, but that didn't matter because he thought you deserved it. He also knew you'd never accept it if you knew it came from him. Michael, you are where you are because of your brother.</dd><dd> <b>  Michael </b> : You're telling me... he is where he is because of me.</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : <i>  [as they are about to kiss, the phone rings] </i> I'm sorry.</dd><dd> <b>  Veronica </b> : What? <i>  [looks at phone and sees Lincoln's name] </i> You gonna answer it?</dd><dd> <b>  Michael </b> : He'll leave a message, he always does.</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : Here's the part I don't understand, all the evidence is lining up in a path that leads directly to you. They say they have you on tape, pulling the trigger. If you didn't kill Terrence Steadman , how the hell did someone make it look like you did?</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  T-Bag </b> : You brought that old dirty bastard right on home, there was a candle in the window just waiting for me to walk up those front steps. You know I'm gonna get out of here someday, and when I do, don't think that I won't remember what your front steps looks like, Susan.</dd><dd> <i>  [Susan spits at T-Bag's viewing window] </i></dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : Honestly Linc, I don't know how it's come to this. And you can't keep blaming mom for dying and dad for leaving cause I was there too. The difference is I got out. Mom had life insurance, I took my half, put myself through school. What'd you do with your half Link?</dd><dd> <b>  Lincoln </b> : Everything is not always how it looks, Michael.</dd><dd> <b>  Michael </b> : I hope for your sake that's true.</dd></dl>
+Season 1
+Brother's Keeper[1.16]
+<dl><dd> <b>  Michael </b> : So... same time tomorrow?</dd><dd> <b>  Lincoln </b> : They're.. um.. transferring me to a prison, where I'll wait until they execute me.</dd><dd> <b>  Michael </b> : Can I still visit?</dd><dd> <b>  Lincoln </b> : Yeah, not that far... a place called Fox River.</dd><dd> <b>  Michael </b> : Fox River?</dd><dd> <b>  Lincoln </b> : Yeah... why?</dd><dd> <b>  Michael </b> : Nothing.</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Avocado </b> : <i>  [referring to Tweener] </i> Look at it... she's just a baby.</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Avocado </b> : You prob'ly don't have a hair on your body, do ya?</dd><dd> <b>  Tweener </b> : Just back yer punk ass up.</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Tweener </b> : Come on man I just need some time.</dd><dd> <b>  Bellick </b> : You had your time, you're a waste of my fries.</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Tweener </b> : <i>  [after the whole crew dumps their dirty paint brushes in Tweener's bucket for him to clean] </i> A'ight, sorry I busted up the party, yo.</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Michael </b> : I put my blood into this. <i>  [starts punching the wall frantically] </i></dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  Michael </b> : I need for you to draw the picture for me.</dd><dd> <b>  Haywire </b> : Who are you?</dd></dl>
+Season 1
+J-Cat[1.17]
+<dl><dd> <b>  T-Bag </b> : Trust me, son. When I play cards, it ain't gamblin'.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  T-Bag </b> : What are we, the A train? Everyone gets to ride with us?</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  T-Bag </b> : Woo! Looks like the bank of Africa wasn't allowing any withdrawals.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  Michael </b> : Geary.</dd><dd> <b>  Pope </b> : Geary.</dd><dd> <b>  Michael </b> : He shakes cons down for money, anything he can get his hands on. He knew I went to college, so he must've... he must have thought I was rich or something.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  Pope </b> : I've never seen one of these requests granted before....not ever.</dd><dd> <b>  Lincoln </b> : Good lawyers.</dd><dd> <b>  Pope </b> : No lawyer is that good.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  T-Bag </b> : A full house...that's a concept a Mexican should be quite familiar with. Eh, Zazu?</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  Westmoreland </b> : Outliving your wife, that's bad enough. Outliving your daughter, no man should have to do that.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  Haywire </b> : It's the pathway to hell.</dd><dd> <b>  Michael </b> : No it's not, it's just the opposite.</dd><dd> <b>  Haywire </b> : I remember.</dd></dl>
+Season 1
+Bluff[1.18]
+<dl><dd> <b>  Guard </b> : What the hell are you staring at, anyway?</dd><dd> <b>  Lincoln </b> : Everything...</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Tweener </b> : Believe me what I got is worth it, so you gonna step up or what?</dd><dd> <b>  Bellick </b> : This is your last chance Tweener, blow smoke again and I'll be scraping you off the heel of my boot.</dd><dd> <b>  Tweener </b> : Scofield and this whole PI crew, they're escaping.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <i>  [Michael kisses Sara] </i></dd><dd> <b>  Sara </b> : What do you want from me, Michael?</dd><dd> <b>  Michael </b> : Sara... I need you to do something for me.</dd><dd> <b>  Sara </b> : What?</dd><dd> <b>  Michael </b> : Wait for me... it won't always be like this. In this room, in this place.</dd><dd> <b>  Sara </b> : Until then, I can't... we can't... damn it... I can't... and I gotta go.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Michael </b> : How are you?</dd><dd> <b>  Sara </b> : I'm fine, you?</dd><dd> <b>  Michael </b> : Fine.</dd><dd> <b>  Sara </b> : Can I have your hand please?</dd><dd> <b>  Nurse Katie </b> : Here they are.</dd><dd> <b>  Sara </b> : Here what are?</dd><dd> <b>  Nurse Katie </b> : Your keys. They were right over there by your endbox. You got a maintenance guy waiting outside here said you wanted to change the locks. You want me to call him off?</dd><dd> <b>  Sara </b> : <i>  [she glares at Michael] </i> No, send him in.</dd><dd> <b>  Maintenance man </b> : Is it okay if I...</dd><dd> <b>  Sara </b> : Yeah, we're about done here. <i>  [Michael looks worried] </i> Is there something wrong?</dd><dd> <b>  Michael </b> : No. Unless you want to talk about what happened this morning.</dd><dd> <b>  Sara </b> : I think I have a pretty good idea. We're done here.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Tweener </b> : I'm dead no matter what.</dd><dd> <b>  Michael </b> : There may be another way out of here.</dd><dd> <b>  Tweener </b> : Yeah, in a body bag.</dd><dd> <b>  Michael </b> : I need to know if I can trust you.</dd><dd> <b>  Tweener </b> : I'm straight up as they come, you know.</dd><dd> <b>  Michael </b> : No, I mean <i>  really </i> trust you.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Lincoln </b> : You know what you've done, the mother of my child is dead.</dd><dd> <b>  Dad </b> : I know.</dd><dd> <b>  Lincoln </b> : Do you? <i>  [smashing things] </i> Then I'm guessing you know Michael's in Fox River and L.J.'s rotting in some prison.</dd><dd> <b>  Dad </b> : I know all this.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Sucre </b> : Have you figured out how you're gonna get the key to the infirmary yet?</dd><dd> <b>  Michael </b> : Not quite.</dd><dd> <b>  Sucre </b> : You working your game on her, or what?</dd><dd> <b>  Michael </b> : I don't know.</dd></dl>
+Season 1
+The Key[1.19]
+<dl><dd> <b>  Michael </b> : I'm glad you're back.</dd><dd> <b>  Abruzzi </b> : I'm surprised you're still here, I thought you'd be gone by now.</dd><dd> <b>  Michael </b> : Well, we had a few setbacks.</dd><dd> <b>  Abruzzi </b> : Still planning on it?</dd></dl>
+Season 1
+Tonight[1.20]
+<dl><dd> <b>  Governor Tancredi </b> : What was it your mother used to say? It's always nice to be invited to the dance even if you don't have the right shoes.</dd><dd> <b>  Sara </b> : Yeah. She also used to say that your father is a lying bastard.</dd></dl>
+Season 1
+Tonight[1.20]
+<dl><dd> <b>  Governor Tancredi </b> : <i>  [to Sara] </i> I will not discuss morality with an addict and a thief.</dd></dl>
+Season 1
+Tonight[1.20]
+<dl><dd> <b>  Avocado </b> : How many times I gotta say it? You only got one thing I need.</dd></dl>
+Season 1
+Tonight[1.20]
+<dl><dd> <b>  Michael Scofield </b> : <i>  [holding a shank to the Warden] </i> I'm breaking out, and you're going to make sure my brother goes with me.</dd></dl>
+Season 1
+Flight[1.22]
+<dl><dd> <b>  T-Bag </b> : <i>  [about being handcuffed to Michael] </i> I guess it was just meant to be, eh fellas?</dd><dd> <b>  Abruzzi </b> : <i>  [chops off T-Bag's hand] </i> He's lucky I didn't take this to his head.</dd><dd> <b>  Sucre </b> : You...you cut his....you cut his...</dd><dd> <b>  Lincoln </b> : Sucre, shut up! C'mon, let's go.</dd><dd> <b>  Sucre </b> : <i>  [gesturing to T-Bag] </i> We can't just leave him here...</dd><dd> <b>  C-Note </b> : You wanna stay here, be my guest.</dd></dl>
+Season 1
+Flight[1.22]
+<dl><dd> <b>  Sucre </b> : <i>  [looking at the police approaching them] </i> What do we do now?</dd><dd> <b>  Michael </b> : We run.</dd></dl>
+Season 2
+Manhunt[2.01]
+<dl><dd> <b>  Bellick </b> : We don't need you. We are on these guys' trail and it's just a matter of time 'til we nail them.</dd><dd> <b>  Agent Mahone </b> : The problem I find with being on a trail is that by definition, you'll always be behind your prey.</dd></dl>
+Season 2
+Manhunt[2.01]
+<dl><dd> <b>  Abruzzi </b> : These trousers are a little bit too short. Don't you think?</dd><dd> <b>  Lincoln </b> : Chop your feet off. You're good at that.</dd></dl>
+Season 2
+Manhunt[2.01]
+<dl><dd> <b>  Sucre </b> : This jacket isn't exactly the best thing, you know what I'm saying?</dd><dd> <b>  Michael </b> : You want variety? Hit Target.</dd></dl>
+Season 2
+Manhunt[2.01]
+<dl><dd> <b>  Agent Mahone </b> :[Addressing reporters at a press conference following the escape] I'd like to uhh.. Talk about John Wilkes Booth for a moment here if I could. Abraham Lincoln's killer. Twelve days, that's how long it took to find him. In his journal during that period he wrote that the shadow was his friend, the night his domain. He acknowledged that whatever neurosis drove the criminal to commit the original crime is compunded, magnified, by flight. By the sounds of dogs at his heels. Fortunately for us, while our quarry has night and shade as their their ally we have something far greater: television. I would encourage everyone who is watching, everyone one in this country to take a good look at these faces. [Points at the pictures of the escapees placed on a board] These men right here are now the eight-most wanted men in America.</dd></dl>
+Season 2
+Otis[2.02]
+<dl><dd> <b>  Agent Ives </b> : The warden down at Fox River called, asking to be kept in the loop. What should I tell him?</dd><dd> <b>  Agent Mahone </b> : Tell him he's no longer in it.</dd></dl>
+Season 2
+Otis[2.02]
+<dl><dd> <b>  Agent Mahone </b> : I really do, professionally speaking, have a lot of admiration for Lincoln and Michael.</dd><dd> <b>  L.J. </b> : Cool. Now we are buddies.</dd></dl>
+Season 2
+Otis[2.02]
+<dl><dd> <b>  Agent Mahone </b> : You know, for someone who's so convinced that the government is capable of so many underhanded things, you sure are playing fast and loose with me.</dd><dd> <b>  L.J. </b> : What are you gonna do, throw another fake murder charge on me?</dd></dl>
+Season 2
+Otis[2.02]
+<dl><dd> <b>  Lincoln </b> : <i>  [to L.J., on the phone] </i> On the third, look out for Otis Wright. Until then, keep your head up.</dd></dl>
+Season 2
+Otis[2.02]
+<dl><dd> <b>  Lincoln </b> : <i>  [to Michael] </i> If this doesn't work out and you end up going back to Fox River, I ain't coming to get you. I mean, you are the brains and I am the brute.</dd></dl>
+Season 2
+Scan[2.03]
+<dl><dd> <b>  Lincoln </b> : Man, it's quiet out here. Inside, there was always noise, you know? Someone yelling, guards making rounds... I got used to it.</dd><dd> <b>  Michael </b> : You're right. We should go back.</dd><dd> <i>  [Both start laughing] </i></dd></dl>
+Season 2
+Scan[2.03]
+<dl><dd> <b>  Michael </b> : Breaking out was just the beginning, now it gets a little more interesting.</dd><dd> <b>  Lincoln </b> : Mmm hmm. 'Cos me being strapped into an electric chair wasn't interesting enough.</dd></dl>
+Season 2
+Scan[2.03]
+<dl><dd> <b>  Lincoln </b> : The car could blow any second, Michael.</dd><dd> <b>  Michael </b> : Well, the Feds are going to be here in about two minutes. If it doesn't look like we're dead, we will be. Rock, paper, scissors?</dd><dd> <i>  [Lincoln starts to walk towards the car] </i></dd><dd> <b>  Michael </b> : Linc!</dd><dd> <b>  Lincoln </b> : It's my turn.</dd></dl>
+Season 2
+Scan[2.03]
+<dl><dd> <b>  Governor Tancredi </b> : Sara. I paid your bail.</dd><dd> <b>  Sara </b> : You took your time.</dd><dd> <b>  Governor Tancredi </b> : I'm the governor. I do have things to do...</dd><dd> <b>  Sara </b> : Go to hell, dad.</dd></dl>
+Season 2
+Scan[2.03]
+<dl><dd> <b>  Bellick </b> : I knew the little whore would take us right to 'em.</dd></dl>
+Season 2
+First Down[2.04]
+<dl><dd> <b>  Sara </b> : <i>  [answers her cell phone] </i> Hello.</dd><dd> <b>  Michael </b> : Sara. It's me.</dd><dd> <b>  Sara </b> : <i>  [walks away from Kellerman] </i> What do you want?</dd><dd> <b>  Michael </b> : I don't have time to talk and there's every chance that they're listening to this call right now, but there's a lot I want to say. Please don't hang up on me.</dd><dd> <b>  Sara </b> : I don't...I don't want to talk to you.</dd><dd> <b>  Michael </b> : <i>  [rest forehead against the wall] </i> I heard about...I heard about what happened, and I want you to know...I want you to know how sorry I am for everything.</dd><dd> <b>  Sara </b> : Sorry's not going to do me a whole lot of good with what I'm up against right now.</dd><dd> <b>  Michael </b> : Listen, anyone with any ties to me and my brother is in danger now.</dd><dd> <b>  Sara </b> : I have no ties to you and your brother anymore.</dd><dd> <b>  Michael </b> : There's a way I can protect you. It's already in your possession.</dd><dd> <b>  Sara </b> : <i>  [running her hands through her hair] </i> What are you talking about?</dd><dd> <b>  Michael </b> : It was real, Sara. You and me, it's real <i>  [pause and then hangs up] </i> .</dd><dd> <b>  Sara </b> : Michael? <i>  [Kellerman looks up] </i></dd></dl>
+Season 2
+First Down[2.04]
+<dl><dd> <b>  Abruzzi </b> : I kneel only to God. I don't see him here.</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  Kellerman </b> : <i>  [to Sara] </i> I've got skeletons in my closet too, and one of them wears a dress.</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  Michael </b> (to T-bag walking on the street): Hey Pretty!</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  T-Bag </b> : Don't you feel all warm inside now that we're all working together?</dd><dd> <b>  Michael </b> : We're not working together. You're just here to lend a hand.</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  Lincoln </b> : Before or after Sheep Road?</dd><dd> <i>  [silence] </i></dd><dd> <b>  Michael </b> : What's the matter, Theodore, did you forget?</dd><dd> <b>  T-Bag </b> : How could I forget a road called Sheep?</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  Store clerk </b> : Maybe I know your grandpa... What's his name?</dd><dd> <b>  Tweener </b> : His name is Grandpa!</dd></dl>
+Season 2
+Map 1213[2.05]
+<dl><dd> <b>  Agent </b> : Do you think he's a genius or a whack job?</dd><dd> <b>  Mahone </b> : I think we answered that question when we assigned 100 agents to the case.</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  Lincoln </b> : The ranch is gone Michael.</dd><dd> <b>  Michael </b> : Well the 5 million may not be.</dd><dd> <b>  T-Bag </b> : And you gonna find it how? What, you got a divining rod tattooed on your ass?</dd><dd> <b>  Michael </b> : I DON'T WANNA HEAR ANYTHING FROM YOUR MOUTH OTHER THAN WHAT YOUR PHOTOGRAPHIC MEMORY SPITS OUT REGARDING THAT MAP!</dd><dd> <b>  T-Bag </b> : You watch your tone with me, boy.</dd><dd> <b>  Michael </b> : I'll watch you get tossed to the side of the road to fend for yourself, boy. Because if you can't remember where that silo was, you're worthless to us.</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  Jeanette </b> : A systems what?</dd><dd> <b>  Michael </b> : Its a systems diagnostics test. Footage from our gopher's cam picked up exactly where your line was... corrupted.</dd><dd> <b>  Jeanette </b> : And who corrupted it? You guys?</dd><dd> <b>  Michael </b> : Maybe. All I know is that my supervisor called and said that he wants me and my crew to get over here and fix that problem double quick, double time.</dd><dd> <b>  Jeanette </b> : So, you're not with the electric company?</dd><dd> <b>  Michael </b> : No, ma'am. Now feel free to call your company, but I should tell you all they'll do is send over some tech. Maybe tomorrow, if you're lucky. And he'll spend a whole day trying to find the problem and another day trying to fix it. But we're here right now. And we're ready to turn your juice back on.</dd><dd> <b>  Jeanette </b> : ( <i>  interested </i> ) My juice?</dd><dd> <b>  Michael </b> : That's right.</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  C-note </b> : (To Michael) What's up, snowflake?</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  Michael </b> : Well as always your timing is flawless</dd><dd> <b>  C-note </b> : I don't follow.</dd><dd> <b>  Michael </b> : Lemme try and explain it to you. We're trying to run something here. We can't have people walking in from the street.</dd><dd> <b>  C-note </b> : Oh! Oh ok, so you want us to leave and then you can just mail us the check?</dd><dd> <b>  Michael </b> : ( <i>  walking over to Fernando Sucre </i> ) Sucre, I know you trust me. And you know I'll cut you in on that money. But the two of you being here right now jeopardizes everything.</dd><dd> <b>  Sucre </b> : I'm not going nowhere. I want my share of the money.</dd><dd> <b>  C-note </b> : Ok man, hold on man. Ain't we did this dance before? Y'know I say I want in. You say no. Then I threaten to tell somebody about what's going on here. And then you decide to play nice and we're one big happy family! Why don't we just stop wasting time, alrite?</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  C-note </b> : Hey man, you still alive?</dd><dd> <b>  T-Bag </b> : And kicking, homeboy.</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  Jeanette </b> : Could you do something for me?</dd><dd> <b>  T-Bag </b> : I'm certain of it.</dd><dd> <b>  Jeanette </b> : Come here. ( <i>  whispers </i> ) only you have to be very discreet.</dd><dd> <b>  T-Bag </b> : They don't come any discreeter.</dd><dd> <b>  Jeanette </b> : You know that big guy? The strong guy that doesn't speak much? Would you go in there and ask him if he would like to have a drink with me after he punches out, please?</dd></dl>
+Season 2
+Subdivision[2.06]
+<dl><dd> <b>  T-Bag </b> : [to Michael](referring to Jeanette) She's got the hots for the big, strong one!</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Lincoln </b> : (after disarming the lady cop) Let's be civil. Stop. Relax. Here you go.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Michael </b> : Why couldn't it just be a silo? In the middle of a field with no one around?</dd><dd> <b>  Lincoln </b> : Figure it out. We can get the money another way.</dd><dd> <b>  Michael </b> : Yeah, maybe I can rob another bank. You know what Charles once said to me? He said there's no such thing as an ex-con. Because I used to think there was a way we could wipe the slate clean. Make up for everything we've done. The hat's over the wall, Linc. For everyone.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Lincoln </b> : Since when did we become kidnappers? That ain't right.</dd><dd> <b>  Michael </b> : Well, we can buy a conscience tomorrow.</dd><dd> <b>  Lincoln </b> : Well yeah, closing your eyes ain't gonna make it go away.</dd><dd> <b>  Michael </b> : I'll take 5 minutes of a situation I can control over 50 years of one I can't anyday.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Patoshik </b> : You don't move around too well, do ya?</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Lincoln </b> : You can still come with me.</dd><dd> <b>  Michael </b> : No, I can do this.</dd><dd> <b>  Lincoln </b> : And if you can't?</dd><dd> <b>  Michael </b> : Then we still meet up. Exactly where we planned.</dd><dd> <b>  Lincoln </b> : Bolshay Booze.</dd><dd> <b>  Michael </b> : Bolshoi.</dd><dd> <b>  Lincoln </b> : Bolshoi. L.J's gonna be with me.</dd><dd> <b>  Michael </b> : You remember how to get there?</dd><dd> <b>  Lincoln </b> : How can I forget?</dd><dd> <b>  Michael </b> : Thursday night. 6 o clock. It's our last shot. If we do this right, we're gone - forever.</dd><dd> <b>  Lincoln </b> : Lotta ground to cover in 3 days.</dd><dd> <b>  Michael </b> : Lotta ground.</dd><dd> <b>  Lincoln </b> : All right. Take care. ( <i>  hugging Michael </i> )</dd><dd> <b>  Michael </b> : They'll be gunning for you. They'll get you any way they can so...</dd><dd> <b>  Lincoln </b> : Yup!</dd><dd> <b>  Michael </b> : Tell L.J. Tell him I said there'll be a surf board with his name on it.</dd><dd> <b>  Lincoln </b> : Nice.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Sara </b> : My father's not a suicidal man.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Lady Cop </b> : What were you in for?</dd><dd> <b>  Sucre </b> : I don't wanna talk, lady.</dd><dd> <b>  Lady Cop </b> : I'm a prisoner in my own house. Least you can offer me is a little conversation. Alrite, just let me know when I hit it. Murder? Rape? Kidnapping? Sexual abuse? Child sexual abuse?</dd><dd> <b>  Sucre </b> : Aggravated robbery.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Agent Mahone </b> : Are you Catholic?</dd><dd> <b>  Agent Mahone </b> : Not much good on it. Lot of guilt. But the one good thing is confession. Whatever you got eat in on you, you just give it up. Feels good I have to say, guess is letting it out, letting another human being hear.</dd><dd> <b>  Tweener </b> : I have nothing to say, man.</dd><dd> <b>  Agent Mahone </b> : What if I told you something, secret nobody else knows. Oscar Shales. Guy I was chasing a few years back. Smart as hell. I kept just missing him. Became kind of a game like chess. Would have almost been fun if it wasn't for the fact that he were killing people all along the way. Bodies kept stacking up and I started to feel that it was because of me because I couldn't do my job, because I wasn't smart enough. Never did catch him, but I did lose it. Saw things when I was driving at night. Bodies. Nightmares to the point that I couldn't sleep. It was a complete break from reality.</dd><dd> <b>  Agent Mahone </b> :That's what these little guys are for. Keep me in the game. So now you know. Now it's off my chest. Oughta try it sometime.</dd><dd> <b>  Tweener </b> : Like I said before, I ain't gonna tell you nothing.</dd><dd> <b>  Agent Mahone </b> :We were talking about confession earlier and I think I owe you an apology because I lied to you about Oscar Shales. Smart-ass just kept pushing it. I snapped. Right there.</dd><dd> <b>  Agent Mahone </b> :That's where I put the bullet in him.</dd><dd> <b>  Tweener </b> :I don't care about none of this.</dd><dd> <b>  Agent Mahone </b> :The thing about that is that forensics will tell the whole tale. Powder burns. The gun was right against his head.</dd><dd> <b>  Tweener </b> : Yo, sir. I think we should go back in...</dd><dd> <b>  Agent Mahone </b> : See that's what's good about confession. You know, because you say something, you get it off your chest and it just goes out there into the whole world and I'm so sorry about this kid because I really hope you understand.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Tweener </b> : Know what? You were right. Does feel good to get stuff off your chest. Sorry I had to play you like that, bro.</dd></dl>
+Season 2
+Buried[2.07]
+<dl><dd> <b>  Tweener </b> : Yo, yo. What... What...</dd><dd> <b>  Agent Mahone </b> : I got nothing against you kid...</dd><dd> <b>  Tweener </b> : What are you doing man?</dd><dd> <b>  Agent Mahone </b> : but they do.</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Michael </b> : So this is how its gonna go down. After everything? Once a thief always a thief.</dd><dd> <b>  Sucre </b> : You just figuring that out?</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sara </b> : Making sure it doesn't look like I did it! People will ask questions if the day the governor was found killing himself, his daughter is found dead in what looks like a struggle.</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Michael </b> : Adios amigos, huh?</dd><dd> <b>  Sucre </b> : What, too much?</dd><dd> <b>  Michael </b> : You were great.</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sucre </b> : (to Michael) Its gonna be OK, rite? I mean, if you can get eight people of prison, you can get my Puerto Rican ass out of this, rite? Can't you?</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Agent Kim </b> : What does an origami bird have to do with any of this?</dd><dd> <b>  Kellerman </b> : Michael Scofield sent it to her? And since your brilliant plan to eliminate Sara Tancredi from the equation failed so completely -</dd><dd> <b>  Agent Kim </b> : - I wouldn't say it failed completely...</dd><dd> <b>  Kellerman </b> : There's a dead woman in a phonebooth. Civilian. Certain number of bodies you can sweep under the rug. President's rug is getting so full you can barely stand on it.</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sucre </b> : They say people come into your life for a reason. Maybe my reason was to help you get out of Fox River, you know? To help you save your brother.</dd><dd> <b>  Michael </b> : No</dd><dd> <b>  Sucre </b> : Its okay, Papi. Let me go.</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sucre </b> : Hey, Petey. Uh, its me. Listen, I've got something to tell you.</dd><dd> <b>  Petey </b> : Yeah well I was wondering when you were gonna call.</dd><dd> <b>  Sucre </b> : Yeah a lot has come down since we talked, uh...</dd><dd> <b>  Petey </b> : Yeah, I know. I heard. You ruined it!</dd><dd> <b>  Sucre </b> : Yeah, uh, you heard already?</dd><dd> <b>  Petey </b> : Well, brother, everybody's heard man. And let me tell you something man, Hector is pissed!</dd><dd> <b>  Sucre </b> : What does Hector have to do with it?</dd><dd> <b>  Petey </b> : Well, it <i>  was </i> his wedding! Wait man, what are you talking about?</dd><dd> <b>  Sucre </b> : Your bike. What are you talking about?</dd><dd> <b>  Petey </b> : The wedding.</dd><dd> <b>  Sucre </b> : What about the wedding?</dd><dd> <b>  Petey </b> : Well you know the part where you say "I do"? Maricruz said "I don't".</dd><dd> <b>  Sucre </b> : She did?</dd><dd> <b>  Petey </b> : Left homeboy standing at the altar holding his spam in his hands, if you know what I'm saying. What were you telling me about my bike?</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sucre </b> : At the river. I told you to leave me behind.</dd><dd> <b>  Michael </b> : Yeah, I tried but you know I got tangled up in the rope so...</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  L.J. </b> : Lemme get this straight. You paid that meth head to whoop my ass?</dd><dd> <b>  Lincoln </b> : Yeah. Feds waiting for me to come get you. It worked didn't it?</dd><dd> <b>  L.J. </b> : Yeah, it got me four stitches!</dd></dl>
+Season 2
+Dead Fall [2.08]
+<dl><dd> <b>  Sara </b> : There's one more bird.</dd></dl>
+Season 2
+Unearthed[2.09]
+<dl><dd> <b>  Lincoln </b> : Listen, all the charges against you have been dropped. Free and clear to start a new life, a good life. Not constantly running and looking over your shoulder -</dd><dd> <b>  L.J. </b> : You want me to leave?</dd><dd> <b>  Lincoln </b> : No... no.</dd><dd> <b>  L.J. </b> : Good. 'Cause I'm not.</dd></dl>
+Season 2
+Unearthed[2.09]
+<dl><dd> <b>  L.J. </b> : Hey, I'm not an idiot. I was on the run too, you know.</dd><dd> <b>  Lincoln </b> : Yeah, you were on the run. And you got caught.</dd><dd> <b>  L.J. </b> : Yeah, well I'm sorry I'm not a pro at being a con like you, dad!</dd></dl>
+Season 2
+Unearthed[2.09]
+<dl><dd> <b>  Lincoln </b> : I saw you checking out those girls back at the diner.</dd><dd> <b>  L.J. </b> : What?</dd><dd> <b>  Lincoln </b> : C'mon. 'fess up.</dd><dd> <b>  L.J. </b> : I was just making sure they weren't staring at us.</dd><dd> <b>  Lincoln </b> : With what? Their asses? Beautiful girls in Panama. They love Americans.</dd><dd> <b>  L.J. </b> : Cool.</dd><dd> <b>  Lincoln </b> : So, how long have you known about girls?</dd><dd> <b>  L.J. </b> : Long enough.</dd><dd> <b>  Lincoln </b> : Since when?</dd><dd> <b>  L.J. </b> : 13</dd><dd> <b>  Lincoln </b> : 13. With who?</dd><dd> <b>  L.J. </b> : Donna Ensalmy</dd><dd> <b>  Lincoln </b> : She was the kid next door. She was about f-</dd><dd> <b>  L.J. </b> : Four years older than me?</dd><dd> <b>  Lincoln </b> : Your mom was paying her for French lessons.</dd><dd> <b>  L.J. </b> : Well, she earned the money.</dd></dl>
+Season 2
+Unearthed[2.09]
+<dl><dd> <b>  Agent Mahone </b> : Pam, I really can't talk right now.</dd><dd> <b>  Michael </b> : Maybe I should call back.</dd><dd> <b>  Agent Mahone </b> : Who is this?</dd><dd> <b>  Michael </b> : I think you already know.</dd><dd> <b>  Agent Mahone </b> : If you've done anything to Pam or my boy...</dd><dd> <b>  Michael </b> : We both know your family's fine, although Pam did seem a little upset about you leaving. But then you had to, didn't you? Because you couldn't let her find out.</dd><dd> <b>  Agent Mahone </b> : Find out about what?</dd><dd> <b>  Michael </b> : Oscar Shales. You remember? The one that got away. Except he didn't get too far, did he?</dd><dd> <b>  Agent Mahone </b> : Ah, you're slippin' Scofield.</dd><dd> <b>  Michael </b> : Maybe. Let's hypothesize for a moment. Let's pretend I was the one who caught Shales. I don't think I could've just handed that psychopath over to the court. Not after he'd eluded me for so long. Made me look bad.</dd><dd> <b>  Agent Mahone </b> : You been out in the sun way too long, boy.</dd><dd> <b>  Michael </b> : You feds make a nice living. But not so nice you go around tearing up expensive sod. Not unless you had to do a little digging. Not unless you had to hide something. Or someone. That's what all the lye was about, wasn't it? See because there are two kinds of lye. In small amounts the first one can be a gardener's best friend. In large bags the other kind decomposes bodies.</dd><dd> <b>  Agent Mahone </b> : Ah, you should write mystery novels.</dd><dd> <b>  Michael </b> : I don't know about you, but if I'd buried someone in my own backyard, I'd think about it all the time. I'd think... I'd think maybe I should move that body. But then I'd remember that DNA leaches into soil. So even when the body was gone the proof of what I'd done would still be there. I can imagine how it feels. The pressure. The constant fear. Its more than a man can bear. I'm giving you a chance. Back off. Let me and my family disappear. And in return, I'll keep your little secret. How does that sound?</dd><dd> <b>  Agent Mahone </b> : Like a dead man talking.</dd><dd> <b>  Michael </b> : I know its not how you wanted us to play out. But sometimes things happen that are just... out of your control. This is one of those times. Take care of yourself.</dd><dd> <b>  Agent Mahone </b> : I'll see you soon Michael.</dd><dd> <b>  Agent Mahone </b> : Oh! and Michael,it just maybe sooner than you think.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Bellick </b> : You tell me where the money is or I'm gonna read it on your tombstone.</dd><dd> <b>  T-Bag </b> : Okay. Okay. I'll give you a clue. It ain't here.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Michael </b> : I've arranged for us to meet in Panama. We are meeting up with my brother tomorrow.</dd><dd> <b>  Sara </b> : Wait, that's your plan? To run away to Panama with the two most wanted men in America? Michael, I came here because I thought you were going to have real answers for me.</dd><dd> <b>  Michael </b> : This is an answer. And right now, it's the only one we've got.</dd><dd> <b>  Sara </b> : Running away into the sunset with the man who lied to me? Really? I mean, did you know about the other guys? Did you know that I would be putting T-Bag back out into the street?</dd><dd> <b>  Michael </b> : I never meant for that to happen. I was doing what I needed to do. My brother was going to die.</dd><dd> <b>  Sara </b> : And my father is dead.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Bellick </b> : Get the stool.</dd><dd> <b>  Geary </b> :What stool?</dd><dd> <b>  Bellick </b> : The stool.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Michael </b> : First word of advice: Stop. Because when you get close, I will win everytime.</dd><dd> <b>  Agent Mahone </b> : You think?</dd><dd> <b>  Michael </b> : I'm not the one in the cage.</dd><dd> <b>  Agent Mahone </b> : No, you're not. There's one big difference between you and I, Michael. You just proved it. You can't kill. And that's what it's going to take to stop me because I don't have the same reservations. I can't. So whether it's today in Gila, or tomorrow in Albuquerque, or two months from now in <i>  Panama </i> ... I will get you. [whispers] I don't have a choice.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Sara </b> : Michael, tell me something. You think there is a part of you that enjoys this?</dd><dd> <b>  Michael </b> : Peroxide in an open wound? No.</dd><dd> <b>  Sara </b> : I mean, escaping from prison and being on the run, and the danger, and the fear, and the rush and all that. It uh... it feels to me like chasing a high? And... and I know what that's like and I should know better by now.</dd></dl>
+Season 2
+Rendezvous[2.10]
+<dl><dd> <b>  Lincoln </b> : Lincoln Junior.</dd><dd> <b>  Aldo </b> : You named him after yourself.</dd><dd> <b>  Lincoln </b> : I wasn't going to name him "Aldo".</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Kellerman </b> : As you can see... Hi, my name is not Lance and I am not an addict.</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Kellerman </b> : So, where is it?</dd><dd> <b>  Sara </b> : I don't know what you are talking about.</dd><dd> <b>  Kellerman </b> : Where is it?</dd><dd> <b>  Sara </b> : I don't know what you are talking about.</dd><dd> <b>  Kellerman </b> : Where is it?</dd><dd> <b>  Sara </b> : I don't know what you are talking about.</dd><dd> <b>  Kellerman </b> : Sara, there is a next step involved in this and you don't want to experience that.</dd><dd> <b>  Sara </b> : I swear to God I don't know what you are talking about. My father didn't give me anything. I don't know what you are talking about.</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Michael </b> : If I surrender now, I lose everyone I love.</dd><dd> <b>  Priest </b> : But do you lose your soul in the process?</dd><dd> <b>  Michael </b> : Well, we all have our crosses to bear.</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Lincoln </b> : I'll tell you how it's going to end. Me staring in your dead eye with my hand around your throat.</dd><dd> <b>  Agent Kim </b> : You don't even know who I am.</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Kellerman </b> : Who are you risking your life for? Lincoln Burrows. Street thug. And why is that your concern? I mean, is there somewhere in the Hippocratic Oath where it says, "I pledge to risk my life for those who don't care about mine" because they don't care about yours. Burrows and Michael Scofield? They just used you.</dd><dd> <b>  Sara </b> : Are you surprised that there are people in the world that stand up to people like you? Are you that far gone?</dd><dd> <b>  Kellerman </b> : That's cute. Sad... but cute.</dd></dl>
+Season 2
+Bolshoi Booze[2.11]
+<dl><dd> <b>  Sara </b> : Go to hell.</dd><dd> <b>  Kellerman </b> : [pulls Sara's head down to the water] You know what? Drowning is horrific. Don't get me wrong but once you give in, you just let the water come into your lungs and there is a certain euphoria, I hear. I guess as a junkie, I thought maybe you'd appreciate that.</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Aldo </b> : We can fix this. I came back so that we can fix this.</dd><dd> <b>  Michael </b> : This can never be fixed.</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Detective Slattery </b> : You left Chicago to see the sights in Tribune, Kansas?</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Detective Slattery </b> : Mr Bellick...</dd><dd> <b>  Brad </b> : Brad.</dd><dd> <b>  Detective Slattery </b> : Brad, I really don't care what you are doing out here. We are both in the law enforcement. We can both sniff out a perp like a hot fart. Pardon my french. And we both know you're not a criminal. So, I don't care if you boys were out here whooping it without your wives or... going brokeback.</dd><dd> <b>  Brad </b> : Hell, no.</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Agent Mahone </b> : I'm so tired of playing games.</dd><dd> <b>  Coyote </b> : Well, start typing.</dd><dd> <b>  Mahone </b> : <i>  [pulls the plug from a machine] </i> No external pacemaking. <i>  [presses a button] </i> Hey, this is a good one. No morphine drip.</dd><dd> <b>  Nurse </b> : Hey, what are you doing?</dd><dd> <b>  Mahone </b> : F.B.I., out, out, out! <i>  [kicks the door close] </i></dd><dd> <b>  Coyote </b> : What the hell are you doing?</dd><dd> <b>  Mahone </b> : Giving you a little incentive.</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Micheal </b> : Fly safe, Papi.</dd><dd> <b>  Sucre </b> : <i>  [steps into the plane] </i> Give 'em hell.</dd></dl>
+Season 2
+Disconnect[2.12]
+<dl><dd> <b>  Lincoln </b> : What about your friend out there?</dd><dd> <b>  Michael </b> : If we're gonna go down, might as well go down swinging.</dd></dl>
+Season 2
+The Killing Box[2.13]
+<dl><dd> <b>  Agent Mahone </b> : Turn around. TURN AROUND!</dd><dd> <b>  Michael </b> : If you're gonna murder us Alex, you have to look us in the eyes while you do it.</dd><dd> <b>  Agent Mahone </b> : Shut up.</dd><dd> <b>  Lincoln </b> : You want me, you got me. Let my brother go!</dd><dd> <b>  Agent Mahone </b> : I don't want either of you. I JUST WANT MY LIFE BACK!</dd><dd> <b>  Michael </b> : You'd kill two innocent men to get it, huh?</dd><dd> <b>  Agent Mahone </b> : Absolutely.</dd></dl>
+Season 2
+The Killing Box[2.13]
+<dl><dd> <b>  Agent Kim </b> : Give me one good reason why those brothers are still alive.</dd><dd> <b>  Kellerman </b> : Bad day, Bill?</dd><dd> <b>  Agent Kim </b> : Sorry I thought this was someone who still existed. How's the jerky business, Owen?</dd><dd> <b>  Kellerman </b> : Actually it's looking pretty good right about now.</dd></dl>
+Season 2
+The Killing Box[2.13]
+<dl><dd> <b>  Michael </b> : You know we have no idea what's behind that door?</dd><dd> <b>  Lincoln </b> : Nope... you ready?</dd><dd> <b>  Michael </b> : No, you?</dd><dd> <b>  Lincoln </b> : No.</dd><dd> <b>  Michael </b> : Let's go.</dd></dl>
+Season 2
+The Killing Box[2.13]
+<dl><dd> <b>  T-Bag </b> : Don't be frightened. Teddy's home.</dd></dl>
+Season 2
+The Killing Box[2.13]
+<dl><dd> <b>  Kellerman </b> : President Reynolds ruined your life, she ruined my life. You wanna take the bitch down? You just found your inside man but it's gotta be RIGHT NOW.</dd></dl>
+Season 2
+Chicago[2.16]
+<dl><dd> <b>  T-Bag </b> : This is what my auntie used to call Hobo Chicken. One part chicken, two parts spice, and three parts actual hobo.</dd></dl>
+Season 2
+Chicago[2.16]
+<dl><dd> <b>  T-Bag </b> : I, uh, know fowl isn't part of a traditional brunch per se, but I have found a lean meat can act as an aparetif to awaken the palet for more subtle flavors and textures such as... Mama mia! Pumpkin cinnamon bread with fresh strawberries and cream!</dd></dl>
+Season 2
+Chicago[2.16]
+<dl><dd> <b>  Sara </b> (To Michael): When you first take the job, they tell you never to fall in love with an inmate...</dd></dl>
+Season 2
+Chicago[2.16]
+<dl><dd> <b>  Haywire </b> : I just wanna go...</dd></dl>
+Season 2
+Sweet Caroline[2.19]
+<dl><dd> <b>  Caroline </b> : The things you do for your brother, it's impressive.</dd><dd> <b>  Michael </b> : I could say the same for you. But I won't.</dd></dl>
+Season 2
+Sweet Caroline[2.19]
+<dl><dd> <b>  Caroline </b> :(On tape) It's awful, I know.</dd><dd> <b>  Terrence </b> : Mmm.</dd><dd> <b>  Caroline </b> : But the choice was clear. You needed to be far away from all of this.</dd><dd> <b>  Terrence </b> : I am. I'm the Isle of Terrence, far off to sea.</dd><dd> <b>  Caroline </b> : But I'm still here for you. Now, listen to me, don't dwell on the negative.</dd><dd> <b>  Terrence </b> : Some people deserve to dwell, Caroline.</dd><dd> <b>  Caroline </b> : You know I'm only a phone call away.</dd><dd> <b>  Terrence </b> : And 3000 miles. Do you... Do you know how cold it is here?</dd><dd> <b>  Caroline </b> : We talked about this, Terrence. You knew that you would be lonely, but it's only temporary. His appeals process has started already. This is gonna fly by quicker then your 20's. And soon the world will forget all about him, and they'll forget about you too. I promise.</dd><dd> <b>  Terrence </b> : But, it's killing me not being able to see you, sweet Caroline.</dd><dd> <b>  Caroline </b> : I wanna see you, too. But that can't happen right now.</dd><dd> <b>  Terrence </b> : This house is so big. I just think of you...lying in bed.</dd><dd> <b>  Caroline </b> : I know. Me, too.</dd><dd> <b>  Terrence </b> : Your warmth, your touch.</dd></dl>
+Season 2
+Sweet Caroline[2.19]
+<dl><dd> <b>  Caroline </b> : <i>  [in a televised statement] </i> In the best interest of this country effect of immediately, I am stepping down as president of the United States.</dd><dd> <b>  Lincoln </b> : She ain't the president, the tape's useless.</dd><dd> <b>  Michael </b> : She can't pardon anyone.</dd><dd> <b>  Lincoln </b> : We've got nothing.</dd><dd> <b>  Michael </b> : There's only thing we can do. We've got to disappear... forever.</dd></dl>
+Season 2
+Panama[2.20]
+<dl><dd> <b>  Michael </b> : Listen, Sara, Linc and I are on the ship. This is it. There's no turning back now, so... I know it's not what you wanted from your life, but, in case you're interested, there is room for one more.</dd><dd> <b>  Sara </b> : Michael Scofield, you asking me to sail off into the sunset with you?</dd><dd> <b>  Michael </b> : Well, it's more of a freighter, but, uh, yes.</dd><dd> <b>  Sara </b> : I'll be there.</dd><dd> <b>  Michael </b> : I'll see you soon.</dd></dl>
+Season 2
+Panama[2.20]
+<dl><dd> <b>  Lincoln </b> : How much further?</dd><dd> <b>  Michael </b> : Not far.</dd><dd> <b>  Lincoln </b> : You know, for what it's worth, no one forced Sara to do what she did.</dd><dd> <b>  Michael </b> : Whatever gets you through the night.</dd><dd> <b>  Lincoln </b> : What the hell does that mean? I didn't ask you to use her.</dd><dd> <b>  Michael </b> : It's not that simple.</dd><dd> <b>  Lincoln </b> : Whatever gets you through the night, buddy.</dd><dd> <b>  Michael </b> : You know what amazes me, Linc? Nothing ever registers with you. Ever. Just rolls right off your back, doesn't it? We ruined Sara's life and it's like you don't even care.</dd><dd> <b>  Lincoln </b> : Is that what you think?</dd><dd> <b>  Michael </b> : Well, we're here, and Sara's back there in prison. Does that seem fair to you?</dd><dd> <b>  Lincoln </b> : None of it's fair. Just don't make this about boy loses girl.</dd><dd> <b>  Michael </b> : Who should it be about, Linc? Westmoreland? Tweener? LJ?</dd><dd> <b>  Lincoln </b> : Let me stop you right there.</dd><dd> <b>  Michael </b> : Do you remember the name of the guard that was murdered because of the riot I started?</dd><dd> <b>  Lincoln </b> : Shut up, Michael.</dd><dd> <b>  Michael </b> : Do you even remember his name? I bet you remember Veronica's name, though, don't you?</dd><dd> <b>  Lincoln </b> : You mention her name again, I swear to God...</dd><dd> <b>  Michael </b> : What about T-Bag!? Linc, he's out there now, because of us! You and me! Every life he takes, that's blood on our hands. And for what?</dd><dd> <b>  Lincoln </b> : I didn't ask you to do what you did.</dd><dd> <b>  Michael </b> : They were gonna kill you, Linc!</dd><dd> <b>  Lincoln </b> : Well, maybe you should've let them!</dd><dd> <b>  Michael </b> : Take that back.</dd></dl>
+Season 2
+Fin Del Camino[2.21]
+<dl><dd> <b>  Sucre </b> : I'm gonna kill him.</dd><dd> <b>  Michael </b> : And go right back to prison.</dd><dd> <b>  Sucre </b> : I don't care. Once we get the money and he tells me where Maricruz is, I'm gonna kill him.</dd><dd> <b>  Michael </b> : If you find Maricruz, you're gonna marry Maricruz and live happily ever after.</dd><dd> <b>  Sucre </b> : Yeah, after I sink a knife in Bellick's chest.</dd><dd> <b>  Michael </b> : Bellick and T-Bag will get theirs, trust me.</dd><dd> <b>  Sucre </b> : Didn't Fox River teach you anything man? 'Cause the same rules apply out here. It doesn't make a difference if you're guilty or innocent. It's who survives.</dd><dd> <b>  Michael </b> : You're not that guy.</dd><dd> <b>  Sucre </b> : That son of a bitch took my girl and locked her up somewhere. I am that guy now, Michael. Look at me.</dd><dd> <b>  Michael </b> : The only reason I'm not five miles away from here right now is because I want to help you find Maricruz, not kill Bellick. And if that's your game, I'm gone. Believe me, I understand the impulse to pull the trigger. But if we lose ourselves, we lose everything.</dd></dl>
+Season 2
+Fin Del Camino[2.21]
+<dl><dd> <i>  [About Sara's sentence] </i></dd><dd> <b>  Sara </b> : Well?</dd><dd> <b>  Marty </b> : Twelve years.</dd><dd> <b>  Sara </b> : No. No. The jury heard Michael's tape.</dd><dd> <b>  Marty </b> : They heard a convicted felon lie for a woman that he clearly cares for. He's got no credibility. Sara, we need to take a hard look at what they're offering.</dd><dd> <b>  Sara </b> : Due respect, Marty, we aren't going to prison, I am.</dd></dl>
+Season 2
+Fin Del Camino[2.21]
+<dl><dd> <b>  Lincoln </b> : He didn't answer.</dd><dd> <b>  Mahone </b> : I certainly hope your brother makes it back to that boat.</dd><dd> <b>  Lincoln </b> : And if he doesn't? You should see yourself. You look like you're hanging in there by a thread.</dd><dd> <b>  Mahone </b> : I just want this over with.</dd><dd> <b>  Lincoln </b> : Then you should never have come down here. In case you hadn't noticed, me and my brother don't quit for no one.</dd><dd> <b>  Mahone </b> : Thank God for that. Because it's guys that are accused of things like you were that keep guys like me in business... Kept... guys like me in business, rather.</dd><dd> <b>  Lincoln </b> : It's gonna end bad for you, man. Couple of things in this world I'm good at. One of them is looking into a man's eye and knowing when he's beat.</dd></dl>
+Season 2
+Fin Del Camino[2.21]
+<dl><dd> <b>  T-Bag </b> : <i>  [holding a knife to Michael] </i> What exactly is it that you want, pretty?</dd><dd> <b>  Michael </b> : <i>  [closes door] </i> I'm turning you in.</dd><dd> <b>  T-Bag </b> : Is that it? Really? It ain't about the money? 'Cause if it is, you can tell me. Ain't nobody here but us cons.</dd><dd> <b>  Michael </b> : You can walk... or get dragged, that's up to you.</dd><dd> <b>  T-Bag </b> : No. See, when you had the gun on me, I afforded you a certain respect. But, uh, here? Well, the scales are tipped back my way. So I'm gonna spell out the present options. Either we split this money, and you can go get your legs tattooed or whatever the hell it is you want, or they're gonna find your corpse slumped over that there chair with your pants down around your ankles, 'cause it's been a long time coming, pretty.</dd><dd> <i>  [Michael walks over to counter, takes bottle, smashes it into weapon] </i></dd><dd> <b>  T-Bag </b> : Well, I got my answer.</dd><dd> <b>  Michael </b> : Whenever you're done yakking.</dd><dd> <b>  T-Bag </b> : ... Bring it, bitch.</dd></dl>
+Season 2
+Fin Del Camino[2.21]
+<dl><dd> <i>  [over phone] </i></dd><dd> <b>  Michael </b> : Linc?</dd><dd> <b>  Lincoln </b> : I'm sorry, Michael.</dd><dd> <b>  Michael </b> : What's wrong?</dd><dd> <b>  Mahone </b> : Hello, Michael.</dd><dd> <b>  Michael </b> : If you touch my brother, you're a dead man.</dd><dd> <b>  Mahone </b> : Oh, please. You don't have to worry about that. But, when it comes right down to it, he's just like you. He has a heart that won't kill a man.</dd><dd> <i>  [Camera reveals Lincoln in handcuffs] </i></dd><dd> <b>  Michael </b> : What do you want Alex?</dd><dd> <b>  Mahone </b> : I'll tell you exactly what I want. But first things first. When the authorities captured Bagwell today, the money was nowhere to be found. Now, I can only assume... that you've got the money... aboard the Christina Rose, right now. It's an amazing plan, Michael. Take the money, take the boat, disappear forever. But you... are not the only one that needs to disappear. You still there?</dd><dd> <b>  Michael </b> : Yeah, I'm still here.</dd><dd> <b>  Mahone </b> : Good. Because I'm gonna say this and I'm gonna say this once. Bring me the money, bring me the boat.</dd><dd> <b>  Michael </b> : You are out of your mind.</dd><dd> <b>  Mahone </b> : Not really. We both have something the other person needs. It all comes down to this, Michael. Your brother for your plan. Five minutes, that's all you have.</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <b>  Lincoln </b> : How's it feel being on the run?</dd><dd> <b>  Mahone </b> : I'll survive.</dd><dd> <b>  Lincoln </b> : Not if they catch you. They'll send you to the chair.</dd><dd> <b>  Mahone </b> : Do you think that's ironic?</dd><dd> <b>  Lincoln </b> : That'd be justice.</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <i>  [In court at Sara's trial] </i></dd><dd> <b>  Paul </b> : What I'm about to divulge to you will, in all likelihood, get me killed. Actually, I guarantee it.</dd><dd> <b>  Lawyer </b> : Then why are you doing it?</dd><dd> <b>  Paul </b> : Because this was supposed to be about country, about loyalty, about what's right, but it wasn't, because I wronged people who should not have been wronged. Those orders were given by Caroline Reynolds who was Vice President at the time. Acting on those orders, I planted evidence, I procured a body, I lured Lincoln Burrows into that parking garage that evening under the auspices of a different hit. Ground up, we framed him. See, Lincoln Burrows get executed, people forget about Terrence Steadman, the controversy surrounding him and the Presidency, and nobody ever knows about The Company.</dd><dd> <b>  Woman Lawyer </b> : Yes, which is a shadowy cabal of corporations that pretty much influence everything that happens in this country. But I fail to see how any of this is relevant to Sara Tancredi and the fact that she aided and abetted, that she jumped bail--</dd><dd> <b>  Paul </b> : She did so because she feared for her life, which was appropriate, as I had orders to kill her.</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <i>  [In van for prisoner transport while guard is checking engine] </i></dd><dd> <b>  Paul </b> : In the French Resistance, it was considered a high honor to face a Nazi firing squad--</dd><dd> <b>  Guard </b> : I thought I told you to be quiet.</dd><dd> <b>  Paul </b> : Meant you did your job. The highest honor was to smile when they shot you.</dd><dd> <i>  [Van door opens, reveals masked men with machine guns] </i></dd><dd> <b>  Paul </b> : Took you long enough.</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <b>  Michael </b> : We did it, Linc. We did it.</dd><dd> <b>  Lincoln </b> : Yeah.</dd><dd> <b>  Kim </b> : No. <i>  [camera shows him on dock, pointing gun at them] </i> You almost did it.</dd><dd> <b>  Lincoln </b> : You want the money?! <i>  [throws bag on ground] </i> Take the money. Take it.</dd><dd> <b>  Kim </b> : You think this is about the money? <i>  [kicks bag into water] </i> Pocket change like $5 million?</dd><dd> <b>  Michael </b> : Then what is it about? My brother's been exonerated. The President stepped down. We're not a threat anymore. It's over.</dd><dd> <b>  Kim </b> : You may be done with us, but that doesn't mean we're done with you. The police are on there way.</dd><dd> <b>  Lincoln </b> : It started with me. Let my brother go.</dd><dd> <b>  Kim </b> : Oh, that's sweet. That's sweet. You don't hear that much anymore, that sort of fidelity in families. Two brothers that'll go to to the ends of the earth for each other. Too bad only one of you will survive.</dd><dd> <b>  Michael </b> : Don't!</dd><dd> <i>  [Gunshot, Kim falls in water, camera shows Sara shot him, they hear sirens in distance] </i></dd><dd> <b>  Michael </b> : We got to go.</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <b>  Panama Policeman </b> : My men are ordered to fire if you don't come out of there with your hands first. Murder is not something that we take lightly on Panamanian soil. So come on out of there, and there will be no more deaths.</dd><dd> <b>  Sara </b> : <i>  [whispering] </i> Michael, I took a man's life.</dd><dd> <b>  Michael </b> : Don't think about that now. You and I have got a date, remember? Two limes and a couple of beers, don't forget that.</dd><dd> <b>  Policeman </b> : This is your last warning!</dd><dd> <b>  Michael </b> : Give me the gun.</dd><dd> <b>  Sara </b> : I took a man's life...</dd><dd> <b>  Michael </b> : We're going to walk out of here together. We'll tell them exactly what happened.</dd><dd> <i>  [Sara starts crying] </i></dd><dd> <b>  Michael </b> : Look at me, look at me, look at me. Then, we're going to tell them what happened.</dd><dd> <b>  Sara </b> : Okay.</dd><dd> <b>  Michael </b> : We're gonna explain everything. And I'm going to do whatever I can to help you. Okay?</dd><dd> <b>  Sara </b> : <i>  [nodding] </i> Yeah.</dd><dd> <b>  Michael </b> : Now, give me the gun.</dd><dd> <b>  Sara </b> : Here. <i>  [passes him gun] </i></dd><dd> <b>  Michael </b> : <i>  [standing] </i> You ready? <i>  [they embrace] </i></dd><dd> <b>  Sara </b> : I love you.</dd><dd> <b>  Michael </b> : I love you, too, Sara. <i>  [they kiss] </i></dd><dd> <b>  Sara </b> : Okay.</dd><dd> <b>  Michael </b> : You ready?</dd><dd> <b>  Sara </b> : Yeah.</dd><dd> <i>  [They walk outside, Michael grabs Sara from behind and holds gun to her head] </i></dd><dd> <b>  Michael </b> : Don't move! I'll shoot!</dd><dd> <b>  Sara </b> : Michael, what are you doing?</dd><dd> <b>  Michael </b> : Nobody moves! Nobody! <i>  [whispering to Sara] </i> You sacrificed everything for me once. No! Don't move!</dd><dd> <b>  Sara </b> : No, I can't let you do this. Michael! Michael!</dd><dd> <b>  Michael </b> : Now it's time to say thank you. <i>  [lets go of Sara, steps towards police] </i> It was me! It was me!</dd><dd> <b>  Sara </b> : No! He's done nothing wrong!</dd><dd> <b>  Michael </b> : I did it! I did it!</dd><dd> <b>  Sara </b> : He's done nothing wrong! He's innocent!</dd><dd> <b>  Michael </b> : I did it! It was me!</dd><dd> <b>  Sara </b> : He hasn't hurt anybody, please, Michael! Michael, tell them the truth! Michael! He's done nothing wrong!</dd></dl>
+Season 2
+Sona[2.22]
+<dl><dd> <i>  [over phone] </i></dd><dd> <b>  Pam </b> : Hello?</dd><dd> <b>  Mahone </b> : It's me.</dd><dd> <b>  Pam </b> : Getting impatient. Reminds me of when we were in college.</dd><dd> <b>  Mahone </b> : Did you buy the tickets yet?</dd><dd> <b>  Pam </b> : No, I'm still looking.</dd><dd> <b>  Mahone </b> : Don't.</dd><dd> <b>  Pam </b> : What?</dd><dd> <b>  Mahone </b> : Forget about them... Forget I ever existed.</dd></dl>
+Season 3
+Good Fences[3.4]
+<dl><dd> <b>  Susan B. Anthony </b> : I'm just a soldier in this war, Lincoln, just like you. I did not want to do that. Can you even comprehend the eminice of the mechanics of what I had to do to that woman? It's horrible. Now, if you and your brother are done playing games, LJ will be fine. If not, the last thing I want to do is start mailing pieces of him to you. But if you push me, and not even that far, I will.</dd></dl>
+Season 3
+Photo Finish[3.6]
+<dl><dd> <b>  Mahone </b> : So what's your deal? Public intoxication, tourist in trouble, local, what is it?</dd><dd> <b>  New prisoner </b> : I don't like people asking too many questions about me when I've done nothing wrong, eh?</dd><dd> <b>  Mahone </b> : Oh, you're an innocent man?</dd></dl>
+Season 3
+Photo Finish[3.6]
+<dl><dd> <b>  Whistler </b> : Oh, come on, you don't wanna go in there..</dd><dd> <b>  Michael </b> : If we want to get out of here, I do!</dd></dl>
+Season 3
+Photo Finish[3.6]
+<dl><dd> <b>  Sofia </b> : What did you buy?</dd><dd> <b>  Lincoln </b> : ...Supplies...</dd><dd> <b>  Sofia </b> : Who am I going to tell, honestly?</dd><dd> <b>  Lincoln </b> : You could be a Russian spy for all I know!</dd></dl>
+Season 3
+Photo Finish[3.6]
+<dl><dd> <b>  Michael </b> : Show me the pictures Linc.</dd><dd> <b>  Lincoln </b> : I can't show you the pictures, man.</dd><dd> <b>  Michael </b> : Why not Linc?</dd><dd> <b>  Lincoln </b> : She's dead Michael. I lied to you, I'm sorry.</dd><dd> <b>  Lincoln </b> : Micheal we got to do this.</dd></dl>
+Season 3
+Vamonos[3.7]
+<dl><dd> <b>  Susan B. Anthony </b> : I know you wanted to live by an ocean your whole life. Sad to think the closest you'll get is being buried under one.</dd><dd> <b>  L.J. </b> : You're not gonna kill me. You need me. You already killed Sara. Anything happens to me...you're out of bargaining chips.</dd><dd> <b>  Susan B. Anthony </b> : If Michael doesn't get Whistler out today, I don't need to bargain anymore. You'll all be dead.</dd></dl>
+Season 3
+Boxed In[3.9]
+<dl><dd> <b>  Michael </b> : Was it you? Did you kill Sara?</dd><dd> <b>  Susan B. Anthony </b> : I have no idea who you are talking about.</dd><dd> <b>  Michael </b> : I'm coming for you.</dd></dl>
+Season 3
+Boxed In[3.9]
+<dl><dd> <b>  L.J. </b> : (with tape on mouth) Dad!</dd><dd> <b>  Lincoln </b> : LJ! Thank God you're alive. (looking around)</dd><dd> <b>  L.J. </b> : Forget about it, there's nothing you can do.</dd><dd> <b>  Lincoln </b> : There's always something.</dd><dd> <b>  L.J. </b> : Dad. These guys are thorough. They follow you everywhere. Trust me. (referring to Susan) That bitch is crazy. She cut Sara's head off. I was there. I closed my eyes, but I heard it.</dd><dd> <b>  Lincoln </b> : You listen to me. I'm not gonna let anything happen to you, alright? The next time you see me, don't take your eyes off me, and I'll tell you what to do, alright?</dd><dd> <b>  Susan </b> : Minute's up.</dd><dd> <b>  Lincoln </b> : Me and your uncle, we know what we're doing. We're gonna get you outta this. I love you.</dd><dd> <b>  L.J. </b> : I love you too.</dd></dl>
+Season 3
+Dirt Nap[3.10]
+<dl><dd> <b>  Gretchen </b> : You know what I just found out? That Sucre means sugar.</dd><dd> <b>  Sucre </b> : [raises eyebrows] Yeah.</dd><dd> <b>  Gretchen </b> : So every time I say your name, I'm calling you sugar.</dd><dd> <b>  Sucre </b> : Basically yeah.</dd><dd> <b>  Gretchen </b> : [smiles] I like that.</dd></dl>
+Season 3
+Dirt Nap[3.10]
+<dl><dd> <b>  Whistler </b> : You know, uh, I am a fisherman. [Mahone and Michael stare at him] I am. I'm just maybe a little bit more connected then I let on.</dd><dd> <b>  Michael </b> : [Holds up board] I think this is going to work.</dd><dd> <b>  Mahone </b> : Yeah.</dd><dd> <b>  Whistler </b> : You know, I run charters and I... Just like I said. I have for years. And one day, that brunette Gretchen, well she asked me if I wanted to be exclusive to her corporation, right? And, uh, well with the money she was offering, I had a pretty good idea she wasn't just trolling for salmon.</dd><dd> <b>  Michael </b> : So you two have history.</dd><dd> <b>  Whistler </b> : Yeah, and she's been an absolute nightmare in my life. Ever since that first job.</dd><dd> <b>  Michael </b> : Alex, I need a wedge.</dd><dd> <b>  Mahone </b> : Wedge...Wedge...</dd><dd> <b>  Whistler </b> : Look, I took him where they wanted me to take him. [flips through book] I have to figure out these cordinates and I have to take them back there.</dd><dd> <b>  Mahone </b> : Quit embarassing yourself.</dd><dd> <b>  Whistler </b> : [looks at him] What?</dd><dd> <b>  Mahone </b> : We're not two chicks at a bar that you're trying to pick up. [to Michael] Unless you need to hear this?</dd><dd> <b>  Michael </b> : No.</dd></dl>
+Season 3
+Dirt Nap[3.10]
+<dl><dd> <b>  Gretchen </b> : You know the other day when you and Lincoln had your little spat in the lobby, and you all distraught and jilted, went across the street to the bar. A cynic might think that was staged. [turns to sucre] I'm a cynic, sugar.</dd><dd> <b>  Sucre </b> : And you're high, sugar.</dd><dd> <b>  Gretchen </b> : If it's any comfort, you guys almost pulled it off. The Puerto Rican and the gorilla... You reallly had me scrambling there for a minute.</dd><dd> <b>  Sucre </b> : Hey, if you don't want my help, fine, I'm out! Okay! [Opens car door]</dd><dd> <b>  Gretchen </b> : It's a little thing called a tracing number. On the check I gave you. Apparently, your extensive expertise in banking failed you that day. You promply wired all 25 K to Maricruz Delgado in Chicago at 123 'Please Don't Hurt Me' Lane.</dd><dd> <b>  Surce </b> : If something happens to her-!</dd><dd> <b>  Gretchen </b> : [Screams] If what?! [Pause] What, jackass?! [Stares at each other] You're going to go back there and you're going to get me some real information or Maricruz and her head are gonna part ways. [Turns away] Get outta my car.</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Michael </b> : There's something else.</dd><dd> <b>  Lincoln </b> : What?</dd><dd> <b>  Michael </b> : T-Bag's coming, and Mahone. Bellick. Oh, yeah, there's a drug lord, too.</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Michael </b> : Change of plans, Linc; we're doing this tonight.</dd><dd> <b>  Lincoln </b> : Tonight?! What happened Michael?</dd><dd> <b>  Michael </b> : Rain. Dirt. Tunnel. Problem</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Lincoln </b> : It's going down tonight.</dd><dd> <b>  Gretchen </b> : Tonight? Should I be worried?</dd><dd> <b>  Lincoln </b> : I called you first thing. I'm being straight up with you.</dd><dd> <b>  Gretchen </b> : Aww, that's refreshing!</dd><dd> <b>  Lincoln </b> : So, I'll see you tonight</dd><dd> <b>  Gretchen </b> : You show me yours, and I'll show you mine!</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Gretchen </b> : [to Whistler] It seems our fisherman finally grew some oysters!</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Bellick </b> : I was thinking, we should be a team. You know, not just during the escape but after, like, like Butch and Sundance.</dd><dd> <b>  Mahone </b> : Butch and Sundance died.</dd><dd> <b>  Bellick </b> : Well, I mean in the other parts.</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> <b>  Bellick </b> : Just, does anybody know what's spanish for "don't shoot"?.</dd><dd> <b>  Lechero </b> : No dispare.</dd><dd> <b>  Bellick </b> : No 'dis' what?</dd></dl>
+Season 3
+Under and Out[3.11]
+<dl><dd> "Michael": 30 seconds....Go!</dd></dl>
+Season 3
+Hell or High Water[3.12]
+<dl><dd> <b>  Gretchen </b> : [On the phone with Lincoln] I gotta commend you on that boombox trick. Very sophisticated. You steal that one from "Home Alone"?</dd><dd> <b>  Lincoln </b> : You fell for it, Bitch!</dd></dl>
+Season 3
+The Art of the Deal[3.13]
+<dl><dd> <b>  Michael </b> : You'll get a call in five minutes telling you where to meet next. And when the exchange is over, and LJ is safe, you and I are gonna spend some quality time.</dd><dd> <b>  Gretchen </b> : When the exchange is over, you better run for your life.</dd></dl>
+Season 3
+The Art of the Deal[3.13]
+<dl><dd> <b>  Gretchen </b> : What's so funny?</dd><dd> <b>  LJ </b> : You, thinking you can outsmart my uncle.</dd></dl>
+Season 3
+The Art of the Deal[3.13]
+<dl><dd> <b>  Michael </b> : [Talking to Lincoln and with the file of Jason Lief in his hand] If he is important to Whistler he is important to me.</dd><dd> <b>  Lincoln </b> : HO HO HO sto....</dd><dd> <b>  Michael </b> : They killed Sara Linc!</dd></dl>
+Season 4
+The Sunshine State[4.16]
+<dl><dd> <b>  Donald Self </b> : You whore. You are a whore, and your mother was a whore, and her mother, and your father used to turn tricks at a gas station, cause he was a whore too.</dd></dl>
+Season 4
+The Final Break[4.24]
+<dl><dd> <b>  Michael Scofield </b> : "Well...if you're watching this, I'm glad. Because it means that you're safe.</dd></dl>

@@ -1,0 +1,402 @@
+Season 1
+Pilot[1.01]
+<dl><dd> <i>  [While driving.] </i></dd><dd> <b>  Zoe Carter </b> : Listen-- dog.</dd><dd> <b>  Jack Carter </b> : No, you listen, home girl--</dd><dd> <b>  Zoe Carter </b> : <i>  [pointing] </i> No, <i>  dog </i> !</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Jack Carter </b> : How long've you been in the tow business?</dd><dd> <b>  Henry Deacon </b> : Oh, I don't do this for a living, I do this for fun! I just always liked fixing things. I was an engineer, fact of the day.</dd><dd> <b>  Jack Carter </b> : As in trains?</dd><dd> <b>  Henry Deacon </b> : Space shuttles.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Beverly Barlowe </b> : Will your wife be joining you?</dd><dd> <b>  Jack Carter </b> : My wife? Oh, uhm. <i>  [holds up hand with ring] </i> Not likely. We're separated.</dd><dd> <b>  Beverly Barlowe </b> : Was it the sex?</dd><dd> <b>  Jack Carter </b> : Excuse me?</dd><dd> <b>  Beverly Barlowe </b> : Well, it's a common problem in long term relationships. People get bored, they want to experiment sexually, and they don't know how to express their needs.</dd><dd> <b>  Jack Carter </b> : Well, not that sharing my sex life with a total stranger doesn't sound like loads of fun, uh, at the moment my needs are a nap and a shower.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Jack Carter </b> : Deputy, where is the sheriff?</dd><dd> <b>  Jo Lupo </b> : You wanna know where the sheriff is? He's out on police business. Which is where I should be, instead of baby sitting Felon Spice here.</dd><dd> <b>  Zoe Carter </b> : Hey!</dd><dd> <b>  Jo Lupo </b> : Now, if you'll excuse me, I'll stop doing your job, and start doing mine.</dd></dl>
+Season 1
+Pilot[1.01]
+<dl><dd> <b>  Jack Carter </b> : What're you doing out of your cell?</dd><dd> <b>  Zoe Carter </b> : I'm getting take-out for me and Jo. Turns out we have a lot in common.</dd><dd> <b>  Jack Carter </b> : Like what?</dd><dd> <b>  Zoe Carter </b> : Like fighting an oppressive patriarchal society to express our feminine power.</dd></dl>
+Season 1
+Many Happy Returns[1.02]
+<dl><dd> <b>  Allison Blake </b> : I still don't get it. Susan committing suicide. I mean, I know it sounds callous, but I don't care how bad things are, once you have a kid, you don't get to just... check out.</dd><dd> <b>  Jack Carter </b> : Well, my daughter Zoe said pretty much the same thing when I told her I was being transferred to Eureka.</dd><dd> <b>  Allison Blake </b> : Taking your life and taking a job are hardly the same thing.</dd><dd> <b>  Jack Carter </b> : In this town? Not so sure.</dd></dl>
+Season 1
+Many Happy Returns[1.02]
+<dl><dd> <b>  Jack Carter </b> : It's not like we have a standard form to "undead" you.</dd><dd> <b>  Jo Lupo </b> : Ahem.</dd><dd> <b>  Jack Carter </b> : Tell me you're kidding.</dd><dd> <b>  Jo Lupo </b> : 924/B. In triplicate.</dd></dl>
+Season 1
+Many Happy Returns[1.02]
+<dl><dd> <b>  Nathan Stark </b> : There was an electrical problem with the computers, and then I saw something. A figure.</dd><dd> <b>  Jack Carter </b> : Are you saying someone was in your office?</dd><dd> <b>  Nathan Stark </b> : Not someone. Some <i>  thing </i> . It wasn't entirely corporeal.</dd><dd> <b>  Jack Carter </b> : Corporeal?</dd><dd> <b>  Nathan Stark </b> : Physical. There and not there at the same time.</dd><dd> <b>  Jack Carter </b> : Are you saying <i>  you </i> saw a ghost?</dd><dd> <b>  Nathan Stark </b> : Sheriff. Director of research of the most advanced scientific facility in the world doesn't see ghosts.</dd></dl>
+Season 1
+Many Happy Returns[1.02]
+<dl><dd> <b>  Nathan Stark </b> : So, you sleeping with her?</dd><dd> <b>  Jack Carter </b> : Excuse me?</dd><dd> <b>  Nathan Stark </b> : You said I'd gotten the wrong impression. I assumed you were talking about my wife. Not that I have any right to ask--</dd><dd> <b>  Jack Carter </b> : You're right, you don't.</dd><dd> <b>  Nathan Stark </b> : You're not. But you'd like to.</dd><dd> <b>  Jack Carter </b> : I'll let you know if I get anywhere. With the ghost, I mean.</dd></dl>
+Season 1
+Many Happy Returns[1.02]
+<dl><dd> <b>  Jack Carter </b> : Tell me Henry, you're a scientist, do you believe in ghosts?</dd><dd> <b>  Henry Deacon </b> : Well, I believe in energy. When somebody dies, that energy has to go somewhere. So, theoretically I suppose it's possible.</dd></dl>
+Season 1
+Before I Forget[1.03]
+<dl><dd> <b>  Jack Carter </b> : I went back to check on my own, personal files, and they've been classified. I mean, <i>  my files </i> .</dd><dd> <b>  Allison Blake </b> : It's not my fault that there are things about yourself that you're just not cleared to know.</dd><dd> <b>  Jack Carter </b> : Yeah, I'd hate to stumble across something that if I told me, I'd have to kill me.</dd></dl>
+Season 1
+Before I Forget[1.03]
+<dl><dd> <b>  Zoe Carter </b> : I was up all night reading Shakespeare!</dd><dd> <b>  Jack Carter </b> : Uh-huh. You're really into this school play, huh?</dd><dd> <b>  Zoe Carter </b> : Yeah, you know, um, I think drama club is really helping me find myself emotionally. I feel like I'm really starting to fit in.</dd><dd> <b>  Jack Carter </b> : How many classes do you get to skip for rehearsal?</dd><dd> <b>  Zoe Carter </b> : Last period every day, including geometry. <i>  Love </i> drama.</dd></dl>
+Season 1
+Before I Forget[1.03]
+<dl><dd> <b>  Jo Lupo </b> : My mom used to make my costumes.</dd><dd> <b>  Jack Carter </b> : You used to do theatre?</dd><dd> <b>  Jo Lupo </b> : Believe it or not, Carter, I didn't have childhood dreams of becoming a commando.</dd><dd> <b>  Jack Carter </b> : So you went from being told to break a leg, to actually breaking them?</dd></dl>
+Season 1
+Before I Forget[1.03]
+<dl><dd> <b>  Jack Carter </b> : I figured it all out. I know what you're up to.</dd><dd> <b>  Jason Anderson </b> : In regards to...?</dd><dd> <b>  Jack Carter </b> : I know that you have a device that can... create a wormhole, or, uh, bend time, or make you invisible... or a wormholing, time-bending, invisibling device, that shields you from the mind.</dd><dd> <b>  Nathan Stark </b> :	Yes, he said "invisibling".</dd></dl>
+Season 1
+Before I Forget[1.03]
+<dl><dd> <i>  [Jack struggles with Jason Anderson, though the others manage to pull him back </i> ]</dd><dd> <b>  Jack Carter </b> : <i>  [points] </i> There. That's the device that invades your mind.</dd><dd> <b>  Jason Anderson </b> : It also starts my car. <i>  [shows ordinary car-keys] </i></dd></dl>
+Season 1
+Alienated[1.04]
+<dl><dd> <i>  [The group are watching a very loud movie.] </i></dd><dd> <b>  Jo Lupo </b> : <i>  [screaming] </i> What's wrong with you people? Turn it down!</dd><dd> <b>  Spencer Martin </b> : What? Why?</dd><dd> <b>  Jo Lupo </b> : Your neighbors are complaining about the noise.</dd><dd> <b>  Spencer Martin </b> : Which neighbors?</dd><dd> <b>  Jo Lupo </b> : The state of Idaho! Turn. it. down.</dd></dl>
+Season 1
+Alienated[1.04]
+<dl><dd> <b>  Spencer Martin </b> : Wow. I mean, that is like...</dd><dd> <b>  Douglas Fargo </b> : Unbelievable. Yet... believable.</dd><dd> <b>  Vincent </b> : Definitely.</dd><dd> <b>  Jim Taggart </b> : Like being there.</dd><dd> <b>  Jo Lupo </b> : I've gotta go. Hey, you guys keep it down, okay?</dd><dd> <b>  Jim Taggart </b> : We'll walk you out. You know, in case of alien invasion. Stranger things have happened.</dd><dd> <b>  Jo Lupo </b> : Right.</dd></dl>
+Season 1
+Alienated[1.04]
+<dl><dd> <b>  Allison Blake </b> : So everyones okay?</dd><dd> <b>  Jack Carter </b> :Oh no... they're freaking bug nuts! ( <i>  to soldier </i> ) Restraints now!</dd></dl>
+Season 1
+Alienated[1.04]
+<dl><dd> <b>  Jack Carter </b> : Okay who gave Fargo a gun?</dd></dl>
+Season 1
+Dr. Nobel[1.06]
+<dl><dd> <b>  Dr. Thatcher </b> : If you want sex, reverse the hex.</dd><dd> <b>  Nathan Stark </b> : Sheriff, at any point when you picked him up, the car ride, the long walk down here, did you happen to notice this guy's not all there?</dd><dd> <b>  Jack Carter </b> : Yeah, there may have been signs.</dd></dl>
+Season 1
+Blink[1.07]
+<dl><dd> <b>  Jack Carter </b> : Put the gun down, Dylan.</dd><dd> <b>  Dylan </b> : Why? So I can go to jail for the rest of my life?</dd><dd> <b>  Zoe Carter </b> : Damn straight!</dd><dd> <b>  Jack Carter </b> : Not helping!</dd></dl>
+Season 1
+Right as Raynes[1.08]
+<dl><dd> <b>  Allison Blake </b> : Are you okay?</dd><dd> <b>  Jo Lupo </b> : Just my luck right? All the good ones are either gay, married, or robots.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Zoe Carter </b> : The school's gone completely out of control. Kids in fights, making out in the hallways, teachers apathetic.</dd><dd> <b>  Jack Carter </b> : So, more like normal school, then.</dd><dd> <b>  Zoe Carter </b> : Exactly.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Jack Carter </b> : <i>  [into phone] </i> Hey, uh, Allison, it's Jack. Listen, um, people are acting a little weird and we...well, frankly you're acting a little weird. Um, but, we should really get together and sort this out before it gets any worse.</dd><dd> <b>  Jo Lupo </b> : <i>  [manhandling Seth into the station] </i> Caught him trying to burn down Fargo's house.</dd><dd> <b>  Jack Carter </b> : <i>  (still into phone) </i> Too late.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Douglas Fargo </b> : I'm sure you were great in the last town you worked in-</dd><dd> <b>  Jack Carter </b> : America, Fargo. I was a US Marshall, my last town was America.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Stark </b> : Wake me when it's over.</dd><dd> <b>  Allison </b> : Reminds me of the last time we slept together.</dd><dd> <b>  Carter </b> : Ooh!</dd><dd> <b>  Stark </b> : At least you can remember it.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <i>  (Allison is trying to seduce Carter) </i></dd><dd> <b>  Carter </b> : I can't.</dd><dd> <b>  Allison </b> : <i>  (glances down, amused) </i> Really? <i>  (looks down again) </i></dd><dd> <b>  Carter </b> : Oh, no, I mean, I can! I'm fully capable.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Jo </b> : You're no fun.</dd><dd> <b>  Carter </b> : You know what'd be fun?</dd><dd> <b>  Jo </b> : Ice skating!</dd><dd> <b>  Carter </b> : Never mind.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Carter </b> : Taggart.</dd><dd> <b>  Taggart </b> : Mm?</dd><dd> <b>  Carter </b> : You're naked.</dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Carter </b> : <i>  (armed with a flamethrower) </i> Unless you want me to roast your chestnuts, back off!</dd><dd> <b>  Taggart </b> : <i>  (naked and armed with a shovel) </i> You wouldn't dare.</dd><dd> <b>  Carter </b> : Try me.</dd><dd> <i>  (Taggart drops his shovel and runs off screaming) </i></dd></dl>
+Season 1
+Purple Haze[1.10]
+<dl><dd> <b>  Allison </b> : All I know is that there is something inside section 5, something Nathan's obsessed with. Something that he thinks will change the world.</dd><dd> <b>  Carter </b> : Of course, it's incredibly dangerous.</dd><dd> <b>  Allison </b> : Have you ever known anything to change the world that wasn't incredibly dangerous?</dd><dd> <b>  Carter </b> : Velcro.</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Jim Taggart </b> : Smart mice. IQ's through the roof. Little varmints used vector formulas to keep me off their tracks.</dd><dd> <b>  Jo Lupo </b> : How'd you catch them?</dd><dd> <b>  Jim Taggart </b> : Smart cheese.</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Henry Deacon </b> : I'm leaving Eureka, because I'm tired of watching noble ideas being turned into weapons, and here we are, here we are at the mercy of a weapon that had been turned into a noble idea.</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Douglas Fargo </b> : SARAH's gone HAL on us!</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Henry Deacon </b> : Fargo turns a relic of war into something beautiful and life affirming and then gets chastised, because it's actually trying to help us avert disaster.</dd><dd> <b>  Nathan Stark </b> : He got chastised, because it's holding us hostage!</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Nathan Stark </b> : Fargo, please tell me you laid in a back door?</dd><dd> <b>  Douglas Fargo </b> : I'd really, really like to.</dd></dl>
+Season 1
+H.O.U.S.E. Rules[1.11]
+<dl><dd> <b>  Jack Carter </b> : We need dynamite. God I wish Lupo was here.</dd><dd> <b>  Henry Deacon </b> : Thats's it. We'll just blow her up.</dd><dd> <b>  Jack Carter </b> : She's not here.</dd><dd> ( <i>  Nathan slides glass of beer away from Carter </i> )</dd></dl>
+Season 1
+Once in a Lifetime[1.12]
+<dl><dd> <b>  Zoe Carter </b> : <i>  [during her graduation speech] </i> Thank you for making me and my dad a part of your family. I promise to do my share of the chores, and I'll try not to blow up the world if you don't.</dd></dl>
+Season 1
+Once in a Lifetime[1.12]
+<dl><dd> <b>  Walter Perkins </b> : Besides, part of my sentence is no technology above a class 2 rating. Hell , I had to file for special dispensation just to get that Xbox. It's only a 360.</dd></dl>
+Season 2
+Phoenix Rising[2.01]
+<dl><dd> <b>  Jack Carter </b> : Taggart said the combustion was caused by meson particles coming from a solar flare. I'm no astrophysicist but I don't think there are a lot of solar flares inside a house.</dd><dd> <b>  Henry Deacon </b> : He's right.</dd><dd> <b>  Jo Lupo </b> : Really?</dd><dd> <b>  Jack Carter </b> : Could you not act so surprised?</dd></dl>
+Season 2
+Phoenix Rising[2.01]
+<dl><dd> <b>  Henry Deacon </b> : There's not much tissue left but I can run a DNA sample and get an ID.</dd><dd> <b>  Jack Carter </b> : Nah, I know who it is. It's fat, sweaty Asian guy.</dd><dd> <b>  Vincent </b> : What?!</dd><dd> <b>  Allison Blake </b> : Carter!</dd><dd> <b>  Jack Carter </b> : I'm being descriptive - if I knew his name, I'd use it!</dd></dl>
+Season 2
+Phoenix Rising[2.01]
+<dl><dd> <b>  Jo Lupo </b> : Maybe it was just a one time thing. You know. Adrenaline. Heat of the moment.</dd><dd> <b>  Zoe Carter </b> : Making out with Taggart? More like a moment of insanity.</dd><dd> <b>  Jo Lupo </b> : Not so loud. Look, I really need some outside perspective here. Please?</dd><dd> <b>  Zoe Carter </b> : You want perspective?</dd><dd> <b>  Jo Lupo </b> : Uh-huh.</dd><dd> <b>  Zoe Carter </b> : You hooked up with a guy whose age difference with you is the same as me and my dad.</dd><dd> <b>  Jo Lupo </b> : <i>  (Looks over at Taggart. Taggart waves. Jo waves back.) </i> That did it.</dd></dl>
+Season 2
+Try, Try Again[2.02]
+<dl><dd> <i>  [as Stark prepares to shoot Fargo with a goo gun] </i></dd><dd> <b>  Douglas Fargo </b> : Dr. Stark, are you smiling?</dd><dd> <b>  Nathan Stark </b> : No, of course not!</dd></dl>
+Season 2
+Try, Try Again[2.02]
+<dl><dd> <b>  Jack Carter </b> : Do we have any suspects yet?</dd><dd> <b>  Jo Lupo </b> : No, unless you count this long list of people who find Fargo as annoying as we do.</dd><dd> <b>  Douglas Fargo </b> : Hey! That's not true... oh yes it is.</dd></dl>
+Season 2
+Try, Try Again[2.02]
+<dl><dd> <b>  Nathan Stark </b> : Good job Carter. Wow that didn't even leave a bad taste in my mouth.</dd><dd> <b>  Jack Carter </b> : Give it a second.</dd><dd> <b>  Nathan Stark </b> : Oh there it is.</dd></dl>
+Season 2
+Try, Try Again[2.02]
+<dl><dd> <b>  Jack Carter </b> : You've never swung an ax in your life.</dd><dd> <b>  Nathan Stark </b> : I've swung things you don't even know about.</dd><dd> <b>  Jack Carter </b> : What does that even mean?</dd></dl>
+Season 2
+Unpredictable[2.03]
+<dl><dd> <b>  Allison Blake </b> : <i>  [over the radio] </i> How hard is it to push a button?</dd><dd> <b>  Jack Carter </b> : <i>  [fighting gale-force winds] </i> You wanna do it?</dd></dl>
+Season 2
+Family Reunion[2.07]
+<dl><dd> <b>  Nathan Stark </b> : Of all people to bring out of cryostasis I resurrect another Fargo.</dd><dd> <b>  Jack Carter </b> : Yeah, karma's a bitch.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Stark </b> : This the new kid?</dd><dd> <b>  Zane </b> : Who you calling kid, Spartacus?</dd><dd> <b>  Stark </b> : Ooh, cocky, I like him.</dd><dd> <b>  Carter </b> : You would.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane </b> : <i>  (while being arrested) </i> Excellent response time. You guys take Lake Street?</dd><dd> <b>  FBI agent </b> : Went up by Lincoln Park. Less traffic.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Carter </b> : <i>  (about the price of Zane) </i> Whoa! Twenty-five thousand for this guy?</dd><dd> <b>  Zane </b> : <i>  (to Allison) </i> For thirty, I'll throw in dinner and a movie. But it won't go past second base. I'm not that kind of boy.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane </b> : What's the project status?</dd><dd> <b>  Allison </b> : Ah, well, everyone at GD wants to get their hands on the data.</dd><dd> <b>  Zane </b> : Big Bang whores, every one of 'em.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane Donovan </b> : Obsession with firearms can be a sign of unfulfilled sexual appetite. I'm not saying that's you, but if it is, I'm at your service.</dd><dd> <i>  [Jo points a large gun at Zane] </i></dd><dd> <b>  Zane Donovan </b> : Whoa, whoa, whoa!</dd><dd> <b>  Jack Carter </b> : Jo, Jo, Jo! Don't shoot the prisoner. Don't.</dd><dd> <b>  Jo Lupo </b> : How about I just wing him?</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane </b> : <i>  (re the chicken) </i> I'm not eating that.</dd><dd> <b>  Carter </b> : Why not? It's chicken.</dd><dd> <b>  Zane </b> : Do you know how chickens are raised?</dd><dd> <b>  Carter </b> : Aw, don't, just let me enjoy my meal.</dd><dd> <b>  Zane </b> : Jammed together in a windowless warehouse, wading in feces until <i>  (slices hand across throat) </i> they get decapitated, or pecked to death. <i>  (cheerfully) </i> When you eat that chicken, you're eating all that hate.</dd><dd> <i>  (cut to Carter shoving Zane back in his jail cell) </i></dd><dd> <b>  Zane </b> : Aw, c'mon, I have to sleep in here?</dd><dd> <b>  Carter </b> : At least you're not wading in your own feces. GD has an apartment for you, but you're a criminal, and you don't deserve it.</dd><dd> <b>  Zane </b> : You may think I'm a criminal, but my mom loves me and she wouldn't appreciate you insulting her boy.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Jo </b> : Okay, what do you mean, they're stupid?</dd><dd> <b>  Carter </b> : I mean, stupid. Like, like <i>  (acts 'stupid') </i> stupid.</dd><dd> <b>  Jo </b> : Carter, you can't catch stupid.</dd><dd> <b>  Zane </b> : This may be my favorite conversation of all time.</dd><dd> ...</dd><dd> <b>  Carter </b> : How you feeling? You feel dumb?</dd><dd> <b>  Jo </b> : No. You?</dd><dd> <b>  Zane </b> : How could you tell? <i>  (Carter and Jo both nonchalantly zap him) </i> OW! Gah!</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane </b> : There's only one thing I want from you, Jojo. A sandwich.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <i>  (Finding Zane after he's escaped) </i></dd><dd> <b>  Carter </b> : You vacationed here when you were ten. Figured it's off the main road, place to hide out for a couple days first.</dd><dd> <b>  Zane </b> : Well, I guess my FBI file's more detailed than I thought.</dd><dd> <b>  Carter </b> : Not in your file.</dd><dd> <b>  Zane </b> : Well, then that computer of yours must have an amazing predictive algorithm.</dd><dd> <b>  Carter </b> : Didn't use the computer. I called your mother.</dd><dd> <b>  Zane </b> : <i>  (starts laughing, then abruptly stops when he realizes Carter is serious) </i> You called my mother?</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Zane </b> : Please don't let me die in this crap town.</dd></dl>
+Season 2
+E=MC...?[2.08]
+<dl><dd> <b>  Guy 1 </b> : Marco.</dd><dd> <b>  Guy 2 </b> : Marco.</dd><dd> <b>  Guy 1 </b> : Marco.</dd><dd> <b>  Guy 2 </b> : Marco.</dd><dd> <b>  Jack Carter </b> : Polo! Its Marco polo!</dd><dd> <b>  Guy 1 </b> : Polo</dd><dd> <b>  Guy 2 </b> : Polo</dd><dd> <b>  Guy 1 </b> : Polo</dd><dd> <b>  Guy 2 </b> : Polo</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Lucas </b> : Clearly Jasper thinks you're hot, but not smart enough to be his partner. <i>  [Zoe looks offended] </i> In my opinion he's an idiot. <i>  [pauses] </i> No one usually asks my opinion.</dd><dd> <b>  Science teacher </b> : Does everyone have a partner?</dd><dd> <b>  Zoe Carter </b> : <i>  [Looks around frantically] </i> Well, it looks like we're stuck together.</dd><dd> <b>  Lucas </b> : Welcome to my world. It's quiet, but it has its advantages.</dd><dd> <b>  Zoe Carter </b> : Like what?</dd><dd> <b>  Lucas </b> : Kidding, no advantages.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Jo Lupo </b> : What was taken?</dd><dd> <b>  Pharmacist </b> : Polyethylene glycol.</dd><dd> <b>  Jack Carter </b> : <i>  [sarcastically] </i> Ah, let me guess: permanent sunblock, instant cavity filler?</dd><dd> <b>  Pharmacist </b> : <i>  [confused] </i> No, we keep those up front.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Calli </b> : It's a pleasure to do you... I mean, clean your clothes.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Zoe </b> : I'm Zoe.</dd><dd> <b>  Lucas </b> : I know, we have three classes together.</dd><dd> <b>  Zoe </b> : Really?</dd><dd> <b>  Lucas </b> : Story of my life.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Zoe </b> : I'm not hot.</dd><dd> <b>  Lucas </b> : Now you're just fishing for compliments.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Lucas </b> : Sorry about all the verbal sparring and sexual tension between us.</dd><dd> <b>  Zoe </b> : Please, you are so not my type.</dd><dd> <b>  Lucas </b> : That's what they all say.</dd><dd> <b>  Zoe </b> : Until they fall madly in love with you?</dd><dd> <b>  Lucas </b> : No, that's what they all actually say</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Fargo </b> : What if he's in there waiting?</dd><dd> <b>  Carter </b> : Then he'll get you first.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Fargo </b> : Lincoln the poop guy.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Lucas </b> : Your not shallow, you just haven't explored your depth.</dd><dd> <b>  Jo </b> : Oh no, no, no there will be no exploring on my watch.</dd></dl>
+Season 2
+Sight Unseen[2.09]
+<dl><dd> <b>  Carter </b> : Is it Frank?</dd><dd> <b>  Fargo </b> : Yeah.</dd><dd> <b>  Carter </b> : Is he dead?</dd><dd> <b>  Fargo </b> : Pretty much.</dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  Jack Carter </b> : Bottom line, if Reverend Harper is responsible, we're in for a lot more.</dd><dd> <b>  Henry Deacon </b> : <i>  [sarcastically] </i> Yeah, like a plague of locusts, or fiery hail, or total darkness. <i>  [lights go out] </i></dd><dd> <b>  Jack Carter </b> : You had to say it!</dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  Larry Haberman </b> : Maybe Global Dynamics was built over a Hellmouth.</dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  Zane Donovan </b> : Wow. If all church girls look like you, I might consider converting.</dd><dd> <b>  Jo Lupo </b> : Well, you should join me sometime and find out.</dd><dd> <b>  Zane Donovan </b> : Oh, I would, but I'm allergic, I'd have to get a new inhaler, it'd be this whole thing.</dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  SARAH </b> : I'm sorry, Sheriff, it was my responisibilty to keep an eye on them, and I failed. Bad house!</dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  Zane Donovan </b> : Either tell me why you're pissed at me, or I'll hold my breath until you do.</dd><dd> <b>  Jo Lupo </b> : What are you, three?</dd><dd> <b>  Zane Donovan </b> : Hey, I black out, it's on you.</dd><dd> <b>  Jo Lupo </b> : ...</dd><dd> <i>  (Zane starts holding his breath) </i></dd></dl>
+Season 2
+God is in the Details[2.10]
+<dl><dd> <b>  Jack Carter </b> : Henry, you're my best friend, you know?</dd><dd> <b>  Henry Deacon </b> : Yeah, yeah, I know.</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Jack Carter </b> : Yeah, it's been happening all day. Uh, Jo kissed me, but I didn't put it together.</dd><dd> <b>  Nathan Stark </b> : Deputy Lupo kissed you and you didn't think there was anything wrong with that?</dd><dd> <b>  Jack Carter </b> : Well, I've been working out. I'm looking pretty good.</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Carter </b> : Zane.</dd><dd> <b>  Zane </b> : I haven't done anything!</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Carter </b> : I'm sorry, do you need something?</dd><dd> <b>  Allison </b> : No, I'm good. I just love the way your lips move when you talk.</dd><dd> <b>  Carter, Stark </b> : Excuse me?</dd><dd> <b>  Anne Young </b> : Dr. Blake, that is a wildly inappropriate comment.</dd><dd> <b>  Carter </b> : Yeah.</dd><dd> <b>  Stark </b> : Not to mention, bizarre.</dd><dd> <b>  Allison </b> : Go ahead, say something else.</dd><dd> <b>  Dr. Young </b> : Or don't. <i>  (pushes Allison out of the way) </i> Talk is cheap. <i>  (kisses Carter) </i> I've been wanting to do that all day.</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Taggart </b> : Wilma...ate...Fred.</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Jo </b> : Um, did you need something?</dd><dd> <b>  Zane </b> : Yeah. I just wanted you to know, I didn't like that. Seeing you kiss Carter. I...didn't like it at all.</dd><dd> <b>  Jo </b> : No?</dd><dd> <b>  Zane </b> : I think I've been pretty clear about that. The question is, what would you like?</dd><dd> <b>  Jo </b> : To stop playing games.</dd><dd> <b>  Zane </b> : Meaning what?</dd><dd> <b>  Jo </b> : <i>  (turns and faces him) </i> This. <i>  (kisses him) </i></dd><dd> <b>  Zane </b> : That, I liked.</dd></dl>
+Season 2
+Maneater[2.11]
+<dl><dd> <b>  Jack Carter </b> : Are you alright?</dd><dd> <b>  Jo Lupo </b> : Carter, listen...</dd><dd> <b>  Jack Carter </b> : It was an in-the-moment thing.</dd><dd> <b>  Jo Lupo </b> ; Uh, yeah, are we still in the moment, 'cause I would really like to do it again.</dd><dd> <b>  Jack Carter </b> : We're going to have you lie down.</dd><dd> <b>  Jo Lupo </b> : Yeah, let's lie down.</dd><dd> <b>  Jack Carter </b> : Uh, Zane...?</dd></dl>
+Season 2
+All that Glitters (Part 1)[2.12]
+<dl><dd> <b>  Jo Lupo </b> : We just became the richest town in the world!</dd><dd> <b>  Henry Deacon </b> : Well, that's one way to look at it. Uh, gold is a soft metal, so it doesn't bear the same weight as steel, so our infrastructure could be collapsing. We'd be rich, but dangerously unstable.</dd><dd> <b>  Jo Lupo </b> : Like Paris Hilton?</dd></dl>
+Season 2
+All that Glitters (Part 1)[2.12]
+<dl><dd> <b>  SARAH </b> : Two people currently in the front closet.</dd><dd> <i>  (Carter marches over to the closet and opens the door to reveal Jo and Zane making out) </i></dd><dd> <b>  Carter </b> : <i>  (shocked) </i> What are you...You're supposed to be watching...</dd><dd> <b>  Zane </b> : Well, I was watching her and she was watching me, so... <i>  (they both exit the closet, Jo looking awkward and Zane looking fairly proud of himself) </i></dd></dl>
+Season 2
+A Night at Global Dynamics (Part 2)[2.13]
+<dl><dd> <b>  Zane </b> : I still can't believe you talked me into chaperoning.</dd><dd> <b>  Jo </b> : Hey, nobody snapped your fingers off.</dd><dd> <b>  Zane </b> : The ease with which you say that is almost as disturbing as it is hot.</dd><dd> <b>  Jo </b> : I know.</dd><dd> <b>  Zoe </b> : <i>  (to Lucas) </i> Hey, Chia Pet, wanna dance?</dd><dd> <b>  Lucas </b> : Well, when you ask like that...</dd></dl>
+Season 2
+A Night at Global Dynamics (Part 2)[2.13]
+<dl><dd> <b>  Taggart </b> : Small space.</dd><dd> <b>  Carter </b> : I hate small spaces.</dd><dd> <b>  Taggart </b> : Like returning to the womb.</dd><dd> <b>  Stark </b> : That's disturbing.</dd><dd> <b>  Taggart </b> : Oh, we're going to need a bigger womb.</dd></dl>
+Season 2
+A Night at Global Dynamics (Part 2)[2.13]
+<dl><dd> <b>  Douglas Fargo </b> : That's a motion-activated photon defense array. They're screwed.</dd><dd> <b>  Carter, Stark &amp; Taggart </b> : <i>  [over radio] </i> We can hear you!</dd><dd> <b>  Douglas Fargo </b> : Sorry.</dd></dl>
+Season 2
+A Night at Global Dynamics (Part 2)[2.13]
+<dl><dd> <b>  Jim Taggart </b> : He's fallen for one of the classic blunders! Never go in against an Australian when death is on the line!</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Vincent </b> : If you're gonna work here you need to be able to navigate the walk-in fridge.</dd><dd> <b>  Zoe Carter </b> : Navigate? <i>  (Vincent opens the cooler door) </i> Whoa! It's like, Narnia.</dd><dd> <b>  Vincent </b> : Ponchos are on the left, take the shuttle if you need food from the back.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Eva Thorne </b> : You and your team went behind my back and undercut my direct order.</dd><dd> <b>  Nathan Stark </b> : Some of us went right in front of your back.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : Pompous jackass... How can anyone be attracted to Stark?</dd><dd> <b>  Jo Lupo </b> : Besides the ruggedly handsome, successful powerful thing, I...</dd><dd> <b>  Jack Carter </b> : Thanks, Jo.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : No one's blaming you.</dd><dd> <b>  Zane Donovan </b> : I'm blaming you.</dd><dd> ...</dd><dd> <b>  Ethan Edison </b> : I finally win and everyone's mad at me.</dd><dd> <b>  Jack Carter </b> : No one's mad at you.</dd><dd> <b>  Zane Donovan </b> : I'm mad at you.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jo Lupo </b> : We rule.</dd><dd> <i>  (Martha blows a hole in the wall) </i></dd><dd> <b>  Jack Carter </b> : We so don't rule.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Douglas Fargo </b> : Oops. Sorry, I must have pressed the wrong button, I do that sometimes.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : Well, if you have any words of wisdom, like 'Don't start World War 3', now would be the time.</dd><dd> ...</dd><dd> <b>  Jack Carter </b> : ( <i>  After Zoe's speech to Martha </i> ) And don't start World War 3.</dd><dd> <b>  Zoe Carter </b> : Right and that.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : ( <i>  To Martha </i> ) Remember me, piggy backs? Good times.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : Everybody down, flying invisible drone on the lose! ( <i>  Everyone at Cafe Diem stares at him </i> )</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Jack Carter </b> : Now a man is in the hospital. Well, Larry's in the hospital.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Eva Thorne </b> : The same Zane Donovan who crashed the New York Stock Exchange?</dd><dd> <b>  Zane Donovan </b> : Allegedly.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Allison Blake </b> : Look, can the two of you get along for two minutes?</dd><dd> <b>  Carter, Stark </b> : Not likely.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Nathan Stark </b> : Carter almost articulated a good point.</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  Eva Thorne </b> : Where the lunatics are running the asylum?</dd><dd> <b>  Jack Carter </b> : I used to think the same thing. But, uh, they're not lunatics. They're, they're not all luna--There's a fine line between genius and crazy...</dd></dl>
+Season 3
+Bad to the Drone[3.01]
+<dl><dd> <b>  SARAH </b> : Your father does the best he can.</dd><dd> <b>  Zoe Carter </b> : What kind of crappy platitude is that?</dd><dd> <b>  SARAH </b> : The usual kind. I guess.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Nathan Stark </b> : As much as I hate to admit it, Sheriff Carter had an idea.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Derek </b> : Okay, lab 27 is a sealed biosphere. A self-sustaining biosphere designed to support the Mars missions.</dd><dd> <b>  Jack Carter </b> : You do mean the potential Mars missions?</dd><dd> <b>  Derek </b> : Right! <i>  [laughs, then gets a small headshake from Allison] </i> I mean, right.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Vincent </b> : What did I miss?</dd><dd> <b>  Zoe Carter </b> : My dad hunting for the Creature from the Black Lagoon.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Nathan Stark </b> :Yeah the words Zane and discipline tend to not go in the same sentence.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Allison Blake </b> : ( <i>  Being sterlized to enter biosphere </i> ) Not the way I'd every pictured us winding up naked.</dd><dd> <b>  Jack Carter </b> : You pictured us winding up naked?</dd><dd> <b>  Allison Blake </b> : No.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Zane Donovan </b> : Jo! I need a gun. A big, powerful gun.</dd><dd> <b>  Jo Lupo </b> : I've been waiting for someone to say that to me my whole life.</dd></dl>
+Season 3
+What About Bob?[3.02]
+<dl><dd> <b>  Zane Donovan </b> : Carter, Henry, and Stark. That's your money team. They know exactly what they're doing.</dd><dd> <i>  (cut to Carter, Henry, and Stark) </i></dd><dd> <b>  Nathan Stark </b> : You're sure you know what you're doing?</dd><dd> <b>  Jack Carter </b> : I have no idea.</dd></dl>
+Season 3
+Best in Faux[3.03]
+<dl><dd> <b>  Allison Blake </b> : A pocket of magma developed spontaneously? That's impossible.</dd><dd> <b>  Dr. Hood </b> : Did "impossible" cover my friend with mucus?</dd><dd> <b>  Jack Carter </b> : He's got a point.</dd></dl>
+Season 3
+Best in Faux[3.03]
+<dl><dd> <b>  SARAH </b> : Stress is America's number one health problem.</dd><dd> <b>  Jack Carter </b> : Aw, drop the act.</dd><dd> <b>  SARAH </b> : Followed closely by sarcasm.</dd></dl>
+Season 3
+I Do Over[3.04]
+<dl><dd> <b>  Zoe Carter </b> : Dad, you're walking the woman you possibly love down the aisle to marry another guy.</dd><dd> <b>  Jack Carter </b> : Okay first, not true. And second, since when do we talk about this stuff?</dd><dd> <b>  Zoe Carter </b> : Since I'm seventeen and you're in denial.</dd></dl>
+Season 3
+I Do Over[3.04]
+<dl><dd> <b>  Henry Deacon </b> : <i>  [starting wedding ceremony] </i> Love is timeless, transcending everything we know, everything we understand, and giving us strength and comfort forever. What is past is now present, and what is present will become your future. That is what love is, never ending.</dd></dl>
+Season 3
+Show Me the Mummy[3.05]
+<dl><dd> <b>  Jack Carter </b> : Just be careful. It's all fun and games until someone gets cursed.</dd></dl>
+Season 3
+Show Me the Mummy[3.05]
+<dl><dd> <b>  Dr. Wilding </b> : The bugs lay eggs, hatch larvae and then seek out new hosts.</dd><dd> <b>  Henry Deacon </b> : Us.</dd><dd> <b>  Eva Thorne </b> : Well, how did the ancient Egyptians deal with that problem?</dd><dd> <b>  Zane Donovan </b> : They killed the infected and burned the city to the ground.</dd><dd> <b>  Jack Carter </b> : Let's call that Plan B.</dd></dl>
+Season 3
+Show Me the Mummy[3.05]
+<dl><dd> <b>  Jack Carter </b> : <i>  (being attacked by a swarm of parasitic insects) </i> Why couldn't it have been butterflies?!</dd></dl>
+Season 3
+Phased and Confused[3.06 ]
+<dl><dd> <b>  Allison Blake </b> : We don't have a 'Quantum Phasing Department,' Carter.</dd><dd> <b>  Jack Carter </b> : Well he didn't buy his walk-through-walls machine at 'Walk-Through Walmart.' Someone in this building's working on something like that.</dd></dl>
+Season 3
+Phased and Confused[3.06 ]
+<dl><dd> <b>  Jack Carter </b> : Well let me know what you find, I have to go catch a nine-fingered superhero.</dd><dd> <b>  Henry Deacon </b> : <i>  [nodding] </i> Sure.</dd></dl>
+Season 3
+Phased and Confused[3.06 ]
+<dl><dd> <b>  Lexi Carter </b> : I don't know if I'm ready for this. Seriously, I don't know if I'm ready to be a mom.</dd><dd> <b>  Jack Carter </b> : You'll be fine!</dd><dd> <b>  Lexi Carter </b> : It gets easier?</dd><dd> <b>  Jack Carter </b> : <i>  [shakes his head] </i> Noooo....Not in the least, no. But you adapt. And look, you were right! She can take care of herself.</dd></dl>
+Season 3
+Here Come The Suns[3.07]
+<dl><dd> <b>  Zane Donovan </b> : Dude, it's like two zillion degrees out there! (smiling) Okay, I'm game!</dd><dd> <b>  Jack Carter </b> : Do anything normal for fun?</dd><dd> <b>  Zane Donovan </b> : Yeah, I play a wicked game of Yahtzee</dd></dl>
+Season 3
+Here Come The Suns[3.07]
+<dl><dd> <b>  Zane Donovan </b> : <i>  (preparing to launch the rocket </i> ) Carter? Yeah, whatever happens... It's been fun.</dd><dd> <b>  Jack Carter </b> : No, it hasn't. Push the button!</dd></dl>
+Season 3
+Here Come The Suns[3.07]
+<dl><dd> <b>  Zane </b> : Having fun yet?</dd><dd> <b>  Carter </b> : Oh, yeah. 'Cause driving headlong into a fiery death is everyone's idea of a good time.</dd><dd> <b>  Jo </b> : <i>  (coming in) </i> Sometimes I think it's his. Carter, could we have a minute?</dd><dd> <b>  Carter </b> : Oh, yeah, yeah, sure. <i>  (leaves) </i></dd><dd> <b>  Zane </b> : Jo, you're supposed to be miles away at an evac camp by now. <i>  (Jo kisses him) </i> Wow. I should risk my life more often.</dd><dd> <b>  Jo </b> : I prefer you didn't.</dd><dd> <b>  Zane </b> : C'mon, Josefina, don't go all serious on me now.</dd><dd> <b>  Jo </b> : Too late. <i>  (she hugs him) </i></dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jack Carter </b> : <i>  [referencing Jo and Zane stuck together with Instantanium] </i> How do we get them out?</dd><dd> <b>  Dr. Hendricks </b> : You get a saw.</dd><dd> <b>  Jack Carter </b> : Great! So you can just cut through it?</dd><dd> <b>  Dr. Hendricks </b> : No. You, uh, cut through the legs.</dd><dd> <b>  Jack Carter </b> : Ah! <i>  [then it hits him] </i> Yes.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  S.A.R.A.H. </b> : I have an array of exotic flavors for you to choose from. I chose them specifically based on the regions you've traveled.</dd><dd> <b>  Lexi Carter </b> : The fact that a house can actually try to suck up to me is almost as disturbing as a house taking my niece hostage.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Allison Blake </b> : How much longer Fargo?</dd><dd> <b>  Douglas Fargo </b> : The bunker's computers are 70 years old...it's like teaching Lincoln how to use an iPhone!</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Zane Donovan </b> : I thought maybe we could, you know, have a bite?</dd><dd> <b>  Jo Lupo </b> : A bite? What, we wouldn't want to have you commit to a whole meal.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jo Lupo </b> : <i>  (holding a canister) </i> Hey, could you come here for a second?</dd><dd> <b>  Zane Donovan </b> : Why? So you can hit me with that?</dd><dd> <b>  Jo Lupo </b> : Not until you tell me what it is first.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Zane Donovan </b> : <i>  (to Jo) </i> Don't you look at me in that tone of voice.</dd><dd> ...</dd><dd> <b>  Jo Lupo </b> : <i>  (answering Zane' s phone) </i> Dr. Bonehead's lab.</dd><dd> <b>  Jack Carter </b> : <i>  (on phone) </i> Let me guess, you two are still stuck together.</dd><dd> <b>  Jo Lupo </b> : Just until I can reach my gun.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Carter </b> : <i>  (to Jo and Zane, who are stuck together) </i> Hey, guys, pick out a china pattern yet?</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jo Lupo </b> : God, what if I have to go to the bathroom?</dd><dd> <b>  Zane Donovan </b> : Why do you think I'm working so fast? I had four cups of coffee this morning.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jack Carter </b> : Don't touch the pretty metal canisters.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jo Lupo </b> : Another five minutes and I would have chewed off my own leg!</dd><dd> <b>  Zane Donovan </b> : Your mouth is probably big enough.</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jo Lupo </b> : Good afternoon! My name is Jo Lupo and I'll be saving your ass today!</dd></dl>
+Season 3
+From Fear to Eternity[3.08]
+<dl><dd> <b>  Jo Lupo </b> : Hey, um, after that call, do you um, maybe wanna go for a, a break-up dinner?</dd><dd> <b>  Zane Donovan </b> : No. <i>  (long pause) </i> How about a make-up dinner instead?</dd><dd> <i>  (they kiss) </i></dd><dd> <b>  Jo Lupo </b> : Guess it's not so bad being stuck together.</dd></dl>

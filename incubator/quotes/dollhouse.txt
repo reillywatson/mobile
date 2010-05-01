@@ -1,0 +1,198 @@
+Season 1
+Ghost[1.01]
+<dl><dd> <i>  [Dialogue whenever an Active is restored to "tabula rasa"] </i></dd><dd> <b>  Echo </b> : Did I fall asleep?</dd><dd> <b>  Topher </b> : For a little while.</dd><dd> <b>  Echo </b> : Shall I go now?</dd><dd> <b>  Topher </b> : If you like.</dd></dl>
+Season 1
+Ghost[1.01]
+<dl><dd> <b>  Topher </b> : You see someone running incredibly fast - The first thing you gotta ask is 'Are they running to something or are they running from something?' The answer is always both.</dd></dl>
+Season 1
+Ghost[1.01]
+<dl><dd> <b>  Topher </b> : <i>  [referring to Echo's most recent engagement] </i> She had fun, right?</dd><dd> <b>  Boyd </b> : She thought so.</dd><dd> <b>  Topher </b> : <i>  [quoting Hamlet] </i> There is nothing either good or bad but thinking makes it so.</dd></dl>
+Season 1
+Ghost[1.01]
+<dl><dd> <b>  Paul </b> : Dollhouse.</dd><dd> <b>  Victor </b> : <i>  [as Lubov] </i> What?</dd><dd> <b>  Paul </b> : Dollhouse. Say it.</dd><dd> <b>  Victor </b> : <i>  [as Lubov] </i> Dollhouse.</dd><dd> <b>  Paul </b> : Say it again.</dd><dd> <b>  Victor </b> : <i>  [as Lubov] </i> Your brains are...</dd><dd> <i>  [Ballard cocks gun] </i></dd><dd> <b>  Victor </b> : <i>  [as Lubov] </i> Okay! Dollhouse! Doll freakin' house. I keep saying it. It's fun to say. Dollhouse. Dollhouse. Dollhouse. Dollhouse.</dd></dl>
+Season 1
+The Target[1.02]
+<dl><dd> <b>  DeWitt </b> : In their resting state, our actives are as innocent and vulnerable as children. We call it the "Tabula Rasa". The blank slate. Now imagine the imprint process filling it, creating a new personality. A friend, a lover, a confidant in a sea of enemies. Your heart's desire made flesh. And when the engagement has been completed, all memory of you and your time together will be wiped clean.</dd></dl>
+Season 1
+The Target[1.02]
+<dl><dd> <b>  Boyd </b> : <i>  [Looking down on Actives doing tai ji] </i> Look at them. Just a bunch of helpless children. Did the ones Alpha slaughtered even put up a fight?</dd><dd> <b>  Topher </b> : They wouldn't know how. Not without an imprint.</dd><dd> <b>  Boyd </b> : Why not default them with ninja skills or whatever?</dd><dd> <b>  Topher </b> : We tried that once.</dd><dd> <b>  Boyd </b> : And?</dd><dd> <b>  Topher </b> : Blood. Screaming. Dying.</dd><dd> <b>  Boyd </b> : Alpha.</dd></dl>
+Season 1
+The Target[1.02]
+<dl><dd> <b>  Mellie </b> : <i>  [After seeing Echo's picture] </i> Pretty. Who's she?</dd><dd> <b>  Paul </b> : Nobody, according to the FBI database. No record of her.</dd><dd> <b>  Mellie: </b> Is she in trouble?</dd><dd> <b>  Paul </b> : Maybe. She just got caught up with the wrong people. Either way, I'll keep looking until I find her.</dd><dd> <b>  Mellie </b> : <i>  [As Ballard's walking away] </i> Lucky girl.</dd></dl>
+Season 1
+The Target[1.02]
+<dl><dd> <b>  Boyd </b> : <i>  [After handing Echo a gun] </i> Do you know how to use this?</dd><dd> <b>  Echo </b> : I've got four brothers, none of them Democrats.</dd></dl>
+Season 1
+The Target[1.02]
+<dl><dd> <b>  Echo </b> : <i>  [Accidentally walks into the path of Dominic] </i> Sorry.</dd><dd> <b>  Dominic </b> : Are you?</dd><dd> <b>  Echo </b> : Am I?</dd><dd> <b>  Dominic </b> : Sorry. Are you really sorry? A lot of people seem to end up dead around you. How does that make you feel? Oh, right. You don't, unless we tell you how, and what, and when.</dd><dd> <b>  Echo </b> : I'm going to swim in the pool. <i>  [Steps around him and begins to walk away] </i></dd><dd> <b>  Dominic </b> : If it were up to me I'd put you in the Attic or the ground. Yeah, like talking to you is going to make a difference. <i>  [Leans in to look in Echo's eyes] </i> Yeah. There's nobody in there.</dd></dl>
+Season 1
+Stage Fright[1.03]
+<dl><dd> <b>  Topher </b> : Sierra should come into play in a minute.</dd><dd> <b>  Boyd </b> : I'm glad they double tracked this. Who's handling her?</dd><dd> <b>  Topher </b> : Joe Hearn. You won't like him.</dd><dd> <b>  Voice </b> : Fifteen minutes to curtain.</dd><dd> <b>  Boyd </b> : Echo's on in fifteen. Okay. Okay.</dd><dd> <b>  Topher </b> : Oh my God. Are you nervous? Opening night jitters? Your little girl out there on the big stage?</dd><dd> <b>  Boyd </b> : On a stage where the last little girl caught on fire?</dd><dd> <b>  Topher </b> : Fair point.</dd><dd> <b>  Boyd </b> : I mean, her singing's not a problem. It's not, right? I mean, she is a good singer. I think she's good. She wouldn't freeze up.</dd><dd> <b>  Topher </b> : <i>  [Laughing] </i> She'll be fine, Mama Rose.</dd></dl>
+Season 1
+Stage Fright[1.03]
+<dl><dd> <b>  Echo </b> : You can fire me, but bitch, don't think that you can take me.</dd></dl>
+Season 1
+Stage Fright[1.03]
+<dl><dd> <b>  Boyd </b> : Echo took the mission parameter and made it better. She seems to have the ability to think outside of the pieces that we give her and create.</dd><dd> <b>  Dr. Saunders </b> : Create a new approach to the problem.</dd><dd> <b>  Boyd </b> : It's impressive. I don't know what it means, but it's impressive. She really is special.</dd><dd> <b>  Dr. Saunders </b> : Special isn't always a good thing here, Boyd.</dd><dd> <b>  Boyd </b> : DeWitt's a business woman. Is she really going to harm her best Active?</dd><dd> <b>  Dr. Saunders </b> : Echo wasn't always the best.</dd><dd> <b>  Boyd </b> : You're talking about Alpha.</dd><dd> <b>  Dr. Saunders </b> : I'm just saying, sometimes the best thing to hope for is "good enough."</dd></dl>
+Season 1
+Stage Fright[1.03]
+<dl><dd> <b>  Dr. Claire Saunders </b> : You sent Echo on a high-risk engagement?</dd><dd> <b>  Topher </b> : Doctor Saunders! How nice of you to annoy me.</dd></dl>
+Season 1
+Stage Fright[1.03]
+<dl><dd> <b>  Victor </b> : <i>  [as Lubov] </i> We're old friends from Navy. Friends from <i>  Old Navy </i> . I worked retail, he'd come in, buy slacks.</dd></dl>
+Season 1
+Gray Hour[1.04]
+<dl><dd> <b>  Boyd </b> : They're eating lunch.</dd><dd> <b>  Topher </b> : They're eating lunch together, man friend. The same three. Even the same table. They're grouping.</dd><dd> <b>  Boyd </b> : Are you saying they remember each other?</dd><dd> <b>  Topher </b> : No, no, no. The wipes are clean. This goes deeper than memory, into instinctual survival patterns. Flocking. A whole mess of sparrows turning on a dime, salmon trucking upstream. This isn't a book club, man friend, this is the herd.</dd><dd> <b>  Boyd </b> : They're not bison, Topher.</dd><dd> <b>  Topher </b> : They're a little bit bison.</dd><dd> <b>  Boyd </b> : They didn't used to be.</dd><dd> <b>  Topher </b> : They volunteered for this.</dd><dd> <b>  Boyd </b> : So we're told.</dd></dl>
+Season 1
+Gray Hour[1.04]
+<dl><dd> <b>  Echo </b> : <i>  [as Taffy] </i> They're called breasts, and yes, they are exceptional. You mention that, when you blog about this later.</dd></dl>
+Season 1
+Gray Hour[1.04]
+<dl><dd> <b>  Walton </b> : If she's the best, how come I've never heard of her?</dd><dd> <b>  Echo </b> : <i>  [as Taffy] </i> You've heard of Bonnie and Clyde, right?</dd><dd> <b>  Walton </b> : Are you Bonnie?</dd><dd> <b>  Echo </b> : <i>  [as Taffy] </i> No. I'm not that stupid. Bonnie and her gun-crazy beau, you know what they wanted? It wasn't to be the best. The best lead the quiet, head down kind of life. No, Bonnie and Clydie, they wanted fame, notoriety, and boy did they get it. They also got dead. I'll pass on that. When this is over, feel free to forget I exist.</dd></dl>
+Season 1
+Gray Hour[1.04]
+<dl><dd> <b>  Ivy </b> : <i>  [Reading from list] </i> Pizza squares, ice cream bites, beef jerky? Okay, you may be the boy god of all things neuro, and I do worship at the altar of your genius, but I am not getting you all of this stuff.</dd><dd> <b>  Topher </b> : Ivy, babe, add juice boxes.</dd><dd> <b>  Ivy </b> : You're privilege abusing.</dd><dd> <b>  Topher </b> : Do you want to know how to avoid spandrels when aligning rigid designators?</dd><dd> <b>  Ivy </b> : Grape or apple?</dd></dl>
+Season 1
+Gray Hour[1.04]
+<dl><dd> <b>  Boyd </b> : Give me the bag.</dd><dd> <b>  Cyril </b> : Who are you?</dd><dd> <b>  Boyd </b> : The bag.</dd><dd> <b>  Cyril </b> : I can't do that.</dd><dd> <b>  Boyd </b> : Give me the bag.</dd><dd> <b>  Cyril </b> : I've got a buyer. He pays me twice as much as it's worth, so --</dd><dd> <b>  Boyd </b> : <i>  [Takes out a large revolver] </i></dd><dd> <b>  Cyril </b> : Okay, okay. You and me, we go in together. 50/50.</dd><dd> <b>  Boyd </b> : <i>  [Pulls the hammer back on the revolver] </i></dd><dd> <b>  Cyril </b> : I'll drop this!</dd><dd> <b>  Boyd </b> : I'll shoot you.</dd><dd> <b>  Cyril </b> : This is -- the worth of this! This is a piece of the Parth -- do you know how much that's worth?! That's millions! I'm going to turn it into dust. I swear to God.</dd><dd> <b>  Boyd </b> : You drop that, I shoot you. Then you don't get paid or breathe.</dd><dd> <b>  Cyril </b> : Okay. <i>  [Gives Boyd the bag and runs] </i></dd><dd> <b>  Boyd </b> : <i>  [Catches the bag, then turns and shoots Cyril in the leg] </i></dd><dd> <b>  Cyril </b> : You shot me!</dd><dd> <b>  Boyd </b> : Barely.</dd></dl>
+Season 1
+True Believer[1.05]
+<dl><dd> <b>  Dominic </b> : I don't like it.</dd><dd> <b>  DeWitt </b> : Good. It's your job not to like it, Mr. Dominic. But Senator Boxbaum is more than just a valued client, he's a well placed asset. Denying his request would have a steeper downside than acquiescing.</dd><dd> <b>  Dominic </b> : It's not the job. I'm confident Langton can handle the ATF. It's Echo. Her field response has been wildly erratic lately.</dd><dd> <b>  DeWitt </b> : She's demonstrated a talent for adaptability, which is precisely what's required in this instance.</dd><dd> <b>  Dominic </b> : They shouldn't be adaptable, they should be predictable. If Alpha didn't teach us that much?</dd><dd> <b>  DeWitt </b> : You don't like Echo, do you Mr. Dominic?</dd><dd> <b>  Dominic </b> : It's not that I don't like her. It's sometimes I worry you do.</dd><dd> <b>  DeWitt </b> : Your objections have been noted. Thank you, Mr. Dominic.</dd></dl>
+Season 1
+True Believer[1.05]
+<dl><dd> <b>  Topher </b> : The actual procedure isn't any more complicated than laser eye correction, it ain't brain surgery.</dd><dd> <b>  Dr. Saunders </b> : Actually, it <i>  is </i> brain surgery. We're going to be turning Echo into a human camera, and in order to do that, she's going to have to be made blind.</dd><dd> <b>  Topher </b> : Not permanently. <i>  [Dr. Saunders shoots him a look] </i> In theory.</dd><dd> <b>  DeWitt </b> : So this is it?</dd><dd> <b>  Topher </b> : Yes. The latest in CSEVP: Cortical Stimulation for Evocation of Visual Perception.</dd><dd> <b>  Dr. Saunders </b> : Brain camera for the blind.</dd><dd> <b>  Topher </b> : Or that.</dd></dl>
+Season 1
+True Believer[1.05]
+<dl><dd> <b>  Dr. Saunders </b> : One good sneeze could bring on a seizure.</dd><dd> <b>  Topher </b> : Or even worse, a sneezure.</dd></dl>
+Season 1
+True Believer[1.05]
+<dl><dd> <b>  Echo </b> : <i>  [as Esther] </i> <i>  [Hits Jonas in the head with a candlestick, knocking him out] </i> Go!</dd><dd> <b>  Seth </b> : Esther!</dd><dd> <b>  Echo </b> : <i>  [as Esther] </i> What is wrong with you?! You people are dying!</dd><dd> <b>  Seth </b> : <i>  [Runs to Jonas' side] </i> What have you done?</dd><dd> <b>  Echo </b> : <i>  [as Esther] </i> Start taking these people out of here. He swore to protect them. If he won't, we have to! Seth, the blind girl is looking you in the eye. Do you know what that means? It means God brought me here. He has a message for you, and that message is move your ass!</dd></dl>
+Season 1
+Man On The Street[1.06]
+<dl><dd> <b>  Victor </b> : I did something bad.</dd><dd> <b>  Echo </b> : What did you do?</dd><dd> <b>  Victor </b> : Nobody will tell me.</dd></dl>
+Season 1
+Man On The Street[1.06]
+<dl><dd> <b>  DeWitt </b> : Why didn't you tell us you were setting up Hearn?</dd><dd> <b>  Boyd </b> : He had to be clear. He had to be flush with success or he'd never have tried again.</dd><dd> <b>  DeWitt </b> : You will never take action like that on your own again inside these walls. Am I clear?</dd><dd> <b>  Boyd </b> : You're clear.</dd><dd> <b>  DeWitt </b> : A bonus has been wired to your account.</dd><dd> <b>  Boyd </b> : I don't need a bonus.</dd><dd> <b>  DeWitt </b> : Well I need to give it to you.</dd></dl>
+Season 1
+Man On The Street[1.06]
+<dl><dd> <b>  DeWitt </b> : Can you imagine at all why it is that you're not dead?</dd><dd> <b>  Hearn </b> : You've probably got something worse planned. Are you going to erase my brain, turn me into one of your fantasy boys?</dd><dd> <b>  DeWitt </b> : I find it a bit sad that you think of yourself as a candidate for anyone's fantasy.</dd><dd> <b>  Hearn </b> : You know you're sweet on me.</dd><dd> <i>  [Dominic punches him in the ear.] </i></dd></dl>
+Season 1
+Man On The Street[1.06]
+<dl><dd> <b>  Echo </b> : The dollhouse is real. They know you're after them and they're going to have you taken off the case. That's why they sent me.</dd><dd> <b>  Paul </b> : Why are you telling me this?</dd><dd> <b>  Echo </b> : We have a person inside. This person corrupted the imprint while the programmer wasn't looking, added this parameter.</dd><dd> <b>  Paul </b> : Is this the person that sent me the tapes and the picture?</dd><dd> <b>  Echo </b> : No. This is their first communication. Security inside is very tight.</dd><dd> <b>  Paul </b> : Where is it?</dd><dd> <b>  Echo </b> : You can't know that. You're going about this the wrong way.</dd><dd> <b>  Paul </b> : I have to take down the dollhouse!</dd><dd> <b>  Echo </b> : There are over twenty dollhouses in cities around the world. They have ties to every major political power on the planet. You cannot possibly stop them alone.</dd><dd> <b>  Paul </b> : You're going to help me?</dd><dd> <b>  Echo </b> : The person that sent this message is.</dd><dd> <b>  Paul </b> : Why?</dd><dd> <b>  Echo </b> : The dollhouse deals in fantasy. That is their business, but that is not their purpose.</dd><dd> <b>  Paul </b> : What is?</dd><dd> <b>  Echo </b> : We need you to find out. We'll contact you again, if possible with the same body. But you have to let the dollhouse win, make them back off. You have to trust me.</dd></dl>
+Season 1
+Man On The Street[1.06]
+<dl><dd> <b>  Joel Mynor </b> : She never got to see this house. So, every year on this date I pretend she does. I get to see that look on her face, and I get to show her our extraordinary home.</dd><dd> <b>  Paul </b> : And then you sleep with her.</dd><dd> <b>  Joel Mynor </b> : Well, it <i>  is </i> a fantasy.</dd><dd> <b>  Paul </b> : I'm sorry for your loss, Mr. Mynor. But it doesn't make you anything other than a predator.</dd><dd> <b>  Joel Mynor </b> : Well, I'm sure I'm in serious need of some moral spankitude, but guess who's not qualified to be my Rabbi?</dd></dl>
+Season 1
+Echoes[1.07]
+<dl><dd> <b>  DeWitt </b> : Are you making any progress?</dd><dd> <b>  Topher </b> : I'm working! What are you doing, besides ... being ...</dd><dd> <b>  DeWitt </b> : Being what?</dd><dd> <b>  Topher </b> : Wait a minute.</dd><dd> <b>  DeWitt </b> : Sarcastic? Unfeeling? British?</dd><dd> <b>  Topher </b> : It's an animal.</dd><dd> <b>  DeWitt </b> : Where?</dd><dd> <b>  Topher </b> : No! The word!</dd><dd> <b>  DeWitt </b> : Still you have to admit I am very British. I don't say hard ... 'Rs'</dd><dd> <b>  Topher </b> : You know what I like? Brown Sauce? What's it made of? Science doesn't know!</dd><dd> <b>  DeWitt </b> : It's made of brown.</dd><dd> <b>  Topher </b> : Brown...mined from the earth by the hard scrabble brown miners of north Brownderton!</dd><dd> <b>  DeWitt </b> : Oh my god, I find lentils completely incomprehensible.</dd></dl>
+Season 1
+Echoes[1.07]
+<dl><dd> <b>  Topher </b> : Our problems are huge and indomitable.</dd><dd> <b>  DeWitt </b> : Ooh, I could eat that word. Or a crisp. Do you have any crisps?</dd><dd> <b>  Topher </b> : You haven't seen my drawer of inappropriate starches?</dd></dl>
+Season 1
+Echoes[1.07]
+<dl><dd> <b>  Dominic </b> : <i>  [drunkenly, with gun pointed at Victor] </i> Hey, I'm fine!</dd><dd> <b>  Victor </b> : All right. Easy, buddy.</dd><dd> <b>  Dominic </b> : I know how to solve problems.</dd><dd> <b>  Victor </b> : You bet.</dd><dd> <b>  Dominic </b> : <i>  [his hold on the gun goes limp] </i> Oh, man, this is so heavy. It makes my arms tired.</dd></dl>
+Season 1
+Needs[1.08]
+<dl><dd> <b>  Dominic </b> : I's easy to be attached to your assigned active. In fact it's necessary, but don't think of them as children; think of them as pets.</dd><dd> <b>  Dr. Saunders </b> : Is that supposed to be funny?</dd><dd> <b>  Dominic </b> : When your child Starts talking for the first time, you feel proud. When your dog does, you freak the hell out. Any Developmental progress an active makes is a threat to the house and a possible first step toward another Alpha.</dd></dl>
+Season 1
+Needs[1.08]
+<dl><dd> <b>  Victor </b> : <i>  [as Anthony] </i> Who are you?</dd><dd> <b>  Echo </b> : <i>  [as Caroline] </i> Hey! I woke up in a five-star floor coffin just like you, buddy.</dd></dl>
+Season 1
+Needs[1.08]
+<dl><dd> <b>  Tango </b> : I like pancakes.</dd><dd> <b>  Victor </b> : <i>  [as Anthony] </i> We're all going to die.</dd></dl>
+Season 1
+Spy In The House Of Love[1.09]
+<dl><dd> <b>  Topher </b> : I found this in the chair.</dd><dd> <b>  Boyd </b> : And?</dd><dd> <b>  Topher </b> : This chip let someone access the primary imprint protocol, which means they could have altered my imprints. I make a cheerleader. They make a cheerleader that shoots people! Or an assassin that does cheers! Or any active, any time, with a parameter we don't know about.</dd><dd> <b>  Boyd </b> : We have a spy.</dd><dd> <b>  Topher </b> : Inside the dollhouse.</dd><dd> <b>  Boyd </b> : You think it's me? You think I'm the spy?</dd><dd> <b>  Topher </b> : Not in a bad way.</dd><dd> <b>  Boyd </b> : They find out that you talked to me before you called DeWitt, they'll fry you.</dd><dd> <b>  Topher </b> : Yeah. I didn't really think that through.</dd></dl>
+Season 1
+Spy In The House Of Love[1.09]
+<dl><dd> <b>  Echo </b> : Everyone's unhappy today.</dd><dd> <b>  Topher </b> : Somebody put her tiny little thinking cap on!</dd><dd> <b>  Echo </b> : He was mean to you. Were you not your best?</dd><dd> <b>  Topher </b> : If it hadn't been for me, there'd still be a security breach. You'd think the security head would recognize that! Typical middle management hack. He's mad at me for not discovering it <i>  before </i> it happened, but I'm not a counter-intelligence agent, so I can't catch a spy. And you have no idea what I'm talking about.</dd><dd> <b>  Echo </b> : I can help you.</dd><dd> <b>  Topher </b> : Why would you want to?</dd><dd> <b>  Echo </b> : Why wouldn't I?</dd><dd> <b>  Topher </b> : Did I just lose an argument to a doll? Okay, thanks, but you can't help.</dd><dd> <b>  Echo </b> : You make people different. <i>  [Sits in imprint chair] </i> You can make me help.</dd></dl>
+Season 1
+Spy In The House Of Love[1.09]
+<dl><dd> <b>  Boyd </b> : We're pimps and killers, but in a philanthropic way.</dd></dl>
+Season 1
+Spy In The House Of Love[1.09]
+<dl><dd> <b>  Echo </b> : What's in store for you, you don't have much to smile about.</dd><dd> <b>  Dominic </b> : After you beat me to a pulp they're going to erase me. But first they're going to erase you.</dd><dd> <b>  Echo </b> : I can take care of myself.</dd><dd> <b>  Dominic </b> : I know. That's why I'm smiling, because one day you'll be erasing them, and even after all this they still won't see it coming. Sooner or later, everybody gets theirs.</dd></dl>
+Season 1
+Spy In The House Of Love[1.09]
+<dl><dd> <b>  DeWitt </b> : Congratulations, Mr. Langton.</dd><dd> <b>  Boyd </b> : For what?</dd><dd> <b>  DeWitt </b> : For becoming our new head of security.</dd><dd> <b>  Boyd </b> : I appreciate the offer, but I'd prefer to stay with Echo. I need to take care of her.</dd><dd> <b>  DeWitt </b> : Apparently you don't. It seems she's the one taking care of us.</dd></dl>
+Season 1
+Haunted[1.10]
+<dl><dd> <b>  Boyd </b> : So we can give you life after death?</dd><dd> <b>  Topher </b> : Only if we really like you.</dd><dd> ...</dd><dd> <b>  Boyd </b> : Life after death. Where does that end?</dd><dd> <b>  Topher </b> : Same place it begins. Death.</dd></dl>
+Season 1
+Haunted[1.10]
+<dl><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] This is... soooo... stunning! Really! Last thing I remember is coming here a month ago for that dreadful process of yours.</dd><dd> <b>  DeWitt </b> : Well, if we'd spoken in the meantime, I'd've been able to tell you about the last three weeks of your life, but...</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Well, this way I don't have to remember dying.</dd><dd> <b>  DeWitt </b> : Undoubtedly a plus.</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] God, it's all a plus! More life! And this body! [ <i>  almost feeling herself up </i> ] Nice work, Addie! I'm pointing to the sky! [ <i>  they both laugh </i> ] A shame it's only a loaner.</dd><dd> <b>  DeWitt </b> : That was always the deal.</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] I swear I've never felt this good. Did being young feel this good?</dd><dd> <b>  DeWitt </b> : I seem to recall it was rather nice. Wonder why we gave it up?</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Please! You're what, ten years younger than me?</dd><dd> <b>  DeWitt </b> : And oddly fifteen years older. [ <i>  firmly </i> ] Just remember -- it's temporary.</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Just a chance to indulge my curiosity. See my own funeral. Who wouldn't want that?</dd><dd> <b>  DeWitt </b> : To hear what the world really thought of us? To count out the number who love us?</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Addie. Are you all right?</dd><dd> <b>  DeWitt </b> : Well, let's see... my friend just died.</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] [ <i>  smiling </i> ] Come on. We've got a funeral to go to. Then, maybe, you can help me wrap this up.</dd><dd> <b>  DeWitt </b> : Wrap this up... your life?</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Well. I thought maybe I'd solve my murder.</dd></dl>
+Season 1
+Haunted[1.10]
+<dl><dd> [ <i>  Boyd walks into DeWitt's office and says... </i> ]</dd><dd> <b>  Boyd </b> : Eternal life.</dd><dd> <b>  DeWitt </b> : Nice adjective. Excellent noun. Is there more?</dd><dd> <b>  Boyd </b> : Is that something we offer, now?</dd><dd> [ <i>  looks around and hesitates as Adelle's secretary walks in with Adelle's morning tea, haltingly continuing </i> ]</dd><dd> <b>  Boyd </b> : Because... If it is, thats... You realize...That's the beginning of the end. Life everlasting. It's.. it's the ultimate quest. Christianity, most religion, morality.... doesn't exist, without the fear of death.</dd><dd> <b>  DeWitt </b> : I'm not planning on presiding over the end of Western Civilization. This is a one-time situation.</dd><dd> <b>  Boyd </b> : You know that you're asking her to voluntarily die, when the time comes.</dd><dd> <b>  DeWitt </b> : Well, if she resists I have a new head of security who handles that kind of thing.</dd><dd> <b>  Boyd </b> : Mmmm. Yes, ma'am. [ <i>  turns and begins to leave </i> ]</dd><dd> <b>  DeWitt </b> : You can still help Echo, you know... Tell me your take on this.</dd><dd> <b>  Boyd </b> : First instinct. Follow the money.</dd><dd> <b>  DeWitt </b> : That's not easy.</dd><dd> <b>  Boyd </b> : It is when the money runs. I've looked into the horses. One of them -- King's Ransom -- was a Derby contender not long ago.</dd><dd> <b>  DeWitt </b> : So the husband stands to make a bundle.</dd><dd> <b>  Boyd </b> : So does the buyer. I thought I'd send someone to look around the stables... A breeder, with a naturally curious streak....?</dd></dl>
+Season 1
+Haunted[1.10]
+<dl><dd> <b>  Boyd </b> : One other thing, Miss DeWitt. Are you aware of this 'Topher' situation?</dd><dd> <b>  DeWitt </b> : [ <i>  smiles </i> ] Yessss. There's no need to address the issue with him. I allow him one of these "diagnostic" tests every now and again.</dd><dd> <b>  Boyd </b> : Well, I guess Topher <i>  can </i> make friends...</dd><dd> [ <i>  as they continue talking in voiceover, we see Sierra bringing a Twinkie with birthday candles to Topher in his office </i> ]</dd><dd> <b>  DeWitt </b> : Loneliness leads to nothing good, only detachment. And sometimes the people who most need to reach out are the people least capable of it. In any case, it only happens once a year.</dd></dl>
+Season 1
+Haunted[1.10]
+<dl><dd> <b>  DeWitt </b> : Tell me you weren't tempted, even a little, to not come back here today.Just to disappear in this body.</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Maybe a little. But I've had my turn. And the people I love are moving on... besides.</dd><dd> <b>  DeWitt </b> : Besides?</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] I know you, Adelle. You're too much like me. [ <i>  smiles </i> ] I wouldn't have gotten as far as the airport.</dd><dd> [ <i>  long pause as the machine warms up </i> ]</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Addie?</dd><dd> <b>  DeWitt </b> : Yes?</dd><dd> <b>  Echo </b> : [ <i>  as Margaret </i> ] Will I see my whole life flash before my eyes?</dd><dd> <b>  DeWitt </b> : Every single moment...</dd></dl>
+Season 1
+Briar Rose[1.11]
+<dl><dd> <b>  Stephen Kepler </b> : <i>  [standing in front of several marijuana plants] </i> Carrots! Medicinal carrots! Personal use medicinal carrots that were here when I moved in and I'm holding it for a friend!</dd></dl>
+Season 1
+Briar Rose[1.11]
+<dl><dd> <b>  Stephen Kepler </b> : <i>  [after watching Ballard stun Topher] </i> What the hell was that?! Was that some kind of joy buzzer stun gun? I mean, officially I deplore violence, but that was totally worth the loss of karma points!</dd></dl>
+Season 1
+Briar Rose[1.11]
+<dl><dd> <b>  Stephen Kepler </b> : Would you look at this place? I mean, first of all feng shui up the yin yang, also I designed parts of it but I did not design the stone cold foxes in the small clothes and the ample massage facilities. I mean, don't get me wrong, I heart my porn, but this is cool!</dd><dd> <b>  Paul </b> : This is a bad place.</dd><dd> <b>  Stephen Kepler </b> : Bad people, maybe. Good place.</dd></dl>
+Season 1
+Briar Rose[1.11]
+<dl><dd> <b>  Stephen Kepler </b> : The stairs lack risers!</dd><dd> <b>  Paul </b> : What?</dd><dd> <b>  Stephen Kepler </b> : The vertical part that makes the back of each stair is called a riser.</dd><dd> <b>  Paul </b> : I know what they are!</dd><dd> <b>  Stephen Kepler </b> : No, no, wait! Please. Sometimes when I go on stairs that don't have risers I get this feeling, this awful sensation, that something's going reach out and grab my ankle, like a claw or a tentacle!</dd><dd> <b>  Paul </b> : This is life or death!</dd><dd> <b>  Stephen Kepler </b> : It could be a hand! An ordinary hand!</dd></dl>
+Season 1
+Briar Rose[1.11]
+<dl><dd> <b>  Echo </b> : Oh, I know you.</dd><dd> <b>  Alpha </b> : Of course you do. <i>  [passionate kiss] </i> I told you I'd come rescue you.</dd><dd> <b>  Echo </b> : My prince.</dd></dl>
+Season 1
+Omega[1.12]
+<dl><dd> <b>  Echo </b> : My brain hurts.</dd><dd> <b>  Caroline </b> : How do you think I- Hey! That is my brain! Give me back my brain! I want back in my brain!</dd></dl>
+Season 1
+Omega[1.12]
+<dl><dd> <b>  Echo </b> : What is this thing? What are we going to do to her?</dd><dd> <b>  Alpha </b> : Everything, nothing, but not to her. She won't be her. We won't be needing this, will we, honey? Wendy is going away. She won't be here in minute.</dd><dd> <b>  Echo </b> : Wait, so it's like, a magic trick? We're gonna make her disappear?</dd><dd> <b>  Alpha </b> : We're going to put her in a wedge. We're gonna wedge her.</dd><dd> <b>  Echo </b> : I don't get it.</dd><dd> <b>  Alpha </b> : Of course you don't! <i>  [pause] </i> The mind that you have been given is so primitive that it is amazing you can perform basic motor functions or form words.</dd></dl>
+Season 1
+Omega[1.12]
+<dl><dd> <b>  Caroline </b> : You have to put me back, you have to put be back in that wedge. Because we need to get... <i>  [picks up a nametag] </i> Wendy back in her body.</dd><dd> <b>  Echo </b> : Why do you have to go back in the wedge? Why don't you come home?</dd><dd> <b>  Caroline </b> : I <i>  did </i> sign a contract.</dd><dd> <b>  Echo </b> : I have thirty-eight brains. Not one of them thinks you can sign a contract to be a slave. Especially now that we have a black President .</dd><dd> <b>  Caroline </b> : <i>  [surprised] </i> We have a black president? OK, I am missing <i>  everything </i> .</dd></dl>
+Season 1
+Omega[1.12]
+<dl><dd> <b>  Paul </b> : So this is it. This is where you steal their souls.</dd><dd> <b>  Topher </b> : Yeah, and then we put them in a glass jar next to our fireflies. Why is there a tall, morally judgmental man in <i>  my </i> imprint room besides him? <i>  [points to Boyd] </i></dd></dl>
+Season 1
+Epitaph One[1.13]
+<dl><dd> <b>  Topher </b> : If I think I can figure things out, is that curiosity or arrogance?</dd></dl>
+Season 1
+Epitaph One[1.13]
+<dl><dd> <b>  Topher </b> : An entire army... in an instant... just from a phone call... that is genius! Why didn't I think of that... <i>  [to DeWitt] </i> Did I think of that?... Oh God...</dd></dl>
+Season 1
+Epitaph One[1.13]
+<dl><dd> <b>  Mag </b> : You wanna be the one to tell the little girl we gotta plug her dad?</dd><dd> <b>  Zone </b> : Sure. Hey, kid, guess what?</dd><dd> <b>  Griff </b> : Stop it.</dd></dl>
+Season 1
+Epitaph One[1.13]
+<dl><dd> <b>  Iris </b> : [ <i>  as Caroline </i> ] Great, puberty all over again.</dd></dl>
+Season 1
+Epitaph One[1.13]
+<dl><dd> <b>  Zone: </b> <i>  [to Whiskey] </i> Let's blow this bitch back to the Bush years.</dd></dl>
+Season 2
+Vows[2.01]
+<dl><dd> <b>  Klar </b> : Well, it's Paul Ballard. Special agent in charge of bugger-all.</dd></dl>
+Season 2
+Belle Chose[2.03]
+<dl><dd> <b>  Adele: </b> Good news on the coma front?</dd><dd> <b>  Topher: </b> Uuuhhhhhhh... yeah. Good news is that he's in a coma.</dd><dd> <b>  Adele: </b> I beg your pardon?</dd><dd> <b>  Boyd: </b> Just show her what you showed me.</dd><dd> <b>  Topher: </b> <i>  [Shows Adelle a brain scan] </i> This is a brain. A healthy brain. Frankly an... overly smart brain... it's my brain. And this is Terry Karrens' brain. <i>  [Shows Adelle another brain scan] </i> See these dark areas? How they extend all the way out to here? You know why that looks like that? That's because Terry Karrens doesn't use that part of his brain. And that'd be where you find stored such things as empathy, compassion... an aversion to disemboweling puppies. Basically, this is what some of your more famous serial killers' brains look like.</dd><dd> <b>  Adele: </b> You're quite certain of this?</dd><dd> <b>  Topher: </b> Certain enough that I have serious ethical problems trying to wake him up.</dd><dd> <b>  Boyd: </b> Topher has ethical problems. <i>  Topher. </i></dd><dd> <b>  Topher: </b> Heh. Way to land it.</dd></dl>
+Season 2
+Belle Chose[2.03]
+<dl><dd> <b>  Franklin </b> : <i>  [points at Ballard] </i> You're new. <i>  [looks at Echo and smiles] </i> And, of course, you're always new.</dd><dd> <i>  [Echo looks confused] </i></dd><dd> <b>  Franklin: </b> <i>  [to Ballard] </i> And who are we today?</dd><dd> <b>  Ballard: </b> ...She's Kiki.</dd><dd> <b>  Franklin: </b> Of course she is.</dd></dl>
+Season 2
+Belle Chose[2.03]
+<dl><dd> <b>  Echo: </b> [ <i>  as Kiki </i> ] Who's gonna pay for this?</dd><dd> <b>  Franklin: </b> <i>  [chuckles] </i> Isn't that cute. On <i>  la casa </i> .</dd><dd> <b>  Echo: </b> [ <i>  as Kiki </i> ] Free?!?</dd><dd> <b>  Franklin: </b> Oui, oui.</dd><dd> <b>  Echo: </b> [ <i>  as Kiki </i> ] Did I win a prize?</dd><dd> <b>  Franklin: </b> You <i>  are </i> a prize.</dd><dd> <i>  [Echo squeals girlishly and follows the attendant to get her new wardrobe </i></dd></dl>
+Season 2
+Belle Chose[2.03]
+<dl><dd> [ <i>  Ballard is told to go sit and wait for Echo to get her new outfit. He sits next to another Dollhouse agent who is reading a magazine </i> ]</dd><dd> <b>  Dollhouse Agent: </b> I won't even do this for my wife.</dd><dd> <b>  Ballard: </b> I was trained at Quantico.</dd></dl>
+Season 2
+Belle Chose[2.03]
+<dl><dd> <b>  Boyd: </b> I'll cover your engagement, you're staying here.</dd><dd> <b>  Ballard: </b> Why?</dd><dd> <b>  Boyd: </b> Turns out we have a sudden need for an FBI profiler. I suggested you.</dd><dd> <b>  Ballard: </b> For what?</dd><dd> <b>  Boyd: </b> To interrogate a possible serial killer.</dd><dd> <b>  Ballard: </b> Serial killer. <i>  [looks at Echo, who has come out in a short skirt, knee socks, a bright pink tank top, and pigtails] </i> ...Thank God. <i>  [rushes out] </i></dd></dl>
+Season 2
+Belonging[2.04]
+<dl><dd> <b>  Topher </b> : Do you know where you are?</dd><dd> <b>  Priya </b> : I'm in hell.</dd><dd> <b>  Topher </b> : You're in Los Angeles. I can understand the mixup.</dd></dl>
+Season 2
+Belonging[2.04]
+<dl><dd> <b>  Priya </b> : That's him. What's his name?</dd><dd> <b>  Topher </b> : Victor.</dd><dd> <b>  Priya </b> : I love him. Is that real?</dd><dd> <b>  Topher </b> : Yes. Yes, it's real. He loves you back.</dd></dl>

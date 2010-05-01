@@ -1,0 +1,57 @@
+Season 1
+Ramon[1.01]
+<dl><dd> <b>  Yemana </b> : Hey, anybody want to work Vice tomorrow?</dd><dd> <b>  Harris </b> : Me! I'll take it!</dd><dd> <b>  Yemana </b> : You worked Vice last week.</dd><dd> <b>  Harris </b> : I'm a policeman, baby! I goes where I'm needed!</dd></dl>
+Season 1
+Ramon[1.01]
+<dl><dd> <b>  Liz </b> : Would you consider not going to work today and taking me for a drive in the country?</dd><dd> <b>  Barney </b> : Liz, you heard the radio: shootings, bombings. It's my busy season.</dd></dl>
+Season 1
+Experience[1.02]
+<dl><dd> <i>  [Barney and Wojo are on the same phone line at the same time while standing right next to each other] </i></dd><dd> <b>  Barney </b> : Hello? Hello?</dd><dd> <b>  Wojo </b> : Hello?</dd><dd> <b>  Barney </b> : Hello, bomb disposal?</dd><dd> <b>  Wojo </b> : No, this is Wojciehowicz.</dd><dd> <b>  Barney </b> : Get off the line. I'm trying to reach Bomb Disposal.</dd><dd> <b>  Wojo </b> : Who's this?</dd><dd> <b>  Barney </b> : Barney!</dd><dd> <b>  Wojo </b> : Oh, hey, Barn, how's it going?</dd><dd> <b>  Barney </b> : GET OFF THE LINE!</dd></dl>
+Season 1
+Experience[1.02]
+<dl><dd> <b>  Barney </b> : I think of you as experienced. In an emergency, you would be the first one that I'd call.</dd><dd> <b>  Fish </b> : You <i>  should </i> call me first. I need time to put my teeth in.</dd></dl>
+Season 1
+Snow Job[1.03]
+<dl><dd> <b>  Chano </b> : Hey, Fish! You wouldn't believe what makes a guy like that do what he does, man.</dd><dd> <b>  Fish </b> : It's the weather. When it gets damp and cold people get depressed, irritable and unpleasant. In the winter, Scandinavia has more lunatics per capita than any other country in the world.</dd><dd> <b>  Chano </b> : No kidding!</dd><dd> <b>  Fish </b> : Bernice is Scandinavian, but only on her mother's side. She usually cheers up around... the middle of February.</dd></dl>
+Season 1
+Graft[1.04]
+<dl><dd> <b>  Barney </b> : <i>  [to former Det. Kelly] </i> Hello, Kelly. What are you doing here?</dd><dd> <b>  Fish </b> : Making friends.</dd><dd> <b>  Barney </b> : How do you like Narcotics?</dd><dd> <b>  Yemana </b> : They haven't helped him a bit.</dd></dl>
+Season 1
+Graft[1.04]
+<dl><dd> <b>  Wojo </b> : Hey, Barney? If a police officer loses his badge, does he report it to his superior or just wait til somebody turns it in?</dd><dd> <b>  Barney </b> : He reports it to his superior officer.</dd><dd> <b>  Wojo </b> : I lost my badge.</dd></dl>
+Season 1
+The Courtesans[1.05]
+<dl><dd> <b>  Wojo </b> : No lady sleeps with a man for money... What brings you up here, Mrs. Miller?</dd><dd> <b>  Liz </b> : I came to get a check from Barney.</dd></dl>
+Season 1
+The Courtesans[1.05]
+<dl><dd> <b>  Chano </b> : <i>  [booking a Puerto Rican hooker] </i> Miss del Fuego. I came from a very small fishing village in Puerto Rico.</dd><dd> <b>  Del Fuego </b> : Me, too.</dd><dd> <b>  Chano </b> : I came here. I worked very hard. I learned to speak English.</dd><dd> <b>  Del Fuego </b> : Me, too.</dd><dd> <b>  Chano </b> : And today I am proud to serve the public and be known as one of New York's finest.</dd><dd> <b>  Del Fuego </b> : Me, too!</dd></dl>
+Season 1
+Stakeout[1.06]
+<dl><dd> <i>  [Wojo and Mrs. Stavochek talk to each other in Polish] </i></dd><dd> <b>  Fish </b> : What did she say?</dd><dd> <b>  Wojo </b> : She wants to know if it's true they don't let Polish cops carry guns.</dd><dd> <b>  Barney </b> : Tell her you got a gun.</dd><dd> <b>  Wojo </b> : I got a gun.</dd><dd> <b>  Fish </b> : Of course, it keeps us on our toes.</dd></dl>
+Season 1
+Stakeout[1.06]
+<dl><dd> <b>  Barney </b> : <i>  [on the phone] </i> Liz, this is ridiculous! I cannot make the choice between the prevention of a major crime and the correction of my son's overbite! Particularly when the overbite runs on your side of the family.</dd></dl>
+Season 1
+Bureaucrat[1.07]
+<dl><dd> <b>  Yemana </b> : Hey, where's my sashimi and cream cheese on a bagel?</dd><dd> <b>  Murray </b> : Here it's called lox.</dd><dd> <b>  Yemana </b> : The hell it is. We had it before you did.</dd></dl>
+Season 1
+Bureaucrat[1.07]
+<dl><dd> <b>  Fish </b> : Drinking should be done in the privacy of one's home, where it's necessary.</dd></dl>
+Season 1
+Ms. Cop[1.08]
+<dl><dd> <b>  Wentworth </b> : Captain Miller, this was not my collar.</dd><dd> <b>  Barney </b> : I'm aware of that.</dd><dd> <b>  Wentworth </b> : Then why do <i>  I </i> have to type it up?</dd><dd> <b>  Barney </b> : Because, Wentworth, we make no distinction here between male and female. You're just another cop. Who happens to be a good typist.</dd><dd> <b>  Wentworth </b> : It also happens, Captain, that I fired "expert" at the Police Academy.</dd><dd> <b>  Barney </b> : Good! Then don't type them. Shoot them.</dd></dl>
+Season 1
+The Guest[1.10]
+<dl><dd> <b>  Mr. Schuster </b> : I didn't know Orientals had a sense of humor.</dd><dd> <b>  Yemana </b> : Are you kidding? We invented gunpowder.</dd></dl>
+Season 1
+Escape Artist[1.11]
+<dl><dd> <b>  Barney </b> : Anything happening I should know about?</dd><dd> <b>  Everyone </b> : Harris is writing a book.</dd><dd> <b>  Barney </b> : A capella. Pretty good. I had in mind something more in the nature of a crime.</dd><dd> <b>  Yemana </b> : The coffee.</dd><dd> <b>  Barney </b> : I would hesitate to call our coffee a crime. A shame maybe... <i>  [takes a sip of the coffee] </i> Oh, that's a crime.</dd></dl>
+Season 1
+Hair[1.12]
+<dl><dd> <b>  Yemana </b> : You know those cute little Japanese dolls that you rub on the belly for luck?</dd><dd> <b>  Barney </b> : Yeah.</dd><dd> <b>  Yemana </b> : I'm taking one out to dinner tonight.</dd></dl>
+Season 1
+The Hero[1.13]
+<dl><dd> <b>  Barney </b> : Nick, where do we keep the office supply vouchers?</dd><dd> <b>  Yemana </b> : Look in the file under O. Or S. Or V. If not, then M, for miscellaneous. And if you don't find it in M, they're lost.</dd><dd> <b>  Barney </b> : Then I look under L?</dd><dd> <b>  Yemana </b> : Good a place as any.</dd></dl>
+Season 1
+The Hero[1.13]
+<dl><dd> <b>  Barney </b> : Did you ever wonder why the sperm whale, which is the largest mammal on the face of the earth, has a throat about that size? <i>  [forms a circle with his thumb and fingers] </i></dd><dd> <b>  Chano </b> : Yeah. You know, I always did wonder. Why is that?</dd><dd> <b>  Barney </b> : Because that's the way it is. And there ain't anything you can do about it.</dd></dl>

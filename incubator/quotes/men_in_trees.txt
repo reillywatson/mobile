@@ -1,0 +1,108 @@
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Marin Frist </b> : "Here I've been telling single women to go to sports bars. I should've been telling them to go to Alaska."</dd><dd> <b>  Theresa Thomasson </b> : "Yeah, well, the odds are good, but the goods are odd."</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Marin </b> : "What is this?"</dd><dd> <b>  Jack Slattery </b> : "Observation hut."</dd><dd> <b>  Marin </b> : "What are you observing?"</dd><dd> <b>  Jack </b> : "I was looking for a nocturnal bear, but instead I found a relationship coach."</dd><dd> <b>  Marin </b> : "Almost as dangerous."</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Patrick O'Bachelorton </b> : ...Patrick wheels out an old 3-speed bike towards Marin...</dd><dd> <b>  Patrick </b> : "The front brakes don't work. And you'll need this."</dd><dd> <b>  Patrick </b> : ...He pulls out a canister and hands it to Marin...</dd><dd> <b>  Patrick </b> : "Bear spray."</dd><dd> <b>  Marin </b> : ...Marin reacts, then sprays it all over herself like hair spray or perfume...</dd><dd> <b>  Patrick </b> : "Actually, you spray it on the bear. But that'll work."</dd></dl>
+Season 1
+Power Shift[1.2]
+<dl><dd> <b>  Marin </b> : "Thanks for sleeping with me, Elmo."</dd></dl>
+Season 1
+Sink or Swim[1.4]
+<dl><dd> <b>  Jane Burns </b> : "So what's the latest? Did the new town leave the old town for a younger town yet?"</dd></dl>
+Season 1
+Talk for Tat[1.5]
+<dl><dd> <b>  Patrick </b> : "Personally, I don't think you need all that therapy. You're not crazy."</dd><dd> <b>  Marin </b> : [Marin doesn't answer]</dd><dd> <b>  Patrick </b> : "Are you?"</dd><dd> <b>  Marin </b> : [Marin shakes her head]</dd></dl>
+Season 1
+Talk for Tat[1.5]
+<dl><dd> <b>  Marin </b> : [to Jack] "It's hot..."</dd></dl>
+Season 1
+The Caribou in the Room[1.6]
+<dl><dd> <b>  Marin </b> : "Can you think of a better way to celebrate this new chapter in our relationship?"</dd><dd> <b>  Jack </b> : "We, uh, we have chapters?"</dd><dd> <b>  Marin </b> : "Mm-hmm. Chapter one, 'strangers,' chapter two, 'sex'... chapter three, 'friends.'"</dd></dl>
+Season 1
+Ladies Frist[1.7]
+<dl><dd> <b>  Liza Frist </b> : "Mmm, smell that?"</dd><dd> <b>  Marin </b> : "What?"</dd><dd> <b>  Liza </b> : "Mmm, man scent. Flannel and...Mmm, man!"</dd><dd> <b>  Ben Thomasson </b> : "Yeah, some of these guys don't shower too regularly."</dd></dl>
+Season 1
+The Buddy System[1.8]
+<dl><dd> <b>  Marin </b> : "The only person I trust to cut my hair is Serge, and he's 4,000 miles away. He's been doing me for 10 years. Longest relationship I have ever had."</dd></dl>
+Season 1
+The Menaissance[1.9]
+<dl><dd> <b>  Jewel </b> : "Thank you, Elmo. Everybody knows there's no place warmer than Alaska."</dd></dl>
+Season 1
+The Menaissance[1.9]
+<dl><dd> <b>  Marin </b> : "You don't have to say everything you feel. I know this because I met Jack...the first real man I've ever known."</dd></dl>
+Season 1
+New York Fiction (1)[1.10]
+<dl><dd> <b>  Amanda </b> : "I mean, I'll be honest. I've read your previous relationship books--cute, popular, like a...like a..."</dd><dd> <b>  Quentin </b> : "The head cheerleader in high school."</dd><dd> <b>  Amanda </b> : "Exactly. But this new book--it could be like a..."</dd><dd> <b>  Quentin </b> : "The girl who smoked behind the bleachers."</dd></dl>
+Season 1
+"New York Fiction (2)"[1.11]
+<dl><dd> <b>  Jane </b> : "Honey, why in God's name are you on a pay phone? You know, they have more germs than a toilet seat."</dd></dl>
+Season 1
+"The Darkest Day"[1.12]
+<dl><dd> <b>  a guy </b> : "Can I buy you a drink?"</dd><dd> <b>  Annie O'Donnell </b> : "How do you feel about your mother?"</dd><dd> <b>  guy </b> : "She--she's dead."</dd><dd> <b>  Annie </b> : "Okay. Sure."</dd></dl>
+Season 1
+"History Lessons" [1.13]
+<dl><dd> <b>  Guy on the air </b> : "Um...and who's out there putting 'will you marry me?' into a random fortune cookie? That's like emotional terrorism."</dd></dl>
+Season 1
+"History Lessons" [1.13]
+<dl><dd> <b>  Marin </b> : "History can be messy and painful but it's not our destruction. If we're lucky, it's our foundation. You just have to work your way through the mess to find what matters, to find the pieces of your past you still want to carry with you, and sometimes, if you have just the right view and just the right castle, you can build the foundation for your new history, all by yourself."</dd></dl>
+Season 1
+"Bed, Bat &amp; Beyond" [1.14]
+<dl><dd> <b>  Jane </b> : "Hello? Marin?"</dd><dd> <b>  Marin </b> : "Did I wake you?"</dd><dd> <b>  Jane </b> : "Mmm, not exactly."</dd><dd> <b>  Marin </b> : "Oh, man. Were you having sex?"</dd><dd> <b>  Jane </b> : "Oh, don't be silly."</dd><dd> <b>  Marin </b> : "Okay, I'm fine. Uh, no worries. Bye."</dd></dl>
+Season 1
+"Take It Like a Man" [1.15]
+<dl><dd> <b>  Jerome </b> : "Will you quit bragging about all this phone sex you're having?"</dd><dd> <b>  Marin </b> : "Have you been listening this whole time?"</dd><dd> <b>  Ben Thomasson </b> : "We all have."</dd><dd> <b>  Marin </b> : "Ugh!"</dd><dd> <b>  Buzz Washington </b> : "You say the word 'sex' around here, and ears perk up. It's like church bells ringing."</dd></dl>
+Season 1
+"Nice Girls Finish Frist" [1.16]
+<dl><dd> <b>  Cash </b> : "I'm not a stranger. We've had two conversations. Three, if you count the last two minutes. That's enough to marry people off in some countries."</dd><dd> <b>  Marin </b> : "Oh, thanks for the offer, but no."</dd></dl>
+Season 1
+"The Indecent Proposal" [1.17]
+<dl><dd> <b>  Marin </b> : "Oh, wow. I'm moving out. I have been through a lot in this room."</dd><dd> <b>  Annie </b> : "I know! You broke your engagement, slept with Jack, broke up with Jack, had phone sex with Stuart."</dd><dd> <b>  Marin </b> : "How do you know all that?"</dd><dd> <b>  Patrick </b> : "Thin walls."</dd></dl>
+Season 2
+A Tree Goes in Elmo[2.1]
+<dl><dd> <b>  Marin </b> : "Uh, may I ask where you got your therapy degree, where you went to school?"</dd><dd> <b>  The guru </b> : "Devry."</dd><dd> <b>  Marin </b> : "The technical institute? You went to study therapy there?"</dd><dd> <b>  The guru </b> : "Semiconductor manufacturing."</dd></dl>
+Season 2
+Chemical Reactions[2.2]
+<dl><dd> <b>  Marin </b> : "So you kinda do for animals what I do for people?"</dd></dl>
+Season 2
+Chemical Reactions[2.2]
+<dl><dd> <b>  Jack </b> : "Well...you film people having sex?"</dd></dl>
+Season 2
+Chemical Reactions[2.2]
+<dl><dd> <b>  Celia Bachelor </b> : (knocks)</dd><dd> <b>  Dick </b> : (opens the window of the car)</dd><dd> <b>  Celia </b> "What are you doing?"</dd><dd> <b>  Dick </b> : "I am an emotional eater, okay? I eat to stuff down my emotions."</dd><dd> <b>  Celia </b> : "Look, I don't pretend that you understand what I just did, you are not a mother!"</dd><dd> <b>  Dick </b> : "You infringed the law!"</dd><dd> <b>  Celia </b> : "Well, it's probably better that we call it quits, it's not like we were in love or anything, right?" (looks up to the right)</dd><dd> <b>  Dick </b> : (gets out of the car in deep emotion) "I saw that!!"</dd><dd> <b>  Celia </b> : "What?!"</dd><dd> <b>  Dick </b> : "You did it again, you do love me!"</dd><dd> <b>  Celia </b> : "No I didn't."</dd><dd> <b>  Dick </b> : "Yes, you did."</dd><dd> <b>  Celia </b> : "No, I didn't."</dd><dd> <b>  Dick </b> : "Yes, you did."</dd><dd> <b>  Celia </b> : "No I didn't...okay! Fine, I did, I love you!!"</dd><dd> <b>  Dick </b> : "And for the record , I love you too."</dd></dl>
+Season 2
+Chemical Reactions[2.2]
+<dl><dd> <b>  Cash </b> : "I make a kick-ass stew."</dd><dd> <b>  Marin </b> : "My kick-ass stew could kick your kick-ass stew's ass."</dd></dl>
+Season 2
+No Man Is An Island[2.3]
+<dl><dd> <b>  Celia </b> : "Look...I'm older than you by a number of years. So, you know, let's say when you're 60, I'm gonna be...[whispering] and when you're 70, I'm gonna be...[whispering] and when you're 80, I'm gonna be...dead."</dd></dl>
+Season 2
+I Wood If I Could[2.4]
+<dl><dd> <b>  Marin </b> : "Patrick, we have got to talk about your bachelor party, or your O'Bachelorton party, as I like to call it. Have you thought about what you would like to do or...have?"</dd><dd> <b>  Patrick </b> : "Uh, beer. Ping-pong. Beer-pong!"</dd></dl>
+Season 2
+I Wood If I Could[2.4]
+<dl><dd> <b>  Marin </b> : "I thought I made myself clear with the wood."</dd><dd> <b>  Jack </b> : "Yeah, you did."</dd><dd> <b>  Marin </b> : "I said I didn't want any romantic gestures, right?"</dd><dd> <b>  Jack </b> : "Yeah, I know."</dd><dd> <b>  Marin </b> : "So you are just ignoring what I said?"</dd><dd> <b>  Jack </b> : "Yeah, pretty much"</dd><dd> <b>  Marin </b> : "Wow, you got a lot of nerve buddy."</dd><dd> <b>  Jack </b> : "Only when it comes to stuff I really want."</dd></dl>
+Season 2
+I Wood If I Could[2.4]
+<dl><dd> <b>  Annie </b> : "Patrick, tag me in!"</dd></dl>
+Season 2
+The Girl Who Cried Wolf[2.5]
+<dl><dd> <b>  Jerome </b> : "Chieftain. Well, y-yeah, this is the, um, official bar of the Alaska Huskies. Please hold." [To Ben] "Some guy with an accent."</dd><dd> <b>  Ben </b> : "Russian or Polish?"</dd><dd> <b>  Jerome </b> : "Could--could you say, uh, 'the rain in Spain stays mainly in the plain?'" [To Ben] "Definitely a Russki."</dd></dl>
+Season 2
+Nice Day For A Dry Wedding[2.6]
+<dl><dd> <b>  Mary Alice </b> : "Oh, Jerome, where have you been all my life?"</dd><dd> <b>  Jerome </b> :&#160;: "At the Chieftain?"</dd></dl>
+Season 2
+Nice Day For A Dry Wedding[2.6]
+<dl><dd> <b>  Danny </b> : "I thought about you at the rehab, that kept me straight."</dd><dd> <b>  Jane </b> : "Oh...sweet!"</dd><dd> <b>  Danny </b> : "Anyway, you are at my sister's wedding, all shiny, I'm ah..."</dd><dd> <b>  Jane </b> : "...sober?"</dd><dd> <b>  Danny </b> : "More or less!"</dd><dd> <b>  Jane </b> : "You can be more or less sober?"</dd><dd> <b>  Danny </b> : (smiles) "You know, back in Queens, I really thought we were heading somewhere..."</dd><dd> <b>  Jane </b> : "You were headed to a facility...and the only thing that I'm interested right now is in being single, sorry."</dd><dd> <b>  Danny </b> : " Oh, please, I get it! Totally!!"</dd></dl>
+Season 2
+Nice Day For A Dry Wedding[2.6]
+<dl><dd> <b>  Marin </b> : "Don't forget me!"</dd><dd> <b>  Jack </b> : "I won't, certainly not after this."</dd></dl>
+Season 2
+Sea Change[2.7]
+<dl><dd> <b>  Annie </b> : "I tried to reconnect with your son in the bedroom, per your instructions."</dd><dd> <b>  Celia </b> : "And?"</dd><dd> <b>  Annie </b> : "And...it was great, okay! Your son is a fantastic lover!"</dd><dd> <b>  Celia </b> : "So what's the problem, red?"</dd><dd> <b>  Annie </b> : "That man is not Patrick!"</dd></dl>
+Season 2
+Sweatering it Out[2.8]
+<dl><dd> <b>  Annie </b> : "I mean, you have slept with so many more guys than me. Tons, probably."</dd><dd> <b>  Marin </b> : "Oh, yeah, a thousand."</dd><dd> <b>  Annie </b> : (looks at Marin)</dd><dd> <b>  Marin </b> : "I'm kidding."</dd></dl>

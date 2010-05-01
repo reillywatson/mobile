@@ -1,0 +1,195 @@
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Deputy </b> : Are we under attack?</dd><dd> <b>  Johnston </b> : Son, I don't want to hear that word again. Now look, this could have been a test. It could have been an accident. There's, uh, military bases near Denver. One explosion does not make an attack. If we stay calm, the town stays calm, okay.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Robert </b> : You might want to get some black spray paint, you know, cover that. <i>  [Points at the word "Jericho" on the police car] </i> Look, I know that you're telling people that is was an accident, and I hope it was, but if it was an attack, Sheriff and there's chaos out there, you might not want the wrong people to know that Jericho is still here.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <i>  [Johnston knocks on the door, Old Man Oliver answers the door cocking his shotgun] </i></dd><dd> <b>  Johnston </b> : Oh, Oliver, would you stop that.</dd><dd> <b>  Old Man Oliver </b> : Sorry, Johnston. Thought you were Aliens. Well, we're under attack, by Aliens. Don't you know that?</dd><dd> <b>  Johnston </b> : Yes, we do. That's why we're here. Do you have your Ham radio?</dd><dd> <b>  Old Man Oliver </b> : Yeah, for you....50 cents.</dd></dl>
+Season 1
+Pilot[1.1]
+<dl><dd> <b>  Johnston </b> : If you convince me that you are living a more productive life, then..</dd><dd> <b>  Eric </b> : That's right Jake.</dd><dd> <b>  Jake </b> : We were both born on third base, stop pretending you hit a triple. When are you going to realize I am 32 years old?</dd><dd> <b>  Johnston </b> : When you do.</dd></dl>
+Season 1
+Fallout[1.2]
+<dl><dd> <b>  Fallout Alert </b> : Attention, attention. There is radioactive fallout coming from the nuclear blast. You have less than 90 minutes to get indoors. I repeat, you have less than 90 minutes to get in doors. Use your basements. Put duck tape or leather tape to seal your homes. You have less than 90 minutes. There is a shelter at town hall and at the medical centre. There is radioactive fallout coming. You have less than 90 minutes to get indoors.</dd></dl>
+Season 1
+Fallout[1.2]
+<dl><dd> <b>  Mary </b> : You're not from around here are you?</dd><dd> <b>  Mimi </b> : I came from DC to supervise a little audit on a farm. Is God punishing me?</dd><dd> <b>  Mary </b> : You really should get to the basement at town hall.</dd><dd> <b>  Mimi </b> : You think?</dd></dl>
+Season 1
+Fallout[1.2]
+<dl><dd> <b>  Johnston </b> : Gail, who is in charge here? You or me?</dd><dd> <b>  Gail </b> : You do not want to play that game.</dd></dl>
+Season 1
+Fallout[1.2]
+<dl><dd> <b>  Jake </b> : Bonnie, take them to the storm cellar now!! Go, guys, go!! Emily, we've got to get inside. Emily? Emily, hey. It's going to be ok? Alright I promise. Everything is going to be ok, alright. We've got to go in now, babe. Babe? We've got to get inside before the rain, okay? Come with me. Come on. Run. Run. Get inside!</dd></dl>
+Season 1
+Fallout[1.2]
+<dl><dd> <b>  Eric </b> : Do you realize a nuclear bomb went off yesterday?</dd><dd> <b>  Pool Player </b> : So? If I'm going to die in a nuclear blast, so be it. I'll be right here, playing pool with my buddies.</dd><dd> <b>  Eric </b> : But you're not going to die in a blast. You're going to get radiation poisoning. Within the first couple of hours you're going to be vomiting and have crippling diarrhea. Your hair is going to fall out in chunks. Your skin is going to blister. Your internal organs are going to start to shut down. Because, well, frankly....they're being cooked from the inside. You're going to get sicker and sicker until you can't move. And then you will die. Over there on the floor by the pool table....with your buddies.</dd></dl>
+Season 1
+Four Horsemen[1.3]
+<dl><dd> <b>  Gail </b> : You know I keep thinking about when we were kids and how they used to make us practice hiding under our desks in case of an atomic bomb.</dd><dd> <b>  Johnston </b> : Yeah and duck for cover.</dd><dd> <b>  Gail </b> : That's the first thing I thought of when I saw that mushroom cloud. Did they have enough time to hide under their desks? It's pretty stupid, huh?</dd></dl>
+Season 1
+Four Horsemen[1.3]
+<dl><dd> <b>  Stanley </b> : Are you okay?</dd><dd> <b>  Mimi </b> : Huh, if you call radiation poisoning "okay".</dd><dd> <b>  Stanley </b> : Were you out in the rain, too?</dd><dd> <b>  Mimi </b> : Heavens no! I touched a building when we came out of the shelter.</dd><dd> <b>  Stanley </b> : Oh.</dd><dd> <b>  Mimi </b> : Look, you can stop pretending.</dd><dd> <b>  Stanley </b> : What do you mean?</dd><dd> <b>  Mimi </b> : I audited your farm. Why do you care?</dd><dd> <b>  Stanley </b> : Maybe I'm a nicer person than you.</dd><dd> <b>  Mimi </b> : Right. Were you in the rain?</dd><dd> <b>  Stanley </b> : Yeah, for about twenty minutes.</dd><dd> <b>  Mimi </b> : Well, you look pretty good.</dd><dd> <b>  Stanley </b> : Thanks. You know, try to work out.</dd><dd> <i>  [Mimi laughs] </i></dd><dd> <b>  Stanley </b> : Look, um, you know I think I got the worst of it, so as long as I'm okay, you should be fine.</dd><dd> <b>  Mimi </b> : You're really sweet. And you still owe the IRS $180,000.</dd><dd> <b>  Stanley </b> : Yeah, I know.</dd></dl>
+Season 1
+Four Horsemen[1.3]
+<dl><dd> <i>  [Mimi rests her hand on a column, and when she lifts it, her hand is covered in black] </i></dd><dd> <b>  Mimi </b> : What's this black stuff?</dd><dd> <b>  Mary </b> : That used to be Denver.</dd></dl>
+Season 1
+Four Horsemen[1.3]
+<dl><dd> <b>  Johnston </b> : In my office. Now.</dd><dd> <i>  [Punches Gray Anderson] </i></dd><dd> <b>  Johnston </b> : Right now these people need our leadership. I will not have you tearing this town apart. And when all this is over, if you and I are still alive, you investigate your ass off. In the meantime, if I hear anymore talk like that out of you, you and I are gonna have a problem. Do we understand each other?</dd></dl>
+Season 1
+Walls of Jericho[1.4]
+<dl><dd> <b>  Dale </b> : That's a dollar 69.</dd><dd> <b>  Allison </b> : Ok.</dd><dd> <b>  Dale </b> : You got the last bag of corn chips.</dd><dd> <b>  Skylar </b> : I'll give you $20 for them!</dd></dl>
+Season 1
+Walls of Jericho[1.4]
+<dl><dd> <b>  Stanley </b> : I couldn't find an empty pesticide container so I thought this water tank might do.</dd><dd> <b>  Heather </b> : No no no, we can't use steel, there is to much risk of static. One spark and the whole thing could blow sky high.</dd><dd> <b>  Jake </b> : We don't have time to look for something else!</dd><dd> <b>  Heather </b> : We can't, well, who's gonna fill it?</dd></dl>
+Season 1
+Walls of Jericho[1.4]
+<dl><dd> <b>  Johnston </b> : Earlier today we buried 20 people, refugees from Denver. People we, we didn't know but, were prepared to welcome into our town. Unfortunately they died of radiation poisoning before we could reach them. For those people from Denver and for our own people, for Sheriff Daurs and Deputy Riley, for Deputy Connor and Deputy Saleam. For people out there somewhere out there that we know nothing about that might be suffering and dying right now, I ask that we take a moment of silence.</dd></dl>
+Season 1
+Walls of Jericho[1.4]
+<dl><dd> If you've lost a loved one would you please stand? If someone you love is missing would you please join those standing? We stand because we know that every life matters... we have to fight for every life, even when it seems hopeless, even if we're afraid. Because the battle ahead isn't just for our survival, its for our humanity.</dd></dl>
+Season 1
+Federal Response[1.5]
+<dl><dd> <b>  Phone Message </b> : Hello, this is Assistant Secretary Walsh from the Department of Homeland Security. Do not be alarmed. If you are safe, stay where you are. Do not attempt to leave. We will be in contact again shortly. Until then, know that help is on the way.</dd></dl>
+Season 1
+Federal Response[1.5]
+<dl><dd> <b>  Jake </b> : I'm tired of war, no one ever really wins.</dd><dd> <b>  Stanley </b> : Me too.</dd><dd> <b>  Mimi </b> : We could play crazy eights instead or hearts?</dd><dd> <b>  Stanley </b> : No, I'm calling it a night.</dd><dd> <b>  Mary </b> : Call it whatever you want but it stopped being night hours ago. Ya'll want coffee?</dd><dd> <b>  Mimi </b> : Make mine an Irish.</dd><dd> <b>  Jake </b> : So Mimi, what would you be doing if you were back home in DC?</dd><dd> <b>  Mimi </b> : Sleeping. You know the hardest thing about sleeping in this dump? The quiet, yeah I don't know how you stand it, it's like my brain is an echo chamber.</dd><dd> <b>  Jake </b> : Why do you think I left town?</dd></dl>
+Season 1
+Long Live the Mayor[1.7]
+<dl><dd> <b>  Gray </b> : Are you going somewhere?</dd><dd> <b>  Eric </b> : My father needs medication, stuff we don't have in town. Me and Jake are going to Rogue River to find it.</dd><dd> <b>  Gray </b> : Are sure that that's a good idea?</dd><dd> <b>  Eric </b> : Not really.</dd><dd> <b>  Gray </b> : You be careful out there. You don't stop for anything. You don't even slow down. I mean it.</dd><dd> <b>  Eric </b> : We'll be back before morning. Do you mind keeping an eye on things here?</dd><dd> <b>  Gray </b> : Of course, don't worry about it.</dd></dl>
+Season 1
+Long Live the Mayor[1.7]
+<dl><dd> <b>  Gail </b> : What are you doing?</dd><dd> <b>  Johnston </b> : What?</dd><dd> <b>  Gail </b> : You were cooling your thermometer in that glass of water. Weren't you?</dd><dd> <b>  Johnston </b> : No I wasn't. Fine, so what if I was, I'm tired of being sick.</dd><dd> <b>  Gail </b> : You have a temperature of 350 degrees. You are going to rest. You are going to take the pills that April gave you. You are going to admire this ridiculous pumpkin with me and then we are going to try and eat the pumpkin together because we use every part of the buffalo in this house. Is that understood?</dd><dd> <b>  Johnston </b> : Most of it.</dd></dl>
+Season 1
+Long Live the Mayor[1.7]
+<dl><dd> <b>  Heather </b> : Watch out for giant irradiated ants out there.</dd><dd> <b>  Jake </b> : Always do.</dd></dl>
+Season 1
+Crossroads[1.9]
+<dl><dd> <b>  Goetz </b> : You know, one day, things are gonna start to get back to normal around here. The federal government is going to put itself together. And when it does, they're going to want to send someone to help all of you get back on your feet. You know who they're gonna send? Me.</dd></dl>
+Season 1
+Vox Populi[1.11]
+<dl><dd> <b>  Gray </b> : I love this town. And I just want to keep it safe; the way it always was.</dd><dd> <b>  Johnston </b> : What it was was a democracy. that's easy when everything is going well, but when you get mad or angry it gets a whole heck of a lot harder.</dd></dl>
+Season 1
+Vox Populi[1.11]
+<dl><dd> <b>  Mimi </b> : This will never work.</dd><dd> <b>  Stanley </b> : Ah, that's what they said about Brangelina.</dd><dd> <b>  Mimi </b> : Are you seriously quoting US magazine right now?</dd><dd> <b>  Stanley </b> : Yeah, what do you think they'd call us? Stimiley? Mimiley? <i>  [Pause] </i> St... Stimi!</dd><dd> <b>  Mimi </b> : <i>  [Laughing] </i> You are such an idiot!</dd></dl>
+Season 1
+Black Jack[1.13]
+<dl><dd> <b>  Heather </b> : I shouldn't have sprung this on you. This is too weird.</dd><dd> <b>  Jake </b> : What? What's weird?</dd><dd> <b>  Heather </b> : Okay...I kissed you...a month ago. We haven't spoken since. Generally people speak after something like that.</dd><dd> <b>  Johnston </b> : I'm just gonna...you know...uh... <i>  [walks away] </i></dd></dl>
+Season 1
+Heart of Winter[1.14]
+<dl><dd> <b>  Mimi </b> : Your lips are still cold.</dd><dd> <b>  Stanley </b> : Well...maybe you can warm them up.</dd><dd> <b>  Mimi </b> : That's the worst line I've ever heard!</dd></dl>
+Season 1
+One Man's Terrorist[1.17]
+<dl><dd> <b>  Reverend </b> : You can't do this Gray, I have given these people sanctuary.</dd><dd> <b>  Gray </b> : This is a police matter now.</dd><dd> <b>  Reverend </b> : You have no right to assault these people, they have committed no crime. They will be my responsibility.</dd><dd> <b>  Gray </b> : What, are you going to feed them? Have you got a little hospital down there Reverend? No, I didn't think so!</dd></dl>
+Season 1
+One Man's Terrorist[1.17]
+<dl><dd> <b>  Hawkins </b> : So...I just wanted to know how you were doing. Settling in okay at Jimmy's place.</dd><dd> <b>  Allison </b> : Yeah, he just never stops talking.</dd><dd> <b>  Hawkins </b> : No <i>  [chuckles] </i> he doesn't. How's Sam?</dd><dd> <b>  Allison </b> : You know, he gets scared.</dd><dd> <b>  Hawkins </b> : And you?</dd><dd> <b>  Allison </b> : I'm fine.</dd><dd> <b>  Hawkins </b> : Look, that thing you had to do to Sarah...I know how that can change people.</dd><dd> <b>  Allison </b> : Dad, don't worry about me. I'm not Sam, and I'm not Mom. So... you're not going to live with us anymore, are you?</dd><dd> <b>  Hawkins </b> : I don't think it's a good idea right now.</dd><dd> <b>  Allison </b> : Then don't worry. I'll take care of them.</dd><dd> <b>  Hawkins </b> : Hey, hey, hey. Come here. <i>  [He grabs and hugs her] </i> You are not me.</dd></dl>
+Season 1
+One Man's Terrorist[1.17]
+<dl><dd> <b>  Man on radio </b> : In New York, the terrorists who were apprehended were all carrying nearly-perfect fake FBI badges. Their identities have not been released. Authorities have increased security at all critical sites. Counter-terrorist forces are working to capture those responsible. In the meantime, all citizens are encouraged to be vigilant. As we receive more information, we'll bring it to you. Until then, all news is local. Take care of each other, Kansas.</dd></dl>
+Season 1
+A.K.A[1.18]
+<dl><dd> <b>  Jake </b> : At the FBI what were you working on?</dd><dd> <b>  Hawkins </b> : I was sent here to monitor phone calls made in the area to a suspected terrorist cell.</dd><dd> <b>  Jake </b> : And what'd you find out?</dd><dd> <b>  Hawkins </b> : Nothing. Trail went dead. We about done here?</dd><dd> <b>  Jake </b> : Not even close.</dd><dd> <b>  Jake </b> : Tell me about her: Sarah Mason.</dd><dd> <i>  [while Jake's distracted,Hawkins reaches behind his back and pulls a gun from a drawer] </i></dd><dd> <b>  Hawkins </b> : She's gone. <i>  [realizing gun's empty, chuckles] </i> You're pretty thorough.</dd><dd> <b>  Jake </b> : I also took care of the one in the cabinet and the one behind the water heater. There's only one loaded gun in this house, and it's mine. Sit down.</dd></dl>
+Season 1
+A.K.A[1.18]
+<dl><dd> <b>  Hawkins </b> : Those are Defense Department projections. They've been doing them since the 50's. They're fallout scenarios in the event of a nuclear attack on 20 US cities. Do you see Jericho? It's outside the fallout zones, Jake, it's got a salt mine, plenty of farmland, and access to an untainted water table.</dd><dd> <b>  Jake </b> : So you weren't here to monitor phone calls?</dd><dd> <b>  Hawkins </b> : Jericho was a rally point in case we failed in our mission.</dd><dd> <b>  Jake </b> : Failed or succeeded?</dd></dl>
+Season 1
+A.K.A[1.18]
+<dl><dd> <b>  Jake </b> : Did you wipe out 23 American cities?</dd><dd> <b>  Robert </b> : Get out of my house!</dd><dd> <b>  Jake </b> : Answer the question!</dd><dd> <b>  Robert </b> : Why would you even think that?</dd><dd> <b>  Jake </b> : You've got a working generator and a food supply. It's like you knew the attacks were coming!</dd></dl>
+Season 1
+Casus Belli[1.19]
+<dl><dd> <b>  Bonnie </b> : <i>  [signing] </i> Thank you.</dd><dd> <b>  Stanley </b> : For what?</dd><dd> <b>  Bonnie </b> : Letting Sean stay.</dd><dd> <b>  Stanley </b> : You're welcome.</dd><dd> <b>  Bonnie </b> : And for not calling him an idiot, even when he is one.</dd><dd> <b>  Stanley </b> : Okay, if you know that...</dd><dd> <b>  Mimi </b> : <i>  [clears throat] </i> Sorry, just a little frog in my throat. Don't let me interrupt your nice sibling bonding moment. That's what it is, right?</dd><dd> <b>  Bonnie </b> : <i>  [continues signing] </i> Sean can be an idiot, but he can also be really great. All guys are like that, you have to put up with the "idiot" stuff...to get to the "great" stuff.</dd><dd> <b>  Stanley </b> : <i>  [chuckles] </i> Yeah? And where did you come by that little pearl of wisdom?</dd><dd> <i>  [Bonnie points at Mimi] </i></dd><dd> <b>  Mimi </b> : What'd she say about me?</dd></dl>
+Season 1
+Casus Belli[1.19]
+<dl><dd> <b>  Mimi </b> : You know, you listen to me, Stanley. Your sister's not a child any more. You can't just throw this fit and kick Sean's ass and think that's going to be the end of it.</dd><dd> <b>  Stanley </b> : Well, I hope you're going to explain to me why I can't.</dd><dd> <b>  Mimi </b> : Because if you do, she's just going to latch on that much tighter; unless they get really angry, in which case the age-old teenage remedy is to run away, which used to mean that you'd hear from them in a few days when they ran out of bus money. Nowadays, chances are much better that you'll find their bodies on the side of a road. Look, right now it is under our roof and it's a pain in the ass, I know. But it's a safe and manageable pain in the ass and I suggest you let him stay here before it turns into more than that.</dd></dl>
+Season 1
+One if by Land[1.20]
+<dl><dd> <b>  Emily </b> : For what it's worth, you and Mary have a lot in common.</dd><dd> <b>  Gail </b> : What -- we both love Eric?</dd><dd> <b>  Emily </b> : No, I was actually going to say you're both pretty tough broads. You're both a little hard-headed. In a bar fight -- even money.</dd></dl>
+Season 1
+One if by Land[1.20]
+<dl><dd> <b>  Maggie </b> : So, what's the plan?</dd><dd> <b>  Hawkins </b> : Plan? There's gonna be an explosion in town. Hopefully it'll cause enough chaos that we can somehow get Jake and Eric out of there.</dd><dd> <b>  Maggie </b> : I think I can help you with that. I have an in with Constantino.</dd></dl>
+Season 1
+One if by Land[1.20]
+<dl><dd> <b>  Constantino </b> : I want you to tell me who your friend is and where I can find him. Things are gonna get very bad for you and your brother if you don't help us, Jake.</dd><dd> <b>  Jake </b> : Why would I want to help you?</dd><dd> <b>  Constantino </b> : This is what I know is that you, your friend, and your brother were caught attempting to sabotage this town's sole means of manufacturing.</dd><dd> <b>  Jake </b> : You were manufacturing weapons. You were-</dd><dd> <b>  Constantino </b> : So I'm gonna repeat the question -- Where is your friend?</dd><dd> <b>  Jake </b> : Why don't you tell me what happened to Heather Lisinski?</dd><dd> <b>  Constantino </b> : Take him back.</dd><dd> <b>  Guard </b> : Let's go, boy.</dd><dd> <b>  Jake </b> : Word's going to get back. It's going to get back to Jericho about what you're doing and there is nothing you can do to stop it!</dd></dl>
+Season 1
+Coalition of the Willing[1.21]
+<dl><dd> <b>  Emily </b> : Help us fight. We'll give you half. Half of all the weapons, food, and fuel that we take. And if New Bern's army is as big as you say it is, you'll do a lot better than hittin' one truck at a time out here.</dd><dd> <b>  Jonah </b> : You've got more of me in you than you're ever going to admit.</dd></dl>
+Season 1
+Coalition of the Willing[1.21]
+<dl><dd> <b>  Johnston </b> : Stanley, what happened out there?</dd><dd> <b>  Stanley </b> : I don't know. We were moving towards the mortar truck. And they were waiting, they were waiting on both sides of it for us. They wouldn't, they wouldn't stop firing.</dd><dd> <b>  Gray </b> : Stanley, where's everybody else?</dd><dd> <b>  Johnston </b> : Where are they, son?</dd><dd> <b>  Jake </b> : Stanley?</dd><dd> <b>  Stanley </b> : They're, they're all dead. They're all dead.</dd></dl>
+Season 1
+Coalition of the Willing[1.21]
+<dl><dd> <b>  Johnston </b> : Most of you have no idea what to do or what's coming, some of you do. This isn't a fight about land or about this town. Its a fight for our very existence. Pray for each other; and while you're at it, pray for the men and women of New Bern and pray that God forgives us.</dd></dl>
+Season 1
+Coalition of the Willing[1.21]
+<dl><dd> <b>  Constantino </b> : We're still cleanin' the blood of eight deputies off the sidewalks of New Bern. So you need to understand our position. We need seven farms, including the Jackson farm, the Herbert farm, and the Richmond farm. And we need half the salt mine. You have four hours to respond.</dd><dd> <b>  Gray </b> : I don't understand. What are you askin' us to do?</dd><dd> <b>  Constantino </b> : Jericho is about to be invaded. For the sake of your people, I'm asking you to surrender.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Darcy </b> : So there were dozens of these things used in the attacks, right? And now you have the last one.</dd><dd> <b>  Hawkins </b> : Yeah.</dd><dd> <b>  Darcy </b> : I don't, I don't think these people are looking at this thing as a weapon. It's more than that. It's...</dd><dd> <b>  Hawkins </b> : Evidence.</dd><dd> <b>  Darcy </b> : It's the smoking gun behind the greatest crime in the history of the world.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Hawkins </b> : This satellite must remain a secret.</dd><dd> <b>  Johnston </b> : <i>  [pauses briefly] </i> Sounds good.</dd><dd> <b>  Jake </b> : What, that's it?</dd><dd> <b>  Johnston </b> : What do you want me to say? I get it, man has a satellite, doesn't want anyone to know.</dd><dd> <b>  Jake </b> : Yeah, but...</dd><dd> <b>  Johnston </b> : I am about to go to war with New Bern, Kansas, the home of the nearest Costco - today is already just about as weird as I can handle. I'm not asking any more questions.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Jake </b> : <i>  [about his father] </i> He's been shot.</dd><dd> <b>  Hawkins </b> : I'm sorry. OK.You know what to do, right? Keep pressure on the wound. And there should be some morphine curettes in the supplies I gave you.</dd><dd> <b>  Jake </b> : Yeah, we've got it.</dd><dd> <b>  Hawkins </b> : Listen, Jake, people are gonna be looking to you now. You know what I mean?</dd><dd> <b>  Jake </b> : Yeah.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Hawkins </b> : <i>  [to Stanley] </i> Hey, I need to borrow your tank.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Johnston </b> : <i>  [to Jake] </i> One day, I know you're gonna become the man I know you can be. The man you were born to be. By God, that day's gonna be something to see.</dd></dl>
+Season 1
+Why We Fight[1.22]
+<dl><dd> <b>  Constantino </b> : Jake, you're outmanned and you're outgunned. There's too many of us and we are too desperate to give up. You cannot win this. I'm giving you one last chance to walk away, to put your guns down and return to town, and no one else will be harmed. Jake, I need an answer. What's it gonna be?</dd><dd> <b>  Jake </b> : NUTS!</dd><dd> <b>  Constantino </b> : Sorry, what was that?</dd><dd> <b>  Jake </b> : You can go straight to hell.</dd></dl>
+Season 2
+Reconstruction[2.01]
+<dl><dd> <b>  Mimi </b> : <i>  [about Trish] </i> Did you see that skin? It's like porcelain. That girl's never had a restless night's sleep in her life. And here I am running five miles a day so my butt doesn't hit my ankles!</dd></dl>
+Season 2
+Reconstruction[2.01]
+<dl><dd> <b>  Hawkins </b> : You know, if you were smart, you'd let three months go by. Wait until everything calms down and then you would go in there quietly in the middle of the night and you would kill Constantino in his sleep. 'Cause that I would understand. But this, this is just you making a big show out of it, Jake, and it is both dangerous and stupid.</dd></dl>
+Season 2
+Reconstruction[2.01]
+<dl><dd> <b>  Mimi </b> : I'm sorry I asked you to marry me.</dd><dd> <b>  Stanley </b> : No, look, I was gonna ask you!</dd><dd> <b>  Mimi </b> : You were?</dd><dd> <b>  Stanley </b> : I was, yes. I had it all planned out. I was gonna propose the way my father proposed to my mother.</dd><dd> <b>  Mimi </b> : How'd he do it?</dd><dd> <b>  Stanley </b> : He asked her.</dd></dl>
+Season 2
+Reconstruction[2.01]
+<dl><dd> <b>  Mimi </b> : What's that?</dd><dd> <b>  Stanley </b> : It's my mother's wedding ring, now please, be quiet. I've never loved anybody the way I love you. And I can't remember my life before you and...and, uh <i>  [gets down on one knee] </i> now I really don't think I could live without you. Listen, I'll do whatever it takes to make you happy, I swear to God. So, will you marry me?</dd><dd> <i>  [Mimi nods and gasps out a laugh] </i></dd><dd> <b>  Stanley </b> : See, now..now you can talk.</dd><dd> <b>  Mimi </b> : Yes. Yes.</dd></dl>
+Season 2
+Reconstruction[2.01]
+<dl><dd> <b>  Mimi </b> : Tell me you didn't sign this contract.</dd><dd> <b>  Stanley </b> : I didn't sign that contract.</dd><dd> <b>  Mimi </b> : Oh good.</dd><dd> <b>  Stanley </b> : I signed another one. That's a copy.</dd></dl>
+Season 2
+Condor[2.02]
+<dl><dd> <b>  Stanley </b> : This is a big day! You get to be an accountant again. Account things, add things up, maybe even a little subtraction, right?</dd><dd> <b>  Mimi </b> : I have to say, I cannot wait to work in that office. You wouldn't believe how organized the Jennings and Rall people are. Everything is bar-coded. I have so missed bar-codes and spreadsheets. I mean every component and package and foodstuff, every ounce is accounted for; where's its been and where its going. Oh, I had forgotten how beautiful order can be.</dd><dd> <b>  Stanley </b> : That's probably the most boring story I've heard in months.</dd></dl>
+Season 2
+Condor[2.02]
+<dl><dd> <b>  Beck </b> : Sheriff Green? Nice uniform.</dd><dd> <b>  Jake </b> : <i>  [lifting up casual jacket to show badge pinned to jeans] </i> I'm pacing myself.</dd></dl>
+Season 2
+Condor[2.02]
+<dl><dd> <b>  Mimi </b> : I'm still trying to figure out how to make our wedding registry vital to national security.</dd><dd> <b>  Stanley </b> : You're already planning our wedding registry?</dd><dd> <b>  Mimi </b> : Oh, since I was twelve. And I've already taken off the list luxury items that we already have such as your Star Wars collectors' glasses.</dd></dl>
+Season 2
+Condor[2.02]
+<dl><dd> <b>  Tomarchio </b> : You've lost loved ones, and here you are again; still strong, still proud. This is the best of America. But infighting has left us weak and vulnerable to our enemies. Remnants of the old Federal government has fallen back to Columbus, Ohio. After the attacks that government endlessly debated our response. So, in a vacuum of leadership I acted to let the world know that America was down, but not out! The Federal government of the eastern block states no longer has any governing authority beyond the Mississippi. You've seen the flag. This is the flag of a new country, flying from the Mississippi to the Pacific. The thirteen stripes of red and white still represent the thirteen colonies, but they run in a new direction, just as we must chart a new direction for ourselves. In a few short weeks Mayor Anderson will represent you as we ratify a constitution for this new nation, that will be known to the world by a new name; The Allied States of America! And with this new name, a clean slate. Our debts have been forgiven, and we are open again for business. That means jobs, stocked shelves, a return to life as we knew it. And in the fall we'll have elections where we can all take part in building a new government, as a safer, stronger America. God bless you, and God bless the Allied States of America!</dd></dl>
+Season 2
+Jennings &amp; Rall[2.03]
+<dl><dd> <b>  Beck </b> : Mr. Goetz has already informed me of your previous run-ins.</dd><dd> <b>  Jake </b> : Yeah, did he tell you about the massacre he and his men carried out in Rogue River? Did he give you a head count on how many people he murdered in New Bern?</dd></dl>
+Season 2
+Jennings &amp; Rall[2.03]
+<dl><dd> <b>  Heather </b> : Three doctors on this radio frequency said the risk of the generic stuff being dangerous is almost nil. But somehow there's only one legally approved source.</dd><dd> <b>  Jake </b> : J and R.</dd></dl>
+Season 2
+Oversight[2.04]
+<dl><dd> <b>  Deputy Sheriff Kohler </b> : It's Fort Knox back there.</dd><dd> <b>  Jake </b> : What is that?</dd><dd> <b>  Deputy Sheriff Kohler </b> : Thumb-print scanner. Getting that room ready to house 'classified' information, pretty short list of people that will have access.</dd><dd> <b>  Jake </b> : Let me guess, I'm not on it?</dd><dd> <b>  Deputy Sheriff Kohler </b> : But, if it's any consolation, you now hold the distinction of being the first Jericho sheriff, in history, who doesn't have a key to the sheriff's office.</dd></dl>
+Season 2
+Oversight[2.04]
+<dl><dd> <b>  Jake </b> : Stanley asked me to return this to you. <i>  [hands over bottle of alcohol] </i> Find another way into town, quit using his property.</dd><dd> <b>  Dale </b> : It's the safest way in.</dd><dd> <b>  Jake </b> : It's not a suggestion, Dale.</dd></dl>
+Season 2
+Termination for Cause[2.05]
+<dl><dd> <b>  Jake </b> : It's not gonna wait twelve hours.</dd><dd> <b>  Beck </b> : Well, it's gonna have to. Things are coming apart at the seams in New Bern right now. And you have my word, tomorrow I'm gonna get into this but for tonight I'm trusting that you can keep things under control here. That means Goetz is off limits. No threats, no retribution, no exceptions. Do you understand?</dd></dl>
+Season 2
+Termination for Cause[2.05]
+<dl><dd> <b>  Russell (to Heather) </b> : The resistance in New Bern has placed a bounty on your head. We were sent to collect it. Is there a place we can talk?</dd></dl>
+Season 2
+Termination for Cause[2.05]
+<dl><dd> <b>  Eric </b> : When April died all I could think about was I hadn't done enough. That it was my fault.</dd><dd> <b>  Stanley </b> : When my parents died I did that. I blamed myself, and I hated myself for being alive. But there was this little girl to take care of.</dd></dl>
+Season 2
+Sedition[2.06]
+<dl><dd> <b>  Jake </b> : It's not about convincing one man he's wrong. It's a whole system.</dd><dd> <b>  E. J. Green </b> : You think it's impossible? This has all happened before. If the names weren't Jennings &amp; Rall, they would be names like... the British East India Trading Company. If it wasn't Ravenwood, it'd be the Hessian Mercenaries. And it all comes down to the same thing...</dd><dd> <b>  Jake </b> : Revolution.</dd></dl>
