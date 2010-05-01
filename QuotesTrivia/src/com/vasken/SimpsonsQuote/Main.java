@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -31,9 +32,9 @@ public class Main extends Activity {
         opt2 = (Button)findViewById(R.id.opt2);
         opt3 = (Button)findViewById(R.id.opt3);
         try {
-			quotestore = new QuoteStore(this, R.raw.its_always_sunny_in_philadelphia);
+			quotestore = new QuoteStore(this, R.raw.simpsons);
 		} catch (IOException e) {
-			e.printStackTrace();
+			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
 		questionNumber = 0;
 		loadNewQuote();
@@ -55,7 +56,7 @@ public class Main extends Activity {
 			Toast.makeText(Main.this, status, Toast.LENGTH_SHORT).show();
 			loadNewQuote();
 		}};
-    
+
 	// Man this is suuuuper generic, maybe such a function already exists?
     <T extends Object>void populateListWithUniqueElements(List<T> list, int desiredSize, Callable<T> generator) {
     	try {
@@ -73,7 +74,7 @@ public class Main extends Activity {
     
     void loadNewQuote() {
     	questionNumber++;
-    	WebView quoteview = (WebView)findViewById(R.id.quote);
+    	final WebView quoteview = (WebView)findViewById(R.id.quote);
     	SimpsonsQuote quote = quotestore.randomQuote();
 		List<String> episodes = new ArrayList<String>();
 		currentEpisode = quote.episode;
@@ -84,6 +85,19 @@ public class Main extends Activity {
 		
 		Collections.shuffle(episodes);
     	quoteview.loadData(quote.quote, "text/html", "utf-8");
+    	quoteview.setBackgroundColor(0);
+    	quoteview.getSettings().setJavaScriptEnabled(true);  
+    	  
+    	/* WebViewClient must be set BEFORE calling loadUrl! */  
+    	quoteview.setWebViewClient(new WebViewClient() {  
+    	    @Override  
+    	    public void onPageFinished(WebView view, String url)  
+    	    {  
+    	    	quoteview.loadUrl("javascript:(function() { " +  
+    	                "document.getElementsByTagName('body')[0].style.color = 'white'; " +  
+    	                "})()");  
+    	    }  
+    	});  
     	// otherwise if we go from something that fits on one page to something that doesn't, the
     	// scroll indicator doesn't show up
     	quoteview.setVerticalScrollbarOverlay(true);
