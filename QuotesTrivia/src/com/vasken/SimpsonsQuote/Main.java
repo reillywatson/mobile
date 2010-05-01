@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.Callable;
 
 import android.app.Activity;
@@ -22,7 +23,9 @@ public class Main extends Activity {
 	Button opt1;
 	Button opt2;
 	Button opt3;
-	String currentEpisode;
+	String currentAnswer;
+	Random rand = new Random();
+	
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,11 +50,11 @@ public class Main extends Activity {
 		public void onClick(View v) {
 			Button b = (Button)v;
 			String status;
-			if (b.getText().equals(currentEpisode)) {
+			if (b.getText().equals(currentAnswer)) {
 				status = "Correct, you are clearly amazing!";
 			}
 			else {
-				status = "Wrong, dummy!  That was from " + currentEpisode;
+				status = "Wrong, dummy!  That was " + currentAnswer;
 			}
 			Toast.makeText(Main.this, status, Toast.LENGTH_SHORT).show();
 			loadNewQuote();
@@ -72,19 +75,51 @@ public class Main extends Activity {
 		}
     }
     
+    String removeSpeaker(String quote) {
+    	int slashB = quote.indexOf("</b>");
+    	String noSpeaker = quote.substring(slashB + 5, quote.length() - 1).trim();
+    	if (noSpeaker.startsWith(":"))
+    			noSpeaker = noSpeaker.replaceFirst(":", "").trim();
+    	Log.d("BEFORE", quote);
+    	Log.d("AFTER", noSpeaker);
+    	return noSpeaker;
+    }
+    
+    private String nameSpeakerPrefix = "<b>Name that speaker:</b><p>";
+    
     void loadNewQuote() {
     	questionNumber++;
     	final WebView quoteview = (WebView)findViewById(R.id.quote);
     	SimpsonsQuote quote = quotestore.randomQuote();
-		List<String> episodes = new ArrayList<String>();
-		currentEpisode = quote.episode;
-		episodes.add(quote.episode);
-		populateListWithUniqueElements(episodes, 3, new Callable<String>() { public String call() throws Exception {
-				return quotestore.randomEpisode();
-			}});
+		List<String> answers = new ArrayList<String>();
 		
-		Collections.shuffle(episodes);
-    	quoteview.loadData(quote.quote, "text/html", "utf-8");
+		boolean canBeSpeakerQuestion = (quote.speaker != null && quotestore.getNumSpeakerQuestions() > 10 && quotestore.getNumSpeakers() > 3);
+				
+		boolean isSpeakerQuestion = canBeSpeakerQuestion && rand.nextInt(3) == 1;
+		Callable<String> generator;
+		
+		String question = quote.quote;
+		
+		if (isSpeakerQuestion) {
+			currentAnswer = quote.speaker;
+			generator = new Callable<String>() { public String call() throws Exception {
+				return quotestore.randomSpeaker();
+			}};
+			question = nameSpeakerPrefix + removeSpeaker(question);
+		}
+		else {
+			currentAnswer = quote.episode;
+			generator = new Callable<String>() { public String call() throws Exception {
+				return quotestore.randomEpisode();
+			}};
+		}
+
+		answers.add(currentAnswer);
+		populateListWithUniqueElements(answers, 3, generator);
+		
+		
+		Collections.shuffle(answers);
+    	quoteview.loadData(question, "text/html", "utf-8");
     	quoteview.setBackgroundColor(0);
     	quoteview.getSettings().setJavaScriptEnabled(true);  
     	  
@@ -101,8 +136,8 @@ public class Main extends Activity {
     	// otherwise if we go from something that fits on one page to something that doesn't, the
     	// scroll indicator doesn't show up
     	quoteview.setVerticalScrollbarOverlay(true);
-    	opt1.setText(episodes.get(0));
-    	opt2.setText(episodes.get(1));
-    	opt3.setText(episodes.get(2));
+    	opt1.setText(answers.get(0));
+    	opt2.setText(answers.get(1));
+    	opt3.setText(answers.get(2));
     }
 }

@@ -9,6 +9,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +22,9 @@ public class QuoteStore {
 	private HashMap<String, List<SimpsonsQuote>> quotesBySeason = new HashMap<String, List<SimpsonsQuote>>();
 	private Random rand = new Random();
 	private Pattern speakerPattern =  Pattern.compile("<b>(.*?)</b>", Pattern.DOTALL);
-	 
+	private int numSpeakerQuestions = 0;
+	private int numEpisodeQuestions = 0;
+	private Set<String> speakers = new TreeSet<String>();
 	
 	public QuoteStore(Context context, int storeid) throws IOException {
 		InputStream in = context.getResources().openRawResource(storeid);
@@ -31,6 +35,11 @@ public class QuoteStore {
 			String quote = reader.readLine();
 			if (season != null && epTitle != null && quote != null) {
 				String speaker = speakerOfQuote(quote);
+				if (speaker != null) {
+					numSpeakerQuestions++;
+					speakers.add(speaker);
+				}
+				numEpisodeQuestions++;
 				SimpsonsQuote sq = new SimpsonsQuote(season, epTitle, quote, speaker);
 				quotes.add(sq);
 				List<SimpsonsQuote> seasonList = quotesBySeason.get(season);
@@ -45,6 +54,18 @@ public class QuoteStore {
 		Log.d(getClass().getName(), "Found " + Integer.toString(quotes.size()) + " quotes");
 	}
 	
+	public int getNumSpeakerQuestions() {
+		return numSpeakerQuestions;
+	}
+	
+	public int getNumEpisodeQuestons() {
+		return numEpisodeQuestions;
+	}
+	
+	public int getNumSpeakers() {
+		return speakers.size();
+	}
+	
 	private String speakerOfQuote(String quote) {
 		Log.d("PARSING SPEAKER", quote);
 		Matcher m = speakerPattern.matcher(quote);
@@ -52,7 +73,11 @@ public class QuoteStore {
 			String speaker = m.group(1).trim();
 			if (!m.find()) {
 				Log.d("SPEAKER FOUND", speaker);
-				return speaker;
+				if (speaker.endsWith(":")) {
+					speaker = speaker.substring(0, speaker.length() - 1).trim();
+				}
+				if (speaker.length() > 0)
+					return speaker;
 			}
 		}
 		return null;
@@ -78,6 +103,14 @@ public class QuoteStore {
 	
 	public String randomEpisode() {
 		return randomQuote().episode;
+	}
+	
+	public String randomSpeaker() {
+		String speaker = null;
+		while (speaker == null) {
+			speaker = randomQuote().speaker;
+		}
+		return speaker;
 	}
 	
 	// performance on this isn't so great...
