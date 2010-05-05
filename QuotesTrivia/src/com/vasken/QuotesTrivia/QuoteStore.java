@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsQuote;
+package com.vasken.QuotesTrivia;
 
 import java.io.BufferedReader;
 import java.io.IOException;

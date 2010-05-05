@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsQuote;
+package com.vasken.QuotesTrivia;
 
 public class SimpsonsQuote {
 	public String season;
