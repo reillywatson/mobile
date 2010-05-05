@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Main!</string>
-    <string name="app_name">SimpsonsQuote</string>
+    <string name="app_name">Trivia: Lost</string>
+    
+    <string name="fail_title">Oh No!</string>
+    <string name="fail_message">You lose... \nMaybe you\'re not that amazing?</string>
+    <string name="fail_button">Sure I am!</string>
+    
+    <string name="win_title">Wow!</string>
+    <string name="win_message">You Win. \nClearly you\'re awesome!</string>
+    <string name="win_button">Obviously...</string>
 </resources>
