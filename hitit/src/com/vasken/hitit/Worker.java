@@ -1,8 +1,6 @@
 package com.vasken.hitit;
 
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -17,7 +15,6 @@ import org.apache.http.protocol.HTTP;
 import com.vasken.util.WebRequester;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.util.Log;
 
 public class Worker implements WebRequester.RequestCallback {	
@@ -98,10 +95,7 @@ public class Worker implements WebRequester.RequestCallback {
             			addRatingResults(id, sb, theHotItem);
             		}
             		
-                	URL url = new URL(m.group(1));
-        	    	InputStream is = (InputStream)url.getContent();
-        	    	
-        	    	Bitmap image = BitmapFactory.decodeStream(is, null, null);
+            		Bitmap image = WebRequester.bitmapFromUrl(m.group(1));
         			
         			theHotItem.setImage(image);
         			theHotItem.setRateId( m.group(2));

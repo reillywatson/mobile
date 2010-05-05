@@ -16,7 +16,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.vasken.hitit.UserTask.Status;
+import com.vasken.util.UserTask;
+import com.vasken.util.UserTask.Status;
 
 public class Vote extends Activity {
 	 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.vasken.hitit;
+package com.vasken.util;
 
 import android.os.*;
 import android.os.Process;
