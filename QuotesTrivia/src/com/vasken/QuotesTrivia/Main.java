@@ -234,9 +234,10 @@ public class Main extends Activity {
 
 	private String choice3;
 
+	// I could just make everything static, but I almost forgot how to use this.
+	// So I wanted a reminder in code.
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
-		// Don't be null
 		savedInstanceState.putString(QUESTION, currentQuestion);
 		savedInstanceState.putString(CHOICE1, choice1);
 		savedInstanceState.putString(CHOICE2, choice2);

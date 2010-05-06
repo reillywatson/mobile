@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Trivia: Lost</string>
+    <string name="app_name">TV Trivia: Lost</string>
     
     <string name="fail_title">Oh No!</string>
     <string name="fail_message">You lose... \nMaybe you\'re not that amazing?</string>
