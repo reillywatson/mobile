@@ -3,6 +3,7 @@ package com.vasken.comics;
 import java.util.ArrayList;
 
 import com.vasken.comics.Downloaders.ASofterWorldDownloader;
+import com.vasken.comics.Downloaders.AchewoodDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
@@ -42,8 +43,11 @@ public class Main extends Activity {
     // TODO: find out why JPEG decoding is failing!
     //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
     //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
-    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
+    	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new AchewoodDownloader()));
+    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
+    	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new DilbertDownloader()));
     	comics.add(new ComicInfo("FoxTrot", "http://www.gocomics.com/foxtrot/", new GoComicsDownloader()));
@@ -53,8 +57,6 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Wizard of Id", "http://www.gocomics.com/wizardofid/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Bloom County", "http://www.gocomics.com/bloomcounty/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new PennyArcadeDownloader()));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new XKCDDownloader()));
     	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new PvPDownloader()));
