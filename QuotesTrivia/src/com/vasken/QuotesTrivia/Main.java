@@ -5,12 +5,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Timer;
 import java.util.concurrent.Callable;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,15 +28,25 @@ public class Main extends Activity {
 	private static final String CHOICE3 = "CHOICE3";
 	private static final String CURRENT_ANSWER = "CURRENT_ANSWER";
 	
+	private String currentQuestion;
+	private String currentAnswer;
+	private String choice1;
+	private String choice2;
+	private String choice3;
+	
 	static int answersStreak = 0;
 
+	private Handler mHandler = new Handler();
+	
 	QuoteStore quotestore;
 	Button opt1;
 	Button opt2;
 	Button opt3;
-	String currentAnswer;
 	Random rand = new Random();
+	
+	Timer theTimer;
 
+	final int SECONDS_TO_WAIT = 2 * 1000;
 	final int STEP = 10;
 	final int SECONDARY_STEP = 5;
 	final int NUM_QUESTION = 10;
@@ -52,6 +64,8 @@ public class Main extends Activity {
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
+		
+		theTimer = new Timer();
 		
 		TextView result = ((TextView)findViewById(R.id.result));
 		result.setBackgroundResource(R.drawable.neutral);
@@ -128,13 +142,27 @@ public class Main extends Activity {
 				result.setBackgroundResource(R.drawable.wrong);
 				result.setText(Main.this.getString(R.string.wrong, currentAnswer));
 			}
-			loadNewQuote();
+
+            mHandler.removeCallbacks(mUpdateTimeTask);
+            mHandler.postDelayed(mUpdateTimeTask, SECONDS_TO_WAIT);
+            
+            loadNewQuote();
 
 			Progress progress = (Progress) findViewById(R.id.score);
 			progress.setProgress(answersStreak * STEP);
 			progress.setSecondaryProgress(progress.getProgress() + SECONDARY_STEP);
 		}
 	};
+	
+	private Runnable mUpdateTimeTask = new Runnable() {
+		   public void run() {
+				TextView result = ((TextView)findViewById(R.id.result));
+				result.setBackgroundResource(R.drawable.neutral);
+				result.setText("Question " + (answersStreak+1) + " of " + NUM_QUESTION);
+		     
+		       mHandler.postAtTime(this, System.currentTimeMillis() + SECONDS_TO_WAIT);
+		   }
+		};
 	
 	// Man this is suuuuper generic, maybe such a function already exists?
 	<T extends Object> void populateListWithUniqueElements(List<T> list,
@@ -222,11 +250,6 @@ public class Main extends Activity {
 		opt2.setText(choice2);
 		opt3.setText(choice3);
 	}
-
-	private String currentQuestion;
-	private String choice1;
-	private String choice2;
-	private String choice3;
 
 	// I could just make everything static, but I almost forgot how to use this.
 	// So I wanted a reminder in code.
