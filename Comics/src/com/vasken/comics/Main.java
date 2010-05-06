@@ -2,6 +2,7 @@ package com.vasken.comics;
 
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.PennyArcadeDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.UserTask;
 
@@ -19,11 +20,11 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        downloadComic("http://www.qwantz.com/index.php?comic=1705");
+        downloadComic("http://www.penny-arcade.com/comic/2010/5/3/");
     }
     
     public void downloadComic(String url) {
-    	  new DownloadTask().execute(new DinosaurComicsDownloader(url));
+    	  new DownloadTask().execute(new PennyArcadeDownloader(url));
     }
 
     class DownloadTask extends UserTask<Downloader, Void, Comic> {
