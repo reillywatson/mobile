@@ -44,13 +44,19 @@ public class XKCDDownloader extends Downloader {
 					comic.image = WebRequester.bitmapFromUrl(m.group(1));
 					m = nextComic.matcher(responseSoFar);
 					if (m.find()) {
-						comic.nextUrl = "http://xkcd.com" + m.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
+						String next = m.group(1);
+						if (!next.equals("#")) {
+							comic.nextUrl = "http://xkcd.com" + next;
+							Log.d("NEXT URL", comic.nextUrl);
+						}
 					}
 					m = prevComic.matcher(responseSoFar);
 					if (m.find()) {
-						comic.prevUrl = "http://xkcd.com" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
+						String prev = m.group(1);
+						if (!prev.equals("#")) {
+							comic.prevUrl = "http://xkcd.com" + prev;
+							Log.d("PREV URL", comic.prevUrl);
+						}
 					}
 					m = title.matcher(responseSoFar);
 					if (m.find()) {

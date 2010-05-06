@@ -21,7 +21,7 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        downloadComic("http://xkcd.com/733/");
+        downloadComic("http://xkcd.com/");
     }
     
     public void downloadComic(String url) {
