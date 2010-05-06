@@ -16,6 +16,7 @@ import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
+import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
 
 import android.app.Activity;
@@ -127,7 +128,7 @@ public class Main extends Activity {
 		    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
 		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
 		    		if (comic.altText != null) {
-		    			alt.setText(comic.altText);
+		    			alt.setText(StringUtils.unescapeHtml(comic.altText));
 		    		}
 		    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
 		    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
@@ -149,7 +150,7 @@ public class Main extends Activity {
 		    		}
 		    		if (comic.title != null) {
 		    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
-		    			tv.setText(comic.title);
+		    			tv.setText(StringUtils.unescapeHtml(comic.title));
 		    		}
 	    		}
     		}
