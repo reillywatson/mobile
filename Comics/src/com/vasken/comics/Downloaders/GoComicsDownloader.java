@@ -1,6 +1,9 @@
 package com.vasken.comics.Downloaders;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,7 +26,7 @@ public class GoComicsDownloader extends Downloader {
 	private Pattern prevComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"(.*?)\"><< Previous</a>", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"(.*?)\">Next >></a>", Pattern.DOTALL);
 	private Pattern imgData = Pattern.compile( "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"", Pattern.DOTALL);
-
+	private Pattern date = Pattern.compile("<span class=\"authorText\">.*?</strong>(.*?)</span>", Pattern.DOTALL);
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
 		Log.d(this.getClass().getName(),"PARSING...");
@@ -37,9 +40,6 @@ public class GoComicsDownloader extends Downloader {
 					comic.image = WebRequester.bitmapFromUrl("http://imgsrv.gocomics.com/dim?fh=" + m.group(1));
 					m = nextComic.matcher(responseSoFar);
 					if (m.find()) {
-						for (int i = 0; i < m.groupCount(); i++) {
-							Log.d("GROUP " + Integer.toString(i), m.group(i));
-						}
 						String next = m.group(1);
 						String[] parts = next.split("\"");
 						if (parts.length > 0) {
@@ -52,6 +52,17 @@ public class GoComicsDownloader extends Downloader {
 					if (m.find()) {
 						comic.prevUrl = "http://www.gocomics.com" + m.group(1);
 						Log.d("PREV URL", comic.prevUrl);
+					}
+					m = date.matcher(responseSoFar);
+					if (m.find()) {
+						try {
+							comic.pubDate = DateFormat.getDateInstance(DateFormat.MEDIUM).parse(m.group(1));
+							Log.d("DATE", DateFormat.getInstance().format(comic.pubDate));
+						} catch (ParseException e) {
+							Log.d(getClass().getName(), "FAILED TO PARSE DATE: " + m.group(1));
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 					}
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
