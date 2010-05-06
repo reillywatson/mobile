@@ -9,10 +9,6 @@ import android.util.Log;
 import com.vasken.util.WebRequester;
 
 public class XKCDDownloader extends Downloader {
-
-	public XKCDDownloader(String url) {
-		super(url);
-	}
 	
 	// Fragments:
 	// <title>xkcd: Cemetery</title>

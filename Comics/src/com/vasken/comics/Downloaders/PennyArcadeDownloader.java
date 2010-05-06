@@ -10,12 +10,7 @@ import com.vasken.util.WebRequester;
 
 public class PennyArcadeDownloader extends Downloader {
 	
-	public PennyArcadeDownloader(String url) {
-		super(url);
-	}
-	
-	/*
-	<li class="float_left first"><a href="/comic/1998/11/18/">First</a></li>
+	/*<li class="float_left first"><a href="/comic/1998/11/18/">First</a></li>
 	<li class="float_left back"><a href="/comic/2010/4/28/">Back</a></li>
 	<li class="float_left news"><a href="/2010/4/30/">News</a></li>
 	<li class="float_left next"><a href="/comic/2010/5/3/">Next</a></li>

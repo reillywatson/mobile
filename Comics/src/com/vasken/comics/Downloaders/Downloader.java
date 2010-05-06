@@ -3,6 +3,8 @@ package com.vasken.comics.Downloaders;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
 
+import android.util.Log;
+
 import com.vasken.comics.Comic;
 import com.vasken.util.WebRequester;
 
@@ -11,9 +13,9 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected Comic comic;
 	protected String url;
 	
-	public Downloader(String url) {
+	public void setUrl(String url) {
 		this.url = url;
-	}	
+	}
 
 	protected Comic newComic() {
 		Comic c = new Comic();
@@ -22,6 +24,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}
 	
 	public Comic getComic() {
+		Log.d("GETTING COMIC", url);
 		comic = null;
 		HttpUriRequest request = createHttpRequest(url);
 		requester.makeRequest(request, this);

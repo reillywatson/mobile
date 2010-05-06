@@ -1,5 +1,8 @@
 package com.vasken.comics;
 
+import java.util.ArrayList;
+
+import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
@@ -9,6 +12,8 @@ import com.vasken.util.UserTask;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -16,16 +21,48 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Main extends Activity {
+	
+	class ComicInfo {
+    	String name;
+    	String startUrl;
+    	Downloader downloader;
+    	public ComicInfo(String name, String startUrl, Downloader downloader) {
+    		this.name = name; this.startUrl = startUrl; this.downloader = downloader;
+    	}
+    }
+    ArrayList<ComicInfo> comics = new ArrayList<ComicInfo>();
+	Downloader currentDownloader;
+	
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new DilbertDownloader()));
+    	comics.add(new ComicInfo("FoxTrot", "http://www.gocomics.com/foxtrot/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("BC", "http://www.gocomics.com/bc/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Shoe", "http://www.gocomics.com/shoe/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Garfield", "http://www.gocomics.com/garfield/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Wizard of Id", "http://www.gocomics.com/wizardofid/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse'", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Bloom County", "http://www.gocomics.com/bloomcounty/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new PennyArcadeDownloader()));
+    	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new XKCDDownloader()));
+    	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/", new DinosaurComicsDownloader()));
+    	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        downloadComic("http://www.gocomics.com/calvinandhobbes/2010/05/05/");
+        selectComic(comics.get(0));
+    }
+    
+    public void selectComic(ComicInfo info) {
+    	currentDownloader = info.downloader;
+		downloadComic(info.startUrl);
     }
     
     public void downloadComic(String url) {
-    	  new DownloadTask().execute(new GoComicsDownloader(url));
+    	currentDownloader.setUrl(url);
+    	new DownloadTask().execute(currentDownloader);
     }
 
     class DownloadTask extends UserTask<Downloader, Void, Comic> {
@@ -71,6 +108,24 @@ public class Main extends Activity {
 	    		}
     		}
     	}
+    }
+    
+    
+    
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	for (ComicInfo info : comics) {
+    		menu.add(0, info.name.hashCode(), 0, info.name);
+    	}
+        return true;
+    }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	for (ComicInfo info : comics) { 
+    		if (item.getItemId() == info.name.hashCode()) {
+    			selectComic(info);
+    			return true;
+    		}
+    	}
+        return false;
     }
 }

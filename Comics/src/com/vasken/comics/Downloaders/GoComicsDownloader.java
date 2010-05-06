@@ -9,11 +9,6 @@ import android.util.Log;
 import com.vasken.util.WebRequester;
 
 public class GoComicsDownloader extends Downloader {
-	
-	public GoComicsDownloader(String url) {
-		super(url);
-	}
-	
 	// Sample HTML fragment:
 	//<img alt="?fh=10b07e5a5bf87622b7e6ccc8ea3fe9b3" src="http://imgsrv.gocomics.com/dim/?fh=10b07e5a5bf87622b7e6ccc8ea3fe9b3" width="100%" />
 	//<div><span class="authorText"><strong>Bill Amend</strong>April 25, 2010</span>

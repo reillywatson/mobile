@@ -9,10 +9,6 @@ import android.util.Log;
 import com.vasken.util.WebRequester;
 
 public class DinosaurComicsDownloader extends Downloader {
-
-	public DinosaurComicsDownloader(String url) {
-		super(url);
-	}
 	
 	// Fragments (Ryan North hates line breaks!):
 	//<span class="rss-content"><img src="http://www.qwantz.com/comics/comic2-1729.png" class="comic" title="BUT SINCE YOU'RE HERE LET US ASK TWO QUESTIONS: DO YOU THINK NON-REFUSAL IS A PROPER SUBCLASS OF ACCEPTANCE, AND HOW COME YOU SAY &quot;FRIG&quot; SO MUCH"></span>
