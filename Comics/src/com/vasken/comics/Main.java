@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.AchewoodDownloader;
+import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
@@ -44,6 +45,7 @@ public class Main extends Activity {
     // TODO: find out why JPEG decoding is failing!
     //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
     //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
+    	comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new ArcaMaxDownloader()));
     	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new ShermansLagoonDownloader()));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new AchewoodDownloader()));
