@@ -38,6 +38,7 @@ public class SharingMachineDownloader extends Downloader {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
 				try {
+					Log.d("GETTING IMAGE FROM URL", m.group(1));
 					comic.image = WebRequester.bitmapFromUrl(m.group(1));
 					comic.title = m.group(2);
 					String[] urlParts = m.group(1).split("/");

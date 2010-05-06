@@ -38,6 +38,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new DilbertDownloader()));
