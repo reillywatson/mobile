@@ -2,9 +2,9 @@
 <resources>
     <string name="app_name">TV Trivia: Lost</string>
     
-    <string name="fail_title">Oh No!</string>
-    <string name="fail_message">You lose... \nMaybe you\'re not that amazing?</string>
-    <string name="fail_button">Sure I am!</string>
+    <string name="wrong">Nope, it was actually \'%1$s\'. Try again.</string>
+    <string name="correct">You got it!</string>
+    <string name="start_text">Are you a real fan?\nCan you answer %1$d questions in a row?</string>
     
     <string name="win_title">Wow!</string>
     <string name="win_message">You Win. \nClearly you\'re awesome!</string>

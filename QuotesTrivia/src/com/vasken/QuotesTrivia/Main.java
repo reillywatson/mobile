@@ -17,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Main extends Activity {
 	private static final String QUESTION = "QUESTION";
@@ -35,7 +36,7 @@ public class Main extends Activity {
 
 	final int STEP = 10;
 	final int SECONDARY_STEP = 5;
-	final int MAX = 100;
+	final int NUM_QUESTION = 10;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -46,7 +47,7 @@ public class Main extends Activity {
 		opt2 = (Button) findViewById(R.id.opt2);
 		opt3 = (Button) findViewById(R.id.opt3);
 		try {
-			quotestore = new QuoteStore(this, R.raw.lost);
+			quotestore = new QuoteStore(this, R.raw.arrested_development);
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
@@ -56,6 +57,10 @@ public class Main extends Activity {
 		}else{
 			reloadQuote(savedInstanceState);
 		}
+		
+		TextView result = ((TextView)findViewById(R.id.result));
+		result.setBackgroundResource(R.drawable.neutral);
+		result.setText(Main.this.getString(R.string.start_text, NUM_QUESTION));
 		
 		opt1.setOnClickListener(buttonClicked);
 		opt2.setOnClickListener(buttonClicked);
@@ -81,7 +86,7 @@ public class Main extends Activity {
 
 	private void initializeScore() {
 		Progress progress = (Progress) findViewById(R.id.score);
-		progress.setMax(MAX);
+		progress.setMax(NUM_QUESTION * STEP);
 		progress.setSecondaryProgress(SECONDARY_STEP);
 	}
 
@@ -91,7 +96,11 @@ public class Main extends Activity {
 			if (b.getText().equals(currentAnswer)) {
 				answersStreak += 1;
 				
-				if (answersStreak == (MAX/STEP)) {
+				TextView result = ((TextView)findViewById(R.id.result));
+				result.setBackgroundResource(R.drawable.correct);
+				result.setText(R.string.correct);
+				
+				if (answersStreak == NUM_QUESTION) {
 					answersStreak = 0;
 					
 					AlertDialog.Builder builder;
@@ -114,22 +123,9 @@ public class Main extends Activity {
 			} else {
 				answersStreak = 0;
 				
-				AlertDialog.Builder builder;
-				AlertDialog alertDialog;
-
-				builder = new AlertDialog.Builder(Main.this);
-				builder
-					.setTitle(R.string.fail_title)
-					.setIcon(R.drawable.fail)
-					.setMessage(R.string.fail_message)
-					.setCancelable(true)
-					.setPositiveButton(R.string.fail_button, new DialogInterface.OnClickListener() {
-			           public void onClick(DialogInterface dialog, int id) {
-			        	   dialog.cancel();
-			           }
-			       });
-				alertDialog = builder.create();
-				alertDialog.show();
+				TextView result = ((TextView)findViewById(R.id.result));
+				result.setBackgroundResource(R.drawable.wrong);
+				result.setText(Main.this.getString(R.string.wrong, currentAnswer));
 			}
 			loadNewQuote();
 
