@@ -37,7 +37,7 @@ public class Main extends Activity {
 
 	final int STEP = 10;
 	final int SECONDARY_STEP = 5;
-	final int NUM_QUESTION = 2;
+	final int NUM_QUESTION = 10;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -48,7 +48,7 @@ public class Main extends Activity {
 		opt2 = (Button) findViewById(R.id.opt2);
 		opt3 = (Button) findViewById(R.id.opt3);
 		try {
-			quotestore = new QuoteStore(this, R.raw.arrested_development);
+			quotestore = new QuoteStore(this, R.raw.lost);
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
