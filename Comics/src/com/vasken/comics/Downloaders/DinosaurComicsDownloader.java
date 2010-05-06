@@ -18,7 +18,6 @@ public class DinosaurComicsDownloader extends Downloader {
 	private Pattern title = Pattern.compile("<title>Dinosaur Comics - (.*?) - awesome fun times!</title>", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("<div id=\"previous\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<div id=\"next\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
-	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>");
 	
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
@@ -45,10 +44,6 @@ public class DinosaurComicsDownloader extends Downloader {
 					m = title.matcher(responseSoFar);
 					if (m.find()) {
 						comic.title = m.group(1);
-					}
-					m = altText.matcher(responseSoFar);
-					if (m.find()) {
-						comic.altText = m.group(1);
 					}
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");

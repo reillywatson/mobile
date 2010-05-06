@@ -124,11 +124,11 @@ public class Main extends Activity {
 		    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
 		    		imgView.setImageBitmap(comic.image);
 		    		imgView.setLongClickable(comic.altText != null);
-		    		/*TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
+		    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
 		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
 		    		if (comic.altText != null) {
 		    			alt.setText(comic.altText);
-		    		}*/
+		    		}
 		    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
 		    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
 		    		boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);
