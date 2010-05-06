@@ -43,7 +43,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Shoe", "http://www.gocomics.com/shoe/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Garfield", "http://www.gocomics.com/garfield/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Wizard of Id", "http://www.gocomics.com/wizardofid/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse'", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Bloom County", "http://www.gocomics.com/bloomcounty/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
