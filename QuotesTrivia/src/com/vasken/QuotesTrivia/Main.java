@@ -19,10 +19,14 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 
 public class Main extends Activity {
+	private static final String QUESTION = "QUESTION";
+	private static final String CHOICE1 = "CHOICE1";
+	private static final String CHOICE2 = "CHOICE2";
+	private static final String CHOICE3 = "CHOICE3";
+	
 	static int answersStreak = 0;
 
 	QuoteStore quotestore;
-	int questionNumber;
 	Button opt1;
 	Button opt2;
 	Button opt3;
@@ -46,8 +50,13 @@ public class Main extends Activity {
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
-		questionNumber = 0;
-		loadNewQuote();
+		
+		if (savedInstanceState == null) {
+			loadNewQuote();
+		}else{
+			reloadQuote(savedInstanceState);
+		}
+		
 		opt1.setOnClickListener(buttonClicked);
 		opt2.setOnClickListener(buttonClicked);
 		opt3.setOnClickListener(buttonClicked);
@@ -129,7 +138,7 @@ public class Main extends Activity {
 			progress.setSecondaryProgress(progress.getProgress() + SECONDARY_STEP);
 		}
 	};
-
+	
 	// Man this is suuuuper generic, maybe such a function already exists?
 	<T extends Object> void populateListWithUniqueElements(List<T> list,
 			int desiredSize, Callable<T> generator) {
@@ -159,7 +168,6 @@ public class Main extends Activity {
 	private String episodePrefix = "<span style='margin-left: 40px'><b>Name the episode:</b></span><p>";
 
 	void loadNewQuote() {
-		questionNumber++;
 		final WebView quoteview = (WebView) findViewById(R.id.quote);
 		SimpsonsQuote quote = quotestore.randomQuote();
 		List<String> answers = new ArrayList<String>();
@@ -200,16 +208,58 @@ public class Main extends Activity {
 		populateListWithUniqueElements(answers, 3, generator);
 		Collections.shuffle(answers);
 
-		Log.d("PRE", question);
 		question = "<span style='color: white'> " + question + " </span>";
-		Log.d("AFTER", question);
+		currentQuestion = question;
+		
 		quoteview.loadData(question, "text/html", "utf-8");
 		// otherwise if we go from something that fits on one page to something
 		// that doesn't, the
 		// scroll indicator doesn't show up
 		quoteview.setVerticalScrollbarOverlay(true);
-		opt1.setText(answers.get(0));
-		opt2.setText(answers.get(1));
-		opt3.setText(answers.get(2));
+		
+		choice1 = answers.get(0);
+		choice2 = answers.get(1);
+		choice3 = answers.get(2);
+		
+		opt1.setText(choice1);
+		opt2.setText(choice2);
+		opt3.setText(choice3);
+	}
+
+	private String currentQuestion;
+
+	private String choice1;
+
+	private String choice2;
+
+	private String choice3;
+
+	@Override
+	public void onSaveInstanceState(Bundle savedInstanceState) {
+		// Don't be null
+		savedInstanceState.putString(QUESTION, currentQuestion);
+		savedInstanceState.putString(CHOICE1, choice1);
+		savedInstanceState.putString(CHOICE2, choice2);
+		savedInstanceState.putString(CHOICE3, choice3);
+		super.onSaveInstanceState(savedInstanceState);
+	}
+
+	private void reloadQuote(Bundle savedInstanceState) {
+		String question = savedInstanceState.getString(QUESTION);
+		String answer1 = savedInstanceState.getString(CHOICE1);
+		String answer2 = savedInstanceState.getString(CHOICE2);
+		String answer3 = savedInstanceState.getString(CHOICE3);
+		
+		choice1 = answer1;
+		choice2 = answer2;
+		choice3 = answer3;
+		this.currentQuestion = question;
+		
+		WebView quoteview = (WebView) findViewById(R.id.quote);
+		quoteview.loadData(question, "text/html", "utf-8");
+		
+		opt1.setText(answer1);
+		opt2.setText(answer2);
+		opt3.setText(answer3);
 	}
 }

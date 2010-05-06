@@ -8,7 +8,7 @@ import android.widget.SeekBar;
 
 public class Progress  extends SeekBar {
 
-    private int oHeight = 100, oWidth = 10;
+    private int oHeight = 100, oWidth = 20;
 
     public Progress(Context context) {
             super(context);
