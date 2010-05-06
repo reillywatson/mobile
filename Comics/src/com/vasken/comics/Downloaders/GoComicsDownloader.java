@@ -30,7 +30,6 @@ public class GoComicsDownloader extends Downloader {
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
 		Log.d(this.getClass().getName(),"PARSING...");
-	//	Log.d("hey", responseSoFar.toString());
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);
 			if (m.find()) {
@@ -55,14 +54,7 @@ public class GoComicsDownloader extends Downloader {
 					}
 					m = date.matcher(responseSoFar);
 					if (m.find()) {
-						try {
-							comic.pubDate = DateFormat.getDateInstance(DateFormat.MEDIUM).parse(m.group(1));
-							Log.d("DATE", DateFormat.getInstance().format(comic.pubDate));
-						} catch (ParseException e) {
-							Log.d(getClass().getName(), "FAILED TO PARSE DATE: " + m.group(1));
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
+						comic.title =m.group(1);
 					}
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");

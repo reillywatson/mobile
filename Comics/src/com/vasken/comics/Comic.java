@@ -9,7 +9,6 @@ public class Comic {
 	public String url;
 	public String nextUrl;
 	public String prevUrl;
-	public Date pubDate;
 	public String title;
 	public String altText;
 }

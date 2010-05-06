@@ -4,6 +4,7 @@ import java.text.DateFormat;
 
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
+import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.UserTask;
 
 import android.app.Activity;
@@ -20,11 +21,11 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        downloadComic("http://www.gocomics.com/foxtrot/2005/01/01");
+        downloadComic("http://xkcd.com/733/");
     }
     
     public void downloadComic(String url) {
-    	  new DownloadTask().execute(new GoComicsDownloader(url));
+    	  new DownloadTask().execute(new XKCDDownloader(url));
     }
 
     class DownloadTask extends UserTask<Downloader, Void, Comic> {
@@ -55,9 +56,9 @@ public class Main extends Activity {
 								Main.this.downloadComic(comic.nextUrl);
 							}});
 		    		}
-		    		if (comic.pubDate != null) {
-		    			TextView tv = (TextView)Main.this.findViewById(R.id.pub_date);
-		    			tv.setText(DateFormat.getDateInstance().format(comic.pubDate));
+		    		if (comic.title != null) {
+		    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
+		    			tv.setText(comic.title);
 		    		}
 	    		}
     		}
