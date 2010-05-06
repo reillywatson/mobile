@@ -1,6 +1,7 @@
 package com.vasken.comics;
 
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
 
 import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.AchewoodDownloader;
@@ -32,9 +33,9 @@ public class Main extends Activity {
 	class ComicInfo {
     	String name;
     	String startUrl;
-    	Downloader downloader;
-    	public ComicInfo(String name, String startUrl, Downloader downloader) {
-    		this.name = name; this.startUrl = startUrl; this.downloader = downloader;
+    	Callable<Downloader> downloaderConstructor;
+    	public ComicInfo(String name, String startUrl, Callable<Downloader> constructor) {
+    		this.name = name; this.startUrl = startUrl; this.downloaderConstructor = constructor;
     	}
     }
     ArrayList<ComicInfo> comics = new ArrayList<ComicInfo>();
@@ -44,44 +45,44 @@ public class Main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     // TODO: find out why JPEG decoding is failing!
-    	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
-    	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
-    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
-    	comics.add(new ComicInfo("Peanuts", "http://www.comics.com/peanuts/", new ComicsDotComDownloader()));
-    	comics.add(new ComicInfo("Marmaduke", "http://www.comics.com/marmaduke/", new ComicsDotComDownloader()));
-    	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new ShermansLagoonDownloader()));
-    	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
-    	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new AchewoodDownloader()));
-    	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new DilbertDownloader()));
-    	comics.add(new ComicInfo("FoxTrot", "http://www.gocomics.com/foxtrot/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("BC", "http://www.gocomics.com/bc/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Shoe", "http://www.gocomics.com/shoe/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Garfield", "http://www.gocomics.com/garfield/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Wizard of Id", "http://www.gocomics.com/wizardofid/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Bloom County", "http://www.gocomics.com/bloomcounty/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new PennyArcadeDownloader()));
-    	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new XKCDDownloader()));
-    	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new PvPDownloader()));
-    	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new DinosaurComicsDownloader()));
-    	comics.add(new ComicInfo("Adam@Home", "http://www.gocomics.com/adamathome/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Andy Capp", "http://www.gocomics.com/andycapp/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Broom Hilda", "http://www.gocomics.com/broomhilda/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Daddy's Home", "http://www.gocomics.com/daddyshome/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Dick Tracy", "http://www.gocomics.com/dicktracy/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Doonesbury", "http://www.gocomics.com/doonesbury/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Frank & Ernest", "http://www.gocomics.com/shoe/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Lio", "http://www.gocomics.com/lio/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Heathcliff", "http://www.gocomics.com/heathcliff/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Overboard", "http://www.gocomics.com/overboard/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Real Life Adventures", "http://www.gocomics.com/reallifeadventures/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Red and Rover", "http://www.gocomics.com/redandrover/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new GoComicsDownloader()));
-    	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ASofterWorldDownloader(); }}));
+    	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
+    	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.nataliedee.com"); }}));
+    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.marriedtothesea.com"); }}));
+    	comics.add(new ComicInfo("Peanuts", "http://www.comics.com/peanuts/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsDotComDownloader(); }}));
+    	comics.add(new ComicInfo("Marmaduke", "http://www.comics.com/marmaduke/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsDotComDownloader(); }}));
+    	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new Callable<Downloader>(){public Downloader call() throws Exception { return new ShermansLagoonDownloader(); }}));
+    	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
+    	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new AchewoodDownloader(); }}));
+    	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new DilbertDownloader(); }}));
+    	comics.add(new ComicInfo("FoxTrot", "http://www.gocomics.com/foxtrot/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("BC", "http://www.gocomics.com/bc/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Shoe", "http://www.gocomics.com/shoe/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Garfield", "http://www.gocomics.com/garfield/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Wizard of Id", "http://www.gocomics.com/wizardofid/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("For Better or For Worse", "http://www.gocomics.com/forbetterorforworse/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Bloom County", "http://www.gocomics.com/bloomcounty/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PennyArcadeDownloader(); }}));
+    	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PvPDownloader(); }}));
+    	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new DinosaurComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Adam@Home", "http://www.gocomics.com/adamathome/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Andy Capp", "http://www.gocomics.com/andycapp/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Broom Hilda", "http://www.gocomics.com/broomhilda/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Daddy's Home", "http://www.gocomics.com/daddyshome/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Dick Tracy", "http://www.gocomics.com/dicktracy/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Doonesbury", "http://www.gocomics.com/doonesbury/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Frank & Ernest", "http://www.gocomics.com/shoe/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Lio", "http://www.gocomics.com/lio/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Heathcliff", "http://www.gocomics.com/heathcliff/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Overboard", "http://www.gocomics.com/overboard/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Real Life Adventures", "http://www.gocomics.com/reallifeadventures/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Red and Rover", "http://www.gocomics.com/redandrover/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	// [TODO] These ArcaMax downloaders are unreliable at parsing previous and next 
     	//comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new ArcaMaxDownloader()));
     	//comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new ArcaMaxDownloader()));
@@ -96,7 +97,12 @@ public class Main extends Activity {
     }
     
     public void selectComic(ComicInfo info) {
-    	currentDownloader = info.downloader;
+    	try {
+			currentDownloader = info.downloaderConstructor.call();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		downloadComic(info.startUrl);
     }
     
@@ -118,11 +124,11 @@ public class Main extends Activity {
 		    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
 		    		imgView.setImageBitmap(comic.image);
 		    		imgView.setLongClickable(comic.altText != null);
-		    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
+		    		/*TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
 		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
 		    		if (comic.altText != null) {
 		    			alt.setText(comic.altText);
-		    		}
+		    		}*/
 		    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
 		    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
 		    		boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);
