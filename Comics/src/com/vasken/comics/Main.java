@@ -63,6 +63,22 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new XKCDDownloader()));
     	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new PvPDownloader()));
     	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new DinosaurComicsDownloader()));
+    	comics.add(new ComicInfo("Adam@Home", "http://www.gocomics.com/adamathome/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Andy Capp", "http://www.gocomics.com/andycapp/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Broom Hilda", "http://www.gocomics.com/broomhilda/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Daddy's Home", "http://www.gocomics.com/daddyshome/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Dick Tracy", "http://www.gocomics.com/dicktracy/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Doonesbury", "http://www.gocomics.com/doonesbury/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Frank & Ernest", "http://www.gocomics.com/shoe/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Lio", "http://www.gocomics.com/lio/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Heathcliff", "http://www.gocomics.com/heathcliff/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Overboard", "http://www.gocomics.com/overboard/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Real Life Adventures", "http://www.gocomics.com/reallifeadventures/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Red and Rover", "http://www.gocomics.com/redandrover/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new GoComicsDownloader()));
+    	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new GoComicsDownloader()));
+    	
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         selectComic(comics.get(0));
