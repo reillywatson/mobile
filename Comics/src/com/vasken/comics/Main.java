@@ -8,6 +8,7 @@ import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.PennyArcadeDownloader;
 import com.vasken.comics.Downloaders.PvPDownloader;
+import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.UserTask;
 
@@ -37,6 +38,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new DilbertDownloader()));
     	comics.add(new ComicInfo("FoxTrot", "http://www.gocomics.com/foxtrot/", new GoComicsDownloader()));
