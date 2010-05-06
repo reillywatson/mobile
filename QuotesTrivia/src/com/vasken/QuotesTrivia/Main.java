@@ -24,6 +24,7 @@ public class Main extends Activity {
 	private static final String CHOICE1 = "CHOICE1";
 	private static final String CHOICE2 = "CHOICE2";
 	private static final String CHOICE3 = "CHOICE3";
+	private static final String CURRENT_ANSWER = "CURRENT_ANSWER";
 	
 	static int answersStreak = 0;
 
@@ -36,7 +37,7 @@ public class Main extends Activity {
 
 	final int STEP = 10;
 	final int SECONDARY_STEP = 5;
-	final int NUM_QUESTION = 10;
+	final int NUM_QUESTION = 2;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -52,15 +53,15 @@ public class Main extends Activity {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
 		
+		TextView result = ((TextView)findViewById(R.id.result));
+		result.setBackgroundResource(R.drawable.neutral);
+		result.setText(Main.this.getString(R.string.start_text, NUM_QUESTION));
+		
 		if (savedInstanceState == null) {
 			loadNewQuote();
 		}else{
 			reloadQuote(savedInstanceState);
 		}
-		
-		TextView result = ((TextView)findViewById(R.id.result));
-		result.setBackgroundResource(R.drawable.neutral);
-		result.setText(Main.this.getString(R.string.start_text, NUM_QUESTION));
 		
 		opt1.setOnClickListener(buttonClicked);
 		opt2.setOnClickListener(buttonClicked);
@@ -223,11 +224,8 @@ public class Main extends Activity {
 	}
 
 	private String currentQuestion;
-
 	private String choice1;
-
 	private String choice2;
-
 	private String choice3;
 
 	// I could just make everything static, but I almost forgot how to use this.
@@ -238,6 +236,8 @@ public class Main extends Activity {
 		savedInstanceState.putString(CHOICE1, choice1);
 		savedInstanceState.putString(CHOICE2, choice2);
 		savedInstanceState.putString(CHOICE3, choice3);
+		savedInstanceState.putString(CURRENT_ANSWER, currentAnswer);
+		
 		super.onSaveInstanceState(savedInstanceState);
 	}
 
@@ -246,11 +246,13 @@ public class Main extends Activity {
 		String answer1 = savedInstanceState.getString(CHOICE1);
 		String answer2 = savedInstanceState.getString(CHOICE2);
 		String answer3 = savedInstanceState.getString(CHOICE3);
+		String current = savedInstanceState.getString(CURRENT_ANSWER);
 		
 		choice1 = answer1;
 		choice2 = answer2;
 		choice3 = answer3;
-		this.currentQuestion = question;
+		currentQuestion = question;
+		currentAnswer = current;
 		
 		WebView quoteview = (WebView) findViewById(R.id.quote);
 		quoteview.loadData(question, "text/html", "utf-8");
