@@ -7,6 +7,7 @@ import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.PennyArcadeDownloader;
+import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.UserTask;
 
@@ -49,6 +50,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new PennyArcadeDownloader()));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new XKCDDownloader()));
+    	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new PvPDownloader()));
     	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new DinosaurComicsDownloader()));
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
