@@ -2,6 +2,7 @@ package com.vasken.comics;
 
 import java.util.ArrayList;
 
+import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
@@ -38,6 +39,9 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    // TODO: find out why JPEG decoding is failing!
+    //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
+    //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
     	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));

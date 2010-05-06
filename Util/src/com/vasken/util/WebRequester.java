@@ -36,6 +36,7 @@ public class WebRequester {
 		URL url = new URL(urlString);
     	InputStream is = (InputStream)url.getContent();
     	Bitmap image = BitmapFactory.decodeStream(is, null, null);
+    	is.close();
     	return image;
 	}
 	
