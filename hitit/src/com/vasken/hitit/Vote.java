@@ -1,9 +1,7 @@
 package com.vasken.hitit;
 
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Set;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -26,7 +24,7 @@ public class Vote extends Activity {
 	private int HOT = 10;	// Maybe this should be 8, to be realistic 
 	
 	static final int NUM_WORKERS = 2;
-    static final int DESIRED_QUEUE_LENGTH = 5;
+    static final int DESIRED_QUEUE_LENGTH = 20;
 	
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
@@ -38,7 +36,7 @@ public class Vote extends Activity {
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
 	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
-    private Set<String> seenItems = new HashSet<String>();
+    //private Set<String> seenItems = new HashSet<String>();
 	
     public OnClickListener defaultClickListener(final int rating) {
     	return new OnClickListener() {
@@ -129,8 +127,8 @@ public class Vote extends Activity {
     }
     
     void itemReady(final HotItem item) {
-    	if (item != null && !seenItems.contains(item.getRateId())) {
-    		seenItems.add(item.getRateId());
+    	if (item != null ){//&& !seenItems.contains(item.getRateId())) {
+    		//seenItems.add(item.getRateId());
     		if (waitingForImage) {
 				showItem(item);
 	    	}
