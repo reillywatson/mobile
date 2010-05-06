@@ -44,8 +44,8 @@ public class Main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     // TODO: find out why JPEG decoding is failing!
-    //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
-    //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
+    	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
+    	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
     	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Peanuts", "http://www.comics.com/peanuts/", new ComicsDotComDownloader()));
     	comics.add(new ComicInfo("Marmaduke", "http://www.comics.com/marmaduke/", new ComicsDotComDownloader()));

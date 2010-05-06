@@ -6,10 +6,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.URISyntaxException;
 import java.net.URL;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.entity.BufferedHttpEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.graphics.Bitmap;
@@ -33,11 +38,22 @@ public class WebRequester {
 	}
 	
 	public static Bitmap bitmapFromUrl(String urlString) throws IOException {
-		URL url = new URL(urlString);
-    	InputStream is = (InputStream)url.getContent();
-    	Bitmap image = BitmapFactory.decodeStream(is, null, null);
-    	is.close();
-    	return image;
+		URL bitmapUrl = new URL(urlString);
+        HttpGet httpRequest = null;
+
+        try {
+                httpRequest = new HttpGet(bitmapUrl.toURI());
+        } catch (URISyntaxException e) {
+                e.printStackTrace();
+        }
+
+        HttpClient httpclient = new DefaultHttpClient();
+        HttpResponse response = (HttpResponse) httpclient.execute(httpRequest);
+
+        HttpEntity entity = response.getEntity();
+        BufferedHttpEntity bufHttpEntity = new BufferedHttpEntity(entity); 
+        InputStream instream = bufHttpEntity.getContent();
+        return BitmapFactory.decodeStream(instream);
 	}
 	
 	public interface RequestCallback {
