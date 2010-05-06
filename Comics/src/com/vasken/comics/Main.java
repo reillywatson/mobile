@@ -47,6 +47,7 @@ public class Main extends Activity {
     //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
     //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
     	comics.add(new ComicInfo("Peanuts", "http://www.comics.com/peanuts/", new ComicsDotComDownloader()));
+    	comics.add(new ComicInfo("Marmaduke", "http://www.comics.com/marmaduke/", new ComicsDotComDownloader()));
     	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new ShermansLagoonDownloader()));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new AchewoodDownloader()));
