@@ -1,7 +1,5 @@
 package com.vasken.comics;
 
-import java.util.Date;
-
 import android.graphics.Bitmap;
 
 public class Comic {

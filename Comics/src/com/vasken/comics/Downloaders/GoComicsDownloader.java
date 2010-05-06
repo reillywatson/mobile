@@ -1,9 +1,6 @@
 package com.vasken.comics.Downloaders;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

@@ -1,9 +1,7 @@
 package com.vasken.comics;
 
-import java.text.DateFormat;
-
+import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
-import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.UserTask;
 
@@ -21,11 +19,11 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        downloadComic("http://xkcd.com/");
+        downloadComic("http://www.qwantz.com/index.php?comic=1705");
     }
     
     public void downloadComic(String url) {
-    	  new DownloadTask().execute(new XKCDDownloader(url));
+    	  new DownloadTask().execute(new DinosaurComicsDownloader(url));
     }
 
     class DownloadTask extends UserTask<Downloader, Void, Comic> {
@@ -40,17 +38,25 @@ public class Main extends Activity {
     			if (comic.image != null) {
 		    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
 		    		imgView.setImageBitmap(comic.image);
+		    		imgView.setLongClickable(comic.altText != null);
+		    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
+		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
+		    		if (comic.altText != null) {
+		    			alt.setText(comic.altText);
+		    		}
 		    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
 		    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
-		    		prev.setEnabled(comic.prevUrl != null);
-		    		next.setEnabled(comic.nextUrl != null);
-		    		if (comic.prevUrl != null) {
+		    		boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);
+		    		boolean enableNext = comic.nextUrl != null && !comic.nextUrl.equals(comic.url);
+		    		prev.setEnabled(enablePrev);
+		    		next.setEnabled(enableNext);
+		    		if (enablePrev) {
 		    			prev.setOnClickListener(new OnClickListener() {
 		    				public void onClick(View arg0) {
 								Main.this.downloadComic(comic.prevUrl);
 							}});
 		    		}
-		    		if (comic.nextUrl != null) {
+		    		if (enableNext) {
 		    			next.setOnClickListener(new OnClickListener() {
 		    				public void onClick(View arg0) {
 								Main.this.downloadComic(comic.nextUrl);

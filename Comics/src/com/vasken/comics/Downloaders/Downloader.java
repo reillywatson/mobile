@@ -16,7 +16,9 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}	
 
 	protected Comic newComic() {
-		return new Comic();
+		Comic c = new Comic();
+		c.url = url;
+		return c;
 	}
 	
 	public Comic getComic() {
