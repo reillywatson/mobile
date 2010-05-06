@@ -22,7 +22,6 @@ public class Worker implements WebRequester.RequestCallback {
 
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
     private Pattern prevRatingRegex = Pattern.compile("class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes", Pattern.DOTALL);
-    private WebRequester requester = new WebRequester();
     
     String id;
     int rating;
@@ -60,7 +59,7 @@ public class Worker implements WebRequester.RequestCallback {
 			
 			Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 		}
-		requester.makeRequest(httpPost, this);
+		new WebRequester().makeRequest(httpPost, this);
 		return item;
 	}
 	
