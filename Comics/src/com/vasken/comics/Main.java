@@ -83,12 +83,12 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new GoComicsDownloader()));
     	// [TODO] These ArcaMax downloaders are unreliable at parsing previous and next 
-    	comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new ArcaMaxDownloader()));
-    	comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new ArcaMaxDownloader()));
-    	comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new ArcaMaxDownloader()));
-    	comics.add(new ComicInfo("Hagar the Horrible", "http://www.arcamax.com/hagarthehorrible/", new ArcaMaxDownloader()));
-    	comics.add(new ComicInfo("Family Circus", "http://www.arcamax.com/familycircus/", new ArcaMaxDownloader()));
-    	comics.add(new ComicInfo("Mother Goose & Grimm", "http://www.arcamax.com/mothergooseandgrimm/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Hagar the Horrible", "http://www.arcamax.com/hagarthehorrible/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Family Circus", "http://www.arcamax.com/familycircus/", new ArcaMaxDownloader()));
+    	//comics.add(new ComicInfo("Mother Goose & Grimm", "http://www.arcamax.com/mothergooseandgrimm/", new ArcaMaxDownloader()));
     	
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
