@@ -20,8 +20,8 @@ public class GoComicsDownloader extends Downloader {
 	//<span class="archiveText"><a href="/foxtrot/2010/04/18/"><< Previous</a><a href="/foxtrot/2010/05/02/">Next >></a></span></div>
 
 	
-	private Pattern prevComic = Pattern.compile("<a href=\"(.*?)\"><< Previous</a>", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<a href=\"(.*?)\">Next >></a>", Pattern.DOTALL);
+	private Pattern prevComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"(.*?)\"><< Previous</a>", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"(.*?)\">Next >></a>", Pattern.DOTALL);
 	private Pattern imgData = Pattern.compile( "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"", Pattern.DOTALL);
 
 	@Override
@@ -37,11 +37,21 @@ public class GoComicsDownloader extends Downloader {
 					comic.image = WebRequester.bitmapFromUrl("http://imgsrv.gocomics.com/dim?fh=" + m.group(1));
 					m = nextComic.matcher(responseSoFar);
 					if (m.find()) {
-						comic.nextUrl = "http://www.gocomics.com" + m.group(1);
+						for (int i = 0; i < m.groupCount(); i++) {
+							Log.d("GROUP " + Integer.toString(i), m.group(i));
+						}
+						String next = m.group(1);
+						String[] parts = next.split("\"");
+						if (parts.length > 0) {
+							next = parts[parts.length - 1];
+							comic.nextUrl = "http://www.gocomics.com" + next;
+						}
+						Log.d("NEXT URL", comic.nextUrl);
 					}
 					m = prevComic.matcher(responseSoFar);
 					if (m.find()) {
 						comic.prevUrl = "http://www.gocomics.com" + m.group(1);
+						Log.d("PREV URL", comic.prevUrl);
 					}
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
