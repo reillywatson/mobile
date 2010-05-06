@@ -1,14 +1,13 @@
 package com.vasken.comics.Downloaders;
 
 import java.io.IOException;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Log;
 
 import com.vasken.util.WebRequester;
+import com.vasken.util.YearMonthDay;
 
 public class SharingMachineDownloader extends Downloader {
 	
@@ -25,8 +24,8 @@ public class SharingMachineDownloader extends Downloader {
 	
 	private Pattern imgData = Pattern.compile( "<div class=\"headertext\">.*?<a href=\"(.*?)\">(.*?)<", Pattern.DOTALL);
 	
-	private String getComicUrl(Calendar calendar) {
-		return String.format("%s/index.php?date=%02d%02d%02d", rootDomain, calendar.get(Calendar.MONTH), calendar.get(Calendar.DATE), calendar.get(Calendar.YEAR));
+	private String getComicUrl(YearMonthDay date) {
+		return String.format("%s/index.php?date=%02d%02d%02d", rootDomain, date.getMonth(), date.getDay(), date.getYear());
 	}
 	
 	@Override
@@ -43,14 +42,11 @@ public class SharingMachineDownloader extends Downloader {
 					comic.title = m.group(2);
 					String[] urlParts = m.group(1).split("/");
 					String dateStr = urlParts[urlParts.length - 2];
-					Calendar calendar = Calendar.getInstance();
-					calendar.set(Calendar.MONTH, Integer.parseInt(dateStr.substring(0, 2)));
-					calendar.set(Calendar.DATE, Integer.parseInt(dateStr.substring(2, 4)));
-					calendar.set(Calendar.YEAR, Integer.parseInt(dateStr.substring(4, 6)));
-					calendar.add(Calendar.DATE, 1);
-					comic.nextUrl = getComicUrl(calendar);
-					calendar.add(Calendar.DATE, -2);
-					comic.prevUrl = getComicUrl(calendar);
+					YearMonthDay date = new YearMonthDay(Integer.parseInt(dateStr.substring(4, 6)), Integer.parseInt(dateStr.substring(0, 2)), Integer.parseInt(dateStr.substring(2, 4)));
+					comic.nextUrl = getComicUrl(date.addDays(1));
+					comic.prevUrl = getComicUrl(date.subtractDays(1));
+					Log.d("NEXT", comic.nextUrl);
+					Log.d("PREV", comic.prevUrl);
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
 					// TODO Auto-generated catch block

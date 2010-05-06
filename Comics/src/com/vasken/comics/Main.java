@@ -46,12 +46,12 @@ public class Main extends Activity {
     // TODO: find out why JPEG decoding is failing!
     //	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new ASofterWorldDownloader()));
     //	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new SharingMachineDownloader("http://www.nataliedee.com")));
+    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Peanuts", "http://www.comics.com/peanuts/", new ComicsDotComDownloader()));
     	comics.add(new ComicInfo("Marmaduke", "http://www.comics.com/marmaduke/", new ComicsDotComDownloader()));
     	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new ShermansLagoonDownloader()));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new SharingMachineDownloader("http://www.toothpastefordinner.com")));
     	comics.add(new ComicInfo("Achewood", "http://www.achewood.com/", new AchewoodDownloader()));
-    	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new SharingMachineDownloader("http://www.marriedtothesea.com")));
     	comics.add(new ComicInfo("Non Sequitur", "http://www.gocomics.com/nonsequitur/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Pickles", "http://www.gocomics.com/pickles/", new GoComicsDownloader()));
     	comics.add(new ComicInfo("Calvin and Hobbes", "http://www.gocomics.com/calvinandhobbes/", new GoComicsDownloader()));
