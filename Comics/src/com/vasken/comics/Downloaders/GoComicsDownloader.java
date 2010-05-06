@@ -6,36 +6,42 @@ import java.util.regex.Pattern;
 
 import android.util.Log;
 
-import com.vasken.comics.Comic;
 import com.vasken.util.WebRequester;
 
 public class GoComicsDownloader extends Downloader {
 	
-	  //<li><a href="/foxtrot/2010/04/25/" class="prev">Previous feature</a></li>        <li><a href="#" class="cal" onclick="toggleCal(); return false">Show Calendar</a><div id="calDiv"></div></li>
-      //       </ul>
-
-   // <p class="feature_item"><a href = 'http://imgsrv.gocomics.com/dim/?fh=0a7c63547d207b37b752fe41ecc9364f&w=900.0'><img alt="FoxTrot" height="422" src="http://imgsrv.gocomics.com/dim/?fh=0a7c63547d207b37b752fe41ecc9364f" width="600" /></a> </p>
-
-	private Pattern prevComic = Pattern.compile("<a href=\"(.*?)\" class=\"prev\">", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<a href=\"(.*?)\" class=\"next\">", Pattern.DOTALL);
-	private Pattern imgData = Pattern.compile( "<p class=\"feature_item\">.*?<img .*? src=\"(.*?)\"", Pattern.DOTALL);
+	public GoComicsDownloader(String url) {
+		super(url);
+	}
+	
+	// Sample HTML fragment:
+	//<img alt="?fh=10b07e5a5bf87622b7e6ccc8ea3fe9b3" src="http://imgsrv.gocomics.com/dim/?fh=10b07e5a5bf87622b7e6ccc8ea3fe9b3" width="100%" />
+	//<div><span class="authorText"><strong>Bill Amend</strong>April 25, 2010</span>
+	//<span class="archiveText"><a href="/foxtrot/2010/04/18/"><< Previous</a><a href="/foxtrot/2010/05/02/">Next >></a></span></div>
 
 	
+	private Pattern prevComic = Pattern.compile("<a href=\"(.*?)\"><< Previous</a>", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<a href=\"(.*?)\">Next >></a>", Pattern.DOTALL);
+	private Pattern imgData = Pattern.compile( "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"", Pattern.DOTALL);
+
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		if (responseSoFar.length() > 9000) {
+		Log.d(this.getClass().getName(),"PARSING...");
+	//	Log.d("hey", responseSoFar.toString());
+		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);
 			if (m.find()) {
-				comic = new Comic();
+				Log.d("HEY", "WE HAVE A WINNER!");
+				comic = newComic();
 				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
+					comic.image = WebRequester.bitmapFromUrl("http://imgsrv.gocomics.com/dim?fh=" + m.group(1));
 					m = nextComic.matcher(responseSoFar);
 					if (m.find()) {
-						comic.nextUrl = m.group(1);
+						comic.nextUrl = "http://www.gocomics.com" + m.group(1);
 					}
 					m = prevComic.matcher(responseSoFar);
 					if (m.find()) {
-						comic.prevUrl = m.group(1);
+						comic.prevUrl = "http://www.gocomics.com" + m.group(1);
 					}
 				} catch (IOException e) {
 					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
@@ -45,7 +51,6 @@ public class GoComicsDownloader extends Downloader {
 				return true;
 			}
 		}
-		// TODO Auto-generated method stub
 		return false;
 	}
 

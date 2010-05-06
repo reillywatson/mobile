@@ -7,10 +7,19 @@ import com.vasken.comics.Comic;
 import com.vasken.util.WebRequester;
 
 public abstract class Downloader implements WebRequester.RequestCallback {
-	WebRequester requester = new WebRequester();	
-	Comic comic;
+	private WebRequester requester = new WebRequester();	
+	protected Comic comic;
+	protected String url;
+	
+	public Downloader(String url) {
+		this.url = url;
+	}	
 
-	public Comic getComic(String url) {
+	protected Comic newComic() {
+		return new Comic();
+	}
+	
+	public Comic getComic() {
 		comic = null;
 		HttpUriRequest request = createHttpRequest(url);
 		requester.makeRequest(request, this);
