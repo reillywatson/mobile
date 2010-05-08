@@ -121,38 +121,40 @@ public class Main extends Activity {
     	@Override
     	public void onPostExecute(final Comic comic) {
     		if (comic != null) {
-    			if (comic.image != null) {
-		    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
+	    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
+	    		imgView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
+	    		if (comic.image != null) {
 		    		imgView.setImageBitmap(comic.image);
 		    		imgView.setLongClickable(comic.altText != null);
-		    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
-		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
-		    		if (comic.altText != null) {
-		    			alt.setText(StringUtils.unescapeHtml(comic.altText));
-		    		}
-		    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
-		    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
-		    		boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);
-		    		boolean enableNext = comic.nextUrl != null && !comic.nextUrl.equals(comic.url);
-		    		prev.setEnabled(enablePrev);
-		    		next.setEnabled(enableNext);
-		    		if (enablePrev) {
-		    			prev.setOnClickListener(new OnClickListener() {
-		    				public void onClick(View arg0) {
-								Main.this.downloadComic(comic.prevUrl);
-							}});
-		    		}
-		    		if (enableNext) {
-		    			next.setOnClickListener(new OnClickListener() {
-		    				public void onClick(View arg0) {
-								Main.this.downloadComic(comic.nextUrl);
-							}});
-		    		}
-		    		if (comic.title != null) {
-		    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
-		    			tv.setText(StringUtils.unescapeHtml(comic.title));
-		    		}
+    			}
+	    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
+	    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
+	    		if (comic.altText != null) {
+	    			alt.setText(StringUtils.unescapeHtml(comic.altText));
 	    		}
+	    		Button prev = (Button)Main.this.findViewById(R.id.prev_comic);
+	    		Button next = (Button)Main.this.findViewById(R.id.next_comic);
+	    		boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);
+	    		boolean enableNext = comic.nextUrl != null && !comic.nextUrl.equals(comic.url);
+	    		prev.setEnabled(enablePrev);
+	    		next.setEnabled(enableNext);
+	    		if (enablePrev) {
+	    			prev.setOnClickListener(new OnClickListener() {
+	    				public void onClick(View arg0) {
+							Main.this.downloadComic(comic.prevUrl);
+						}});
+	    		}
+	    		if (enableNext) {
+	    			next.setOnClickListener(new OnClickListener() {
+	    				public void onClick(View arg0) {
+							Main.this.downloadComic(comic.nextUrl);
+						}});
+	    		}
+	    		if (comic.title != null) {
+	    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
+	    			tv.setText(StringUtils.unescapeHtml(comic.title));
+	    		}
+	    		
     		}
     	}
     }
