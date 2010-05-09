@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
 import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.AchewoodDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
+import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
@@ -45,7 +46,6 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    // TODO: find out why JPEG decoding is failing!
     	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ASofterWorldDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
@@ -84,6 +84,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Red and Rover", "http://www.gocomics.com/redandrover/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Awkward Zombie", "http://www.awkwardzombie.com/comic1.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new AwkwardZombieDownloader(); }}));
     	// [TODO] These ArcaMax downloaders are unreliable at parsing previous and next 
     	//comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new ArcaMaxDownloader()));
     	//comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new ArcaMaxDownloader()));
