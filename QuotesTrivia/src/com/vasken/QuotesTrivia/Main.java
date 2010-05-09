@@ -17,9 +17,10 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.vasken.util.StringUtils;
 
 public class Main extends Activity {
 	private static final String QUESTION = "QUESTION";
@@ -34,11 +35,16 @@ public class Main extends Activity {
 	private String choice2;
 	private String choice3;
 	
+
+	int desiredPercentOfSpeakerQuestions = 25;
+	int desiredPercentOfTriviaQuestions = 15;
+	
 	static int answersStreak = 0;
 
 	private Handler mHandler = new Handler();
 	
-	QuoteStore quotestore;
+	private QuoteStore quotestore;
+	private TriviaStore triviastore;
 	Button opt1;
 	Button opt2;
 	Button opt3;
@@ -55,12 +61,14 @@ public class Main extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.main);
 		opt1 = (Button) findViewById(R.id.opt1);
 		opt2 = (Button) findViewById(R.id.opt2);
 		opt3 = (Button) findViewById(R.id.opt3);
 		try {
-			quotestore = new QuoteStore(this, R.raw.lost);
+			quotestore = new QuoteStore(this, R.raw.the_simpsons);
+			triviastore = new TriviaStore(this, R.raw.simpsons_trivia);
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
@@ -83,18 +91,6 @@ public class Main extends Activity {
 
 		final WebView quoteview = (WebView) findViewById(R.id.quote);
 		quoteview.setBackgroundColor(0);
-		quoteview.getSettings().setJavaScriptEnabled(true);
-
-		/* WebViewClient must be set BEFORE calling loadUrl! */
-		quoteview.setWebViewClient(new WebViewClient() {
-			@Override
-			public void onPageFinished(WebView view, String url) {
-				quoteview
-						.loadUrl("javascript:(function() { "
-								+ "document.getElementsByTagName('body')[0].style.marginLeft = '-30px'; "
-								+ "})()");
-			}
-		});
 
 		initializeScore();
 	}
@@ -189,48 +185,59 @@ public class Main extends Activity {
 		return "<dl><dd>" + noSpeaker;
 	}
 
-	private String nameSpeakerPrefix = "<span style='margin-left: 40px'><b>Who said it?</b></span><p>";
-	private String episodePrefix = "<span style='margin-left: 40px'><b>Name the episode:</b></span><p>";
+	private String nameSpeakerPrefix = "<span><b>Who said it?</b></span><p>";
+	private String episodePrefix = "<span><b>Name the episode:</b></span><p>";
 
 	void loadNewQuote() {
 		final WebView quoteview = (WebView) findViewById(R.id.quote);
+		
 		SimpsonsQuote quote = quotestore.randomQuote();
 		List<String> answers = new ArrayList<String>();
 
 		boolean isSpeakerQuestion = false;
-		int desiredPercentOfSpeakerQuestions = 20;
-		if (quotestore.canDoSpeakerQuestions()
-				&& rand.nextInt(100) <= desiredPercentOfSpeakerQuestions) {
+		boolean isTriviaQuestion = false;
+		int nextRandInt = rand.nextInt(100);
+		if (quotestore.canDoSpeakerQuestions() && nextRandInt <= desiredPercentOfSpeakerQuestions) {
 			isSpeakerQuestion = true;
 			while (quote.speaker == null) {
 				quote = quotestore.randomQuote();
 			}
+		}else if (triviastore.isAvailable() && nextRandInt <= desiredPercentOfSpeakerQuestions + desiredPercentOfTriviaQuestions ) {
+			isTriviaQuestion = true;
 		}
-
-		Callable<String> generator;
 
 		String question = quote.quote;
 
-		if (isSpeakerQuestion) {
-			currentAnswer = quote.speaker;
-			generator = new Callable<String>() {
-				public String call() throws Exception {
-					return quotestore.randomSpeaker();
-				}
-			};
-			question = nameSpeakerPrefix + removeSpeaker(question);
-		} else {
-			currentAnswer = quote.episode;
-			generator = new Callable<String>() {
-				public String call() throws Exception {
-					return quotestore.randomEpisode();
-				}
-			};
-			question = episodePrefix + question;
-		}
+		if (isTriviaQuestion) {
+			Question triviaQuestion = triviastore.getQuestion();
+			question = "<b>" + triviaQuestion.question + "</b>";
+			currentAnswer = triviaQuestion.correctAnswer;
+			answers = triviaQuestion.answers;
+		}else{
+			Callable<String> generator;
+			if (isSpeakerQuestion) {
+				currentAnswer = quote.speaker;
+				generator = new Callable<String>() {
+					public String call() throws Exception {
+						return quotestore.randomSpeaker();
+					}
+				};
+				question = nameSpeakerPrefix + "<div style='margin-left: -40px'>" + removeSpeaker(question) + "</div>";
+	
+			} else {
+				currentAnswer = quote.episode;
+				generator = new Callable<String>() {
+					public String call() throws Exception {
+						return quotestore.randomEpisode();
+					}
+				};
+				question = episodePrefix + "<div style='margin-left: -40px'>" + question + "</div>";
+	
+			}
 
-		answers.add(currentAnswer);
-		populateListWithUniqueElements(answers, 3, generator);
+			answers.add(currentAnswer);
+			populateListWithUniqueElements(answers, 3, generator);
+		}
 		Collections.shuffle(answers);
 
 		question = "<span style='color: white'> " + question + " </span>";
@@ -242,9 +249,9 @@ public class Main extends Activity {
 		// scroll indicator doesn't show up
 		quoteview.setVerticalScrollbarOverlay(true);
 		
-		choice1 = answers.get(0);
-		choice2 = answers.get(1);
-		choice3 = answers.get(2);
+		choice1 = StringUtils.unescapeHtml(answers.get(0));
+		choice2 = StringUtils.unescapeHtml(answers.get(1));
+		choice3 = StringUtils.unescapeHtml(answers.get(2));
 		
 		opt1.setText(choice1);
 		opt2.setText(choice2);
