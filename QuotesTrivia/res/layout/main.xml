@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res/com.vasken.QuotesTrivia"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.SimpsonsTrivia"
     android:orientation="vertical"
     android:background="@color/black"
     android:layout_width="fill_parent"
@@ -48,7 +48,7 @@
           android:layout_height="wrap_content"
         />
     
-    <com.vasken.QuotesTrivia.Progress
+    <com.vasken.SimpsonsTrivia.Progress
     	android:id="@+id/score"
     	android:layout_alignParentRight="true"
         android:progressDrawable="@drawable/progress"

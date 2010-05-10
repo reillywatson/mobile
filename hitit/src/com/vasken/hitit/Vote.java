@@ -24,7 +24,7 @@ public class Vote extends Activity {
 	private int HOT = 10;	// Maybe this should be 8, to be realistic 
 	
 	static final int NUM_WORKERS = 2;
-    static final int DESIRED_QUEUE_LENGTH = 20;
+    static final int DESIRED_QUEUE_LENGTH = 10;
 	
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
@@ -55,7 +55,7 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-        	workerPool.add(new Worker(getString(R.string.rate_url_female)));
+        	workerPool.add(new Worker(getString(R.string.rate_url_male)));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
