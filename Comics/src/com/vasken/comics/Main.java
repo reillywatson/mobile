@@ -16,6 +16,7 @@ import com.vasken.comics.Downloaders.PennyArcadeDownloader;
 import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
+import com.vasken.comics.Downloaders.SinfestDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
@@ -46,6 +47,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	//comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ASofterWorldDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
