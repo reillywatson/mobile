@@ -29,7 +29,7 @@ public class ArcaMaxDownloader extends Downloader {
 	 
 	 */
 
-	private Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)", Pattern.DOTALL);
+	private Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)\"", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("Today's</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
 	

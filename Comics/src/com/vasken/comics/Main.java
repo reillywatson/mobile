@@ -47,7 +47,6 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
@@ -93,7 +92,8 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Stone Soup", "http://www.gocomics.com/stonesoup/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("Ziggy", "http://www.gocomics.com/ziggy/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("Awkward Zombie", "http://www.awkwardzombie.com/comic1.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new AwkwardZombieDownloader(); }}));
-    	
+    	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
+   	
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         selectComic(comics.get(0));
