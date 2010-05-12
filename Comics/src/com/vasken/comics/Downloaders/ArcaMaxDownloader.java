@@ -39,22 +39,26 @@ public class ArcaMaxDownloader extends Downloader {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
+			Matcher prevComicMatcher = prevComic.matcher(responseSoFar);
+			Matcher nextComicMatcher = nextComic.matcher(responseSoFar);
+			boolean hasNext = nextComicMatcher.find();
+			boolean hasPrev = prevComicMatcher.find();
+			if (m.find() && (hasNext || hasPrev)) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
 				try {
 					comic.image = WebRequester.bitmapFromUrl(m.group(1));
 					comic.title = m.group(2);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						if (!m.group(1).contains("newsletter")) {
-							comic.nextUrl = "http://www.arcamax.com" + m.group(1);
+					
+					if (hasNext) {
+						if (!nextComicMatcher.group(1).contains("newsletter")) {
+							comic.nextUrl = "http://www.arcamax.com" + nextComicMatcher.group(1);
 							Log.d("NEXT URL", comic.nextUrl);
 						}
 					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.prevUrl = "http://www.arcamax.com" + m.group(1);
+					
+					if (hasPrev) {
+						comic.prevUrl = "http://www.arcamax.com" + prevComicMatcher.group(1);
 						Log.d("PREV URL", comic.prevUrl);
 					}
 				} catch (IOException e) {
