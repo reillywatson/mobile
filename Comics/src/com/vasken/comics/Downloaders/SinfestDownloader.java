@@ -38,38 +38,42 @@ public class SinfestDownloader extends Downloader {
 	  </table>*/
 	
 	private Pattern comicData = Pattern.compile("<img src=\"http://sinfest.net/comikaze/(.*?)\" alt=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("<a href=\"http://sinfest.net/archive_page.php?comicID=(\\d*?)\">\\w*?<img src=\"images/prev_a.gif\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<a href=\"http://sinfest.net/archive_page.php?comicID=(\\d*?)\">\\w*?<img src=\"images/next_a.gif\"", Pattern.DOTALL);
+	private Pattern prevComic = Pattern.compile("first_a.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("prev_a.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
 		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 12000) {
-			Matcher m = comicData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl("http://sinfest.net/comikaze/" + m.group(1));
-					comic.title = m.group(2);
-					Log.d("TITLE", comic.title);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.nextUrl = "http://sinfest.net/archive_page.php?comicID=" + m.group(1);
+		Matcher m = comicData.matcher(responseSoFar);
+		Matcher prevMatcher = prevComic.matcher(responseSoFar);
+		Matcher nextMatcher = nextComic.matcher(responseSoFar);
+		boolean hasNext = nextMatcher.find();
+		boolean hasPrev = prevMatcher.find();
+		if (m.find() && (hasNext || hasPrev)) {
+			Log.d("HEY", "WE HAVE A WINNER!");
+			comic = newComic();
+			try {
+				comic.image = WebRequester.bitmapFromUrl("http://sinfest.net/comikaze/" + m.group(1));
+				comic.title = m.group(2);
+				Log.d("TITLE", comic.title);
+				
+				if (hasNext) {
+					String next = nextMatcher.group(1);
+					if (next.contains("archive_page.php")) {
+						comic.nextUrl = nextMatcher.group(1);
 						Log.d("NEXT URL", comic.nextUrl);
 					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find() && !url.endsWith("=1")) {
-						comic.prevUrl = "http://sinfest.net/archive_page.php?comicID=" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
-				return true;
+				if (hasPrev && !url.endsWith("=1")) {
+					comic.prevUrl = prevMatcher.group(1);
+					Log.d("PREV URL", comic.prevUrl);
+				}
+			} catch (IOException e) {
+				Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+			return true;
 		}
 		return false;
 	}

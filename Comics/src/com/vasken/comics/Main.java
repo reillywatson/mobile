@@ -47,14 +47,13 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    	// [TODO] These ArcaMax downloaders are unreliable at parsing previous and next 
+    	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Hagar the Horrible", "http://www.arcamax.com/hagarthehorrible/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Family Circus", "http://www.arcamax.com/familycircus/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Mother Goose & Grimm", "http://www.arcamax.com/mothergooseandgrimm/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
-    	//comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("Garfield Minus Garfield", "http://www.gocomics.com/garfieldminusgarfield/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GoComicsDownloader(); }}));
     	comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ASofterWorldDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));

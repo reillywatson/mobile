@@ -29,8 +29,7 @@ public class ArcaMaxDownloader extends Downloader {
 	 
 	 */
 
-	// This doesn't reliably get prev and next...
-	private Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\".*?alt=\"(.*?)", Pattern.DOTALL);
+	private Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("Today's</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
 	
@@ -49,6 +48,8 @@ public class ArcaMaxDownloader extends Downloader {
 				try {
 					comic.image = WebRequester.bitmapFromUrl(m.group(1));
 					comic.title = m.group(2);
+					
+					Log.d("TITLE", comic.title);
 					
 					if (hasNext) {
 						if (!nextComicMatcher.group(1).contains("newsletter")) {
