@@ -8,6 +8,7 @@ import com.vasken.comics.Downloaders.AchewoodDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
+import com.vasken.comics.Downloaders.CreatorsDotComDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
@@ -47,6 +48,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+       	comics.add(new ComicInfo("Archie", "http://www.creators.com/comics/archie.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
     	comics.add(new ComicInfo("Zits", "http://www.arcamax.com/zits/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
