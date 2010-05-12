@@ -28,8 +28,8 @@ public class AwkwardZombieDownloader extends Downloader {
 	</center>*/
 	
 	private Pattern comicPattern = Pattern.compile( "<font size=\"3\".*?<center>(.*?)</center>.*?<img src=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("<a href=\"(.*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_2.gif\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<a href=\"(.*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_4.gif\"", Pattern.DOTALL);
+	private Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_2.gif\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_4.gif\"", Pattern.DOTALL);
 	
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar) {
@@ -49,13 +49,13 @@ public class AwkwardZombieDownloader extends Downloader {
 					comic.title = m.group(1);
 					if (hasPrev) {
 						String prevUrl = prev.group(1);
-						prevUrl = prevUrl.substring(prevUrl.lastIndexOf("http://"));
+						//prevUrl = prevUrl.substring(prevUrl.lastIndexOf("http://"));
 						comic.prevUrl = prevUrl;
 						Log.d("PREV URL", comic.prevUrl);
 					}
 					if (hasNext) {
 						String nextUrl = next.group(1);
-						nextUrl = nextUrl.substring(nextUrl.lastIndexOf("http://"));
+						//nextUrl = nextUrl.substring(nextUrl.lastIndexOf("http://"));
 						comic.nextUrl = nextUrl;
 						Log.d("NEXT URL", comic.nextUrl);
 					}
