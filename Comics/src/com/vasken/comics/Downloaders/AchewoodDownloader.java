@@ -20,11 +20,9 @@ public class AchewoodDownloader extends Downloader {
 	private static Pattern nextComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"right\"><a href=\"(.*?)\"", Pattern.DOTALL);
 	private static Pattern date = Pattern.compile("<span class=\"date\">(.*?)</span>", Pattern.DOTALL);
 
-	
 	protected Pattern getComicPattern() {
 		return imgData;
 	}
-
 	protected Pattern getNextComicPattern() {
 		return nextComic;
 	}

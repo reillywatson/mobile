@@ -29,11 +29,9 @@ public class ASofterWorldDownloader extends Downloader {
 	private static Pattern prevComic = Pattern.compile("<span class=\"rss-content\">.*?dopeoplereallystillusespacers.*?href=\"(.*?)\"", Pattern.DOTALL);
 	private static Pattern nextComic = Pattern.compile("http://www.asofterworld.com/stumbleupon.gif.*?href=\"(.*?)\"", Pattern.DOTALL);
 	
-
 	protected Pattern getComicPattern() {
 		return comicData;
 	}
-
 	protected Pattern getNextComicPattern() {
 		return nextComic;
 	}

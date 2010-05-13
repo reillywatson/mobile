@@ -26,13 +26,11 @@ public class ArcaMaxDownloader extends Downloader {
 	
 	private static Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)\"", Pattern.DOTALL);
 	private static Pattern prevComic = Pattern.compile("Today's</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
-	private static Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
-
+	private static Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\">Next", Pattern.DOTALL);
 	
 	protected Pattern getComicPattern() {
 		return imgData;
 	}
-
 	protected Pattern getNextComicPattern() {
 		return nextComic;
 	}
@@ -51,7 +49,6 @@ public class ArcaMaxDownloader extends Downloader {
 		return false;
 	}
 	
-
 	@Override
 	protected String getBaseComicURL() {
 		return "http://www.arcamax.com";
