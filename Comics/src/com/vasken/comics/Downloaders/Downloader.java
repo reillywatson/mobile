@@ -25,8 +25,6 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected String getBaseComicURL() { return ""; }
 	protected String getBasePrevNextURL() { return ""; }
 	
-	protected int headerGarbageEstimate() { return 5000; }
-	
 	protected boolean parseTitle(StringBuilder partialResponse) {
 		Pattern p = getTitlePattern();
 		if (p == null)
@@ -85,7 +83,9 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	
 	@Override
 	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		if (isFinal || responseSoFar.length() > headerGarbageEstimate()) {
+		// This sometimes breaks next links (when we get a partial response that contains the prev link but not the next link),
+		// but it's hard to tell if we're on the newest strip (ie no next link), so maybe we'll only handle full responses for now...
+		if (isFinal) {
 			Log.d(this.getClass().getName(),"PARSING...");
 			comic = newComic();
 			boolean success = parseComic(responseSoFar);

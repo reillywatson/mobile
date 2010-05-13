@@ -3,8 +3,6 @@ package com.vasken.comics.Downloaders;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.util.Log;
-
 public class PvPDownloader extends Downloader {
 
 	/*<div id="comic">
@@ -23,56 +21,32 @@ public class PvPDownloader extends Downloader {
 	</div>
 	*/
 	private Pattern comicPattern = Pattern.compile( "<div id=\"comic\">.*?<img src=\"(.*?)\".*?title=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("<div id=\"navbar-previous\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<div id=\"navbar-next\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	
+	private Pattern prevComic = Pattern.compile("<div id=\"navbar-previous\">[^<]*?<a href=\"(.*?)\" rel=\"prev\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<div id=\"navbar-next\">.*?<a href=\"(.*?)\" rel=\"next\"", Pattern.DOTALL);
+
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			// We have to match on all 3 of these, because this is one of the odd comics where the navigation is on the bottom
-			Matcher m = comicPattern.matcher(responseSoFar);
-			Matcher prev = prevComic.matcher(responseSoFar);
-			Matcher next = nextComic.matcher(responseSoFar);
-			boolean hasPrev = prev.find();
-			boolean hasNext = next.find();
-			if (m.find() && (hasPrev || hasNext)) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image = m.group(1);
-				comic.title = m.group(2);
-				if (hasPrev) {
-					comic.prevUrl = prev.group(1);
-					Log.d("PREV URL", comic.prevUrl);
-				}
-				if (hasNext) {
-					String nextUrl = next.group(1);
-					if (nextUrl.contains("pvponline.com")) {
-						comic.nextUrl = next.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-				}
-				return true;
-			}
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = comicPattern.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1);
+			comic.title = m.group(2);
+			return true;
 		}
 		return false;
 	}
-
+	
 	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return comicPattern;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
 	}
 }
