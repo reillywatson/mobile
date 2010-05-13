@@ -24,6 +24,7 @@ import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
 import com.vasken.comics.Downloaders.SinfestDownloader;
+import com.vasken.comics.Downloaders.UserFriendlyDownloader;
 import com.vasken.comics.Downloaders.VGCatsDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.StringUtils;
@@ -321,6 +322,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("The Least I Could Do", "http://leasticoulddo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new LeastICouldDoDownloader(); }}));
     	comics.add(new ComicInfo("The Perry Bible Fellowship", "http://pbfcomics.com/?cid=PBF247-Catch_Phrase.jpg", new Callable<Downloader>(){public Downloader call() throws Exception { return new PerryBibleFellowshipDownloader(); }}));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
+    	comics.add(new ComicInfo("User Friendly", "http://ars.userfriendly.org/cartoons/?mode=classic", new Callable<Downloader>(){public Downloader call() throws Exception { return new UserFriendlyDownloader(); }}));
     	comics.add(new ComicInfo("VG Cats", "http://www.vgcats.com/comics/", new Callable<Downloader>(){public Downloader call() throws Exception { return new VGCatsDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
     	
