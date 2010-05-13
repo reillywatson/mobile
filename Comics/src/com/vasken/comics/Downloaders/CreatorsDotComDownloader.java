@@ -1,9 +1,6 @@
 package com.vasken.comics.Downloaders;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
 
 public class CreatorsDotComDownloader extends Downloader {
 	/*
@@ -37,69 +34,36 @@ public class CreatorsDotComDownloader extends Downloader {
 	
 	private Pattern date = Pattern.compile("<span class=\"time\">(.*?)</span>", Pattern.DOTALL);
 	private Pattern imgData = Pattern.compile( "img src=\"/comics/(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("<div class=\"relative\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("arrow_l.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"time_l two\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"time_r two\"", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			Matcher prevComicMatcher = prevComic.matcher(responseSoFar);
-			Matcher nextComicMatcher = nextComic.matcher(responseSoFar);
-			boolean hasNext = nextComicMatcher.find();
-			boolean hasPrev = prevComicMatcher.find();
-			if (m.find() && (hasNext || hasPrev)) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image = "http://www.creators.com/comics/" + m.group(1);
-				m = date.matcher(responseSoFar);
-				if (m.matches()) {
-					comic.title = m.group(1);
-					Log.d("TITLE", comic.title);
-				}
-				
-				if (hasNext) {
-					String next = nextComicMatcher.group(1);
-					if (!next.equals("/")) {
-						comic.nextUrl = "http://www.creators.com" + nextComicMatcher.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-				}
-				
-				if (hasPrev) {
-					// we rely on arrow_l.gif existing to get our "next" link, but if it's the first comic, arrow_.gif isn't there,
-					// and there isn't a previous link in that case
-					if (!hasNext && !responseSoFar.toString().contains("arrow_l.gif")) {
-						comic.nextUrl = "http://www.creators.com" + prevComicMatcher.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-					else {
-						comic.prevUrl = "http://www.creators.com" + prevComicMatcher.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-				}
-				return true;
-			}
-		}
-		return false;
-	}
-
-	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return imgData;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
+	}
+	
+	@Override
+	protected Pattern getTitlePattern() {
+		return date;
+	}
+	
+	@Override
+	protected String getBaseComicURL() {
+		return "http://www.creators.com/comics/";
+	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://www.creators.com";
 	}
 }
