@@ -52,14 +52,4 @@ public class ASofterWorldDownloader extends Downloader {
 		}
 		return false;
 	}
-	
-	@Override
-	protected boolean parsePrevLink(StringBuilder partialResponse) {
-		boolean success = super.parsePrevLink(partialResponse);
-		if (success && comic.prevUrl.endsWith("=1")) {
-			comic.prevUrl = null;
-			return false;
-		}
-		return success;
-	}
 }

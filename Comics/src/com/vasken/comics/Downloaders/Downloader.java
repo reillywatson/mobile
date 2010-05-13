@@ -65,7 +65,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	
 	protected boolean parsePrevLink(StringBuilder partialResponse) {
 		Matcher m = getPrevComicPattern().matcher(partialResponse);
-		if (m.find()) {
+		if (m.find() && !url.endsWith("=1")) {
 			comic.prevUrl = getBasePrevNextURL() + m.group(1);			
 			Log.d("PREV", comic.prevUrl);
 			return true;

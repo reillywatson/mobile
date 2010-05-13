@@ -17,53 +17,36 @@ public class DinosaurComicsDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<div id=\"next\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 8000) {
-			Matcher m = comicData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image =m.group(1);
-				comic.altText = m.group(2);
-				Log.d("ALT TEXT", comic.altText);
-				m = nextComic.matcher(responseSoFar);
-				if (m.find()) {
-					comic.nextUrl = m.group(1);
-					Log.d("NEXT URL", comic.nextUrl);
-				}
-				m = prevComic.matcher(responseSoFar);
-				if (m.find() && !url.endsWith("=1")) {
-					comic.prevUrl = m.group(1);
-					Log.d("PREV URL", comic.prevUrl);
-				}
-				m = title.matcher(responseSoFar);
-				if (m.find()) {
-					comic.title = m.group(1);
-				}
-				return true;
-			}
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = comicData.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1);
+			comic.altText = m.group(2);
+			Log.d("IMAGE", comic.image);
+			Log.d("ALT TEXT", comic.altText);
+			return true;
 		}
 		return false;
 	}
-
+	
 	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return comicData;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
 	}
 
+	@Override
+	protected Pattern getTitlePattern() {
+		return title;
+	}
 
 }
