@@ -10,6 +10,7 @@ import com.vasken.comics.Downloaders.AmazingSuperPowersDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
 import com.vasken.comics.Downloaders.ButtersafeDownloader;
+import com.vasken.comics.Downloaders.CapesNBabesDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
 import com.vasken.comics.Downloaders.CreatorsDotComDownloader;
 import com.vasken.comics.Downloaders.CtrlAltDelDownloader;
@@ -65,6 +66,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	comics.add(new ComicInfo("Capes -N- Babes", "http://www.capesnbabes.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new CapesNBabesDownloader(); }}));
     	comics.add(new ComicInfo("Girls with Slingshots", "http://www.gwscomic.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GirlsWithSlingshotsDownloader(); }}));
     	comics.add(new ComicInfo("AmazingSuperPowers", "http://www.amazingsuperpowers.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new AmazingSuperPowersDownloader(); }}));
     	comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
