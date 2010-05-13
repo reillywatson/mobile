@@ -1,7 +1,5 @@
 package com.vasken.comics;
 
-import android.graphics.Bitmap;
-
 public class Comic {
 	public String image;
 	public String url;

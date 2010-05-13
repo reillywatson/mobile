@@ -1,12 +1,9 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class ComicsDotComDownloader extends Downloader {
 	/*<div class="STR_Container FirstStrip" rel="{StripID:317327, ComicID:69, Type:'Comic', DateStrip:'2010-05-03', 

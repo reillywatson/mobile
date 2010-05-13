@@ -1,12 +1,9 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class DinosaurComicsDownloader extends Downloader {
 	

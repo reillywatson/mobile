@@ -40,6 +40,7 @@ public class ArcaMaxDownloader extends Downloader {
 		return prevComic;
 	}
 	
+	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = imgData.matcher(partialResponse);
 		if (m.find()) {

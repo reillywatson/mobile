@@ -1,12 +1,7 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class AwkwardZombieDownloader extends Downloader {
 	/*<p><font size="3" color="#000000" face="verdana">
@@ -40,8 +35,9 @@ public class AwkwardZombieDownloader extends Downloader {
 	}
 	protected Pattern getPrevComicPattern() {
 		return prevComic;
-	}	
+	}
 	
+	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = comicPattern.matcher(partialResponse);
 		if (m.find()) {

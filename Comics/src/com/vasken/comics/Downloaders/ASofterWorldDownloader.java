@@ -44,7 +44,7 @@ public class ASofterWorldDownloader extends Downloader {
 		return title;
 	}
 	
-	
+	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = comicData.matcher(partialResponse);
 		if (m.find()) {
@@ -55,6 +55,7 @@ public class ASofterWorldDownloader extends Downloader {
 		return false;
 	}
 	
+	@Override
 	protected boolean parsePrevLink(StringBuilder partialResponse) {
 		boolean success = super.parsePrevLink(partialResponse);
 		if (success && comic.prevUrl.endsWith("=1")) {

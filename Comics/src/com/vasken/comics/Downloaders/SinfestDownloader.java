@@ -1,12 +1,9 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class SinfestDownloader extends Downloader {
 	/*<table border="5" cellpadding="0" cellspacing="0" style="border: 5px solid black; border-collapse: collapse" bordercolor="#111111" width="800" id="AutoNumber1" height="234" bgcolor="#FFFFFF">

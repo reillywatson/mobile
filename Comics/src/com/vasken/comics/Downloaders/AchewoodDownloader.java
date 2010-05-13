@@ -35,7 +35,7 @@ public class AchewoodDownloader extends Downloader {
 		return date;
 	}
 	
-	
+	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = imgData.matcher(partialResponse);
 		if (m.find()) {

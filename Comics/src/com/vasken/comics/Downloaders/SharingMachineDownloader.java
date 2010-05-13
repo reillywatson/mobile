@@ -1,14 +1,11 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class SharingMachineDownloader extends Downloader {
 	
