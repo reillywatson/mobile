@@ -21,8 +21,8 @@ public class CtrlAltDelDownloader extends Downloader {
 	
 	private static Pattern title = Pattern.compile("<img [^>]*? alt=\"([^>]*?)\" />[^<]*?<div class=\"navigation\"");
 	private static Pattern imgData = Pattern.compile("<img src=\"([^>]*?)\"[^<]*?<div class=\"navigation\"", Pattern.DOTALL);
-	private static Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"nav-back\"", Pattern.DOTALL);
-	private static Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"nav-next\"", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"nav-back", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\" class=\"nav-next", Pattern.DOTALL);
 	
 	
 	@Override
