@@ -1,6 +1,5 @@
 package com.vasken.comics.Downloaders;
 
-import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,10 +25,19 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected String getBaseComicURL() { return ""; }
 	protected String getBasePrevNextURL() { return ""; }
 	
-	protected int headerGarbageEstimate() { return 10000; }
+	protected int headerGarbageEstimate() { return 5000; }
 	
 	protected boolean parseTitle(StringBuilder partialResponse) {
-		return true;
+		Pattern p = getTitlePattern();
+		if (p == null)
+			return true;
+		Matcher m = p.matcher(partialResponse);
+		if (m.find()) {
+			comic.title = m.group(1);
+			Log.d("TITLE", comic.title);
+			return true;
+		}
+		return false;
 	}
 	
 	protected boolean parseComic(StringBuilder partialResponse) {

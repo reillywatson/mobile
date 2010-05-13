@@ -63,7 +63,7 @@ public class WebRequester {
 	        	totalBytesRead += bytesRead;
 	        	bytesRead = in.read(buffer, 0, buffer.length);
 	        	
-	        	if (callback.handlePartialResponse(sb, (bytesRead == 0)))
+	        	if (callback.handlePartialResponse(sb, (bytesRead < 0)))
 	        		break;
 	        }
 		} catch (Exception e) {
