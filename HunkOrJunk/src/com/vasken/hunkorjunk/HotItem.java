@@ -1,0 +1,59 @@
+package com.vasken.hunkorjunk;
+
+import android.graphics.Bitmap;
+
+public class HotItem {
+	private Bitmap image;
+	private String rateID;
+	private String resultTotals;
+	private double resultAverage;
+	private Bitmap resultImage;	
+	
+	public HotItem(Bitmap img, String rate) {
+		image = img;
+		rateID = rate;
+	}
+	
+	public HotItem() {
+	}
+
+	public Bitmap getImage() {
+		return image;
+	}
+	
+	public void setImage(Bitmap i) {
+		image = i;
+	}
+	
+	public String getRateId() {
+		return rateID;
+	}
+	
+	public void setRateId(String s) {
+		rateID = s;
+	}
+
+	public void setResultTotals(String totals) {
+		resultTotals = totals;
+	}
+
+	public String getResultTotals() {
+		return resultTotals;
+	}
+
+	public double getResultAverage() {
+		return resultAverage;
+	}
+
+	public void setResultAverage(double average) {
+		resultAverage = average;
+	}
+
+	public void setResultImage(Bitmap img) {
+		resultImage = img;
+	}
+	
+	public Bitmap getResultImage() {
+		return resultImage;
+	}
+}
