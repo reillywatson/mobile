@@ -69,8 +69,9 @@ public class Main extends Activity {
        	comics.add(new ComicInfo("State of the Union", "http://www.creators.com/comics/state-of-the-union.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
        	comics.add(new ComicInfo("Thin Lines", "http://www.creators.com/comics/thin-lines.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
        	comics.add(new ComicInfo("Wee Pals", "http://www.creators.com/comics/wee-pals.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
-       	
-    	// arcamax comics
+       	comics.add(new ComicInfo("Winnie the Pooh", "http://www.creators.com/comics/winnie-the-pooh.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
+
+       	// arcamax comics
     	comics.add(new ComicInfo("Baby Blues", "http://www.arcamax.com/babyblues/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Beetle Bailey", "http://www.arcamax.com/beetlebailey/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
     	comics.add(new ComicInfo("Blondie", "http://www.arcamax.com/blondie/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ArcaMaxDownloader(); }}));
