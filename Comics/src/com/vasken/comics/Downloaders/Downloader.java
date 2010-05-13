@@ -68,7 +68,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 		Matcher m = p.matcher(partialResponse);
 		if (m.find() && !url.endsWith("=1")) {
 			String prev = m.group(1);
-			if (!prev.equals("#") && prev.length() > 0) {
+			if (!prev.equals("#") && !prev.equals("/") && prev.length() > 0) {
 				comic.prevUrl = getBasePrevNextURL() + prev;			
 				Log.d("PREV", comic.prevUrl);
 			}
@@ -84,7 +84,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 		Matcher m = p.matcher(partialResponse);
 		if (m.find()) {
 			String next = m.group(1);
-			if (!next.equals("#") && next.length() > 0) {
+			if (!next.equals("#") && !next.equals("/") && next.length() > 0) {
 				comic.nextUrl = getBasePrevNextURL() + m.group(1);
 				Log.d("NEXT", comic.nextUrl);
 			}
