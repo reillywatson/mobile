@@ -52,29 +52,41 @@ public class SinfestDownloader extends Downloader {
 		if (m.find() && (hasNext || hasPrev)) {
 			Log.d("HEY", "WE HAVE A WINNER!");
 			comic = newComic();
-			try {
-				comic.image = WebRequester.bitmapFromUrl("http://sinfest.net/comikaze/" + m.group(1));
-				comic.title = m.group(2);
-				Log.d("TITLE", comic.title);
-				
-				if (hasNext) {
-					String next = nextMatcher.group(1);
-					if (next.contains("archive_page.php")) {
-						comic.nextUrl = nextMatcher.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
+			comic.image = "http://sinfest.net/comikaze/" + m.group(1);
+			comic.title = m.group(2);
+			Log.d("TITLE", comic.title);
+			
+			if (hasNext) {
+				String next = nextMatcher.group(1);
+				if (next.contains("archive_page.php")) {
+					comic.nextUrl = nextMatcher.group(1);
+					Log.d("NEXT URL", comic.nextUrl);
 				}
-				if (hasPrev && !url.endsWith("=1")) {
-					comic.prevUrl = prevMatcher.group(1);
-					Log.d("PREV URL", comic.prevUrl);
-				}
-			} catch (IOException e) {
-				Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			}
+			if (hasPrev && !url.endsWith("=1")) {
+				comic.prevUrl = prevMatcher.group(1);
+				Log.d("PREV URL", comic.prevUrl);
 			}
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

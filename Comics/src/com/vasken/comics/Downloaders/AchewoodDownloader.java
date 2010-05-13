@@ -1,12 +1,7 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class AchewoodDownloader extends Downloader {
 	/*<h2 id="comic_navigation">
@@ -20,46 +15,40 @@ public class AchewoodDownloader extends Downloader {
 	 class="comic" alt="Comic for April 26, 2010" /></a><br/>
 	</p>*/
 	
-	private Pattern imgData = Pattern.compile( "<p id=\"comic_body\">.*?<img src=\"(.*?)\" title=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"left\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"right\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern date = Pattern.compile("<span class=\"date\">(.*?)</span>", Pattern.DOTALL);
+	private static Pattern imgData = Pattern.compile( "<p id=\"comic_body\">.*?<img src=\"(.*?)\" title=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"left\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"right\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern date = Pattern.compile("<span class=\"date\">(.*?)</span>", Pattern.DOTALL);
+
 	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1).replaceAll("&amp;", "&"));
-					comic.altText = m.group(2);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						if (m.group(1).contains("index.php")) {
-							comic.nextUrl = "http://www.achewood.com/" + m.group(1);
-							Log.d("NEXT URL", comic.nextUrl);
-						}
-					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.prevUrl = "http://www.achewood.com/" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-					m = date.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return true;
-			}
+	protected Pattern getComicPattern() {
+		return imgData;
+	}
+
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}
+	protected Pattern getTitlePattern() {
+		return date;
+	}
+	
+	
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = imgData.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1).replaceAll("&amp;", "&");
+			comic.altText = m.group(2);
+			return true;
 		}
 		return false;
 	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://www.achewood.com/";
+	}
+	
 }

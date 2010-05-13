@@ -31,43 +31,24 @@ public class AwkwardZombieDownloader extends Downloader {
 	private Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_2.gif\"", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_4.gif\"", Pattern.DOTALL);
 	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			// We have to match on all 3 of these, because this is one of the odd comics where the navigation is on the bottom
-			Matcher m = comicPattern.matcher(responseSoFar);
-			Matcher prev = prevComic.matcher(responseSoFar);
-			Matcher next = nextComic.matcher(responseSoFar);
-			boolean hasPrev = prev.find();
-			boolean hasNext = next.find();
-			if (m.find() && (hasPrev || hasNext)) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(2));
-					comic.title = m.group(1);
-					if (hasPrev) {
-						String prevUrl = prev.group(1);
-						//prevUrl = prevUrl.substring(prevUrl.lastIndexOf("http://"));
-						comic.prevUrl = prevUrl;
-						Log.d("PREV URL", comic.prevUrl);
-					}
-					if (hasNext) {
-						String nextUrl = next.group(1);
-						//nextUrl = nextUrl.substring(nextUrl.lastIndexOf("http://"));
-						comic.nextUrl = nextUrl;
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return true;
-			}
+	protected Pattern getComicPattern() {
+		return comicPattern;
+	}
+
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}	
+	
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = comicPattern.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(2);
+			comic.title = m.group(1);
+			return true;
 		}
 		return false;
-	}
-	
+	}	
 }

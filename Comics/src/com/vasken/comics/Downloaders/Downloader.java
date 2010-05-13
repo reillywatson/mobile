@@ -1,5 +1,8 @@
 package com.vasken.comics.Downloaders;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
 
@@ -12,6 +15,76 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	private WebRequester requester = new WebRequester();	
 	protected Comic comic;
 	protected String url;
+	
+	protected abstract Pattern getComicPattern();
+	protected abstract Pattern getNextComicPattern();
+	protected abstract Pattern getPrevComicPattern();
+	protected Pattern getTitlePattern() { return null; }
+	protected Pattern getAltTextPattern() { return null; }
+	
+	protected String getBaseComicURL() { return ""; }
+	protected String getBasePrevNextURL() { return ""; }
+	
+	protected boolean parseTitle(StringBuilder partialResponse) {
+		return true;
+	}
+	
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = getComicPattern().matcher(partialResponse);
+		if (m.find()) {
+			comic.image = getBaseComicURL() + m.group(1);
+			Log.d("IMAGE", comic.image);
+			return true;
+		}
+		return false;
+	}
+	
+	protected boolean parseAltText(StringBuilder partialResponse) {
+		Pattern p = getAltTextPattern();
+		if (p == null)
+			return true;
+		Matcher m = p.matcher(partialResponse);
+		if (m.find()) {
+			comic.altText = m.group(1);
+			Log.d("ALT TEXT", comic.altText);
+			return true;
+		}
+		return false;
+	}
+	
+	protected boolean parsePrevLink(StringBuilder partialResponse) {
+		Matcher m = getPrevComicPattern().matcher(partialResponse);
+		if (m.find()) {
+			comic.prevUrl = getBasePrevNextURL() + m.group(1);
+			Log.d("PREV", comic.prevUrl);
+			return true;
+		}
+		return false;
+	}
+	
+	protected boolean parseNextLink(StringBuilder partialResponse) {
+		Matcher m = getNextComicPattern().matcher(partialResponse);
+		if (m.find()) {
+			comic.nextUrl = getBasePrevNextURL() + m.group(1);
+			Log.d("NEXT", comic.nextUrl);
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+		Log.d(this.getClass().getName(),"PARSING...");
+		comic = newComic();
+		boolean success = parseComic(responseSoFar);
+		success = success & (parsePrevLink(responseSoFar) || parseNextLink(responseSoFar));
+		success &= parseTitle(responseSoFar);
+		success &= parseAltText(responseSoFar);
+		if (success) {
+			Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
+		}
+		return success;
+	}
 	
 	public void setUrl(String url) {
 		this.url = url;

@@ -28,26 +28,39 @@ public class ComicsDotComDownloader extends Downloader {
 			if (m.find()) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					m = stripInfo.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-						if (m.group(2).length() > 0) {
-							comic.prevUrl = "http://www.comics.com" + m.group(2);
-						}
-						if (m.group(3).length() > 0) {
-							comic.nextUrl = "http://www.comics.com" + m.group(3);
-						}
+				comic.image = m.group(1);
+				m = stripInfo.matcher(responseSoFar);
+				if (m.find()) {
+					comic.title = m.group(1);
+					if (m.group(2).length() > 0) {
+						comic.prevUrl = "http://www.comics.com" + m.group(2);
 					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					if (m.group(3).length() > 0) {
+						comic.nextUrl = "http://www.comics.com" + m.group(3);
+					}
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

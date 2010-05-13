@@ -30,6 +30,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -150,6 +151,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
+    	
     	Collections.sort(comics);
     	Log.d("NUMBER OF COMICS", Integer.toString(comics.size()));
     	super.onCreate(savedInstanceState);
@@ -181,11 +183,10 @@ public class Main extends Activity {
     	@Override
     	public void onPostExecute(final Comic comic) {
     		if (comic != null) {
-	    		ImageView imgView = (ImageView)Main.this.findViewById(R.id.ImageView01);
-	    		imgView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
+    			WebView webView = (WebView)Main.this.findViewById(R.id.WebView);
+	    		webView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
 	    		if (comic.image != null) {
-		    		imgView.setImageBitmap(comic.image);
-		    		imgView.setLongClickable(comic.altText != null);
+	    			webView.loadUrl(comic.image);
     			}
 	    		TextView alt = (TextView)Main.this.findViewById(R.id.alt_text);
 	    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);

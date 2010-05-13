@@ -37,30 +37,42 @@ public class SharingMachineDownloader extends Downloader {
 			if (m.find()) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					Log.d("GETTING IMAGE FROM URL", m.group(1));
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					comic.title = m.group(2);
-					String[] urlParts = m.group(1).split("/");
-					String dateStr = urlParts[urlParts.length - 2];
-					Calendar calendar = new GregorianCalendar();
-					calendar.set(Calendar.MONTH, Integer.parseInt(dateStr.substring(0, 2)) - 1);
-					calendar.set(Calendar.DATE, Integer.parseInt(dateStr.substring(2, 4)));
-					calendar.set(Calendar.YEAR, Integer.parseInt(dateStr.substring(4, 6)));
-					calendar.add(Calendar.DATE, 1);
-					comic.nextUrl = getComicUrl(calendar);
-					calendar.add(Calendar.DATE, -2);
-					comic.prevUrl = getComicUrl(calendar);
-					Log.d("NEXT", comic.nextUrl);
-					Log.d("PREV", comic.prevUrl);
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				Log.d("GETTING IMAGE FROM URL", m.group(1));
+				comic.image = m.group(1);
+				comic.title = m.group(2);
+				String[] urlParts = m.group(1).split("/");
+				String dateStr = urlParts[urlParts.length - 2];
+				Calendar calendar = new GregorianCalendar();
+				calendar.set(Calendar.MONTH, Integer.parseInt(dateStr.substring(0, 2)) - 1);
+				calendar.set(Calendar.DATE, Integer.parseInt(dateStr.substring(2, 4)));
+				calendar.set(Calendar.YEAR, Integer.parseInt(dateStr.substring(4, 6)));
+				calendar.add(Calendar.DATE, 1);
+				comic.nextUrl = getComicUrl(calendar);
+				calendar.add(Calendar.DATE, -2);
+				comic.prevUrl = getComicUrl(calendar);
+				Log.d("NEXT", comic.nextUrl);
+				Log.d("PREV", comic.prevUrl);
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

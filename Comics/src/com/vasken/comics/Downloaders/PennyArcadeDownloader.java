@@ -30,27 +30,39 @@ public class PennyArcadeDownloader extends Downloader {
 			if (m.find()) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					comic.title = m.group(2);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.nextUrl = "http://www.penny-arcade.com" + m.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.prevUrl = "http://www.penny-arcade.com" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				comic.image = m.group(1);
+				comic.title = m.group(2);
+				m = nextComic.matcher(responseSoFar);
+				if (m.find()) {
+					comic.nextUrl = "http://www.penny-arcade.com" + m.group(1);
+					Log.d("NEXT URL", comic.nextUrl);
+				}
+				m = prevComic.matcher(responseSoFar);
+				if (m.find()) {
+					comic.prevUrl = "http://www.penny-arcade.com" + m.group(1);
+					Log.d("PREV URL", comic.prevUrl);
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

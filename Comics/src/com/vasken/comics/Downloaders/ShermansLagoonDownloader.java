@@ -35,30 +35,42 @@ public class ShermansLagoonDownloader extends Downloader {
 			if (m.find()) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl("http://www.slagoon.com/" + m.group(1));
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.nextUrl = "http://www.slagoon.com" + m.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.prevUrl = "http://www.slagoon.com" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-					m = date.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				comic.image = "http://www.slagoon.com/" + m.group(1);
+				m = nextComic.matcher(responseSoFar);
+				if (m.find()) {
+					comic.nextUrl = "http://www.slagoon.com" + m.group(1);
+					Log.d("NEXT URL", comic.nextUrl);
+				}
+				m = prevComic.matcher(responseSoFar);
+				if (m.find()) {
+					comic.prevUrl = "http://www.slagoon.com" + m.group(1);
+					Log.d("PREV URL", comic.prevUrl);
+				}
+				m = date.matcher(responseSoFar);
+				if (m.find()) {
+					comic.title = m.group(1);
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

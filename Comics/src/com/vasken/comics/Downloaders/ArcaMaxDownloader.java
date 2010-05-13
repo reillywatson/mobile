@@ -1,12 +1,7 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class ArcaMaxDownloader extends Downloader {
 	/*
@@ -28,48 +23,41 @@ public class ArcaMaxDownloader extends Downloader {
 	 <a class="next" href="/zits/s-729654-265545">Next</a>
 	 
 	 */
-
-	private Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("Today's</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
 	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			Matcher prevComicMatcher = prevComic.matcher(responseSoFar);
-			Matcher nextComicMatcher = nextComic.matcher(responseSoFar);
-			boolean hasNext = nextComicMatcher.find();
-			boolean hasPrev = prevComicMatcher.find();
-			if (m.find() && (hasNext || hasPrev)) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					comic.title = m.group(2);
-					
-					Log.d("TITLE", comic.title);
-					
-					if (hasNext) {
-						if (!nextComicMatcher.group(1).contains("newsletter")) {
-							comic.nextUrl = "http://www.arcamax.com" + nextComicMatcher.group(1);
-							Log.d("NEXT URL", comic.nextUrl);
-						}
-					}
-					
-					if (hasPrev) {
-						comic.prevUrl = "http://www.arcamax.com" + prevComicMatcher.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return true;
-			}
+	private static Pattern imgData = Pattern.compile( "div class=\"toon\".*?<a href=\"(.*?)\" .*? alt=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("Today's</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("Previous</.*?<a class=\"next\" href=\"(.*?)\"", Pattern.DOTALL);
+
+	
+	protected Pattern getComicPattern() {
+		return imgData;
+	}
+
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}
+	
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = imgData.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1);
+			comic.title = m.group(2);
+			return true;
 		}
 		return false;
+	}
+	
+
+	@Override
+	protected String getBaseComicURL() {
+		return "http://www.arcamax.com";
+	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://www.arcamax.com";
 	}
 }

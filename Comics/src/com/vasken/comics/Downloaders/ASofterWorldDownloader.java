@@ -1,12 +1,7 @@
 package com.vasken.comics.Downloaders;
 
-import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
-
-import com.vasken.util.WebRequester;
 
 public class ASofterWorldDownloader extends Downloader {
 	/*
@@ -29,46 +24,43 @@ public class ASofterWorldDownloader extends Downloader {
 				<a STYLE="text-decoration: none" href="http://www.asofterworld.com/index.php?id=555">next</a>*/
 	
 	// Ooh, the Softer World HTML is brutal, these regexes seem pretty brittle but they're the best I can muster under the circumstances
-	private Pattern comicData = Pattern.compile("<span class=\"rss-content\">.*?<img src=\"(.*?)\" title=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern title = Pattern.compile("<TITLE>A Softer World: (.*?)</TITLE>", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("<span class=\"rss-content\">.*?dopeoplereallystillusespacers.*?href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("http://www.asofterworld.com/stumbleupon.gif.*?href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern comicData = Pattern.compile("<span class=\"rss-content\">.*?<img src=\"(.*?)\" title=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern title = Pattern.compile("<TITLE>A Softer World: (.*?)</TITLE>", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("<span class=\"rss-content\">.*?dopeoplereallystillusespacers.*?href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("http://www.asofterworld.com/stumbleupon.gif.*?href=\"(.*?)\"", Pattern.DOTALL);
 	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 8000) {
-			Matcher m = comicData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					comic.altText = m.group(2);
-					Log.d("ALT TEXT", comic.altText);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.nextUrl = m.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find() && !url.endsWith("=1")) {
-						comic.prevUrl = m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-					m = title.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-						Log.d("TITLE", comic.title);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return true;
-			}
+
+	protected Pattern getComicPattern() {
+		return comicData;
+	}
+
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}
+	protected Pattern getTitlePattern() {
+		return title;
+	}
+	
+	
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = comicData.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1);
+			comic.altText = m.group(2);
+			return true;
 		}
 		return false;
+	}
+	
+	protected boolean parsePrevLink(StringBuilder partialResponse) {
+		boolean success = super.parsePrevLink(partialResponse);
+		if (success && comic.prevUrl.endsWith("=1")) {
+			comic.prevUrl = null;
+			return false;
+		}
+		return success;
 	}
 }

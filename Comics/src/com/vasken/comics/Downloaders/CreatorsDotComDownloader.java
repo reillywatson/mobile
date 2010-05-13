@@ -55,42 +55,54 @@ public class CreatorsDotComDownloader extends Downloader {
 			if (m.find() && (hasNext || hasPrev)) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl("http://www.creators.com/comics/" + m.group(1));
-					m = date.matcher(responseSoFar);
-					if (m.matches()) {
-						comic.title = m.group(1);
-						Log.d("TITLE", comic.title);
+				comic.image = "http://www.creators.com/comics/" + m.group(1);
+				m = date.matcher(responseSoFar);
+				if (m.matches()) {
+					comic.title = m.group(1);
+					Log.d("TITLE", comic.title);
+				}
+				
+				if (hasNext) {
+					String next = nextComicMatcher.group(1);
+					if (!next.equals("/")) {
+						comic.nextUrl = "http://www.creators.com" + nextComicMatcher.group(1);
+						Log.d("NEXT URL", comic.nextUrl);
 					}
-					
-					if (hasNext) {
-						String next = nextComicMatcher.group(1);
-						if (!next.equals("/")) {
-							comic.nextUrl = "http://www.creators.com" + nextComicMatcher.group(1);
-							Log.d("NEXT URL", comic.nextUrl);
-						}
+				}
+				
+				if (hasPrev) {
+					// we rely on arrow_l.gif existing to get our "next" link, but if it's the first comic, arrow_.gif isn't there,
+					// and there isn't a previous link in that case
+					if (!hasNext && !responseSoFar.toString().contains("arrow_l.gif")) {
+						comic.nextUrl = "http://www.creators.com" + prevComicMatcher.group(1);
+						Log.d("NEXT URL", comic.nextUrl);
 					}
-					
-					if (hasPrev) {
-						// we rely on arrow_l.gif existing to get our "next" link, but if it's the first comic, arrow_.gif isn't there,
-						// and there isn't a previous link in that case
-						if (!hasNext && !responseSoFar.toString().contains("arrow_l.gif")) {
-							comic.nextUrl = "http://www.creators.com" + prevComicMatcher.group(1);
-							Log.d("NEXT URL", comic.nextUrl);
-						}
-						else {
-							comic.prevUrl = "http://www.creators.com" + prevComicMatcher.group(1);
-							Log.d("PREV URL", comic.prevUrl);
-						}
+					else {
+						comic.prevUrl = "http://www.creators.com" + prevComicMatcher.group(1);
+						Log.d("PREV URL", comic.prevUrl);
 					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

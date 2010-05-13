@@ -36,42 +36,54 @@ public class XKCDDownloader extends Downloader {
 			if (m.find()) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						String next = m.group(1);
-						if (!next.equals("#")) {
-							comic.nextUrl = "http://xkcd.com" + next;
-							Log.d("NEXT URL", comic.nextUrl);
-						}
+				comic.image = m.group(1);
+				m = nextComic.matcher(responseSoFar);
+				if (m.find()) {
+					String next = m.group(1);
+					if (!next.equals("#")) {
+						comic.nextUrl = "http://xkcd.com" + next;
+						Log.d("NEXT URL", comic.nextUrl);
 					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						String prev = m.group(1);
-						if (!prev.equals("#")) {
-							comic.prevUrl = "http://xkcd.com" + prev;
-							Log.d("PREV URL", comic.prevUrl);
-						}
+				}
+				m = prevComic.matcher(responseSoFar);
+				if (m.find()) {
+					String prev = m.group(1);
+					if (!prev.equals("#")) {
+						comic.prevUrl = "http://xkcd.com" + prev;
+						Log.d("PREV URL", comic.prevUrl);
 					}
-					m = title.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-					}
-					m = altText.matcher(responseSoFar);
-					if (m.find()) {
-						comic.altText = m.group(1);
-						Log.d("ALT TEXT", comic.altText);
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				}
+				m = title.matcher(responseSoFar);
+				if (m.find()) {
+					comic.title = m.group(1);
+				}
+				m = altText.matcher(responseSoFar);
+				if (m.find()) {
+					comic.altText = m.group(1);
+					Log.d("ALT TEXT", comic.altText);
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

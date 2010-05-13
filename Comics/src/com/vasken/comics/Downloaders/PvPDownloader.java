@@ -42,28 +42,40 @@ public class PvPDownloader extends Downloader {
 			if (m.find() && (hasPrev || hasNext)) {
 				Log.d("HEY", "WE HAVE A WINNER!");
 				comic = newComic();
-				try {
-					comic.image = WebRequester.bitmapFromUrl(m.group(1));
-					comic.title = m.group(2);
-					if (hasPrev) {
-						comic.prevUrl = prev.group(1);
-						Log.d("PREV URL", comic.prevUrl);
+				comic.image = m.group(1);
+				comic.title = m.group(2);
+				if (hasPrev) {
+					comic.prevUrl = prev.group(1);
+					Log.d("PREV URL", comic.prevUrl);
+				}
+				if (hasNext) {
+					String nextUrl = next.group(1);
+					if (nextUrl.contains("pvponline.com")) {
+						comic.nextUrl = next.group(1);
+						Log.d("NEXT URL", comic.nextUrl);
 					}
-					if (hasNext) {
-						String nextUrl = next.group(1);
-						if (nextUrl.contains("pvponline.com")) {
-							comic.nextUrl = next.group(1);
-							Log.d("NEXT URL", comic.nextUrl);
-						}
-					}
-				} catch (IOException e) {
-					Log.d(this.getClass().getName(), "Retrieving image for comic failed!");
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 				return true;
 			}
 		}
 		return false;
+	}
+
+	@Override
+	protected Pattern getComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getNextComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Pattern getPrevComicPattern() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
