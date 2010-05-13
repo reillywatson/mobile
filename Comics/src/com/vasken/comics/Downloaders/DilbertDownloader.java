@@ -1,9 +1,6 @@
 package com.vasken.comics.Downloaders;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
 
 public class DilbertDownloader extends Downloader {
 	
@@ -19,53 +16,37 @@ public class DilbertDownloader extends Downloader {
 */
 	private Pattern imgData = Pattern.compile( "<div class=\"STR_Image\">.*?<img src=\"(.*?)\"", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("<div class=\"STR_Calendar\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("<div class=\"STR_DateStrip\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<div class=\"STR_DateStrip\">.*?<a href=\"(.*?)\" class=\"STR_Next", Pattern.DOTALL);
 	private Pattern date = Pattern.compile("<div class=\"STR_DateStrip\">(.*?)</div>", Pattern.DOTALL);
 	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-					comic.image = "http://www.dilbert.com" + m.group(1);
-					m = nextComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.nextUrl = "http://www.dilbert.com" + m.group(1);
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-					m = prevComic.matcher(responseSoFar);
-					if (m.find()) {
-						comic.prevUrl = "http://www.dilbert.com" + m.group(1);
-						Log.d("PREV URL", comic.prevUrl);
-					}
-					m = date.matcher(responseSoFar);
-					if (m.find()) {
-						comic.title = m.group(1);
-					}
-				return true;
-			}
-		}
-		return false;
-	}
 
 	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return imgData;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
+	}
+	
+	@Override
+	protected Pattern getTitlePattern() {
+		return date;
+	}
+	
+	@Override
+	protected String getBaseComicURL() {
+		return "http://www.dilbert.com";
+	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://www.dilbert.com";
 	}
 }
