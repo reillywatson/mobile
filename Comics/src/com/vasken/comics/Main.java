@@ -17,6 +17,7 @@ import com.vasken.comics.Downloaders.CyanideAndHappinessDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.GirlsWithSlingshotsDownloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.LeastICouldDoDownloader;
 import com.vasken.comics.Downloaders.LookingForGroupDownloader;
@@ -64,6 +65,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	comics.add(new ComicInfo("Girls with Slingshots", "http://www.gwscomic.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GirlsWithSlingshotsDownloader(); }}));
     	comics.add(new ComicInfo("AmazingSuperPowers", "http://www.amazingsuperpowers.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new AmazingSuperPowersDownloader(); }}));
     	comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
        	comics.add(new ComicInfo("Buttersafe", "http://buttersafe.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ButtersafeDownloader(); }}));

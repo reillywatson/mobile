@@ -37,5 +37,4 @@ public class CyanideAndHappinessDownloader extends Downloader {
 	protected String getBasePrevNextURL() {
 		return "http://www.explosm.net";
 	}
-
 }
