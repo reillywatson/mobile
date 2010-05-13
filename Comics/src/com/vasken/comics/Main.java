@@ -14,6 +14,7 @@ import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
+import com.vasken.comics.Downloaders.LeastICouldDoDownloader;
 import com.vasken.comics.Downloaders.PennyArcadeDownloader;
 import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
@@ -148,6 +149,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PvPDownloader(); }}));
     	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new Callable<Downloader>(){public Downloader call() throws Exception { return new ShermansLagoonDownloader(); }}));
     	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
+    	comics.add(new ComicInfo("The Least I Could Do", "http://leasticoulddo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new LeastICouldDoDownloader(); }}));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
     	
@@ -210,9 +212,11 @@ public class Main extends Activity {
 							Main.this.downloadComic(comic.nextUrl);
 						}});
 	    		}
+    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
 	    		if (comic.title != null) {
-	    			TextView tv = (TextView)Main.this.findViewById(R.id.title);
 	    			tv.setText(StringUtils.unescapeHtml(comic.title));
+	    		} else {
+	    			tv.setText("");
 	    		}
 	    		
     		}
