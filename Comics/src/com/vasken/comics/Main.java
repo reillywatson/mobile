@@ -23,6 +23,7 @@ import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
 import com.vasken.comics.Downloaders.SinfestDownloader;
+import com.vasken.comics.Downloaders.VGCatsDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
@@ -158,6 +159,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("The Least I Could Do", "http://leasticoulddo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new LeastICouldDoDownloader(); }}));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
+    	comics.add(new ComicInfo("VG Cats", "http://www.vgcats.com/comics/", new Callable<Downloader>(){public Downloader call() throws Exception { return new VGCatsDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
     	
     	Collections.sort(comics);
