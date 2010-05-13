@@ -26,62 +26,32 @@ public class XKCDDownloader extends Downloader {
 	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>");
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image = m.group(1);
-				m = nextComic.matcher(responseSoFar);
-				if (m.find()) {
-					String next = m.group(1);
-					if (!next.equals("#")) {
-						comic.nextUrl = "http://xkcd.com" + next;
-						Log.d("NEXT URL", comic.nextUrl);
-					}
-				}
-				m = prevComic.matcher(responseSoFar);
-				if (m.find()) {
-					String prev = m.group(1);
-					if (!prev.equals("#")) {
-						comic.prevUrl = "http://xkcd.com" + prev;
-						Log.d("PREV URL", comic.prevUrl);
-					}
-				}
-				m = title.matcher(responseSoFar);
-				if (m.find()) {
-					comic.title = m.group(1);
-				}
-				m = altText.matcher(responseSoFar);
-				if (m.find()) {
-					comic.altText = m.group(1);
-					Log.d("ALT TEXT", comic.altText);
-				}
-				return true;
-			}
-		}
-		return false;
-	}
-
-	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return imgData;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
 	}
 
-
+	@Override
+	protected Pattern getTitlePattern() {
+		return title;
+	}
+	
+	@Override
+	protected Pattern getAltTextPattern() {
+		return altText;
+	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://xkcd.com";
+	}
 }
