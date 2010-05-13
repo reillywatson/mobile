@@ -8,6 +8,7 @@ import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.AchewoodDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
+import com.vasken.comics.Downloaders.ButtersafeDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
 import com.vasken.comics.Downloaders.CreatorsDotComDownloader;
 import com.vasken.comics.Downloaders.CtrlAltDelDownloader;
@@ -26,6 +27,7 @@ import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
 import com.vasken.comics.Downloaders.SinfestDownloader;
 import com.vasken.comics.Downloaders.UserFriendlyDownloader;
 import com.vasken.comics.Downloaders.VGCatsDownloader;
+import com.vasken.comics.Downloaders.SMBCDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
@@ -61,6 +63,10 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+       	comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
+       	comics.add(new ComicInfo("Buttersafe", "http://buttersafe.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ButtersafeDownloader(); }}));
+    	
+    	
     	// creators.com comics
        	comics.add(new ComicInfo("Archie", "http://www.creators.com/comics/archie.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
        	comics.add(new ComicInfo("Ask Shagg", "http://www.creators.com/comics/ask-shagg.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
@@ -326,7 +332,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("VG Cats", "http://www.vgcats.com/comics/", new Callable<Downloader>(){public Downloader call() throws Exception { return new VGCatsDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
     	
-    	Collections.sort(comics);
+    	//Collections.sort(comics);
     	Log.d("NUMBER OF COMICS", Integer.toString(comics.size()));
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
