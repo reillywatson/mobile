@@ -15,6 +15,7 @@ import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.LeastICouldDoDownloader;
+import com.vasken.comics.Downloaders.LookingForGroupDownloader;
 import com.vasken.comics.Downloaders.PennyArcadeDownloader;
 import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
@@ -143,6 +144,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Awkward Zombie", "http://www.awkwardzombie.com/comic1.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new AwkwardZombieDownloader(); }}));
     	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new DilbertDownloader(); }}));
     	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new DinosaurComicsDownloader(); }}));
+    	comics.add(new ComicInfo("Looking For Group", "http://www.lfgcomic.com/page/latest", new Callable<Downloader>(){public Downloader call() throws Exception { return new LookingForGroupDownloader(); }}));
     	comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.marriedtothesea.com"); }}));
     	comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.nataliedee.com"); }}));
     	comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PennyArcadeDownloader(); }}));
