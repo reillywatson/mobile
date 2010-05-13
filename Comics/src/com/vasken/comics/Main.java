@@ -9,6 +9,7 @@ import com.vasken.comics.Downloaders.AchewoodDownloader;
 import com.vasken.comics.Downloaders.AmazingSuperPowersDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
+import com.vasken.comics.Downloaders.BookOfBiffDownloader;
 import com.vasken.comics.Downloaders.ButtersafeDownloader;
 import com.vasken.comics.Downloaders.CapesNBabesDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
@@ -67,6 +68,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	comics.add(new ComicInfo("The Book of Biff", "http://www.thebookofbiff.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new BookOfBiffDownloader(); }}));
     	comics.add(new ComicInfo("Nedroid", "http://nedroid.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new NedroidDownloader(); }}));
     	comics.add(new ComicInfo("Capes -N- Babes", "http://www.capesnbabes.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new CapesNBabesDownloader(); }}));
     	comics.add(new ComicInfo("Girls with Slingshots", "http://www.gwscomic.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new GirlsWithSlingshotsDownloader(); }}));
