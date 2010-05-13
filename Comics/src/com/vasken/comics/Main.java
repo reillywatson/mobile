@@ -11,6 +11,7 @@ import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
 import com.vasken.comics.Downloaders.ComicsDotComDownloader;
 import com.vasken.comics.Downloaders.CreatorsDotComDownloader;
 import com.vasken.comics.Downloaders.CtrlAltDelDownloader;
+import com.vasken.comics.Downloaders.CyanideAndHappinessDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
@@ -145,6 +146,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Awkward Zombie", "http://www.awkwardzombie.com/comic1.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new AwkwardZombieDownloader(); }}));
     	comics.add(new ComicInfo("Ctrl+Alt+Del", "http://www.cad-comic.com/cad/", new Callable<Downloader>(){public Downloader call() throws Exception { return new CtrlAltDelDownloader(); }}));
     	comics.add(new ComicInfo("Ctrl+Alt+Del Sillies", "http://www.cad-comic.com/sillies/", new Callable<Downloader>(){public Downloader call() throws Exception { return new CtrlAltDelDownloader(); }}));
+    	comics.add(new ComicInfo("Cyanide and Happiness", "http://www.explosm.net/comics/", new Callable<Downloader>(){public Downloader call() throws Exception { return new CyanideAndHappinessDownloader(); }}));
     	comics.add(new ComicInfo("Dilbert", "http://www.dilbert.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new DilbertDownloader(); }}));
     	comics.add(new ComicInfo("Dinosaur Comics", "http://www.qwantz.com/index.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new DinosaurComicsDownloader(); }}));
     	comics.add(new ComicInfo("Looking For Group", "http://www.lfgcomic.com/page/latest", new Callable<Downloader>(){public Downloader call() throws Exception { return new LookingForGroupDownloader(); }}));
