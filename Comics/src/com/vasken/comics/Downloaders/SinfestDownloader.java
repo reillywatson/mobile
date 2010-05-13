@@ -35,55 +35,29 @@ public class SinfestDownloader extends Downloader {
 	  </table>*/
 	
 	private Pattern comicData = Pattern.compile("<img src=\"http://sinfest.net/comikaze/(.*?)\" alt=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern prevComic = Pattern.compile("first_a.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern nextComic = Pattern.compile("prev_a.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\"><img src=\"images/prev_a.gif\"", Pattern.DOTALL);
+	private Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\"><img src=\"images/next_a.gif\"", Pattern.DOTALL);
+	
+	protected Pattern getComicPattern() {
+		return comicData;
+	}
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		Matcher m = comicData.matcher(responseSoFar);
-		Matcher prevMatcher = prevComic.matcher(responseSoFar);
-		Matcher nextMatcher = nextComic.matcher(responseSoFar);
-		boolean hasNext = nextMatcher.find();
-		boolean hasPrev = prevMatcher.find();
-		if (m.find() && (hasNext || hasPrev)) {
-			Log.d("HEY", "WE HAVE A WINNER!");
-			comic = newComic();
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = comicData.matcher(partialResponse);
+		if (m.find()) {
 			comic.image = "http://sinfest.net/comikaze/" + m.group(1);
 			comic.title = m.group(2);
+			Log.d("IMAGE", comic.image);
 			Log.d("TITLE", comic.title);
-			
-			if (hasNext) {
-				String next = nextMatcher.group(1);
-				if (next.contains("archive_page.php")) {
-					comic.nextUrl = nextMatcher.group(1);
-					Log.d("NEXT URL", comic.nextUrl);
-				}
-			}
-			if (hasPrev && !url.endsWith("=1")) {
-				comic.prevUrl = prevMatcher.group(1);
-				Log.d("PREV URL", comic.prevUrl);
-			}
 			return true;
 		}
 		return false;
-	}
-
-	@Override
-	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
