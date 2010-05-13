@@ -19,6 +19,7 @@ import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.LeastICouldDoDownloader;
 import com.vasken.comics.Downloaders.LookingForGroupDownloader;
 import com.vasken.comics.Downloaders.PennyArcadeDownloader;
+import com.vasken.comics.Downloaders.PerryBibleFellowshipDownloader;
 import com.vasken.comics.Downloaders.PvPDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
@@ -318,6 +319,7 @@ public class Main extends Activity {
     	comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new Callable<Downloader>(){public Downloader call() throws Exception { return new ShermansLagoonDownloader(); }}));
     	comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
     	comics.add(new ComicInfo("The Least I Could Do", "http://leasticoulddo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new LeastICouldDoDownloader(); }}));
+    	comics.add(new ComicInfo("The Perry Bible Fellowship", "http://pbfcomics.com/?cid=PBF247-Catch_Phrase.jpg", new Callable<Downloader>(){public Downloader call() throws Exception { return new PerryBibleFellowshipDownloader(); }}));
     	comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
     	comics.add(new ComicInfo("VG Cats", "http://www.vgcats.com/comics/", new Callable<Downloader>(){public Downloader call() throws Exception { return new VGCatsDownloader(); }}));
     	comics.add(new ComicInfo("XKCD", "http://xkcd.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new XKCDDownloader(); }}));
