@@ -1,9 +1,6 @@
 package com.vasken.comics.Downloaders;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import android.util.Log;
 
 public class ComicsDotComDownloader extends Downloader {
 	/*<div class="STR_Container FirstStrip" rel="{StripID:317327, ComicID:69, Type:'Comic', DateStrip:'2010-05-03', 
@@ -14,50 +11,33 @@ public class ComicsDotComDownloader extends Downloader {
 				<img src="http://c0389161.cdn.cloudfiles.rackspacecloud.com/dyn/str_strip/317327.full.gif" border="0" onload="STR.AttachZoomHover($(this));" alt="Peanuts - May 3, 2010" width="640" /></a>
 	 */
 	
-	private Pattern imgData = Pattern.compile( "<div class=\"STR_Comic\">.*?<img src=\"(.*?)\"", Pattern.DOTALL);
-	private Pattern stripInfo = Pattern.compile("<div class=\"STR_Container FirstStrip\".*?DateStrip:'(.*?)'.*?Link_Previous: '(.*?)', Link_Next: '(.*?)'", Pattern.DOTALL);
-	
-	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image = m.group(1);
-				m = stripInfo.matcher(responseSoFar);
-				if (m.find()) {
-					comic.title = m.group(1);
-					if (m.group(2).length() > 0) {
-						comic.prevUrl = "http://www.comics.com" + m.group(2);
-					}
-					if (m.group(3).length() > 0) {
-						comic.nextUrl = "http://www.comics.com" + m.group(3);
-					}
-				}
-				return true;
-			}
-		}
-		return false;
-	}
-
+	private static Pattern imgData = Pattern.compile( "<div class=\"STR_Comic\">.*?<img src=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("<div class=\"STR_Container FirstStrip\" .*? Link_Previous: '(.*?)'", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("<div class=\"STR_Container FirstStrip\" .*? Link_Next: '(.*?)'", Pattern.DOTALL);
+	private static Pattern title = Pattern.compile("<div class=\"STR_Container FirstStrip\" .*? DateStrip:'(.*?)'", Pattern.DOTALL);
 	
 	@Override
 	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return imgData;
 	}
 
 	@Override
 	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return nextComic;
 	}
 
 	@Override
 	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+		return prevComic;
+	}
+	
+	@Override
+	protected Pattern getTitlePattern() {
+		return title;
+	}
+	
+	@Override
+	protected String getBasePrevNextURL() {
+		return "http://www.comics.com";
 	}
 }
