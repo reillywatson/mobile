@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
 
 import com.vasken.comics.Downloaders.ASofterWorldDownloader;
 import com.vasken.comics.Downloaders.AchewoodDownloader;
+import com.vasken.comics.Downloaders.AmazingSuperPowersDownloader;
 import com.vasken.comics.Downloaders.ArcaMaxDownloader;
 import com.vasken.comics.Downloaders.AwkwardZombieDownloader;
 import com.vasken.comics.Downloaders.ButtersafeDownloader;
@@ -63,7 +64,8 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-       	comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
+    	comics.add(new ComicInfo("AmazingSuperPowers", "http://www.amazingsuperpowers.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new AmazingSuperPowersDownloader(); }}));
+    	comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
        	comics.add(new ComicInfo("Buttersafe", "http://buttersafe.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ButtersafeDownloader(); }}));
     	
     	
