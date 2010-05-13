@@ -39,7 +39,7 @@ public class SinfestDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("prev_a.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		Matcher m = comicData.matcher(responseSoFar);
 		Matcher prevMatcher = prevComic.matcher(responseSoFar);

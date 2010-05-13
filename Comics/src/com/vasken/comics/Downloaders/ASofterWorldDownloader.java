@@ -43,7 +43,7 @@ public class ASofterWorldDownloader extends Downloader {
 	protected Pattern getTitlePattern() {
 		return title;
 	}
-	
+		
 	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = comicData.matcher(partialResponse);

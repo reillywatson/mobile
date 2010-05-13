@@ -41,7 +41,7 @@ public class CreatorsDotComDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("arrow_l.gif.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);

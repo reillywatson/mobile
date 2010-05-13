@@ -42,7 +42,7 @@ public class WebRequester {
 	
 	public interface RequestCallback {
 		// return true when you've gotten back enough of the response
-		boolean handlePartialResponse(StringBuilder responseSoFar);
+		boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal);
 	}
 	
 	private DefaultHttpClient httpclient = new DefaultHttpClient();
@@ -63,7 +63,7 @@ public class WebRequester {
 	        	totalBytesRead += bytesRead;
 	        	bytesRead = in.read(buffer, 0, buffer.length);
 	        	
-	        	if (callback.handlePartialResponse(sb))
+	        	if (callback.handlePartialResponse(sb, (bytesRead == 0)))
 	        		break;
 	        }
 		} catch (Exception e) {

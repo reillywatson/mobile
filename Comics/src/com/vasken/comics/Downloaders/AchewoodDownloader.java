@@ -16,8 +16,8 @@ public class AchewoodDownloader extends Downloader {
 	</p>*/
 	
 	private static Pattern imgData = Pattern.compile( "<p id=\"comic_body\">.*?<img src=\"(.*?)\" title=\"(.*?)\"", Pattern.DOTALL);
-	private static Pattern prevComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"left\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
-	private static Pattern nextComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"right\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern prevComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"left\"><a href=\"(.*?)\"", Pattern.DOTALL);
+	private static Pattern nextComic = Pattern.compile("id=\"comic_navigation\">.*?<span class=\"right\"><a href=\"(.*?)\"", Pattern.DOTALL);
 	private static Pattern date = Pattern.compile("<span class=\"date\">(.*?)</span>", Pattern.DOTALL);
 
 	

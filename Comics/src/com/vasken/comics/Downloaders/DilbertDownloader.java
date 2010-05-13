@@ -23,7 +23,7 @@ public class DilbertDownloader extends Downloader {
 	private Pattern date = Pattern.compile("<div class=\"STR_DateStrip\">(.*?)</div>", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);

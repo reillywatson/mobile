@@ -17,7 +17,7 @@ public class DinosaurComicsDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<div id=\"next\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 8000) {
 			Matcher m = comicData.matcher(responseSoFar);

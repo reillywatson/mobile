@@ -26,7 +26,7 @@ public class XKCDDownloader extends Downloader {
 	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>");
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);

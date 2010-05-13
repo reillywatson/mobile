@@ -1,5 +1,6 @@
 package com.vasken.comics.Downloaders;
 
+import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,6 +25,8 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	
 	protected String getBaseComicURL() { return ""; }
 	protected String getBasePrevNextURL() { return ""; }
+	
+	protected int headerGarbageEstimate() { return 10000; }
 	
 	protected boolean parseTitle(StringBuilder partialResponse) {
 		return true;
@@ -55,7 +58,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected boolean parsePrevLink(StringBuilder partialResponse) {
 		Matcher m = getPrevComicPattern().matcher(partialResponse);
 		if (m.find()) {
-			comic.prevUrl = getBasePrevNextURL() + m.group(1);
+			comic.prevUrl = getBasePrevNextURL() + m.group(1);			
 			Log.d("PREV", comic.prevUrl);
 			return true;
 		}
@@ -73,17 +76,20 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		comic = newComic();
-		boolean success = parseComic(responseSoFar);
-		success = success & (parsePrevLink(responseSoFar) || parseNextLink(responseSoFar));
-		success &= parseTitle(responseSoFar);
-		success &= parseAltText(responseSoFar);
-		if (success) {
-			Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+		if (isFinal || responseSoFar.length() > headerGarbageEstimate()) {
+			Log.d(this.getClass().getName(),"PARSING...");
+			comic = newComic();
+			boolean success = parseComic(responseSoFar);
+			success = success & (parsePrevLink(responseSoFar) | parseNextLink(responseSoFar));
+			success &= parseTitle(responseSoFar);
+			success &= parseAltText(responseSoFar);
+			if (success) {
+				Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
+			}
+			return success;
 		}
-		return success;
+		return false;
 	}
 	
 	public void setUrl(String url) {

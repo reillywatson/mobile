@@ -18,7 +18,7 @@ public class ComicsDotComDownloader extends Downloader {
 	private Pattern stripInfo = Pattern.compile("<div class=\"STR_Container FirstStrip\".*?DateStrip:'(.*?)'.*?Link_Previous: '(.*?)', Link_Next: '(.*?)'", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			Matcher m = imgData.matcher(responseSoFar);

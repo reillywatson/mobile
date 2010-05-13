@@ -3,8 +3,6 @@ package com.vasken.comics.Downloaders;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.util.Log;
-
 public class PennyArcadeDownloader extends Downloader {
 	
 	/*<li class="float_left first"><a href="/comic/1998/11/18/">First</a></li>
@@ -19,47 +17,31 @@ public class PennyArcadeDownloader extends Downloader {
 	private Pattern prevComic = Pattern.compile("<li class=\"float_left back\"><a href=\"(.*?)\">", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<li class=\"float_left next\"><a href=\"(.*?)\">", Pattern.DOTALL);
 	
+
+	protected Pattern getComicPattern() {
+		return imgData;
+	}
+
+	protected Pattern getNextComicPattern() {
+		return nextComic;
+	}
+	protected Pattern getPrevComicPattern() {
+		return prevComic;
+	}
+	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
-		Log.d(this.getClass().getName(),"PARSING...");
-		if (responseSoFar.length() > 0) {
-			Matcher m = imgData.matcher(responseSoFar);
-			if (m.find()) {
-				Log.d("HEY", "WE HAVE A WINNER!");
-				comic = newComic();
-				comic.image = m.group(1);
-				comic.title = m.group(2);
-				m = nextComic.matcher(responseSoFar);
-				if (m.find()) {
-					comic.nextUrl = "http://www.penny-arcade.com" + m.group(1);
-					Log.d("NEXT URL", comic.nextUrl);
-				}
-				m = prevComic.matcher(responseSoFar);
-				if (m.find()) {
-					comic.prevUrl = "http://www.penny-arcade.com" + m.group(1);
-					Log.d("PREV URL", comic.prevUrl);
-				}
-				return true;
-			}
+	protected boolean parseComic(StringBuilder partialResponse) {
+		Matcher m = imgData.matcher(partialResponse);
+		if (m.find()) {
+			comic.image = m.group(1);
+			comic.title = m.group(2);
+			return true;
 		}
 		return false;
 	}
-
+	
 	@Override
-	protected Pattern getComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Pattern getNextComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Pattern getPrevComicPattern() {
-		// TODO Auto-generated method stub
-		return null;
+	protected String getBasePrevNextURL() {
+		return "http://www.penny-arcade.com";
 	}
 }

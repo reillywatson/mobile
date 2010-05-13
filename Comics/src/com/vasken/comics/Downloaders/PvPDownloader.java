@@ -27,7 +27,7 @@ public class PvPDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<div id=\"navbar-next\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
-	public boolean handlePartialResponse(StringBuilder responseSoFar) {
+	public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 		Log.d(this.getClass().getName(),"PARSING...");
 		if (responseSoFar.length() > 0) {
 			// We have to match on all 3 of these, because this is one of the odd comics where the navigation is on the bottom
