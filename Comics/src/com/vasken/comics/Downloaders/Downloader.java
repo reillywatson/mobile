@@ -62,7 +62,10 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}
 	
 	protected boolean parsePrevLink(StringBuilder partialResponse) {
-		Matcher m = getPrevComicPattern().matcher(partialResponse);
+		Pattern p = getPrevComicPattern();
+		if (p == null)
+			return true;
+		Matcher m = p.matcher(partialResponse);
 		if (m.find() && !url.endsWith("=1")) {
 			String prev = m.group(1);
 			if (!prev.equals("#") && prev.length() > 0) {
@@ -75,7 +78,10 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}
 	
 	protected boolean parseNextLink(StringBuilder partialResponse) {
-		Matcher m = getNextComicPattern().matcher(partialResponse);
+		Pattern p = getNextComicPattern();
+		if (p == null)
+			return true;
+		Matcher m = p.matcher(partialResponse);
 		if (m.find()) {
 			String next = m.group(1);
 			if (!next.equals("#") && next.length() > 0) {
