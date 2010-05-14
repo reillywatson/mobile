@@ -1,18 +1,23 @@
 package com.vasken.hitit;
 
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vasken.util.UserTask;
 import com.vasken.util.UserTask.Status;
@@ -30,6 +35,7 @@ public class Vote extends Activity {
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
 	private String currentId = null;
+	private Bitmap currentBitmap;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
@@ -117,6 +123,7 @@ public class Vote extends Activity {
 	public void showItem(final HotItem item) {
     	runOnUiThread(new Runnable() { public void run() { 
     		currentId = item.getRateId();
+    		currentBitmap = item.getImage();
 			((ImageView)findViewById(R.id.photo)).setImageBitmap(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
@@ -136,6 +143,31 @@ public class Vote extends Activity {
 	    		itemQueue.add(item);
 	    	}
     	}
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	menu.add("Save to phone");
+    	return true;
+    }
+    
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+    	if (item.getTitle().equals("Save to phone")) {
+    		Log.d("HEY", new Date().toString());
+    		String result = MediaStore.Images.Media.insertImage(getContentResolver(), currentBitmap,
+    				getString(R.string.app_name), new Date().toString());
+    		Toast t;
+    		if (result != null) {
+    			t = Toast.makeText(this, "Image saved.", Toast.LENGTH_SHORT);
+    		}
+    		else {
+    			t = Toast.makeText(this, "Save failed!", Toast.LENGTH_SHORT);
+    		}
+    		t.show();
+    		return true;
+    	}
+    	return super.onMenuItemSelected(featureId, item);
     }
     
     private class DownloaderTask extends UserTask<Void, HotItem, HotItem> {
