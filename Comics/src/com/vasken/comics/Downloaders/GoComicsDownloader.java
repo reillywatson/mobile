@@ -12,6 +12,7 @@ public class GoComicsDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"([^>]*?)\">Next >></a>", Pattern.DOTALL);
 	private Pattern imgData = Pattern.compile( "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"", Pattern.DOTALL);
 	private Pattern date = Pattern.compile("<span class=\"authorText\">.*?</strong>(.*?)</span>", Pattern.DOTALL);
+	private Pattern permalink = Pattern.compile("<div class=\"feature\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
 	protected Pattern getComicPattern() {
@@ -32,12 +33,22 @@ public class GoComicsDownloader extends Downloader {
 	}
 	
 	@Override
+	protected Pattern getPermalinkPattern() {
+		return permalink;
+	}
+	
+	@Override
 	protected String getBaseComicURL() {
 		return "http://imgsrv.gocomics.com/dim?fh=";
 	}
 	
 	@Override
 	protected String getBasePrevNextURL() {
+		return "http://www.gocomics.com";
+	}
+	
+	@Override
+	protected String getBasePermalinkURL() {
 		return "http://www.gocomics.com";
 	}
 }
