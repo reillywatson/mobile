@@ -1,6 +1,5 @@
 package com.vasken.comics.Downloaders;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.regex.Pattern;
 
