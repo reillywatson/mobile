@@ -51,15 +51,19 @@ public class Viewer extends Activity {
 	    	@Override
 	    	public void onPostExecute(final Comic comic) {
 	    		if (comic != null) {
+		    		TextView alt = (TextView)Viewer.this.findViewById(R.id.alt_text);
 	    			WebView webView = (WebView)Viewer.this.findViewById(R.id.WebView);
 		    		webView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
-		    		if (comic.image != null) {
-		    			webView.loadUrl(comic.image);
-	    			}
-		    		TextView alt = (TextView)Viewer.this.findViewById(R.id.alt_text);
 		    		alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
 		    		if (comic.altText != null) {
 		    			alt.setText(StringUtils.unescapeHtml(comic.altText));
+		    		}
+		    		if (comic.image != null) {
+		    			webView.loadUrl(comic.image);
+	    			}
+		    		else {
+		    			alt.setVisibility(View.VISIBLE);
+		    			alt.setText("Unable to load comic");
 		    		}
 		    		Button prev = (Button)Viewer.this.findViewById(R.id.prev_comic);
 		    		Button next = (Button)Viewer.this.findViewById(R.id.next_comic);
