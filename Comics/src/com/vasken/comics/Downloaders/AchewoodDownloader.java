@@ -3,6 +3,8 @@ package com.vasken.comics.Downloaders;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class AchewoodDownloader extends Downloader {
 	/*<h2 id="comic_navigation">
 	<span class="left"><a href="index.php?date=04222010" class="dateNav" title="Previous comic">&laquo;</a></span>
@@ -49,4 +51,10 @@ public class AchewoodDownloader extends Downloader {
 		return "http://www.achewood.com/";
 	}
 	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://www.ohnorobot.com/random.pl?comic=636";
+		return c;
+	}
 }
