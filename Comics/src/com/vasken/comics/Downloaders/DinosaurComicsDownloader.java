@@ -15,6 +15,7 @@ public class DinosaurComicsDownloader extends Downloader {
 	private Pattern title = Pattern.compile("<title>Dinosaur Comics - (.*?) - awesome fun times!</title>", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("<div id=\"previous\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<div id=\"next\">.*?<a href=\"(.*?)\">", Pattern.DOTALL);
+	private Pattern randomComic = Pattern.compile("trex-omg.gif\".*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
 	protected boolean parseComic(StringBuilder partialResponse) {
@@ -47,6 +48,11 @@ public class DinosaurComicsDownloader extends Downloader {
 	@Override
 	protected Pattern getTitlePattern() {
 		return title;
+	}
+	
+	@Override
+	protected Pattern getRandomComicPattern() {
+		return randomComic;
 	}
 
 }

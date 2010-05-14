@@ -8,4 +8,5 @@ public class Comic {
 	public String prevUrl;
 	public String title;
 	public String altText;
+	public String randomUrl;
 }

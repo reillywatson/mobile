@@ -3,6 +3,8 @@ package com.vasken.comics;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
@@ -138,6 +140,23 @@ public class Viewer extends Activity {
 				tv.setText("");
 			}
 		}
+	}
+	
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.clear();
+		if (currentComic != null && currentComic.randomUrl != null) {
+			menu.add("Random");
+		}
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getTitle().equals("Random") && currentComic != null && currentComic.randomUrl != null) {
+			downloadComic(currentComic.randomUrl);
+		}
+		return true;
 	}
 
 	class DownloadTask extends UserTask<Downloader, Void, Comic> {

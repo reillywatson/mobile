@@ -22,9 +22,11 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected abstract Pattern getPrevComicPattern();
 	protected Pattern getTitlePattern() { return null; }
 	protected Pattern getAltTextPattern() { return null; }
+	protected Pattern getRandomComicPattern() { return null; }
 	
 	protected String getBaseComicURL() { return ""; }
 	protected String getBasePrevNextURL() { return ""; }
+	protected String getBaseRandomURL() { return getBasePrevNextURL(); }
 		
 	// We're assuming all comics use permalinks right now,
 	// but that we don't want to remember where you left off
@@ -35,6 +37,19 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 			Log.d("PERMALINK", comic.permalink);
 		}
 		return true;
+	}
+	
+	protected boolean parseRandomURL(StringBuilder partialResponse) {
+		Pattern p = getRandomComicPattern();
+		if (p == null)
+			return true;
+		Matcher m = p.matcher(partialResponse);
+		if (m.find()) {
+			comic.randomUrl = getBaseRandomURL() + m.group(1);
+			Log.d("RANDOM", comic.randomUrl);
+			return true;
+		}
+		return false;
 	}
 	
 	protected boolean parseTitle(StringBuilder partialResponse) {
@@ -117,6 +132,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 			success &= parseTitle(responseSoFar);
 			success &= parseAltText(responseSoFar);
 			success &= parsePermalink(responseSoFar);
+			success &= parseRandomURL(responseSoFar);
 			if (success) {
 				Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
 			}
