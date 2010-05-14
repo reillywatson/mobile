@@ -20,8 +20,8 @@ public class XKCDDownloader extends Downloader {
 	private Pattern title = Pattern.compile("<title>xkcd: (.*?)</title>", Pattern.DOTALL);
 	private Pattern prevComic = Pattern.compile("<div class=\"menuCont\">.*?\\|&lt;.*?<a href=\"(.*?)\" accesskey=\"p\">", Pattern.DOTALL);
 	private Pattern nextComic = Pattern.compile("<div class=\"menuCont\">.*?Random.*?<a href=\"(.*?)\" accesskey=\"n\">", Pattern.DOTALL);
-	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>");
-	
+	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>", Pattern.DOTALL);
+	private Pattern permalink = Pattern.compile("Permanent link to this comic: (.*?)</h3>", Pattern.DOTALL);
 	@Override
 	protected Pattern getComicPattern() {
 		return imgData;
@@ -45,6 +45,11 @@ public class XKCDDownloader extends Downloader {
 	@Override
 	protected Pattern getAltTextPattern() {
 		return altText;
+	}
+	
+	@Override
+	protected Pattern getPermalinkPattern() {
+		return permalink;
 	}
 	
 	@Override
