@@ -41,7 +41,6 @@ public class ComicList {
 	
 	static ArrayList<ComicInfo> comics = new ArrayList<ComicInfo>();
 	static {
-		/*
 		// creators.com comics
 	   	comics.add(new ComicInfo("Archie", "http://www.creators.com/comics/archie.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
 	   	comics.add(new ComicInfo("Ask Shagg", "http://www.creators.com/comics/ask-shagg.html", new Callable<Downloader>(){public Downloader call() throws Exception { return new CreatorsDotComDownloader(); }}));
@@ -282,7 +281,7 @@ public class ComicList {
 		comics.add(new ComicInfo("Working It Out", "http://www.comics.com/working_it_out", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsDotComDownloader(); }}));
 		comics.add(new ComicInfo("Zack Hill", "http://www.comics.com/zack_hill", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsDotComDownloader(); }}));
 		comics.add(new ComicInfo("(Th)ink", "http://www.comics.com/think", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsDotComDownloader(); }}));
-	*/
+	
 		
 		// web/misc comics
 		comics.add(new ComicInfo("A Softer World", "http://www.asofterworld.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ASofterWorldDownloader(); }}));
