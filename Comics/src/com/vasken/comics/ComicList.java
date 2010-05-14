@@ -34,6 +34,7 @@ import com.vasken.comics.Downloaders.SMBCDownloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.Downloaders.SharkAttackDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
+import com.vasken.comics.Downloaders.SinfestDownloader;
 import com.vasken.comics.Downloaders.UserFriendlyDownloader;
 import com.vasken.comics.Downloaders.VGCatsDownloader;
 import com.vasken.comics.Downloaders.WondermarkDownloader;
@@ -302,8 +303,7 @@ public class ComicList {
 		comics.add(new ComicInfo("Penny Arcade", "http://www.penny-arcade.com/comic/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PennyArcadeDownloader(); }}));
 		comics.add(new ComicInfo("PvP", "http://www.pvponline.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new PvPDownloader(); }}));
 		comics.add(new ComicInfo("Sherman's Lagoon", "http://www.slagoon.com/cgi-bin/sviewer.pl", new Callable<Downloader>(){public Downloader call() throws Exception { return new ShermansLagoonDownloader(); }}));
-		// TODO: why does this launch an external browser?
-		//comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
+		comics.add(new ComicInfo("Sinfest", "http://www.sinfest.net/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SinfestDownloader(); }}));
 		comics.add(new ComicInfo("The Least I Could Do", "http://leasticoulddo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new LeastICouldDoDownloader(); }}));
 		comics.add(new ComicInfo("The Perry Bible Fellowship", "http://pbfcomics.com/?cid=PBF247-Catch_Phrase.jpg", new Callable<Downloader>(){public Downloader call() throws Exception { return new PerryBibleFellowshipDownloader(); }}));
 		comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));

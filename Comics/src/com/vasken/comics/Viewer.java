@@ -32,6 +32,7 @@ public class Viewer extends Activity {
 		WebView webView = (WebView) Viewer.this.findViewById(R.id.WebView);
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.setBackgroundColor(0);
+		webView.getSettings().setJavaScriptEnabled(false);
 		
 		Viewer rotatedSelf = (Viewer)getLastNonConfigurationInstance();
 		if (rotatedSelf != null) {

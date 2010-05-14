@@ -52,7 +52,7 @@ public class SinfestDownloader extends Downloader {
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = comicData.matcher(partialResponse);
 		if (m.find()) {
-			comic.image = "http://sinfest.net/comikaze/" + m.group(1);
+			comic.image = "http://www.sinfest.net/comikaze/" + m.group(1);
 			comic.title = m.group(2);
 			Log.d("IMAGE", comic.image);
 			Log.d("TITLE", comic.title);
