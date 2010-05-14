@@ -29,6 +29,10 @@ public class Viewer extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.viewer);
+		WebView webView = (WebView) Viewer.this.findViewById(R.id.WebView);
+		webView.getSettings().setBuiltInZoomControls(true);
+		webView.setBackgroundColor(0);
+		
 		Viewer rotatedSelf = (Viewer)getLastNonConfigurationInstance();
 		if (rotatedSelf != null) {
 			currentDownloader = rotatedSelf.currentDownloader;
