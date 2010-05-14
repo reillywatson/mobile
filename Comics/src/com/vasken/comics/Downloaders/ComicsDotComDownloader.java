@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import android.util.Log;
+
 public class ComicsDotComDownloader extends Downloader {
 	/*<div class="STR_Container FirstStrip" rel="{StripID:317327, ComicID:69, Type:'Comic', DateStrip:'2010-05-03', 
 	   URL_Comic: 'peanuts', Link_Previous: '/peanuts/2010-05-02/', Link_Next: '/peanuts/2010-05-04/'}">
@@ -39,5 +41,20 @@ public class ComicsDotComDownloader extends Downloader {
 	@Override
 	protected String getBasePrevNextURL() {
 		return "http://www.comics.com";
+	}
+	
+	@Override
+	protected boolean parsePermalink(StringBuilder partialResponse) {
+		if (url.split("/").length > 4) {
+			comic.permalink = url;
+		}
+		else if (comic.title != null) {
+			comic.permalink = url + "/" + comic.title + "/";
+		}
+		else {
+			return false;
+		}
+		Log.d("PERMALINK", comic.permalink);
+		return true;
 	}
 }
