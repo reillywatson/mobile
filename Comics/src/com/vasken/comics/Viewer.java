@@ -23,6 +23,7 @@ public class Viewer extends Activity {
 	Comic currentComic;
 	String currentURL;
 	boolean successfullyLoadedFirstComic;
+	boolean currentComicIsRandom;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,7 @@ public class Viewer extends Activity {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		if (currentComicInfo != null && currentURL != null) {
+		if (currentComicInfo != null && currentURL != null && !currentComicIsRandom) {
 			getPreferences(Context.MODE_PRIVATE).edit().putString("lastRead" + currentComicInfo.name, currentURL).commit();
 		}
 	}
@@ -75,6 +76,7 @@ public class Viewer extends Activity {
 	}
 
 	public void downloadComic(String url) {
+		currentComicIsRandom = false;
 		currentDownloader.setUrl(url);
 		new DownloadTask().execute(currentDownloader);
 	}
@@ -157,6 +159,7 @@ public class Viewer extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getTitle().equals("Random") && currentComic != null && currentComic.randomUrl != null) {
 			downloadComic(currentComic.randomUrl);
+			currentComicIsRandom = true;
 		}
 		return true;
 	}
