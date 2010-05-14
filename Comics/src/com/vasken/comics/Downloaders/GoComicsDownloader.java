@@ -1,9 +1,6 @@
 package com.vasken.comics.Downloaders;
 
-import java.util.Date;
 import java.util.regex.Pattern;
-
-import android.util.Log;
 
 public class GoComicsDownloader extends Downloader {
 	// Sample HTML fragment:
@@ -34,21 +31,6 @@ public class GoComicsDownloader extends Downloader {
 		return date;
 	}
 
-	private String getComicUrl(Date d) {
-		return String.format("/%04d/%02d/%02d/", d.getYear() + 1900, d.getMonth() + 1, d.getDate());
-	}
-	
-	@Override
-	protected boolean parsePermalink(StringBuilder partialResponse) {
-		if (comic.title != null){
-			Date d = new Date(Date.parse(comic.title));
-			comic.permalink = url + getComicUrl(d);
-			Log.d("PERMALINK", comic.permalink);
-			return true;
-		}
-		return false;
-	}
-	
 	@Override
 	protected String getBaseComicURL() {
 		return "http://imgsrv.gocomics.com/dim?fh=";

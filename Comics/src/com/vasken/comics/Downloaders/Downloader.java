@@ -22,30 +22,19 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected abstract Pattern getPrevComicPattern();
 	protected Pattern getTitlePattern() { return null; }
 	protected Pattern getAltTextPattern() { return null; }
-	protected Pattern getPermalinkPattern() { return null; }
 	
 	protected String getBaseComicURL() { return ""; }
 	protected String getBasePrevNextURL() { return ""; }
-	protected String getBasePermalinkURL() { return ""; }
-	
-	protected boolean linksArePermalinks() { return true; }
-	
+		
+	// We're assuming all comics use permalinks right now,
+	// but that we don't want to remember where you left off
+	// if you're on the latest comic.
 	protected boolean parsePermalink(StringBuilder partialResponse) {
-		if (linksArePermalinks() && !url.equals(defaultUrl)) {
+		if (!url.equals(defaultUrl)) {
 			comic.permalink = url;
 			Log.d("PERMALINK", comic.permalink);
-			return true;
 		}
-		Pattern p = getPermalinkPattern();
-		if (p == null)
-			return true;
-		Matcher m = p.matcher(partialResponse);
-		if (m.find()) {
-			comic.permalink = getBasePermalinkURL() + m.group(1);
-			Log.d("PERMALINK", comic.permalink);
-			return true;
-		}
-		return false;
+		return true;
 	}
 	
 	protected boolean parseTitle(StringBuilder partialResponse) {
