@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class AmazingSuperPowersDownloader extends Downloader {
 	private static Pattern imgData = Pattern.compile("img src=\"http://www.amazingsuperpowers.com/comics/(.*?)\"", Pattern.DOTALL);
 	private static Pattern prevComic = Pattern.compile("<div class=\"nav-previous\"><a href=\"(.*?)\"", Pattern.DOTALL);
@@ -38,5 +40,12 @@ public class AmazingSuperPowersDownloader extends Downloader {
 	@Override
 	protected String getBaseComicURL() {
 		return "http://www.amazingsuperpowers.com/comics/";
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://www.amazingsuperpowers.com/cgi/rand_link.cgi";
+		return c;
 	}
 }

@@ -3,6 +3,8 @@ package com.vasken.comics.Downloaders;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class ASofterWorldDownloader extends Downloader {
 	/*
 	<span class="rss-content">
@@ -51,5 +53,12 @@ public class ASofterWorldDownloader extends Downloader {
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://www.ohnorobot.com/random.pl?comic=796";
+		return c;
 	}
 }
