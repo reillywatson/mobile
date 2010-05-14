@@ -100,14 +100,16 @@ public class Viewer extends Activity {
 					}
 					return true;
 				}});
+			/*
 			alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
 			if (comic.altText != null) {
 				alt.setText(StringUtils.unescapeHtml(comic.altText));
-			}
+			}*/
 			if (comic.image != null) {
 				webView.loadUrl(comic.image);
 				currentURL = comic.permalink;
 				successfullyLoadedFirstComic = true;
+				alt.setVisibility(View.GONE);
 			} else {
 				currentURL = null;
 				alt.setVisibility(View.VISIBLE);
