@@ -1,6 +1,10 @@
 package com.vasken.comics.Downloaders;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.regex.Pattern;
+
+import android.util.Log;
 
 public class GoComicsDownloader extends Downloader {
 	// Sample HTML fragment:
@@ -12,7 +16,6 @@ public class GoComicsDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<span class=\"archiveText\">.*?<a href=\"([^>]*?)\">Next >></a>", Pattern.DOTALL);
 	private Pattern imgData = Pattern.compile( "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"", Pattern.DOTALL);
 	private Pattern date = Pattern.compile("<span class=\"authorText\">.*?</strong>(.*?)</span>", Pattern.DOTALL);
-	private Pattern permalink = Pattern.compile("<div class=\"feature\">.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
 	protected Pattern getComicPattern() {
@@ -31,10 +34,25 @@ public class GoComicsDownloader extends Downloader {
 	protected Pattern getTitlePattern() {
 		return date;
 	}
+
+	private String getComicUrl(Date d) {
+		return String.format("/%04d/%02d/%02d/", d.getYear() + 1900, d.getMonth() + 1, d.getDate());
+	}
 	
 	@Override
-	protected Pattern getPermalinkPattern() {
-		return permalink;
+	protected boolean parsePermalink(StringBuilder partialResponse) {
+		if (url.split("/").length > 4) {
+			comic.permalink = url;
+		}
+		else if (comic.title != null){
+			Date d = new Date(Date.parse(comic.title));
+			comic.permalink = url + getComicUrl(d);
+		}
+		else {
+			return false;
+		}
+		Log.d("PERMALINK", comic.permalink);
+		return true;
 	}
 	
 	@Override
@@ -44,11 +62,6 @@ public class GoComicsDownloader extends Downloader {
 	
 	@Override
 	protected String getBasePrevNextURL() {
-		return "http://www.gocomics.com";
-	}
-	
-	@Override
-	protected String getBasePermalinkURL() {
 		return "http://www.gocomics.com";
 	}
 }
