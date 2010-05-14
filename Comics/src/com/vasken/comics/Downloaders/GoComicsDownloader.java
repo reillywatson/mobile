@@ -40,18 +40,13 @@ public class GoComicsDownloader extends Downloader {
 	
 	@Override
 	protected boolean parsePermalink(StringBuilder partialResponse) {
-		if (url.split("/").length > 4) {
-			comic.permalink = url;
-		}
-		else if (comic.title != null){
+		if (comic.title != null){
 			Date d = new Date(Date.parse(comic.title));
 			comic.permalink = url + getComicUrl(d);
+			Log.d("PERMALINK", comic.permalink);
+			return true;
 		}
-		else {
-			return false;
-		}
-		Log.d("PERMALINK", comic.permalink);
-		return true;
+		return false;
 	}
 	
 	@Override

@@ -17,6 +17,7 @@ public class Viewer extends Activity {
 	Downloader currentDownloader;
 	ComicInfo currentComic;
 	String currentURL;
+	boolean successfullyLoadedFirstComic;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class Viewer extends Activity {
 		currentComic = info;
 		try {
 			currentDownloader = info.downloaderConstructor.call();
+			currentDownloader.setDefaultUrl(info.startUrl);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -64,6 +66,12 @@ public class Viewer extends Activity {
 		@Override
 		public void onPostExecute(final Comic comic) {
 			if (comic != null) {
+				if (comic.image == null) {
+					if (!successfullyLoadedFirstComic && !currentDownloader.getUrl().equals(currentComic.startUrl)) {
+						downloadComic(currentComic.startUrl);
+						return;
+					}
+				}
 				TextView alt = (TextView) Viewer.this.findViewById(R.id.alt_text);
 				WebView webView = (WebView) Viewer.this.findViewById(R.id.WebView);
 				webView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
@@ -73,11 +81,13 @@ public class Viewer extends Activity {
 				}
 				if (comic.image != null) {
 					webView.loadUrl(comic.image);
+					currentURL = comic.permalink;
+					successfullyLoadedFirstComic = true;
 				} else {
+					currentURL = null;
 					alt.setVisibility(View.VISIBLE);
 					alt.setText("Unable to load comic");
 				}
-				currentURL = comic.permalink;
 				Button prev = (Button) Viewer.this.findViewById(R.id.prev_comic);
 				Button next = (Button) Viewer.this.findViewById(R.id.next_comic);
 				boolean enablePrev = comic.prevUrl != null && !comic.prevUrl.equals(comic.url);

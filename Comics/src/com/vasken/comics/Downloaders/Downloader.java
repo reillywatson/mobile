@@ -15,6 +15,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	private WebRequester requester = new WebRequester();	
 	protected Comic comic;
 	protected String url;
+	protected String defaultUrl;
 	
 	protected abstract Pattern getComicPattern();
 	protected abstract Pattern getNextComicPattern();
@@ -27,7 +28,14 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected String getBasePrevNextURL() { return ""; }
 	protected String getBasePermalinkURL() { return ""; }
 	
+	protected boolean linksArePermalinks() { return true; }
+	
 	protected boolean parsePermalink(StringBuilder partialResponse) {
+		if (linksArePermalinks() && !url.equals(defaultUrl)) {
+			comic.permalink = url;
+			Log.d("PERMALINK", comic.permalink);
+			return true;
+		}
 		Pattern p = getPermalinkPattern();
 		if (p == null)
 			return true;
@@ -130,6 +138,14 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+	
+	public void setDefaultUrl(String defaultUrl) {
+		this.defaultUrl = defaultUrl;
 	}
 
 	protected Comic newComic() {

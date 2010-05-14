@@ -22,6 +22,7 @@ public class XKCDDownloader extends Downloader {
 	private Pattern nextComic = Pattern.compile("<div class=\"menuCont\">.*?Random.*?<a href=\"(.*?)\" accesskey=\"n\">", Pattern.DOTALL);
 	private Pattern altText = Pattern.compile("<img.*? title=\"(.*?)\".*?/>", Pattern.DOTALL);
 	private Pattern permalink = Pattern.compile("Permanent link to this comic: (.*?)</h3>", Pattern.DOTALL);
+	
 	@Override
 	protected Pattern getComicPattern() {
 		return imgData;
