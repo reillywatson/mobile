@@ -152,6 +152,7 @@ public class Viewer extends Activity {
 		if (currentComic != null && currentComic.randomUrl != null) {
 			menu.add("Random");
 		}
+		menu.add("Newest");
 		return true;
 	}
 	
@@ -161,6 +162,8 @@ public class Viewer extends Activity {
 			downloadComic(currentComic.randomUrl);
 			currentComicIsRandom = true;
 		}
+		if (item.getTitle().equals("Newest") && currentComic != null)
+			downloadComic(currentComicInfo.startUrl);
 		return true;
 	}
 
