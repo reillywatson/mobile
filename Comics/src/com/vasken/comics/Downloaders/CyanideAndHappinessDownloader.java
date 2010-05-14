@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class CyanideAndHappinessDownloader extends Downloader {
 
 	/* I can't believe that < Previous works...
@@ -36,5 +38,12 @@ public class CyanideAndHappinessDownloader extends Downloader {
 	@Override
 	protected String getBasePrevNextURL() {
 		return "http://www.explosm.net";
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://www.explosm.net/comics/random/";
+		return c;
 	}
 }
