@@ -13,7 +13,7 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	}
 	@Override
 	public int compareTo(ComicInfo another) {
-		return name.compareTo(another.name);
+		return name.replaceFirst("The ", "").compareTo(another.name.replaceFirst("The ", ""));
 	}
 	@Override
 	public String toString() {
