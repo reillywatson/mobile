@@ -79,7 +79,7 @@ public class Worker implements WebRequester.RequestCallback {
 	}
 
 	@Override
-	public boolean handlePartialResponse(StringBuilder sb) {
+	public boolean handlePartialResponse(StringBuilder sb, boolean isFinal) {
 		// This (26000 bytes) seems like the sort of thing that could no longer be true in the future.
     	// I suppose worst case, the app would just run a bit slower.
     	if (sb.length() > 26000) {
