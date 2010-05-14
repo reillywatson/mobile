@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class CtrlAltDelDownloader extends Downloader {
 
 	/*
@@ -53,5 +55,12 @@ public class CtrlAltDelDownloader extends Downloader {
 	@Override
 	protected String getBaseComicURL() {
 		return "http://www.cad-comic.com";
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = defaultUrl + "random";
+		return c;
 	}
 }
