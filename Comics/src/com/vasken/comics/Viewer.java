@@ -95,7 +95,7 @@ public class Viewer extends Activity {
 				@Override
 				public boolean onLongClick(View arg0) {
 					if (comic.altText != null) {
-						Toast t = Toast.makeText(Viewer.this, comic.altText, Toast.LENGTH_LONG);
+						Toast t = Toast.makeText(Viewer.this, StringUtils.unescapeHtml(comic.altText), Toast.LENGTH_LONG);
 						t.show();
 					}
 					return true;
