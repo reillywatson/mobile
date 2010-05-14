@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class NedroidDownloader extends Downloader {
 	private static Pattern altText = Pattern.compile("<div id=\"comic\">[^<]*?<img .*? title=\"(.*?)\"", Pattern.DOTALL);
 	private static Pattern title = Pattern.compile("<div id=\"comic\">[^<]*?<img .*? alt=\"(.*?)\"", Pattern.DOTALL);
@@ -32,5 +34,12 @@ public class NedroidDownloader extends Downloader {
 	@Override
 	protected Pattern getAltTextPattern() {
 		return altText;
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://nedroid.com/?randomcomic=1";
+		return c;
 	}
 }
