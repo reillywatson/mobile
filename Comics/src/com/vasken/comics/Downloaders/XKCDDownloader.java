@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class XKCDDownloader extends Downloader {
 	
 	// Fragments:
@@ -50,5 +52,12 @@ public class XKCDDownloader extends Downloader {
 	@Override
 	protected String getBasePrevNextURL() {
 		return "http://xkcd.com";
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://dynamic.xkcd.com/random/comic/";
+		return c;
 	}
 }
