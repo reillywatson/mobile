@@ -6,6 +6,8 @@ import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 import android.util.Log;
 
 public class SharingMachineDownloader extends Downloader {
@@ -68,5 +70,12 @@ public class SharingMachineDownloader extends Downloader {
 	@Override
 	protected Pattern getPrevComicPattern() {
 		return null;
+	}
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = rootDomain + "/randomComicViewer.php";
+		return c;
 	}
 }
