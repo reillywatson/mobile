@@ -35,6 +35,7 @@ import com.vasken.comics.Downloaders.SharkAttackDownloader;
 import com.vasken.comics.Downloaders.ShermansLagoonDownloader;
 import com.vasken.comics.Downloaders.UserFriendlyDownloader;
 import com.vasken.comics.Downloaders.VGCatsDownloader;
+import com.vasken.comics.Downloaders.WondermarkDownloader;
 import com.vasken.comics.Downloaders.XKCDDownloader;
 
 public class ComicList {
@@ -318,6 +319,7 @@ public class ComicList {
 		comics.add(new ComicInfo("Saturday Morning Breakfast Cereal", "http://www.smbc-comics.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SMBCDownloader(); }}));
 	   	comics.add(new ComicInfo("Buttersafe", "http://buttersafe.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ButtersafeDownloader(); }}));
 		comics.add(new ComicInfo("MegaTokyo", "http://www.megatokyo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new MegaTokyoDownloader(); }}));
+		comics.add(new ComicInfo("Wondermark", "http://wondermark.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new WondermarkDownloader(); }}));
 		Collections.sort(comics);
 	}
 }
