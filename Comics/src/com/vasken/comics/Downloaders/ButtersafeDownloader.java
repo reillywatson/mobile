@@ -2,6 +2,8 @@ package com.vasken.comics.Downloaders;
 
 import java.util.regex.Pattern;
 
+import com.vasken.comics.Comic;
+
 public class ButtersafeDownloader extends Downloader {
 
 	private static Pattern imgData = Pattern.compile("<div id=\"comic\">.*?<img src=\"(.*?)\"", Pattern.DOTALL);
@@ -28,5 +30,11 @@ public class ButtersafeDownloader extends Downloader {
 	protected Pattern getTitlePattern() {
 		return title;
 	}
-
+	
+	@Override
+	protected Comic newComic() {
+		Comic c = super.newComic();
+		c.randomUrl = "http://www.ohnorobot.com/random.pl?comic=1307";
+		return c;
+	}
 }

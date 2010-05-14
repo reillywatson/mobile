@@ -8,6 +8,7 @@ public class CapesNBabesDownloader extends Downloader {
 	private static Pattern imgData = Pattern.compile("<div id=[\"']comic[\"']>[^<]*?<img src='(.*?)'", Pattern.DOTALL);
 	private static Pattern prevComic = Pattern.compile("<a href=\"([^>]*?)\">&laquo; Previous", Pattern.DOTALL);
 	private static Pattern nextComic = Pattern.compile("<a href=\"([^>]*?)\">Next &raquo;", Pattern.DOTALL);
+	private static Pattern randomComic = Pattern.compile("Random Comic.*?<a href=\"(.*?)\"", Pattern.DOTALL);
 	
 	@Override
 	protected Pattern getComicPattern() {
@@ -22,6 +23,11 @@ public class CapesNBabesDownloader extends Downloader {
 	@Override
 	protected Pattern getPrevComicPattern() {
 		return prevComic;
+	}
+	
+	@Override
+	protected Pattern getRandomComicPattern() {
+		return randomComic;
 	}
 
 	@Override
