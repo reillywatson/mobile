@@ -19,6 +19,7 @@ import com.vasken.comics.Downloaders.CyanideAndHappinessDownloader;
 import com.vasken.comics.Downloaders.DilbertDownloader;
 import com.vasken.comics.Downloaders.DinosaurComicsDownloader;
 import com.vasken.comics.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.GirlGeniusDownloader;
 import com.vasken.comics.Downloaders.GirlsWithSlingshotsDownloader;
 import com.vasken.comics.Downloaders.GoComicsDownloader;
 import com.vasken.comics.Downloaders.LeastICouldDoDownloader;
@@ -320,6 +321,7 @@ public class ComicList {
 	   	comics.add(new ComicInfo("Buttersafe", "http://buttersafe.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new ButtersafeDownloader(); }}));
 		comics.add(new ComicInfo("MegaTokyo", "http://www.megatokyo.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new MegaTokyoDownloader(); }}));
 		comics.add(new ComicInfo("Wondermark", "http://wondermark.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new WondermarkDownloader(); }}));
+		comics.add(new ComicInfo("Girl Genius", "http://www.girlgeniusonline.com/comic.php", new Callable<Downloader>(){public Downloader call() throws Exception { return new GirlGeniusDownloader(); }}));
 		Collections.sort(comics);
 	}
 }
