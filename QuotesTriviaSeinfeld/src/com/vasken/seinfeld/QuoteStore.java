@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsTrivia;
+package com.vasken.seinfeld;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsTrivia;
+package com.vasken.seinfeld;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -66,8 +66,8 @@ public class Main extends Activity {
 		opt2 = (Button) findViewById(R.id.opt2);
 		opt3 = (Button) findViewById(R.id.opt3);
 		try {
-			quotestore = new QuoteStore(this, R.raw.the_simpsons);
-			triviastore = new TriviaStore(this, R.raw.simpsons_trivia);
+			quotestore = new QuoteStore(this, R.raw.seinfeld);
+			triviastore = null;
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
 		}
@@ -206,7 +206,7 @@ public class Main extends Activity {
 			while (quote.speaker == null) {
 				quote = quotestore.randomQuote();
 			}
-		} else if (triviastore.isAvailable()
+		} else if (triviastore != null && triviastore.isAvailable()
 				&& nextRandInt <= desiredPercentOfSpeakerQuestions
 						+ desiredPercentOfTriviaQuestions) {
 			isTriviaQuestion = true;

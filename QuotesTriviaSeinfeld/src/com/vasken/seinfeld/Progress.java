@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsTrivia;
+package com.vasken.seinfeld;
 
 import android.content.Context;
 import android.graphics.Canvas;

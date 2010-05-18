@@ -65,13 +65,13 @@
 			
 		<!-- Place an AdMob ad at the bottom of the screen. -->
         <!-- It has white text on a black background. -->
-        <!-- The description of the surrounding context is 'Android game'. -->
+        <!-- The description of the surrounding context is 'Hit It? Rate Hot Girls'. -->
         <com.admob.android.ads.AdView
           android:id="@+id/ad" 
           app:backgroundColor="#000000"
           app:primaryTextColor="#FFFFFF"
           app:secondaryTextColor="#CCCCCC"
-          app:keywords="Hit It? Girls Rate"
+          app:keywords="Hit It? Rate Hot Girls"
           android:layout_alignParentBottom="true"
           android:layout_width="fill_parent" 
           android:layout_height="wrap_content"

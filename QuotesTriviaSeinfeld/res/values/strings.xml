@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">The Simpsons: Trivia</string>
+    <string name="app_name">Seinfeld - QuoteTrivia</string>
     
     <string name="wrong">Nope, it was actually \'%1$s\'. Try again.</string>
     <string name="correct">You got it!</string>

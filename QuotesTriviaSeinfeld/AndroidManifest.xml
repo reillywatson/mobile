@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       android:versionCode="1"
-      android:versionName="1.0" package="com.vasken.SimpsonsTrivia">
+      android:versionName="1.0" package="com.vasken.seinfeld">
       
-    <application android:icon="@drawable/simpsons_icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
         <activity android:name=".Main" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -12,7 +12,7 @@
         </activity>
         
         <!-- The application's publisher ID assigned by AdMob -->
-        <meta-data android:value="a14be7633e70f52" android:name="ADMOB_PUBLISHER_ID" />
+        <meta-data android:value="a14bf221feb9210" android:name="ADMOB_PUBLISHER_ID" />
 
     </application>
     <uses-sdk android:minSdkVersion="3" />
