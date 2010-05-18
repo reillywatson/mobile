@@ -18,6 +18,10 @@ public class Main extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	ArrayList<ComicInfo> comics = ComicList.comicList();
+    	if (comics.isEmpty()) {
+    		ComicList.init(this);
+    		comics = ComicList.comicList();
+    	}
     	Log.d("NUM COMICS", Integer.toString(comics.size()));
     	moveFavoritesToFront(comics);
     	ListAdapter adapter = new ArrayAdapter<Object>(this, android.R.layout.simple_list_item_1, comics.toArray());

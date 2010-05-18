@@ -1,0 +1,9 @@
+{
+    "Name" : "Saturday Morning Breakfast Cereal",
+    "StartURL" : "http://www.smbc-comics.com/",
+	"ImagePattern" : "usemap=\"#buttons\".*?<img src='(.*?)'",
+	"PrevComicPattern" : "<map name=\"buttons\">[^<]*?<area[^>]*?>[^<]*?<area [^>]*? href=\"(.*?)\"",
+	"NextComicPattern" : "<map name=\"buttons\">[^<]*?<area[^>]*?>[^<]*?<area[^>]*?>[^<]*?<area[^>]*?>[^<]*?<area [^>]*? href=\"(.*?)\"",
+    "BasePrevNextURL" : "http://www.smbc-comics.com",
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=137"
+}

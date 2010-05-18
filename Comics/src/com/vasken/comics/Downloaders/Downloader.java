@@ -5,28 +5,56 @@ import java.util.regex.Pattern;
 
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
-
 import android.util.Log;
 
 import com.vasken.comics.Comic;
+import com.vasken.comics.ComicInfo;
 import com.vasken.util.WebRequester;
 
-public abstract class Downloader implements WebRequester.RequestCallback {
+public class Downloader implements WebRequester.RequestCallback {
 	private WebRequester requester = new WebRequester();	
 	protected Comic comic;
 	protected String url;
 	protected String defaultUrl;
+	protected Pattern titlePattern;
+	protected Pattern altTextPattern;
+	protected Pattern comicPattern;
+	protected Pattern prevComicPattern;
+	protected Pattern nextComicPattern;
+	protected Pattern randomComicPattern;
+	protected String baseComicURL = "";
+	protected String basePrevNextURL = "";
+	protected String randomComicURL;
 	
-	protected abstract Pattern getComicPattern();
-	protected abstract Pattern getNextComicPattern();
-	protected abstract Pattern getPrevComicPattern();
-	protected Pattern getTitlePattern() { return null; }
-	protected Pattern getAltTextPattern() { return null; }
-	protected Pattern getRandomComicPattern() { return null; }
+	protected Pattern getComicPattern() { return comicPattern; }
+	protected Pattern getNextComicPattern() { return nextComicPattern; }
+	protected Pattern getPrevComicPattern() { return prevComicPattern; }
+	protected Pattern getTitlePattern() { return titlePattern; }
+	protected Pattern getAltTextPattern() { return altTextPattern; }
+	protected Pattern getRandomComicPattern() { return randomComicPattern; }
 	
-	protected String getBaseComicURL() { return ""; }
-	protected String getBasePrevNextURL() { return ""; }
+	protected String getBaseComicURL() { return baseComicURL; }
+	protected String getBasePrevNextURL() { return basePrevNextURL; }
 	protected String getBaseRandomURL() { return getBasePrevNextURL(); }
+	
+	public Downloader(ComicInfo info) {
+		comicPattern = info.comicPattern;
+		titlePattern = info.titlePattern;
+		altTextPattern = info.altTextPattern;
+		prevComicPattern = info.prevComicPattern;
+		nextComicPattern = info.nextComicPattern;
+		basePrevNextURL = info.basePrevNextURL;
+		baseComicURL = info.baseComicURL;
+		randomComicPattern = info.randomComicPattern;
+		randomComicURL = info.randomLink;
+		Log.d("COMIC PATTERN", comicPattern.toString());
+		if (titlePattern != null)
+			Log.d("TITLE PATTERN", titlePattern.toString());
+		
+	}
+	
+	public Downloader() {
+	}
 		
 	// We're assuming all comics use permalinks right now,
 	// but that we don't want to remember where you left off
@@ -40,6 +68,10 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	}
 	
 	protected boolean parseRandomURL(StringBuilder partialResponse) {
+		if (randomComicURL != null) {
+			comic.randomUrl = randomComicURL;
+			return true;
+		}
 		Pattern p = getRandomComicPattern();
 		if (p == null)
 			return true;
@@ -68,7 +100,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = getComicPattern().matcher(partialResponse);
 		if (m.find()) {
-			comic.image = getBaseComicURL() + m.group(1);
+			comic.image = getBaseComicURL() + m.group(1).replaceAll("&amp;", "&");
 			Log.d("IMAGE", comic.image);
 			return true;
 		}
@@ -126,6 +158,7 @@ public abstract class Downloader implements WebRequester.RequestCallback {
 		// but it's hard to tell if we're on the newest strip (ie no next link), so maybe we'll only handle full responses for now...
 		if (isFinal) {
 			Log.d(this.getClass().getName(),"PARSING...");
+			//Log.d("RESPONSE", responseSoFar.toString());
 			comic = newComic();
 			boolean success = parseComic(responseSoFar);
 			success = success & (parsePrevLink(responseSoFar) | parseNextLink(responseSoFar));

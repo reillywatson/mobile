@@ -1,0 +1,10 @@
+{
+    "Name" : "Dilbert",
+    "StartURL" : "http://www.dilbert.com/",
+	"ImagePattern" : "<div class=\"STR_Image\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div class=\"STR_DateStrip\">(.*?)</div>",
+	"PrevComicPattern" : "<div class=\"STR_Calendar\">.*?<a href=\"(.*?)\"",
+	"NextComicPattern" : "<div class=\"STR_DateStrip\">.*?<a href=\"(.*?)\" class=\"STR_Next",
+	"BaseComicURL" : "http://www.dilbert.com",
+    "BasePrevNextURL" : "http://www.dilbert.com"
+}

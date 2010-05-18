@@ -3,6 +3,7 @@ package com.vasken.comics;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -69,14 +70,20 @@ public class Viewer extends Activity {
 
 	public void selectComic(ComicInfo info) {
 		currentComicInfo = info;
+		Log.d("SELECTED", info.name);
 		try {
-			currentDownloader = info.downloaderConstructor.call();
+			if (info.downloaderConstructor == null) {
+				currentDownloader = new Downloader(info);
+			}
+			else {
+				currentDownloader = info.downloaderConstructor.call();
+			}
 			currentDownloader.setDefaultUrl(info.startUrl);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String startUrl = getPreferences(Context.MODE_PRIVATE).getString("lastRead" + info.name, info.startUrl);
+		String startUrl = info.startUrl;//getPreferences(Context.MODE_PRIVATE).getString("lastRead" + info.name, info.startUrl);
 		downloadComic(startUrl);
 	}
 

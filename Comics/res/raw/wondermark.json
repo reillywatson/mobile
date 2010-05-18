@@ -1,0 +1,10 @@
+{
+    "Name" : "Wondermark",
+    "StartURL" : "http://wondermark.com/",
+	"ImagePattern" : "<div id=\"comic\".*? src=\"(.*?)\"",
+	"TitlePattern" : "a2a_config.linkname=\"(.*?)\";",
+	"PrevComicPattern" : "<div class=\"comic-nav-previous\">[^<]*?<a href=\"(.*?)\"",
+	"NextComicPattern" : "<div class=\"comic-nav-next\">[^<]*?<a href=\"(.*?)\"",
+    "AltTextPattern" : "<div id=\"comic\".*? title=\"(.*?)\"",
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=148"
+}

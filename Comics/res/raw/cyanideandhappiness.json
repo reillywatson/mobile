@@ -1,0 +1,10 @@
+{
+    "Name" : "Cyanide and Happiness",
+    "StartURL" : "http://www.explosm.net/comics/",
+	"ImagePattern" : "<img alt=\"Cyanide and Happiness, a daily webcomic\" src=\"(.*?)\"",
+	"TitlePattern" : "<title>(.*?) - Explosm.net</title>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">< Previous",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">Next >",
+    "BasePrevNextURL" : "http://www.explosm.net",
+	"RandomLink" : "http://www.explosm.net/comics/random/"
+}
