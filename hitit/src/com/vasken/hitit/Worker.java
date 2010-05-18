@@ -30,7 +30,7 @@ public class Worker implements WebRequester.RequestCallback {
 	public Worker(String postUrl) {
 		httpPost = new HttpPost(postUrl);		
         httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
-		
+		httpPost.addHeader("Accept-Encoding", "gzip");
 	}
 	
 	// @return null when there was a problem loading the page
@@ -59,7 +59,7 @@ public class Worker implements WebRequester.RequestCallback {
 			
 			Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 		}
-		new WebRequester().makeRequest(httpPost, this);
+		new WebRequester().makeRequest(httpPost, this, WebRequester.CompressionMethod.GZipCompression);
 		return item;
 	}
 	
