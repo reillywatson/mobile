@@ -50,7 +50,7 @@ public class ComicList {
 		comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.marriedtothesea.com"); }}));
 		comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.nataliedee.com"); }}));
 		comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
-		
+				
 		comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Archie", "http://www.creators.com/comics/archie.html"));
 	   	comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Ask Shagg", "http://www.creators.com/comics/ask-shagg.html"));
 		comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Flare", "http://www.creators.com/comics/flare.html"));
@@ -284,6 +284,9 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Working It Out", "http://www.comics.com/working_it_out"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Zack Hill", "http://www.comics.com/zack_hill"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "(Th)ink", "http://www.comics.com/think"));
+		
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Pardon My Planet", "http://www.chron.com/apps/comics/buildcp.mpl?c=152&page=1&cpp=1&v=3.0&quality=high"));
+		
 		Collections.sort(comics);
 	}
 }

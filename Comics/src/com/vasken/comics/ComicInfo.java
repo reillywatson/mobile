@@ -25,10 +25,11 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	public String randomLink;
 	public String basePrevNextURL = "";
 	public String baseComicURL = "";
+	public boolean requiresReferrer;
 	
 	void parseJSON(Context context, int jsonResID) {
 		try {
-	        JSONObject comicJSON = ((ComicsApplication)context.getApplicationContext()).getJSONCache().get(new Integer(jsonResID));
+	        JSONObject comicJSON = null; //((ComicsApplication)context.getApplicationContext()).getJSONCache().get(new Integer(jsonResID));
 	        if (comicJSON == null) {
 				BufferedReader in = new BufferedReader(new InputStreamReader(context.getResources().openRawResource(jsonResID)), 1024);
 				StringBuilder sb = new StringBuilder();
@@ -41,7 +42,7 @@ public class ComicInfo implements Comparable<ComicInfo> {
 		        	bytesRead = in.read(buffer, 0, buffer.length);
 		        }
 				comicJSON = new JSONObject(sb.toString());
-				((ComicsApplication)context.getApplicationContext()).getJSONCache().put(new Integer(jsonResID), comicJSON);
+				//((ComicsApplication)context.getApplicationContext()).getJSONCache().put(new Integer(jsonResID), comicJSON);
 	        }
 			if (comicJSON.has("Name"))
 				name = comicJSON.getString("Name");
@@ -65,6 +66,8 @@ public class ComicInfo implements Comparable<ComicInfo> {
 				basePrevNextURL = comicJSON.getString("BasePrevNextURL");
 			if (comicJSON.has("BaseComicURL"))
 				baseComicURL = comicJSON.getString("BaseComicURL");
+			if (comicJSON.has("RequiresReferrer"))
+				requiresReferrer = true;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -90,6 +93,7 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	public int compareTo(ComicInfo another) {
 		return name.replaceFirst("The ", "").compareTo(another.name.replaceFirst("The ", ""));
 	}
+	
 	@Override
 	public String toString() {
 		return name;

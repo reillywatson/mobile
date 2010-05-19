@@ -1,7 +1,11 @@
 package com.vasken.comics;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -90,7 +94,7 @@ public class Viewer extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String startUrl = info.startUrl;//getPreferences(Context.MODE_PRIVATE).getString("lastRead" + info.name, info.startUrl);
+		String startUrl = getPreferences(Context.MODE_PRIVATE).getString("lastRead" + info.name, info.startUrl);
 		downloadComic(startUrl);
 	}
 
@@ -103,7 +107,7 @@ public class Viewer extends Activity {
 	void loadComic(final Comic comic) {
 		if (comic != null) {
 			currentComic = comic;
-			if (comic.image == null) {
+			if (comic.image == null && comic.bitmap == null) {
 				if (!successfullyLoadedFirstComic && !currentDownloader.getUrl().equals(currentComicInfo.startUrl)) {
 					downloadComic(currentComicInfo.startUrl);
 					return;
@@ -111,7 +115,7 @@ public class Viewer extends Activity {
 			}
 			TextView alt = (TextView) Viewer.this.findViewById(R.id.alt_text);
 			WebView webView = (WebView) Viewer.this.findViewById(R.id.WebView);
-			webView.setVisibility((comic.image != null) ? View.VISIBLE : View.GONE);
+			webView.setVisibility((comic.image != null || comic.bitmap != null) ? View.VISIBLE : View.GONE);
 			webView.setOnLongClickListener(new OnLongClickListener() {
 				@Override
 				public boolean onLongClick(View arg0) {
@@ -121,13 +125,20 @@ public class Viewer extends Activity {
 					}
 					return true;
 				}});
-			/*
-			alt.setVisibility((comic.altText != null) ? View.VISIBLE : View.GONE);
-			if (comic.altText != null) {
-				alt.setText(StringUtils.unescapeHtml(comic.altText));
-			}*/
+
 			if (comic.image != null) {
 				webView.loadUrl(comic.image);
+			}
+			else if (comic.bitmap != null) {
+				try {
+					File file = new File(this.getCacheDir().getAbsolutePath() + "com.vasken.comics.tempimage.png");
+					FileOutputStream outstream = new FileOutputStream(file);
+					comic.bitmap.compress(Bitmap.CompressFormat.PNG, 100, outstream);
+					outstream.close();
+					webView.loadUrl(file.toURL().toString());
+				} catch (Exception e) {e.printStackTrace();}
+			}
+			if (comic.image != null || comic.bitmap != null) {
 				currentURL = comic.permalink;
 				successfullyLoadedFirstComic = true;
 				alt.setVisibility(View.GONE);

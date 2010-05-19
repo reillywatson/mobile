@@ -1,10 +1,22 @@
 package com.vasken.comics.Downloaders;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.entity.BufferedHttpEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import com.vasken.comics.Comic;
@@ -25,6 +37,7 @@ public class Downloader implements WebRequester.RequestCallback {
 	protected String baseComicURL = "";
 	protected String basePrevNextURL = "";
 	protected String randomComicURL;
+	protected boolean downloadImageDirectly;
 	
 	protected Pattern getComicPattern() { return comicPattern; }
 	protected Pattern getNextComicPattern() { return nextComicPattern; }
@@ -47,6 +60,7 @@ public class Downloader implements WebRequester.RequestCallback {
 		baseComicURL = info.baseComicURL;
 		randomComicPattern = info.randomComicPattern;
 		randomComicURL = info.randomLink;
+		downloadImageDirectly = info.requiresReferrer;
 		Log.d("COMIC PATTERN", comicPattern.toString());
 		if (titlePattern != null)
 			Log.d("TITLE PATTERN", titlePattern.toString());
@@ -100,8 +114,15 @@ public class Downloader implements WebRequester.RequestCallback {
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = getComicPattern().matcher(partialResponse);
 		if (m.find()) {
-			comic.image = getBaseComicURL() + m.group(1).replaceAll("&amp;", "&");
-			Log.d("IMAGE", comic.image);
+			String imageURL = getBaseComicURL() + m.group(1).replaceAll("&amp;", "&");
+			if (downloadImageDirectly) {
+				comic.bitmap = getBitmap(imageURL);
+				Log.d("BITMAP", Integer.toString(comic.bitmap.getHeight()));
+			}
+			else {
+				comic.image = imageURL;
+				Log.d("IMAGE", comic.image);
+			}
 			return true;
 		}
 		return false;
@@ -202,5 +223,30 @@ public class Downloader implements WebRequester.RequestCallback {
 	
 	public HttpUriRequest createHttpRequest(String url) {
 		return new HttpGet(url);
+	}
+	
+	public Bitmap getBitmap(String urlString) {
+		try {
+			URL bitmapUrl = new URL(urlString);
+	        HttpGet httpRequest = null;
+	
+	        try {
+	                httpRequest = new HttpGet(bitmapUrl.toURI());
+	                httpRequest.addHeader("Referer", url);
+	        } catch (URISyntaxException e) {
+	                e.printStackTrace();
+	        }
+	
+	        HttpClient httpclient = new DefaultHttpClient();
+	        HttpResponse response = (HttpResponse) httpclient.execute(httpRequest);
+	
+	        HttpEntity entity = response.getEntity();
+	        BufferedHttpEntity bufHttpEntity = new BufferedHttpEntity(entity); 
+	        InputStream instream = bufHttpEntity.getContent();
+	        return BitmapFactory.decodeStream(instream);
+		}
+		catch(IOException e) {
+			return null;
+		}
 	}
 }
