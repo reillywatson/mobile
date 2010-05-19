@@ -285,7 +285,48 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Zack Hill", "http://www.comics.com/zack_hill"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "(Th)ink", "http://www.comics.com/think"));
 		
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Apartment 3-G", "http://www.chron.com/apps/comics/buildcp.mpl?c=100&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Baby Blues", "http://www.chron.com/apps/comics/buildcp.mpl?c=101&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Better Half", "http://www.chron.com/apps/comics/buildcp.mpl?c=103&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Between Friends", "http://www.chron.com/apps/comics/buildcp.mpl?c=143&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Bizarro", "http://www.chron.com/apps/comics/buildcp.mpl?c=153&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Buckles", "http://www.chron.com/apps/comics/buildcp.mpl?c=105&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Crankshaft", "http://www.chron.com/apps/comics/buildcp.mpl?c=154&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Crock", "http://www.chron.com/apps/comics/buildcp.mpl?c=106&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Curtis", "http://www.chron.com/apps/comics/buildcp.mpl?c=107&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Dennis the Menace", "http://www.chron.com/apps/comics/buildcp.mpl?c=108&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Edge City", "http://www.chron.com/apps/comics/buildcp.mpl?c=151&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Fast Track", "http://www.chron.com/apps/comics/buildcp.mpl?c=111&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Funky Winkerbean", "http://www.chron.com/apps/comics/buildcp.mpl?c=112&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Grin and Bear It", "http://www.chron.com/apps/comics/buildcp.mpl?c=113&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Hi & Lois", "http://www.chron.com/apps/comics/buildcp.mpl?c=115&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Judge Parker", "http://www.chron.com/apps/comics/buildcp.mpl?c=116&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Lockhorns", "http://www.chron.com/apps/comics/buildcp.mpl?c=117&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Mallard Fillmore", "http://www.chron.com/apps/comics/buildcp.mpl?c=118&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Mark Trail", "http://www.chron.com/apps/comics/buildcp.mpl?c=144&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Marvin", "http://www.chron.com/apps/comics/buildcp.mpl?c=119&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Mary Worth", "http://www.chron.com/apps/comics/buildcp.mpl?c=120&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "My Cage", "http://www.chron.com/apps/comics/buildcp.mpl?c=157&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Pardon My Planet", "http://www.chron.com/apps/comics/buildcp.mpl?c=152&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Phantom", "http://www.chron.com/apps/comics/buildcp.mpl?c=123&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Piranha Club", "http://www.chron.com/apps/comics/buildcp.mpl?c=124&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Redeye", "http://www.chron.com/apps/comics/buildcp.mpl?c=126&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Rex Morgan", "http://www.chron.com/apps/comics/buildcp.mpl?c=127&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Rhymes with Orange", "http://www.chron.com/apps/comics/buildcp.mpl?c=136&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Safe Havens", "http://www.chron.com/apps/comics/buildcp.mpl?c=128&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Sally Forth", "http://www.chron.com/apps/comics/buildcp.mpl?c=129&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Six Chix", "http://www.chron.com/apps/comics/buildcp.mpl?c=147&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Slylock Fox", "http://www.chron.com/apps/comics/buildcp.mpl?c=146&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Snuffy Smith", "http://www.chron.com/apps/comics/buildcp.mpl?c=148&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Spider-Man", "http://www.chron.com/apps/comics/buildcp.mpl?c=130&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "The Brilliant Mind of Edison Lee", "http://www.chron.com/apps/comics/buildcp.mpl?c=156&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Tiger", "http://www.chron.com/apps/comics/buildcp.mpl?c=132&page=1&cpp=1&v=3.0&quality=high"));
+		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Zippy the Pinhead", "http://www.chron.com/apps/comics/buildcp.mpl?c=137&page=1&cpp=1&v=3.0&quality=high"));
+		// For reasons that are unclear, these 3 comics fail to load
+		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Boffo", "http://www.chron.com/apps/comics/buildcp.mpl?c=12&page=1&cpp=1&v=3.0&quality=high"));
+		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Prickly City", "http://www.chron.com/apps/comics/buildcp.mpl?c=92&page=1&cpp=1&v=3.0&quality=high"));
+		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Willy & Ethel", "http://www.chron.com/apps/comics/buildcp.mpl?c=77&page=1&cpp=1&v=3.0&quality=high"));
+
 		
 		Collections.sort(comics);
 	}
