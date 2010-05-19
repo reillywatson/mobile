@@ -52,7 +52,14 @@ public class Viewer extends Activity {
 		if (extras != null) {
 			comicNo = extras.getInt("com.vasken.comics.comicNo");
 		}
-		selectComic(ComicList.comicList().get(comicNo));
+		ComicInfo selectedComic;
+		if (comicNo < Main.favourites.size()) {
+			selectedComic = Main.favourites.get(comicNo);
+		}
+		else {
+			selectedComic = Main.comics.get(comicNo - Main.favourites.size());
+		}
+		selectComic(selectedComic);
 	}
 	
 	@Override

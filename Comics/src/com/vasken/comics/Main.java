@@ -13,8 +13,8 @@ import android.widget.ListView;
 
 public class Main extends ListActivity {
 	
-	ArrayList<ComicInfo> comics;
-	ArrayList<ComicInfo> favourites = new ArrayList<ComicInfo>();
+	static ArrayList<ComicInfo> comics;
+	static ArrayList<ComicInfo> favourites = new ArrayList<ComicInfo>();
 	
     /** Called when the activity is first created. */
     @Override
@@ -55,7 +55,6 @@ public class Main extends ListActivity {
     			}
     			if (match != null) {
     				list.add(match);
-    				comics.remove(match);
     			}
     		}
     	}
@@ -63,6 +62,9 @@ public class Main extends ListActivity {
     }
     
     protected void onListItemClick(ListView l, View v, int position, long id) {
+    	position--;
+    	if (position >= favourites.size())
+    		position--;
     	Intent intent = new Intent(this, Viewer.class);
     	intent.putExtra("com.vasken.comics.comicNo", position);
     	this.startActivity(intent);
