@@ -54,9 +54,7 @@ public class Main extends ListActivity {
 		return this;
 	}
 	
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
+	void saveFavourites() {
 		StringBuilder favstr = new StringBuilder();
 		for (ComicInfo info : favourites) {
 			favstr.append(info.name);
@@ -133,6 +131,7 @@ public class Main extends ListActivity {
 			} else if (item.getTitle().equals("Remove from favorites")) {
 				favourites.remove(comicInfo);
 			}
+			saveFavourites();
 			adapter.notifyDataSetChanged();
 		}
 		return true;
