@@ -246,6 +246,8 @@ public class Main extends Activity {
 
 			answers.add(currentAnswer);
 			populateListWithUniqueElements(answers, 3, generator);
+			
+			currentAnswer = StringUtils.unescapeHtml(currentAnswer);
 		}
 		Collections.shuffle(answers);
 
