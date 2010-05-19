@@ -1,0 +1,10 @@
+{
+    "Name" : "MegaTokyo",
+    "StartURL" : "http://www.megatokyo.com/",
+	"ImagePattern" : "<span id=\"strip\".*? src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"title\">(.*?)</div>",
+	"PrevComicPattern" : "<li class=\"prev\"><a href=\"\\.(.*?)\"",
+	"NextComicPattern" : "<li class=\"next\"><a href=\"\\.(.*?)\"",
+	"BaseComicURL" : "http://www.megatokyo.com/",
+    "BasePrevNextURL" : "http://www.megatokyo.com"
+}

@@ -1,0 +1,1 @@
+Sharing Machine comics can't be generalized to a regex.   

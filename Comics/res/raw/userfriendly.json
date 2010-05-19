@@ -1,0 +1,8 @@
+{
+    "Name" : "User Friendly",
+    "StartURL" : "http://ars.userfriendly.org/cartoons/?mode=classic",
+	"ImagePattern" : "<img border=\"0\" src=\"(.*?)\" [^>]*? ALT=\"Strip for",
+	"PrevComicPattern" : "<area shape=\"rect\" href=\"([^>]*?)\" [^>]*? alt=\"Previous Cartoon\">",
+	"NextComicPattern" : "<area shape=\"rect\" href=\"([^>]*?)\" [^>]*? alt=\"\">",
+    "BasePrevNextURL" : "http://ars.userfriendly.org"
+}

@@ -1,0 +1,10 @@
+{
+    "Name" : "Sherman's Lagoon",
+    "StartURL" : "http://www.slagoon.com/cgi-bin/sviewer.pl",
+	"ImagePattern" : "</FORM>.*?<IMG SRC=\"(.*?)\"",
+	"TitlePattern" : "<TITLE>Sherman's Lagoon Comic Strip -- (.*?)</TITLE>",
+	"PrevComicPattern" : "Next Cartoon.*?<A HREF=\"(.*?)\"",
+	"NextComicPattern" : "</SELECT>.*?<A HREF=\"(.*?)\"",
+	"BaseComicURL" : "http://www.slagoon.com/",
+    "BasePrevNextURL" : "http://www.slagoon.com"
+}

@@ -1,0 +1,9 @@
+{
+    "Name" : "Looking For Group",
+    "StartURL" : "http://www.lfgcomic.com/page/latest",
+	"ImagePattern" : "id=\"comic\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<title>Looking For Group &raquo; (.*?)</title>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img alt=\"Previous\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"><img alt=\"Next\"",
+    "BasePrevNextURL" : "http://www.lfgcomic.com"
+}
