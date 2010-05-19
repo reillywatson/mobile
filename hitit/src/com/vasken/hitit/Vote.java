@@ -61,7 +61,7 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-        	workerPool.add(new Worker(getString(R.string.rate_url_male)));
+        	workerPool.add(new Worker(getString(R.string.rate_url_female)));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		

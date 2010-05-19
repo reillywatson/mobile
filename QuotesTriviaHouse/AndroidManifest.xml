@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.vasken.hitit"
       android:versionCode="1"
-      android:versionName="1.0">
+      android:versionName="1.0" package="com.vasken.house">
       
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
-        <activity android:name=".Vote" android:screenOrientation="portrait"  android:label="@string/app_name">
+        <activity android:name=".Main" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -13,11 +12,10 @@
         </activity>
         
         <!-- The application's publisher ID assigned by AdMob -->
-        <meta-data android:value="a14bd273e643f6a" android:name="ADMOB_PUBLISHER_ID" />
-        
-    </application>
+        <meta-data android:value="a14bf359a5d9fc6" android:name="ADMOB_PUBLISHER_ID" />
 
-<uses-sdk android:minSdkVersion="3" />
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
 
 <!-- AdMob SDK permissions -->
 <uses-permission android:name="android.permission.INTERNET" />

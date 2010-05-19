@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.house"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<LinearLayout
+	    android:id="@+id/result_container"
+	    android:layout_alignParentTop="true"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+    	
+	    <TextView 
+	    	android:id="@+id/result"
+	    	style="@style/ResultMessage"/>
+		    
+    </LinearLayout>
+    
+    <!-- Place an AdMob ad at the bottom of the screen. -->
+    <!-- It has white text on a black background. -->
+    
+    <com.admob.android.ads.AdView
+          android:id="@+id/ad" 
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Seinfeld Quotes Trivia"
+          android:layout_alignParentBottom="true"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+        />
+        
+    <LinearLayout
+    	android:id="@+id/answer_area"
+    	android:layout_above="@id/ad"
+    	android:layout_alignWithParentIfMissing="true"
+    	android:orientation="vertical"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+	    <Button
+	    	android:id="@+id/opt1"
+	    	style="@style/AnswerButton"/>
+	    <Button
+	    	android:id="@+id/opt2"
+	    	style="@style/AnswerButton"/>
+	    <Button
+	    	android:id="@+id/opt3"
+	    	style="@style/AnswerButton"/>
+    </LinearLayout>
+    
+    <com.vasken.house.Progress
+    	android:id="@+id/score"
+    	android:layout_alignParentRight="true"
+        android:progressDrawable="@drawable/progress"
+		android:layout_above="@id/answer_area"
+		android:layout_below="@id/result_container"
+		android:layout_margin="3px"
+        android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"/>
+	
+	<LinearLayout
+		android:id="@+id/question_area"
+		android:background="@drawable/quote_background"
+		android:layout_toLeftOf="@id/score"
+		android:layout_below="@id/result_container"
+		android:layout_above="@id/answer_area"
+		android:layout_margin="3px"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+		
+		<WebView  
+		    android:id="@+id/quote"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent" />    
+    </LinearLayout>
+</RelativeLayout>
