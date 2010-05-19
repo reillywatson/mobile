@@ -8,12 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class Main extends ListActivity {
 	
@@ -37,43 +33,10 @@ public class Main extends ListActivity {
 				android.R.layout.simple_list_item_1, favourites.toArray()));
 		adapter.addSection("Comics", new ArrayAdapter<Object>(this,
 				android.R.layout.simple_list_item_1, comics.toArray()));
-//		adapter.addSection("Comics", new SimpleAdapter(this, security, R.layout.list_complex,
-	//		new String[] { ITEM_TITLE, ITEM_CAPTION }, new int[] { R.id.list_complex_title, R.id.list_complex_caption }));
-//    	ListAdapter adapter = new ArrayAdapter<Object>(this, android.R.layout.simple_list_item_1, comics.toArray());
     	setListAdapter(adapter);
     	super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         getListView().setTextFilterEnabled(true);
-    }
-    
-    class ComicListAdapter extends BaseAdapter implements ListAdapter {
-
-		@Override
-		public int getCount() {
-			return ComicList.comicList().size();
-		}
-
-		@Override
-		public Object getItem(int position) {
-			return ComicList.comicList().get(position);
-		}
-
-		@Override
-		public long getItemId(int position) {
-			return position;
-		}
-
-		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			if (convertView == null) {
-				
-				convertView = getLayoutInflater().inflate(android.R.layout.simple_list_item_1, parent);
-			}
-			TextView text = (TextView)convertView.findViewById(android.R.id.text1);
-			text.setText(getItem(position).toString());
-			return convertView;
-		}
-    
     }
     
     private ArrayList<ComicInfo> extractFavourites(ArrayList<ComicInfo> comics) {
