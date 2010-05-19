@@ -129,6 +129,7 @@ public class Main extends ListActivity {
 			Log.d("COMIC", comicInfo.toString());
 			if (item.getTitle().equals("Add to favorites")) {
 				favourites.add(comicInfo);
+				Collections.sort(favourites);
 			} else if (item.getTitle().equals("Remove from favorites")) {
 				favourites.remove(comicInfo);
 			}
