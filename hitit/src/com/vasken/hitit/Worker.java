@@ -22,7 +22,7 @@ import com.vasken.util.WebRequester;
 public class Worker implements WebRequester.RequestCallback {	
 	private HttpPost httpPost;
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
-    private Pattern prevRatingRegex = Pattern.compile("class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes", Pattern.DOTALL);
+    private Pattern prevRatingRegex = Pattern.compile("<div class=\"score\"[^>]*?>(.*?)</div>.*?Based on ([^<]*?) votes", Pattern.DOTALL);
     private ExecutorService threadPool = Executors.newFixedThreadPool(1);
     String id;
     int rating;
