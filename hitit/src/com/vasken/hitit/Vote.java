@@ -61,7 +61,7 @@ public class Vote extends Activity {
         
         for (int i = 0; i < NUM_WORKERS; i++) {
 //        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
-        	workerPool.add(new Worker(getString(R.string.rate_url_female)));
+        	workerPool.add(new HotOrNotWorker(getString(R.string.rate_url_female), "Female"));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
@@ -133,12 +133,12 @@ public class Vote extends Activity {
     
     void itemReady(final HotItem item) {
     	if (item != null ){
-    		if (seenItems.size() < 20)
+    		if (seenItems.size() < DESIRED_QUEUE_LENGTH)
     			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
     		if (waitingForImage) {
 				showItem(item);
 	    	}
-	    	else {
+	    	else if (itemQueue.size() < DESIRED_QUEUE_LENGTH){
 	    		itemQueue.add(item);
 	    	}
     	}
@@ -196,7 +196,6 @@ public class Vote extends Activity {
 							nextItem.setResultImage(lastItem.getImage());
 						}
 						itemReady(nextItem);
-						
 						lastItem = nextItem;
 					}
 				}
