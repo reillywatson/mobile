@@ -28,8 +28,10 @@ public class Worker implements WebRequester.RequestCallback {
     int rating;
     String imageURL;
     HotItem item;
+    String gender;
     
-	public Worker(String postUrl) {
+	public Worker(String postUrl, String gender) {
+		this.gender = gender;
 		httpPost = new HttpPost(postUrl);		
         httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
 		httpPost.addHeader("Accept-Encoding", "gzip");
@@ -93,15 +95,12 @@ public class Worker implements WebRequester.RequestCallback {
 			        params.add(new BasicNameValuePair("AverageRating", avgRating.trim()));
 			        params.add(new BasicNameValuePair("NumRatings", numRatings.trim()));
 			        params.add(new BasicNameValuePair("ImageURL", imageURL.trim()));
+			        params.add(new BasicNameValuePair("Gender", gender));
 					post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 					new WebRequester().makeRequest(post, new WebRequester.RequestCallback() {
 						@Override
 						public boolean handlePartialResponse(StringBuilder response, boolean isFinal) {
-							if (isFinal) {
-								Log.d("RESPONSE", response.toString());
-								return true;
-							}
-							return false;
+							return true;
 						}
 					});
 				} catch (Exception e) { e.printStackTrace(); }
