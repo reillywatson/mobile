@@ -3,12 +3,14 @@ package com.vasken.comics;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,6 +23,8 @@ public class Main extends ListActivity {
 	static ArrayList<ComicInfo> comics;
 	static ArrayList<ComicInfo> favourites = new ArrayList<ComicInfo>();
 	SeparatedListAdapter adapter;
+	
+	Dialog theAboutDialog;
 	
     /** Called when the activity is first created. */
     @Override
@@ -38,17 +42,26 @@ public class Main extends ListActivity {
 	    	favourites = extractFavourites(comics);
 		}
 		adapter = new SeparatedListAdapter(this, R.layout.list_header);
-		adapter.addSection("Favorites", new ArrayAdapter<ComicInfo>(this,
-				android.R.layout.simple_list_item_1, favourites));
-		adapter.addSection("Comics", new ArrayAdapter<ComicInfo>(this,
-				android.R.layout.simple_list_item_1, comics));
+		adapter.addSection("Favorites", new ArrayAdapter<ComicInfo>(this, android.R.layout.simple_list_item_1, favourites));
+		adapter.addSection("Comics", new ArrayAdapter<ComicInfo>(this, android.R.layout.simple_list_item_1, comics));
     	setListAdapter(adapter);
 
+    	prepareAboutDialog();
+    	
         setContentView(R.layout.main);
         getListView().setTextFilterEnabled(true);
         registerForContextMenu(getListView());
     }
     
+    /******* DO PREPARATION WORK *******/
+    /***********************************/
+    
+	private void prepareAboutDialog() {
+		theAboutDialog = new Dialog(this);
+		theAboutDialog.setContentView(R.layout.about_dialog);
+		theAboutDialog.setTitle("About");
+	}
+
 	@Override
 	public Object onRetainNonConfigurationInstance() {
 		return this;
@@ -81,6 +94,21 @@ public class Main extends ListActivity {
     	Collections.sort(list);
     	return list;
     }
+	
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.clear();
+		menu.add("About");
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getTitle().equals("About")) {
+			theAboutDialog.show();
+		}
+		return true;
+	}
     
 	public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
 		Log.d("CONTEXT MENU", menu.toString());
@@ -130,6 +158,8 @@ public class Main extends ListActivity {
 				Collections.sort(favourites);
 			} else if (item.getTitle().equals("Remove from favorites")) {
 				favourites.remove(comicInfo);
+			} else if (item.getTitle().equals("About")) {
+				theAboutDialog.show();
 			}
 			saveFavourites();
 			adapter.notifyDataSetChanged();

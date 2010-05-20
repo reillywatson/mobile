@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -30,6 +31,9 @@ public class Viewer extends Activity {
 	boolean successfullyLoadedFirstComic;
 	boolean currentComicIsRandom;
 
+	Dialog theAboutDialog;
+	Dialog theLoadingDialog;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,6 +42,9 @@ public class Viewer extends Activity {
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.setBackgroundColor(0);
 		webView.getSettings().setJavaScriptEnabled(false);
+		
+		prepareAboutDialog();
+		prepareLoadingDialog();
 		
 		Viewer rotatedSelf = (Viewer)getLastNonConfigurationInstance();
 		if (rotatedSelf != null) {
@@ -65,7 +72,19 @@ public class Viewer extends Activity {
 		}
 		selectComic(selectedComic);
 	}
-	
+
+	private void prepareAboutDialog() {
+		theAboutDialog = new Dialog(this);
+		theAboutDialog.setContentView(R.layout.about_dialog);
+		theAboutDialog.setTitle("About");
+	}
+
+	private void prepareLoadingDialog() {
+		theLoadingDialog = new Dialog(this);
+		theLoadingDialog.setContentView(R.layout.loading_dialog);
+		theLoadingDialog.setTitle("Loading...");
+	}
+
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
@@ -101,11 +120,16 @@ public class Viewer extends Activity {
 	public void downloadComic(String url) {
 		currentComicIsRandom = false;
 		currentDownloader.setUrl(url);
+		
+		theLoadingDialog.show();
+		
 		new DownloadTask().execute(currentDownloader);
 	}
 	
 	void loadComic(final Comic comic) {
 		if (comic != null) {
+			theLoadingDialog.hide();
+			
 			currentComic = comic;
 			if (comic.image == null && comic.bitmap == null) {
 				if (!successfullyLoadedFirstComic && !currentDownloader.getUrl().equals(currentComicInfo.startUrl)) {
@@ -183,6 +207,7 @@ public class Viewer extends Activity {
 			menu.add("Random");
 		}
 		menu.add("Newest");
+		menu.add("About");
 		return true;
 	}
 	
@@ -191,9 +216,11 @@ public class Viewer extends Activity {
 		if (item.getTitle().equals("Random") && currentComic != null && currentComic.randomUrl != null) {
 			downloadComic(currentComic.randomUrl);
 			currentComicIsRandom = true;
-		}
-		if (item.getTitle().equals("Newest") && currentComic != null)
+		} else if (item.getTitle().equals("Newest") && currentComic != null) {
 			downloadComic(currentComicInfo.startUrl);
+		} else if (item.getTitle().equals("About")) {
+			theAboutDialog.show();
+		}
 		return true;
 	}
 
