@@ -125,15 +125,15 @@ public class Vote extends Activity {
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
-			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
 			
 			setTotals(item.getResultImage(), item.getResultTotals(), item.getResultAverage());
 		}});
     }
     
     void itemReady(final HotItem item) {
-    	if (item != null ){//&& !seenItems.contains(item.getRateId())) {
-    		//seenItems.add(item.getRateId());
+    	if (item != null ){
+    		if (seenItems.size() < 20)
+    			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
     		if (waitingForImage) {
 				showItem(item);
 	    	}
