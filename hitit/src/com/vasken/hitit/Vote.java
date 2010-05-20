@@ -60,7 +60,8 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-        	workerPool.add(new Worker(getString(R.string.rate_url_female), "Female"));
+//        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
+        	workerPool.add(new Worker(getString(R.string.rate_url_female)));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
@@ -105,7 +106,7 @@ public class Vote extends Activity {
     		((ImageView)findViewById(R.id.rate_result_image)).setImageBitmap(null);
     		((TextView)findViewById(R.id.rate_result_totals)).setText("Not enough votes");
     	}else{
-	    	String totalsString = Integer.valueOf(totals) > 5000 ? "Over 5000" : totals; 
+	    	String totalsString = Integer.valueOf(totals) > 10000 ? "Over 10000" : totals; 
 	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totalsString + " votes");
 	    	
 	    	if (results < 7) {
