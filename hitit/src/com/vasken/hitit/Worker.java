@@ -3,6 +3,8 @@ package com.vasken.hitit;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,19 +14,19 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 
-import com.vasken.util.WebRequester;
-
 import android.graphics.Bitmap;
 import android.util.Log;
 
+import com.vasken.util.WebRequester;
+
 public class Worker implements WebRequester.RequestCallback {	
 	private HttpPost httpPost;
-
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
     private Pattern prevRatingRegex = Pattern.compile("class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes", Pattern.DOTALL);
-    
+    private ExecutorService threadPool = Executors.newFixedThreadPool(1);
     String id;
     int rating;
+    String imageURL;
     HotItem item;
     
 	public Worker(String postUrl) {
@@ -34,14 +36,15 @@ public class Worker implements WebRequester.RequestCallback {
 	}
 	
 	// @return null when there was a problem loading the page
-	public HotItem getPageData(String id, int rating) {
-		return requestDataFromServer(id, rating);
+	public HotItem getPageData(String id, int rating, String imageURL) {
+		return requestDataFromServer(id, rating, imageURL);
 	}
 	
-	private HotItem requestDataFromServer(String id, int rating) {
+	private HotItem requestDataFromServer(String id, int rating, String imageURL) {
 		Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading" + rating +"    " + id);
 		this.id = id;
 		this.rating = rating;
+		this.imageURL = imageURL;
 		item = null;
 		if (rating > 0 && id != null) {
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -75,6 +78,34 @@ public class Worker implements WebRequester.RequestCallback {
 			Log.d(getClass().getName(), "Rating ID: " + id);
 			Log.d(getClass().getName(), "Average Rating: " + avgRating);
 			Log.d(getClass().getName(), "Num ratings: " + numRatings);
+			sendDataToServer(id, avgRating, numRatings, imageURL);
+		}
+	}
+	
+	void sendDataToServer(final String ratingId, final String avgRating, final String numRatings, final String imageURL) {
+		if (imageURL != null) {
+			threadPool.submit(new Runnable() { public void run() {
+				try {
+					Log.d("SENDING RATING INFO", "URL: " + imageURL + "avg: " + avgRating + " num: " + numRatings + " id: " + ratingId);
+					HttpPost post = new HttpPost("http://vaskendroid.appspot.com/submit");
+					List<NameValuePair> params = new ArrayList<NameValuePair>();
+			        params.add(new BasicNameValuePair("RatingID", ratingId.trim()));
+			        params.add(new BasicNameValuePair("AverageRating", avgRating.trim()));
+			        params.add(new BasicNameValuePair("NumRatings", numRatings.trim()));
+			        params.add(new BasicNameValuePair("ImageURL", imageURL.trim()));
+					post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
+					new WebRequester().makeRequest(post, new WebRequester.RequestCallback() {
+						@Override
+						public boolean handlePartialResponse(StringBuilder response, boolean isFinal) {
+							if (isFinal) {
+								Log.d("RESPONSE", response.toString());
+								return true;
+							}
+							return false;
+						}
+					});
+				} catch (Exception e) { e.printStackTrace(); }
+			}});
 		}
 	}
 
@@ -93,7 +124,7 @@ public class Worker implements WebRequester.RequestCallback {
             		if (id != null && rating > 0) {
             			addRatingResults(id, sb, theHotItem);
             		}
-            		
+            		theHotItem.setImageURL(m.group(1));
             		Bitmap image = WebRequester.bitmapFromUrl(m.group(1));
         			
         			theHotItem.setImage(image);
