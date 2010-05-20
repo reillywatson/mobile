@@ -125,7 +125,7 @@ public class Vote extends Activity {
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
-			seenItems.add(item);
+			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
 			
 			setTotals(item.getResultImage(), item.getResultTotals(), item.getResultAverage());
 		}});
