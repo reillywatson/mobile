@@ -16,6 +16,7 @@ public class ComicList {
 	static ArrayList<ComicInfo> comicList() { return comics; }
 	
 	static void init(Context context) {
+		comics.add(new ComicInfo(context, R.raw.dominicdeegan));
 		comics.add(new ComicInfo(context, R.raw.achewood));
 		comics.add(new ComicInfo(context, R.raw.amazingsuperpowers));
 		comics.add(new ComicInfo(context, R.raw.asofterworld));
