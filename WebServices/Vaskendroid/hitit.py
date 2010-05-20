@@ -39,6 +39,7 @@ class GetItems(webapp.RequestHandler):
 		self.response.out.write("<HotItems>")
 		for item in hotItems:
 			self.response.out.write("<HotItem>")
+			self.response.out.write("<RatingID>" + item.rateID + "</RatingID>")
 			self.response.out.write("<ImageURL>" + item.imageUrl + "</ImageURL>")
 			self.response.out.write("<AverageRating>" + item.avgRating + "</AverageRating>")
 			self.response.out.write("<NumRatings>" + item.numRatings + "</NumRatings>")
