@@ -20,7 +20,7 @@ public class AppEngineWorker extends Worker {
 	
 	private Pattern hotItemPattern =  Pattern.compile(
 		"<HotItem>" +
-//			"<RatingID>(.*?)</RatingID>" +
+			"<RatingID>(.*?)</RatingID>" +
 			"<ImageURL>(.*?)</ImageURL>" +
 			"<AverageRating>(.*?)</AverageRating>" +
 			"<NumRatings>(.*?)</NumRatings>" +
@@ -34,16 +34,16 @@ public class AppEngineWorker extends Worker {
 
 	@Override
 	public boolean handlePartialResponse(StringBuilder dataSoFar, boolean isFinal) {
-		if (dataSoFar.toString().endsWith("</HotItems>")) {
+		if (isFinal) {
 			Matcher m = hotItemPattern.matcher(dataSoFar);
 			while (m.find()) {
 				try {
 					HotItem theHotItem = new HotItem();
 
-	    			theHotItem.setRateId("m.group(1)");
-					theHotItem.setImageURL(m.group(1));
-					theHotItem.setResultAverage(Double.parseDouble(m.group(2)));
-					theHotItem.setResultTotals(m.group(3));
+	    			theHotItem.setRateId(m.group(1));
+					theHotItem.setImageURL(m.group(2));
+					theHotItem.setResultAverage(Double.parseDouble(m.group(3)));
+					theHotItem.setResultTotals(m.group(4));
 	        		
 					Bitmap image = WebRequester.bitmapFromUrl(theHotItem.getImageURL());
 	    			theHotItem.setImage(image);

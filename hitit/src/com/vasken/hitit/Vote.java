@@ -60,7 +60,7 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-//        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
+        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
         	workerPool.add(new HotOrNotWorker(getString(R.string.rate_url_female), "Female"));
         }
 		
@@ -174,9 +174,10 @@ public class Vote extends Activity {
 		@Override
 		public HotItem doInBackground(Void... params) {
 			HotItem nextItem = null;
-			
+			HotItem lastItem = null;
 			while(itemQueue.size() < DESIRED_QUEUE_LENGTH) {
-				HotItem lastItem = seenItems.poll();
+				if (lastItem == null)
+					lastItem = seenItems.poll();
 				if (lastItem == null)
 					lastItem = new HotItem(null, "5");
 				Worker worker = workerPool.poll();
