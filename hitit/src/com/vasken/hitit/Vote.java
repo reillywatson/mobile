@@ -60,8 +60,8 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-//        	workerPool.add(new Worker(getString(R.string.webserver, DESIRED_QUEUE_LENGTH)));
-        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
+//        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
+        	workerPool.add(new Worker(getString(R.string.rate_url_female)));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
@@ -126,7 +126,7 @@ public class Vote extends Activity {
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
-			seenItems.add(item);
+			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
 			
 			setTotals(item.getResultImage(), item.getResultTotals(), item.getResultAverage());
 		}});

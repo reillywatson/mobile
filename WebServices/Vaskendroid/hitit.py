@@ -14,6 +14,7 @@ class HotItem(db.Model):
 	numRatings = db.StringProperty()
 	rateID = db.StringProperty()
 	rand = db.FloatProperty()
+	gender = db.StringProperty()
 
 
 class GetItems(webapp.RequestHandler):
@@ -24,15 +25,18 @@ class GetItems(webapp.RequestHandler):
 			numResults = 1
 		else:
 			numResults = int(numResults)
+		gender = self.request.get('Gender')
+		if gender == '':
+			gender = 'Female'
 		# I guess there's a way to do this to get all the items at once, but I can't figure it out...
 		for i in range(numResults):
 			rand = random.random()
-			results = db.GqlQuery("SELECT * FROM HotItem WHERE rand > :1 LIMIT 1",rand)
+			results = db.GqlQuery("SELECT * FROM HotItem WHERE rand > :1 AND gender = :2 LIMIT 1",rand,gender)
 			for result in results:
 				hotItems.append(result)
 		# we need to guarantee there's an item in there with a rand value of 1 otherwise our select will sometimes return nothing
 		if len(hotItems) == 0:
-			hotItem = getInitialItem()
+			hotItem = getInitialItem(gender)
 			hotItems.append(hotItem)
 			hotItem.put()
 		self.response.out.write('<?xml version="1.0" encoding="utf-8"?>')
@@ -48,13 +52,20 @@ class GetItems(webapp.RequestHandler):
 
 
 
-def getInitialItem():
+def getInitialItem(gender):
 	hotItem = HotItem()
+	hotItem.gender = gender	
 	hotItem.rand = 1.0
-	hotItem.imageUrl = 'http://p1.hotornot.com/pics/H8/HZ/KL/NY/RUHLAZOUQRTX.jpg'
-	hotItem.avgRating = '9.9'
-	hotItem.numRatings = '5467'
-	hotItem.rateId = '8604794'
+	if gender == 'Female':
+		hotItem.imageUrl = 'http://p1.hotornot.com/pics/H8/HZ/KL/NY/RUHLAZOUQRTX.jpg'
+		hotItem.avgRating = '9.9'
+		hotItem.numRatings = '5467'
+		hotItem.rateId = '8604794'
+	else:
+		hotItem.imageUrl = 'http://p1.hotornot.com/pics/HZ/KM/HZ/NY/KMRMEMGREMJEPKG.jpg'
+		hotItem.avgRating = '9.6'
+		hotItem.numRatings = '2670'
+		hotItem.rateId = '6500858'
 	return hotItem
 
 class SubmitRating(webapp.RequestHandler):
@@ -66,13 +77,14 @@ class SubmitRating(webapp.RequestHandler):
 			hotItem.avgRating = self.request.get('AverageRating')
 			hotItem.numRatings = self.request.get('NumRatings')
 			hotItem.rateID = self.request.get('RatingID')
+			hotItem.gender = self.request.get('Gender')
 			hotItem.put()
 			self.response.out.write('SUCCESS')
 		else:
-			self.response.out.write('Please specify ImageURL, AverageRating, NumRatings, and RatingID as POST params')
+			self.response.out.write('Please specify ImageURL, AverageRating, NumRatings, Gender, and RatingID as POST params')
 
 	def get(self):
-		self.response.out.write('Please specify ImageURL, AverageRating, NumRatings, and RatingID as POST params')
+		self.response.out.write('Please specify ImageURL, AverageRating, NumRatings, Gender, and RatingID as POST params')
 
 application = webapp.WSGIApplication([
   ('/', GetItems),

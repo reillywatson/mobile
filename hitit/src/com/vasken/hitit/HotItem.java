@@ -17,6 +17,13 @@ public class HotItem {
 	
 	public HotItem() {
 	}
+	
+	public HotItem(String imageURL, String rateID, String resultTotals, double resultAverage) {
+		this.imageURL = imageURL;
+		this.rateID = rateID;
+		this.resultTotals = resultTotals;
+		this.resultAverage = resultAverage;
+	}
 
 	public Bitmap getImage() {
 		return image;
