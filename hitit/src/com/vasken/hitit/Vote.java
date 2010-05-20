@@ -34,14 +34,13 @@ public class Vote extends Activity {
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
-	private String currentId = null;
 	private Bitmap currentBitmap;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
-	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
+	private Queue<HotItem> seenItems = new LinkedList<HotItem>();
     //private Set<String> seenItems = new HashSet<String>();
 	
     public OnClickListener defaultClickListener(final int rating) {
@@ -76,7 +75,6 @@ public class Vote extends Activity {
 	private void refresh(final int rating) {
 	   	waitingForImage = true;
 	   	
-	   	ratingsQueue.add(new RatingInfo(currentId, rating));
 		progressBar.setVisibility(View.VISIBLE);
 		
     	HotItem item = itemQueue.poll();
@@ -122,12 +120,12 @@ public class Vote extends Activity {
 	
 	public void showItem(final HotItem item) {
     	runOnUiThread(new Runnable() { public void run() { 
-    		currentId = item.getRateId();
     		currentBitmap = item.getImage();
 			((ImageView)findViewById(R.id.photo)).setImageBitmap(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
 			waitingForImage = false;
+			seenItems.add(item);
 			
 			setTotals(item.getResultImage(), item.getResultTotals(), item.getResultAverage());
 		}});
@@ -176,15 +174,13 @@ public class Vote extends Activity {
 		public HotItem doInBackground(Void... params) {
 			HotItem nextItem = null;
 			
-			HotItem lastItem = new HotItem(null, "5");
 			while(itemQueue.size() < DESIRED_QUEUE_LENGTH) {
-				RatingInfo rating = ratingsQueue.poll();
-				if (rating == null)
-					rating = new RatingInfo(null, 0);
-				
+				HotItem lastItem = seenItems.poll();
+				if (lastItem == null)
+					lastItem = new HotItem(null, "5");
 				Worker worker = workerPool.poll();
 				if (worker != null) {
-					nextItem = worker.getPageData(lastItem.getRateId(), 5);
+					nextItem = worker.getPageData(lastItem.getRateId(), 5, lastItem.getImageURL());
 					workerPool.add(worker);
 					
 					if (nextItem == null) {
