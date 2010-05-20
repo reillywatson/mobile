@@ -1,16 +1,6 @@
-<<<<<<< local
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MyLibrary"/>
-	<classpathentry kind="lib" path="/Users/reilly/Documents/workspace/android-sdk-mac_86/platforms/android-3/android.jar"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Android 1.5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
->>>>>>> other
