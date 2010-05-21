@@ -41,7 +41,6 @@ public class Vote extends Activity {
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
 	private Queue<HotItem> seenItems = new LinkedList<HotItem>();
-    //private Set<String> seenItems = new HashSet<String>();
 	
     public OnClickListener defaultClickListener(final int rating) {
     	return new OnClickListener() {
@@ -102,11 +101,12 @@ public class Vote extends Activity {
     	}
 
     	((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageBitmap(image);
-    	if ( totals == null ) {
+    	if ( totals == null || Integer.valueOf(totals) < 50) {
     		((ImageView)findViewById(R.id.rate_result_image)).setImageBitmap(null);
     		((TextView)findViewById(R.id.rate_result_totals)).setText("Not enough votes");
     	}else{
-	    	String totalsString = Integer.valueOf(totals) > 10000 ? "Over 10000" : totals; 
+    		String totalsString = Integer.valueOf(totals) > 10000? "Over 10000" : totals;
+    		
 	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totalsString + " votes");
 	    	
 	    	if (results < 7) {
@@ -133,7 +133,7 @@ public class Vote extends Activity {
     
     void itemReady(final HotItem item) {
     	if (item != null ){
-    		if (seenItems.size() < DESIRED_QUEUE_LENGTH)
+    		if (seenItems.size() < 1)
     			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
     		if (waitingForImage) {
 				showItem(item);

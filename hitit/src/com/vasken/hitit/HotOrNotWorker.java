@@ -36,7 +36,8 @@ public class HotOrNotWorker extends Worker {
 
 	// @return null when there was a problem loading the page
 	public HotItem getPageData(String id, int rating, String imageURL) {
-		Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading" + rating +"    " + id);
+		long startTime = System.currentTimeMillis();
+		
 		this.id = id;
 		this.rating = rating;
 		this.imageURL = imageURL;
@@ -54,10 +55,12 @@ public class HotOrNotWorker extends Worker {
 			} catch (UnsupportedEncodingException e) {
 				return null;
 			}
-			
-			Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 		}
 		new WebRequester().makeRequest(httpPost, this);
+		
+		Log.d(getClass().getName(), 
+				"Took " + (System.currentTimeMillis() - startTime) + " from the SERVER ");
+		
 		return item;
 	}
 	
@@ -70,9 +73,6 @@ public class HotOrNotWorker extends Worker {
 			item.setResultAverage(Double.parseDouble(avgRating));
 			item.setResultTotals(numRatings);
 			
-			Log.d(getClass().getName(), "Rating ID: " + id);
-			Log.d(getClass().getName(), "Average Rating: " + avgRating);
-			Log.d(getClass().getName(), "Num ratings: " + numRatings);
 			sendDataToServer(id, avgRating, numRatings, imageURL);
 		}
 	}
@@ -81,7 +81,6 @@ public class HotOrNotWorker extends Worker {
 		if (imageURL != null) {
 			threadPool.submit(new Runnable() { public void run() {
 				try {
-					Log.d("SENDING RATING INFO", "URL: " + imageURL + "avg: " + avgRating + " num: " + numRatings + " id: " + ratingId);
 					HttpPost post = new HttpPost("http://vaskendroid.appspot.com/submit");
 					List<NameValuePair> params = new ArrayList<NameValuePair>();
 			        params.add(new BasicNameValuePair("RatingID", ratingId.trim()));
@@ -94,7 +93,6 @@ public class HotOrNotWorker extends Worker {
 						@Override
 						public boolean handlePartialResponse(StringBuilder response, boolean isFinal) {
 							if (isFinal) {
-								Log.d("RESPONSE", response.toString());
 								return true;
 							}
 							return false;
@@ -125,7 +123,7 @@ public class HotOrNotWorker extends Worker {
         			
         			theHotItem.setImage(image);
         			theHotItem.setRateId( m.group(2));
-        	        Log.d(getClass().getName(), ">>>>>>>>>>> Done Page Loading");
+
         	        item = theHotItem;
                 	return true;
 				} catch (Exception e) { Log.d(this.getClass().toString(), "Not a valid imageUrl: " + m.group(1));	}

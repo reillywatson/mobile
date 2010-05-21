@@ -16,7 +16,7 @@ import com.vasken.util.WebRequester;
 public class AppEngineWorker extends Worker {
 	private HttpGet httpGet;
 	
-	private Queue<HotItem> items = new LinkedList<HotItem>();
+	private static Queue<HotItem> items = new LinkedList<HotItem>();
 	
 	private Pattern hotItemPattern =  Pattern.compile(
 		"<HotItem>" +
@@ -28,8 +28,7 @@ public class AppEngineWorker extends Worker {
 		, Pattern.DOTALL);
 			
 	public AppEngineWorker(String url) {
-		httpGet = new HttpGet(url);
-    	httpGet.addHeader("NumResults", "10");
+		httpGet = new HttpGet(url + "?NumResults=10");
 	}
 
 	@Override
@@ -60,8 +59,10 @@ public class AppEngineWorker extends Worker {
 
 	@Override
 	public HotItem getPageData(String rateId, int rating, String imageURL) {
+		long startTime = System.currentTimeMillis();
 		HotItem theCurrentItem = items.poll();
-		if (theCurrentItem == null) {
+		boolean needToAskServer = theCurrentItem == null;
+		if (needToAskServer) {
 			// Magically populate 'items'
 			new WebRequester().makeRequest(httpGet, this);
 			
@@ -73,6 +74,8 @@ public class AppEngineWorker extends Worker {
 			Log.d(getClass().getName(), "OH GOD! We're in BIG trouble - theCurrentItem is null.");
 		}
 		
+		Log.d(getClass().getName(), 
+				"Took " + (System.currentTimeMillis() - startTime) + " from the " + (needToAskServer? " SERVER " : " LOCAL QUEUE"));
 		return theCurrentItem;
 	}
 
