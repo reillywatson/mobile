@@ -27,9 +27,11 @@ public class HotOrNotWorker extends Worker {
     int rating;
     String imageURL;
     HotItem item;
-	
-    public HotOrNotWorker(String postUrl) {
-		super(postUrl);
+	String gender;
+	HttpPost httpPost;
+    
+    public HotOrNotWorker(String postUrl, String gender) {
+    	httpPost = new HttpPost(postUrl);
 	}
 
 	// @return null when there was a problem loading the page
@@ -55,7 +57,7 @@ public class HotOrNotWorker extends Worker {
 			
 			Log.d(getClass().getName(), "Rating Set...  " + id + ": " + rating);
 		}
-		new WebRequester().makeRequest(httpPost, this, WebRequester.CompressionMethod.GZipCompression);
+		new WebRequester().makeRequest(httpPost, this);
 		return item;
 	}
 	
@@ -86,6 +88,7 @@ public class HotOrNotWorker extends Worker {
 			        params.add(new BasicNameValuePair("AverageRating", avgRating.trim()));
 			        params.add(new BasicNameValuePair("NumRatings", numRatings.trim()));
 			        params.add(new BasicNameValuePair("ImageURL", imageURL.trim()));
+			        params.add(new BasicNameValuePair("Gender", gender));
 					post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 					new WebRequester().makeRequest(post, new WebRequester.RequestCallback() {
 						@Override
