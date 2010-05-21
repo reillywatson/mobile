@@ -19,31 +19,21 @@ import android.util.Log;
 
 import com.vasken.util.WebRequester;
 
-public class HotOrNotWorker extends Worker{	
-	
-	private HttpPost httpPost;
+public class HotOrNotWorker extends Worker {
     private Pattern p =  Pattern.compile("<img id='mainPic'.*?src='(.*?)'.*?>.*?<input type=\"hidden\" name=\"ratee\" value=\"(.*?)\".*?>", Pattern.DOTALL);
-    private Pattern prevRatingRegex = Pattern.compile("<div class=\"score\"[^>]*?>(.*?)</div>.*?Based on ([^<]*?) votes", Pattern.DOTALL);
+    private Pattern prevRatingRegex = Pattern.compile("class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes", Pattern.DOTALL);
     private ExecutorService threadPool = Executors.newFixedThreadPool(1);
     String id;
     int rating;
     String imageURL;
     HotItem item;
-    String gender;
-    
-	public HotOrNotWorker(String postUrl, String gender) {
-		httpPost = new HttpPost(postUrl);		
-        httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
-		httpPost.addHeader("Accept-Encoding", "gzip");
-		this.gender = gender;
-	}
 	
+    public HotOrNotWorker(String postUrl) {
+		super(postUrl);
+	}
+
 	// @return null when there was a problem loading the page
 	public HotItem getPageData(String id, int rating, String imageURL) {
-		return requestDataFromServer(id, rating, imageURL);
-	}
-	
-	private HotItem requestDataFromServer(String id, int rating, String imageURL) {
 		Log.d(getClass().getName(), "<<<<<<<<<< Start Page Loading" + rating +"    " + id);
 		this.id = id;
 		this.rating = rating;
@@ -96,12 +86,15 @@ public class HotOrNotWorker extends Worker{
 			        params.add(new BasicNameValuePair("AverageRating", avgRating.trim()));
 			        params.add(new BasicNameValuePair("NumRatings", numRatings.trim()));
 			        params.add(new BasicNameValuePair("ImageURL", imageURL.trim()));
-			        params.add(new BasicNameValuePair("Gender", gender));
 					post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 					new WebRequester().makeRequest(post, new WebRequester.RequestCallback() {
 						@Override
 						public boolean handlePartialResponse(StringBuilder response, boolean isFinal) {
-							return true;
+							if (isFinal) {
+								Log.d("RESPONSE", response.toString());
+								return true;
+							}
+							return false;
 						}
 					});
 				} catch (Exception e) { e.printStackTrace(); }
