@@ -6,5 +6,5 @@
 	"PrevComicPattern" : "<div id=\"previous\">.*?<a href=\"(.*?)\">",
 	"NextComicPattern" : "<div id=\"next\">.*?<a href=\"(.*?)\">",
     "AltTextPattern" : "<div id=\"comic\">.*?<img src=\".*?\" class=\"comic\" title=\"(.*?)\"",
-    "RandomComicURL" : "trex-omg.gif\".*?<a href=\"(.*?)\""
+    "RandomComicPattern" : "trex-omg.gif\".*?<a href=\"(.*?)\""
 }
