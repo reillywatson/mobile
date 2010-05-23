@@ -4,7 +4,6 @@ HitIt.Artifacts
 bin 
 gen
 .metadata
-vasken.keystore
 RemoteSystemsTempFiles
 ParseSimpsonsTrivia
 QuotesTrivia.Assets
