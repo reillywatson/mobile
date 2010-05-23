@@ -31,6 +31,8 @@
     ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
     [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad
 	[yesButton addTarget:self action:@selector(loadNewItem:) forControlEvents:UIControlEventTouchUpInside];
+	[noButton addTarget:self action:@selector(loadNewItem:) forControlEvents:UIControlEventTouchUpInside];
+	[drunkButton addTarget:self action:@selector(loadNewItem:) forControlEvents:UIControlEventTouchUpInside];
 	[self loadNewItem:nil];
 }
 
