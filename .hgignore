@@ -4,6 +4,7 @@ HitIt.Artifacts
 bin 
 gen
 .metadata
+vasken.keystore
 RemoteSystemsTempFiles
 ParseSimpsonsTrivia
 QuotesTrivia.Assets
@@ -13,3 +14,5 @@ HunkOrJunk.Artifacts
 QuotesTriviaSeinfeld.Artifacts
 QuotesTriviaHouse.Artifacts
 QuotesTriviaFriends
+build
+reilly
