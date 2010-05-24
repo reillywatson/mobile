@@ -108,6 +108,18 @@ public class App {
 		
 	}
 
+	public void setVersionName(String versionName) {
+		replaceStringInFile(manifestFile, 
+				"android:versionName=\"(.*?)\"",
+				"android:versionName=\""+versionName+"\"");
+	}
+
+	public void setVersionNumber(String versionNumber) {
+		replaceStringInFile(manifestFile, 
+				"android:versionCode=\"(.*?)\"",
+				"android:versionCode=\""+versionNumber+"\"");
+	}
+
 	public void fixEclipseProject() {
 		if (eclipseProjectFile.exists()) {
 			String newName = eclipseProjectFile.getParentFile().getName();

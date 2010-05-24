@@ -2,7 +2,7 @@
 <project name="ReleaseHelper" default="release">
 	<!--================== 			!! CHANGE ME !!			==================-->
 	<!-- This file has all the project info. This is what you want to modify  -->
-	<property file="friends.properties" />
+	<property file="C:/Workspaces/2010/QuotesTriviaSeinfeld.Artifacts/build/seinfeld.properties" />
 	
 	<!-- Tell ant where it can find Main.java  -->
 	<path id="main.class">
@@ -24,9 +24,9 @@
 	<property name="resources-package" value="${bin-dir}/resources.ap_" />
 	
 	<!-- Define project output -->
-	<property name="unsigned-apk" value="${release-dir}/${apk.name}.unsigned.apk" />
-	<property name="unaligned-apk" value="${release-dir}/${apk.name}.unaligned.apk" />
-	<property name="ready-apk" value="${release-dir}/${apk.name}.apk" />	
+	<property name="unsigned-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.unsigned.apk" />
+	<property name="unaligned-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.unaligned.apk" />
+	<property name="ready-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.apk" />	
 	
 	<!-- Define Android tools -->
 	<property name="android-sdk" value="C:\Applications\Development\android-sdk-windows"/>
@@ -49,12 +49,17 @@
 	
 	<!-- Create an apk ready to deploy -->
 	<target name="release" depends="zipalign">
+		<echo>Cleaning up...</echo>
+		<delete dir="${tgt.folder}" />
+		
 		<echo>(${ready-apk}) is ready for deployment!</echo>
 	</target>
 	
 	<!-- Zip-align the signed apk -->
 	<target name="zipalign" depends="sign">
 		<echo>Creating a zip-aligned apk...</echo>
+		<delete file="${ready-apk}"/>
+		
 		<exec executable="${zip-aligner}" failonerror="true">
 			<arg value="-v"/>
 			<arg value="4"/>
@@ -84,7 +89,6 @@
 	<target name="package" depends="setup, dex">
 		<echo>Packaging ${unsigned-apk} for release...</echo>
 
-		<delete dir="${release-dir}"/>
 		<mkdir dir="${release-dir}"/>
 		
 		<exec executable="${apk-builder}" failonerror="true">
@@ -170,12 +174,12 @@
 			<arg value="-m" />
 			<arg value="-J" />
 			<arg value="${gen-dir}" />
+			<arg value="-M" />
+			<arg value="${tgt.folder}/AndroidManifest.xml" />
 			<arg value="--version-code"/>
 			<arg value="${tgt.versionNumber}"/>
 			<arg value="--version-name"/>
 			<arg value="${tgt.versionName}"/>
-			<arg value="-M" />
-			<arg value="${tgt.folder}/AndroidManifest.xml" />
 			<arg value="-S" />
 			<arg value="${resource-dir}" />
 			<arg value="-F" />

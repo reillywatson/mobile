@@ -11,6 +11,8 @@ public class Main {
 		String rawFiles = args[4];
 		String newPkgName = args[5];
 		String pubId = args[6];
+		String versionName = args[7];
+		String versionNumber = args[8];
 		
 		App app = new App(folder);
 		app.setAppName(appName);
@@ -18,9 +20,11 @@ public class Main {
 		app.addRawFiles(rawFiles);
 		app.setAdmobPublisherId(pubId);
 		app.setPkgName(oldPkgName, newPkgName);
+		app.setVersionName(versionName);
+		app.setVersionNumber(versionNumber);
 		
 		// OPTIONAL
-		app.fixEclipseProject();
+		app.fixEclipseProject();		
 	}
 	
 	
