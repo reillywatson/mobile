@@ -66,7 +66,7 @@ public class Main extends Activity {
 		opt2 = (Button) findViewById(R.id.opt2);
 		opt3 = (Button) findViewById(R.id.opt3);
 		try {
-			quotestore = new QuoteStore(this, R.raw.house);
+			quotestore = new QuoteStore(this, R.raw.quotes);
 			triviastore = null;
 		} catch (IOException e) {
 			Log.e(getClass().getName(), Log.getStackTraceString(e));
