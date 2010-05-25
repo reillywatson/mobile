@@ -70,8 +70,7 @@
 }
 
 -(void)itemReady:(HotItem *)item {
-	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:item->imageURL]];
-	[webview loadRequest:request];
+	[webview loadImageUrlWithAutoZoom:item->imageURL];
 }
 
 -(void)requestFailedWithError:(NSError *)error {

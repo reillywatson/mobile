@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 
 public class HotItem {
 	private Bitmap image;
+	private String imageURL;
 	private String rateID;
 	private String resultTotals;
 	private double resultAverage;
@@ -16,6 +17,13 @@ public class HotItem {
 	
 	public HotItem() {
 	}
+	
+	public HotItem(String imageURL, String rateID, String resultTotals, double resultAverage) {
+		this.imageURL = imageURL;
+		this.rateID = rateID;
+		this.resultTotals = resultTotals;
+		this.resultAverage = resultAverage;
+	}
 
 	public Bitmap getImage() {
 		return image;
@@ -23,6 +31,14 @@ public class HotItem {
 	
 	public void setImage(Bitmap i) {
 		image = i;
+	}
+	
+	public String getImageURL() {
+		return imageURL;
+	}
+	
+	public void setImageURL(String url) {
+		imageURL = url;
 	}
 	
 	public String getRateId() {

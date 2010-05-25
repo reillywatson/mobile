@@ -1,18 +1,23 @@
 package com.vasken.hunkorjunk;
 
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vasken.util.UserTask;
 import com.vasken.util.UserTask.Status;
@@ -29,14 +34,13 @@ public class Vote extends Activity {
 	private boolean waitingForImage;
 	private DownloaderTask downloadTask;
 	private ProgressBar progressBar;
-	private String currentId = null;
+	private Bitmap currentBitmap;
 	
 	// The worker pool should only be referenced in queueNextItem,
 	// because it's not thread-safe
 	private Queue<Worker> workerPool = new LinkedList<Worker>();
 	private Queue<HotItem> itemQueue = new LinkedList<HotItem>();
-	private Queue<RatingInfo> ratingsQueue = new LinkedList<RatingInfo>();
-    //private Set<String> seenItems = new HashSet<String>();
+	private Queue<HotItem> seenItems = new LinkedList<HotItem>();
 	
     public OnClickListener defaultClickListener(final int rating) {
     	return new OnClickListener() {
@@ -55,7 +59,8 @@ public class Vote extends Activity {
         downloadTask = null;
         
         for (int i = 0; i < NUM_WORKERS; i++) {
-        	workerPool.add(new Worker(getString(R.string.rate_url_male)));
+        	workerPool.add(new AppEngineWorker(getString(R.string.webserver)));
+        	workerPool.add(new HotOrNotWorker(getString(R.string.rate_url_male)));
         }
 		
 		((ImageButton)findViewById(R.id.hot)).setOnClickListener(defaultClickListener(HOT));		
@@ -70,7 +75,6 @@ public class Vote extends Activity {
 	private void refresh(final int rating) {
 	   	waitingForImage = true;
 	   	
-	   	ratingsQueue.add(new RatingInfo(currentId, rating));
 		progressBar.setVisibility(View.VISIBLE);
 		
     	HotItem item = itemQueue.poll();
@@ -97,16 +101,17 @@ public class Vote extends Activity {
     	}
 
     	((ImageView)findViewById(R.id.rate_result_thumbnail)).setImageBitmap(image);
-    	if ( totals == null ) {
+    	if ( totals == null || Integer.valueOf(totals) < 50) {
     		((ImageView)findViewById(R.id.rate_result_image)).setImageBitmap(null);
     		((TextView)findViewById(R.id.rate_result_totals)).setText("Not enough votes");
     	}else{
-	    	String totalsString = Integer.valueOf(totals) > 5000 ? "Over 5000" : totals; 
+    		String totalsString = Integer.valueOf(totals) > 10000? "Over 10000" : totals;
+    		
 	    	((TextView)findViewById(R.id.rate_result_totals)).setText(totalsString + " votes");
 	    	
-	    	if (results < 7) {
+	    	if (results < 7.5) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_down);
-	    	}else if(results < 8.8) {
+	    	}else if(results < 9.1) {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_bottle);
 	    	}else {
 	    		((ImageView)findViewById(R.id.rate_result_image)).setImageResource(R.drawable.black_thumbs_up);
@@ -116,7 +121,7 @@ public class Vote extends Activity {
 	
 	public void showItem(final HotItem item) {
     	runOnUiThread(new Runnable() { public void run() { 
-    		currentId = item.getRateId();
+    		currentBitmap = item.getImage();
 			((ImageView)findViewById(R.id.photo)).setImageBitmap(item.getImage());
 			progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 			progressBar.setVisibility(View.GONE);
@@ -127,15 +132,41 @@ public class Vote extends Activity {
     }
     
     void itemReady(final HotItem item) {
-    	if (item != null ){//&& !seenItems.contains(item.getRateId())) {
-    		//seenItems.add(item.getRateId());
+    	if (item != null ){
+    		if (seenItems.size() < 1)
+    			seenItems.add(new HotItem(item.getImageURL(), item.getRateId(), item.getResultTotals(), item.getResultAverage()));
     		if (waitingForImage) {
 				showItem(item);
 	    	}
-	    	else {
+	    	else if (itemQueue.size() < DESIRED_QUEUE_LENGTH){
 	    		itemQueue.add(item);
 	    	}
     	}
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	menu.add("Save to phone");
+    	return true;
+    }
+    
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+    	if (item.getTitle().equals("Save to phone")) {
+    		Log.d("HEY", new Date().toString());
+    		String result = MediaStore.Images.Media.insertImage(getContentResolver(), currentBitmap,
+    				getString(R.string.app_name), new Date().toString());
+    		Toast t;
+    		if (result != null) {
+    			t = Toast.makeText(this, "Image saved.", Toast.LENGTH_SHORT);
+    		}
+    		else {
+    			t = Toast.makeText(this, "Save failed!", Toast.LENGTH_SHORT);
+    		}
+    		t.show();
+    		return true;
+    	}
+    	return super.onMenuItemSelected(featureId, item);
     }
     
     private class DownloaderTask extends UserTask<Void, HotItem, HotItem> {
@@ -143,16 +174,15 @@ public class Vote extends Activity {
 		@Override
 		public HotItem doInBackground(Void... params) {
 			HotItem nextItem = null;
-			
-			HotItem lastItem = new HotItem(null, "5");
+			HotItem lastItem = null;
 			while(itemQueue.size() < DESIRED_QUEUE_LENGTH) {
-				RatingInfo rating = ratingsQueue.poll();
-				if (rating == null)
-					rating = new RatingInfo(null, 0);
-				
+				if (lastItem == null)
+					lastItem = seenItems.poll();
+				if (lastItem == null)
+					lastItem = new HotItem(null, "5");
 				Worker worker = workerPool.poll();
 				if (worker != null) {
-					nextItem = worker.getPageData(lastItem.getRateId(), 5);
+					nextItem = worker.getPageData(lastItem.getRateId(), 5, lastItem.getImageURL());
 					workerPool.add(worker);
 					
 					if (nextItem == null) {
@@ -167,7 +197,6 @@ public class Vote extends Activity {
 							nextItem.setResultImage(lastItem.getImage());
 						}
 						itemReady(nextItem);
-						
 						lastItem = nextItem;
 					}
 				}
