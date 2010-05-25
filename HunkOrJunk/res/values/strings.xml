@@ -8,4 +8,5 @@
     
     <string name="rate_url_female">"http://www.hotornot.com/?state=rate&amp;sel_sex=female&amp;minage=18&amp;maxage=30</string>
     <string name="rate_url_male">"http://www.hotornot.com/?state=rate&amp;sel_sex=male&amp;minage=18&amp;maxage=30</string>
+    <string name="webserver">"http://vaskenhunkorjunk.appspot.com/</string>
 </resources>

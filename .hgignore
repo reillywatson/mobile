@@ -3,6 +3,7 @@ Whip.Artifacts
 HitIt.Artifacts
 bin 
 gen
+.orig
 .metadata
 vasken.keystore
 RemoteSystemsTempFiles
