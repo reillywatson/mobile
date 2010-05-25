@@ -3,7 +3,6 @@ package com.vasken.helper.release;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -19,84 +18,65 @@ public class App {
 	private static final String RES_FOLDER_NAME = "res";
 	private static final String LAYOUT_FOLDER_NAME = "layout";
 	private static final String DRAWABLE_FOLDER_NAME = "drawable";
+	private static final String RAW_FOLDER_NAME = "raw";
 	private static final String VALUES_FOLDER_NAME = "values";
 	private static final String STRINGS_FILE_NAME = "strings.xml";
+	private static final String PROJECT_FILE_NAME = ".project";
 	private final String MANIFEST_FILE_NAME = "AndroidManifest.xml";
 	
-	private String srcFolder;
+	private String srcFolderName;
+	private String resFolderName;
 	private List<File> srcFiles;
 	private List<File> layoutFiles;
-	private File iconDrawable;
 	private File stringsXml;
 	private File manifestFile;
+	private File eclipseProjectFile;
 	
-	public App(String folder) {
-		File dir = new File(folder);
+	public App(String src) {
+		File dir = new File(src);
 		if (!dir.isDirectory()) {
-			System.err.println(folder + " is not an actual folder");
-			return;
+			throw new RuntimeException(src + " is not an actual folder");
 		}
 		
 		// Grab Java files
-		srcFolder = folder + File.separatorChar + SRC_FOLDER_NAME;
-		File srcRoot = new File(srcFolder);
+		srcFolderName = src + File.separatorChar + SRC_FOLDER_NAME;
+		File srcRoot = new File(srcFolderName);
 		srcFiles = new ArrayList<File>();
 		populateFiles(srcRoot, "([\\w]*[_]*)+.java", srcFiles);
 		
 		// Grab layout files
-		String resFolderName = folder + File.separatorChar + RES_FOLDER_NAME;
+		resFolderName = src + File.separatorChar + RES_FOLDER_NAME;
 		layoutFiles = new ArrayList<File>();
 		populateFiles(new File(resFolderName + File.separatorChar + LAYOUT_FOLDER_NAME), "([\\w]*[_]*)+.xml", layoutFiles);
-		
-		// Grab icon file
-		List<File> icons = new ArrayList<File>();
-		populateFiles(new File(resFolderName + File.separatorChar + DRAWABLE_FOLDER_NAME), "icon.png", icons);
-		if (icons.size() == 0) {
-			System.err.println("This project doesn't seem to have an icon file. Maybe it's not named icon.png?");
-		}
-		iconDrawable = icons.get(0);
 		
 		// Grab strings.xml files
 		stringsXml = new File(resFolderName + File.separatorChar + VALUES_FOLDER_NAME  + File.separatorChar + STRINGS_FILE_NAME);
 
 		// Grab manifest xml file
-		manifestFile = new File(folder + File.separatorChar + MANIFEST_FILE_NAME);		
+		manifestFile = new File(src + File.separatorChar + MANIFEST_FILE_NAME);
+		
+		// Set the projectFile
+		eclipseProjectFile = new File(src + File.separatorChar + PROJECT_FILE_NAME);
+	}
+
+	public void addDrawableFiles(String drawableFiles) {
+		addFiles(drawableFiles, resFolderName + File.separatorChar + DRAWABLE_FOLDER_NAME);
+	}
+
+	public void addRawFiles(String rawFiles) {
+		addFiles(rawFiles, resFolderName + File.separatorChar + RAW_FOLDER_NAME);
 	}
 
 	public void setAppName(String appName) {
-		replaceStringInFile(stringsXml, "<string name=\"app_name\">(.*?)</string>", 
+		replaceStringInFile(stringsXml, 
+				"<string name=\"app_name\">(.*?)</string>", 
 				"<string name=\"app_name\">"+appName+"</string>");
-		
-	}
-
-	public void setAppIcon(File newIcon) {
-		File backupIcon = new File(iconDrawable.getAbsolutePath() + ".backup");
-		iconDrawable.renameTo(backupIcon);
-		
-		boolean worked = copy(newIcon, iconDrawable.getAbsoluteFile());
-		if (worked) {
-			backupIcon.delete();
-		} else {
-			backupIcon.renameTo(iconDrawable);
-		}
 	}
 
 	public void setAdmobPublisherId(String pubId) {
 		replaceStringInFile(manifestFile, 
 				"<meta-data android:value=\"(.*?)\" android:name=\"ADMOB_PUBLISHER_ID\"", 
 				"<meta-data android:value=\""+pubId+"\" android:name=\"ADMOB_PUBLISHER_ID\"");
-	}
-
-	public void setVersionName(String versionName) {
-		replaceStringInFile(manifestFile, 
-				"android:versionName=\"(.*?)\"",
-				"android:versionName=\""+versionName+"\"");
-	}
-
-	public void setVersionNumber(String versionNumber) {
-		replaceStringInFile(manifestFile, 
-				"android:versionCode=\"(.*?)\"",
-				"android:versionCode=\""+versionNumber+"\"");
 	}
 
 	public void setPkgName(String oldPackage, String newPackage) {
@@ -128,6 +108,30 @@ public class App {
 		
 	}
 
+	public void setVersionName(String versionName) {
+		replaceStringInFile(manifestFile, 
+				"android:versionName=\"(.*?)\"",
+				"android:versionName=\""+versionName+"\"");
+	}
+
+	public void setVersionNumber(String versionNumber) {
+		replaceStringInFile(manifestFile, 
+				"android:versionCode=\"(.*?)\"",
+				"android:versionCode=\""+versionNumber+"\"");
+	}
+
+	public void fixEclipseProject() {
+		if (eclipseProjectFile.exists()) {
+			String newName = eclipseProjectFile.getParentFile().getName();
+			replaceStringInFile(eclipseProjectFile, 
+					"<projectDescription>[\\s]*<name>(.*?)</name>[\\s]*<comment>", 
+					"<projectDescription>\n\t<name>"+newName+"</name>\n\t<comment>");
+		}
+	}
+
+	/****************************************************************/
+	/************************ HELPERS *******************************/
+	/****************************************************************/
 	private void populateFiles(File srcRoot, final String regex, List<File> result) {		
 		FilenameFilter fileNameFilter = new FilenameFilter() {
 			@Override
@@ -190,8 +194,22 @@ public class App {
 			writer.close();
 		
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+
+	private void addFiles(String files, String basePath) {
+		String[] fileNames = files.split(",");
+		for(String fileName : fileNames) {
+			File drawable = new File(fileName.trim());
+			if (drawable.exists()) {				
+				boolean worked = copy(drawable, new File(basePath + File.separatorChar + drawable.getName()));
+				if (!worked) {
+					System.err.println("File " + drawable.getAbsolutePath() + " couldn't be copied");
+				}
+			}else {
+				System.err.println("File " + drawable.getAbsolutePath() + " doesn't exist");
+			}
 		}
 	}
 }

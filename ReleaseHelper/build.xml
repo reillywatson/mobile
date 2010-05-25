@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ReleaseHelper" default="release">
+	<!--================== 			!! CHANGE ME !!			==================-->
+	<!-- This file has all the project info. This is what you want to modify  -->
+	<property file="C:/Workspaces/2010/QuotesTriviaGoldenGirls.Artifacts/build/golden.properties" />
+	
+	<!-- Tell ant where it can find Main.java  -->
+	<path id="main.class">
+		<pathelement  path="bin/com/vasken/helper/release" />
+	</path>
+	
+    <!-- <property file="build.properties" /> -->
+    <property file="default.properties" />
+	
+	<!-- Define project directories -->
+	<property name="src-dir" location="${tgt.folder}/src" />
+	<property name="gen-dir" value="${tgt.folder}/gen" />
+	<property name="resource-dir" value="${tgt.folder}/res" />
+	<property name="asset-dir" location="${tgt.folder}/assets" />
+	<property name="lib-dir" location="${tgt.folder}/lib" />
+	<property name="bin-dir" location="${tgt.folder}/bin" />
+	<property name="release-dir" location="${tgt.folder}.Artifacts/release" />
+	<property name="dex-file" value="${bin-dir}/classes.dex" />
+	<property name="resources-package" value="${bin-dir}/resources.ap_" />
+	
+	<!-- Define project output -->
+	<property name="unsigned-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.unsigned.apk" />
+	<property name="unaligned-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.unaligned.apk" />
+	<property name="ready-apk" value="${release-dir}/${apk.name}-${tgt.versionName}.apk" />	
+	
+	<!-- Define Android tools -->
+	<property name="android-sdk" value="C:\Applications\Development\android-sdk-windows"/>
+	<property name="android-tools" value="${android-sdk}\tools"/>
+	<property name="android-1.5-sdk" value="C:\Applications\Development\android-sdk-windows\platforms\android-2.1"/>
+	<property name="android-1.5-tools" value="${android-1.5-sdk}\tools"/>
+	<condition property="aapt" value="${android-1.5-tools}/aapt.exe" else="${android-tools}/aapt" >
+		<os family="windows"/>
+	</condition>
+	<condition property="dx" value="${android-1.5-tools}/dx.bat" else="${android-tools}/dx" >
+		<os family="windows"/>
+	</condition>
+	<condition property="apk-builder" value="${android-tools}/apkbuilder.bat" else="${android-tools}/apkbuilder" >
+		<os family="windows"/>
+	</condition>
+	<condition property="zip-aligner" value="${android-tools}/zipalign.exe" else="${android-tools}/zipalign" >
+		<os family="windows"/>
+	</condition>
+	<property name="android-jar-1.5" value="${android-1.5-sdk}/android.jar" />
+	
+	<!-- Create an apk ready to deploy -->
+	<target name="release" depends="zipalign">
+		<echo>Cleaning up...</echo>
+		<delete dir="${tgt.folder}" />
+		
+		<echo>(${ready-apk}) is ready for deployment!</echo>
+	</target>
+	
+	<!-- Zip-align the signed apk -->
+	<target name="zipalign" depends="sign">
+		<echo>Creating a zip-aligned apk...</echo>
+		<delete file="${ready-apk}"/>
+		
+		<exec executable="${zip-aligner}" failonerror="true">
+			<arg value="-v"/>
+			<arg value="4"/>
+			<arg value="${unaligned-apk}"/>
+			<arg value="${ready-apk}"/>
+		</exec>
+	</target>
+	
+	<!-- Sign the apk -->
+	<target name="sign" depends="package">
+		<echo>Signing the apk and renaming it to ${unaligned-apk}...</echo>
+		
+		<!-- Let's be a little safe. Let's not store the password in the build file... -->
+		<input addproperty="storepass" message="Please enter the keystore password for vasken.keystore"></input>
+		<input addproperty="keypass" message="Please enter the keystore alias password for androidvaskenkey"></input>
+		
+		<signjar jar="${unsigned-apk}"
+		    alias="androidvaskenkey" 
+			keystore="../vasken.keystore" 
+			storepass="${storepass}" 
+			keypass="${keypass}" />
+		
+		<move file="${unsigned-apk}" tofile="${unaligned-apk}"/>	
+	</target>
+	
+	<!-- Package up dex files into an apk -->
+	<target name="package" depends="setup, dex">
+		<echo>Packaging ${unsigned-apk} for release...</echo>
+
+		<mkdir dir="${release-dir}"/>
+		
+		<exec executable="${apk-builder}" failonerror="true">
+			<arg value="${unsigned-apk}" />
+			<arg value="-u" />
+			<arg value="-z" />
+			<arg value="${resources-package}" />
+			<arg value="-f" />
+			<arg value="${dex-file}" />
+			<arg value="-rf" />
+			<arg value="${src-dir}" />
+			<arg value="-nf" />
+			<arg value="${lib-dir}" />
+		</exec>
+	</target>
+	
+	<target name="setup">
+		<echo>Creating Temp Backup ${tgt.folder}...</echo>
+		<delete dir="${tgt.folder}"/>
+		<copy todir="//${tgt.folder}">
+			<fileset dir="//${src.folder}">
+				<exclude name="**/bin/**"/>
+				<exclude name="**/gen/**"/>
+			</fileset>
+		</copy>
+		
+		<echo>Modifying the Project...</echo>
+		<java classname="com.vasken.helper.release.Main">
+	        <classpath>
+	        	<pathelement location="bin"/>
+			</classpath>
+			
+			<arg value="${tgt.folder}"/>
+			<arg value="${src.pkgname}"/>
+			<arg value="${tgt.name}"/>
+			<arg value="${tgt.drawable}"/>
+			<arg value="${tgt.raw}"/>
+			<arg value="${tgt.pkgname}"/>
+			<arg value="${tgt.admobId}"/>
+			<arg value="${tgt.versionName}"/>
+			<arg value="${tgt.versionNumber}"/>
+		</java>
+		
+	</target>
+	
+	<!-- Convert this project's .class files into .dex files. -->
+	<target name="dex" depends="compile">
+		<echo>Converting compiled files and external libraries into ${bin-dir}/classes.dex ...</echo>
+		<apply executable="${dx}" failonerror="true" parallel="true">
+			<arg value="--dex" />
+			<arg value="--output=${dex-file}" />
+			<arg path="${bin-dir}" />
+			<fileset dir="${lib-dir}" includes="*.jar"/>
+		</apply>
+	</target>
+
+	<!-- Build .class files -->
+	<target name="compile" depends="resource-src">
+		<echo>Compiling java into .class files in ${bin-dir} ...</echo>
+		
+		<javac encoding="ascii" target="1.5" debug="true" extdirs=""
+			srcdir="${tgt.folder}"
+			destdir="${bin-dir}"
+			bootclasspath="${android-jar-1.5}">
+			<classpath>
+				<fileset dir="${lib-dir}" includes="*.jar"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<!-- Generatre the R.java file -->
+	<target name="resource-src" description="Generate the R.java file for this project's resources.">
+		<echo>Generating R.java / Manifest.java from the resources...</echo>
+
+		<delete dir="${bin-dir}"/>
+		<delete dir="${gen-dir}}"/>
+		<mkdir dir="${bin-dir}"/>
+		<mkdir dir="${gen-dir}"/>		
+		
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-f" />
+			<arg value="-m" />
+			<arg value="-J" />
+			<arg value="${gen-dir}" />
+			<arg value="-M" />
+			<arg value="${tgt.folder}/AndroidManifest.xml" />
+			<arg value="--version-code"/>
+			<arg value="${tgt.versionNumber}"/>
+			<arg value="--version-name"/>
+			<arg value="${tgt.versionName}"/>
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+			<arg value="-I" />
+            <arg file="//${android-1.5-sdk}/android.jar"/>
+		</exec>
+	</target>
+</project>
