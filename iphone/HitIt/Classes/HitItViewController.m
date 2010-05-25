@@ -50,11 +50,6 @@
 	[spinner stopAnimating];
 }
 
-// TODO: remove this when fetching ads works properly (seems to fail at the moment)
--(NSArray *)testDevices {
-	return [NSArray arrayWithObject:ADMOB_SIMULATOR_ID];
-}
-
 - (void)dealloc {
     [super dealloc];
 	[opqueue release];
@@ -70,7 +65,7 @@
 }
 
 -(void)itemReady:(HotItem *)item {
-	[webview loadImageUrlWithAutoZoom:item->imageURL];
+	[webview loadWithAutoZoomForImageSRC:item->imageURL withBaseURL:nil];
 }
 
 -(void)requestFailedWithError:(NSError *)error {

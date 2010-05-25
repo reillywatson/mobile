@@ -15,6 +15,7 @@
 		28AD733F0D9D9553002E5188 /* HitItViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* HitItViewController.xib */; };
 		28D7ACF80DDB3853001CB0EB /* HitItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* HitItViewController.m */; };
 		B41E53D311AB9EA400F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E53D211AB9EA400F5D6D5 /* UIWebView+Images.m */; };
+		B41E544311ABB44C00F5D6D5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B41E544211ABB44C00F5D6D5 /* icon.png */; };
 		B43894B111A8EDA7005E889F /* white_bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = B43894AE11A8EDA7005E889F /* white_bottle.png */; };
 		B43894B211A8EDA7005E889F /* white_thumbs_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B43894AF11A8EDA7005E889F /* white_thumbs_down.png */; };
 		B43894B311A8EDA7005E889F /* white_thumbs_up.png in Resources */ = {isa = PBXBuildFile; fileRef = B43894B011A8EDA7005E889F /* white_thumbs_up.png */; };
@@ -55,6 +56,7 @@
 		8D1107310486CEB800E47090 /* HitIt-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HitIt-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B41E53D111AB9EA400F5D6D5 /* UIWebView+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Images.h"; sourceTree = "<group>"; };
 		B41E53D211AB9EA400F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
+		B41E544211ABB44C00F5D6D5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B43894AE11A8EDA7005E889F /* white_bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bottle.png; sourceTree = "<group>"; };
 		B43894AF11A8EDA7005E889F /* white_thumbs_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_thumbs_down.png; sourceTree = "<group>"; };
 		B43894B011A8EDA7005E889F /* white_thumbs_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_thumbs_up.png; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B41E544211ABB44C00F5D6D5 /* icon.png */,
 				B438951011A8F2CD005E889F /* MainWindow.xib */,
 				B43894AE11A8EDA7005E889F /* white_bottle.png */,
 				B43894AF11A8EDA7005E889F /* white_thumbs_down.png */,
@@ -310,6 +313,7 @@
 				B43894B211A8EDA7005E889F /* white_thumbs_down.png in Resources */,
 				B43894B311A8EDA7005E889F /* white_thumbs_up.png in Resources */,
 				B438951111A8F2CD005E889F /* MainWindow.xib in Resources */,
+				B41E544311ABB44C00F5D6D5 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
