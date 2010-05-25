@@ -27,12 +27,18 @@ def parse(url):
 	instr = responsestrwithfakemadness(url)
 	soup = BeautifulSoup.BeautifulSoup(instr)
 	seasonName = ""
+	if outputfile.find('season') > -1:
+		seasonName = outputfile.replace('_', ' ').title() + '\n'
 	eptitle = ""
+	contentStarted = False
 	contents = soup.find(id="bodyContent").contents
 	for tag in contents:
 		if not 'name' in dir(tag):
 			pass
 		else:
+			if tag.name == 'table':
+				print "Hey we've got content here!"
+				contentStarted = True
 			if tag.name == "h2":
 				seasonName = tag.text.replace("[edit]", "").strip()
 				print seasonName
@@ -40,7 +46,9 @@ def parse(url):
 					seasonName = seasonName + '\n'
 				else:
 					seasonName=""
-			if seasonName != "":
+				if seasonName != "":
+					contentStarted = True
+			if contentStarted:
 				if tag.name == "h3":
 					eptitle = tag.text.replace("[edit]", "").strip()
 					# [TODO] html decoding?
