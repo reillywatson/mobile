@@ -11,6 +11,6 @@
 
 @interface UIWebView (Images)
 
--(void)loadImageUrlWithAutoZoom:(NSString *)src;
+- (void) loadWithAutoZoomForImageSRC:(NSString *)src withBaseURL:(NSURL *)baseURL;
 
 @end

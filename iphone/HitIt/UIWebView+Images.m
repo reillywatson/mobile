@@ -14,7 +14,7 @@
 /*
  ** Display image in UIWebView using loadHTMLString
  */
-- (void) loadImageUrlWithAutoZoom:(NSString *)src {
+- (void) loadWithAutoZoomForImageSRC:(NSString *)src withBaseURL:(NSURL *)baseURL {
 	
 	// Create HTML string from image URL
 	// Width-value is arbitrary (and found experimentally): 900 works fine for me
@@ -22,7 +22,7 @@
 	NSString *imageHTML  = [[NSString alloc] initWithFormat:htmlString, src];
 	
 	// Load image in UIWebView
-	[self loadHTMLString:imageHTML baseURL:nil];
+	[self loadHTMLString:imageHTML baseURL:baseURL];
 }
 
 @end
