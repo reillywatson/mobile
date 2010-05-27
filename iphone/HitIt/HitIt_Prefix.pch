@@ -6,4 +6,5 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 #import "UIWebView+Images.h"
+#import "UIImage+URL.h"
 #endif

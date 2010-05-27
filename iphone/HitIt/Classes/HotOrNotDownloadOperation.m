@@ -60,6 +60,7 @@
 	if ([components count] > 1) {
 		hotitem->imageURL = [[components objectAtIndex:1] retain];
 		hotitem->rateID = [[components objectAtIndex:2] retain];
+		hotitem->image = [UIImage newImageFromURL:hotitem->imageURL];
 	}
 	if (rateID != nil) {
 		[self addRatingResults:str forItem:hotitem];

@@ -15,18 +15,21 @@
 
 @implementation HitItViewController
 
-@synthesize spinner, noButton, drunkButton, yesButton, webview;
+@synthesize spinner, noButton, drunkButton, yesButton, imageview, resultsView, resultImageView, resultImageIcon, resultNumRatings;
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
 	opqueue = [NSOperationQueue new];
 	[opqueue setMaxConcurrentOperationCount:1];
 	items = [NSMutableArray new];
+	lastItem = nil;
+	currentItem = nil;
 	return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self.view sendSubviewToBack:[imageview superview]];
 	AdMobView *ad = [AdMobView requestAdWithDelegate:self]; // start a new ad request
     ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
     [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad
@@ -36,7 +39,7 @@
 	[self loadNewItem:nil];
 }
 
--(void)loadNewItem:(HotItem *)currentItem {
+-(void)loadNewItem:(HotItem *)prevItem {
 	if ([[opqueue operations] count] == 0) {
 		[spinner startAnimating];
 		if (currentItem == nil)
@@ -46,14 +49,12 @@
 	}
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-	[spinner stopAnimating];
-}
-
 - (void)dealloc {
     [super dealloc];
 	[opqueue release];
 	[items release];
+	[lastItem release];
+	[currentItem release];
 }
 
 - (NSString *)publisherId {
@@ -64,8 +65,31 @@
 	return self;
 }
 
+-(void)showPrevItem:(HotItem *)item {
+	[resultsView setHidden:NO];
+	[resultImageView setImage:item->image];
+	[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_up.png"]];
+	[resultNumRatings setText:item->resultTotals];
+}
+
 -(void)itemReady:(HotItem *)item {
-	[webview loadWithAutoZoomForImageSRC:item->imageURL withBaseURL:nil];
+	if (item->image != nil) {
+		[imageview setImage:item->image];
+		[imageview sizeToFit];
+		[spinner stopAnimating];
+		if (lastItem != nil) {
+			[self showPrevItem:lastItem];
+		}
+		else {
+			[resultsView setHidden:YES];
+		}
+		[currentItem release];
+		currentItem = [item retain];
+	}
+	else {
+		
+		//[self loadNewItem:nil];
+	}
 }
 
 -(void)requestFailedWithError:(NSError *)error {

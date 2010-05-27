@@ -39,6 +39,8 @@
 		B438952711A8F3D0005E889F /* HotOrNotDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B438952611A8F3D0005E889F /* HotOrNotDownloadOperation.m */; };
 		B438953E11A8F5BF005E889F /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B438953D11A8F5BF005E889F /* RegexKitLite.m */; };
 		B438962611A90362005E889F /* HotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B438962511A90362005E889F /* HotItem.m */; };
+		B4BF60DA11ACF915001F70CB /* ResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF60D911ACF915001F70CB /* ResultsView.xib */; };
+		B4BF60F911ACFB95001F70CB /* UIImage+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BF60F811ACFB95001F70CB /* UIImage+URL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,9 @@
 		B438953D11A8F5BF005E889F /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		B438962411A90362005E889F /* HotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotItem.h; sourceTree = "<group>"; };
 		B438962511A90362005E889F /* HotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotItem.m; sourceTree = "<group>"; };
+		B4BF60D911ACF915001F70CB /* ResultsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsView.xib; sourceTree = "<group>"; };
+		B4BF60F711ACFB95001F70CB /* UIImage+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+URL.h"; sourceTree = "<group>"; };
+		B4BF60F811ACFB95001F70CB /* UIImage+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+URL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +182,7 @@
 				B43894B011A8EDA7005E889F /* white_thumbs_up.png */,
 				28AD733E0D9D9553002E5188 /* HitItViewController.xib */,
 				8D1107310486CEB800E47090 /* HitIt-Info.plist */,
+				B4BF60D911ACF915001F70CB /* ResultsView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			children = (
 				B41E53D111AB9EA400F5D6D5 /* UIWebView+Images.h */,
 				B41E53D211AB9EA400F5D6D5 /* UIWebView+Images.m */,
+				B4BF60F711ACFB95001F70CB /* UIImage+URL.h */,
+				B4BF60F811ACFB95001F70CB /* UIImage+URL.m */,
 			);
 			name = FrameworkExtensions;
 			sourceTree = "<group>";
@@ -314,6 +322,7 @@
 				B43894B311A8EDA7005E889F /* white_thumbs_up.png in Resources */,
 				B438951111A8F2CD005E889F /* MainWindow.xib in Resources */,
 				B41E544311ABB44C00F5D6D5 /* icon.png in Resources */,
+				B4BF60DA11ACF915001F70CB /* ResultsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +351,7 @@
 				B438953E11A8F5BF005E889F /* RegexKitLite.m in Sources */,
 				B438962611A90362005E889F /* HotItem.m in Sources */,
 				B41E53D311AB9EA400F5D6D5 /* UIWebView+Images.m in Sources */,
+				B4BF60F911ACFB95001F70CB /* UIImage+URL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
