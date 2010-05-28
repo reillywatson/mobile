@@ -75,20 +75,22 @@ public class Vote extends Activity {
 	   	
 	   	findViewById(R.id.rate_result).setOnClickListener(new OnClickListener(){
 	   		@Override
-	   		public void onClick(View v) {
-	   			Animation animation = new AlphaAnimation(1.0f, 0.0f);
-	   			animation.setDuration(500);
-	   			animation.setAnimationListener(new AnimationListener() {
-	   				@Override
-	   				public void onAnimationEnd(Animation arg0) {
-	   					findViewById(R.id.rate_result).setVisibility(View.INVISIBLE);
-	   				}
-	   				@Override
-	   				public void onAnimationRepeat(Animation arg0) {}
-	   				@Override
-	   				public void onAnimationStart(Animation arg0) {}
-	   			});
-	   			findViewById(R.id.rate_result).startAnimation(animation);
+	   		public void onClick(final View v) {
+	   			if (v.getAnimation() == null) {
+		   			Animation animation = new AlphaAnimation(1.0f, 0.0f);
+		   			animation.setDuration(500);
+		   			animation.setAnimationListener(new AnimationListener() {
+		   				@Override
+		   				public void onAnimationEnd(Animation arg0) {
+		   					v.setVisibility(View.INVISIBLE);
+		   				}
+		   				@Override
+		   				public void onAnimationRepeat(Animation arg0) {}
+		   				@Override
+		   				public void onAnimationStart(Animation arg0) {}
+		   			});
+		   			v.startAnimation(animation);
+	   			}
 	   		}});
 	   	
 		refresh(0);
