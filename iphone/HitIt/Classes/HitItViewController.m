@@ -66,11 +66,26 @@
 }
 
 -(void)showPrevItem {
-	NSLog(@"SHOWING PREV ITEM WITH %@ RATINGS", currentItem->resultTotals);
 	[resultsView setHidden:NO];
 	[resultImageView setImage:lastItem->image];
-	[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_up.png"]];
-	[resultNumRatings setText:[NSString stringWithFormat:@"%@ votes", currentItem->resultTotals]];
+	int numvotes = [currentItem->resultTotals intValue];
+	double avgvote = [currentItem->resultAverage doubleValue];
+	if (numvotes < 50) {
+		[resultImageIcon setImage:nil];
+		[resultNumRatings setText:@"Not enough votes"];
+	}
+	else {
+		if (avgvote < 7.0) {
+			[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_down.png"]];
+		}
+		else if (avgvote < 8.8) {
+			[resultImageIcon setImage:[UIImage imageNamed:@"white_bottle.png"]];
+		}
+		else {
+			[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_up.png"]];
+		}
+		[resultNumRatings setText:[NSString stringWithFormat:@"%@ votes", currentItem->resultTotals]];		
+	}
 }
 
 -(void)itemReady:(HotItem *)item {

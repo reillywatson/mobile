@@ -31,7 +31,7 @@
 	NSString *pattern = @"class=\"score\".*?>(.*?)</div>.*?Based on (.*?) votes";
 	NSArray *components = [str captureComponentsMatchedByRegex:pattern options:RKLDotAll range:NSMakeRange(0, [str length]) error:nil];
 	if ([components count] > 1) {
-		hotitem->resultAverage = [[components objectAtIndex:1] retain];
+		hotitem->resultAverage = [[[components objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] retain];
 		hotitem->resultTotals = [[components objectAtIndex:2] retain];
 	}
 }
