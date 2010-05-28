@@ -18,7 +18,7 @@ public class AppEngineWorker extends Worker {
 	
 	private static Queue<HotItem> items = new LinkedList<HotItem>();
 	
-	private Pattern hotItemPattern =  Pattern.compile(
+	private static Pattern hotItemPattern =  Pattern.compile(
 		"<HotItem>" +
 			"<RatingID>(.*?)</RatingID>" +
 			"<ImageURL>(.*?)</ImageURL>" +
