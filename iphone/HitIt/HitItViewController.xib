@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="26"/>
+			<integer value="27"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -138,6 +138,10 @@
 								<int key="NSvFlags">256</int>
 								<string key="NSFrame">{{0, 1}, {320, 352}}</string>
 								<reference key="NSSuperview" ref="466982796"/>
+								<object class="NSColor" key="IBUIBackgroundColor">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MAA</bytes>
+								</object>
 								<int key="IBUIContentMode">1</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -160,7 +164,7 @@
 										<string key="IBUIText">3000 votes</string>
 										<object class="NSColor" key="IBUITextColor">
 											<int key="NSColorSpace">1</int>
-											<bytes key="NSRGB">MCAwIDAAA</bytes>
+											<bytes key="NSRGB">MSAxIDEAA</bytes>
 										</object>
 										<nil key="IBUIHighlightedColor"/>
 										<int key="IBUIBaselineAdjustment">1</int>
@@ -171,14 +175,23 @@
 										<int key="NSvFlags">292</int>
 										<string key="NSFrame">{{0, 74}, {37, 35}}</string>
 										<reference key="NSSuperview" ref="625404945"/>
+										<int key="IBUIContentMode">4</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<object class="NSCustomResource" key="IBUIImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">black_thumbs_down.png</string>
+										</object>
 									</object>
 									<object class="IBUIImageView" id="480594999">
 										<reference key="NSNextResponder" ref="625404945"/>
 										<int key="NSvFlags">292</int>
 										<string key="NSFrameSize">{95, 74}</string>
 										<reference key="NSSuperview" ref="625404945"/>
+										<object class="NSColor" key="IBUIBackgroundColor">
+											<int key="NSColorSpace">3</int>
+											<bytes key="NSWhite">MAA</bytes>
+										</object>
 										<int key="IBUIContentMode">1</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -186,9 +199,9 @@
 								</object>
 								<string key="NSFrameSize">{95, 109}</string>
 								<reference key="NSSuperview" ref="466982796"/>
-								<object class="NSColor" key="IBUIBackgroundColor" id="135745048">
+								<object class="NSColor" key="IBUIBackgroundColor" id="41273148">
 									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<bytes key="NSRGB">MCAwIDAAA</bytes>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
@@ -201,7 +214,7 @@
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
-				<reference key="IBUIBackgroundColor" ref="135745048"/>
+				<reference key="IBUIBackgroundColor" ref="41273148"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -761,12 +774,14 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>black_thumbs_down.png</string>
 				<string>white_bottle.png</string>
 				<string>white_thumbs_down.png</string>
 				<string>white_thumbs_up.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{25, 21}</string>
 				<string>{64, 64}</string>
 				<string>{64, 64}</string>
 				<string>{64, 63}</string>

@@ -39,6 +39,9 @@
 		B438952711A8F3D0005E889F /* HotOrNotDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B438952611A8F3D0005E889F /* HotOrNotDownloadOperation.m */; };
 		B438953E11A8F5BF005E889F /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B438953D11A8F5BF005E889F /* RegexKitLite.m */; };
 		B438962611A90362005E889F /* HotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B438962511A90362005E889F /* HotItem.m */; };
+		B493620A11AF91A500950B72 /* black_bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = B493620711AF91A500950B72 /* black_bottle.png */; };
+		B493620B11AF91A500950B72 /* black_thumbs_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B493620811AF91A500950B72 /* black_thumbs_down.png */; };
+		B493620C11AF91A500950B72 /* black_thumbs_up.png in Resources */ = {isa = PBXBuildFile; fileRef = B493620911AF91A500950B72 /* black_thumbs_up.png */; };
 		B4BF60DA11ACF915001F70CB /* ResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF60D911ACF915001F70CB /* ResultsView.xib */; };
 		B4BF60F911ACFB95001F70CB /* UIImage+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BF60F811ACFB95001F70CB /* UIImage+URL.m */; };
 /* End PBXBuildFile section */
@@ -98,6 +101,9 @@
 		B438953D11A8F5BF005E889F /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		B438962411A90362005E889F /* HotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotItem.h; sourceTree = "<group>"; };
 		B438962511A90362005E889F /* HotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotItem.m; sourceTree = "<group>"; };
+		B493620711AF91A500950B72 /* black_bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_bottle.png; sourceTree = "<group>"; };
+		B493620811AF91A500950B72 /* black_thumbs_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_thumbs_down.png; sourceTree = "<group>"; };
+		B493620911AF91A500950B72 /* black_thumbs_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_thumbs_up.png; sourceTree = "<group>"; };
 		B4BF60D911ACF915001F70CB /* ResultsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsView.xib; sourceTree = "<group>"; };
 		B4BF60F711ACFB95001F70CB /* UIImage+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+URL.h"; sourceTree = "<group>"; };
 		B4BF60F811ACFB95001F70CB /* UIImage+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+URL.m"; sourceTree = "<group>"; };
@@ -175,6 +181,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B493620711AF91A500950B72 /* black_bottle.png */,
+				B493620811AF91A500950B72 /* black_thumbs_down.png */,
+				B493620911AF91A500950B72 /* black_thumbs_up.png */,
 				B41E544211ABB44C00F5D6D5 /* icon.png */,
 				B438951011A8F2CD005E889F /* MainWindow.xib */,
 				B43894AE11A8EDA7005E889F /* white_bottle.png */,
@@ -323,6 +332,9 @@
 				B438951111A8F2CD005E889F /* MainWindow.xib in Resources */,
 				B41E544311ABB44C00F5D6D5 /* icon.png in Resources */,
 				B4BF60DA11ACF915001F70CB /* ResultsView.xib in Resources */,
+				B493620A11AF91A500950B72 /* black_bottle.png in Resources */,
+				B493620B11AF91A500950B72 /* black_thumbs_down.png in Resources */,
+				B493620C11AF91A500950B72 /* black_thumbs_up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

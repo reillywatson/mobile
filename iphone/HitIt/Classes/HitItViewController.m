@@ -76,13 +76,13 @@
 	}
 	else {
 		if (avgvote < 7.0) {
-			[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_down.png"]];
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_thumbs_down.png"]];
 		}
 		else if (avgvote < 8.8) {
-			[resultImageIcon setImage:[UIImage imageNamed:@"white_bottle.png"]];
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_bottle.png"]];
 		}
 		else {
-			[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_up.png"]];
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_thumbs_up.png"]];
 		}
 		[resultNumRatings setText:[NSString stringWithFormat:@"%@ votes", currentItem->resultTotals]];		
 	}
