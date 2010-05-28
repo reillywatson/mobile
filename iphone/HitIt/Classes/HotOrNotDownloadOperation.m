@@ -37,16 +37,13 @@
 }
 
 -(void)main {
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.hotornot.com/?state=rate&amp;sel_sex=female&amp;minage=18&amp;maxage=30"]];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.hotornot.com/?state=rate&sel_sex=female&minage=18&maxage=30"]];
 	[request setHTTPMethod:@"POST"];
 	if (rateID != nil) {
-		[request setValue:@"1" forKey:@"rate"];
-		[request setValue:@"rate" forKey:@"state"];
-		[request setValue:@"9" forKey:@"minR"];
-		[request setValue:@"vote" forKey:@"rateAction"];
-		[request setValue:rateID forKey:@"ratee"];
-		[request setValue:@"9" forKey:[NSString stringWithFormat:@"r%s", rateID]];
+		NSString *httpBodyString = [NSString stringWithFormat:@"rate=1&state=rate&minR=9&rateAction=vote&ratee=%@&r%@=9", rateID, rateID];
+		[request setHTTPBody:[httpBodyString dataUsingEncoding:NSISOLatin1StringEncoding]];
 	}
+	
 	NSError *error;
 	NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
 	if (error != nil) {

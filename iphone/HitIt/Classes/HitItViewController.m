@@ -65,30 +65,32 @@
 	return self;
 }
 
--(void)showPrevItem:(HotItem *)item {
+-(void)showPrevItem {
+	NSLog(@"SHOWING PREV ITEM WITH %@ RATINGS", currentItem->resultTotals);
 	[resultsView setHidden:NO];
-	[resultImageView setImage:item->image];
+	[resultImageView setImage:lastItem->image];
 	[resultImageIcon setImage:[UIImage imageNamed:@"white_thumbs_up.png"]];
-	[resultNumRatings setText:item->resultTotals];
+	[resultNumRatings setText:[NSString stringWithFormat:@"%@ votes", currentItem->resultTotals]];
 }
 
 -(void)itemReady:(HotItem *)item {
-	if (item->image != nil) {
+	if (item->image != nil && item->image.size.height > 100) {
+		[lastItem release];
+		lastItem = [currentItem retain];
 		[imageview setImage:item->image];
 		[imageview sizeToFit];
 		[spinner stopAnimating];
-		if (lastItem != nil) {
-			[self showPrevItem:lastItem];
+		[currentItem release];
+		currentItem = [item retain];
+		if (lastItem != nil && item->resultTotals != nil) {
+			[self showPrevItem];
 		}
 		else {
 			[resultsView setHidden:YES];
 		}
-		[currentItem release];
-		currentItem = [item retain];
 	}
 	else {
-		
-		//[self loadNewItem:nil];
+		[self loadNewItem:nil];
 	}
 }
 
