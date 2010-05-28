@@ -154,8 +154,12 @@
 									<object class="IBUILabel" id="1011370403">
 										<reference key="NSNextResponder" ref="625404945"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{40, 81}, {55, 21}}</string>
+										<string key="NSFrame">{{31, 81}, {64, 21}}</string>
 										<reference key="NSSuperview" ref="625404945"/>
+										<object class="NSColor" key="IBUIBackgroundColor" id="32726245">
+											<int key="NSColorSpace">3</int>
+											<bytes key="NSWhite">MCAwAA</bytes>
+										</object>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -173,8 +177,9 @@
 									<object class="IBUIImageView" id="257186723">
 										<reference key="NSNextResponder" ref="625404945"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{0, 74}, {37, 35}}</string>
+										<string key="NSFrame">{{0, 74}, {32, 35}}</string>
 										<reference key="NSSuperview" ref="625404945"/>
+										<reference key="IBUIBackgroundColor" ref="32726245"/>
 										<int key="IBUIContentMode">4</int>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -199,7 +204,7 @@
 								</object>
 								<string key="NSFrameSize">{95, 109}</string>
 								<reference key="NSSuperview" ref="466982796"/>
-								<object class="NSColor" key="IBUIBackgroundColor" id="41273148">
+								<object class="NSColor" key="IBUIBackgroundColor" id="94766255">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>
 								</object>
@@ -214,7 +219,7 @@
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
-				<reference key="IBUIBackgroundColor" ref="41273148"/>
+				<reference key="IBUIBackgroundColor" ref="94766255"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -394,8 +399,8 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="480594999"/>
-							<reference ref="1011370403"/>
 							<reference ref="257186723"/>
+							<reference ref="1011370403"/>
 						</object>
 						<reference key="parent" ref="466982796"/>
 					</object>
