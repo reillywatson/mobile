@@ -4,5 +4,6 @@
 	"PrevComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\"><< Previous</a>",
 	"NextComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\">Next >></a>",
 	"BasePrevNextURL" : "http://www.gocomics.com",
-	"BaseComicURL" : "http://imgsrv.gocomics.com/dim?fh="
+	"BaseComicURL" : "http://imgsrv.gocomics.com/dim?fh=",
+    "RequiresReferrer" : "true"
 }
