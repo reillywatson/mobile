@@ -78,7 +78,6 @@
 		[lastItem release];
 		lastItem = [currentItem retain];
 		[imageview setImage:item->image];
-		[imageview sizeToFit];
 		[spinner stopAnimating];
 		[currentItem release];
 		currentItem = [item retain];
