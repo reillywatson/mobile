@@ -18,9 +18,24 @@
 		    
     </LinearLayout>
     
+    <!-- Place an AdMob ad at the bottom of the screen. -->
+    <!-- It has white text on a black background. -->
+    
+    <com.admob.android.ads.AdView
+          android:id="@+id/ad" 
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Seinfeld Quotes Trivia"
+          android:layout_alignParentBottom="true"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+        />
+        
     <LinearLayout
     	android:id="@+id/answer_area"
-    	android:layout_alignParentBottom="true"
+    	android:layout_above="@id/ad"
+    	android:layout_alignWithParentIfMissing="true"
     	android:orientation="vertical"
     	android:layout_height="wrap_content"
     	android:layout_width="fill_parent">
@@ -35,24 +50,11 @@
 	    	style="@style/AnswerButton"/>
     </LinearLayout>
     
-    <!-- Place an AdMob ad at the bottom of the screen. -->
-    <!-- It has white text on a black background. -->
-    <com.admob.android.ads.AdView
-          android:id="@+id/ad" 
-          app:backgroundColor="#000000"
-          app:primaryTextColor="#FFFFFF"
-          app:secondaryTextColor="#CCCCCC"
-          app:keywords="Lost Quote Trivia"
-		  android:layout_above="@id/answer_area"
-          android:layout_width="fill_parent" 
-          android:layout_height="wrap_content"
-        />
-    
     <com.vasken.SimpsonsTrivia.Progress
     	android:id="@+id/score"
     	android:layout_alignParentRight="true"
         android:progressDrawable="@drawable/progress"
-		android:layout_above="@id/ad"
+		android:layout_above="@id/answer_area"
 		android:layout_below="@id/result_container"
 		android:layout_margin="3px"
         android:layout_width="wrap_content"
@@ -63,7 +65,7 @@
 		android:background="@drawable/quote_background"
 		android:layout_toLeftOf="@id/score"
 		android:layout_below="@id/result_container"
-		android:layout_above="@id/ad"
+		android:layout_above="@id/answer_area"
 		android:layout_margin="3px"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent">

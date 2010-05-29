@@ -7,13 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import android.content.Context;
 import android.util.Log;
 
 public class TriviaStore {
 	private List<Question> questions = new ArrayList<Question>();
 	private Random rand = new Random();
 	
-	public TriviaStore(Main context, int triviaId) throws IOException {
+	public TriviaStore(Context context, int triviaId) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(context.getResources().openRawResource(triviaId)));
 		String line = reader.readLine();
 		while (line != null) {

@@ -1,12 +1,6 @@
 package com.vasken.SimpsonsTrivia;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Random;
-import java.util.Timer;
-import java.util.concurrent.Callable;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,47 +8,36 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.vasken.util.StringUtils;
-
 public class Main extends Activity {
 	private static final String QUESTION = "QUESTION";
-	private static final String CHOICE1 = "CHOICE1";
-	private static final String CHOICE2 = "CHOICE2";
-	private static final String CHOICE3 = "CHOICE3";
-	private static final String CURRENT_ANSWER = "CURRENT_ANSWER";
 
-	private String currentQuestion;
-	private String currentAnswer;
-	private String choice1;
-	private String choice2;
-	private String choice3;
+	private static final int NUM_QUESTION = 10;
+	private static final int PROGRESS_BAR_STEP = 10;
+	private static final int PROGRESS_BAR_SECONDARY_STEP = 5;
+	private static final int SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES = 2 * 1000;
 
-	int desiredPercentOfSpeakerQuestions = 25;
-	int desiredPercentOfTriviaQuestions = 30;
-
+	private String SPEAKER_TEMPLATE = "<span style='color: white'><span><b>Who said it?</b></span><p><div style='margin-left: -40px'>%1$s</div></span>";
+	private String EPISODE_TEMPLATE = "<span style='color: white'><span><b>Name the episode:</b></span><p><div style='margin-left: -40px'>%1$s</span></div></span>";
+	private String TRIVIA_TEMPLATE = "<span style='color: white'><b>%1$s</b></span>";
+	
+	private Question currentQuestion;
 	static int answersStreak = 0;
 
+	private Button opt1;
+	private Button opt2;
+	private Button opt3;
+
+	private Random rand = new Random();	
 	private Handler mHandler = new Handler();
-
-	private QuoteStore quotestore;
-	private TriviaStore triviastore;
-	Button opt1;
-	Button opt2;
-	Button opt3;
-	Random rand = new Random();
-
-	Timer theTimer;
-
-	final int SECONDS_TO_WAIT = 2 * 1000;
-	final int STEP = 10;
-	final int SECONDARY_STEP = 5;
-	final int NUM_QUESTION = 10;
+	private Worker theWorker;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -62,48 +45,134 @@ public class Main extends Activity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
-		opt1 = (Button) findViewById(R.id.opt1);
-		opt2 = (Button) findViewById(R.id.opt2);
-		opt3 = (Button) findViewById(R.id.opt3);
-		try {
-			quotestore = new QuoteStore(this, R.raw.the_simpsons);
-			triviastore = new TriviaStore(this, R.raw.simpsons_trivia);
-		} catch (IOException e) {
-			Log.e(getClass().getName(), Log.getStackTraceString(e));
-		}
-
-		theTimer = new Timer();
 
 		TextView result = ((TextView) findViewById(R.id.result));
 		result.setBackgroundResource(R.drawable.neutral);
 		result.setText(Main.this.getString(R.string.start_text, NUM_QUESTION));
+
+		theWorker = new Worker(this);
+		new QuestionTypeManager();
+		
+		opt1 = (Button) findViewById(R.id.opt1);
+		opt1.setOnClickListener(buttonClicked);
+		opt2 = (Button) findViewById(R.id.opt2);
+		opt2.setOnClickListener(buttonClicked);
+		opt3 = (Button) findViewById(R.id.opt3);
+		opt3.setOnClickListener(buttonClicked);
+
+		final WebView quoteview = (WebView) findViewById(R.id.quote);
+		quoteview.setBackgroundColor(0);
 
 		if (savedInstanceState == null) {
 			loadNewQuote();
 		} else {
 			reloadQuote(savedInstanceState);
 		}
-
-		opt1.setOnClickListener(buttonClicked);
-		opt2.setOnClickListener(buttonClicked);
-		opt3.setOnClickListener(buttonClicked);
-
-		final WebView quoteview = (WebView) findViewById(R.id.quote);
-		quoteview.setBackgroundColor(0);
-
+		
 		initializeScore();
 	}
 
-	private void initializeScore() {
-		Progress progress = (Progress) findViewById(R.id.score);
-		progress.setMax(NUM_QUESTION * STEP);
-		progress.setSecondaryProgress(SECONDARY_STEP);
+	private void loadNewQuote() {
+		int nextRandInt = rand.nextInt(100);
+		if (theWorker.hasSpeakerQuestions() && nextRandInt <= QuestionTypeManager.speakerQuestion.likelyhood()) {
+			currentQuestion = theWorker.getSpeakerQuestion();
+			currentQuestion.question  = String.format(SPEAKER_TEMPLATE, currentQuestion.question);
+		} else if (theWorker.hasTrivia() && nextRandInt <= QuestionTypeManager.speakerQuestion.likelyhood() + QuestionTypeManager.triviaQuestion.likelyhood()) {
+			currentQuestion = theWorker.getTriviaQuestion();
+			currentQuestion.question  = String.format(TRIVIA_TEMPLATE, currentQuestion.question);
+		} else {
+			currentQuestion = theWorker.getEpisodeQuestion();
+			currentQuestion.question  = String.format(EPISODE_TEMPLATE, currentQuestion.question);
+		}
+		
+		final WebView quoteview = (WebView) findViewById(R.id.quote);
+		quoteview.loadData(currentQuestion.question, "text/html", "utf-8");
+		// otherwise if we go from something that fits on one page to something
+		// that doesn't, the scroll indicator doesn't show up
+		quoteview.setVerticalScrollbarOverlay(true);
+
+		opt1.setText(currentQuestion.answers.get(0));
+		opt2.setText(currentQuestion.answers.get(1));
+		opt3.setText(currentQuestion.answers.get(2));
 	}
 
-	OnClickListener buttonClicked = new OnClickListener() {
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.clear();
+
+		if (QuestionTypeManager.episodeQuestion.isEnabled()) {
+			menu.add(R.string.menu_hide_episode_questions)
+				.setIcon(R.drawable.menu_episode_hide)
+				.setEnabled(QuestionTypeManager.speakerQuestion.isEnabled() || QuestionTypeManager.triviaQuestion.isEnabled());
+		}else {
+			menu.add(R.string.menu_show_episode_questions)
+				.setIcon(R.drawable.menu_episode);
+		}
+		
+		if (QuestionTypeManager.speakerQuestion.isEnabled()) {
+			menu.add(R.string.menu_hide_quote_questions)
+				.setIcon(R.drawable.menu_quote_hide)
+				.setEnabled(theWorker.hasSpeakerQuestions() && (QuestionTypeManager.episodeQuestion.isEnabled() || QuestionTypeManager.triviaQuestion.isEnabled()));
+		}else {
+			menu.add(R.string.menu_show_quote_questions)
+			.setIcon(R.drawable.menu_quote);
+		}
+		
+		if (QuestionTypeManager.triviaQuestion.isEnabled()) {
+			menu.add(R.string.menu_hide_trivia_questions)
+				.setIcon(R.drawable.menu_trivia_hide)
+				.setEnabled(theWorker.hasTrivia() && (QuestionTypeManager.episodeQuestion.isEnabled() || QuestionTypeManager.speakerQuestion.isEnabled() ));
+		}else {
+			menu.add(R.string.menu_show_trivia_questions)
+				.setIcon(R.drawable.menu_trivia);
+		}
+		
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+
+		if (getString(R.string.menu_hide_quote_questions).equals(item.getTitle())) {
+			QuestionTypeManager.disableQuestion(QuestionTypeManager.SPEAKER);
+		} else if (getString(R.string.menu_show_quote_questions).equals(item.getTitle())) {
+			QuestionTypeManager.enableQuestion(QuestionTypeManager.SPEAKER);
+		} else if (getString(R.string.menu_hide_trivia_questions).equals(item.getTitle())) {
+			QuestionTypeManager.disableQuestion(QuestionTypeManager.TRIVIA);
+		} else if (getString(R.string.menu_show_trivia_questions).equals(item.getTitle())) {
+			QuestionTypeManager.enableQuestion(QuestionTypeManager.TRIVIA);
+		} else if (getString(R.string.menu_hide_episode_questions).equals(item.getTitle())) {
+			QuestionTypeManager.disableQuestion(QuestionTypeManager.EPISODE);
+		} else if (getString(R.string.menu_show_episode_questions).equals(item.getTitle())) {
+			QuestionTypeManager.enableQuestion(QuestionTypeManager.EPISODE);	
+		}
+		
+		Log.d("SpeakerQuestions", ""+QuestionTypeManager.speakerQuestion.likelyhood());
+		Log.d("TriviaQuestions", ""+QuestionTypeManager.triviaQuestion.likelyhood());
+		Log.d("EpisodeQuestions", ""+QuestionTypeManager.episodeQuestion.likelyhood());
+		return true;
+	}
+
+	// I could just make everything static, but I almost forgot how to use this.
+	// So I wanted a reminder in code.
+	@Override
+	public void onSaveInstanceState(Bundle savedInstanceState) {
+		savedInstanceState.putSerializable(QUESTION, currentQuestion);
+
+		super.onSaveInstanceState(savedInstanceState);
+	}
+	
+	/************************* HELPERS *************************/
+	private void initializeScore() {
+		Progress progress = (Progress) findViewById(R.id.score);
+		progress.setMax(NUM_QUESTION * PROGRESS_BAR_STEP);
+		progress.setSecondaryProgress(PROGRESS_BAR_SECONDARY_STEP);
+	}
+	
+	private OnClickListener buttonClicked = new OnClickListener() {
 		public void onClick(View v) {
 			Button b = (Button) v;
-			if (b.getText().equals(currentAnswer)) {
+			if (b.getText().equals(currentQuestion.correctAnswer)) {
 				answersStreak += 1;
 
 				TextView result = ((TextView) findViewById(R.id.result));
@@ -135,171 +204,39 @@ public class Main extends Activity {
 
 				TextView result = ((TextView) findViewById(R.id.result));
 				result.setBackgroundResource(R.drawable.wrong);
-				result.setText(Main.this.getString(R.string.wrong,
-						currentAnswer));
+				result.setText(Main.this.getString(R.string.wrong, currentQuestion.correctAnswer));
 			}
 
 			mHandler.removeCallbacks(mUpdateTimeTask);
-			mHandler.postDelayed(mUpdateTimeTask, SECONDS_TO_WAIT);
+			mHandler.postDelayed(mUpdateTimeTask, SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES);
 
 			loadNewQuote();
 
 			Progress progress = (Progress) findViewById(R.id.score);
-			progress.setProgress(answersStreak * STEP);
-			progress.setSecondaryProgress(progress.getProgress()
-					+ SECONDARY_STEP);
+			progress.setProgress(answersStreak * PROGRESS_BAR_STEP);
+			progress.setSecondaryProgress(progress.getProgress() + PROGRESS_BAR_SECONDARY_STEP);
 		}
 	};
-
+	
 	private Runnable mUpdateTimeTask = new Runnable() {
 		public void run() {
 			TextView result = ((TextView) findViewById(R.id.result));
 			result.setBackgroundResource(R.drawable.neutral);
-			result.setText("Question " + (answersStreak + 1) + " of "
-					+ NUM_QUESTION);
+			result.setText("Question " + (answersStreak + 1) + " of " + NUM_QUESTION);
 
-			mHandler.postAtTime(this, System.currentTimeMillis()
-					+ SECONDS_TO_WAIT);
+			mHandler.postAtTime(this, System.currentTimeMillis() + SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES);
 		}
 	};
-
-	// Man this is suuuuper generic, maybe such a function already exists?
-	<T extends Object> void populateListWithUniqueElements(List<T> list,
-			int desiredSize, Callable<T> generator) {
-		try {
-			while (list.size() < desiredSize) {
-				T newObj = generator.call();
-				if (!list.contains(newObj)) {
-					list.add(newObj);
-				}
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-
-	String removeSpeaker(String quote) {
-		int slashB = quote.indexOf("</b>");
-		String noSpeaker = quote.substring(slashB + 5, quote.length()).trim();
-		if (noSpeaker.startsWith(":"))
-			noSpeaker = noSpeaker.replaceFirst(":", "").trim();
-		Log.d("BEFORE", quote);
-		return "<dl><dd>" + noSpeaker;
-	}
-
-	private String nameSpeakerPrefix = "<span><b>Who said it?</b></span><p>";
-	private String episodePrefix = "<span><b>Name the episode:</b></span><p>";
-
-	void loadNewQuote() {
-		final WebView quoteview = (WebView) findViewById(R.id.quote);
-
-		SimpsonsQuote quote = quotestore.randomQuote();
-		List<String> answers = new ArrayList<String>();
-
-		boolean isSpeakerQuestion = false;
-		boolean isTriviaQuestion = false;
-		int nextRandInt = rand.nextInt(100);
-		if (quotestore.canDoSpeakerQuestions()
-				&& nextRandInt <= desiredPercentOfSpeakerQuestions) {
-			isSpeakerQuestion = true;
-			while (quote.speaker == null) {
-				quote = quotestore.randomQuote();
-			}
-		} else if (triviastore.isAvailable()
-				&& nextRandInt <= desiredPercentOfSpeakerQuestions
-						+ desiredPercentOfTriviaQuestions) {
-			isTriviaQuestion = true;
-		}
-
-		String question = quote.quote;
-
-		if (isTriviaQuestion) {
-			Question triviaQuestion = triviastore.getQuestion();
-			question = "<b>" + triviaQuestion.question + "</b>";
-			currentAnswer = triviaQuestion.correctAnswer;
-			answers = triviaQuestion.answers;
-		} else {
-			Callable<String> generator;
-			if (isSpeakerQuestion) {
-				currentAnswer = quote.speaker;
-				generator = new Callable<String>() {
-					public String call() throws Exception {
-						return quotestore.randomSpeaker();
-					}
-				};
-				question = nameSpeakerPrefix
-						+ "<div style='margin-left: -40px'>"
-						+ removeSpeaker(question) + "</div>";
-
-			} else {
-				currentAnswer = quote.episode;
-				generator = new Callable<String>() {
-					public String call() throws Exception {
-						return quotestore.randomEpisode();
-					}
-				};
-				question = episodePrefix + "<div style='margin-left: -40px'>"
-						+ question + "</div>";
-
-			}
-
-			answers.add(currentAnswer);
-			populateListWithUniqueElements(answers, 3, generator);
-			
-			currentAnswer = StringUtils.unescapeHtml(currentAnswer);
-		}
-		Collections.shuffle(answers);
-
-		question = "<span style='color: white'> " + question + " </span>";
-		currentQuestion = question;
-
-		quoteview.loadData(question, "text/html", "utf-8");
-		// otherwise if we go from something that fits on one page to something
-		// that doesn't, the
-		// scroll indicator doesn't show up
-		quoteview.setVerticalScrollbarOverlay(true);
-
-		choice1 = StringUtils.unescapeHtml(answers.get(0));
-		choice2 = StringUtils.unescapeHtml(answers.get(1));
-		choice3 = StringUtils.unescapeHtml(answers.get(2));
-
-		opt1.setText(choice1);
-		opt2.setText(choice2);
-		opt3.setText(choice3);
-	}
-
-	// I could just make everything static, but I almost forgot how to use this.
-	// So I wanted a reminder in code.
-	@Override
-	public void onSaveInstanceState(Bundle savedInstanceState) {
-		savedInstanceState.putString(QUESTION, currentQuestion);
-		savedInstanceState.putString(CHOICE1, choice1);
-		savedInstanceState.putString(CHOICE2, choice2);
-		savedInstanceState.putString(CHOICE3, choice3);
-		savedInstanceState.putString(CURRENT_ANSWER, currentAnswer);
-
-		super.onSaveInstanceState(savedInstanceState);
-	}
-
+		
 	private void reloadQuote(Bundle savedInstanceState) {
-		String question = savedInstanceState.getString(QUESTION);
-		String answer1 = savedInstanceState.getString(CHOICE1);
-		String answer2 = savedInstanceState.getString(CHOICE2);
-		String answer3 = savedInstanceState.getString(CHOICE3);
-		String current = savedInstanceState.getString(CURRENT_ANSWER);
-
-		choice1 = answer1;
-		choice2 = answer2;
-		choice3 = answer3;
+		Question question = (Question) savedInstanceState.getSerializable(QUESTION);
 		currentQuestion = question;
-		currentAnswer = current;
-
+		
 		WebView quoteview = (WebView) findViewById(R.id.quote);
-		quoteview.loadData(question, "text/html", "utf-8");
+		quoteview.loadData(question.question, "text/html", "utf-8");
 
-		opt1.setText(answer1);
-		opt2.setText(answer2);
-		opt3.setText(answer3);
+		opt1.setText(currentQuestion.answers.get(0));
+		opt2.setText(currentQuestion.answers.get(1));
+		opt3.setText(currentQuestion.answers.get(2));
 	}
 }
