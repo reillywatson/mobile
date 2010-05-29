@@ -15,18 +15,21 @@
 
 @implementation HitItViewController
 
-@synthesize spinner, noButton, drunkButton, yesButton, webview;
+@synthesize spinner, noButton, drunkButton, yesButton, imageview, resultsView, resultImageView, resultImageIcon, resultNumRatings;
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
 	opqueue = [NSOperationQueue new];
 	[opqueue setMaxConcurrentOperationCount:1];
 	items = [NSMutableArray new];
+	lastItem = nil;
+	currentItem = nil;
 	return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self.view sendSubviewToBack:[imageview superview]];
 	AdMobView *ad = [AdMobView requestAdWithDelegate:self]; // start a new ad request
     ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
     [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad
@@ -36,7 +39,7 @@
 	[self loadNewItem:nil];
 }
 
--(void)loadNewItem:(HotItem *)currentItem {
+-(void)loadNewItem:(HotItem *)prevItem {
 	if ([[opqueue operations] count] == 0) {
 		[spinner startAnimating];
 		if (currentItem == nil)
@@ -46,14 +49,12 @@
 	}
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-	[spinner stopAnimating];
-}
-
 - (void)dealloc {
     [super dealloc];
 	[opqueue release];
 	[items release];
+	[lastItem release];
+	[currentItem release];
 }
 
 - (NSString *)publisherId {
@@ -64,8 +65,47 @@
 	return self;
 }
 
+-(void)showPrevItem {
+	[resultsView setHidden:NO];
+	[resultImageView setImage:lastItem->image];
+	int numvotes = [currentItem->resultTotals intValue];
+	double avgvote = [currentItem->resultAverage doubleValue];
+	if (numvotes < 50) {
+		[resultImageIcon setImage:nil];
+		[resultNumRatings setText:@"Not enough votes"];
+	}
+	else {
+		if (avgvote < 7.0) {
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_thumbs_down.png"]];
+		}
+		else if (avgvote < 8.8) {
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_bottle.png"]];
+		}
+		else {
+			[resultImageIcon setImage:[UIImage imageNamed:@"black_thumbs_up.png"]];
+		}
+		[resultNumRatings setText:[NSString stringWithFormat:@"%@ votes", currentItem->resultTotals]];		
+	}
+}
+
 -(void)itemReady:(HotItem *)item {
-	[webview loadWithAutoZoomForImageSRC:item->imageURL withBaseURL:nil];
+	if (item->image != nil && item->image.size.height > 100) {
+		[lastItem release];
+		lastItem = [currentItem retain];
+		[imageview setImage:item->image];
+		[spinner stopAnimating];
+		[currentItem release];
+		currentItem = [item retain];
+		if (lastItem != nil && item->resultTotals != nil) {
+			[self showPrevItem];
+		}
+		else {
+			[resultsView setHidden:YES];
+		}
+	}
+	else {
+		[self loadNewItem:nil];
+	}
 }
 
 -(void)requestFailedWithError:(NSError *)error {

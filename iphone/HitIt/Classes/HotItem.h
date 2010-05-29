@@ -15,7 +15,7 @@
 	NSString *rateID;
 	NSString *resultTotals;
 	NSString *resultAverage;
-	
+	UIImage *image;
 }
 
 @end

@@ -16,6 +16,7 @@ public class ComicList {
 	static ArrayList<ComicInfo> comicList() { return comics; }
 	
 	static void init(Context context) {
+		comics.add(new ComicInfo(context, R.raw.eightbittheater));
 		comics.add(new ComicInfo(context, R.raw.dominicdeegan));
 		comics.add(new ComicInfo(context, R.raw.achewood));
 		comics.add(new ComicInfo(context, R.raw.amazingsuperpowers));
@@ -287,7 +288,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "(Th)ink", "http://www.comics.com/think"));
 		
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Apartment 3-G", "http://www.chron.com/apps/comics/buildcp.mpl?c=100&page=1&cpp=1&v=3.0&quality=high"));
-		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Baby Blues", "http://www.chron.com/apps/comics/buildcp.mpl?c=101&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Better Half", "http://www.chron.com/apps/comics/buildcp.mpl?c=103&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Between Friends", "http://www.chron.com/apps/comics/buildcp.mpl?c=143&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Bizarro", "http://www.chron.com/apps/comics/buildcp.mpl?c=153&page=1&cpp=1&v=3.0&quality=high"));

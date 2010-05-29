@@ -36,7 +36,7 @@ public class Main extends Activity {
 	private String choice3;
 
 	int desiredPercentOfSpeakerQuestions = 25;
-	int desiredPercentOfTriviaQuestions = 20;
+	int desiredPercentOfTriviaQuestions = 30;
 
 	static int answersStreak = 0;
 

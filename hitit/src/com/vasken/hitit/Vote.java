@@ -13,6 +13,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -68,6 +71,27 @@ public class Vote extends Activity {
 		((ImageButton)findViewById(R.id.not)).setOnClickListener(defaultClickListener(NOT));
 
 	   	progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+	   	
+	   	
+	   	findViewById(R.id.rate_result).setOnClickListener(new OnClickListener(){
+	   		@Override
+	   		public void onClick(final View v) {
+	   			if (v.getAnimation() == null) {
+		   			Animation animation = new AlphaAnimation(1.0f, 0.0f);
+		   			animation.setDuration(500);
+		   			animation.setAnimationListener(new AnimationListener() {
+		   				@Override
+		   				public void onAnimationEnd(Animation arg0) {
+		   					v.setVisibility(View.INVISIBLE);
+		   				}
+		   				@Override
+		   				public void onAnimationRepeat(Animation arg0) {}
+		   				@Override
+		   				public void onAnimationStart(Animation arg0) {}
+		   			});
+		   			v.startAnimation(animation);
+	   			}
+	   		}});
 	   	
 		refresh(0);
     }
