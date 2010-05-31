@@ -61,9 +61,9 @@ class SubmitRating(webapp.RequestHandler):
 		hotItem = HotItem()
 		hotItem.rand = random.random()
 		if self.request.get('ImageURL') != None and self.request.get('ImageURL') != '':
-			existingResult = db.GqlQuery("SELECT * FROM HotItem WHERE ImageURL = :1 LIMIT 1",self.request.get('ImageURL'))
-			for result in existingResult:
-				hotItem = result
+			existingItemsQuery = db.GqlQuery("SELECT * FROM HotItem WHERE ImageURL = :1",self.request.get('ImageURL'))
+			existingResults = existingItemsQuery.fetch(1000)
+			db.delete(existingResults)
 			hotItem.imageUrl = self.request.get('ImageURL')
 			hotItem.avgRating = self.request.get('AverageRating')
 			hotItem.numRatings = self.request.get('NumRatings')
