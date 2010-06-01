@@ -1,9 +1,0 @@
-<resources>
-<color name="white">#ffffff</color>
-<color name="black">#000000</color>
-<color name="orange">#b67b3f</color>
-<color name="progress_start">#000cff</color>
-<color name="progress_end">#ff0000</color>
-<color name="secondary_progress_start">#55000cff</color>
-<color name="secondary_progress_end">#55ff0000</color>
-</resources>

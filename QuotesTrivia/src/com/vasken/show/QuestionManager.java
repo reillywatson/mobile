@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsTrivia;
+package com.vasken.show;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Random;
 
 import android.content.Context;
-import android.util.Log;
 
 public class QuestionManager {
 	public static final String TRIVIA = "TRIVIA";
@@ -26,14 +25,15 @@ public class QuestionManager {
 	private void addStore(QuestionStore store) {
 		if (store.isAvailable())
 			questionStores.add(store);
-		else
-			disabledStores.add(store);
+//		Don't add unavailable stores. We can't actually ever enable them
+//		else
+//			disabledStores.add(store);
 	}
 	
 	public QuestionManager(Context context) throws IOException {
-		addStore(new TriviaStore(context, R.raw.simpsons_trivia));
-		addStore(new EpisodeStore(context, R.raw.the_simpsons));
-		addStore(new SpeakerStore(context, R.raw.the_simpsons));
+		addStore(new TriviaStore(context, R.raw.trivia));
+		addStore(new EpisodeStore(context, R.raw.quotes));
+		addStore(new SpeakerStore(context, R.raw.quotes));
 		weights.put(TRIVIA, TRIVIA_WEIGHT);
 		weights.put(EPISODE, EPISODE_WEIGHT);
 		weights.put(SPEAKER, SPEAKER_WEIGHT);
@@ -69,6 +69,14 @@ public class QuestionManager {
 		}
 		return types;
 	}
+
+	public List<String> disabledTypes() {
+		List<String> types = new ArrayList<String>();
+		for (QuestionStore store : disabledStores) {
+			types.add(store.storeName());
+		}
+		return types;
+	}
 	
 	public Question getQuestion() {
 		List<Integer> probs = new ArrayList<Integer>();
@@ -77,7 +85,6 @@ public class QuestionManager {
 			QuestionStore store = questionStores.get(i);
 			int prob = store.numQuestions() * weights.get(store.storeName());
 			probs.add(new Integer(total + prob));
-			Log.d(getClass().getName(), "PROBABILITY FOR TYPE " + store.storeName() + Integer.toString(prob));
 			total += prob;
 		}
 		int pick = rand.nextInt(total);

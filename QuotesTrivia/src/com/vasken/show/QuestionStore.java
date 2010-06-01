@@ -1,4 +1,4 @@
-package com.vasken.SimpsonsTrivia;
+package com.vasken.show;
 
 public interface QuestionStore {
 	String storeName();
