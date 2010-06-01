@@ -64,7 +64,7 @@
 	question->correctAnswer = [[NSString alloc] initWithString:quote->episode];
 	int correctPos = random() % 3;
 	while ([question->answers count] < 3) {
-		if ([question->answers count] - 1 == correctPos) {
+		if ([question->answers count] == correctPos) {
 			[question->answers addObject:[[NSString alloc] initWithString:quote->episode]];
 		}
 		else {
