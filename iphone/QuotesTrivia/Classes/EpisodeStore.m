@@ -19,8 +19,8 @@
 
 -(Quote *)newQuoteWithEpisodeTitle:(NSString *)title quote:(NSString *)quoteStr {
 	Quote *quote = [Quote new];
-	quote->quote = [NSString stringWithString:quoteStr];
-	quote->episode = [NSString stringWithString:title];
+	quote->quote = [[NSString alloc] initWithString:quoteStr];
+	quote->episode = [[NSString alloc] initWithString:title];
 	quote->speaker = nil;
 	return quote;
 }
@@ -32,8 +32,8 @@
 	for (int i = 0; i < numQuotes; i++) {
 		// We don't do anything with season right now
 		//NSString *season = [lines objectAtIndex:i];
-		NSString *epTitle = [NSString stringWithString:[lines objectAtIndex:(i * 3) + 1]];
-		NSString *quoteStr = [NSString stringWithString:[lines objectAtIndex:(i * 3) + 2]];
+		NSString *epTitle = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 3) + 1]];
+		NSString *quoteStr = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 3) + 2]];
 		Quote *quote = [self newQuoteWithEpisodeTitle:epTitle quote:quoteStr];
 		[quotes addObject:quote];
 	}
@@ -60,17 +60,17 @@
 
 -(Question *)newQuestionFromQuote:(Quote *)quote {
 	Question *question = [Question new];
-	question->question = [NSString stringWithString:quote->quote];
-	question->correctAnswer = [NSString stringWithString:quote->episode];
+	question->question = [[NSString alloc] initWithString:quote->quote];
+	question->correctAnswer = [[NSString alloc] initWithString:quote->episode];
 	int correctPos = random() % 3;
 	while ([question->answers count] < 3) {
 		if ([question->answers count] - 1 == correctPos) {
-			[question->answers addObject:[NSString stringWithString:quote->episode]];
+			[question->answers addObject:[[NSString alloc] initWithString:quote->episode]];
 		}
 		else {
 			Quote *randquote = [self randomQuote];
 			// TODO: remove duplicate answers
-			[question->answers addObject:[NSString stringWithString:randquote->episode]];
+			[question->answers addObject:[[NSString alloc] initWithString:randquote->episode]];
 		}
 	}
 	return question;
