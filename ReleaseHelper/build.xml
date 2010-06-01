@@ -2,7 +2,7 @@
 <project name="ReleaseHelper" default="release">
 	<!--================== 			!! CHANGE ME !!			==================-->
 	<!-- This file has all the project info. This is what you want to modify  -->
-	<property file="C:/Workspaces/2010/QuotesTriviaArtifacts/QuotesTriviaNcis.Artifacts/build/build.properties" />
+	<property file="C:/Workspaces/2010/QuotesTriviaArtifacts/QuotesTriviaRedVsBlue.Artifacts/build/build.properties" />
 	
 	<!-- Tell ant where it can find Main.java  -->
 	<path id="main.class">
