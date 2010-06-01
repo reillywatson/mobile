@@ -1,6 +1,7 @@
 package com.vasken.SimpsonsTrivia;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 
 import android.app.Activity;
@@ -76,6 +77,7 @@ public class Main extends Activity {
 
 	private void loadNewQuote() {
 		currentQuestion = questionManager.getQuestion();
+		Collections.shuffle(currentQuestion.answers);
 
 		final WebView quoteview = (WebView) findViewById(R.id.quote);
 		quoteview.loadData(currentQuestion.question, "text/html", "utf-8");
