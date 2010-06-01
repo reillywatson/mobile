@@ -73,7 +73,9 @@ public class Main extends ListActivity {
 			favstr.append(info.name);
 			favstr.append(",");
 		}
-		String prefstr = favstr.substring(0, favstr.length() - 1);
+		String prefstr = "";
+		if (favstr.length() > 0)
+			prefstr = favstr.substring(0, favstr.length() - 1);
 		Log.d("SAVING FAVORITES", prefstr);
 		getPreferences(Context.MODE_PRIVATE).edit().putString("favorites", prefstr).commit();
 	}
