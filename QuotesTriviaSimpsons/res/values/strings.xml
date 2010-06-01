@@ -10,11 +10,11 @@
     <string name="win_message">You Win. \nClearly you\'re awesome!</string>
     <string name="win_button">Obviously...</string>
     
-    <string name="menu_hide_quote_questions">No Speaker Questions</string>
-    <string name="menu_hide_episode_questions">No Episode Questions</string>
-    <string name="menu_hide_trivia_questions">No Trivia Questions</string>
-    <string name="menu_show_quote_questions">Ask Speaker Questions</string>
-    <string name="menu_show_episode_questions">Ask Episode Questions</string>
-    <string name="menu_show_trivia_questions">Ask Trivia Questions</string>
+    <string name="menu_hide_quote_questions">Turn Off Speaker Questions</string>
+    <string name="menu_hide_episode_questions">Turn Off Episode Questions</string>
+    <string name="menu_hide_trivia_questions">Turn Off Trivia Questions</string>
+    <string name="menu_show_quote_questions">Turn On Speaker Questions</string>
+    <string name="menu_show_episode_questions">Turn On Episode Questions</string>
+    <string name="menu_show_trivia_questions">Turn On Trivia Questions</string>
 
 </resources>
