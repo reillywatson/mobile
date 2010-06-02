@@ -17,4 +17,11 @@
 	return self;
 }
 
+-(void)dealloc {
+	[super dealloc];
+	[question release];
+	[correctAnswer release];
+	[answers release];
+}
+
 @end

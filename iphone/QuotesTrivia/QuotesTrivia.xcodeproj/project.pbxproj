@@ -22,6 +22,7 @@
 		B43503B611B4E67D00C4B107 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
 		B43503DD11B4E92800C4B107 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DB11B4E92800C4B107 /* quotes.txt */; };
 		B43503DE11B4E92800C4B107 /* trivia.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DC11B4E92800C4B107 /* trivia.txt */; };
+		B4440B6D11B62545000F15C2 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		B43503B511B4E67D00C4B107 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		B43503DB11B4E92800C4B107 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotes.txt; sourceTree = "<group>"; };
 		B43503DC11B4E92800C4B107 /* trivia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trivia.txt; sourceTree = "<group>"; };
+		B4440B6B11B62545000F15C2 /* SpeakerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerStore.h; sourceTree = "<group>"; };
+		B4440B6C11B62545000F15C2 /* SpeakerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				B435038211B4DF4E00C4B107 /* Quote.m */,
 				B43503B411B4E67D00C4B107 /* QuestionManager.h */,
 				B43503B511B4E67D00C4B107 /* QuestionManager.m */,
+				B4440B6B11B62545000F15C2 /* SpeakerStore.h */,
+				B4440B6C11B62545000F15C2 /* SpeakerStore.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				B435038311B4DF4E00C4B107 /* Quote.m in Sources */,
 				B43503A911B4E11500C4B107 /* Question.m in Sources */,
 				B43503B611B4E67D00C4B107 /* QuestionManager.m in Sources */,
+				B4440B6D11B62545000F15C2 /* SpeakerStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

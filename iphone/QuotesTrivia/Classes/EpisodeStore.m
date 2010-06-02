@@ -35,7 +35,8 @@
 		NSString *epTitle = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 3) + 1]];
 		NSString *quoteStr = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 3) + 2]];
 		Quote *quote = [self newQuoteWithEpisodeTitle:epTitle quote:quoteStr];
-		[quotes addObject:quote];
+		if (quote != nil)
+			[quotes addObject:quote];
 	}
 }
 
@@ -58,19 +59,32 @@
 	return @"EPISODE";
 }
 
+-(NSString *)newQuestionStringForQuote:(Quote *)quote {
+	return [[NSString alloc] initWithFormat:@"<span><span><b>Name the episode:</b></span><p><div style='margin-left: -40px'>%@</div></span>", quote->quote];
+}
+
+-(NSString *)newAnswerStringForQuote:(Quote *)quote {
+	return [[NSString alloc] initWithString:quote->episode];
+}
+
 -(Question *)newQuestionFromQuote:(Quote *)quote {
 	Question *question = [Question new];
-	question->question = [[NSString alloc] initWithString:quote->quote];
-	question->correctAnswer = [[NSString alloc] initWithString:quote->episode];
+	question->question = [self newQuestionStringForQuote:quote];
+	question->correctAnswer = [self newAnswerStringForQuote:quote];
 	int correctPos = random() % 3;
 	while ([question->answers count] < 3) {
 		if ([question->answers count] == correctPos) {
-			[question->answers addObject:[[NSString alloc] initWithString:quote->episode]];
+			[question->answers addObject:[self newAnswerStringForQuote:quote]];
 		}
 		else {
 			Quote *randquote = [self randomQuote];
-			// TODO: remove duplicate answers
-			[question->answers addObject:[[NSString alloc] initWithString:randquote->episode]];
+			NSString *answer = [self newAnswerStringForQuote:randquote];
+			if ([question->answers containsObject:answer] || [answer isEqual:question->correctAnswer]) {
+				[answer release];
+			}
+			else {
+				[question->answers addObject:answer];
+			}
 		}
 	}
 	return question;

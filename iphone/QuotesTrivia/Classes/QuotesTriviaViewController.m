@@ -35,9 +35,11 @@
 -(void)answerSelected:(int)answerNo {
 	if ([[currentQuestion->answers objectAtIndex:answerNo] isEqualToString:currentQuestion->correctAnswer]) {
 		NSLog(@"CORRECT");
+		answersStreak++;
 	}
 	else {
-		NSLog(@"INCORRECT");
+		NSLog(@"INCORRECT - ANSWER WAS %@", currentQuestion->correctAnswer);
+		answersStreak = 0;
 	}
 	[self loadNewQuestion];
 }
@@ -51,7 +53,6 @@
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	currentQuestion = nil;
@@ -59,16 +60,6 @@
 	questionManager = [QuestionManager new];
 	[self loadNewQuestion];
 }
-
-
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 
 - (void)dealloc {

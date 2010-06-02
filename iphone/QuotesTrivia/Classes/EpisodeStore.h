@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "QuestionStore.h"
+#import "Quote.h"
 
 @interface EpisodeStore : QuestionStore {
 	NSMutableArray *quotes;
 }
+
+-(Quote *)randomQuote;
+-(Quote *)newQuoteWithEpisodeTitle:(NSString *)title quote:(NSString *)quoteStr;
 
 @end
