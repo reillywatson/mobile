@@ -18,7 +18,7 @@
 
 @implementation QuotesTriviaViewController
 
-@synthesize opt1, opt2, opt3, webview;
+@synthesize opt1, opt2, opt3, webview, progress;
 
 -(void)opt1Clicked {
 	[self answerSelected:0];
@@ -41,6 +41,20 @@
 		NSLog(@"INCORRECT - ANSWER WAS %@", currentQuestion->correctAnswer);
 		answersStreak = 0;
 	}
+	if (answersStreak == 0) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You Lose!" message:[NSString stringWithFormat:@"Nope, it was actually \"%@\".  Try again.", currentQuestion->correctAnswer]
+													   delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}
+	else if (answersStreak == 10) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You Win!" message:@"Clearly you're awesome!"
+													   delegate:nil cancelButtonTitle:@"Obviously..." otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		answersStreak = 0;
+	}
+	
 	[self loadNewQuestion];
 }
 
@@ -51,6 +65,7 @@
 	[opt2 setTitle:[currentQuestion->answers objectAtIndex:1] forState:UIControlStateNormal];
 	[opt3 setTitle:[currentQuestion->answers objectAtIndex:2] forState:UIControlStateNormal];
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
+	[progress setImage:[UIImage imageNamed:[NSString stringWithFormat:@"progress%i.png", answersStreak]]];
 }
 
 - (void)viewDidLoad {

@@ -23,6 +23,16 @@
 		B43503DD11B4E92800C4B107 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DB11B4E92800C4B107 /* quotes.txt */; };
 		B43503DE11B4E92800C4B107 /* trivia.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DC11B4E92800C4B107 /* trivia.txt */; };
 		B4440B6D11B62545000F15C2 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B4440CB111B642C1000F15C2 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B4440CB211B642C1000F15C2 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B4440CB311B642C1000F15C2 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B4440CB411B642C1000F15C2 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B4440CB511B642C1000F15C2 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B4440CB611B642C1000F15C2 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B4440CB711B642C1000F15C2 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B4440CB811B642C1000F15C2 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B4440CB911B642C1000F15C2 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B4440CBA11B642C1000F15C2 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +63,16 @@
 		B43503DC11B4E92800C4B107 /* trivia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trivia.txt; sourceTree = "<group>"; };
 		B4440B6B11B62545000F15C2 /* SpeakerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerStore.h; sourceTree = "<group>"; };
 		B4440B6C11B62545000F15C2 /* SpeakerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerStore.m; sourceTree = "<group>"; };
+		B4440CA711B642C1000F15C2 /* progress0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress0.png; sourceTree = "<group>"; };
+		B4440CA811B642C1000F15C2 /* progress1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress1.png; sourceTree = "<group>"; };
+		B4440CA911B642C1000F15C2 /* progress2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress2.png; sourceTree = "<group>"; };
+		B4440CAA11B642C1000F15C2 /* progress3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress3.png; sourceTree = "<group>"; };
+		B4440CAB11B642C1000F15C2 /* progress4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress4.png; sourceTree = "<group>"; };
+		B4440CAC11B642C1000F15C2 /* progress5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress5.png; sourceTree = "<group>"; };
+		B4440CAD11B642C1000F15C2 /* progress6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress6.png; sourceTree = "<group>"; };
+		B4440CAE11B642C1000F15C2 /* progress7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress7.png; sourceTree = "<group>"; };
+		B4440CAF11B642C1000F15C2 /* progress8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress8.png; sourceTree = "<group>"; };
+		B4440CB011B642C1000F15C2 /* progress9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress9.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,16 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B4440CA711B642C1000F15C2 /* progress0.png */,
+				B4440CA811B642C1000F15C2 /* progress1.png */,
+				B4440CA911B642C1000F15C2 /* progress2.png */,
+				B4440CAA11B642C1000F15C2 /* progress3.png */,
+				B4440CAB11B642C1000F15C2 /* progress4.png */,
+				B4440CAC11B642C1000F15C2 /* progress5.png */,
+				B4440CAD11B642C1000F15C2 /* progress6.png */,
+				B4440CAE11B642C1000F15C2 /* progress7.png */,
+				B4440CAF11B642C1000F15C2 /* progress8.png */,
+				B4440CB011B642C1000F15C2 /* progress9.png */,
 				B43503DB11B4E92800C4B107 /* quotes.txt */,
 				B43503DC11B4E92800C4B107 /* trivia.txt */,
 				2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */,
@@ -189,6 +219,16 @@
 				2899E5220DE3E06400AC0155 /* QuotesTriviaViewController.xib in Resources */,
 				B43503DD11B4E92800C4B107 /* quotes.txt in Resources */,
 				B43503DE11B4E92800C4B107 /* trivia.txt in Resources */,
+				B4440CB111B642C1000F15C2 /* progress0.png in Resources */,
+				B4440CB211B642C1000F15C2 /* progress1.png in Resources */,
+				B4440CB311B642C1000F15C2 /* progress2.png in Resources */,
+				B4440CB411B642C1000F15C2 /* progress3.png in Resources */,
+				B4440CB511B642C1000F15C2 /* progress4.png in Resources */,
+				B4440CB611B642C1000F15C2 /* progress5.png in Resources */,
+				B4440CB711B642C1000F15C2 /* progress6.png in Resources */,
+				B4440CB811B642C1000F15C2 /* progress7.png in Resources */,
+				B4440CB911B642C1000F15C2 /* progress8.png in Resources */,
+				B4440CBA11B642C1000F15C2 /* progress9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
