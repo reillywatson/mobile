@@ -13,12 +13,22 @@
 
 @implementation QuestionManager
 
+-(void)addIfAvailable:(QuestionStore *)store {
+	if ([store isAvailable]) {
+		[questionStores addObject:store];
+	}
+	else {
+		[store release];
+	}
+}
+
 -(id)init {
 	self = [super init];
 	questionStores = [NSMutableArray new];
-	[questionStores addObject:[[EpisodeStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
-	[questionStores addObject:[[SpeakerStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
-	[questionStores addObject:[[TriviaStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"trivia" ofType:@"txt"]]];
+	
+	[self addIfAvailable:[[EpisodeStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
+	[self addIfAvailable:[[SpeakerStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
+	[self addIfAvailable:[[TriviaStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"trivia" ofType:@"txt"]]];
 	return self;
 }
 
