@@ -70,6 +70,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	webview.opaque = NO;
+	webview.backgroundColor = [UIColor clearColor];
 	currentQuestion = nil;
 	answersStreak = 0;
 	questionManager = [QuestionManager new];

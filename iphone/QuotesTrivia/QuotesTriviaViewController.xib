@@ -42,12 +42,24 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="IBUIImageView" id="852498243">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrameSize">{320, 281}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">bg.png</string>
+						</object>
+					</object>
 					<object class="IBUIWebView" id="284828542">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{20, 40}, {280, 241}}</string>
+						<string key="NSFrame">{{5, 34}, {280, 241}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<object class="NSColor" key="IBUIBackgroundColor" id="686337218">
+						<object class="NSColor" key="IBUIBackgroundColor" id="474903391">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
 						</object>
@@ -82,7 +94,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="386584343">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="515729808">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">answer.png</string>
 						</object>
@@ -104,7 +116,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="32455619"/>
 						<reference key="IBUINormalTitleColor" ref="32455619"/>
 						<reference key="IBUINormalTitleShadowColor" ref="776149686"/>
-						<reference key="IBUINormalBackgroundImage" ref="386584343"/>
+						<reference key="IBUINormalBackgroundImage" ref="515729808"/>
 					</object>
 					<object class="IBUIButton" id="327121587">
 						<reference key="NSNextResponder" ref="774585933"/>
@@ -123,12 +135,12 @@
 						<reference key="IBUIHighlightedTitleColor" ref="32455619"/>
 						<reference key="IBUINormalTitleColor" ref="32455619"/>
 						<reference key="IBUINormalTitleShadowColor" ref="776149686"/>
-						<reference key="IBUINormalBackgroundImage" ref="386584343"/>
+						<reference key="IBUINormalBackgroundImage" ref="515729808"/>
 					</object>
 					<object class="IBUIImageView" id="798101579">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{298, 40}, {22, 241}}</string>
+						<string key="NSFrame">{{298, 34}, {22, 241}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -136,7 +148,7 @@
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
-				<reference key="IBUIBackgroundColor" ref="686337218"/>
+				<reference key="IBUIBackgroundColor" ref="474903391"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -246,11 +258,12 @@
 						<reference key="object" ref="774585933"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="284828542"/>
 							<reference ref="651133030"/>
 							<reference ref="183261474"/>
 							<reference ref="327121587"/>
+							<reference ref="852498243"/>
 							<reference ref="798101579"/>
+							<reference ref="284828542"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -279,6 +292,11 @@
 						<reference key="object" ref="798101579"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">22</int>
+						<reference key="object" ref="852498243"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -290,6 +308,7 @@
 					<string>10.IBPluginDependency</string>
 					<string>11.IBPluginDependency</string>
 					<string>20.IBPluginDependency</string>
+					<string>22.IBPluginDependency</string>
 					<string>6.IBEditorWindowLastContentRect</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
@@ -302,7 +321,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{294, 182}, {320, 480}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{321, 283}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -324,7 +344,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">21</int>
+			<int key="maxID">22</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -595,8 +615,17 @@
 		<string key="IBDocument.LastKnownRelativeProjectPath">QuotesTrivia.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">answer.png</string>
-			<string key="NS.object.0">{320, 35}</string>
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>answer.png</string>
+				<string>bg.png</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{320, 35}</string>
+				<string>{320, 280}</string>
+			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">87</string>
 	</data>
