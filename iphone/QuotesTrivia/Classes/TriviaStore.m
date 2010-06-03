@@ -16,8 +16,6 @@
 	NSArray *lines = [filestr componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
 	int numQuotes = [lines count] / 4;
 	for (int i = 0; i < numQuotes; i++) {
-		// We don't do anything with season right now
-		//NSString *season = [lines objectAtIndex:i];
 		Question *question = [Question new];
 		question->question = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 4)]];
 		for (int j = 1; j < 4; j++) {
