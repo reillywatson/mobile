@@ -17,7 +17,7 @@
 	int numQuotes = [lines count] / 4;
 	for (int i = 0; i < numQuotes; i++) {
 		Question *question = [Question new];
-		question->question = [[NSString alloc] initWithString:[lines objectAtIndex:(i * 4)]];
+		question->question = [[NSString alloc] initWithFormat:@"<span style='color: white'><b>%@</b></span>", [lines objectAtIndex:(i * 4)]];
 		for (int j = 1; j < 4; j++) {
 			NSString *answer = [lines objectAtIndex:(i * 4) + j];
 			if ([answer hasPrefix:@"* "]) {

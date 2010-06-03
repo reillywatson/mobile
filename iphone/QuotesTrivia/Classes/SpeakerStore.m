@@ -23,7 +23,7 @@
 }
 
 -(NSString *)newQuestionStringForQuote:(Quote *)quote {
-	return [[NSString alloc] initWithFormat:@"<span style='color: black'><span><b>Who said it?</b></span><p><div style='margin-left: -40px'>%@</div></span>", quote->quote];
+	return [[NSString alloc] initWithFormat:@"<span style='color: white'><span><b>Who said it?</b></span><p><div style='margin-left: -40px'>%@</div></span>", quote->quote];
 }
 
 -(NSString *)newAnswerStringForQuote:(Quote *)quote {

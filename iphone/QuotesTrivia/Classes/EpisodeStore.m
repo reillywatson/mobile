@@ -60,7 +60,7 @@
 }
 
 -(NSString *)newQuestionStringForQuote:(Quote *)quote {
-	return [[NSString alloc] initWithFormat:@"<span style='color: black'><span><b>Name the episode:</b></span><p><div style='margin-left: -40px'>%@</div></span>", quote->quote];
+	return [[NSString alloc] initWithFormat:@"<span style='color: white'><span><b>Name the episode:</b></span><p><div style='margin-left: -40px'>%@</div></span>", quote->quote];
 }
 
 -(NSString *)newAnswerStringForQuote:(Quote *)quote {
