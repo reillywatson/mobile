@@ -18,7 +18,7 @@
 
 @implementation QuotesTriviaViewController
 
-@synthesize opt1, opt2, opt3, webview, progress;
+@synthesize opt1, opt2, opt3, webview, progress, questionNo;
 
 -(void)opt1Clicked {
 	[self answerSelected:0];
@@ -61,21 +61,30 @@
 -(void)loadNewQuestion {
 	currentQuestion = [questionManager newQuestion];
 	NSLog(@"QUESTION: %@", currentQuestion->answers);
+	int indices[3] = {0, 1, 2};
 	[opt1 setTitle:[currentQuestion->answers objectAtIndex:0] forState:UIControlStateNormal];
 	[opt2 setTitle:[currentQuestion->answers objectAtIndex:1] forState:UIControlStateNormal];
 	[opt3 setTitle:[currentQuestion->answers objectAtIndex:2] forState:UIControlStateNormal];
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
 	[progress setImage:[UIImage imageNamed:[NSString stringWithFormat:@"progress%i.png", answersStreak]]];
+	[questionNo setText:[NSString stringWithFormat:@"Question %d of 10", answersStreak + 1]];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	webview.opaque = NO;
 	webview.backgroundColor = [UIColor clearColor];
+//	AdMobView *ad = [AdMobView requestAdWithDelegate:self]; // start a new ad request
+ //   ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
+  //  [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad	
 	currentQuestion = nil;
 	answersStreak = 0;
 	questionManager = [QuestionManager new];
 	[self loadNewQuestion];
+}
+
+- (NSString *)publisherId {
+	return @"a14bf8b7dde92c0";
 }
 
 

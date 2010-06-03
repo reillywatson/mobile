@@ -10,6 +10,7 @@
 #import "EpisodeStore.h"
 #import "SpeakerStore.h"
 #import "TriviaStore.h"
+#import "NSMutableArray-Shuffle.h"
 
 @implementation QuestionManager
 
@@ -34,7 +35,9 @@
 
 -(Question *)newQuestion {
 	int storeno = random() % [questionStores count];
-	return [[questionStores objectAtIndex:storeno] newQuestion];
+	Question *question = [[questionStores objectAtIndex:storeno] newQuestion];
+	[question->answers shuffle];
+	return question;
 }
 
 @end

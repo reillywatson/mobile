@@ -15,6 +15,7 @@
 	UIButton *opt3;
 	UIWebView *webview;
 	UIImageView *progress;
+	UILabel *questionNo;
 	Question *currentQuestion;
 	QuestionManager *questionManager;
 	int answersStreak;
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *opt3;
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) IBOutlet UIImageView *progress;
+@property (nonatomic, retain) IBOutlet UILabel *questionNo;
 -(IBAction)opt1Clicked;
 -(IBAction)opt2Clicked;
 -(IBAction)opt3Clicked;
