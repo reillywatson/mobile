@@ -9,6 +9,7 @@
 #import "QuestionManager.h"
 #import "EpisodeStore.h"
 #import "SpeakerStore.h"
+#import "TriviaStore.h"
 
 @implementation QuestionManager
 
@@ -17,6 +18,7 @@
 	questionStores = [NSMutableArray new];
 	[questionStores addObject:[[EpisodeStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
 	[questionStores addObject:[[SpeakerStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"txt"]]];
+	[questionStores addObject:[[TriviaStore alloc] initWithFilename:[[NSBundle mainBundle] pathForResource:@"trivia" ofType:@"txt"]]];
 	return self;
 }
 
