@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "QuestionManager.h"
+#import "AdMobDelegateProtocol.h"
 
-@interface QuotesTriviaViewController : UIViewController {
+@interface QuotesTriviaViewController : UIViewController<AdMobDelegate> {
 	UILabel *opt1;
 	UILabel *opt2;
 	UILabel *opt3;

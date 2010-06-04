@@ -8,6 +8,7 @@
 
 #import "QuotesTriviaViewController.h"
 #import "NSString-Encoding.h"
+#import "AdMobView.h"
 
 @interface QuotesTriviaViewController (Private)
 
@@ -74,19 +75,21 @@
     [super viewDidLoad];
 	webview.opaque = NO;
 	webview.backgroundColor = [UIColor clearColor];
-//	AdMobView *ad = [AdMobView requestAdWithDelegate:self]; // start a new ad request
- //   ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
-  //  [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad	
+	AdMobView *ad = [AdMobView requestAdWithDelegate:self]; // start a new ad request
+    ad.frame = CGRectMake(0, 412, 320, 48); // set the frame, in this case at the bottom of the screen
+    [self.view addSubview:ad]; // attach the ad to the view hierarchy; self.view is responsible for retaining the ad	
 	currentQuestion = nil;
 	answersStreak = 0;
 	questionManager = [QuestionManager new];
 	[self loadNewQuestion];
 }
 
-- (NSString *)publisherId {
-	return @"a14bf8b7dde92c0";
+- (NSString *)publisherIdForAd:(AdMobView *)adView {
+	return @"a14c0899dcb1233";
 }
-
+- (UIViewController *)currentViewControllerForAd:(AdMobView *)adView {
+	return self;
+}
 
 - (void)dealloc {
     [super dealloc];
