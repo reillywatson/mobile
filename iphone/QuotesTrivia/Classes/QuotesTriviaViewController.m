@@ -7,6 +7,7 @@
 //
 
 #import "QuotesTriviaViewController.h"
+#import "NSString-Encoding.h"
 
 @interface QuotesTriviaViewController (Private)
 
@@ -38,7 +39,7 @@
 		answersStreak++;
 	}
 	else {
-		NSLog(@"INCORRECT - ANSWER WAS %@", currentQuestion->correctAnswer);
+		NSLog(@"INCORRECT - ANSWER WAS %@", [currentQuestion->correctAnswer stringByDecodingXMLEntities]);
 		answersStreak = 0;
 	}
 	if (answersStreak == 0) {
@@ -61,10 +62,9 @@
 -(void)loadNewQuestion {
 	currentQuestion = [questionManager newQuestion];
 	NSLog(@"QUESTION: %@", currentQuestion->answers);
-	int indices[3] = {0, 1, 2};
-	[opt1 setTitle:[currentQuestion->answers objectAtIndex:0] forState:UIControlStateNormal];
-	[opt2 setTitle:[currentQuestion->answers objectAtIndex:1] forState:UIControlStateNormal];
-	[opt3 setTitle:[currentQuestion->answers objectAtIndex:2] forState:UIControlStateNormal];
+	[opt1 setText:[[currentQuestion->answers objectAtIndex:0] stringByDecodingXMLEntities]];
+	[opt2 setText:[[currentQuestion->answers objectAtIndex:1] stringByDecodingXMLEntities]];
+	[opt3 setText:[[currentQuestion->answers objectAtIndex:2] stringByDecodingXMLEntities]];
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
 	[progress setImage:[UIImage imageNamed:[NSString stringWithFormat:@"progress%i.png", answersStreak]]];
 	[questionNo setText:[NSString stringWithFormat:@"Question %d of 10", answersStreak + 1]];

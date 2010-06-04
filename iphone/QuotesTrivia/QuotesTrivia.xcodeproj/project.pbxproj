@@ -33,6 +33,7 @@
 		B4440CB811B642C1000F15C2 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
 		B4440CB911B642C1000F15C2 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
 		B4440CBA11B642C1000F15C2 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B47BCCDB11B896E100208B63 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
 		B4F95B6211B76EAB003DDCA4 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
 		B4F95B7C11B7835C003DDCA4 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
 		B4F95BA811B787C4003DDCA4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
@@ -78,6 +79,8 @@
 		B4440CAE11B642C1000F15C2 /* progress7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress7.png; sourceTree = "<group>"; };
 		B4440CAF11B642C1000F15C2 /* progress8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress8.png; sourceTree = "<group>"; };
 		B4440CB011B642C1000F15C2 /* progress9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress9.png; sourceTree = "<group>"; };
+		B47BCCD911B896E100208B63 /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Encoding.h"; sourceTree = "<group>"; };
+		B47BCCDA11B896E100208B63 /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Encoding.m"; sourceTree = "<group>"; };
 		B4F95B6011B76EAB003DDCA4 /* TriviaStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaStore.h; sourceTree = "<group>"; };
 		B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaStore.m; sourceTree = "<group>"; };
 		B4F95B7B11B7835C003DDCA4 /* answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answer.png; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */,
 				B4F95BF411B791D2003DDCA4 /* NSMutableArray-Shuffle.h */,
 				B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */,
+				B47BCCD911B896E100208B63 /* NSString-Encoding.h */,
+				B47BCCDA11B896E100208B63 /* NSString-Encoding.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				B4440B6D11B62545000F15C2 /* SpeakerStore.m in Sources */,
 				B4F95B6211B76EAB003DDCA4 /* TriviaStore.m in Sources */,
 				B4F95BF611B791D2003DDCA4 /* NSMutableArray-Shuffle.m in Sources */,
+				B47BCCDB11B896E100208B63 /* NSString-Encoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

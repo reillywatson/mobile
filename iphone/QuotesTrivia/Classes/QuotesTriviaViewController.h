@@ -10,9 +10,9 @@
 #import "QuestionManager.h"
 
 @interface QuotesTriviaViewController : UIViewController {
-	UIButton *opt1;
-	UIButton *opt2;
-	UIButton *opt3;
+	UILabel *opt1;
+	UILabel *opt2;
+	UILabel *opt3;
 	UIWebView *webview;
 	UIImageView *progress;
 	UILabel *questionNo;
@@ -21,9 +21,9 @@
 	int answersStreak;
 }
 
-@property (nonatomic, retain) IBOutlet UIButton *opt1;
-@property (nonatomic, retain) IBOutlet UIButton *opt2;
-@property (nonatomic, retain) IBOutlet UIButton *opt3;
+@property (nonatomic, retain) IBOutlet UILabel *opt1;
+@property (nonatomic, retain) IBOutlet UILabel *opt2;
+@property (nonatomic, retain) IBOutlet UILabel *opt3;
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) IBOutlet UIImageView *progress;
 @property (nonatomic, retain) IBOutlet UILabel *questionNo;
