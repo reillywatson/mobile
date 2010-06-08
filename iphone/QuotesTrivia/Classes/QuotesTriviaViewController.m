@@ -67,7 +67,6 @@
 
 -(void)loadNewQuestion {
 	currentQuestion = [questionManager newQuestion];
-	NSLog(@"QUESTION: %@", currentQuestion->answers);
 	[opt1 setText:[[currentQuestion->answers objectAtIndex:0] stringByDecodingXMLEntities]];
 	[opt2 setText:[[currentQuestion->answers objectAtIndex:1] stringByDecodingXMLEntities]];
 	[opt3 setText:[[currentQuestion->answers objectAtIndex:2] stringByDecodingXMLEntities]];
@@ -76,7 +75,6 @@
 }
 
 -(void)displayQuestionNo {
-	NSLog(@"DISPLAY CALLED");
 	[questionNo setText:[NSString stringWithFormat:@"Question %d of 10", answersStreak + 1]];
 }
 

@@ -33,6 +33,7 @@
 		B4440CB811B642C1000F15C2 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
 		B4440CB911B642C1000F15C2 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
 		B4440CBA11B642C1000F15C2 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B4502B2B11BDDBE500BBBBB6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B4502B2A11BDDBE500BBBBB6 /* icon.png */; };
 		B47BCCDB11B896E100208B63 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
 		B47BCD2F11B8D08600208B63 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD1711B8D08600208B63 /* libAdMob.a */; };
 		B47BCD3011B8D08600208B63 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
@@ -60,7 +61,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* QuotesTriviaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesTriviaAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuotesTriviaAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* QuotesTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotesTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* The Simpsons: Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Simpsons: Trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesTriviaViewController.xib; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		B4440CAE11B642C1000F15C2 /* progress7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress7.png; sourceTree = "<group>"; };
 		B4440CAF11B642C1000F15C2 /* progress8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress8.png; sourceTree = "<group>"; };
 		B4440CB011B642C1000F15C2 /* progress9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress9.png; sourceTree = "<group>"; };
+		B4502B2A11BDDBE500BBBBB6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B47BCCD911B896E100208B63 /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Encoding.h"; sourceTree = "<group>"; };
 		B47BCCDA11B896E100208B63 /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Encoding.m"; sourceTree = "<group>"; };
 		B47BCD1311B8D08600208B63 /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobDelegateProtocol.h; sourceTree = "<group>"; };
@@ -185,7 +187,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* QuotesTrivia.app */,
+				1D6058910D05DD3D006BFB54 /* The Simpsons: Trivia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +218,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B4502B2A11BDDBE500BBBBB6 /* icon.png */,
 				B4F95BDF11B79060003DDCA4 /* Default.png */,
 				B4F95BA711B787C4003DDCA4 /* bg.png */,
 				B4F95B7B11B7835C003DDCA4 /* answer.png */,
@@ -310,9 +313,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* QuotesTrivia */ = {
+		1D6058900D05DD3D006BFB54 /* The Simpsons: Trivia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "QuotesTrivia" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "The Simpsons: Trivia" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -322,9 +325,9 @@
 			);
 			dependencies = (
 			);
-			name = QuotesTrivia;
+			name = "The Simpsons: Trivia";
 			productName = QuotesTrivia;
-			productReference = 1D6058910D05DD3D006BFB54 /* QuotesTrivia.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* The Simpsons: Trivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +342,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* QuotesTrivia */,
+				1D6058900D05DD3D006BFB54 /* The Simpsons: Trivia */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +369,7 @@
 				B4F95B7C11B7835C003DDCA4 /* answer.png in Resources */,
 				B4F95BA811B787C4003DDCA4 /* bg.png in Resources */,
 				B4F95BE011B79060003DDCA4 /* Default.png in Resources */,
+				B4502B2B11BDDBE500BBBBB6 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,10 +438,43 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/AdMob\"",
 				);
-				PRODUCT_NAME = QuotesTrivia;
+				PRODUCT_NAME = "The Simpsons: Trivia";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		B4502B5E11BDDE2A00BBBBB6 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Distribution;
+		};
+		B4502B5F11BDDE2A00BBBBB6 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = "QuotesTrivia-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				PRODUCT_NAME = "The Simpsons: Trivia";
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -469,11 +506,12 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "QuotesTrivia" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "The Simpsons: Trivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				B4502B5F11BDDE2A00BBBBB6 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -483,6 +521,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				B4502B5E11BDDE2A00BBBBB6 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
