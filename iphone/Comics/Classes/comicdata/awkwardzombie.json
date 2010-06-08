@@ -1,0 +1,8 @@
+{
+    "Name" : "Awkward Zombie",
+    "StartURL" : "http://www.awkwardzombie.com/comic1.php",
+	"ImagePattern" : "<font size=\"3\".*?<center>.*?</center>.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<font size=\"3\".*?<center>(.*?)</center>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_2.gif\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">\\s*<img border=\"0\" src=\"http://www.awkwardzombie.com/comnav1_4.gif\""
+}

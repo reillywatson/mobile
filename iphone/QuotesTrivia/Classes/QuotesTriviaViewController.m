@@ -14,6 +14,7 @@
 
 -(void)answerSelected:(int)answer;
 -(void)loadNewQuestion;
+-(void)displayQuestionNo;
 
 @end
 
@@ -35,13 +36,17 @@
 }
 
 -(void)answerSelected:(int)answerNo {
+	[[NSRunLoop currentRunLoop] cancelPerformSelectorsWithTarget:self];
 	if ([[currentQuestion->answers objectAtIndex:answerNo] isEqualToString:currentQuestion->correctAnswer]) {
+		[questionNo setText:@"Correct!"];
+		[self performSelector:@selector(displayQuestionNo) withObject:nil afterDelay:2];
 		NSLog(@"CORRECT");
 		answersStreak++;
 	}
 	else {
 		NSLog(@"INCORRECT - ANSWER WAS %@", [currentQuestion->correctAnswer stringByDecodingXMLEntities]);
 		answersStreak = 0;
+		[self displayQuestionNo];
 	}
 	if (answersStreak == 0) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You Lose!" message:[NSString stringWithFormat:@"Nope, it was actually \"%@\".  Try again.", currentQuestion->correctAnswer]
@@ -68,6 +73,10 @@
 	[opt3 setText:[[currentQuestion->answers objectAtIndex:2] stringByDecodingXMLEntities]];
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
 	[progress setImage:[UIImage imageNamed:[NSString stringWithFormat:@"progress%i.png", answersStreak]]];
+}
+
+-(void)displayQuestionNo {
+	NSLog(@"DISPLAY CALLED");
 	[questionNo setText:[NSString stringWithFormat:@"Question %d of 10", answersStreak + 1]];
 }
 
@@ -82,6 +91,7 @@
 	answersStreak = 0;
 	questionManager = [QuestionManager new];
 	[self loadNewQuestion];
+	[self displayQuestionNo];
 }
 
 - (NSString *)publisherIdForAd:(AdMobView *)adView {

@@ -1,0 +1,11 @@
+{
+    "Name" : "Ctrl+Alt+Del Sillies",
+    "StartURL" : "http://www.cad-comic.com/sillies/",
+	"ImagePattern" : "<img src=\"([^>]*?)\"[^<]*?<div class=\"navigation\"",
+	"TitlePattern" : "<img [^>]*? alt=\"([^>]*?)\" />[^<]*?<div class=\"navigation\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"nav-back",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"nav-next",
+	"BaseComicURL" : "http://www.cad-comic.com",
+    "BasePrevNextURL" : "http://www.cad-comic.com",
+	"RandomLink" : "http://www.cad-comic.com/sillies/random"
+}

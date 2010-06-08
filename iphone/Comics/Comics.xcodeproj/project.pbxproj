@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ComicsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ComicsAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		B4103DC8119E71D800212656 /* Viewer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103DC6119E71D800212656 /* Viewer.m */; };
+		B4103DC9119E71D800212656 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4103DC7119E71D800212656 /* Viewer.xib */; };
+		B4103DDD119E743800212656 /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103DDC119E743800212656 /* Downloader.m */; };
+		B4103E9B11A0D23900212656 /* ComicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103E9A11A0D23900212656 /* ComicInfo.m */; };
+		B4103EDC11A0D34200212656 /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EDB11A0D34200212656 /* Comic.m */; };
+		B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EFC11A0D4D700212656 /* DownloaderFactory.m */; };
+		B416722C11B0737900F44C54 /* TappableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416722B11B0737900F44C54 /* TappableView.m */; };
+		B416723511B0754900F44C54 /* TappableWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416723411B0754900F44C54 /* TappableWebView.m */; };
+		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
+		B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942A11A84FF7005E889F /* dominicdeegan.json */; };
+		B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942B11A84FF7005E889F /* houstonchronicle.json */; };
+		B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B4565A5D11B9C360009DF79B /* NSString-Encoding.m */; };
+		B458758E11A2778700135785 /* achewood.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756D11A2778700135785 /* achewood.json */; };
+		B458758F11A2778700135785 /* amazingsuperpowers.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756E11A2778700135785 /* amazingsuperpowers.json */; };
+		B458759011A2778700135785 /* arcamax.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756F11A2778700135785 /* arcamax.json */; };
+		B458759111A2778700135785 /* asofterworld.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757011A2778700135785 /* asofterworld.json */; };
+		B458759211A2778700135785 /* awkwardzombie.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757111A2778700135785 /* awkwardzombie.json */; };
+		B458759311A2778700135785 /* bookofbiff.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757211A2778700135785 /* bookofbiff.json */; };
+		B458759411A2778700135785 /* buttersafe.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757311A2778700135785 /* buttersafe.json */; };
+		B458759511A2778700135785 /* capesnbabes.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757411A2778700135785 /* capesnbabes.json */; };
+		B458759611A2778700135785 /* comicsdotcom.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757511A2778700135785 /* comicsdotcom.json */; };
+		B458759711A2778700135785 /* creatorsdotcom.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757611A2778700135785 /* creatorsdotcom.json */; };
+		B458759811A2778700135785 /* ctrlaltdel.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757711A2778700135785 /* ctrlaltdel.json */; };
+		B458759911A2778700135785 /* ctrlaltdelsillies.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757811A2778700135785 /* ctrlaltdelsillies.json */; };
+		B458759A11A2778700135785 /* cyanideandhappiness.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757911A2778700135785 /* cyanideandhappiness.json */; };
+		B458759B11A2778700135785 /* dilbert.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757A11A2778700135785 /* dilbert.json */; };
+		B458759C11A2778700135785 /* dinosaurcomics.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757B11A2778700135785 /* dinosaurcomics.json */; };
+		B458759D11A2778700135785 /* girlgenius.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757C11A2778700135785 /* girlgenius.json */; };
+		B458759E11A2778700135785 /* girlswithslingshots.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757D11A2778700135785 /* girlswithslingshots.json */; };
+		B458759F11A2778700135785 /* leasticoulddo.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757E11A2778700135785 /* leasticoulddo.json */; };
+		B45875A011A2778700135785 /* lookingforgroup.json in Resources */ = {isa = PBXBuildFile; fileRef = B458757F11A2778700135785 /* lookingforgroup.json */; };
+		B45875A111A2778700135785 /* megatokyo.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758011A2778700135785 /* megatokyo.json */; };
+		B45875A211A2778700135785 /* nedroid.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758111A2778700135785 /* nedroid.json */; };
+		B45875A311A2778700135785 /* pennyarcade.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758211A2778700135785 /* pennyarcade.json */; };
+		B45875A411A2778700135785 /* perrybiblefellowship.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758311A2778700135785 /* perrybiblefellowship.json */; };
+		B45875A511A2778700135785 /* pvp.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758411A2778700135785 /* pvp.json */; };
+		B45875A611A2778700135785 /* questionablecontent.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758511A2778700135785 /* questionablecontent.json */; };
+		B45875A711A2778700135785 /* sharkattack.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758611A2778700135785 /* sharkattack.json */; };
+		B45875A811A2778700135785 /* shermanslagoon.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758711A2778700135785 /* shermanslagoon.json */; };
+		B45875A911A2778700135785 /* sinfest.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758811A2778700135785 /* sinfest.json */; };
+		B45875AA11A2778700135785 /* smbc.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758911A2778700135785 /* smbc.json */; };
+		B45875AB11A2778700135785 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758A11A2778700135785 /* template.json */; };
+		B45875AC11A2778700135785 /* userfriendly.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758B11A2778700135785 /* userfriendly.json */; };
+		B45875AD11A2778700135785 /* vgcats.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758C11A2778700135785 /* vgcats.json */; };
+		B45875AE11A2778700135785 /* wondermark.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758D11A2778700135785 /* wondermark.json */; };
+		B45876FE11A2887200135785 /* gocomicsiphone.json in Resources */ = {isa = PBXBuildFile; fileRef = B45876FD11A2887200135785 /* gocomicsiphone.json */; };
+		B47B36C811A0DEE300D120FB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B36C711A0DEE300D120FB /* RegexKitLite.m */; };
+		B47B38B411A126D100D120FB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38A911A126D100D120FB /* NSObject+SBJSON.m */; };
+		B47B38B511A126D100D120FB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38AB11A126D100D120FB /* NSString+SBJSON.m */; };
+		B47B38B611A126D100D120FB /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38AD11A126D100D120FB /* SBJSON.m */; };
+		B47B38B711A126D100D120FB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38AF11A126D100D120FB /* SBJsonBase.m */; };
+		B47B38B811A126D100D120FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38B111A126D100D120FB /* SBJsonParser.m */; };
+		B47B38B911A126D100D120FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38B311A126D100D120FB /* SBJsonWriter.m */; };
+		B47B38CE11A1277600D120FB /* gocomics.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CC11A1277600D120FB /* gocomics.json */; };
+		B47B38CF11A1277600D120FB /* xkcd.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CD11A1277600D120FB /* xkcd.json */; };
+		B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B3411A319F9003A56F4 /* iconsmall.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B47B36BB11A0DDE300D120FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ComicsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ComicsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Comics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* Comics_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comics_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Comics-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Comics-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B4103DC5119E71D800212656 /* Viewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewer.h; sourceTree = "<group>"; };
+		B4103DC6119E71D800212656 /* Viewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Viewer.m; sourceTree = "<group>"; };
+		B4103DC7119E71D800212656 /* Viewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Viewer.xib; path = Classes/Viewer.xib; sourceTree = "<group>"; };
+		B4103DD9119E737B00212656 /* ComicInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicInfo.h; sourceTree = "<group>"; };
+		B4103DDB119E743800212656 /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		B4103DDC119E743800212656 /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Downloader.m; sourceTree = "<group>"; };
+		B4103E9A11A0D23900212656 /* ComicInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicInfo.m; sourceTree = "<group>"; };
+		B4103EDA11A0D34200212656 /* Comic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comic.h; sourceTree = "<group>"; };
+		B4103EDB11A0D34200212656 /* Comic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comic.m; sourceTree = "<group>"; };
+		B4103EFB11A0D4D700212656 /* DownloaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderFactory.h; sourceTree = "<group>"; };
+		B4103EFC11A0D4D700212656 /* DownloaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderFactory.m; sourceTree = "<group>"; };
+		B416722A11B0737900F44C54 /* TappableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableView.h; sourceTree = "<group>"; };
+		B416722B11B0737900F44C54 /* TappableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableView.m; sourceTree = "<group>"; };
+		B416723311B0754900F44C54 /* TappableWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableWebView.h; sourceTree = "<group>"; };
+		B416723411B0754900F44C54 /* TappableWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableWebView.m; sourceTree = "<group>"; };
+		B41E540B11ABA0ED00F5D6D5 /* UIWebView+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Images.h"; sourceTree = "<group>"; };
+		B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
+		B438942A11A84FF7005E889F /* dominicdeegan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dominicdeegan.json; sourceTree = "<group>"; };
+		B438942B11A84FF7005E889F /* houstonchronicle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houstonchronicle.json; sourceTree = "<group>"; };
+		B4565A5C11B9C360009DF79B /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString-Encoding.h"; path = "Classes/NSString-Encoding.h"; sourceTree = "<group>"; };
+		B4565A5D11B9C360009DF79B /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString-Encoding.m"; path = "Classes/NSString-Encoding.m"; sourceTree = "<group>"; };
+		B458756D11A2778700135785 /* achewood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = achewood.json; sourceTree = "<group>"; };
+		B458756E11A2778700135785 /* amazingsuperpowers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = amazingsuperpowers.json; sourceTree = "<group>"; };
+		B458756F11A2778700135785 /* arcamax.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arcamax.json; sourceTree = "<group>"; };
+		B458757011A2778700135785 /* asofterworld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asofterworld.json; sourceTree = "<group>"; };
+		B458757111A2778700135785 /* awkwardzombie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = awkwardzombie.json; sourceTree = "<group>"; };
+		B458757211A2778700135785 /* bookofbiff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bookofbiff.json; sourceTree = "<group>"; };
+		B458757311A2778700135785 /* buttersafe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buttersafe.json; sourceTree = "<group>"; };
+		B458757411A2778700135785 /* capesnbabes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = capesnbabes.json; sourceTree = "<group>"; };
+		B458757511A2778700135785 /* comicsdotcom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comicsdotcom.json; sourceTree = "<group>"; };
+		B458757611A2778700135785 /* creatorsdotcom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = creatorsdotcom.json; sourceTree = "<group>"; };
+		B458757711A2778700135785 /* ctrlaltdel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctrlaltdel.json; sourceTree = "<group>"; };
+		B458757811A2778700135785 /* ctrlaltdelsillies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctrlaltdelsillies.json; sourceTree = "<group>"; };
+		B458757911A2778700135785 /* cyanideandhappiness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyanideandhappiness.json; sourceTree = "<group>"; };
+		B458757A11A2778700135785 /* dilbert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dilbert.json; sourceTree = "<group>"; };
+		B458757B11A2778700135785 /* dinosaurcomics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dinosaurcomics.json; sourceTree = "<group>"; };
+		B458757C11A2778700135785 /* girlgenius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = girlgenius.json; sourceTree = "<group>"; };
+		B458757D11A2778700135785 /* girlswithslingshots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = girlswithslingshots.json; sourceTree = "<group>"; };
+		B458757E11A2778700135785 /* leasticoulddo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = leasticoulddo.json; sourceTree = "<group>"; };
+		B458757F11A2778700135785 /* lookingforgroup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lookingforgroup.json; sourceTree = "<group>"; };
+		B458758011A2778700135785 /* megatokyo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = megatokyo.json; sourceTree = "<group>"; };
+		B458758111A2778700135785 /* nedroid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nedroid.json; sourceTree = "<group>"; };
+		B458758211A2778700135785 /* pennyarcade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pennyarcade.json; sourceTree = "<group>"; };
+		B458758311A2778700135785 /* perrybiblefellowship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perrybiblefellowship.json; sourceTree = "<group>"; };
+		B458758411A2778700135785 /* pvp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pvp.json; sourceTree = "<group>"; };
+		B458758511A2778700135785 /* questionablecontent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questionablecontent.json; sourceTree = "<group>"; };
+		B458758611A2778700135785 /* sharkattack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sharkattack.json; sourceTree = "<group>"; };
+		B458758711A2778700135785 /* shermanslagoon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shermanslagoon.json; sourceTree = "<group>"; };
+		B458758811A2778700135785 /* sinfest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sinfest.json; sourceTree = "<group>"; };
+		B458758911A2778700135785 /* smbc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smbc.json; sourceTree = "<group>"; };
+		B458758A11A2778700135785 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.json; sourceTree = "<group>"; };
+		B458758B11A2778700135785 /* userfriendly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = userfriendly.json; sourceTree = "<group>"; };
+		B458758C11A2778700135785 /* vgcats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vgcats.json; sourceTree = "<group>"; };
+		B458758D11A2778700135785 /* wondermark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wondermark.json; sourceTree = "<group>"; };
+		B45876FD11A2887200135785 /* gocomicsiphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gocomicsiphone.json; sourceTree = "<group>"; };
+		B47B36C611A0DEE300D120FB /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		B47B36C711A0DEE300D120FB /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		B47B38A711A126D100D120FB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		B47B38A811A126D100D120FB /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		B47B38A911A126D100D120FB /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		B47B38AA11A126D100D120FB /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		B47B38AB11A126D100D120FB /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		B47B38AC11A126D100D120FB /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		B47B38AD11A126D100D120FB /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		B47B38AE11A126D100D120FB /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		B47B38AF11A126D100D120FB /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		B47B38B011A126D100D120FB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		B47B38B111A126D100D120FB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		B47B38B211A126D100D120FB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		B47B38B311A126D100D120FB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		B47B38CC11A1277600D120FB /* gocomics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gocomics.json; sourceTree = "<group>"; };
+		B47B38CD11A1277600D120FB /* xkcd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xkcd.json; sourceTree = "<group>"; };
+		B4F95B3411A319F9003A56F4 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B416723311B0754900F44C54 /* TappableWebView.h */,
+				B416723411B0754900F44C54 /* TappableWebView.m */,
+				B416722A11B0737900F44C54 /* TappableView.h */,
+				B416722B11B0737900F44C54 /* TappableView.m */,
+				B47B36C611A0DEE300D120FB /* RegexKitLite.h */,
+				B47B36C711A0DEE300D120FB /* RegexKitLite.m */,
+				B4103DDA119E742A00212656 /* Downloaders */,
+				B4103DD9119E737B00212656 /* ComicInfo.h */,
+				B4103E9A11A0D23900212656 /* ComicInfo.m */,
+				B4103DC5119E71D800212656 /* Viewer.h */,
+				B4103DC6119E71D800212656 /* Viewer.m */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* ComicsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ComicsAppDelegate.m */,
+				B4103EDA11A0D34200212656 /* Comic.h */,
+				B4103EDB11A0D34200212656 /* Comic.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Comics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B41E540911ABA0DB00F5D6D5 /* FrameworkExtensions */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				B47B38A611A126D100D120FB /* JSON */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* Comics_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4F95B3411A319F9003A56F4 /* iconsmall.png */,
+				B47B38CB11A1277600D120FB /* comicdata */,
+				B4103DC7119E71D800212656 /* Viewer.xib */,
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Comics-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4103DDA119E742A00212656 /* Downloaders */ = {
+			isa = PBXGroup;
+			children = (
+				B4103DDB119E743800212656 /* Downloader.h */,
+				B4103DDC119E743800212656 /* Downloader.m */,
+				B4103EFB11A0D4D700212656 /* DownloaderFactory.h */,
+				B4103EFC11A0D4D700212656 /* DownloaderFactory.m */,
+			);
+			name = Downloaders;
+			sourceTree = "<group>";
+		};
+		B41E540911ABA0DB00F5D6D5 /* FrameworkExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4565A5C11B9C360009DF79B /* NSString-Encoding.h */,
+				B4565A5D11B9C360009DF79B /* NSString-Encoding.m */,
+				B41E540B11ABA0ED00F5D6D5 /* UIWebView+Images.h */,
+				B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */,
+			);
+			name = FrameworkExtensions;
+			sourceTree = "<group>";
+		};
+		B47B38A611A126D100D120FB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				B47B38A711A126D100D120FB /* JSON.h */,
+				B47B38A811A126D100D120FB /* NSObject+SBJSON.h */,
+				B47B38A911A126D100D120FB /* NSObject+SBJSON.m */,
+				B47B38AA11A126D100D120FB /* NSString+SBJSON.h */,
+				B47B38AB11A126D100D120FB /* NSString+SBJSON.m */,
+				B47B38AC11A126D100D120FB /* SBJSON.h */,
+				B47B38AD11A126D100D120FB /* SBJSON.m */,
+				B47B38AE11A126D100D120FB /* SBJsonBase.h */,
+				B47B38AF11A126D100D120FB /* SBJsonBase.m */,
+				B47B38B011A126D100D120FB /* SBJsonParser.h */,
+				B47B38B111A126D100D120FB /* SBJsonParser.m */,
+				B47B38B211A126D100D120FB /* SBJsonWriter.h */,
+				B47B38B311A126D100D120FB /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = Classes/JSON;
+			sourceTree = "<group>";
+		};
+		B47B38CB11A1277600D120FB /* comicdata */ = {
+			isa = PBXGroup;
+			children = (
+				B438942A11A84FF7005E889F /* dominicdeegan.json */,
+				B438942B11A84FF7005E889F /* houstonchronicle.json */,
+				B458756D11A2778700135785 /* achewood.json */,
+				B458756E11A2778700135785 /* amazingsuperpowers.json */,
+				B458756F11A2778700135785 /* arcamax.json */,
+				B458757011A2778700135785 /* asofterworld.json */,
+				B458757111A2778700135785 /* awkwardzombie.json */,
+				B458757211A2778700135785 /* bookofbiff.json */,
+				B458757311A2778700135785 /* buttersafe.json */,
+				B458757411A2778700135785 /* capesnbabes.json */,
+				B458757511A2778700135785 /* comicsdotcom.json */,
+				B458757611A2778700135785 /* creatorsdotcom.json */,
+				B458757711A2778700135785 /* ctrlaltdel.json */,
+				B458757811A2778700135785 /* ctrlaltdelsillies.json */,
+				B458757911A2778700135785 /* cyanideandhappiness.json */,
+				B458757A11A2778700135785 /* dilbert.json */,
+				B458757B11A2778700135785 /* dinosaurcomics.json */,
+				B458757C11A2778700135785 /* girlgenius.json */,
+				B458757D11A2778700135785 /* girlswithslingshots.json */,
+				B47B38CC11A1277600D120FB /* gocomics.json */,
+				B45876FD11A2887200135785 /* gocomicsiphone.json */,
+				B458757E11A2778700135785 /* leasticoulddo.json */,
+				B458757F11A2778700135785 /* lookingforgroup.json */,
+				B458758011A2778700135785 /* megatokyo.json */,
+				B458758111A2778700135785 /* nedroid.json */,
+				B458758211A2778700135785 /* pennyarcade.json */,
+				B458758311A2778700135785 /* perrybiblefellowship.json */,
+				B458758411A2778700135785 /* pvp.json */,
+				B458758511A2778700135785 /* questionablecontent.json */,
+				B458758611A2778700135785 /* sharkattack.json */,
+				B458758711A2778700135785 /* shermanslagoon.json */,
+				B458758811A2778700135785 /* sinfest.json */,
+				B458758911A2778700135785 /* smbc.json */,
+				B458758A11A2778700135785 /* template.json */,
+				B458758B11A2778700135785 /* userfriendly.json */,
+				B458758C11A2778700135785 /* vgcats.json */,
+				B458758D11A2778700135785 /* wondermark.json */,
+				B47B38CD11A1277600D120FB /* xkcd.json */,
+			);
+			name = comicdata;
+			path = Classes/comicdata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Comics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Comics" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				B47B36BB11A0DDE300D120FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comics;
+			productName = Comics;
+			productReference = 1D6058910D05DD3D006BFB54 /* Comics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Comics" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Comics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				B4103DC9119E71D800212656 /* Viewer.xib in Resources */,
+				B47B38CE11A1277600D120FB /* gocomics.json in Resources */,
+				B47B38CF11A1277600D120FB /* xkcd.json in Resources */,
+				B458758E11A2778700135785 /* achewood.json in Resources */,
+				B458758F11A2778700135785 /* amazingsuperpowers.json in Resources */,
+				B458759011A2778700135785 /* arcamax.json in Resources */,
+				B458759111A2778700135785 /* asofterworld.json in Resources */,
+				B458759211A2778700135785 /* awkwardzombie.json in Resources */,
+				B458759311A2778700135785 /* bookofbiff.json in Resources */,
+				B458759411A2778700135785 /* buttersafe.json in Resources */,
+				B458759511A2778700135785 /* capesnbabes.json in Resources */,
+				B458759611A2778700135785 /* comicsdotcom.json in Resources */,
+				B458759711A2778700135785 /* creatorsdotcom.json in Resources */,
+				B458759811A2778700135785 /* ctrlaltdel.json in Resources */,
+				B458759911A2778700135785 /* ctrlaltdelsillies.json in Resources */,
+				B458759A11A2778700135785 /* cyanideandhappiness.json in Resources */,
+				B458759B11A2778700135785 /* dilbert.json in Resources */,
+				B458759C11A2778700135785 /* dinosaurcomics.json in Resources */,
+				B458759D11A2778700135785 /* girlgenius.json in Resources */,
+				B458759E11A2778700135785 /* girlswithslingshots.json in Resources */,
+				B458759F11A2778700135785 /* leasticoulddo.json in Resources */,
+				B45875A011A2778700135785 /* lookingforgroup.json in Resources */,
+				B45875A111A2778700135785 /* megatokyo.json in Resources */,
+				B45875A211A2778700135785 /* nedroid.json in Resources */,
+				B45875A311A2778700135785 /* pennyarcade.json in Resources */,
+				B45875A411A2778700135785 /* perrybiblefellowship.json in Resources */,
+				B45875A511A2778700135785 /* pvp.json in Resources */,
+				B45875A611A2778700135785 /* questionablecontent.json in Resources */,
+				B45875A711A2778700135785 /* sharkattack.json in Resources */,
+				B45875A811A2778700135785 /* shermanslagoon.json in Resources */,
+				B45875A911A2778700135785 /* sinfest.json in Resources */,
+				B45875AA11A2778700135785 /* smbc.json in Resources */,
+				B45875AB11A2778700135785 /* template.json in Resources */,
+				B45875AC11A2778700135785 /* userfriendly.json in Resources */,
+				B45875AD11A2778700135785 /* vgcats.json in Resources */,
+				B45875AE11A2778700135785 /* wondermark.json in Resources */,
+				B45876FE11A2887200135785 /* gocomicsiphone.json in Resources */,
+				B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */,
+				B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */,
+				B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ComicsAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				B4103DC8119E71D800212656 /* Viewer.m in Sources */,
+				B4103DDD119E743800212656 /* Downloader.m in Sources */,
+				B4103E9B11A0D23900212656 /* ComicInfo.m in Sources */,
+				B4103EDC11A0D34200212656 /* Comic.m in Sources */,
+				B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */,
+				B47B36C811A0DEE300D120FB /* RegexKitLite.m in Sources */,
+				B47B38B411A126D100D120FB /* NSObject+SBJSON.m in Sources */,
+				B47B38B511A126D100D120FB /* NSString+SBJSON.m in Sources */,
+				B47B38B611A126D100D120FB /* SBJSON.m in Sources */,
+				B47B38B711A126D100D120FB /* SBJsonBase.m in Sources */,
+				B47B38B811A126D100D120FB /* SBJsonParser.m in Sources */,
+				B47B38B911A126D100D120FB /* SBJsonWriter.m in Sources */,
+				B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */,
+				B416722C11B0737900F44C54 /* TappableView.m in Sources */,
+				B416723511B0754900F44C54 /* TappableWebView.m in Sources */,
+				B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Comics_Prefix.pch;
+				INFOPLIST_FILE = "Comics-Info.plist";
+				PRODUCT_NAME = Comics;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Comics_Prefix.pch;
+				INFOPLIST_FILE = "Comics-Info.plist";
+				PRODUCT_NAME = Comics;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = Release;
+		};
+		B4F95AF911A317DA003A56F4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Reilly Watson";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-licucore";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Distribution;
+		};
+		B4F95AFA11A317DA003A56F4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Reilly Watson";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Reilly Watson";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Comics_Prefix.pch;
+				INFOPLIST_FILE = "Comics-Info.plist";
+				PRODUCT_NAME = Comics;
+				PROVISIONING_PROFILE = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-licucore";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.1.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-licucore";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Comics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				B4F95AFA11A317DA003A56F4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Comics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				B4F95AF911A317DA003A56F4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,10 @@
+{
+    "Name" : "Questionable Content",
+    "StartURL" : "http://www.questionablecontent.net/",
+	"ImagePattern" : "<img id=\"strip\" src=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">Previous",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">Next",
+	"BaseComicURL" : "http://www.questionablecontent.net",
+    "BasePrevNextURL" : "http://www.questionablecontent.net/",
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=32"
+}

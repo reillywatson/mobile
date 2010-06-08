@@ -1,0 +1,8 @@
+{
+	"ImagePattern" : "img src=\"/comics/(.*?)\"",
+	"TitlePattern" : "<span class=\"time\">(.*?)</span>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"time_l two\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"time_r two\"",
+	"BaseComicURL" : "http://www.creators.com/comics/",
+    "BasePrevNextURL" : "http://www.creators.com"
+}

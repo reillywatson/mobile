@@ -1,0 +1,10 @@
+{
+    "Name" : "VG Cats",
+    "StartURL" : "http://www.vgcats.com/comics/",
+	"ImagePattern" : "<img src=\"archives.gif\".*?</table>.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<title>(.*?)</title>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img src=\"back.gif\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"><img src=\"next.gif\"",
+	"BaseComicURL" : "http://www.vgcats.com/comics/",
+    "BasePrevNextURL" : "http://www.vgcats.com/comics/"
+}

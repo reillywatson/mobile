@@ -1,0 +1,10 @@
+{
+    "Name" : "Achewood",
+    "StartURL" : "http://www.achewood.com/",
+	"ImagePattern" : "<p id=\"comic_body\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<p id=\"comic_body\">.*?<img src=\".*?\" title=\"(.*?)\"",
+	"PrevComicPattern" : "id=\"comic_navigation\">.*?<span class=\"left\"><a href=\"(.*?)\"",
+	"NextComicPattern" : "id=\"comic_navigation\">.*?<span class=\"right\"><a href=\"(.*?)\"",
+	"BasePrevNextURL" : "http://www.achewood.com/",
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=636"
+}

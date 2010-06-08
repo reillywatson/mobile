@@ -1,0 +1,8 @@
+{
+    "Name" : "PvP",
+    "StartURL" : "http://www.pvponline.com/",
+	"ImagePattern" : "<div id=\"comic\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\">.*?<img src=\".*?\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "<div id=\"navbar-previous\">[^<]*?<a href=\"(.*?)\" rel=\"prev\"",
+	"NextComicPattern" : "<div id=\"navbar-next\">.*?<a href=\"(.*?)\" rel=\"next\""
+}
