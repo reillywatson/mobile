@@ -45,5 +45,6 @@
 
 -(id)initWithDelegate:(NSObject<DownloaderDelegate> *)aDelegate forURL:(NSString *)aUrl withComicInfo:(void *)info;
 -(id)initWithDelegate:(NSObject<DownloaderDelegate> *)aDelegate forURL:(NSString *)aUrl;
+-(Comic *)getComicSynchronously;
 
 @end

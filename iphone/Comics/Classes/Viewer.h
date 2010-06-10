@@ -22,6 +22,7 @@
 	UIToolbar *toolbar;
 	ComicInfo *comicInfo;
 	Comic *comic;
+	BOOL isRandom;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;

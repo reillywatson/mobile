@@ -10,7 +10,6 @@
 	NSMutableArray *comics;
 	NSDictionary *lastJSONObject;
 	NSString *lastJSONPath;
-
 }
 
 @end

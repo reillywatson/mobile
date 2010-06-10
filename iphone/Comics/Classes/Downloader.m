@@ -17,7 +17,6 @@
 -(void)parseAltText:(NSString *)str;
 -(void)parsePermalink:(NSString *)str;
 -(void)parseRandomURL:(NSString *)str;
-//-(void)parseCurrentPicker:(NSString *)str;
 @end
 
 
@@ -137,7 +136,7 @@
 	return self;
 }
 
--(void)main {
+-(Comic *)getComicSynchronously {
 	NSLog(@"REQUESTING %@", url);
 	comic->url = [url retain];
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -155,6 +154,11 @@
 	[self parseAltText:str];
 	[self parsePermalink:str];
 	[self parseRandomURL:str];
+	return comic;
+}
+
+-(void)main {
+	[self getComicSynchronously];
 	[delegate performSelectorOnMainThread:@selector(comicReady:) withObject:comic waitUntilDone:NO];
 }
 

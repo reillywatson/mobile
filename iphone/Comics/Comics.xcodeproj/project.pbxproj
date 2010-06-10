@@ -21,6 +21,7 @@
 		B4103E9B11A0D23900212656 /* ComicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103E9A11A0D23900212656 /* ComicInfo.m */; };
 		B4103EDC11A0D34200212656 /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EDB11A0D34200212656 /* Comic.m */; };
 		B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EFC11A0D4D700212656 /* DownloaderFactory.m */; };
+		B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */; };
 		B416722C11B0737900F44C54 /* TappableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416722B11B0737900F44C54 /* TappableView.m */; };
 		B416723511B0754900F44C54 /* TappableWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416723411B0754900F44C54 /* TappableWebView.m */; };
 		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
@@ -113,6 +114,8 @@
 		B4103EDB11A0D34200212656 /* Comic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comic.m; sourceTree = "<group>"; };
 		B4103EFB11A0D4D700212656 /* DownloaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloaderFactory.h; sourceTree = "<group>"; };
 		B4103EFC11A0D4D700212656 /* DownloaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderFactory.m; sourceTree = "<group>"; };
+		B4121F4311C1584F00798FFD /* SubscriptionVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionVisitor.h; sourceTree = "<group>"; };
+		B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionVisitor.m; sourceTree = "<group>"; };
 		B416722A11B0737900F44C54 /* TappableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableView.h; sourceTree = "<group>"; };
 		B416722B11B0737900F44C54 /* TappableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableView.m; sourceTree = "<group>"; };
 		B416723311B0754900F44C54 /* TappableWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableWebView.h; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 				1D3623250D0F684500981E51 /* ComicsAppDelegate.m */,
 				B4103EDA11A0D34200212656 /* Comic.h */,
 				B4103EDB11A0D34200212656 /* Comic.m */,
+				B4121F4311C1584F00798FFD /* SubscriptionVisitor.h */,
+				B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -321,8 +326,6 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
-				B438942A11A84FF7005E889F /* dominicdeegan.json */,
-				B438942B11A84FF7005E889F /* houstonchronicle.json */,
 				B458756D11A2778700135785 /* achewood.json */,
 				B458756E11A2778700135785 /* amazingsuperpowers.json */,
 				B458756F11A2778700135785 /* arcamax.json */,
@@ -338,10 +341,12 @@
 				B458757911A2778700135785 /* cyanideandhappiness.json */,
 				B458757A11A2778700135785 /* dilbert.json */,
 				B458757B11A2778700135785 /* dinosaurcomics.json */,
+				B438942A11A84FF7005E889F /* dominicdeegan.json */,
 				B458757C11A2778700135785 /* girlgenius.json */,
 				B458757D11A2778700135785 /* girlswithslingshots.json */,
 				B47B38CC11A1277600D120FB /* gocomics.json */,
 				B45876FD11A2887200135785 /* gocomicsiphone.json */,
+				B438942B11A84FF7005E889F /* houstonchronicle.json */,
 				B458757E11A2778700135785 /* leasticoulddo.json */,
 				B458757F11A2778700135785 /* lookingforgroup.json */,
 				B458758011A2778700135785 /* megatokyo.json */,
@@ -488,6 +493,7 @@
 				B416722C11B0737900F44C54 /* TappableView.m in Sources */,
 				B416723511B0754900F44C54 /* TappableWebView.m in Sources */,
 				B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */,
+				B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

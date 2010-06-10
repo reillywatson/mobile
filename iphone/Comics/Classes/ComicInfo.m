@@ -13,7 +13,6 @@
 
 @synthesize comicPattern, nextComicPattern, prevComicPattern, titlePattern, altTextPattern, randomComicPattern;
 @synthesize baseComicURL, basePrevNextURL, randomURL;
-@synthesize pickerStyle, pickerPattern;
 
 -(id)init {
 	self = [super init];
@@ -26,8 +25,6 @@
 	randomComicPattern = nil;
 	baseComicURL = @"";
 	basePrevNextURL = @"";
-	pickerStyle = nil;
-	pickerPattern = nil;
 	return self;
 }
 

@@ -48,7 +48,7 @@
 	
 	ComicInfo *info = [comics objectAtIndex:[indexPath row]];
 
-	Viewer *viewer = [[Viewer alloc] initWithComic:info];
+	Viewer *viewer = [[[Viewer alloc] initWithComic:info] autorelease];
 	[[self navigationController] pushViewController:viewer animated:YES];
 }
 
@@ -438,7 +438,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 		lastJSONPath = [jsonFile retain];
 		lastJSONObject = [parsedJSON retain];
 	}
-	ComicInfo *comic = [ComicInfo new];
+	ComicInfo *comic = [[ComicInfo new] autorelease];
 	comic.title = [parsedJSON objectForKey:@"Name"];
 	comic.startUrl = [parsedJSON objectForKey:@"StartURL"];
 	comic.comicPattern = [parsedJSON objectForKey:@"ImagePattern"];
@@ -454,9 +454,6 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	comic.baseComicURL = [parsedJSON objectForKey:@"BaseComicURL"];
 	if (comic.baseComicURL == nil)
 		comic.baseComicURL = @"";
-	
-	comic.pickerStyle = [parsedJSON objectForKey:@"ComicPickerStyle"];
-	comic.pickerPattern = [parsedJSON objectForKey:@"ComicPickerPattern"];
 	
 	if (startUrl != nil)
 		comic.startUrl = [startUrl retain];

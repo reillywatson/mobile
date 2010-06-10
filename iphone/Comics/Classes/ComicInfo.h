@@ -24,9 +24,6 @@
 	NSString *baseComicURL;
 	NSString *basePrevNextURL;
 	NSString *randomURL;
-	
-	NSString *pickerStyle;
-	NSString *pickerPattern;
 }
 
 @property (nonatomic, retain) NSString *title;
@@ -40,7 +37,5 @@
 @property (nonatomic, retain) NSString *baseComicURL;
 @property (nonatomic, retain) NSString *basePrevNextURL;
 @property (nonatomic, retain) NSString *randomURL;
-@property (nonatomic, retain) NSString *pickerStyle;
-@property (nonatomic, retain) NSString *pickerPattern;
 
 @end

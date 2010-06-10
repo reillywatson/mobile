@@ -27,11 +27,19 @@
 	opQueue = [[NSOperationQueue alloc] init];
 	[opQueue setMaxConcurrentOperationCount:1];
 	comicInfo = [info retain];
-	[self downloadComic:info withURL:info.startUrl];
+	isRandom = NO;
+	NSString *startUrl = info.startUrl;
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSString *last = [defaults stringForKey:[info.title stringByAppendingString:@"lastViewed"]];
+	if (last != nil) {
+		startUrl = last;
+	}
+	[self downloadComic:info withURL:startUrl];
 	return self;
 }
 
 -(void)downloadComic:(ComicInfo *)cInfo withURL:(NSString *)url {
+	isRandom = NO;
 	[spinner startAnimating];
 	[self.altText setAlpha:0];
 	[self.view sendSubviewToBack:webView];
@@ -56,6 +64,12 @@
 	[self.nextButton setAction:@selector(loadNext)];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+	if (comic != nil && comic->url != nil && comicInfo != nil && comicInfo.title != nil && !isRandom) {
+		[[NSUserDefaults standardUserDefaults] setObject:comic->url forKey:[comicInfo.title stringByAppendingString:@"lastViewed"]];
+	}
+}
+
 -(void)loadPrev {
 	[self downloadComic:comicInfo withURL:comic->prevUrl];
 }
@@ -66,6 +80,7 @@
 
 -(void)loadRandom {
 	[self downloadComic:comicInfo withURL:comic->randomUrl];
+	isRandom = YES;
 }
 
 -(void)loadNewest {
@@ -89,18 +104,6 @@
 - (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) interfaceOrientation {
 	return YES;
 }
-
-/*
-// I'm no good at Interface Builder, it's supposed to handle this for me, instead of being horrible all the time
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-	if self.interfaceOrientation == UIInterfaceOrientationPortrait || self.interfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
-		[self.altText setBounds:CGRectMake(0, 0, 320, 480)];
-		[self.webView setBounds:CGRectMake(
-	}
-	else {
-	}
-}
-*/
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	NSString *title = [actionSheet buttonTitleAtIndex:buttonIndex];
