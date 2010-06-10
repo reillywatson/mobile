@@ -61,6 +61,9 @@
 		B45875AD11A2778700135785 /* vgcats.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758C11A2778700135785 /* vgcats.json */; };
 		B45875AE11A2778700135785 /* wondermark.json in Resources */ = {isa = PBXBuildFile; fileRef = B458758D11A2778700135785 /* wondermark.json */; };
 		B45876FE11A2887200135785 /* gocomicsiphone.json in Resources */ = {isa = PBXBuildFile; fileRef = B45876FD11A2887200135785 /* gocomicsiphone.json */; };
+		B45EE05E11C0CBEE00FDA4BD /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EE05D11C0CBEE00FDA4BD /* MainWindow-iPad.xib */; };
+		B45EE06711C0CD0700FDA4BD /* RootViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */; };
+		B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */; };
 		B47B36C811A0DEE300D120FB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B36C711A0DEE300D120FB /* RegexKitLite.m */; };
 		B47B38B411A126D100D120FB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38A911A126D100D120FB /* NSObject+SBJSON.m */; };
 		B47B38B511A126D100D120FB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38AB11A126D100D120FB /* NSString+SBJSON.m */; };
@@ -154,6 +157,9 @@
 		B458758C11A2778700135785 /* vgcats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vgcats.json; sourceTree = "<group>"; };
 		B458758D11A2778700135785 /* wondermark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wondermark.json; sourceTree = "<group>"; };
 		B45876FD11A2887200135785 /* gocomicsiphone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gocomicsiphone.json; sourceTree = "<group>"; };
+		B45EE05D11C0CBEE00FDA4BD /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "RootViewController-iPad.xib"; sourceTree = "<group>"; };
+		B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Viewer-iPad.xib"; sourceTree = "<group>"; };
 		B47B36C611A0DEE300D120FB /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		B47B36C711A0DEE300D120FB /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		B47B38A711A126D100D120FB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -246,12 +252,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */,
+				B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */,
 				B4F95B3411A319F9003A56F4 /* iconsmall.png */,
 				B47B38CB11A1277600D120FB /* comicdata */,
 				B4103DC7119E71D800212656 /* Viewer.xib */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Comics-Info.plist */,
+				B45EE05D11C0CBEE00FDA4BD /* MainWindow-iPad.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -447,6 +456,9 @@
 				B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */,
 				B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */,
 				B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */,
+				B45EE05E11C0CBEE00FDA4BD /* MainWindow-iPad.xib in Resources */,
+				B45EE06711C0CD0700FDA4BD /* RootViewController-iPad.xib in Resources */,
+				B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +509,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Comics_Prefix.pch;
 				INFOPLIST_FILE = "Comics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Comics;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,8 +529,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Comics_Prefix.pch;
 				INFOPLIST_FILE = "Comics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Comics;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -535,6 +550,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
 				SDKROOT = iphoneos3.1.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
 		};
@@ -552,9 +568,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Comics_Prefix.pch;
 				INFOPLIST_FILE = "Comics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Comics;
 				PROVISIONING_PROFILE = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
