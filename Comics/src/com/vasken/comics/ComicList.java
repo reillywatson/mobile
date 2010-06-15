@@ -16,8 +16,6 @@ public class ComicList {
 	static ArrayList<ComicInfo> comicList() { return comics; }
 	
 	static void init(Context context) {
-		comics.add(new ComicInfo(context, R.raw.eightbittheater));
-		comics.add(new ComicInfo(context, R.raw.dominicdeegan));
 		comics.add(new ComicInfo(context, R.raw.achewood));
 		comics.add(new ComicInfo(context, R.raw.amazingsuperpowers));
 		comics.add(new ComicInfo(context, R.raw.asofterworld));
@@ -30,6 +28,8 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.cyanideandhappiness));
 		comics.add(new ComicInfo(context, R.raw.dilbert));
 		comics.add(new ComicInfo(context, R.raw.dinosaurcomics));
+		comics.add(new ComicInfo(context, R.raw.dominicdeegan));
+		comics.add(new ComicInfo(context, R.raw.eightbittheater));
 		comics.add(new ComicInfo(context, R.raw.girlgenius));
 		comics.add(new ComicInfo(context, R.raw.girlswithslingshots));
 		comics.add(new ComicInfo(context, R.raw.leasticoulddo));
@@ -42,6 +42,7 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.questionablecontent));
 		comics.add(new ComicInfo(context, R.raw.sharkattack));
 		comics.add(new ComicInfo(context, R.raw.shermanslagoon));
+		comics.add(new ComicInfo(context, R.raw.shockwatson));
 		comics.add(new ComicInfo(context, R.raw.sinfest));
 		comics.add(new ComicInfo(context, R.raw.smbc));
 		comics.add(new ComicInfo(context, R.raw.userfriendly));

@@ -1,0 +1,8 @@
+{
+    "Name" : "Shock Watson",
+    "StartURL" : "http://www.shockwatson.com",
+	"ImagePattern" : "<div src=\"post-body entry-content\">.*?<img src=\"([^>]*?)\"",
+	"TitlePattern" : "class=\"post-title entry-title\"><a href=[^>]*?>([^>]*?)</a>",
+	"PrevComicPattern" : "<span id=\"blog-pager-older-link\">[^>]*?href=\"(.*?)\"",
+	"NextComicPattern" : "<span id=\"blog-pager-older-link\">[^>]*?href=\"(.*?)\""
+}
