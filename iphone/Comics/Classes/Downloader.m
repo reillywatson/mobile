@@ -36,6 +36,10 @@
 	if ([components count] > 1) {
 		NSString *imageURL = [[components objectAtIndex:1] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
 		comic->image = [baseComicURL stringByAppendingString:imageURL];
+		NSLog(@"COMIC URL: %@", comic->image);
+	}
+	else {
+		NSLog(@"NO COMIC FOUND!!!  HTML: %@", str);
 	}
 }
 

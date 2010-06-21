@@ -16,7 +16,9 @@
 	NSObject *o = [[self superview] superview];
 	if (![o isKindOfClass: [UIWebView class]])
 	{
-		[self __touchesBegan: touches withEvent: event];
+		if ([self respondsToSelector:@selector(__touchesBegan:withEvent:)]) {
+			[self __touchesBegan: touches withEvent: event];
+		}
 		return;
 	}
 	
@@ -29,7 +31,9 @@
 	UIWebView *webView = (UIWebView *) o;
 	if (![webView.delegate conformsToProtocol: @protocol(TappableWebViewDelegate)])
 	{
-		[self __touchesBegan: touches withEvent: event];
+		if ([self respondsToSelector:@selector(__touchesBegan:withEvent:)]) {
+			[self __touchesBegan: touches withEvent: event];
+		}
 		return;
 	}
 	
@@ -40,7 +44,9 @@
 	}
 	
 	/* do nadda for now */
-	[self __touchesBegan: touches withEvent: event];
+	if ([self respondsToSelector:@selector(__touchesBegan:withEvent:)]) {
+		[self __touchesBegan: touches withEvent: event];
+	}
 }
 
 - (void) __touchesMoved: (NSSet *) touches withEvent: (UIEvent *) event

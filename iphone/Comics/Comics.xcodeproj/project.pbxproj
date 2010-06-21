@@ -15,6 +15,9 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		B4079DDF11CF6F8500DF16A3 /* TappableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4079DDC11CF6F8500DF16A3 /* TappableView.m */; };
+		B4079DE011CF6F8500DF16A3 /* TappableWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4079DDE11CF6F8500DF16A3 /* TappableWebView.m */; };
+		B4079DED11CF70DE00DF16A3 /* shockwatson.json in Resources */ = {isa = PBXBuildFile; fileRef = B4079DEC11CF70DE00DF16A3 /* shockwatson.json */; };
 		B4103DC8119E71D800212656 /* Viewer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103DC6119E71D800212656 /* Viewer.m */; };
 		B4103DC9119E71D800212656 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4103DC7119E71D800212656 /* Viewer.xib */; };
 		B4103DDD119E743800212656 /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103DDC119E743800212656 /* Downloader.m */; };
@@ -22,8 +25,6 @@
 		B4103EDC11A0D34200212656 /* Comic.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EDB11A0D34200212656 /* Comic.m */; };
 		B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EFC11A0D4D700212656 /* DownloaderFactory.m */; };
 		B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */; };
-		B416722C11B0737900F44C54 /* TappableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416722B11B0737900F44C54 /* TappableView.m */; };
-		B416723511B0754900F44C54 /* TappableWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B416723411B0754900F44C54 /* TappableWebView.m */; };
 		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
 		B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942A11A84FF7005E889F /* dominicdeegan.json */; };
 		B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942B11A84FF7005E889F /* houstonchronicle.json */; };
@@ -103,6 +104,11 @@
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Comics-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Comics-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B4079DDB11CF6F8500DF16A3 /* TappableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableView.h; sourceTree = SOURCE_ROOT; };
+		B4079DDC11CF6F8500DF16A3 /* TappableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableView.m; sourceTree = SOURCE_ROOT; };
+		B4079DDD11CF6F8500DF16A3 /* TappableWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableWebView.h; sourceTree = SOURCE_ROOT; };
+		B4079DDE11CF6F8500DF16A3 /* TappableWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableWebView.m; sourceTree = SOURCE_ROOT; };
+		B4079DEC11CF70DE00DF16A3 /* shockwatson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shockwatson.json; sourceTree = "<group>"; };
 		B4103DC5119E71D800212656 /* Viewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewer.h; sourceTree = "<group>"; };
 		B4103DC6119E71D800212656 /* Viewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Viewer.m; sourceTree = "<group>"; };
 		B4103DC7119E71D800212656 /* Viewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Viewer.xib; path = Classes/Viewer.xib; sourceTree = "<group>"; };
@@ -116,10 +122,6 @@
 		B4103EFC11A0D4D700212656 /* DownloaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloaderFactory.m; sourceTree = "<group>"; };
 		B4121F4311C1584F00798FFD /* SubscriptionVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionVisitor.h; sourceTree = "<group>"; };
 		B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionVisitor.m; sourceTree = "<group>"; };
-		B416722A11B0737900F44C54 /* TappableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableView.h; sourceTree = "<group>"; };
-		B416722B11B0737900F44C54 /* TappableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableView.m; sourceTree = "<group>"; };
-		B416723311B0754900F44C54 /* TappableWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableWebView.h; sourceTree = "<group>"; };
-		B416723411B0754900F44C54 /* TappableWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableWebView.m; sourceTree = "<group>"; };
 		B41E540B11ABA0ED00F5D6D5 /* UIWebView+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Images.h"; sourceTree = "<group>"; };
 		B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
 		B438942A11A84FF7005E889F /* dominicdeegan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dominicdeegan.json; sourceTree = "<group>"; };
@@ -200,10 +202,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B416723311B0754900F44C54 /* TappableWebView.h */,
-				B416723411B0754900F44C54 /* TappableWebView.m */,
-				B416722A11B0737900F44C54 /* TappableView.h */,
-				B416722B11B0737900F44C54 /* TappableView.m */,
+				B4079DDB11CF6F8500DF16A3 /* TappableView.h */,
+				B4079DDC11CF6F8500DF16A3 /* TappableView.m */,
+				B4079DDD11CF6F8500DF16A3 /* TappableWebView.h */,
+				B4079DDE11CF6F8500DF16A3 /* TappableWebView.m */,
 				B47B36C611A0DEE300D120FB /* RegexKitLite.h */,
 				B47B36C711A0DEE300D120FB /* RegexKitLite.m */,
 				B4103DDA119E742A00212656 /* Downloaders */,
@@ -326,6 +328,7 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B4079DEC11CF70DE00DF16A3 /* shockwatson.json */,
 				B458756D11A2778700135785 /* achewood.json */,
 				B458756E11A2778700135785 /* amazingsuperpowers.json */,
 				B458756F11A2778700135785 /* arcamax.json */,
@@ -464,6 +467,7 @@
 				B45EE05E11C0CBEE00FDA4BD /* MainWindow-iPad.xib in Resources */,
 				B45EE06711C0CD0700FDA4BD /* RootViewController-iPad.xib in Resources */,
 				B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */,
+				B4079DED11CF70DE00DF16A3 /* shockwatson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +494,10 @@
 				B47B38B811A126D100D120FB /* SBJsonParser.m in Sources */,
 				B47B38B911A126D100D120FB /* SBJsonWriter.m in Sources */,
 				B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */,
-				B416722C11B0737900F44C54 /* TappableView.m in Sources */,
-				B416723511B0754900F44C54 /* TappableWebView.m in Sources */,
 				B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */,
 				B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */,
+				B4079DDF11CF6F8500DF16A3 /* TappableView.m in Sources */,
+				B4079DE011CF6F8500DF16A3 /* TappableWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
