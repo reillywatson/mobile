@@ -35,7 +35,7 @@
 	NSArray *components = [str captureComponentsMatchedByRegex:p options:RKLDotAll range:NSMakeRange(0, [str length]) error:nil];
 	if ([components count] > 1) {
 		NSString *imageURL = [[components objectAtIndex:1] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-		comic->image = [baseComicURL stringByAppendingString:imageURL];
+		comic->image = [[baseComicURL stringByAppendingString:imageURL] retain];
 		NSLog(@"COMIC URL: %@", comic->image);
 	}
 	else {
@@ -146,9 +146,6 @@
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
 	NSError *error;
 	NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
-	if (error != nil) {
-		[delegate comicReady:nil];
-	}
 	NSString *str = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 	NSLog(@"received response with %d bytes", [str length]);
 	[self parseComic:str];

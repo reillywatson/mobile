@@ -19,7 +19,7 @@
 
 @implementation Viewer
 
-@synthesize webView, prevButton, nextButton, altText, spinner, toolbar;
+@synthesize webView, prevButton, nextButton, altButton, altText, spinner, toolbar;
 
 -(id)initWithComic:(ComicInfo *)info {
 	self = [super init];
@@ -62,6 +62,8 @@
 	[self.nextButton setEnabled:NO];
 	[self.prevButton setAction:@selector(loadPrev)];
 	[self.nextButton setAction:@selector(loadNext)];
+	[self.altButton setAction:@selector(toggleAltText)];
+	[self.altButton setEnabled:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -153,6 +155,7 @@
 -(void)setAltTextViewText:(NSString *)text {
 	[self.altText setText:text];
 	[self.altText setAlpha:0];
+	[self.altButton setEnabled:(text != nil && ![text isEqual:@""])];
 }
 
 - (BOOL) shouldTrackSwipeGesture: (UIWebView *) sender {
@@ -166,7 +169,7 @@
 	[self singleTap:nil];
 }
 
-- (void) singleTap: (TappableView *) TappableView {
+-(void)toggleAltText {
 	if (self.altText.text != nil && ![self.altText.text isEqual:@""]) {
 		double alpha = self.altText.alpha;
 		[UIView beginAnimations:@"fadeAltText" context:nil];
@@ -180,6 +183,9 @@
 	}
 }
 
+- (void) singleTap: (TappableView *) TappableView {
+}
+
 -(void)comicReady:(Comic *)aComic {
 	if (aComic == nil) {
 		[self showComicLoadFailed];
@@ -190,8 +196,6 @@
 	[self setTitle:[comic->title stringByDecodingXMLEntities]];
 	[self.prevButton setEnabled:(comic->prevUrl != nil)];
 	[self.nextButton setEnabled:(comic->nextUrl != nil)];
-	// visible: 416
-	// invisible:
 	[self setAltTextViewText:[comic->altText stringByDecodingXMLEntities]];
 		
 	[self.webView becomeFirstResponder];

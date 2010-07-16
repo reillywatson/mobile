@@ -142,7 +142,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	//comics.add(new ComicInfo("Married To The Sea" startURL:@"http://www.marriedtothesea.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.marriedtothesea.com"); }}];
 	//comics.add(new ComicInfo("Natalie Dee" startURL:@"http://www.nataliedee.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.nataliedee.com"); }}];
 	//comics.add(new ComicInfo("Toothpaste For Dinner" startURL:@"http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}];
-/*
+
 	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"houstonchronicle" ofType:@"json"] title:@"Apartment 3-G" startURL:@"http://www.chron.com/apps/comics/buildcp.mpl?c=100&page=1&cpp=1&v=3.0&quality=high"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"houstonchronicle" ofType:@"json"] title:@"Better Half" startURL:@"http://www.chron.com/apps/comics/buildcp.mpl?c=103&page=1&cpp=1&v=3.0&quality=high"];
@@ -415,7 +415,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"Working It Out" startURL:@"http://www.comics.com/working_it_out"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"Zack Hill" startURL:@"http://www.comics.com/zack_hill"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"(Th)ink" startURL:@"http://www.comics.com/think"];
-*/
+
 	[comics sortUsingFunction:titleSort context:nil];
 }
 

@@ -17,6 +17,7 @@
 	UIWebView *webView;
 	UIBarButtonItem *prevButton;
 	UIBarButtonItem *nextButton;
+	UIBarButtonItem *altButton;
 	UIActivityIndicatorView *spinner;
 	UILabel *altText;
 	UIToolbar *toolbar;
@@ -28,6 +29,7 @@
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *prevButton;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *nextButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *altButton;
 @property (nonatomic, retain) IBOutlet UILabel *altText;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *spinner;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;

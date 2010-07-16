@@ -75,6 +75,7 @@
 		B47B38B911A126D100D120FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38B311A126D100D120FB /* SBJsonWriter.m */; };
 		B47B38CE11A1277600D120FB /* gocomics.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CC11A1277600D120FB /* gocomics.json */; };
 		B47B38CF11A1277600D120FB /* xkcd.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CD11A1277600D120FB /* xkcd.json */; };
+		B4C1ED9911ED819500595119 /* iconipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C1ED9811ED819500595119 /* iconipad.png */; };
 		B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B3411A319F9003A56F4 /* iconsmall.png */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +183,7 @@
 		B47B38B311A126D100D120FB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		B47B38CC11A1277600D120FB /* gocomics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gocomics.json; sourceTree = "<group>"; };
 		B47B38CD11A1277600D120FB /* xkcd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xkcd.json; sourceTree = "<group>"; };
+		B4C1ED9811ED819500595119 /* iconipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconipad.png; sourceTree = "<group>"; };
 		B4F95B3411A319F9003A56F4 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,6 +261,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B4C1ED9811ED819500595119 /* iconipad.png */,
 				B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */,
 				B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */,
 				B4F95B3411A319F9003A56F4 /* iconsmall.png */,
@@ -468,6 +471,7 @@
 				B45EE06711C0CD0700FDA4BD /* RootViewController-iPad.xib in Resources */,
 				B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */,
 				B4079DED11CF70DE00DF16A3 /* shockwatson.json in Resources */,
+				B4C1ED9911ED819500595119 /* iconipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -519,9 +524,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Comics_Prefix.pch;
 				INFOPLIST_FILE = "Comics-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
 				PRODUCT_NAME = Comics;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -542,6 +549,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = Comics;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -559,7 +567,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos3.1.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -568,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Reilly Watson";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Reilly Watson";
 				COPY_PHASE_STRIP = YES;
@@ -578,7 +587,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Comics_Prefix.pch;
 				INFOPLIST_FILE = "Comics-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = Comics;
 				PROVISIONING_PROFILE = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15060475-FAD1-48DF-90D7-9F7C6EB5CD04";
@@ -601,7 +610,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos3.1.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -619,7 +628,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos3.1.3;
 			};
 			name = Release;
 		};
