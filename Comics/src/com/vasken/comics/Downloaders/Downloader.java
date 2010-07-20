@@ -114,7 +114,10 @@ public class Downloader implements WebRequester.RequestCallback {
 	protected boolean parseComic(StringBuilder partialResponse) {
 		Matcher m = getComicPattern().matcher(partialResponse);
 		if (m.find()) {
-			String imageURL = getBaseComicURL() + m.group(1).replaceAll("&amp;", "&");
+			String imageURL = m.group(1).replaceAll("&amp;", "&");
+			if (!imageURL.startsWith("http")) {
+				imageURL = getBaseComicURL() + imageURL;
+			}
 			if (downloadImageDirectly) {
 				comic.bitmap = getBitmap(imageURL);
 				Log.d("BITMAP", Integer.toString(comic.bitmap.getHeight()));
@@ -149,7 +152,9 @@ public class Downloader implements WebRequester.RequestCallback {
 		if (m.find() && !url.endsWith("=1")) {
 			String prev = m.group(1);
 			if (!prev.equals("#") && !prev.equals("/") && prev.length() > 0) {
-				comic.prevUrl = getBasePrevNextURL() + prev;			
+				if (!prev.startsWith("http"))
+					prev = getBasePrevNextURL() + prev;
+				comic.prevUrl = prev;			
 				Log.d("PREV", comic.prevUrl);
 			}
 			return true;
@@ -165,7 +170,9 @@ public class Downloader implements WebRequester.RequestCallback {
 		if (m.find()) {
 			String next = m.group(1);
 			if (!next.equals("#") && !next.equals("/") && !next.equals(url) && next.length() > 0) {
-				comic.nextUrl = getBasePrevNextURL() + m.group(1);
+				if (!next.startsWith("http"))
+					next = getBasePrevNextURL() + next;
+				comic.nextUrl = next;
 				Log.d("NEXT", comic.nextUrl);
 			}
 			return true;
