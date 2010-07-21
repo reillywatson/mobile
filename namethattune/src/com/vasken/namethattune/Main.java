@@ -30,9 +30,11 @@ public class Main extends Activity implements PreviewURLListener {
 			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 				if (isDownloading)
 					return false;
-				Log.d("download started", v.getText().toString());
-				isDownloading = true;
-				new PreviewURLFactory().getPreviewURL(v.getText().toString(), Main.this);
+				if (event.getAction() == KeyEvent.ACTION_UP) {
+					Log.d("download started", v.getText().toString());
+					isDownloading = true;
+					new PreviewURLFactory().getPreviewURL(v.getText().toString(), Main.this);
+				}
 				return true;
 			}
         	
