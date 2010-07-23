@@ -23,6 +23,7 @@ public class Main extends Activity {
 	private MediaPlayer player = new MediaPlayer();
 	private Button opt1, opt2, opt3, opt4;
 	String correct;
+	boolean downloadInProgress = false;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,7 @@ public class Main extends Activity {
         opt2.setOnClickListener(buttonClicked);
         opt3.setOnClickListener(buttonClicked);
         opt4.setOnClickListener(buttonClicked);
-        
-        new BackgroundWorker().execute("rock");
+        getNewTrack();
     }
     
     private android.widget.Button.OnClickListener buttonClicked = new android.widget.Button.OnClickListener() {
@@ -50,12 +50,18 @@ public class Main extends Activity {
 			else {
 				Toast.makeText(Main.this, "WRONGO!", Toast.LENGTH_SHORT).show();
 			}
-			new BackgroundWorker().execute("rock");
+			if (!downloadInProgress)
+				getNewTrack();
 		}};
     
 	public void sampleRetrievalError() {
 		runOnUiThread(new Runnable() { public void run() {Toast.makeText(Main.this, "error getting song sample!  Retrying.", Toast.LENGTH_SHORT).show();}});
+		getNewTrack();
+	}
+
+	void getNewTrack() {
 		new BackgroundWorker().execute("rock");
+		downloadInProgress = true;
 	}
 	
 	String trackToString(final Track track) {
@@ -63,6 +69,7 @@ public class Main extends Activity {
 	}
 	
 	public void displayOptions(final List<Track> tracks) {
+		downloadInProgress = false;
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
