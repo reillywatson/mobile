@@ -4,9 +4,18 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Matcher;
+
+import org.apache.http.client.methods.HttpGet;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import com.vasken.namethattune.PreviewURLProvider.PreviewURLListener;
 import com.vasken.util.UserTask;
+import com.vasken.util.WebRequester;
+import com.vasken.util.WebRequester.RequestCallback;
+
 import net.roarsoftware.lastfm.Track;
 
 import android.app.Activity;
@@ -68,7 +77,7 @@ public class Main extends Activity {
 		return track.getArtist() + " - " + track.getName();
 	}
 	
-	public void displayOptions(final List<Track> tracks) {
+	public void displayOptions(final List<String> tracks) {
 		downloadInProgress = false;
 		runOnUiThread(new Runnable() {
 			@Override
@@ -78,40 +87,46 @@ public class Main extends Activity {
 					sampleRetrievalError();
 					return;
 				}
-				Track rightTrack = tracks.remove(0);
-				correct = trackToString(rightTrack);
+				correct = tracks.remove(0);
 				Collections.shuffle(tracks);
-				tracks.add((int)(Math.random() * 4), rightTrack);
+				tracks.add((int)(Math.random() * 4), correct);
 
-				opt1.setText(trackToString(tracks.get(0)));
-				opt2.setText(trackToString(tracks.get(1)));
-				opt3.setText(trackToString(tracks.get(2)));
-				opt4.setText(trackToString(tracks.get(3)));
+				opt1.setText(tracks.get(0));
+				opt2.setText(tracks.get(1));
+				opt3.setText(tracks.get(2));
+				opt4.setText(tracks.get(3));
 			}});
 	}
 	
-	class BackgroundWorker extends UserTask<String, List<Track>, List<Track>> {
-		
-		private LastFMDataProvider lastfm = new LastFMDataProvider();
-		private PreviewURLProvider itunes = new PreviewURLProvider();
+	class BackgroundWorker extends UserTask<String, List<String>, List<String>> {
 		
 		@Override
-		public List<Track> doInBackground(String... tags) {
-			Track correct = lastfm.getRandomTopTrack(1000);
-		//	Track correct = lastfm.getRandomTrackForTag(tags[0], 1000);
-			Collection<Track> alternatives = lastfm.getSimilarTracks(correct);
-			if (alternatives == null)
-				sampleRetrievalError();
-			final List<Track> tracks = new LinkedList<Track>(alternatives);
-			itunes.getPreviewURL(trackToString(correct), new PreviewURLListener() {
+		public List<String> doInBackground(String... tags) {
+			final List<String> tracks = new LinkedList<String>();
+			new WebRequester().makeRequest(new HttpGet("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=100/explicit=true/json"), new RequestCallback() {
 				@Override
-				public void somethingWentWrong() {
-					sampleRetrievalError();
-				}
+				public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+					if (isFinal) {
+						try {
+						JSONObject json = new JSONObject(responseSoFar.toString());
+						JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
+						for (int i = 0; i < 4; i++) {
+							JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
+							String title = randomTrack.getJSONObject("title").getString("label");
+							if (i == 0) {
+								String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
+								previewUrlReady(link);
+							}
+							tracks.add(title);
+						}
+						displayOptions(tracks);
 
-				@Override
-				public void urlReady(String url) {
-					
+						} catch (JSONException e) {}
+						return true;
+					}
+					return false;
+				}
+				private void previewUrlReady(String url) {
 					player.stop();
 					// I should be able to reuse the same MediaPlayer, but I keep
 					// getting errors that I don't yet understand about invalid states
@@ -121,17 +136,13 @@ public class Main extends Activity {
 						player.setDataSource(url);
 						player.prepare();
 						player.start();
-						if (tracks.size() < 4)
-							sampleRetrievalError();
-						else
-							displayOptions(tracks);
 					} catch (Exception e) {
 						sampleRetrievalError();
 						e.printStackTrace();
 						return;
 					}
-				}});
-			tracks.add(0, correct);
+				}
+			});
 			return tracks;
 		}
 	}
