@@ -57,7 +57,7 @@ public class Main extends Activity {
 				Toast.makeText(Main.this, "CORRECT!", Toast.LENGTH_SHORT).show();
 			}
 			else {
-				Toast.makeText(Main.this, "WRONGO!", Toast.LENGTH_SHORT).show();
+				Toast.makeText(Main.this, "WRONGO!  It was " + correct, Toast.LENGTH_SHORT).show();
 			}
 			if (!downloadInProgress)
 				getNewTrack();
@@ -98,51 +98,88 @@ public class Main extends Activity {
 			}});
 	}
 	
+	// this cache is pretty dumb for now!
+	final JSONCache cache = new JSONCache();
+	
+	class JSONCache { 
+		JSONObject _obj;
+		String _id;
+		
+		JSONObject cachedObject(String id) {
+			if (_id != null && _id.equals(id))
+				return _obj;
+			return null;
+		}
+		
+		void cacheObject(String id, JSONObject obj) {
+			_id = id;
+			_obj = obj;
+		}
+	}
+	
 	class BackgroundWorker extends UserTask<String, List<String>, List<String>> {
+		
+		void parseJSON(JSONObject json) throws JSONException {
+			List<String> tracks = new LinkedList<String>();
+			JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
+			for (int i = 0; i < 4; i++) {
+				JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
+				String title = randomTrack.getJSONObject("title").getString("label");
+				if (i == 0) {
+					String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
+					previewUrlReady(link);
+				}
+				tracks.add(title);
+			}
+			displayOptions(tracks);
+		}
+		
+		private void previewUrlReady(String url) {
+			player.stop();
+			// I should be able to reuse the same MediaPlayer, but I keep
+			// getting errors that I don't yet understand about invalid states
+			player.release();
+			player = new MediaPlayer();
+			try {
+				player.setDataSource(url);
+				player.prepare();
+				player.start();
+			} catch (Exception e) {
+				sampleRetrievalError();
+				e.printStackTrace();
+				return;
+			}
+		}
 		
 		@Override
 		public List<String> doInBackground(String... tags) {
 			final List<String> tracks = new LinkedList<String>();
-			new WebRequester().makeRequest(new HttpGet("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=100/explicit=true/json"), new RequestCallback() {
-				@Override
-				public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-					if (isFinal) {
-						try {
-						JSONObject json = new JSONObject(responseSoFar.toString());
-						JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
-						for (int i = 0; i < 4; i++) {
-							JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
-							String title = randomTrack.getJSONObject("title").getString("label");
-							if (i == 0) {
-								String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
-								previewUrlReady(link);
-							}
-							tracks.add(title);
+			final String url = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=300/genre=18/explicit=true/json";
+			JSONObject json = cache.cachedObject(url);
+			
+			if (json != null) {
+				try {
+					parseJSON(json);
+				} catch (JSONException e) {}
+			}
+			else {
+				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
+					@Override
+					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+						if (isFinal) {
+							
+							try {
+							JSONObject json = new JSONObject(responseSoFar.toString());
+							parseJSON(json);
+							cache.cacheObject(url, json);
+	
+							} catch (JSONException e) {}
+							return true;
 						}
-						displayOptions(tracks);
-
-						} catch (JSONException e) {}
-						return true;
+						return false;
 					}
-					return false;
-				}
-				private void previewUrlReady(String url) {
-					player.stop();
-					// I should be able to reuse the same MediaPlayer, but I keep
-					// getting errors that I don't yet understand about invalid states
-					player.release();
-					player = new MediaPlayer();
-					try {
-						player.setDataSource(url);
-						player.prepare();
-						player.start();
-					} catch (Exception e) {
-						sampleRetrievalError();
-						e.printStackTrace();
-						return;
-					}
-				}
-			});
+				});
+			}
 			return tracks;
 		}
 	}
