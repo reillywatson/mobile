@@ -9,6 +9,7 @@
 #import "Viewer.h"
 #import "ComicInfo.h"
 #import "DownloaderFactory.h"
+#import "ComicsAppDelegate.h"
 
 @interface Viewer (Private)
 -(void)downloadComic:(ComicInfo *)cInfo withURL:(NSString *)url;
@@ -97,6 +98,15 @@
 		[actionsheet addButtonWithTitle:@"Random comic"];
 	}
 	[actionsheet addButtonWithTitle:@"Newest comic"];
+	
+	NSLog(@"%@", [((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites]);
+	if ([[((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites] objectForKey:comicInfo.title] == nil) {
+		[actionsheet addButtonWithTitle:@"Add to favorites"];
+	}
+	else {
+		[actionsheet addButtonWithTitle:@"Remove from favorites"];
+	}
+	
 	[actionsheet addButtonWithTitle:@"Cancel"];
 	[actionsheet setCancelButtonIndex:[actionsheet numberOfButtons] - 1];
 	[actionsheet showInView:self.view];
@@ -114,6 +124,12 @@
 	}
 	else if ([title isEqual:@"Newest comic"]) {
 		[self loadNewest];
+	}
+	else if ([title isEqual:@"Add to favorites"]) {
+		[[((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites] setObject:@"y" forKey:comicInfo.title];
+	}
+	else if ([title isEqual:@"Remove from favorites"]) {
+		[[((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites] removeObjectForKey:comicInfo.title];
 	}
 }
 

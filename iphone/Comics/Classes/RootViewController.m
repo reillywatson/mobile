@@ -47,6 +47,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 		}
 	}
 	[favourites sortUsingFunction:titleSort context:nil];
+	[self.view reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -76,9 +77,12 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	ComicInfo *info;
+	if ([indexPath section] == 0)
+		info = [favourites objectAtIndex:[indexPath row]];
+	else
+		info = [comics objectAtIndex:[indexPath row]];
 	
-	ComicInfo *info = [comics objectAtIndex:[indexPath row]];
-
 	Viewer *viewer = [[[Viewer alloc] initWithComic:info] autorelease];
 	[[self navigationController] pushViewController:viewer animated:YES];
 }
