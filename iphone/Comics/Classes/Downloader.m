@@ -23,7 +23,7 @@
 @implementation Downloader
 
 @synthesize comicPattern, nextComicPattern, prevComicPattern, titlePattern, altTextPattern, randomComicPattern;
-@synthesize baseComicURL, basePrevNextURL, randomURL;
+@synthesize baseComicURL, basePrevNextURL, randomURL, baseRandomComicURL;
 
 
 -(void)parseComic:(NSString *)str {
@@ -102,7 +102,7 @@
 		return;
 	NSArray *components = [str captureComponentsMatchedByRegex:p options:RKLDotAll range:NSMakeRange(0, [str length]) error:nil];
 	if ([components count] > 1) {
-		comic->randomUrl = [[components objectAtIndex:1] retain];
+		comic->randomUrl = [[[self baseRandomComicURL] stringByAppendingString:[components objectAtIndex:1]] retain];
 	}
 }
 
@@ -124,6 +124,7 @@
 	randomComicPattern = comicInfo.randomComicPattern;
 	baseComicURL = comicInfo.baseComicURL;
 	basePrevNextURL = comicInfo.basePrevNextURL;
+	baseRandomComicURL = comicInfo.baseRandomComicURL;
 	randomURL = comicInfo.randomURL;
 	if (baseComicURL == nil)
 		baseComicURL = @"";

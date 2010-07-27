@@ -28,6 +28,7 @@
 		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
 		B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942A11A84FF7005E889F /* dominicdeegan.json */; };
 		B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942B11A84FF7005E889F /* houstonchronicle.json */; };
+		B44F274611FEA57C005FEF33 /* dieselsweeties.json in Resources */ = {isa = PBXBuildFile; fileRef = B44F274511FEA57C005FEF33 /* dieselsweeties.json */; };
 		B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B4565A5D11B9C360009DF79B /* NSString-Encoding.m */; };
 		B458758E11A2778700135785 /* achewood.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756D11A2778700135785 /* achewood.json */; };
 		B458758F11A2778700135785 /* amazingsuperpowers.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756E11A2778700135785 /* amazingsuperpowers.json */; };
@@ -127,6 +128,7 @@
 		B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
 		B438942A11A84FF7005E889F /* dominicdeegan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dominicdeegan.json; sourceTree = "<group>"; };
 		B438942B11A84FF7005E889F /* houstonchronicle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houstonchronicle.json; sourceTree = "<group>"; };
+		B44F274511FEA57C005FEF33 /* dieselsweeties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dieselsweeties.json; sourceTree = "<group>"; };
 		B4565A5C11B9C360009DF79B /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString-Encoding.h"; path = "Classes/NSString-Encoding.h"; sourceTree = "<group>"; };
 		B4565A5D11B9C360009DF79B /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString-Encoding.m"; path = "Classes/NSString-Encoding.m"; sourceTree = "<group>"; };
 		B458756D11A2778700135785 /* achewood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = achewood.json; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B44F274511FEA57C005FEF33 /* dieselsweeties.json */,
 				B4079DEC11CF70DE00DF16A3 /* shockwatson.json */,
 				B458756D11A2778700135785 /* achewood.json */,
 				B458756E11A2778700135785 /* amazingsuperpowers.json */,
@@ -472,6 +475,7 @@
 				B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */,
 				B4079DED11CF70DE00DF16A3 /* shockwatson.json in Resources */,
 				B4C1ED9911ED819500595119 /* iconipad.png in Resources */,
+				B44F274611FEA57C005FEF33 /* dieselsweeties.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -157,6 +157,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"ctrlaltdel" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"ctrlaltdelsillies" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"cyanideandhappiness" ofType:@"json"]];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"dieselsweeties" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"dilbert" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"dinosaurcomics" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"girlgenius" ofType:@"json"]];
@@ -489,6 +490,9 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	comic.titlePattern = [parsedJSON objectForKey:@"TitlePattern"];
 	comic.randomURL = [parsedJSON objectForKey:@"RandomLink"];
 	comic.randomComicPattern = [parsedJSON objectForKey:@"RandomComicPattern"];
+	comic.baseRandomComicURL = [parsedJSON objectForKey:@"BaseRandomComicURL"];
+	if (comic.baseRandomComicURL == nil)
+		comic.baseRandomComicURL = @"";
 	comic.basePrevNextURL = [parsedJSON objectForKey:@"BasePrevNextURL"];
 	if (comic.basePrevNextURL == nil)
 		comic.basePrevNextURL = @"";

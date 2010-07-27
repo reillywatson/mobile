@@ -12,7 +12,7 @@
 @synthesize startUrl, title;
 
 @synthesize comicPattern, nextComicPattern, prevComicPattern, titlePattern, altTextPattern, randomComicPattern;
-@synthesize baseComicURL, basePrevNextURL, randomURL;
+@synthesize baseComicURL, basePrevNextURL, randomURL, baseRandomComicURL;
 
 -(id)init {
 	self = [super init];
@@ -23,6 +23,7 @@
 	altTextPattern = nil;
 	randomURL = nil;
 	randomComicPattern = nil;
+	baseRandomComicURL = @"";
 	baseComicURL = @"";
 	basePrevNextURL = @"";
 	return self;

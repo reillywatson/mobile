@@ -20,6 +20,7 @@
 	NSString *titlePattern;
 	NSString *altTextPattern;
 	NSString *randomComicPattern;
+	NSString *baseRandomComicURL;
 	
 	NSString *baseComicURL;
 	NSString *basePrevNextURL;
@@ -34,6 +35,7 @@
 @property (nonatomic, retain) NSString *titlePattern;
 @property (nonatomic, retain) NSString *altTextPattern;
 @property (nonatomic, retain) NSString *randomComicPattern;
+@property (nonatomic, retain) NSString *baseRandomComicURL;
 @property (nonatomic, retain) NSString *baseComicURL;
 @property (nonatomic, retain) NSString *basePrevNextURL;
 @property (nonatomic, retain) NSString *randomURL;
