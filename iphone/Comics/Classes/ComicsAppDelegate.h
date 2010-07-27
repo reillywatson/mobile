@@ -10,7 +10,10 @@
     
     UIWindow *window;
     UINavigationController *navigationController;
+	NSMutableDictionary *_favourites;
 }
+
+-(NSMutableDictionary *)favourites;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;

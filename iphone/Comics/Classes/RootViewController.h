@@ -8,6 +8,7 @@
 
 @interface RootViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource> {
 	NSMutableArray *comics;
+	NSMutableArray *favourites;
 	NSDictionary *lastJSONObject;
 	NSString *lastJSONPath;
 }

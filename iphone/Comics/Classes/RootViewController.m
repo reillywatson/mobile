@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #include "ComicInfo.h"
 #import "Viewer.h"
+#import "ComicsAppDelegate.h"
 
 @interface RootViewController (Private)
 -(void)initComicsArray;
@@ -18,6 +19,13 @@
 
 @implementation RootViewController
 
+NSInteger titleSort(id comic1, id comic2, void *context)
+{
+	NSString *title1 = [((ComicInfo *)comic1).title stringByReplacingOccurrencesOfString:@"The " withString:@""];
+	NSString *title2 = [((ComicInfo *)comic2).title stringByReplacingOccurrencesOfString:@"The " withString:@""];
+	return [title1 compare:title2];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
@@ -26,21 +34,44 @@
 	
 	self.title = @"Comics";
 	comics = [NSMutableArray new];
+	favourites = [NSMutableArray new];
 	[self initComicsArray];
-	
-//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+	[favourites removeAllObjects];
+	NSDictionary *favouriteTitles = [((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites];
+	for (ComicInfo *comic in comics) {
+		if ([favouriteTitles objectForKey:comic.title] != nil) {
+			[favourites addObject:comic];
+		}
+	}
+	[favourites sortUsingFunction:titleSort context:nil];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+	
+}
 
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+	if ([favourites count] == 0)
+		return nil;
+	UILabel *label = [UILabel new];
+	[label setText:(section == 0 ? @"Favorites" : @"Comics")];
+	return label;
+	
+}
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	if (section == 0)
+		return [favourites count];
     return [comics count];
 }
 
@@ -60,8 +91,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
-    
-	ComicInfo *info = [comics objectAtIndex:[indexPath row]];
+	
+	ComicInfo *info;
+	
+	if ([indexPath section] == 0) {
+		info = [favourites objectAtIndex:[indexPath row]];
+	}
+	else {
+		info = [comics objectAtIndex:[indexPath row]];
+	}
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -97,14 +135,6 @@
     [super dealloc];
 	[comics release];
 }
-
-NSInteger titleSort(id comic1, id comic2, void *context)
-{
-	NSString *title1 = [((ComicInfo *)comic1).title stringByReplacingOccurrencesOfString:@"The " withString:@""];
-	NSString *title2 = [((ComicInfo *)comic2).title stringByReplacingOccurrencesOfString:@"The " withString:@""];
-	return [title1 compare:title2];
-}
-
 
 -(void)initComicsArray {
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"achewood" ofType:@"json"]];

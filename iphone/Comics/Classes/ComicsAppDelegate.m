@@ -19,17 +19,25 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
-    // Override point for customization after app launch    
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"favourites"];
+    _favourites = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+	if (_favourites == nil)
+		_favourites = [NSMutableDictionary new];
 	
 	[window addSubview:[navigationController view]];
     [window makeKeyAndVisible];
 }
 
+-(NSMutableDictionary *)favourites {
+	return _favourites;
+}
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-	// Save data if appropriate
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"favourites"];
+	[_favourites writeToFile:path atomically:NO];
 }
 
 
