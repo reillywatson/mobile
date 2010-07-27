@@ -16,6 +16,7 @@
 -(void)showComicLoadFailed;
 -(void)loadRandom;
 -(void)loadNewest;
+-(void)setAltTextViewText:(NSString *)text;
 @end
 
 @implementation Viewer
@@ -62,9 +63,9 @@
 	[self.prevButton setEnabled:NO];
 	[self.nextButton setEnabled:NO];
 	[self.prevButton setAction:@selector(loadPrev)];
+	[self setAltTextViewText:nil];
 	[self.nextButton setAction:@selector(loadNext)];
 	[self.altButton setAction:@selector(toggleAltText)];
-	[self.altButton setEnabled:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -169,7 +170,16 @@
 -(void)setAltTextViewText:(NSString *)text {
 	[self.altText setText:text];
 	[self.altText setAlpha:0];
-	[self.altButton setEnabled:(text != nil && ![text isEqual:@""])];
+	UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+	UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	if (text != nil && ![text isEqual:@""]) {
+		[toolbar setItems:[NSArray arrayWithObjects:prevButton, flexibleSpace, altButton, flexibleSpace, nextButton, nil]];
+	}
+	else {
+		[toolbar setItems:[NSArray arrayWithObjects:prevButton, flexibleSpace, nextButton, nil]];
+	}
+	[flexibleSpace release];
+	[fixedSpace release];
 }
 
 - (BOOL) shouldTrackSwipeGesture: (UIWebView *) sender {
