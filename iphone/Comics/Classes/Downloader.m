@@ -124,6 +124,7 @@
 	basePrevNextURL = comicInfo.basePrevNextURL;
 	baseRandomComicURL = comicInfo.baseRandomComicURL;
 	randomURL = comicInfo.randomURL;
+	sundaysOnly = comicInfo.sundaysOnly;
 	if (baseComicURL == nil)
 		baseComicURL = @"";
 	if (basePrevNextURL == nil)

@@ -8,18 +8,21 @@
 
 #import "DownloaderFactory.h"
 #import "DateBasedDownloader.h"
+#import "ComicsKingdomDownloader.h"
 
 @implementation DownloaderFactory
 
 +(Downloader *)newDownloaderForComic:(ComicInfo *)info withDelegate:(NSObject<DownloaderDelegate> *)delegate withURL:(NSString *)url {
 	Downloader *downloader = nil;
-	if (info.prevComicPattern != nil) {
+	if (info.downloaderType == nil) {
 		downloader = [[Downloader alloc] initWithDelegate:delegate forURL:url withComicInfo:info];
 	}
-	else {
-		downloader = [[DateBasedDownloader alloc]initWithDelegate:delegate forURL:url withComicInfo:info];
-	// Toothpaste for Dinner!
+	else if ([info.downloaderType isEqual:@"SharingMachine"]) {
+		downloader = [[DateBasedDownloader alloc] initWithDelegate:delegate forURL:url withComicInfo:info];
 	}
+	else if ([info.downloaderType isEqual:@"ComicsKingdom"]) {
+		downloader = [[ComicsKingdomDownloader alloc] initWithDelegate:delegate forURL:url withComicInfo:info];
+	}		
 	return downloader;
 }
 

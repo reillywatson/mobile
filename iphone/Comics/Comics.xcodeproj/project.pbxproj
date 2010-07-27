@@ -33,6 +33,7 @@
 		B44F27FC11FEC393005FEF33 /* toothpastefordinner.json in Resources */ = {isa = PBXBuildFile; fileRef = B44F27FB11FEC393005FEF33 /* toothpastefordinner.json */; };
 		B44F286B11FEC86E005FEF33 /* marriedtothesea.json in Resources */ = {isa = PBXBuildFile; fileRef = B44F286911FEC86E005FEF33 /* marriedtothesea.json */; };
 		B44F286C11FEC86E005FEF33 /* nataliedee.json in Resources */ = {isa = PBXBuildFile; fileRef = B44F286A11FEC86E005FEF33 /* nataliedee.json */; };
+		B44F289111FECD92005FEF33 /* ComicsKingdomDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B44F289011FECD92005FEF33 /* ComicsKingdomDownloader.m */; };
 		B4565A5E11B9C360009DF79B /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B4565A5D11B9C360009DF79B /* NSString-Encoding.m */; };
 		B458758E11A2778700135785 /* achewood.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756D11A2778700135785 /* achewood.json */; };
 		B458758F11A2778700135785 /* amazingsuperpowers.json in Resources */ = {isa = PBXBuildFile; fileRef = B458756E11A2778700135785 /* amazingsuperpowers.json */; };
@@ -138,6 +139,8 @@
 		B44F27FB11FEC393005FEF33 /* toothpastefordinner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toothpastefordinner.json; sourceTree = "<group>"; };
 		B44F286911FEC86E005FEF33 /* marriedtothesea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marriedtothesea.json; sourceTree = "<group>"; };
 		B44F286A11FEC86E005FEF33 /* nataliedee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nataliedee.json; sourceTree = "<group>"; };
+		B44F288F11FECD92005FEF33 /* ComicsKingdomDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsKingdomDownloader.h; sourceTree = "<group>"; };
+		B44F289011FECD92005FEF33 /* ComicsKingdomDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsKingdomDownloader.m; sourceTree = "<group>"; };
 		B4565A5C11B9C360009DF79B /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString-Encoding.h"; path = "Classes/NSString-Encoding.h"; sourceTree = "<group>"; };
 		B4565A5D11B9C360009DF79B /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString-Encoding.m"; path = "Classes/NSString-Encoding.m"; sourceTree = "<group>"; };
 		B458756D11A2778700135785 /* achewood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = achewood.json; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				B4103EFC11A0D4D700212656 /* DownloaderFactory.m */,
 				B44F27AF11FEBC6E005FEF33 /* DateBasedDownloader.h */,
 				B44F27B011FEBC6E005FEF33 /* DateBasedDownloader.m */,
+				B44F288F11FECD92005FEF33 /* ComicsKingdomDownloader.h */,
+				B44F289011FECD92005FEF33 /* ComicsKingdomDownloader.m */,
 			);
 			name = Downloaders;
 			sourceTree = "<group>";
@@ -524,6 +529,7 @@
 				B4079DDF11CF6F8500DF16A3 /* TappableView.m in Sources */,
 				B4079DE011CF6F8500DF16A3 /* TappableWebView.m in Sources */,
 				B44F27B111FEBC6E005FEF33 /* DateBasedDownloader.m in Sources */,
+				B44F289111FECD92005FEF33 /* ComicsKingdomDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

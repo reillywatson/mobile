@@ -31,6 +31,7 @@
 	NSString *baseComicURL;
 	NSString *basePrevNextURL;
 	NSString *randomURL;
+	BOOL sundaysOnly;
 }
 
 @property (nonatomic, retain) NSString *comicPattern;

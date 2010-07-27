@@ -64,15 +64,10 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	return 40;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
 	if ([favourites count] == 0)
 		return nil;
-	UILabel *label = [UILabel new];
-	[label setFont:[UIFont boldSystemFontOfSize:20]];
-	[label setTextColor:[UIColor darkGrayColor]];
-	[label setText:(section == 0 ? @"Favorites" : @"Other Comics")];
-	return label;
-	
+	return section == 0 ? @"Favorites" : @"Other Comics";
 }
 
 // Customize the number of rows in the table view.
@@ -146,6 +141,20 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[comics release];
 }
 
+-(void)addComicsKingdomComicWithTitle:(NSString *)title basePrevNextURL:(NSString *)basePrevNextURL sundaysOnly:(BOOL)sundaysOnly {
+	ComicInfo *info = [ComicInfo new];
+	info.downloaderType = @"ComicsKingdom";
+	info.basePrevNextURL = [basePrevNextURL retain];
+	info.startUrl = @"calculateondemand";
+	info.title = [title retain];
+	info.sundaysOnly = sundaysOnly;
+	[comics addObject:info];
+}
+
+-(void)addComicsKingdomComicWithTitle:(NSString *)title basePrevNextURL:(NSString *)basePrevNextURL {
+	[self addComicsKingdomComicWithTitle:title basePrevNextURL:basePrevNextURL sundaysOnly:NO];
+}
+
 -(void)initComicsArray {
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"achewood" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"amazingsuperpowers" ofType:@"json"]];
@@ -165,13 +174,14 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"leasticoulddo" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"lookingforgroup" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"megatokyo" ofType:@"json"]];
+	
+	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"nedroid" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"pennyarcade" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"perrybiblefellowship" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"pvp" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"questionablecontent" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"sharkattack" ofType:@"json"]];
-	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"shermanslagoon" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"shockwatson" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"sinfest" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"smbc" ofType:@"json"]];
@@ -183,6 +193,27 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"toothpastefordinner" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"marriedtothesea" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"nataliedee" ofType:@"json"]];
+	
+	[self addComicsKingdomComicWithTitle:@"Sherman's Lagoon" basePrevNextURL:@"http://content.comicskingdom.net/Shermans_Lagoon/Shermans_Lagoon."];
+	[self addComicsKingdomComicWithTitle:@"Mandrake the Magician" basePrevNextURL:@"http://content.comicskingdom.net/Mandrake/Mandrake."];
+	[self addComicsKingdomComicWithTitle:@"Arctic Circle" basePrevNextURL:@"http://content.comicskingdom.net/Arctic/Arctic."];
+	[self addComicsKingdomComicWithTitle:@"DeFlocked" basePrevNextURL:@"http://content.comicskingdom.net/Deflocked/Deflocked."];
+	[self addComicsKingdomComicWithTitle:@"Flash Gordon" basePrevNextURL:@"http://content.comicskingdom.net/Flash/Flash." sundaysOnly:YES];
+	[self addComicsKingdomComicWithTitle:@"Hazel" basePrevNextURL:@"http://content.comicskingdom.net/Hazel/Hazel."];
+	[self addComicsKingdomComicWithTitle:@"Heaven's Love Thrift Shop" basePrevNextURL:@"http://content.comicskingdom.net/Heavens/Heavens." sundaysOnly:YES];
+	[self addComicsKingdomComicWithTitle:@"Henry" basePrevNextURL:@"http://content.comicskingdom.net/Henry/Henry."];
+	[self addComicsKingdomComicWithTitle:@"The Katzenjammer Kids" basePrevNextURL:@"http://content.comicskingdom.net/Katzenjammer_Kids/Katzenjammer_Kids." sundaysOnly:YES];
+	[self addComicsKingdomComicWithTitle:@"Oh, Brother!" basePrevNextURL:@"http://content.comicskingdom.net/Oh_Brother/Oh_Brother."];
+	[self addComicsKingdomComicWithTitle:@"Ollie and Quentin" basePrevNextURL:@"http://content.comicskingdom.net/Ollie/Ollie."];
+	[self addComicsKingdomComicWithTitle:@"On the Fastrack" basePrevNextURL:@"http://content.comicskingdom.net/Fast_Track/Fast_Track."];
+	[self addComicsKingdomComicWithTitle:@"The Pajama Diaries" basePrevNextURL:@"http://content.comicskingdom.net/Pajama/Pajama."];
+	[self addComicsKingdomComicWithTitle:@"Popeye" basePrevNextURL:@"http://content.comicskingdom.net/Popeye/Popeye."];
+	[self addComicsKingdomComicWithTitle:@"Prince Valiant" basePrevNextURL:@"http://content.comicskingdom.net/Prince_Valiant/Prince_Valiant." sundaysOnly:YES];
+	[self addComicsKingdomComicWithTitle:@"Pros & Cons" basePrevNextURL:@"http://content.comicskingdom.net/Lawyer/Lawyer."];
+	[self addComicsKingdomComicWithTitle:@"Retail" basePrevNextURL:@"http://content.comicskingdom.net/Retail/Retail."];
+	[self addComicsKingdomComicWithTitle:@"Sam and Silo" basePrevNextURL:@"http://content.comicskingdom.net/Sam/Sam."];
+	[self addComicsKingdomComicWithTitle:@"Tina's Groove" basePrevNextURL:@"http://content.comicskingdom.net/Tinas_Groove/Tinas_Groove."];
+	[self addComicsKingdomComicWithTitle:@"Todd the Dinosaur" basePrevNextURL:@"http://content.comicskingdom.net/Todd/Todd."];	
 	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"houstonchronicle" ofType:@"json"] title:@"Apartment 3-G" startURL:@"http://www.chron.com/apps/comics/buildcp.mpl?c=100&page=1&cpp=1&v=3.0&quality=high"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"houstonchronicle" ofType:@"json"] title:@"Better Half" startURL:@"http://www.chron.com/apps/comics/buildcp.mpl?c=103&page=1&cpp=1&v=3.0&quality=high"];
@@ -457,14 +488,10 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"(Th)ink" startURL:@"http://www.comics.com/think"];
 
 	[comics sortUsingFunction:titleSort context:nil];
+	NSLog(@"%d comics in list", [comics count]);
 }
 
--(void)addComicWithJSON:(NSString *)jsonFile {
-	[self addComicWithJSON:jsonFile title:nil startURL:nil];
-}
-
-
--(void)addComicWithJSON:(NSString *)jsonFile title:(NSString *)title startURL: (NSString *)startUrl {
+-(ComicInfo *)comicFromJSON:(NSString *)jsonFile {
 	NSDictionary *parsedJSON;
 	if (lastJSONPath != nil && [lastJSONPath isEqual:jsonFile]) {
 		parsedJSON = lastJSONObject;
@@ -481,6 +508,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	}
 	ComicInfo *comic = [[ComicInfo new] autorelease];
 	comic.title = [parsedJSON objectForKey:@"Name"];
+	comic.downloaderType = [parsedJSON objectForKey:@"DownloaderType"];
 	comic.startUrl = [parsedJSON objectForKey:@"StartURL"];
 	comic.comicPattern = [parsedJSON objectForKey:@"ImagePattern"];
 	comic.prevComicPattern = [parsedJSON objectForKey:@"PrevComicPattern"];
@@ -498,16 +526,28 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	comic.baseComicURL = [parsedJSON objectForKey:@"BaseComicURL"];
 	if (comic.baseComicURL == nil)
 		comic.baseComicURL = @"";
-	
+	if (comic.title != nil)
+		NSLog(@"ADDING COMIC: %@", comic.title);
+	return comic;
+}
+
+-(void)addComicWithJSON:(NSString *)jsonFile {
+	[comics addObject:[self comicFromJSON:jsonFile]];
+}
+
+
+-(void)addComicWithJSON:(NSString *)jsonFile title:(NSString *)title startURL: (NSString *)startUrl {
+	ComicInfo *comic = [self comicFromJSON:jsonFile];
 	if (startUrl != nil)
 		comic.startUrl = [startUrl retain];
-	if (title != nil)
+	if (title != nil) {
 		comic.title = [title retain];
-	
-	NSLog(@"ADDING COMIC: %@", comic.title);
+		NSLog(@"ADDING COMIC: %@", comic.title);
+	}
 	
 	[comics addObject:comic];
 }
+
 
 @end
 

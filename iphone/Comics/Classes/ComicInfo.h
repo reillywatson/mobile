@@ -13,6 +13,7 @@
 @interface ComicInfo : NSObject {
 	NSString *title;
 	NSString *startUrl;
+	NSString *downloaderType;
 	
 	NSString *comicPattern;
 	NSString *nextComicPattern;
@@ -25,10 +26,14 @@
 	NSString *baseComicURL;
 	NSString *basePrevNextURL;
 	NSString *randomURL;
+	
+	// so far only used for ComicsKingdom
+	BOOL sundaysOnly;
 }
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *startUrl;
+@property (nonatomic, retain) NSString *downloaderType;
 @property (nonatomic, retain) NSString *comicPattern;
 @property (nonatomic, retain) NSString *nextComicPattern;
 @property (nonatomic, retain) NSString *prevComicPattern;
@@ -39,5 +44,7 @@
 @property (nonatomic, retain) NSString *baseComicURL;
 @property (nonatomic, retain) NSString *basePrevNextURL;
 @property (nonatomic, retain) NSString *randomURL;
+@property (nonatomic, assign) BOOL sundaysOnly;
+
 
 @end
