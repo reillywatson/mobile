@@ -47,7 +47,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 		}
 	}
 	[favourites sortUsingFunction:titleSort context:nil];
-	[self.view reloadData];
+	[(UITableView *)self.view reloadData];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -60,11 +60,17 @@ NSInteger titleSort(id comic1, id comic2, void *context)
     return 2;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+	return 40;
+}
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 	if ([favourites count] == 0)
 		return nil;
 	UILabel *label = [UILabel new];
-	[label setText:(section == 0 ? @"Favorites" : @"Comics")];
+	[label setFont:[UIFont boldSystemFontOfSize:20]];
+	[label setTextColor:[UIColor darkGrayColor]];
+	[label setText:(section == 0 ? @"Favorites" : @"Other Comics")];
 	return label;
 	
 }
