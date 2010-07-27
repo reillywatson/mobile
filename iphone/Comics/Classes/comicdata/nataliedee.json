@@ -1,0 +1,8 @@
+{
+    "Name" : "Natalie Dee",
+    "StartURL" : "http://www.nataliedee.com/",
+	"ImagePattern" : "<div class=\"headertext\">.*?<a href=\"(.*?)\">",
+	"TitlePattern" : "<div class=\"headertext\">.*?<a href=\"[^>]*?\">(.*?)<",
+	"BasePrevNextURL" : "http://www.nataliedee.com/",
+	"RandomLink" : "http://www.nataliedee.com/randomComicViewer.php"
+}

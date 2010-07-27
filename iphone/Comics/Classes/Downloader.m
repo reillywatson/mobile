@@ -11,8 +11,6 @@
 @interface Downloader (Protected)
 
 -(void)parseComic:(NSString *)str;
--(void)parsePrevLink:(NSString *)str;
--(void)parseNextLink:(NSString *)str;
 -(void)parseTitle:(NSString *)str;
 -(void)parseAltText:(NSString *)str;
 -(void)parsePermalink:(NSString *)str;

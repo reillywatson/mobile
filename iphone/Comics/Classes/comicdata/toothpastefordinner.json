@@ -1,0 +1,8 @@
+{
+    "Name" : "Toothpaste For Dinner",
+    "StartURL" : "http://www.toothpastefordinner.com/",
+	"ImagePattern" : "<div class=\"headertext\">.*?<a href=\"(.*?)\">",
+	"TitlePattern" : "<div class=\"headertext\">.*?<a href=\"[^>]*?\">(.*?)<",
+	"BasePrevNextURL" : "http://www.toothpastefordinner.com/",
+	"RandomLink" : "http://www.toothpastefordinner.com/randomComicViewer.php"
+}

@@ -7,16 +7,17 @@
 //
 
 #import "DownloaderFactory.h"
+#import "DateBasedDownloader.h"
 
 @implementation DownloaderFactory
 
-
 +(Downloader *)newDownloaderForComic:(ComicInfo *)info withDelegate:(NSObject<DownloaderDelegate> *)delegate withURL:(NSString *)url {
 	Downloader *downloader = nil;
-	if (info.comicPattern != nil) {
+	if (info.prevComicPattern != nil) {
 		downloader = [[Downloader alloc] initWithDelegate:delegate forURL:url withComicInfo:info];
 	}
 	else {
+		downloader = [[DateBasedDownloader alloc]initWithDelegate:delegate forURL:url withComicInfo:info];
 	// Toothpaste for Dinner!
 	}
 	return downloader;

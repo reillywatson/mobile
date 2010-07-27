@@ -49,4 +49,7 @@
 -(id)initWithDelegate:(NSObject<DownloaderDelegate> *)aDelegate forURL:(NSString *)aUrl;
 -(Comic *)getComicSynchronously;
 
+-(void)parsePrevLink:(NSString *)str;
+-(void)parseNextLink:(NSString *)str;
+
 @end
