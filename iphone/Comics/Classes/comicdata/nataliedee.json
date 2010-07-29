@@ -1,5 +1,6 @@
 {
     "Name" : "Natalie Dee",
+    "DownloaderType" : "SharingMachine",
     "StartURL" : "http://www.nataliedee.com/",
 	"ImagePattern" : "<div class=\"headertext\">.*?<a href=\"(.*?)\">",
 	"TitlePattern" : "<div class=\"headertext\">.*?<a href=\"[^>]*?\">(.*?)<",

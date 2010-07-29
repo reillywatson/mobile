@@ -1,5 +1,6 @@
 {
     "Name" : "Married to the Sea",
+    "DownloaderType" : "SharingMachine",
     "StartURL" : "http://www.marriedtothesea.com/",
 	"ImagePattern" : "<div class=\"headertext\">.*?<a href=\"(.*?)\">",
 	"TitlePattern" : "<div class=\"headertext\">.*?<a href=\"[^>]*?\">(.*?)<",

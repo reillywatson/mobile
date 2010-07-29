@@ -157,6 +157,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 
 -(void)initComicsArray {
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"achewood" ofType:@"json"]];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"alessonislearned" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"amazingsuperpowers" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"asofterworld" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"awkwardzombie" ofType:@"json"]];

@@ -82,6 +82,7 @@
 		B47B38CE11A1277600D120FB /* gocomics.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CC11A1277600D120FB /* gocomics.json */; };
 		B47B38CF11A1277600D120FB /* xkcd.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CD11A1277600D120FB /* xkcd.json */; };
 		B4C1ED9911ED819500595119 /* iconipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C1ED9811ED819500595119 /* iconipad.png */; };
+		B4E7682012015BDE0009BD3F /* alessonislearned.json in Resources */ = {isa = PBXBuildFile; fileRef = B4E7681F12015BDE0009BD3F /* alessonislearned.json */; };
 		B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B3411A319F9003A56F4 /* iconsmall.png */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +199,7 @@
 		B47B38CC11A1277600D120FB /* gocomics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gocomics.json; sourceTree = "<group>"; };
 		B47B38CD11A1277600D120FB /* xkcd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xkcd.json; sourceTree = "<group>"; };
 		B4C1ED9811ED819500595119 /* iconipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconipad.png; sourceTree = "<group>"; };
+		B4E7681F12015BDE0009BD3F /* alessonislearned.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alessonislearned.json; sourceTree = "<group>"; };
 		B4F95B3411A319F9003A56F4 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,6 +351,7 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B4E7681F12015BDE0009BD3F /* alessonislearned.json */,
 				B44F286911FEC86E005FEF33 /* marriedtothesea.json */,
 				B44F286A11FEC86E005FEF33 /* nataliedee.json */,
 				B44F27FB11FEC393005FEF33 /* toothpastefordinner.json */,
@@ -498,6 +501,7 @@
 				B44F27FC11FEC393005FEF33 /* toothpastefordinner.json in Resources */,
 				B44F286B11FEC86E005FEF33 /* marriedtothesea.json in Resources */,
 				B44F286C11FEC86E005FEF33 /* nataliedee.json in Resources */,
+				B4E7682012015BDE0009BD3F /* alessonislearned.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
