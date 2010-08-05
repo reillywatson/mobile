@@ -16,18 +16,22 @@ public class Response implements RequestCallback {
 	private static final String PAGE = "page";
 	private static final String CURRENT = "current";
 	private static final String TOTAL = "total";
-	private static final String TOKEN = "token";
 
-	private String token;
+	private JSONArray errors;
+	private JSONArray warnings;
+	private JSONObject theData;
+	private int currentPage;
+	private int totalPages;
 	
 	@Override
 	public boolean handlePartialResponse(StringBuilder sb, boolean isDone) {
 		if (isDone) {
+			Log.d(getClass().getName(), sb.toString());
 			try {
 				JSONObject jsonResponse = new JSONObject(sb.toString());
-				JSONArray errors = jsonResponse.getJSONArray(ERRORS);
-				JSONArray warnings = jsonResponse.getJSONArray(WARNINGS);
-				JSONObject theData = jsonResponse.getJSONObject(DATA);
+				errors = jsonResponse.getJSONArray(ERRORS);
+				warnings = jsonResponse.getJSONArray(WARNINGS);
+				theData = jsonResponse.getJSONObject(DATA);
 				JSONObject page = jsonResponse.getJSONObject(PAGE);
 				
 				if (errors.length() > 0) {
@@ -39,9 +43,8 @@ public class Response implements RequestCallback {
 					Log.w(getClass().getName(), errors.toString());
 				}
 				
-				token = theData.getString(TOKEN);
-				int currentPage = page.getInt(CURRENT);
-				int totalPages = page.getInt(TOTAL);
+				currentPage = page.getInt(CURRENT);
+				totalPages = page.getInt(TOTAL);
 			} catch (JSONException e) {
 				Log.d(getClass().getName(), Log.getStackTraceString(e));
 				return false;
@@ -50,6 +53,16 @@ public class Response implements RequestCallback {
 		}
 		return false;
 	}
-
 	
+	public JSONObject getTheData() {
+		return theData;
+	}
+
+	public int getCurrentPage() {
+		return currentPage;
+	}
+	
+	public int getTotalPages() {
+		return totalPages;
+	}
 }

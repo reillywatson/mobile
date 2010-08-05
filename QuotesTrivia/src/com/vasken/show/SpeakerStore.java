@@ -7,6 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.content.Context;
+import android.util.Log;
 
 // SpeakerStore: we sell speakers galore!
 public class SpeakerStore extends EpisodeStore {
@@ -44,15 +45,21 @@ public class SpeakerStore extends EpisodeStore {
 	}
 	
 	private String speakerOfQuote(String quote) {
-		Matcher m = speakerPattern.matcher(quote);
+		Matcher m = null;
+		m = speakerPattern.matcher(quote);
+		
 		if (m.find()) {
 			String speaker = m.group(1).trim();
 			if (!m.find()) {
 				if (speaker.endsWith(":")) {
 					speaker = speaker.substring(0, speaker.length() - 1).trim();
 				}
-				if (speaker.length() > 0)
+				if (speaker.length() > 0) {
+					if (speaker.contains("<") || speaker.contains(">"))
+						throw new RuntimeException("DON'T SHIP IT!! The quotes file is fucked up.");
 					return speaker;
+				}
+					
 			}
 		}
 		return null;
