@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@color/black"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-<EditText android:text="@+id/EditText01" android:id="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
-<Button android:text="@+id/Button01" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-<Button android:text="@+id/Button02" android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-<Button android:text="@+id/Button03" android:id="@+id/Button03" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-<Button android:text="@+id/Button04" android:id="@+id/Button04" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-</LinearLayout>
+    android:layout_height="fill_parent">
+    
+    <ImageView
+		android:id="@+id/header"
+    	android:src="@drawable/border"
+    	
+    	android:layout_marginTop="10px"
+    	android:layout_alignParentTop="true"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
+ 	
+    <ImageView
+    	android:id="@+id/background"
+    	android:src="@drawable/background2"
+		android:layout_marginBottom="2px"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
+	
+	<ImageView
+		android:id="@+id/result"
+    	android:src="@drawable/result"
+    	android:layout_centerHorizontal="true"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
+	
+	<ImageView
+		android:id="@+id/footer"
+    	android:src="@drawable/border"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
+
+	<Button 
+		android:id="@+id/Button01" 
+		android:layout_alignTop="@id/background"
+		android:background="@drawable/button"
+		android:layout_marginTop="115px"
+		android:layout_marginLeft="5px"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</Button>
+	<Button 
+		android:id="@+id/Button02" 
+		android:layout_below="@id/Button01"
+		android:background="@drawable/button"
+		android:layout_marginTop="5px"
+		android:layout_marginLeft="5px"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</Button>
+	<Button 
+		android:id="@+id/Button03" 
+		android:layout_below="@id/Button02"
+		android:background="@drawable/button"
+		android:layout_marginTop="5px"
+		android:layout_marginLeft="5px"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</Button>
+</RelativeLayout>

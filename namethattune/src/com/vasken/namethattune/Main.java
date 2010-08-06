@@ -30,7 +30,7 @@ public class Main extends Activity {
     /** Called when the activity is first created. */
 	
 	private MediaPlayer player = new MediaPlayer();
-	private Button opt1, opt2, opt3, opt4;
+	private Button opt1, opt2, opt3;
 	String correct;
 	boolean downloadInProgress = false;
 	
@@ -41,11 +41,9 @@ public class Main extends Activity {
         opt1 = (Button)findViewById(R.id.Button01);
         opt2 = (Button)findViewById(R.id.Button02);
         opt3 = (Button)findViewById(R.id.Button03);
-        opt4 = (Button)findViewById(R.id.Button04);
         opt1.setOnClickListener(buttonClicked);
         opt2.setOnClickListener(buttonClicked);
         opt3.setOnClickListener(buttonClicked);
-        opt4.setOnClickListener(buttonClicked);
         getNewTrack();
     }
     
@@ -94,7 +92,6 @@ public class Main extends Activity {
 				opt1.setText(tracks.get(0));
 				opt2.setText(tracks.get(1));
 				opt3.setText(tracks.get(2));
-				opt4.setText(tracks.get(3));
 			}});
 	}
 	
