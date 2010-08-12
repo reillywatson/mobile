@@ -73,6 +73,7 @@
 		B45EE06711C0CD0700FDA4BD /* RootViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */; };
 		B45EE06811C0CD0700FDA4BD /* Viewer-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */; };
 		B46404E71213CC71008921D4 /* misfile.json in Resources */ = {isa = PBXBuildFile; fileRef = B46404E61213CC71008921D4 /* misfile.json */; };
+		B46404F51213D004008921D4 /* phdcomics.json in Resources */ = {isa = PBXBuildFile; fileRef = B46404F41213D004008921D4 /* phdcomics.json */; };
 		B47B36C811A0DEE300D120FB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B36C711A0DEE300D120FB /* RegexKitLite.m */; };
 		B47B38B411A126D100D120FB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38A911A126D100D120FB /* NSObject+SBJSON.m */; };
 		B47B38B511A126D100D120FB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B47B38AB11A126D100D120FB /* NSString+SBJSON.m */; };
@@ -183,6 +184,7 @@
 		B45EE06511C0CD0700FDA4BD /* RootViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "RootViewController-iPad.xib"; sourceTree = "<group>"; };
 		B45EE06611C0CD0700FDA4BD /* Viewer-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Viewer-iPad.xib"; sourceTree = "<group>"; };
 		B46404E61213CC71008921D4 /* misfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = misfile.json; sourceTree = "<group>"; };
+		B46404F41213D004008921D4 /* phdcomics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phdcomics.json; sourceTree = "<group>"; };
 		B47B36C611A0DEE300D120FB /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		B47B36C711A0DEE300D120FB /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		B47B38A711A126D100D120FB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B46404F41213D004008921D4 /* phdcomics.json */,
 				B46404E61213CC71008921D4 /* misfile.json */,
 				B4E7681F12015BDE0009BD3F /* alessonislearned.json */,
 				B44F286911FEC86E005FEF33 /* marriedtothesea.json */,
@@ -506,6 +509,7 @@
 				B44F286C11FEC86E005FEF33 /* nataliedee.json in Resources */,
 				B4E7682012015BDE0009BD3F /* alessonislearned.json in Resources */,
 				B46404E71213CC71008921D4 /* misfile.json in Resources */,
+				B46404F51213D004008921D4 /* phdcomics.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
