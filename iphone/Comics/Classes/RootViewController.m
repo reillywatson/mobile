@@ -38,7 +38,43 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self initComicsArray];
 }
 
+// nag once a week!
+static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 1) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/comic-strips-read-300-daily/"]];
+	}
+}
+
+-(void)showNagScreen {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upgrade" message:@"Do you want to get the full version, with 300+ comics?"
+												   delegate:self cancelButtonTitle:@"No thanks" otherButtonTitles:@"Sure!", nil];
+	[alert show];
+	[alert release];
+}
+
+-(void)handleNagging {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSDate *date = [defaults objectForKey:@"lastNagScreen"];
+	NSDate *now = [NSDate date];
+	NSLog(@"%@ %@", date, now);
+	if (date == nil) {
+		[defaults setObject:now forKey:@"lastNagScreen"];
+	}
+	else if ([now timeIntervalSinceDate:date] > MIN_NAG_DELAY) {
+		[defaults setObject:now forKey:@"lastNagScreen"];
+		[self showNagScreen];
+	}
+}
+
 -(void)viewWillAppear:(BOOL)animated {
+#if 0
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if ([defaults boolForKey:@"registered"] == NO) {
+		[self handleNagging];
+	}
+#endif
 	[favourites removeAllObjects];
 	NSDictionary *favouriteTitles = [((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites];
 	for (ComicInfo *comic in comics) {
@@ -175,7 +211,7 @@ NSInteger titleSort(id comic1, id comic2, void *context)
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"leasticoulddo" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"lookingforgroup" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"megatokyo" ofType:@"json"]];
-	
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"misfile" ofType:@"json"]];	
 	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"nedroid" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"pennyarcade" ofType:@"json"]];
