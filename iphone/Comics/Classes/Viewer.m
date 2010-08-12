@@ -216,7 +216,7 @@
 		return;
 	}
 	comic = [aComic retain];
-	[self.webView loadWithAutoZoomForImageSRC:comic->image withBaseURL:[NSURL URLWithString:comic->url]];
+	[self.webView loadWithAutoZoomForImageSRC:comic->image withBaseURL:comicInfo.useReferer ? [NSURL URLWithString:comic->url] : nil];
 	[self setTitle:[comic->title stringByDecodingXMLEntities]];
 	[self.prevButton setEnabled:(comic->prevUrl != nil)];
 	[self.nextButton setEnabled:(comic->nextUrl != nil)];

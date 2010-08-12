@@ -12,7 +12,7 @@
 @synthesize startUrl, title;
 
 @synthesize comicPattern, nextComicPattern, prevComicPattern, titlePattern, altTextPattern, randomComicPattern;
-@synthesize baseComicURL, basePrevNextURL, randomURL, baseRandomComicURL, downloaderType, sundaysOnly;
+@synthesize baseComicURL, basePrevNextURL, randomURL, baseRandomComicURL, downloaderType, sundaysOnly, useReferer;
 
 -(id)init {
 	self = [super init];
@@ -28,6 +28,7 @@
 	basePrevNextURL = @"";
 	downloaderType = nil;
 	sundaysOnly = NO;
+	useReferer = YES;
 	return self;
 }
 

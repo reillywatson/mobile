@@ -184,6 +184,7 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 	info.startUrl = @"calculateondemand";
 	info.title = [title retain];
 	info.sundaysOnly = sundaysOnly;
+	info.useReferer = NO;
 	[comics addObject:info];
 }
 

@@ -29,6 +29,7 @@
 	
 	// so far only used for ComicsKingdom
 	BOOL sundaysOnly;
+	BOOL useReferer;
 }
 
 @property (nonatomic, retain) NSString *title;
@@ -45,6 +46,7 @@
 @property (nonatomic, retain) NSString *basePrevNextURL;
 @property (nonatomic, retain) NSString *randomURL;
 @property (nonatomic, assign) BOOL sundaysOnly;
+@property (nonatomic, assign) BOOL useReferer;
 
 
 @end

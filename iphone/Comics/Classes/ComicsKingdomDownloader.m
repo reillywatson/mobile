@@ -76,14 +76,16 @@
 			newest = [gregorian dateByAddingComponents:componentsToSubtract toDate:today options:0];
 		}
 		comic->image = [[NSString alloc] initWithFormat:@"%@%@_large.gif", basePrevNextURL, [self stringFromDate:newest]];
+		comic->url = [comic->image retain];
 	}
 	else {
 		comic->image = [url retain];
+		comic->url = [url retain];
 	}
 	NSLog(@"URL: %@", comic->image);
 	[self parsePrevLink:nil];
 	[self parseNextLink:nil];
-	comic->url = nil;
+//	comic->url = nil;
 	return comic;
 }
 
