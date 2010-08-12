@@ -63,16 +63,19 @@
 		NSCalendar *gregorian = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
 		// Get the weekday component of the current date
 		NSDate *today = [[NSDate new] autorelease];
-		NSDateComponents *weekdayComponents = [gregorian components:NSWeekdayCalendarUnit fromDate:today];
-		
-		/*
-		 Create a date components to represent the number of days to subtract from the current date.
-		 The weekday value for Sunday in the Gregorian calendar is 1, so subtract 1 from the number of days to subtract from the date in question.  (If today's Sunday, subtract 0 days.)
-		 */
-		NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
-		[componentsToSubtract setDay: 0 - ([weekdayComponents weekday] - 1)];
-		NSDate *beginningOfWeek = [gregorian dateByAddingComponents:componentsToSubtract toDate:today options:0];
-		comic->image = [[NSString alloc] initWithFormat:@"%@%@_large.gif", basePrevNextURL, [self stringFromDate:beginningOfWeek]];
+		NSDate *newest = today;
+		if (sundaysOnly) {
+			NSDateComponents *weekdayComponents = [gregorian components:NSWeekdayCalendarUnit fromDate:today];
+			
+			/*
+			 Create a date components to represent the number of days to subtract from the current date.
+			 The weekday value for Sunday in the Gregorian calendar is 1, so subtract 1 from the number of days to subtract from the date in question.  (If today's Sunday, subtract 0 days.)
+			 */
+			NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
+			[componentsToSubtract setDay: 0 - ([weekdayComponents weekday] - 1)];
+			newest = [gregorian dateByAddingComponents:componentsToSubtract toDate:today options:0];
+		}
+		comic->image = [[NSString alloc] initWithFormat:@"%@%@_large.gif", basePrevNextURL, [self stringFromDate:newest]];
 	}
 	else {
 		comic->image = [url retain];
