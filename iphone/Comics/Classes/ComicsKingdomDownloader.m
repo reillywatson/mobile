@@ -71,7 +71,7 @@
 			 Create a date components to represent the number of days to subtract from the current date.
 			 The weekday value for Sunday in the Gregorian calendar is 1, so subtract 1 from the number of days to subtract from the date in question.  (If today's Sunday, subtract 0 days.)
 			 */
-			NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
+			NSDateComponents *componentsToSubtract = [[[NSDateComponents alloc] init] autorelease];
 			[componentsToSubtract setDay: 0 - ([weekdayComponents weekday] - 1)];
 			newest = [gregorian dateByAddingComponents:componentsToSubtract toDate:today options:0];
 		}

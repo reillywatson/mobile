@@ -178,7 +178,7 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 }
 
 -(void)addComicsKingdomComicWithTitle:(NSString *)title basePrevNextURL:(NSString *)basePrevNextURL sundaysOnly:(BOOL)sundaysOnly {
-	ComicInfo *info = [ComicInfo new];
+	ComicInfo *info = [[ComicInfo new] autorelease];
 	info.downloaderType = @"ComicsKingdom";
 	info.basePrevNextURL = [basePrevNextURL retain];
 	info.startUrl = @"calculateondemand";

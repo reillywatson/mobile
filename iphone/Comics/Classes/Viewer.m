@@ -45,7 +45,7 @@
 	[spinner startAnimating];
 	[self.altText setAlpha:0];
 	[self.view sendSubviewToBack:webView];
-	[opQueue addOperation:[DownloaderFactory newDownloaderForComic:cInfo withDelegate:self withURL:url]];
+	[opQueue addOperation:[[DownloaderFactory newDownloaderForComic:cInfo withDelegate:self withURL:url] autorelease]];
 }
 
 -(void)viewDidLoad {
@@ -54,11 +54,11 @@
 	
 	[self.webView setDelegate:self];
 	
-	UIBarButtonItem *moreButton = [[UIBarButtonItem alloc]
+	UIBarButtonItem *moreButton = [[[UIBarButtonItem alloc]
 								   initWithTitle:@"More"
 								   style: UIBarButtonItemStyleBordered
 								   target:self
-								   action:@selector(showMoreMenu)];
+								   action:@selector(showMoreMenu)] autorelease];
 	[self.navigationItem setRightBarButtonItem:moreButton];
 	[self.prevButton setEnabled:NO];
 	[self.nextButton setEnabled:NO];
