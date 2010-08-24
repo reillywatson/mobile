@@ -34,10 +34,14 @@
 	return _favourites;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
+-(void)saveFavourites {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *path = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"favourites"];
-	[_favourites writeToFile:path atomically:NO];
+	[_favourites writeToFile:path atomically:NO];	
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+	[self saveFavourites];
 }
 
 

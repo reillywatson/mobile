@@ -120,6 +120,7 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	NSString *title = [actionSheet buttonTitleAtIndex:buttonIndex];
+	ComicsAppDelegate *appDelegate = (ComicsAppDelegate *)[[UIApplication sharedApplication] delegate];
 	if ([title isEqual:@"Random comic"]) {
 		[self loadRandom];
 	}
@@ -127,10 +128,12 @@
 		[self loadNewest];
 	}
 	else if ([title isEqual:@"Add to favorites"]) {
-		[[((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites] setObject:@"y" forKey:comicInfo.title];
+		[[appDelegate favourites] setObject:@"y" forKey:comicInfo.title];
+		[appDelegate saveFavourites];
 	}
 	else if ([title isEqual:@"Remove from favorites"]) {
-		[[((ComicsAppDelegate *)[[UIApplication sharedApplication] delegate]) favourites] removeObjectForKey:comicInfo.title];
+		[[appDelegate favourites] removeObjectForKey:comicInfo.title];
+		[appDelegate saveFavourites];
 	}
 }
 

@@ -69,7 +69,7 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-#if 0
+#ifdef FREE_VERSION
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	if ([defaults boolForKey:@"registered"] == NO) {
 		[self handleNagging];
@@ -152,29 +152,13 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 
     return cell;
 }
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-		[comics removeObjectAtIndex:[indexPath row]];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-}
-
-
-
-
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-	id cell = [comics objectAtIndex:[fromIndexPath row]];
-	[comics removeObjectAtIndex:[fromIndexPath row]];
-	[comics insertObject:cell atIndex:[toIndexPath row]];
-}
-*/
 
 - (void)dealloc {
     [super dealloc];
 	[comics release];
+	[favourites release];
+	[lastJSONPath release];
+	[lastJSONObject release];
 }
 
 -(void)addComicsKingdomComicWithTitle:(NSString *)title basePrevNextURL:(NSString *)basePrevNextURL sundaysOnly:(BOOL)sundaysOnly {
@@ -193,6 +177,14 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 }
 
 -(void)initComicsArray {
+#ifdef FREE_VERSION
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"gocomicsiphone" ofType:@"json"] title:@"Calvin and Hobbes" startURL:@"http://www.gocomics.com/calvinandhobbes"];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"dilbert" ofType:@"json"]];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"gocomicsiphone" ofType:@"json"] title:@"FoxTrot" startURL:@"http://www.gocomics.com/foxtrot"];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"pennyarcade" ofType:@"json"]];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"xkcd" ofType:@"json"]];
+#else
+	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"achewood" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"alessonislearned" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"amazingsuperpowers" ofType:@"json"]];
@@ -525,7 +517,7 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"Working It Out" startURL:@"http://www.comics.com/working_it_out"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"Zack Hill" startURL:@"http://www.comics.com/zack_hill"];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"comicsdotcom" ofType:@"json"] title:@"(Th)ink" startURL:@"http://www.comics.com/think"];
-
+#endif
 	[comics sortUsingFunction:titleSort context:nil];
 	NSLog(@"%d comics in list", [comics count]);
 }
