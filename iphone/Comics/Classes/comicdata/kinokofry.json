@@ -1,0 +1,9 @@
+{
+    "Name" : "KinokoFry",
+    "StartURL" : "http://kinokofry.com",
+	"ImagePattern" : "<div class=\"object\"><img src=\"([^>]*?)\"",
+	"TitlePattern" : "<div class=\"object\"><img [^>]*?alt=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"[^>]*?class=\"previous-comic-link\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"[^>]*?class=\"next-comic-link\"",
+    "AltTextPattern" : "<div class=\"object\"><img [^>]*?title=\"([^>]*?)\""
+}

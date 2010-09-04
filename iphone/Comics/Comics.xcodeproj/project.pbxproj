@@ -26,6 +26,8 @@
 		B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EFC11A0D4D700212656 /* DownloaderFactory.m */; };
 		B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */; };
 		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
+		B426CA2B12321F57008B2764 /* kinokofry.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2A12321F57008B2764 /* kinokofry.json */; };
+		B426CA2F1232213A008B2764 /* harkavagrant.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2E1232213A008B2764 /* harkavagrant.json */; };
 		B438942C11A84FF7005E889F /* dominicdeegan.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942A11A84FF7005E889F /* dominicdeegan.json */; };
 		B438942D11A84FF7005E889F /* houstonchronicle.json in Resources */ = {isa = PBXBuildFile; fileRef = B438942B11A84FF7005E889F /* houstonchronicle.json */; };
 		B44F274611FEA57C005FEF33 /* dieselsweeties.json in Resources */ = {isa = PBXBuildFile; fileRef = B44F274511FEA57C005FEF33 /* dieselsweeties.json */; };
@@ -134,6 +136,8 @@
 		B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionVisitor.m; sourceTree = "<group>"; };
 		B41E540B11ABA0ED00F5D6D5 /* UIWebView+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Images.h"; sourceTree = "<group>"; };
 		B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
+		B426CA2A12321F57008B2764 /* kinokofry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kinokofry.json; sourceTree = "<group>"; };
+		B426CA2E1232213A008B2764 /* harkavagrant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = harkavagrant.json; sourceTree = "<group>"; };
 		B438942A11A84FF7005E889F /* dominicdeegan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dominicdeegan.json; sourceTree = "<group>"; };
 		B438942B11A84FF7005E889F /* houstonchronicle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = houstonchronicle.json; sourceTree = "<group>"; };
 		B44F274511FEA57C005FEF33 /* dieselsweeties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dieselsweeties.json; sourceTree = "<group>"; };
@@ -355,6 +359,8 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B426CA2E1232213A008B2764 /* harkavagrant.json */,
+				B426CA2A12321F57008B2764 /* kinokofry.json */,
 				B46404F41213D004008921D4 /* phdcomics.json */,
 				B46404E61213CC71008921D4 /* misfile.json */,
 				B4E7681F12015BDE0009BD3F /* alessonislearned.json */,
@@ -510,6 +516,8 @@
 				B4E7682012015BDE0009BD3F /* alessonislearned.json in Resources */,
 				B46404E71213CC71008921D4 /* misfile.json in Resources */,
 				B46404F51213D004008921D4 /* phdcomics.json in Resources */,
+				B426CA2B12321F57008B2764 /* kinokofry.json in Resources */,
+				B426CA2F1232213A008B2764 /* harkavagrant.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

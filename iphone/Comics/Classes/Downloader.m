@@ -144,10 +144,13 @@
 	NSLog(@"REQUESTING %@", url);
 	comic->url = [url retain];
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-	NSError *error;
+	NSError *error = nil;
 	NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
 	NSString *str = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 	NSLog(@"received response with %d bytes", [str length]);
+	if (error != nil) {
+		NSLog(@"GOT AN ERROR!  HERE IT IS: %@", [error description]);
+	}
 	[self parseComic:str];
 	[self parsePrevLink:str];
 	[self parseNextLink:str];
