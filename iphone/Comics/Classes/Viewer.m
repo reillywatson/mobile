@@ -107,6 +107,9 @@
 	else {
 		[actionsheet addButtonWithTitle:@"Remove from favorites"];
 	}
+	if (comic != nil) {
+		[actionsheet addButtonWithTitle:@"Open in Safari"];
+	}
 	
 	[actionsheet addButtonWithTitle:@"Cancel"];
 	[actionsheet setCancelButtonIndex:[actionsheet numberOfButtons] - 1];
@@ -134,6 +137,9 @@
 	else if ([title isEqual:@"Remove from favorites"]) {
 		[[appDelegate favourites] removeObjectForKey:comicInfo.title];
 		[appDelegate saveFavourites];
+	}
+	else if ([title isEqual:@"Open in Safari"]) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:comic->url]];
 	}
 }
 

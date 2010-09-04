@@ -206,7 +206,8 @@ static NSTimeInterval MIN_NAG_DELAY = 60 * 60 * 24 * 7;
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"leasticoulddo" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"lookingforgroup" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"megatokyo" ofType:@"json"]];
-	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"misfile" ofType:@"json"]];	
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"misfile" ofType:@"json"]];
+	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"moe" ofType:@"json"]];
 	
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"nedroid" ofType:@"json"]];
 	[self addComicWithJSON:[[NSBundle mainBundle] pathForResource:@"pennyarcade" ofType:@"json"]];
