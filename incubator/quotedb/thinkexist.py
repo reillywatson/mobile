@@ -9,8 +9,6 @@ import shutil
 import socket
 socket.setdefaulttimeout(10)
 
-# for some reason, the Bible quotes gave out at 5980, instead of 24726...try again?
-
 import sys
 sys.setrecursionlimit(3000)
 

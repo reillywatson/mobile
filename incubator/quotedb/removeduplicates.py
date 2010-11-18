@@ -4,16 +4,16 @@ import sys
 
 def main():
 	sys.stderr.write('reading file\n')
-	file = open('thinkexist.txt').read()
+	file = open('moviequotes.txt').read()
 	sys.stderr.write('beautiful souping\n')
 	soup = BeautifulSoup.BeautifulStoneSoup(file)
 	sys.stderr.write('splitting\n')
 	quotes = soup.findAll('quote')
 	quoteTexts = [x.textTag.text for x in quotes]
-	authors = set([x.text for x in soup.findAll('author')])
+	authors = set([x.text for x in soup.findAll('title')])
 	quotesByAuthor = {}
 	for quote in quotes:
-		author = quote.author.text
+		author = quote.film.title.text
 		if not quotesByAuthor.has_key(author):
 			quotesByAuthor[author] = []
 		quotesByAuthor[author].append(quote)
