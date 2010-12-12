@@ -1,11 +1,10 @@
 {
     "Name" : "Ctrl+Alt+Del",
     "StartURL" : "http://www.cad-comic.com/cad/",
-	"ImagePattern" : "<img src=\"([^>]*?)\"[^<]*?<div class=\"navigation\"",
-	"TitlePattern" : "<img [^>]*? alt=\"([^>]*?)\" />[^<]*?<div class=\"navigation\"",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"nav-back",
-	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"nav-next",
-	"BaseComicURL" : "http://www.cad-comic.com",
+	"ImagePattern" : "<div[^>]*?class=\"navigation\".*?<img[^>]*?src=\"([^>]*?)\"",
+	"TitlePattern" : "<div[^>]*?class=\"navigation\".*?<img[^>]*?alt=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a[^>]*?href=\"([^>]*?)\" class=\"nav-back",
+	"NextComicPattern" : "<a[^>]*?href=\"([^>]*?)\" class=\"nav-next",
     "BasePrevNextURL" : "http://www.cad-comic.com",
 	"RandomLink" : "http://www.cad-comic.com/cad/random"
 }
