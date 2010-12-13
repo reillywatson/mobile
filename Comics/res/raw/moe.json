@@ -1,0 +1,8 @@
+{
+    "Name" : "Moe",
+    "StartURL" : "http://www.firmanproductions.com",
+	"ImagePattern" : "<div id=\"comic\".*?<img src=\"([^>]*?)\"[^>]*?alt=",
+	"TitlePattern" : "<div id=\"comic\".*?<img [^>]*?alt=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">&#9668; Previous",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">Next &#9658;</a>"
+}

@@ -1,0 +1,10 @@
+{
+    "Name" : "Hark! A Vagrant",
+    "StartURL" : "http://www.harkavagrant.com",
+	"ImagePattern" : "<img src=\"buttonnext.png\".*?<img src=\"([^>]*?)\"",
+	"TitlePattern" : "<img src=\"buttonnext.png\".*?<img [^>]*?title=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a[^>]*?href=\"([^>]*?)\"><img src=\"buttonprevious.png\"",
+	"NextComicPattern" : "<a[^>]*?href=\"([^>]*?)\"><img src=\"buttonnext.png\"",
+	"RandomComicPattern" : "<a[^>]*?href=\"([^>]*?)\"><img src=\"buttonrandom.png\"",
+    "BaseRandomComicURL" : "http://www.harkavagrant.com/"
+}

@@ -1,0 +1,10 @@
+{
+    "Name" : "A Lesson is Learned But The Damage Is Irreversible",
+    "StartURL" : "http://www.alessonislearned.com/index.php",
+	"ImagePattern" : "<img src=\"cmx/(.*?)\"",
+	"TitlePattern" : "<span class=\"comictitle\">([^<]*?)",
+	"PrevComicPattern" : "<a href='([^>]*?)'[^>]*?navi_prev_over.gif",
+	"NextComicPattern" : "<a href='([^>]*?)'[^>]*?navi_next_over.gif",
+	"BaseComicURL" : "http://www.alessonislearned.com/cmx/",
+    "BasePrevNextURL" : "http://www.alessonislearned.com/"
+}

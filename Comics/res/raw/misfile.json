@@ -1,0 +1,9 @@
+{
+    "Name" : "Misfile",
+    "StartURL" : "http://www.misfile.com/",
+	"ImagePattern" : "\"overlay.php.pageCalled=([^>]*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img src=\"/images/back.gif\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"><img src=\"/images/next.gif\"",
+	"BaseComicURL" : "http://www.misfile.com/overlay.php?pageCalled=",
+    "BasePrevNextURL" : "http://www.misfile.com/"
+}

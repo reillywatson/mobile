@@ -1,9 +1,9 @@
 {
     "Name" : "Girls with Slingshots",
     "StartURL" : "http://www.gwscomic.com/",
-	"ImagePattern" : "div id=gwsblog.*?<img src=\"(.*?)\"",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\" [^>]*?><img name=\"img2\"",
-	"NextComicPattern" : "<a href=\"([^>]*?)\" [^>]*?><img name=\"img4\"",
+	"ImagePattern" : "div[^>]*?id=\"comic\">[^<]*?<img[^>]*?src=\"(.*?)\"",
+	"PrevComicPattern" : "div[^>]*?id=\"nav-previous\">[^<]*?<a[^>]*?href=\"(.*?)\"",
+	"NextComicPattern" : "div[^>]*?id=\"nav-next\">[^<]*?<a[^>]*?href=\"(.*?)\"",
 	"BaseComicURL" : "http://www.gwscomic.com/",
     "BasePrevNextURL" : "http://www.gwscomic.com/"
 }

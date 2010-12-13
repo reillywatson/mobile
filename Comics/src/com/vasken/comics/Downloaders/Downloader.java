@@ -118,6 +118,12 @@ public class Downloader implements WebRequester.RequestCallback {
 			if (!imageURL.startsWith("http")) {
 				imageURL = getBaseComicURL() + imageURL;
 			}
+			if (!imageURL.startsWith("http")) {
+				if (imageURL.startsWith("/") && defaultUrl.endsWith("/")) {
+					imageURL = imageURL.substring(1);
+				}
+				imageURL = defaultUrl + imageURL;
+			}
 			if (downloadImageDirectly) {
 				comic.bitmap = getBitmap(imageURL);
 				Log.d("BITMAP", Integer.toString(comic.bitmap.getHeight()));

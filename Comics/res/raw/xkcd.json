@@ -7,5 +7,7 @@
 	"AltTextPattern" : "<img.*? title=\"(.*?)\".*?/>",
 	"RandomLink" : "http://dynamic.xkcd.com/random/comic/",
 	"BasePrevNextURL" : "http://xkcd.com",
-	"StartURL" : "http://xkcd.com/"
+	"StartURL" : "http://xkcd.com/",
+	"ComicPickerStyle" : "NumberPicker",
+	"ComicPickerPattern" : "http://xkcd.com/%s/"
 }

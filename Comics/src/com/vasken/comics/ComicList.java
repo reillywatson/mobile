@@ -17,6 +17,7 @@ public class ComicList {
 	
 	static void init(Context context) {
 		comics.add(new ComicInfo(context, R.raw.achewood));
+		comics.add(new ComicInfo(context, R.raw.alessonislearned));
 		comics.add(new ComicInfo(context, R.raw.amazingsuperpowers));
 		comics.add(new ComicInfo(context, R.raw.asofterworld));
 		comics.add(new ComicInfo(context, R.raw.awkwardzombie));
@@ -26,23 +27,28 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.ctrlaltdel));
 		comics.add(new ComicInfo(context, R.raw.ctrlaltdelsillies));
 		comics.add(new ComicInfo(context, R.raw.cyanideandhappiness));
+		comics.add(new ComicInfo(context, R.raw.dieselsweeties));
 		comics.add(new ComicInfo(context, R.raw.dilbert));
 		comics.add(new ComicInfo(context, R.raw.dinosaurcomics));
 		comics.add(new ComicInfo(context, R.raw.dominicdeegan));
-		comics.add(new ComicInfo(context, R.raw.eightbittheater));
+//		comics.add(new ComicInfo(context, R.raw.eightbittheater));
 		comics.add(new ComicInfo(context, R.raw.girlgenius));
 		comics.add(new ComicInfo(context, R.raw.girlswithslingshots));
+		comics.add(new ComicInfo(context, R.raw.kinokofry));
 		comics.add(new ComicInfo(context, R.raw.leasticoulddo));
 		comics.add(new ComicInfo(context, R.raw.lookingforgroup));
 		comics.add(new ComicInfo(context, R.raw.megatokyo));
+		comics.add(new ComicInfo(context, R.raw.misfile));
+		comics.add(new ComicInfo(context, R.raw.moe));
 		comics.add(new ComicInfo(context, R.raw.nedroid));
 		comics.add(new ComicInfo(context, R.raw.pennyarcade));
 		comics.add(new ComicInfo(context, R.raw.perrybiblefellowship));
+		comics.add(new ComicInfo(context, R.raw.phdcomics));
 		comics.add(new ComicInfo(context, R.raw.pvp));
 		comics.add(new ComicInfo(context, R.raw.questionablecontent));
 		comics.add(new ComicInfo(context, R.raw.sharkattack));
 		comics.add(new ComicInfo(context, R.raw.shermanslagoon));
-		comics.add(new ComicInfo(context, R.raw.shockwatson));
+//		comics.add(new ComicInfo(context, R.raw.shockwatson));
 		comics.add(new ComicInfo(context, R.raw.sinfest));
 		comics.add(new ComicInfo(context, R.raw.smbc));
 		comics.add(new ComicInfo(context, R.raw.userfriendly));
