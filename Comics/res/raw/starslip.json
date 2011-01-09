@@ -1,0 +1,9 @@
+{
+    "Name" : "Starslip",
+    "StartURL" : "http://starslip.com/",
+	"ImagePattern" : "<img src=\"http://starslip.com/comics/([^>]*?)\"",
+	"TitlePattern" : "<img src=\"http://starslip.com/comics/[^>]*?title=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" rel=\"next\"",
+	"BaseComicURL" : "http://starslip.com/comics/"
+}

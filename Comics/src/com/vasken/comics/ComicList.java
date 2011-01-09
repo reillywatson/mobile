@@ -51,6 +51,7 @@ public class ComicList {
 //		comics.add(new ComicInfo(context, R.raw.shockwatson));
 		comics.add(new ComicInfo(context, R.raw.sinfest));
 		comics.add(new ComicInfo(context, R.raw.smbc));
+		comics.add(new ComicInfo(context, R.raw.starslip));
 		comics.add(new ComicInfo(context, R.raw.userfriendly));
 		comics.add(new ComicInfo(context, R.raw.vgcats));
 		comics.add(new ComicInfo(context, R.raw.wondermark));
