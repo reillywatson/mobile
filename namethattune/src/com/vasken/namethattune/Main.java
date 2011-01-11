@@ -1,62 +1,150 @@
 package com.vasken.namethattune;
 
-import java.util.Collection;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.regex.Matcher;
 
+import net.roarsoftware.lastfm.Track;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.vasken.namethattune.PreviewURLProvider.PreviewURLListener;
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.vasken.util.UserTask;
 import com.vasken.util.WebRequester;
 import com.vasken.util.WebRequester.RequestCallback;
 
-import net.roarsoftware.lastfm.Track;
-
-import android.app.Activity;
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
 public class Main extends Activity {
-    /** Called when the activity is first created. */
+	private static int NUM_ANSWERS = 3;
+	private static final int SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES = 2 * 1000;
+	private static final int SECONDS_TO_WAIT_BEFORE_TIMER_UPDATES = 1 * 1000;
+	private static final String HIGH_SCORES = "High Scores";
 	
+	private ProgressDialog loadingBar;
+	private Handler mHandler = new Handler();
 	private MediaPlayer player = new MediaPlayer();
 	private Button opt1, opt2, opt3;
-	String correct;
-	boolean downloadInProgress = false;
-	
+	private String correct;
+	private int streak;
+	private static int secondsLeftInTrack;
+	private boolean questionWasAnswered = false;
+	private boolean downloadInProgress = false;
+	private Context theContext;
+    
+    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+
+        setContentView(R.layout.splash);
+        setVolumeControlStream(AudioManager.STREAM_MUSIC); 
+        theContext = this;
+
+        loadingBar = new ProgressDialog(this);
+        loadingBar.setCancelable(false);
+        loadingBar.setMessage(getString(R.string.loading));
+        loadingBar.show();
+        
+        getNewTrack(); 
+    }
+	
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+		menu.clear();
+		menu.add(HIGH_SCORES).setIcon(R.drawable.menu_high_scores);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getTitle().equals(HIGH_SCORES)) {
+			Intent intent = new Intent(this, HighScoresActivity.class);
+			this.startActivity(intent);
+		}
+		return true;
+	}
+    
+    private void showGameScreen() {
+    	setContentView(R.layout.main);
+    	
+    	if (loadingBar.isShowing()) {
+			loadingBar.dismiss();
+		}
+    	
         opt1 = (Button)findViewById(R.id.Button01);
         opt2 = (Button)findViewById(R.id.Button02);
         opt3 = (Button)findViewById(R.id.Button03);
         opt1.setOnClickListener(buttonClicked);
         opt2.setOnClickListener(buttonClicked);
         opt3.setOnClickListener(buttonClicked);
-        getNewTrack();
+        
+        streak = 0;
+        ((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, streak));
     }
     
-    private android.widget.Button.OnClickListener buttonClicked = new android.widget.Button.OnClickListener() {
+    @Override
+    protected void onPause() {
+    	super.onPause();
+    	
+    	// Do this so we don't keep playing music after the user exits
+    	player.stop();
+    }
+    
+    private Button.OnClickListener buttonClicked = new Button.OnClickListener() {
 		@Override
 		public void onClick(View v) {
+			if (questionWasAnswered)
+				return;
+			
 			Button b = (Button)v;
 			if (b.getText().equals(correct)) {
-				Toast.makeText(Main.this, "CORRECT!", Toast.LENGTH_SHORT).show();
+				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
+				answer.setImageResource(R.drawable.correct);
+				streak+=1;
 			}
 			else {
-				Toast.makeText(Main.this, "WRONGO!  It was " + correct, Toast.LENGTH_SHORT).show();
+				submitScore(streak);
+				
+				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
+				answer.setImageResource(R.drawable.wrong);
+				streak = 0;
 			}
+			
+			((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, streak));
+			questionWasAnswered = true;
+			
+			mHandler.removeCallbacks(mUpdateTimeTask);
+			mHandler.postDelayed(mUpdateResult, SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES);
+			
 			if (!downloadInProgress)
 				getNewTrack();
 		}};
@@ -66,8 +154,64 @@ public class Main extends Activity {
 		getNewTrack();
 	}
 
+	protected void submitScore(int streak) {
+		String appVersion;
+    	ComponentName comp = new ComponentName(this, Main.class);
+    	PackageInfo pinfo;
+		try {
+			pinfo = this.getPackageManager().getPackageInfo(comp.getPackageName(), 0);
+			appVersion = String.valueOf(pinfo.versionCode);
+		} catch (NameNotFoundException e1) {
+			appVersion = "0";
+		} 
+    	
+		HttpPost post = new HttpPost("http://1.latest.vaskenmusic.appspot.com/vaskenmusicserver");
+		post.setHeader("Content-type", "application/x-www-form-urlencoded");
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("data", 
+        		"name=Robert-=-=-=-=-=" +
+        		"score=" + streak +"-=-=-=-=-=" +
+        		"genre="+getString(R.string.genre)+"-=-=-=-=-=" +
+        		"version="+appVersion));
+        
+        try {
+			post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
+		} catch (UnsupportedEncodingException e) {
+			Log.e(Main.class.toString(), "", e);
+			return;
+		}
+		
+		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+		boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
+		boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
+		
+		if (!hasMobileConnection && !hasWifiConnection) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
+					finish();
+				}
+			});
+			return;
+		}
+
+		Log.d("------------------------------", "MAKE REQUEST " + params);
+		new WebRequester().makeRequest(post, new RequestCallback() {
+			@Override
+			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+				Log.d(Main.class.toString(), "IS FINAL " + isFinal);
+				if (isFinal) {
+					Log.d(Main.class.toString(), responseSoFar.toString());
+					return true;
+				}
+				return false;
+			}
+		});
+	}
+
 	void getNewTrack() {
-		new BackgroundWorker().execute("rock");
+		new BackgroundWorker().execute();
 		downloadInProgress = true;
 	}
 	
@@ -80,18 +224,21 @@ public class Main extends Activity {
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				if (tracks.size() < 4) {
+				if (tracks.size() < NUM_ANSWERS) {
 					Log.d("displayOptions", "DID NOT GET ENOUGH TRACKS");
 					sampleRetrievalError();
 					return;
 				}
+				
 				correct = tracks.remove(0);
+				questionWasAnswered = false;
 				Collections.shuffle(tracks);
-				tracks.add((int)(Math.random() * 4), correct);
+				tracks.add((int)(Math.random() * NUM_ANSWERS), correct);
 
 				opt1.setText(tracks.get(0));
 				opt2.setText(tracks.get(1));
 				opt3.setText(tracks.get(2));
+				
 			}});
 	}
 	
@@ -113,13 +260,46 @@ public class Main extends Activity {
 			_obj = obj;
 		}
 	}
+
+	private Runnable mSetupTimeTask = new Runnable() {
+		public void run() {
+			secondsLeftInTrack = Integer.parseInt(getString(R.string.seconds));
+			TextView timeLeft = (TextView)findViewById(R.id.timerTimeLeft);
+			timeLeft.setText("" + secondsLeftInTrack);
+			
+			mHandler.removeCallbacks(mUpdateTimeTask);
+			mHandler.postDelayed(mUpdateTimeTask, SECONDS_TO_WAIT_BEFORE_TIMER_UPDATES);
+		}
+	};
+	
+	private Runnable mUpdateTimeTask = new Runnable() {
+		public void run() {
+			secondsLeftInTrack--;
+			TextView timeLeft = (TextView)findViewById(R.id.timerTimeLeft);
+			timeLeft.setText("" + secondsLeftInTrack);
+			
+			if (secondsLeftInTrack > 0) {
+				mHandler.postDelayed(this, SECONDS_TO_WAIT_BEFORE_TIMER_UPDATES);
+			} else {
+				secondsLeftInTrack = Integer.parseInt(getString(R.string.seconds));;
+				player.stop();
+			}
+		}
+	};
+	
+	private Runnable mUpdateResult = new Runnable() {
+		public void run() {
+			ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
+			answer.setImageDrawable(null);
+		}
+	};
 	
 	class BackgroundWorker extends UserTask<String, List<String>, List<String>> {
 		
 		void parseJSON(JSONObject json) throws JSONException {
 			List<String> tracks = new LinkedList<String>();
 			JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
-			for (int i = 0; i < 4; i++) {
+			for (int i = 0; i < NUM_ANSWERS; i++) {
 				JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
 				String title = randomTrack.getJSONObject("title").getString("label");
 				if (i == 0) {
@@ -141,17 +321,33 @@ public class Main extends Activity {
 				player.setDataSource(url);
 				player.prepare();
 				player.start();
+
+				if (findViewById(R.id.splashScreen) != null) {
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							showGameScreen();
+						}
+					});
+				}
+				runOnUiThread(mSetupTimeTask);
+
 			} catch (Exception e) {
-				sampleRetrievalError();
 				e.printStackTrace();
+				sampleRetrievalError();
 				return;
 			}
 		}
-		
+
 		@Override
 		public List<String> doInBackground(String... tags) {
 			final List<String> tracks = new LinkedList<String>();
-			final String url = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=300/genre=18/explicit=true/json";
+			final String url = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/" 
+				+ "sf=143441/" 			// Some magic shit
+				+ "limit=300/" 			// Number of results 
+				+ "genre=" + getString(R.string.genre) + "/"  			// Type of music
+				+ "explicit=true/"  	// Naughty songs
+				+ "json";
 			JSONObject json = cache.cachedObject(url);
 			
 			if (json != null) {
@@ -160,16 +356,34 @@ public class Main extends Activity {
 				} catch (JSONException e) {}
 			}
 			else {
+				ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+				boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
+				boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
+				
+				if (!hasMobileConnection && !hasWifiConnection) {
+					if (loadingBar.isShowing()) {
+						loadingBar.dismiss();
+					}
+					
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							Toast.makeText(theContext, "The application needs an internet connection, to work", Toast.LENGTH_LONG).show();
+							finish();
+						}
+					});
+					return tracks;
+				}
+				
+				Log.d("------------------------------", "MAKE REQUEST");
 				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
 					@Override
 					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 						if (isFinal) {
-							
 							try {
-							JSONObject json = new JSONObject(responseSoFar.toString());
-							parseJSON(json);
-							cache.cacheObject(url, json);
-	
+								JSONObject json = new JSONObject(responseSoFar.toString());
+								parseJSON(json);
+								cache.cacheObject(url, json);
 							} catch (JSONException e) {}
 							return true;
 						}

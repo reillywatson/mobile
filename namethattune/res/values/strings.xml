@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Main!</string>
     <string name="app_name">Name That Tune</string>
+    <string name="streak">%1$d in a row</string>
+    <string name="loading">Loading songs...</string>
+    <string name="genre">21</string>
+    <string name="seconds">10</string>
+    
+    <string name="best_today">Today\'s Best</string>
+    <string name="best_ever">Best Scores Ever</string>
+    <string name="submit_score">Submit Score: %1$d</string>
 </resources>

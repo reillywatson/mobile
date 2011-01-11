@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<TableLayout
+		android:id="@+id/highScores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1">
+	    <TableRow>
+	        <TextView
+	            android:text="@string/best_today"
+	            android:padding="3dip" />
+	        <TextView
+	            android:text="@string/best_ever"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	       
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_2"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_2"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_3"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_3"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_4"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_4"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_5"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_5"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	</TableLayout>
+</RelativeLayout>
