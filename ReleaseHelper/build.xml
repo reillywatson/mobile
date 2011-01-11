@@ -2,7 +2,7 @@
 <project name="ReleaseHelper" default="release">
 	<!--================== 			!! CHANGE ME !!			==================-->
 	<!-- This file has all the project info. This is what you want to modify  -->
-	<property file="C:/Workspaces/2010/QuotesTriviaArtifacts/QuotesTriviaHeroes.Artifacts/build/build.properties" />
+	<property file="C:/Workspaces/2010/QuotesTriviaArtifacts/QuotesTriviaTwoHalfMen.Artifacts/build/build.properties" />
 	
 	<!-- Tell ant where it can find Main.java  -->
 	<path id="main.class">
@@ -11,7 +11,7 @@
 	
     <!-- <property file="build.properties" /> -->
     <property file="default.properties" />
-	
+
 	<!-- Define project directories -->
 	<property name="src-dir" location="${tgt.folder}/src" />
 	<property name="gen-dir" value="${tgt.folder}/gen" />
