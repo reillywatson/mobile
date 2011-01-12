@@ -19,9 +19,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -30,11 +32,13 @@ import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,7 +51,6 @@ public class Main extends Activity {
 	private static int NUM_ANSWERS = 3;
 	private static final int SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES = 2 * 1000;
 	private static final int SECONDS_TO_WAIT_BEFORE_TIMER_UPDATES = 1 * 1000;
-	private static final String HIGH_SCORES = "High Scores";
 	
 	private ProgressDialog loadingBar;
 	private Handler mHandler = new Handler();
@@ -55,6 +58,7 @@ public class Main extends Activity {
 	private Button opt1, opt2, opt3;
 	private String correct;
 	private int streak;
+	private int lastStreak;
 	private static int secondsLeftInTrack;
 	private boolean questionWasAnswered = false;
 	private boolean downloadInProgress = false;
@@ -67,12 +71,13 @@ public class Main extends Activity {
 
         setContentView(R.layout.splash);
         setVolumeControlStream(AudioManager.STREAM_MUSIC); 
+        
         theContext = this;
 
         loadingBar = new ProgressDialog(this);
         loadingBar.setCancelable(false);
         loadingBar.setMessage(getString(R.string.loading));
-        loadingBar.show();
+//        loadingBar.show();
         
         getNewTrack(); 
     }
@@ -80,15 +85,48 @@ public class Main extends Activity {
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		menu.clear();
-		menu.add(HIGH_SCORES).setIcon(R.drawable.menu_high_scores);
+		menu.add(getString(R.string.high_scores)).
+			setIcon(R.drawable.menu_high_scores);
+		
+		menu.add(getString(R.string.submit_score, lastStreak)).
+			setIcon(R.drawable.submit_icon).
+			setEnabled(lastStreak != 0);
+		
 		return true;
 	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		if (item.getTitle().equals(HIGH_SCORES)) {
+		if (item.getTitle().equals(getString(R.string.high_scores))) {
 			Intent intent = new Intent(this, HighScoresActivity.class);
 			this.startActivity(intent);
+		} else {
+			AlertDialog.Builder alert = new AlertDialog.Builder(this);  
+			alert.setTitle("High Score Entry");  
+			  
+			// Set an EditText view to get user input   
+			final EditText input = new EditText(this);
+			input.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_WORDS);
+			input.setSingleLine(true);
+			input.setHint(R.string.enter_name);
+			alert.setView(input);
+			  
+			alert.setPositiveButton("Send",
+					new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int whichButton) {
+							loadingBar.show();
+							submitScore(input.getText().toString(), lastStreak);
+						}
+					});
+			  
+			alert.setNegativeButton("Cancel",
+					new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int whichButton) {
+
+						}
+					});
+
+			alert.show();
 		}
 		return true;
 	}
@@ -108,6 +146,8 @@ public class Main extends Activity {
         opt3.setOnClickListener(buttonClicked);
         
         streak = 0;
+        lastStreak = 0;
+        
         ((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, streak));
     }
     
@@ -132,7 +172,7 @@ public class Main extends Activity {
 				streak+=1;
 			}
 			else {
-				submitScore(streak);
+				lastStreak = streak;
 				
 				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
 				answer.setImageResource(R.drawable.wrong);
@@ -154,7 +194,7 @@ public class Main extends Activity {
 		getNewTrack();
 	}
 
-	protected void submitScore(int streak) {
+	protected void submitScore(String name, int streak) {
 		String appVersion;
     	ComponentName comp = new ComponentName(this, Main.class);
     	PackageInfo pinfo;
@@ -169,8 +209,8 @@ public class Main extends Activity {
 		post.setHeader("Content-type", "application/x-www-form-urlencoded");
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("data", 
-        		"name=Robert-=-=-=-=-=" +
-        		"score=" + streak +"-=-=-=-=-=" +
+        		"name=" + name +"-=-=-=-=-=" +
+        		"score="+ streak +"-=-=-=-=-=" +
         		"genre="+getString(R.string.genre)+"-=-=-=-=-=" +
         		"version="+appVersion));
         
@@ -189,20 +229,30 @@ public class Main extends Activity {
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
+					if (loadingBar.isShowing()) {
+						loadingBar.dismiss();
+					}
+					
 					Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
-					finish();
 				}
 			});
 			return;
 		}
 
-		Log.d("------------------------------", "MAKE REQUEST " + params);
 		new WebRequester().makeRequest(post, new RequestCallback() {
 			@Override
 			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 				Log.d(Main.class.toString(), "IS FINAL " + isFinal);
 				if (isFinal) {
+					if (loadingBar.isShowing()) {
+						loadingBar.dismiss();
+					}
+					
 					Log.d(Main.class.toString(), responseSoFar.toString());
+					
+					Intent intent = new Intent(theContext, HighScoresActivity.class);
+					theContext.startActivity(intent);
+					
 					return true;
 				}
 				return false;

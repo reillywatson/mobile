@@ -1,59 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+	android:background="@color/black"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
+    <ImageView
+    	android:id="@+id/background"
+    	android:src="@drawable/background"
+    	android:layout_alignParentTop="true"
+    	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+	</ImageView>
+    	
 	<TableLayout
-		android:id="@+id/highScores"
+		android:id="@+id/highScoresToday"
+		android:layout_alignTop="@id/background"
+		android:layout_marginTop="55px"
+		android:padding="10px"
+	    android:stretchColumns="1"
 	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:stretchColumns="1">
+	    android:layout_height="wrap_content">
 	    <TableRow>
 	        <TextView
 	            android:text="@string/best_today"
+	            android:textColor="#FFFFFF"
+	            android:textSize="20px"
 	            android:padding="3dip" />
+	    </TableRow>
+	    <ImageView
+	    	android:src="@drawable/line"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content" />
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_name_1"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/today_score_1"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_name_2"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/today_score_2"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_name_3"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/today_score_3"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_name_4"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/today_score_4"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/today_name_5"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/today_score_5"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	</TableLayout>
+	
+	<TableLayout
+		android:id="@+id/highScoresEver"
+		android:layout_below="@id/highScoresToday"
+		android:paddingLeft="10px"
+		android:paddingRight="10px"
+	    android:stretchColumns="1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TableRow>
 	        <TextView
 	            android:text="@string/best_ever"
-	            android:gravity="right"
+	            android:textColor="#FFFFFF"
+	            android:textSize="20px"
 	            android:padding="3dip" />
 	    </TableRow>
-	    <TableRow>
-	       
-	    </TableRow>
-	    <TableRow>
-	        <TextView
-	            android:id="@+id/today_2"
-	            android:padding="3dip" />
-	        <TextView
-	            android:id="@+id/ever_2"
-	            android:gravity="right"
-	            android:padding="3dip" />
-	    </TableRow>
+	    <ImageView
+	    	android:src="@drawable/line"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content" />
 	    <TableRow>
 	        <TextView
-	            android:id="@+id/today_3"
+	            android:id="@+id/ever_name_1"
+	            android:ellipsize="end"
 	            android:padding="3dip" />
 	        <TextView
-	            android:id="@+id/ever_3"
+	            android:id="@+id/ever_score_1"
 	            android:gravity="right"
 	            android:padding="3dip" />
 	    </TableRow>
 	    <TableRow>
 	        <TextView
-	            android:id="@+id/today_4"
+	            android:id="@+id/ever_name_2"
+	            android:ellipsize="end"
 	            android:padding="3dip" />
 	        <TextView
-	            android:id="@+id/ever_4"
+	            android:id="@+id/ever_score_2"
 	            android:gravity="right"
 	            android:padding="3dip" />
 	    </TableRow>
 	    <TableRow>
 	        <TextView
-	            android:id="@+id/today_5"
+	            android:id="@+id/ever_name_3"
+	            android:ellipsize="end"
 	            android:padding="3dip" />
 	        <TextView
-	            android:id="@+id/ever_5"
+	            android:id="@+id/ever_score_3"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/ever_name_4"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_score_4"
+	            android:gravity="right"
+	            android:padding="3dip" />
+	    </TableRow>
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/ever_name_5"
+	            android:ellipsize="end"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/ever_score_5"
 	            android:gravity="right"
 	            android:padding="3dip" />
 	    </TableRow>
