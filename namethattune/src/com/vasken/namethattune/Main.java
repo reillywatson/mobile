@@ -299,14 +299,16 @@ public class Main extends Activity {
 		void parseJSON(JSONObject json) throws JSONException {
 			List<String> tracks = new LinkedList<String>();
 			JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
-			for (int i = 0; i < NUM_ANSWERS; i++) {
+			while (tracks.size() < NUM_ANSWERS) {
 				JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
 				String title = randomTrack.getJSONObject("title").getString("label");
-				if (i == 0) {
-					String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
-					previewUrlReady(link);
+				if (!tracks.contains(title)) {
+					if (tracks.size() == 0) {
+						String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
+						previewUrlReady(link);
+					}
+					tracks.add(title);
 				}
-				tracks.add(title);
 			}
 			displayOptions(tracks);
 		}
