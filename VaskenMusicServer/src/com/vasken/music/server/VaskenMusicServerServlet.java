@@ -1,7 +1,6 @@
 package com.vasken.music.server;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -72,26 +71,27 @@ public class VaskenMusicServerServlet extends HttpServlet {
 		Pair<List<HighScoreEntry>, List<HighScoreEntry>> highScores = theManager.getHighScores(genre);
 		
 		StringBuilder sb = new StringBuilder();
-		sb.append("HighScores { \n");
-		sb.append("\tToday [ \n");
+		sb.append("{ \"HighScores\" : { \n");
+		sb.append("\t\"Today\" : [ \n");
 		for (HighScoreEntry anEntry : highScores.first) {
-			sb.append("\t\tHighScore {\n");
-			sb.append("\t\t\tname: \""+anEntry.getName()+"\",\n");
-			sb.append("\t\t\tscore=\""+anEntry.getScore()+"\"\n");
+			sb.append("\t\t{ \n");
+			sb.append("\t\t\t\"name\": \""+anEntry.getName()+"\",\n");
+			sb.append("\t\t\t\"score\": \""+anEntry.getScore()+"\"\n");
 			sb.append("\t\t},\n");
 		}
 		sb.deleteCharAt(sb.length()-2);
-		sb.append("\t] \n");
+		sb.append("\t], \n");
 		
-		sb.append("\tEver [\n");
+		sb.append("\t\"Ever\" : [\n");
 		for (HighScoreEntry anEntry : highScores.second) {
-			sb.append("\t\tHighScore {\n");
-			sb.append("\t\t\tname=\""+anEntry.getName()+"\", \n");
-			sb.append("\t\t\tscore=\""+anEntry.getScore()+"\" \n");
-			sb.append("\t\t}, \n");
+			sb.append("\t\t{ \n");
+			sb.append("\t\t\t\"name\": \""+anEntry.getName()+"\",\n");
+			sb.append("\t\t\t\"score\": \""+anEntry.getScore()+"\"\n");
+			sb.append("\t\t},\n");
 		}
 		sb.deleteCharAt(sb.length()-2);
 		sb.append("\t]\n");
+		sb.append("\t}\n");
 		sb.append("}\n");
 		
 		return sb;

@@ -94,13 +94,16 @@ public class HighScoreManager {
 	    List<HighScoreEntry> todayHighScores;
 		Query todayQuery = pm.newQuery(HighScoreEntry.class);
 		todayQuery.setOrdering("score desc");
+		todayQuery.setFilter("date == dateParam");
+		todayQuery.declareImports("import java.util.Date");
 		todayQuery.setRange(0, 5);
 		if (genre != null) {
 			todayQuery.setFilter("genre == genreParam");
-			todayQuery.declareParameters("String genreParam");
-		    todayHighScores = (List<HighScoreEntry>) todayQuery.execute(genre);
+			todayQuery.declareParameters("String genreParam, Date dateParam");
+		    todayHighScores = (List<HighScoreEntry>) todayQuery.execute(genre, new Date());
 		} else {
-			todayHighScores = (List<HighScoreEntry>) todayQuery.execute();
+			todayQuery.declareParameters("Date dateParam");
+			todayHighScores = (List<HighScoreEntry>) todayQuery.execute(new Date());
 		}
 	    todayQuery.closeAll();
 	    
