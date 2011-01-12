@@ -21,6 +21,7 @@
 @synthesize button3 = _button3;
 @synthesize numCorrectLabel = _numCorrectLabel;
 @synthesize timerLabel = _timerLabel;
+@synthesize resultImage = _resultImage;
 
 -(void)dealloc {
 	[super dealloc];
@@ -32,7 +33,7 @@
 	_opQueue = [NSOperationQueue new];
 	[super viewDidLoad];
 	_numCorrect = 0;
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStatusChanged) name:ASStatusChangedNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackStatusChanged:) name:ASStatusChangedNotification object:nil];
 	[self newRound];
 }
 
@@ -57,23 +58,11 @@
 		[trackNames addObject:title];
 	}
 	_tracks = trackNames;
-	NSArray *buttons = [NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil];
-	for (UIButton *button in buttons) {
-		[button setTitle:@"" forState:UIControlStateNormal];
-	}
-	int setButtons = 0;
-	while (setButtons < 3) {
-		UIButton *button = [buttons randomElement];
-		if ([[button titleForState:UIControlStateNormal] isEqualToString:@""]) {
-			[button setTitle:[_tracks objectAtIndex:setButtons] forState:UIControlStateNormal];
-			setButtons++;
-		}
-	}
 	[tracks release];
 }
 
 -(void)updateTime {
-	NSLog(@"STREAMER STATE: %d", [_streamer state]);
+	NSLog(@"UPDATE TIME STREAMER STATE: %d", [_streamer state]);
 	int time = [[self.timerLabel text] intValue];
 	if (time == 0) {
 		// TODO: do something awesome like tell the user time is up
@@ -94,12 +83,31 @@
 									repeats:YES];
 	[self.timerLabel setHidden:NO];
 	[self.timerLabel setText:@"10"];
+	NSArray *buttons = [NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil];
+	int setButtons = 0;
+	for (UIButton *button in buttons) {
+		[button setEnabled:NO];
+	}
+	while (setButtons < 3) {
+		UIButton *button = [buttons randomElement];
+		if (![button isEnabled]) {
+			[button setTitle:[_tracks objectAtIndex:setButtons] forState:UIControlStateNormal];
+			[button setEnabled:YES];
+			setButtons++;
+		}
+	}	
 }
 
--(void)playbackStatusChanged {
-	if ([_streamer state] == AS_PLAYING) {
-		NSLog(@"STARTING TIMER");
-		[self startTimer];
+-(void)playbackStatusChanged:(NSNotification *)notification {
+	NSLog(@"STREAMER STATE: %d", [_streamer state]);
+	if ([notification object] == _streamer) {
+		if ([_streamer state] == AS_PLAYING) {
+			[self startTimer];
+		}
+	}
+	else {
+		NSLog(@"WHO ARE YOU, AUDIOSTREAM? %@", [notification object]);
+		[[notification object] stop];
 	}
 }
 
@@ -110,13 +118,28 @@
 	[self.timerLabel setHidden:YES];
 }
 
+-(void)showResultIndicator:(BOOL)success {
+	[self.resultImage setImage:[UIImage imageNamed:success ? @"correct.png" : @"wrong.png"]];
+	self.resultImage.alpha = 1.0;
+	[UIView beginAnimations:nil context:nil];  
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+	[UIView setAnimationDuration:1.5];
+	self.resultImage.alpha = 0;
+	[UIView commitAnimations];
+}
+
 -(void)answerSelected:(int)answer {
 	NSArray *buttons = [NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil];
+	for (UIButton *button in buttons) {
+		[button setEnabled:NO];
+	}
 	if ([[[buttons objectAtIndex:answer] titleForState:UIControlStateNormal] isEqualToString:[_tracks objectAtIndex:0]]) {
 		_numCorrect++;
+		[self showResultIndicator:YES];
 	}
 	else {
 		_numCorrect = 0;
+		[self showResultIndicator:NO];
 	}
 	[self newRound];
 }

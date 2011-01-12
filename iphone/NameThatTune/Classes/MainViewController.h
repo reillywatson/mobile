@@ -12,6 +12,7 @@
 @interface MainViewController : UIViewController<TrackInfoDelegate> {
 	UILabel *_numCorrectLabel;
 	UILabel *_timerLabel;
+	UIImageView *_resultImage;
 	UIButton *_button1;
 	UIButton *_button2;
 	UIButton *_button3;
@@ -24,6 +25,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *numCorrectLabel;
 @property (nonatomic, retain) IBOutlet UILabel *timerLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *resultImage;
 @property (nonatomic, retain) IBOutlet UIButton *button1;
 @property (nonatomic, retain) IBOutlet UIButton *button2;
 @property (nonatomic, retain) IBOutlet UIButton *button3;
