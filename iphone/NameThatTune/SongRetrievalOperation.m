@@ -12,23 +12,9 @@
 
 @implementation SongRetrievalOperation
 
--(NSString *)getRandomTrack {
+-(void)getRandomTracks {
 	
-	/*
-	NSMutableDictionary *params = [[NSMutableDictionary new] autorelease];
-
-	[params setObject:@"United%20States" forKey:@"country"];
-	[params setObject:_LASTFM_API_KEY_ forKey:@"api_key"];
-	NSString *data = [engine stringForMethod:@"geo.getTopTracks" withParameters:params useSignature:NO httpMethod:@"GET" error:nil];
-	NSDictionary *parsedJSON = [json objectWithString:data];
-	NSArray *tracks = [[parsedJSON objectForKey:@"toptracks"] objectForKey:@"track"];
-	NSDictionary *randomTrack = [tracks randomElement];
-	NSString *artistName = [[randomTrack objectForKey:@"artist"] objectForKey:@"name"];
-	NSString *trackName = [randomTrack objectForKey:@"name"];
-	NSString *fullName = [NSString stringWithFormat:@"%@ - %@", artistName, trackName];
-	NSLog(@"%@", fullName);*/
-	
-	static NSArray *entries = nil;
+	NSArray *entries = nil;
 	
 	if (entries == nil) {
 		
@@ -39,33 +25,29 @@
 		NSDictionary *parsedJSON = [json objectWithString:response];
 		entries = [[parsedJSON objectForKey:@"feed"] objectForKey:@"entry"];
 	}
-	NSDictionary *randomTrack = [entries randomElement];
-	NSString *link = [[[[randomTrack objectForKey:@"link"] objectAtIndex:1] objectForKey:@"attributes"] objectForKey:@"href"];
-	//NSLog(@"name: %@", randomTrack);
-	NSString *title = [[randomTrack objectForKey:@"title"] objectForKey:@"label"];
-	NSLog(@"Track: %@", randomTrack);
-	NSLog(@"TITLE: %@", title);
-
-	AudioStreamer *streamer = [[AudioStreamer alloc] initWithURL:[NSURL URLWithString:link]];
-	[streamer start];
-	return @"";
+	int numEntries = [delegate entriesToReturn];
+	NSMutableArray *returnedEntries = [NSMutableArray new];
+	while ([returnedEntries count] < numEntries) {
+		NSDictionary *randomTrack = [entries randomElement];
+		[returnedEntries addObject:randomTrack];
+	}
+	[delegate performSelectorOnMainThread:@selector(trackListReady:) withObject:returnedEntries waitUntilDone:NO];
 }
 
--(id)init {
+-(id)initWithDelegate:(NSObject<TrackInfoDelegate>*) myDelegate {
 	self = [super init];
-	engine = [FMEngine new];
 	json = [SBJSON new];
+	delegate = myDelegate;
 	return self;
 }
 
 -(void)dealloc {
 	[super dealloc];
-	[engine release];
 	[json release];
 }
 
 -(void)main {
-	[self getRandomTrack];
+	[self getRandomTracks];
 }
 
 @end

@@ -6,11 +6,30 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "SongRetrievalOperation.h"
+#import "AudioStreamer.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UIViewController<TrackInfoDelegate> {
+	UILabel *_numCorrectLabel;
+	UILabel *_timerLabel;
+	UIButton *_button1;
+	UIButton *_button2;
+	UIButton *_button3;
+	NSArray *_tracks;
+	int _numCorrect;
+	NSTimer *_currentTimer;
+	AudioStreamer *_streamer;
+	NSOperationQueue *_opQueue;
 }
 
-- (IBAction)showInfo:(id)sender;
+@property (nonatomic, retain) IBOutlet UILabel *numCorrectLabel;
+@property (nonatomic, retain) IBOutlet UILabel *timerLabel;
+@property (nonatomic, retain) IBOutlet UIButton *button1;
+@property (nonatomic, retain) IBOutlet UIButton *button2;
+@property (nonatomic, retain) IBOutlet UIButton *button3;
+
+-(IBAction)button1Pressed;
+-(IBAction)button2Pressed;
+-(IBAction)button3Pressed;
 
 @end

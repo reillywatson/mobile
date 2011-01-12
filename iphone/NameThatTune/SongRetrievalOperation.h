@@ -10,9 +10,16 @@
 #import "FMEngine.h"
 #import "JSON.h"
 
+@protocol TrackInfoDelegate
+-(void)trackListReady:(NSArray *)tracks;
+-(int)entriesToReturn;
+@end
+
 @interface SongRetrievalOperation : NSOperation {
-	FMEngine *engine;
 	SBJSON *json;
+	NSObject<TrackInfoDelegate> *delegate;
 }
+
+-(id)initWithDelegate:(id <TrackInfoDelegate>)myDelegate;
 
 @end
