@@ -76,7 +76,6 @@
 	NSLog(@"STREAMER STATE: %d", [_streamer state]);
 	int time = [[self.timerLabel text] intValue];
 	if (time == 0) {
-		[_currentTimer invalidate];
 		// TODO: do something awesome like tell the user time is up
 		return;
 	}
@@ -99,6 +98,7 @@
 
 -(void)playbackStatusChanged {
 	if ([_streamer state] == AS_PLAYING) {
+		NSLog(@"STARTING TIMER");
 		[self startTimer];
 	}
 }
