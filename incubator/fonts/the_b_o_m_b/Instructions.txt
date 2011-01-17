@@ -1,0 +1,22 @@
+GABRIELE MAGURNO'S FONTS - [ www.magurno.com ]
+---------------------------------------------------------
+
+Content:
+
+1. THEBOMB.TTF (MS Windows typeface, based on the shapes of my Photoshop Brushes).
+2. Instructions.txt (this file).
+3. License.txt (end user license, read carefully!)
+4. Gabriele Magurno website.url (internet shortcut to my website).
+
+
+Instructions:
+
+Copy "THEBOMB.TTF" inside your "\Windows\Fonts\" folder, then reboot your computer if needed. The font will appear inside the list when you will open your favorite program.
+
+--------------------------------------------------------------------
+
+NOTE#1: This product is provided *AS IS*. There's no support and/or refund. Please, if you plan to redistribute the font, keep the original package intact, with all the included files, and ask me before, thanks. Commercial purposes are not allowed, for all and/or part of the included files.
+
+NOTE#2: MAC/Linux users, please use a font converter if you plan to install "THEBOMB.ttf" to your system.
+
+NOTE#3: Thanks to all the people around the world who supports my work! :-)
