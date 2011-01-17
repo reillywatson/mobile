@@ -20,7 +20,6 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -34,9 +33,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -52,17 +53,16 @@ public class Main extends Activity {
 	private static final int SECONDS_TO_WAIT_BEFORE_RESULT_UPDATES = 2 * 1000;
 	private static final int SECONDS_TO_WAIT_BEFORE_TIMER_UPDATES = 1 * 1000;
 	
-	private ProgressDialog loadingBar;
 	private Handler mHandler = new Handler();
 	private MediaPlayer player = new MediaPlayer();
 	private Button opt1, opt2, opt3;
 	private String correct;
-	private int streak;
-	private int lastStreak;
 	private static int secondsLeftInTrack;
 	private boolean questionWasAnswered = false;
 	private boolean downloadInProgress = false;
 	private Context theContext;
+	
+	private State theState;
     
     /** Called when the activity is first created. */
     @Override
@@ -71,13 +71,15 @@ public class Main extends Activity {
 
         setContentView(R.layout.splash);
         setVolumeControlStream(AudioManager.STREAM_MUSIC); 
-        
-        theContext = this;
 
-        loadingBar = new ProgressDialog(this);
-        loadingBar.setCancelable(false);
-        loadingBar.setMessage(getString(R.string.loading));
-//        loadingBar.show();
+//		FOR DEBUG PURPOSES
+//      SharedPreferences preferences = this.getSharedPreferences("PREFERENCES_NAME", Context.MODE_PRIVATE);
+//		Editor editor = preferences.edit();
+//		editor.clear();
+//		editor.commit();
+		
+        theContext = this;
+        theState = State.loadSavedInstance(this);
         
         getNewTrack(); 
     }
@@ -88,9 +90,12 @@ public class Main extends Activity {
 		menu.add(getString(R.string.high_scores)).
 			setIcon(R.drawable.menu_high_scores);
 		
-		menu.add(getString(R.string.submit_score, lastStreak)).
+		menu.add(getString(R.string.submit_score, theState.getLastStreak())).
 			setIcon(R.drawable.submit_icon).
-			setEnabled(lastStreak != 0);
+			setEnabled(theState.getLastStreak() != 0);
+		
+		menu.add(getString(R.string.achievements)).
+			setIcon(R.drawable.menu_ach);
 		
 		return true;
 	}
@@ -99,6 +104,9 @@ public class Main extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getTitle().equals(getString(R.string.high_scores))) {
 			Intent intent = new Intent(this, HighScoresActivity.class);
+			this.startActivity(intent);
+		} else if (item.getTitle().equals(getString(R.string.achievements))) {
+			Intent intent = new Intent(this, AchievementsActivity.class);
 			this.startActivity(intent);
 		} else {
 			AlertDialog.Builder alert = new AlertDialog.Builder(this);  
@@ -114,8 +122,7 @@ public class Main extends Activity {
 			alert.setPositiveButton("Send",
 					new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int whichButton) {
-							loadingBar.show();
-							submitScore(input.getText().toString(), lastStreak);
+							submitScore(input.getText().toString(), theState.getLastStreak());
 						}
 					});
 			  
@@ -134,10 +141,6 @@ public class Main extends Activity {
     private void showGameScreen() {
     	setContentView(R.layout.main);
     	
-    	if (loadingBar.isShowing()) {
-			loadingBar.dismiss();
-		}
-    	
         opt1 = (Button)findViewById(R.id.Button01);
         opt2 = (Button)findViewById(R.id.Button02);
         opt3 = (Button)findViewById(R.id.Button03);
@@ -145,18 +148,22 @@ public class Main extends Activity {
         opt2.setOnClickListener(buttonClicked);
         opt3.setOnClickListener(buttonClicked);
         
-        streak = 0;
-        lastStreak = 0;
+        theState.setLastStreak(0);
+        theState.setStreak(0);
+		
+        UserActionManager.openedApplication(theState);
         
-        ((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, streak));
+        ((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, theState.getStreak()));
     }
     
     @Override
     protected void onPause() {
-    	super.onPause();
+    	// Save user's achievements
+    	theState.save(this);
     	
     	// Do this so we don't keep playing music after the user exits
     	player.stop();
+    	super.onPause();
     }
     
     private Button.OnClickListener buttonClicked = new Button.OnClickListener() {
@@ -167,19 +174,28 @@ public class Main extends Activity {
 			
 			Button b = (Button)v;
 			if (b.getText().equals(correct)) {
-				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
-				answer.setImageResource(R.drawable.correct);
-				streak+=1;
-			}
-			else {
-				lastStreak = streak;
+				Achievement achievement = UserActionManager.correctAnswer(theState);
+
+//				FOR DEBUG PURPOSES
+//				if (achievement.isEmpty()) {
+//					achievement = UserActionManager.addNextAchievement(theState);
+//				}
+				
+				if (!achievement.isEmpty()) {
+					showAchievement(achievement);
+				}
 				
 				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
+				answer.setImageResource(R.drawable.correct);
+				Log.d(this.getClass().toString(), theState.getAchievements().toString());
+			}
+			else {
+				ImageView answer = (ImageView)Main.this.findViewById(R.id.answer);
 				answer.setImageResource(R.drawable.wrong);
-				streak = 0;
+				UserActionManager.wrongAnswer(theState);
 			}
 			
-			((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, streak));
+			((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, theState.getStreak()));
 			questionWasAnswered = true;
 			
 			mHandler.removeCallbacks(mUpdateTimeTask);
@@ -194,6 +210,20 @@ public class Main extends Activity {
 		getNewTrack();
 	}
 
+	protected void showAchievement(Achievement achievement) {
+		View layout = getLayoutInflater().inflate(R.layout.achivement_layout,
+		                               (ViewGroup) findViewById(R.id.achievement_layout_root));
+
+		ImageView image = (ImageView) layout.findViewById(R.id.achievement_image);
+		image.setImageResource(achievement.getIcon());
+
+		Toast toast = new Toast(getApplicationContext());
+		toast.setGravity(Gravity.TOP|Gravity.LEFT, 20, 20);
+		toast.setDuration(Toast.LENGTH_LONG);
+		toast.setView(layout);
+		toast.show();
+	}
+
 	protected void submitScore(String name, int streak) {
 		String appVersion;
     	ComponentName comp = new ComponentName(this, Main.class);
@@ -205,7 +235,7 @@ public class Main extends Activity {
 			appVersion = "0";
 		} 
     	
-		HttpPost post = new HttpPost("http://1.latest.vaskenmusic.appspot.com/vaskenmusicserver");
+		HttpPost post = new HttpPost("http://vaskenmusic.appspot.com/vaskenmusicserver");
 		post.setHeader("Content-type", "application/x-www-form-urlencoded");
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("data", 
@@ -229,10 +259,6 @@ public class Main extends Activity {
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
-					if (loadingBar.isShowing()) {
-						loadingBar.dismiss();
-					}
-					
 					Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
 				}
 			});
@@ -242,12 +268,7 @@ public class Main extends Activity {
 		new WebRequester().makeRequest(post, new RequestCallback() {
 			@Override
 			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-				Log.d(Main.class.toString(), "IS FINAL " + isFinal);
 				if (isFinal) {
-					if (loadingBar.isShowing()) {
-						loadingBar.dismiss();
-					}
-					
 					Log.d(Main.class.toString(), responseSoFar.toString());
 					
 					Intent intent = new Intent(theContext, HighScoresActivity.class);
@@ -412,11 +433,7 @@ public class Main extends Activity {
 				boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
 				boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
 				
-				if (!hasMobileConnection && !hasWifiConnection) {
-					if (loadingBar.isShowing()) {
-						loadingBar.dismiss();
-					}
-					
+				if (!hasMobileConnection && !hasWifiConnection) {					
 					runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
@@ -427,7 +444,6 @@ public class Main extends Activity {
 					return tracks;
 				}
 				
-				Log.d("------------------------------", "MAKE REQUEST");
 				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
 					@Override
 					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {

@@ -11,4 +11,21 @@
     <string name="best_ever">Best Ever</string>
     <string name="submit_score">Submit Score: %1$d</string>
     <string name="high_scores">High Scores</string>
+    <string name="achievements">Achievements</string>
+    
+    <string name="ach1">2 in a Row</string>
+    <string name="ach2">5 in a Row</string>
+    <string name="ach3">10 in a Row</string>
+    <string name="ach4">15 in a Row</string>
+    <string name="ach5">20 in a Row</string>
+    <string name="ach6">30 in a Row</string>
+    <string name="ach7">50 in a Row</string>
+    <string name="ach8">75 in a Row</string>
+    <string name="ach9">100 in a Row</string>
+    <string name="ach10">200 in a Row</string>
+    <string name="ach11">300 in a Row</string>
+    <string name="ach12">2 Days in a Row</string>
+    <string name="ach13">2 Weeks in a Row</string>
+    <string name="ach14">7 Days Straight</string>
+    <string name="ach15">Consecutive Months</string>
 </resources>

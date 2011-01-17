@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	   
+	<RelativeLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+    
+		<ImageView
+			android:id="@+id/background"
+			android:src="@drawable/background_ach"
+			android:layout_alignParentTop="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent">
+		</ImageView>
+			
+		<TableLayout
+			android:id="@+id/achievements"
+			android:layout_alignTop="@id/background"
+			android:layout_marginTop="60px"
+			android:padding="10px"
+			android:stretchColumns="0, 1, 2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TableRow>
+				<ImageView
+					android:src="@drawable/ach_locked"
+				    android:layout_gravity="center_horizontal"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" />
+				<ImageView
+					android:src="@drawable/ach_locked"
+					android:layout_gravity="center_horizontal"
+				    android:layout_width="wrap_content"
+				   	android:layout_height="wrap_content" />
+				<ImageView
+					android:src="@drawable/ach_locked"
+				    android:layout_gravity="center_horizontal"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" />
+			</TableRow>	    
+			<TableRow>
+				<TextView
+					android:text="@string/ach1"
+				    android:gravity="center_horizontal"
+				   	android:layout_width="wrap_content"
+				   	android:layout_height="wrap_content" />
+				<TextView
+					android:text="@string/ach2"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach12"
+			    	android:textSize="12px"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+			    
+		    <TableRow>
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    <TableRow>
+		        <TextView
+			    	android:text="@string/ach3"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach4"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach5"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    
+		    <TableRow>
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    <TableRow>
+		        <TextView
+			    	android:text="@string/ach13"
+			    	android:gravity="center_horizontal"
+			    	android:textSize="12px"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach6"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach7"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    
+		    <TableRow>
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    <TableRow>
+		        <TextView
+			    	android:text="@string/ach8"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach9"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach14"
+			    	android:gravity="center_horizontal"
+			    	android:textSize="12px"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    
+		    <TableRow>
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <ImageView
+			    	android:src="@drawable/ach_locked"
+			    	android:layout_gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		    <TableRow>
+		        <TextView
+			    	android:text="@string/ach10"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach15"
+			    	android:gravity="center_horizontal"
+			    	android:textSize="12px"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		        <TextView
+			    	android:text="@string/ach11"
+			    	android:gravity="center_horizontal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content" />
+		    </TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</ScrollView>

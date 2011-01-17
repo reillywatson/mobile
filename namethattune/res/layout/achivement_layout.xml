@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/achievement_layout_root"
+              android:orientation="vertical"
+              android:padding="10px"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              >
+    <ImageView android:id="@+id/achievement_image"
+    		   android:src="@drawable/icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+</LinearLayout>
