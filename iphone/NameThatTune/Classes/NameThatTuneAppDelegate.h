@@ -13,10 +13,12 @@
 @interface NameThatTuneAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     MainViewController *mainViewController;
+	NSArray *trackEntries;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet MainViewController *mainViewController;
+@property (nonatomic, retain) NSArray *trackEntries;
 
 @end
 

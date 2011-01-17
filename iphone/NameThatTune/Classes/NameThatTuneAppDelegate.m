@@ -14,13 +14,14 @@
 
 @synthesize window;
 @synthesize mainViewController;
+@synthesize trackEntries;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+    trackEntries = nil;
     srandom(time(NULL));
     // Override point for customization after application launch.  
 

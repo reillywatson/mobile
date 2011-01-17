@@ -7,24 +7,24 @@
 //
 
 #import "SongRetrievalOperation.h"
-#import "PreviewURLProvider.h"
-#import "AudioStreamer.h"
+#import "NameThatTuneAppDelegate.h"
 
 @implementation SongRetrievalOperation
 
 -(void)getRandomTracks {
 	
-	NSArray *entries = nil;
-	
-	if (entries == nil) {
-		
-		NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=400/explicit=true/json"]];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/sf=143441/limit=400/explicit=true/json"]];
 
-		NSError *error;
-		NSString *response = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error] encoding:NSUTF8StringEncoding];
-		NSDictionary *parsedJSON = [json objectWithString:response];
-		entries = [[parsedJSON objectForKey:@"feed"] objectForKey:@"entry"];
+	NSError *error = nil;
+	NSString *response = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error] encoding:NSUTF8StringEncoding];
+	if (error != nil) {
+		NSLog(@"ERROR retrieving tracklist: %@", error);
 	}
+	NSDictionary *parsedJSON = [json objectWithString:response];
+	NSArray *entries = [[parsedJSON objectForKey:@"feed"] objectForKey:@"entry"];
+	
+	[((NameThatTuneAppDelegate*)[[UIApplication sharedApplication] delegate]) setTrackEntries:entries];
+
 	int numEntries = [delegate entriesToReturn];
 	NSMutableArray *returnedEntries = [NSMutableArray new];
 	while ([returnedEntries count] < numEntries) {

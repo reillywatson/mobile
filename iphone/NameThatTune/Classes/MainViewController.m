@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "SongRetrievalOperation.h"
 #import "AudioStreamer.h"
+#include "NameThatTuneAppDelegate.h"
 
 @interface MainViewController (Private)
 -(void)newRound;
@@ -58,7 +59,6 @@
 		[trackNames addObject:title];
 	}
 	_tracks = trackNames;
-	[tracks release];
 }
 
 -(void)updateTime {
@@ -114,8 +114,16 @@
 -(void)newRound {
 	NSLog(@"NUM CORRECT: %d", _numCorrect);
 	[self.numCorrectLabel setText:[NSString stringWithFormat:@"%d in a row", _numCorrect]];
-	[_opQueue addOperation:[[SongRetrievalOperation alloc] initWithDelegate:self]];
 	[self.timerLabel setHidden:YES];
+	NameThatTuneAppDelegate *app = (NameThatTuneAppDelegate *)[[UIApplication sharedApplication] delegate];
+	if (app.trackEntries == nil) {
+		NSLog(@"Adding operation!");
+		[_opQueue addOperation:[[SongRetrievalOperation alloc] initWithDelegate:self]];
+	}
+	else {
+	//	NSLog(@"track entries from app delegate: %@", app.trackEntries);
+		[self trackListReady:app.trackEntries];
+	}
 }
 
 -(void)showResultIndicator:(BOOL)success {
