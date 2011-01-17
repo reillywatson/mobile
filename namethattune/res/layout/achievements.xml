@@ -10,7 +10,7 @@
     
 		<ImageView
 			android:id="@+id/background"
-			android:src="@drawable/background_ach"
+			android:src="@drawable/bg_info"
 			android:layout_alignParentTop="true"
 			android:layout_width="fill_parent" 
 			android:layout_height="fill_parent">

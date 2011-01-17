@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.namethattune"
     android:orientation="vertical"
     android:background="@color/black"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
+    <!-- Place an AdMob ad at the bottom of the screen. -->
+    <!-- It has white text on a black background. -->
+    <com.admob.android.ads.AdView
+          android:id="@+id/ad" 
+          app:backgroundColor="#000000"
+          app:primaryTextColor="#FFFFFF"
+          app:secondaryTextColor="#CCCCCC"
+          app:keywords="Name That Tune: Rock Music"
+          android:layout_alignParentBottom="true"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+    />
+    
     <ImageView
 		android:id="@+id/header"
     	android:src="@drawable/border"
-    	android:layout_marginTop="10px"
     	android:layout_alignParentTop="true"
     	android:layout_width="wrap_content" 
 		android:layout_height="wrap_content">
@@ -16,9 +29,9 @@
  	
     <ImageView
     	android:id="@+id/background"
-    	android:src="@drawable/background2"
-		android:layout_marginBottom="2px"
-    	android:layout_alignParentBottom="true"
+    	android:src="@drawable/bg_game"
+		android:layout_marginTop="5px"
+    	android:layout_above="@id/ad"
     	android:layout_width="wrap_content" 
 		android:layout_height="wrap_content">
 	</ImageView>
@@ -55,44 +68,6 @@
 			android:layout_height="wrap_content">
 		</TextView>
 	</RelativeLayout>
-	
-	<ImageView
-		android:id="@+id/result"
-    	android:src="@drawable/result"
-    	android:layout_centerHorizontal="true"
-    	android:layout_alignParentBottom="true"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
- 	
-    <ImageView
-    	android:id="@+id/answer"
-    	android:layout_centerHorizontal="true"
-    	android:layout_above="@id/result"
-    	android:layout_marginBottom="10px"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
-	
-	<TextView
-    	android:id="@+id/answerStreak"
-		android:textSize="20px"
-		android:text="@string/streak"
-		android:textColor="@color/white"
-	   	android:layout_centerHorizontal="true"
-		android:layout_alignParentBottom="true"
-		android:layout_marginBottom="10px"
-	   	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</TextView>
-	
-	<ImageView
-		android:id="@+id/footer"
-    	android:src="@drawable/border"
-    	android:layout_alignParentBottom="true"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
 
 	<Button 
 		android:id="@+id/Button01" 
@@ -129,7 +104,43 @@
 		android:focusable="true"
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content">
-	</Button>
+	</Button> 
+ 	
+    <ImageView
+    	android:id="@+id/answer"
+    	android:layout_centerHorizontal="true"
+    	android:layout_below="@id/Button03"
+    	android:layout_marginTop="10px"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>   
 	
+	<ImageView
+		android:id="@+id/result"
+    	android:src="@drawable/result"
+    	android:layout_centerHorizontal="true"
+		android:layout_alignBottom="@id/background"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
 	
+	<TextView
+    	android:id="@+id/answerStreak"
+		android:textSize="20px"
+		android:text="@string/streak"
+		android:textColor="@color/white"
+	   	android:layout_centerHorizontal="true"
+		android:layout_alignBottom="@id/background"
+		android:layout_marginBottom="10px"
+	   	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+	
+	<ImageView
+		android:id="@+id/footer"
+    	android:src="@drawable/border"
+		android:layout_above="@id/ad"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>	
 </RelativeLayout>
