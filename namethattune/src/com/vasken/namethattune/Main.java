@@ -20,12 +20,9 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
@@ -60,8 +57,8 @@ public class Main extends Activity {
 	private static int secondsLeftInTrack;
 	private boolean questionWasAnswered = false;
 	private boolean downloadInProgress = false;
-	private Context theContext;
 	
+	private Context theContext;	
 	private State theState;
     
     /** Called when the activity is first created. */
@@ -225,60 +222,57 @@ public class Main extends Activity {
 	}
 
 	protected void submitScore(String name, int streak) {
-		String appVersion;
-    	ComponentName comp = new ComponentName(this, Main.class);
-    	PackageInfo pinfo;
+		
+		String hashedRequest;
 		try {
-			pinfo = this.getPackageManager().getPackageInfo(comp.getPackageName(), 0);
-			appVersion = String.valueOf(pinfo.versionCode);
-		} catch (NameNotFoundException e1) {
-			appVersion = "0";
-		} 
-    	
-		HttpPost post = new HttpPost("http://vaskenmusic.appspot.com/vaskenmusicserver");
-		post.setHeader("Content-type", "application/x-www-form-urlencoded");
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("data", 
-        		"name=" + name +"-=-=-=-=-=" +
-        		"score="+ streak +"-=-=-=-=-=" +
-        		"genre="+getString(R.string.genre)+"-=-=-=-=-=" +
-        		"version="+appVersion));
-        
-        try {
-			post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
-		} catch (UnsupportedEncodingException e) {
-			Log.e(Main.class.toString(), "", e);
-			return;
-		}
-		
-		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
-		boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
-		
-		if (!hasMobileConnection && !hasWifiConnection) {
-			runOnUiThread(new Runnable() {
+			hashedRequest = UserActionManager.getHashedHighScoreRequest(name, theState, theContext);
+			
+			HttpPost post = new HttpPost("http://1.latest.vaskenmusic.appspot.com/vaskenmusicserver");
+			post.setHeader("Content-type", "application/x-www-form-urlencoded");
+			List<NameValuePair> params = new ArrayList<NameValuePair>();
+	        params.add(new BasicNameValuePair("data", hashedRequest));
+	        
+	        try {
+				post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
+			} catch (UnsupportedEncodingException e) {
+				Log.e(Main.class.toString(), "", e);
+				return;
+			}
+			
+			ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+			boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
+			boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
+			
+			if (!hasMobileConnection && !hasWifiConnection) {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
+					}
+				});
+				return;
+			}
+
+			new WebRequester().makeRequest(post, new RequestCallback() {
 				@Override
-				public void run() {
-					Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
+				public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+					if (isFinal) {
+						Log.d(Main.class.toString(), responseSoFar.toString());
+						
+						Intent intent = new Intent(theContext, HighScoresActivity.class);
+						theContext.startActivity(intent);
+						
+						return true;
+					}
+					return false;
 				}
 			});
-			return;
+		} catch (Exception e1) {
+			Toast.makeText(theContext, "There was an error submitting your score.", Toast.LENGTH_LONG).show();
+			
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
-
-		new WebRequester().makeRequest(post, new RequestCallback() {
-			@Override
-			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-				if (isFinal) {
-					Log.d(Main.class.toString(), responseSoFar.toString());
-					
-					Intent intent = new Intent(theContext, HighScoresActivity.class);
-					theContext.startActivity(intent);
-					
-					return true;
-				}
-				return false;
-			}
-		});
 	}
 
 	void getNewTrack() {

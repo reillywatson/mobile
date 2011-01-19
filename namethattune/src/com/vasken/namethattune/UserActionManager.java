@@ -2,7 +2,15 @@ package com.vasken.namethattune;
 
 import java.util.Calendar;
 
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.util.Log;
+
 public class UserActionManager {
+
+	private static final String ENCRYPTION_SEED = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
 
 	public static Achievement correctAnswer(State theState) {
 		theState.setStreak(theState.getStreak() + 1);
@@ -186,4 +194,27 @@ public class UserActionManager {
 		return result;
 	}
 
+	public static String getHashedHighScoreRequest(String name, State theState, Context context) throws Exception {
+		String appVersion;
+    	ComponentName comp = new ComponentName(context, Main.class);
+    	PackageInfo pinfo;
+		try {
+			pinfo = context.getPackageManager().getPackageInfo(comp.getPackageName(), 0);
+			appVersion = String.valueOf(pinfo.versionCode);
+		} catch (NameNotFoundException e1) {
+			appVersion = "0";
+		} 
+    	
+		String unhashed = "name=" + name +"-=-=-=-=-=" +
+				 "score="+ theState.getStreak() +"-=-=-=-=-=" +
+				 "genre="+ context.getString(R.string.genre)+"-=-=-=-=-=" +
+				 "version="+appVersion;
+		
+		String hash = Crypto.createHash(ENCRYPTION_SEED, unhashed);
+		String hashed = unhashed + "-=-=-=-=-="
+					+ "id=" + hash;
+
+		Log.d("------------", hashed);
+		return hashed;
+	}
 }

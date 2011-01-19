@@ -6,8 +6,6 @@ import java.util.List;
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 
-import sun.nio.cs.HistoricallyNamedCharset;
-
 import com.google.appengine.repackaged.com.google.common.base.Pair;
 import com.vasken.music.server.model.HighScoreEntry;
 
@@ -17,13 +15,14 @@ public class HighScoreManager {
 	public static final String DECRYPTION_FAILED_EXCEPTION = "DECRYPTION_FAILED_EXCEPTION";
 	public static final String MISSING_DATA_EXCEPTION = "MISSING_DATA_EXCEPTION";
 	
+	private static final String HASH = "id=";
 	private static final String NAME = "name=";
 	private static final String SCORE = "score=";
 	private static final String GENRE = "genre=";
 	private static final String VERSION = "version=";
 	private static final String ITEM_DIVIDER = "-=-=-=-=-=";
 
-	private static final String secretKey = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
+	private static final String ENCRYPTION_SEED = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
 	
 	private static HighScoreManager INSTANCE = null;
 
@@ -34,26 +33,34 @@ public class HighScoreManager {
 		return INSTANCE;
 	}
 	
-	public HighScoreEntry generateHighScoreEntry(String encryptedData) throws Exception {
-		if (encryptedData == null || encryptedData.isEmpty()) {
+	public HighScoreEntry generateHighScoreEntry(String request) throws Exception {
+		if (request == null || request.isEmpty()) {
 			throw new Exception(MISSING_DATA_EXCEPTION);
 		}
 		
-		String unencryptedData = decrypt(encryptedData);
-		
-		if (!unencryptedData.contains(NAME) 
-			|| !unencryptedData.contains(SCORE) 
-			|| !unencryptedData.contains(GENRE) 
-			|| !unencryptedData.contains(VERSION)) {
+		if (!request.contains(NAME) 
+			|| !request.contains(SCORE) 
+			|| !request.contains(GENRE)
+			|| !request.contains(HASH) 
+			|| !request.contains(VERSION)) {
 			throw new Exception(INVALID_DATA_EXCEPTION);
 		}
 		
-		String[] dataArray = unencryptedData.split(ITEM_DIVIDER);
+		String[] dataArray = request.split(ITEM_DIVIDER);
 		String name = dataArray[0].trim().replace(NAME, "");
 		int score = Integer.parseInt(dataArray[1].trim().replace(SCORE, ""));
 		String genre = dataArray[2].trim().replace(GENRE, "");
 		String version = dataArray[3].trim().replace(VERSION, "");
+		String base64Hash = dataArray[4].trim().replace(HASH, "");
 		Date today = new Date();
+	
+		String justTheData = request.replace(ITEM_DIVIDER + dataArray[4], "");
+		
+		try {
+			Crypto.verifyHash(ENCRYPTION_SEED, justTheData, base64Hash);
+		} catch (Exception e) {
+			throw new Exception(DECRYPTION_FAILED_EXCEPTION);
+		}
 
 		return new HighScoreEntry(name, score, genre, version, today);
 	}
@@ -118,13 +125,6 @@ public class HighScoreManager {
         } finally {
             pm.close();
         }
-	}
-
-	private String decrypt(String encrypted) throws Exception{
-		if (encrypted.isEmpty()) {
-			throw new Exception(DECRYPTION_FAILED_EXCEPTION);
-		}
-		return encrypted;
 	}
 
 	@SuppressWarnings("unchecked")
