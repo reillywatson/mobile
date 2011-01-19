@@ -29,7 +29,8 @@
 	NSMutableArray *returnedEntries = [NSMutableArray new];
 	while ([returnedEntries count] < numEntries) {
 		NSDictionary *randomTrack = [entries randomElement];
-		[returnedEntries addObject:randomTrack];
+		if (![returnedEntries containsObject:randomTrack])
+			[returnedEntries addObject:randomTrack];
 	}
 	[delegate performSelectorOnMainThread:@selector(trackListReady:) withObject:returnedEntries waitUntilDone:NO];
 }

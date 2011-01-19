@@ -22,7 +22,13 @@
 		B410550112DD98E800F9E369 /* timer_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B41054FC12DD98E800F9E369 /* timer_bg.png */; };
 		B410550212DD98E800F9E369 /* timer_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = B41054FD12DD98E800F9E369 /* timer_cover.png */; };
 		B410550312DD98E800F9E369 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = B41054FE12DD98E800F9E369 /* wrong.png */; };
+		B42F506012E585F2008A54AA /* AlertPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = B42F505F12E585F2008A54AA /* AlertPrompt.m */; };
+		B433A6DC12E4E2BA00826F75 /* HighScoreSubmitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B433A6DB12E4E2BA00826F75 /* HighScoreSubmitOperation.m */; };
+		B433A6FE12E4E72100826F75 /* HighScoreRetrievalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B433A6FD12E4E72100826F75 /* HighScoreRetrievalOperation.m */; };
+		B433A72F12E4EDAA00826F75 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = B433A72E12E4EDAA00826F75 /* Score.m */; };
 		B436749912DDCCAE00355F92 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B436749812DDCCAE00355F92 /* icon.png */; };
+		B4426F2712E6A6890026D790 /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4426F2512E6A6890026D790 /* HighScoreViewController.m */; };
+		B4426F2812E6A6890026D790 /* HighScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4426F2612E6A6890026D790 /* HighScoreViewController.xib */; };
 		B459907D11FA39A4006A3944 /* FMCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = B459907611FA39A4006A3944 /* FMCallback.m */; };
 		B459907E11FA39A4006A3944 /* FMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B459907811FA39A4006A3944 /* FMEngine.m */; };
 		B459907F11FA39A4006A3944 /* FMEngineURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B459907A11FA39A4006A3944 /* FMEngineURLConnection.m */; };
@@ -103,7 +109,18 @@
 		B41054FC12DD98E800F9E369 /* timer_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_bg.png; sourceTree = "<group>"; };
 		B41054FD12DD98E800F9E369 /* timer_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_cover.png; sourceTree = "<group>"; };
 		B41054FE12DD98E800F9E369 /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.png; sourceTree = "<group>"; };
+		B42F505E12E585F2008A54AA /* AlertPrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertPrompt.h; sourceTree = "<group>"; };
+		B42F505F12E585F2008A54AA /* AlertPrompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertPrompt.m; sourceTree = "<group>"; };
+		B433A6DA12E4E2BA00826F75 /* HighScoreSubmitOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreSubmitOperation.h; sourceTree = "<group>"; };
+		B433A6DB12E4E2BA00826F75 /* HighScoreSubmitOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreSubmitOperation.m; sourceTree = "<group>"; };
+		B433A6FC12E4E72100826F75 /* HighScoreRetrievalOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreRetrievalOperation.h; sourceTree = "<group>"; };
+		B433A6FD12E4E72100826F75 /* HighScoreRetrievalOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreRetrievalOperation.m; sourceTree = "<group>"; };
+		B433A72D12E4EDAA00826F75 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		B433A72E12E4EDAA00826F75 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		B436749812DDCCAE00355F92 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B4426F2412E6A6890026D790 /* HighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
+		B4426F2512E6A6890026D790 /* HighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
+		B4426F2612E6A6890026D790 /* HighScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighScoreViewController.xib; sourceTree = "<group>"; };
 		B459907511FA39A4006A3944 /* FMCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMCallback.h; path = lastfmbindings/FMCallback.h; sourceTree = "<group>"; };
 		B459907611FA39A4006A3944 /* FMCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMCallback.m; path = lastfmbindings/FMCallback.m; sourceTree = "<group>"; };
 		B459907711FA39A4006A3944 /* FMEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMEngine.h; path = lastfmbindings/FMEngine.h; sourceTree = "<group>"; };
@@ -246,13 +263,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
+		281C6CD70DB2D82200F60ACC /* High Score View */ = {
 			isa = PBXGroup;
 			children = (
 				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
 				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+				B4426F2412E6A6890026D790 /* HighScoreViewController.h */,
+				B4426F2512E6A6890026D790 /* HighScoreViewController.m */,
+				B4426F2612E6A6890026D790 /* HighScoreViewController.xib */,
 			);
-			name = "Flipside View";
+			name = "High Score View";
 			sourceTree = "<group>";
 		};
 		289233A00DB2D0730083E9F9 /* Main View */ = {
@@ -267,6 +287,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				B45EE1A3127531610052CD55 /* Song.h */,
+				B45EE1A4127531610052CD55 /* Song.m */,
+				B433A6FC12E4E72100826F75 /* HighScoreRetrievalOperation.h */,
+				B433A6FD12E4E72100826F75 /* HighScoreRetrievalOperation.m */,
+				B433A6DA12E4E2BA00826F75 /* HighScoreSubmitOperation.h */,
+				B433A6DB12E4E2BA00826F75 /* HighScoreSubmitOperation.m */,
 				B459908B11FA3A17006A3944 /* SongRetrievalOperation.h */,
 				B459908C11FA3A17006A3944 /* SongRetrievalOperation.m */,
 				B45991A911FA447C006A3944 /* NSArray-Additions.h */,
@@ -284,7 +310,7 @@
 				B45990D211FA3BD8006A3944 /* JSON */,
 				B459907311FA3995006A3944 /* Last.FM Bindings */,
 				289233A00DB2D0730083E9F9 /* Main View */,
-				281C6CD70DB2D82200F60ACC /* Flipside View */,
+				281C6CD70DB2D82200F60ACC /* High Score View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -323,8 +349,10 @@
 				B459937611FABD25006A3944 /* QuickLook.framework */,
 				B459937811FABD25006A3944 /* StoreKit.framework */,
 				B459937A11FABD25006A3944 /* SystemConfiguration.framework */,
-				B45EE1A3127531610052CD55 /* Song.h */,
-				B45EE1A4127531610052CD55 /* Song.m */,
+				B433A72D12E4EDAA00826F75 /* Score.h */,
+				B433A72E12E4EDAA00826F75 /* Score.m */,
+				B42F505E12E585F2008A54AA /* AlertPrompt.h */,
+				B42F505F12E585F2008A54AA /* AlertPrompt.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -469,6 +497,7 @@
 				B410550212DD98E800F9E369 /* timer_cover.png in Resources */,
 				B410550312DD98E800F9E369 /* wrong.png in Resources */,
 				B436749912DDCCAE00355F92 /* icon.png in Resources */,
+				B4426F2812E6A6890026D790 /* HighScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +530,11 @@
 				B459928211FA4D61006A3944 /* RegexKitLite.m in Sources */,
 				B459930811FA86D1006A3944 /* AudioStreamer.m in Sources */,
 				B45EE1A5127531610052CD55 /* Song.m in Sources */,
+				B433A6DC12E4E2BA00826F75 /* HighScoreSubmitOperation.m in Sources */,
+				B433A6FE12E4E72100826F75 /* HighScoreRetrievalOperation.m in Sources */,
+				B433A72F12E4EDAA00826F75 /* Score.m in Sources */,
+				B42F506012E585F2008A54AA /* AlertPrompt.m in Sources */,
+				B4426F2712E6A6890026D790 /* HighScoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

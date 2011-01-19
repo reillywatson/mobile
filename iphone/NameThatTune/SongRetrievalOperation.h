@@ -13,6 +13,8 @@
 @protocol TrackInfoDelegate
 -(void)trackListReady:(NSArray *)tracks;
 -(int)entriesToReturn;
+@optional
+-(void)error:(NSError *)error;
 @end
 
 @interface SongRetrievalOperation : NSOperation {
@@ -20,6 +22,6 @@
 	NSObject<TrackInfoDelegate> *delegate;
 }
 
--(id)initWithDelegate:(id <TrackInfoDelegate>)myDelegate;
+-(id)initWithDelegate:(NSObject <TrackInfoDelegate> *)myDelegate;
 
 @end
