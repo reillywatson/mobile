@@ -7,8 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import "HighScoreViewController.h"
 #import "SongRetrievalOperation.h"
 #import "AudioStreamer.h"
+#import "AlertPrompt.h"
 #include "NameThatTuneAppDelegate.h"
 
 @interface MainViewController (Private)
@@ -59,13 +61,14 @@
 		[trackNames addObject:title];
 	}
 	_tracks = trackNames;
+	[tracks release];
 }
 
 -(void)updateTime {
 	NSLog(@"UPDATE TIME STREAMER STATE: %d", [_streamer state]);
 	int time = [[self.timerLabel text] intValue];
 	if (time == 0) {
-		// TODO: do something awesome like tell the user time is up
+		[_streamer stop];
 		return;
 	}
 	time = time - 1;
@@ -121,8 +124,13 @@
 		[_opQueue addOperation:[[SongRetrievalOperation alloc] initWithDelegate:self]];
 	}
 	else {
-	//	NSLog(@"track entries from app delegate: %@", app.trackEntries);
-		[self trackListReady:app.trackEntries];
+		NSMutableArray *returnedEntries = [NSMutableArray new];
+		while ([returnedEntries count] < [self entriesToReturn]) {
+			NSDictionary *randomTrack = [app.trackEntries randomElement];
+			if (![returnedEntries containsObject:randomTrack])
+				[returnedEntries addObject:randomTrack];
+		}
+		[self trackListReady:returnedEntries];
 	}
 }
 
@@ -136,6 +144,49 @@
 	[UIView commitAnimations];
 }
 
+-(void)highScoreSubmissionError:(NSError *)error {
+}
+
+-(void)highScoreSubmissionSuccessful {
+}
+
+-(void)submitHighScore {
+	AlertPrompt *prompt = [AlertPrompt alloc];
+    prompt = [prompt initWithTitle:@"" message:@"Enter your name" delegate:self cancelButtonTitle:@"Cancel" okButtonTitle:@"Okay"];
+    [prompt show];
+    [prompt release];
+}
+
+-(void)showHighScores {
+	HighScoreViewController *controller = [[HighScoreViewController alloc] initWithNibName:@"HighScoreViewController" bundle:nil];
+	
+	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+	[self presentModalViewController:controller animated:YES];
+	
+	[controller release];
+	
+}
+
+-(void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSUInteger)index {
+	if ([alertView.title isEqualToString:@"Game over"]) {
+		if (index == 0) {
+			_numCorrect = 0;
+			[self newRound];
+		}
+		else {
+			[self submitHighScore];
+		}
+	}
+	else if ([alertView.message isEqualToString:@"Enter your name"]) {
+		NSString *name = ((AlertPrompt *)alertView).enteredText;
+		HighScoreSubmitOperation *submitOp = [HighScoreSubmitOperation alloc];
+		[submitOp initWithDelegate:self score:_numCorrect userName:name genre:@"21"];
+		[_opQueue addOperation:submitOp];
+		[self showHighScores];
+	}
+}
+
+
 -(void)answerSelected:(int)answer {
 	NSArray *buttons = [NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil];
 	for (UIButton *button in buttons) {
@@ -144,12 +195,13 @@
 	if ([[[buttons objectAtIndex:answer] titleForState:UIControlStateNormal] isEqualToString:[_tracks objectAtIndex:0]]) {
 		_numCorrect++;
 		[self showResultIndicator:YES];
+		[self newRound];
 	}
 	else {
-		_numCorrect = 0;
 		[self showResultIndicator:NO];
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game over" message:@"Submit score?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+		[alert show];
 	}
-	[self newRound];
 }
 
 -(IBAction)button1Pressed {
