@@ -26,7 +26,7 @@ public class HighScoresActivity extends Activity {
 		
 		setContentView(R.layout.highscores);
 		
-		HttpGet get = new HttpGet("http://1.latest.vaskenmusic.appspot.com/vaskenmusicserver?genre="+getString(R.string.genre));
+		HttpGet get = new HttpGet("http://vaskenmusic.appspot.com/vaskenmusicserver?genre="+getString(R.string.genre));
 		
 		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();

@@ -70,7 +70,7 @@ public class Main extends Activity {
         setVolumeControlStream(AudioManager.STREAM_MUSIC); 
 
 //		FOR DEBUG PURPOSES
-//      SharedPreferences preferences = this.getSharedPreferences("PREFERENCES_NAME", Context.MODE_PRIVATE);
+//		SharedPreferences preferences = this.getSharedPreferences("PREFERENCES_NAME", Context.MODE_PRIVATE);
 //		Editor editor = preferences.edit();
 //		editor.clear();
 //		editor.commit();
@@ -173,7 +173,6 @@ public class Main extends Activity {
 			if (b.getText().equals(correct)) {
 				Achievement achievement = UserActionManager.correctAnswer(theState);
 
-//				FOR DEBUG PURPOSES
 //				if (achievement.isEmpty()) {
 //					achievement = UserActionManager.addNextAchievement(theState);
 //				}
@@ -227,7 +226,7 @@ public class Main extends Activity {
 		try {
 			hashedRequest = UserActionManager.getHashedHighScoreRequest(name, theState, theContext);
 			
-			HttpPost post = new HttpPost("http://1.latest.vaskenmusic.appspot.com/vaskenmusicserver");
+			HttpPost post = new HttpPost("http://vaskenmusic.appspot.com/vaskenmusicserver");
 			post.setHeader("Content-type", "application/x-www-form-urlencoded");
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 	        params.add(new BasicNameValuePair("data", hashedRequest));
