@@ -1,6 +1,11 @@
 package com.vasken.namethattune;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -11,6 +16,11 @@ import android.util.Log;
 public class UserActionManager {
 
 	private static final String ENCRYPTION_SEED = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
+	private static final String PARAM_NAME = "name";
+	private static final String PARAM_SCORE = "score";
+	private static final String PARAM_GENRE = "genre";
+	private static final String PARAM_VERSION = "version";
+	private static final String PARAM_HASH = "id";
 
 	public static Achievement correctAnswer(State theState) {
 		theState.setStreak(theState.getStreak() + 1);
@@ -194,7 +204,9 @@ public class UserActionManager {
 		return result;
 	}
 
-	public static String getHashedHighScoreRequest(String name, State theState, Context context) throws Exception {
+	public static List<NameValuePair> getHashedParameters(String name, State theState, Context context) throws Exception {
+		String genre = context.getString(R.string.genre);
+		String score = String.valueOf(theState.getLastStreak());
 		String appVersion;
     	ComponentName comp = new ComponentName(context, Main.class);
     	PackageInfo pinfo;
@@ -203,18 +215,19 @@ public class UserActionManager {
 			appVersion = String.valueOf(pinfo.versionCode);
 		} catch (NameNotFoundException e1) {
 			appVersion = "0";
-		} 
-    	
-		String unhashed = "name=" + name +"-=-=-=-=-=" +
-				 "score="+ theState.getStreak() +"-=-=-=-=-=" +
-				 "genre="+ context.getString(R.string.genre)+"-=-=-=-=-=" +
-				 "version="+appVersion;
-		
-		String hash = Crypto.createHash(ENCRYPTION_SEED, unhashed);
-		String hashed = unhashed + "-=-=-=-=-="
-					+ "id=" + hash;
+		}
 
-		Log.d("------------", hashed);
-		return hashed;
+		String unhashedValues = name + score + genre + appVersion;
+		String hash = Crypto.createHash(ENCRYPTION_SEED, unhashedValues);
+		
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair(PARAM_NAME, name));
+        params.add(new BasicNameValuePair(PARAM_SCORE, score));
+        params.add(new BasicNameValuePair(PARAM_GENRE, genre));
+        params.add(new BasicNameValuePair(PARAM_VERSION, appVersion));
+        params.add(new BasicNameValuePair(PARAM_HASH, hash));
+        
+        Log.d("-------", params.toString());
+        return params;
 	}
 }

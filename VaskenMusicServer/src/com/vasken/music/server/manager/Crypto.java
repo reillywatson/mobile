@@ -17,7 +17,7 @@ public class Crypto {
         digest.update(firstHash);  
         byte finalHash[] = digest.digest();  
         
-        if (!Base64.encodeBytes(finalHash).equals(base64Hash))
+        if (!Base64.encodeBytes(finalHash, Base64.URL_SAFE).equals(base64Hash))
         	throw new Exception("Decryption failed");
         
         return true;

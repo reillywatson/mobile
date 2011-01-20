@@ -1,7 +1,6 @@
 package com.vasken.namethattune;
 
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,7 +11,6 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -221,16 +219,12 @@ public class Main extends Activity {
 	}
 
 	protected void submitScore(String name, int streak) {
-		
-		String hashedRequest;
 		try {
-			hashedRequest = UserActionManager.getHashedHighScoreRequest(name, theState, theContext);
-			
+			List<NameValuePair> params = UserActionManager.getHashedParameters(name, theState, theContext);
+	       			
 			HttpPost post = new HttpPost("http://vaskenmusic.appspot.com/vaskenmusicserver");
 			post.setHeader("Content-type", "application/x-www-form-urlencoded");
-			List<NameValuePair> params = new ArrayList<NameValuePair>();
-	        params.add(new BasicNameValuePair("data", hashedRequest));
-	        
+			 
 	        try {
 				post.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 			} catch (UnsupportedEncodingException e) {

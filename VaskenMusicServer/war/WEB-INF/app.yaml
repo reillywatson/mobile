@@ -9,6 +9,7 @@ handlers:
 - url: /tasks/cleanupJob
   servlet: com.vasken.music.server.CronServlet
   login: admin
-  
+
 welcome_files:
   - index.html
+  

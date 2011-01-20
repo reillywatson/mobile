@@ -17,6 +17,6 @@ public class Crypto {
         digest.update(firstHash);  
         byte finalHash[] = digest.digest();  
         
-        return Base64.encodeBytes(finalHash);
+        return Base64.encodeBytes(finalHash, Base64.URL_SAFE);
 	}
 }

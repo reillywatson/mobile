@@ -1,5 +1,6 @@
 package com.vasken.music.server.manager;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -15,13 +16,6 @@ public class HighScoreManager {
 	public static final String DECRYPTION_FAILED_EXCEPTION = "DECRYPTION_FAILED_EXCEPTION";
 	public static final String MISSING_DATA_EXCEPTION = "MISSING_DATA_EXCEPTION";
 	
-	private static final String HASH = "id=";
-	private static final String NAME = "name=";
-	private static final String SCORE = "score=";
-	private static final String GENRE = "genre=";
-	private static final String VERSION = "version=";
-	private static final String ITEM_DIVIDER = "-=-=-=-=-=";
-
 	private static final String ENCRYPTION_SEED = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
 	
 	private static HighScoreManager INSTANCE = null;
@@ -33,28 +27,22 @@ public class HighScoreManager {
 		return INSTANCE;
 	}
 	
-	public HighScoreEntry generateHighScoreEntry(String request) throws Exception {
-		if (request == null || request.isEmpty()) {
-			throw new Exception(MISSING_DATA_EXCEPTION);
-		}
-		
-		if (!request.contains(NAME) 
-			|| !request.contains(SCORE) 
-			|| !request.contains(GENRE)
-			|| !request.contains(HASH) 
-			|| !request.contains(VERSION)) {
+	public HighScoreEntry generateHighScoreEntry(String name, String score, String genre, String version, String base64Hash) throws Exception {
+		if (name == null || name.isEmpty()
+			|| score == null || score.isEmpty() 
+			|| genre == null || genre.isEmpty()
+			|| version == null || version.isEmpty() 
+			|| base64Hash == null || base64Hash.isEmpty()) {
 			throw new Exception(INVALID_DATA_EXCEPTION);
 		}
-		
-		String[] dataArray = request.split(ITEM_DIVIDER);
-		String name = dataArray[0].trim().replace(NAME, "");
-		int score = Integer.parseInt(dataArray[1].trim().replace(SCORE, ""));
-		String genre = dataArray[2].trim().replace(GENRE, "");
-		String version = dataArray[3].trim().replace(VERSION, "");
-		String base64Hash = dataArray[4].trim().replace(HASH, "");
-		Date today = new Date();
+		Calendar rightNow = Calendar.getInstance();
+		rightNow.set(Calendar.HOUR, 0);
+		rightNow.set(Calendar.MINUTE, 0);
+		rightNow.set(Calendar.SECOND, 0);
+		rightNow.set(Calendar.MILLISECOND, 0);
+		Date today = rightNow.getTime();
 	
-		String justTheData = request.replace(ITEM_DIVIDER + dataArray[4], "");
+		String justTheData = name + score + genre + version;
 		
 		try {
 			Crypto.verifyHash(ENCRYPTION_SEED, justTheData, base64Hash);
@@ -62,7 +50,7 @@ public class HighScoreManager {
 			throw new Exception(DECRYPTION_FAILED_EXCEPTION);
 		}
 
-		return new HighScoreEntry(name, score, genre, version, today);
+		return new HighScoreEntry(name, Integer.valueOf(score), genre, version, today);
 	}
 	
 	public void checkIfHighScore(HighScoreEntry entry) {
@@ -70,12 +58,12 @@ public class HighScoreManager {
 		
 		List<HighScoreEntry> today = highScores.first;
 	    if (today.size() < 5 || Integer.valueOf(today.get(today.size()-1).getScore()) < Integer.valueOf(entry.getScore())) {
-	    	entry.setHighScoreEver(true);
+	    	entry.setHighScoreToday(true);
 	    }
 
 		List<HighScoreEntry> allTime = highScores.second;
 	    if (allTime.size() < 5 || Integer.valueOf(allTime.get(allTime.size()-1).getScore()) < Integer.valueOf(entry.getScore())) {
-	    	entry.setHighScoreToday(true);
+	    	entry.setHighScoreEver(true);
 	    }
 	}
 	
@@ -98,6 +86,14 @@ public class HighScoreManager {
 		}
 	    allTimeQuery.closeAll();
 
+
+		Calendar rightNow = Calendar.getInstance();
+		rightNow.set(Calendar.HOUR, 0);
+		rightNow.set(Calendar.MINUTE, 0);
+		rightNow.set(Calendar.SECOND, 0);
+		rightNow.set(Calendar.MILLISECOND, 0);
+		Date today = rightNow.getTime();
+		
 	    List<HighScoreEntry> todayHighScores;
 		Query todayQuery = pm.newQuery(HighScoreEntry.class);
 		todayQuery.setOrdering("score desc");
@@ -106,11 +102,11 @@ public class HighScoreManager {
 		if (genre != null) {
 			todayQuery.setFilter("date == dateParam && genre == genreParam");
 			todayQuery.declareParameters("String genreParam, Date dateParam");
-		    todayHighScores = (List<HighScoreEntry>) todayQuery.execute(genre, new Date());
+		    todayHighScores = (List<HighScoreEntry>) todayQuery.execute(genre, today);
 		} else {
 			todayQuery.setFilter("date == dateParam");
 			todayQuery.declareParameters("Date dateParam");
-			todayHighScores = (List<HighScoreEntry>) todayQuery.execute(new Date());
+			todayHighScores = (List<HighScoreEntry>) todayQuery.execute(today);
 		}
 	    todayQuery.closeAll();
 	    

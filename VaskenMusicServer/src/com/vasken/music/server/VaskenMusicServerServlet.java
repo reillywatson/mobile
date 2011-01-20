@@ -15,8 +15,11 @@ import com.vasken.music.server.model.HighScoreEntry;
 @SuppressWarnings("serial")
 public class VaskenMusicServerServlet extends HttpServlet {
 
-	private static final String DATA = "data";
+	private static final String NAME = "name";
+	private static final String SCORE = "score";
 	private static final String GENRE = "genre";
+	private static final String VERSION = "version";
+	private static final String HASH = "id";
 	
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
@@ -38,7 +41,12 @@ public class VaskenMusicServerServlet extends HttpServlet {
 		try {
 			HighScoreManager theManager = HighScoreManager.sharedInstace();
 			
-			HighScoreEntry entry = theManager.generateHighScoreEntry(req.getParameter(DATA));
+			String name = req.getParameter(NAME);
+			String score = req.getParameter(SCORE);
+			String genre = req.getParameter(GENRE);
+			String version = req.getParameter(VERSION);
+			String hash = req.getParameter(HASH);
+			HighScoreEntry entry = theManager.generateHighScoreEntry(name, score, genre, version, hash);
 
 			theManager.checkIfHighScore(entry);
 			
