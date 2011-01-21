@@ -21,9 +21,10 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
@@ -104,8 +105,7 @@ public class Main extends Activity {
 			Intent intent = new Intent(this, AchievementsActivity.class);
 			this.startActivity(intent);
 		} else {
-			AlertDialog.Builder alert = new AlertDialog.Builder(this);  
-			alert.setTitle("High Score Entry");  
+			AlertDialog.Builder alert = new AlertDialog.Builder(this);
 			  
 			// Set an EditText view to get user input   
 			final EditText input = new EditText(this);
@@ -113,15 +113,16 @@ public class Main extends Activity {
 			input.setSingleLine(true);
 			input.setHint(R.string.enter_name);
 			alert.setView(input);
-			  
-			alert.setPositiveButton("Send",
+
+			alert.setIcon(R.drawable.dialog);
+			alert.setPositiveButton(R.string.submit_dialog_send,
 					new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int whichButton) {
 							submitScore(input.getText().toString(), theState.getLastStreak());
 						}
 					});
-			  
-			alert.setNegativeButton("Cancel",
+
+			alert.setNegativeButton(R.string.submit_dialog_cancel,
 					new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int whichButton) {
 
@@ -146,7 +147,10 @@ public class Main extends Activity {
         theState.setLastStreak(0);
         theState.setStreak(0);
 		
-        UserActionManager.openedApplication(theState);
+        Achievement achievement = UserActionManager.openedApplication(theState);
+		if (!achievement.isEmpty()) {
+			showAchievement(achievement);
+		}
         
         ((TextView)findViewById(R.id.answerStreak)).setText(getString(R.string.streak, theState.getStreak()));
     }
@@ -170,11 +174,9 @@ public class Main extends Activity {
 			Button b = (Button)v;
 			if (b.getText().equals(correct)) {
 				Achievement achievement = UserActionManager.correctAnswer(theState);
-
 //				if (achievement.isEmpty()) {
 //					achievement = UserActionManager.addNextAchievement(theState);
 //				}
-				
 				if (!achievement.isEmpty()) {
 					showAchievement(achievement);
 				}
@@ -231,26 +233,14 @@ public class Main extends Activity {
 				Log.e(Main.class.toString(), "", e);
 				return;
 			}
-			
-			ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-			boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
-			boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
-			
-			if (!hasMobileConnection && !hasWifiConnection) {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						Toast.makeText(theContext, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
-					}
-				});
-				return;
-			}
 
 			new WebRequester().makeRequest(post, new RequestCallback() {
 				@Override
 				public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 					if (isFinal) {
 						Log.d(Main.class.toString(), responseSoFar.toString());
+						
+						theState.setLastStreak(0);
 						
 						Intent intent = new Intent(theContext, HighScoresActivity.class);
 						theContext.startActivity(intent);
@@ -261,7 +251,7 @@ public class Main extends Activity {
 				}
 			});
 		} catch (Exception e1) {
-			Toast.makeText(theContext, "There was an error submitting your score.", Toast.LENGTH_LONG).show();
+			Toast.makeText(theContext, R.string.error_cant_submit_score, Toast.LENGTH_LONG).show();
 			
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -415,36 +405,25 @@ public class Main extends Activity {
 					parseJSON(json);
 				} catch (JSONException e) {}
 			}
-			else {
-				ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-				boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
-				boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
-				
-				if (!hasMobileConnection && !hasWifiConnection) {					
-					runOnUiThread(new Runnable() {
+			else {				
+				try {
+					new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
 						@Override
-						public void run() {
-							Toast.makeText(theContext, "The application needs an internet connection, to work", Toast.LENGTH_LONG).show();
-							finish();
+						public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+							if (isFinal) {
+								try {
+									JSONObject json = new JSONObject(responseSoFar.toString());
+									parseJSON(json);
+									cache.cacheObject(url, json);
+								} catch (JSONException e) {}
+								return true;
+							}
+							return false;
 						}
 					});
-					return tracks;
+				} catch (Exception e) {
+					Toast.makeText(theContext, R.string.error_no_internet, Toast.LENGTH_LONG).show();
 				}
-				
-				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
-					@Override
-					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-						if (isFinal) {
-							try {
-								JSONObject json = new JSONObject(responseSoFar.toString());
-								parseJSON(json);
-								cache.cacheObject(url, json);
-							} catch (JSONException e) {}
-							return true;
-						}
-						return false;
-					}
-				});
 			}
 			return tracks;
 		}

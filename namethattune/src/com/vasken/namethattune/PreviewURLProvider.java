@@ -68,7 +68,7 @@ public class PreviewURLProvider {
 		void somethingWentWrong();
 	}
 	
-	public void getPreviewURL(String searchTerms, final PreviewURLListener listener) {
+	public void getPreviewURL(String searchTerms, final PreviewURLListener listener) throws Exception {
 		requester.makeRequest(createHttpRequest(searchTerms), new RequestCallback() {
 			@Override
 			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {

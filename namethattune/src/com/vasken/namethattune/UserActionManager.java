@@ -93,11 +93,18 @@ public class UserActionManager {
 
 	public static Achievement openedApplication(State theState) {
 		Calendar rightNow = Calendar.getInstance();
-		theState.setConsecutiveDaysRunning(theState.getConsecutiveDaysRunning() + 1);
 		
 		Achievement result = new Achievement();
 		Calendar lastRan = theState.getLastRun();
-		if (wasYesterday(lastRan)) {
+		if (theState.getConsecutiveDaysRunning() == 7) {
+			// 7 Consecutive days
+			if (!theState.getAchievements().containsKey(Achievement.ACH14_KEY)) {
+				theState.addAchievement(Achievement.ACH14_KEY);
+				result = new Achievement(Achievement.ACH14_KEY);
+			}
+		} else if (wasYesterday(lastRan)) {
+			theState.setConsecutiveDaysRunning(theState.getConsecutiveDaysRunning() + 1);
+		
 			// 2 Consecutive days
 			if (!theState.getAchievements().containsKey(Achievement.ACH12_KEY)) {
 				theState.addAchievement(Achievement.ACH12_KEY);
@@ -108,12 +115,6 @@ public class UserActionManager {
 			if (!theState.getAchievements().containsKey(Achievement.ACH13_KEY)) {
 				theState.addAchievement(Achievement.ACH13_KEY);
 				result = new Achievement(Achievement.ACH13_KEY);
-			}
-		} else if (theState.getConsecutiveDaysRunning() == 7) {
-			// 7 Consecutive days
-			if (!theState.getAchievements().containsKey(Achievement.ACH14_KEY)) {
-				theState.addAchievement(Achievement.ACH14_KEY);
-				result = new Achievement(Achievement.ACH14_KEY);
 			}
 		} else if (wasLastMonth(lastRan)) {
 			// Consecutive months

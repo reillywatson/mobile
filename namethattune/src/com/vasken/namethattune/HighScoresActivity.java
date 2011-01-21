@@ -7,7 +7,6 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Context;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TableLayout;
@@ -26,44 +25,41 @@ public class HighScoresActivity extends Activity {
 		
 		setContentView(R.layout.highscores);
 		
+		final Context theContext = this;
+		
 		HttpGet get = new HttpGet("http://vaskenmusic.appspot.com/vaskenmusicserver?genre="+getString(R.string.genre));
-		
-		ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-		boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
-		boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
-		
-		if (!hasMobileConnection && !hasWifiConnection) {
-			Toast.makeText(this, "You need an internet connection, to submit your score.", Toast.LENGTH_LONG).show();
-			finish();
-		}
-
-		new WebRequester().makeRequest(get, new RequestCallback() {
-			@Override
-			public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-				if (isFinal) {
-					Log.d(Main.class.toString(), responseSoFar.toString());
-					
-					JSONObject highScores;
-					try {
-						Log.d(HighScoresActivity.class.toString(), responseSoFar.toString());
+		try {
+			new WebRequester().makeRequest(get, new RequestCallback() {
+				@Override
+				public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+					if (isFinal) {
+						Log.d(Main.class.toString(), responseSoFar.toString());
 						
-						highScores = new JSONObject(responseSoFar.toString()).getJSONObject("HighScores");
-						
-						JSONArray scoresToday = highScores.getJSONArray("Today");
-						TableLayout tableLayoutToday = (TableLayout)findViewById(R.id.highScoresToday);
-						fillLayoutWithData(scoresToday, tableLayoutToday);
-						
-						JSONArray scoresEver = highScores.getJSONArray("Ever");
-						TableLayout tableLayoutEver = (TableLayout)findViewById(R.id.highScoresEver);
-						fillLayoutWithData(scoresEver, tableLayoutEver);
-					} catch (JSONException e) {
-						e.printStackTrace();
+						JSONObject highScores;
+						try {
+							Log.d(HighScoresActivity.class.toString(), responseSoFar.toString());
+							
+							highScores = new JSONObject(responseSoFar.toString()).getJSONObject("HighScores");
+							
+							JSONArray scoresToday = highScores.getJSONArray("Today");
+							TableLayout tableLayoutToday = (TableLayout)findViewById(R.id.highScoresToday);
+							fillLayoutWithData(scoresToday, tableLayoutToday);
+							
+							JSONArray scoresEver = highScores.getJSONArray("Ever");
+							TableLayout tableLayoutEver = (TableLayout)findViewById(R.id.highScoresEver);
+							fillLayoutWithData(scoresEver, tableLayoutEver);
+						} catch (JSONException e) {
+							e.printStackTrace();
+							Toast.makeText(theContext, R.string.error_no_internet, Toast.LENGTH_LONG).show();
+						}
+						return true;
 					}
-					return true;
+					return false;
 				}
-				return false;
-			}
-		});
+			});
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private void fillLayoutWithData(JSONArray scores, TableLayout tableLayout) {

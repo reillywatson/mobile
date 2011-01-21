@@ -55,11 +55,11 @@ public class WebRequester {
 	private final char[] buffer = new char[0x10000];
 	private final StringBuilder sb = new StringBuilder(64*1024);
 	
-	public void makeRequest(HttpUriRequest request, RequestCallback callback) {
+	public void makeRequest(HttpUriRequest request, RequestCallback callback) throws Exception {
 		makeRequest(request, callback, CompressionMethod.NoCompression);
 	}
 	
-	public void makeRequest(HttpUriRequest request, RequestCallback callback, CompressionMethod method) {
+	public void makeRequest(HttpUriRequest request, RequestCallback callback, CompressionMethod method) throws Exception {
 		Reader in = null;
 		try {
 			sb.delete(0, sb.length());
@@ -84,6 +84,9 @@ public class WebRequester {
 	        }
 		} catch (Exception e) {
 			Log.d(this.getClass().getName(), Log.getStackTraceString(e));
+
+			// It's generally a bad idea for a library to hide failures
+			throw e;
 		} finally {
 			if (in != null) {
 				try {
