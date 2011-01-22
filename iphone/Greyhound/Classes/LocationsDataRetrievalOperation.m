@@ -39,6 +39,7 @@
 		if (enabled) {
 			NSString *name = [item objectForKey:@"Text"];
 			NSString *locationId = [item objectForKey:@"Value"];
+			locationId = [[locationId componentsSeparatedByString:@"|"] objectAtIndex:0];
 			Location *location = [[Location alloc] initWithName:name locationID:locationId];
 			[locations addObject:location];
 		}
