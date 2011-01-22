@@ -31,11 +31,11 @@
     [super viewWillAppear:animated];
 	if (_startLocation == nil) {
 		[self.searchBar setPlaceholder:@"Enter your start city"];
-		[self.navigationController setTitle:@"Select start city"];
+		[self setTitle:@"Select start city"];
 	}
 	else {
 		[self.searchBar setPlaceholder:@"Enter your destination city"];
-		[self.navigationController setTitle:@"Select destination city"];
+		[self setTitle:@"Select destination city"];
 	}
 
 }

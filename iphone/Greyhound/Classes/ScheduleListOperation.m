@@ -90,7 +90,7 @@
 	else {
 		[delegate performSelectorOnMainThread:@selector(gotSchedules:) withObject:schedules waitUntilDone:NO];
 	}
-	NSLog(@"RESPONSE FROM SERVER: %@", response);
+	//NSLog(@"RESPONSE FROM SERVER: %@", response);
 }//
 
 @end
