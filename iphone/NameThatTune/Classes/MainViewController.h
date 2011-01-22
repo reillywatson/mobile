@@ -8,9 +8,10 @@
 
 #import "SongRetrievalOperation.h"
 #import "HighScoreSubmitOperation.h"
+#import "HighScoreViewController.h"
 #import "AudioStreamer.h"
 
-@interface MainViewController : UIViewController<TrackInfoDelegate, HighScoreSubmitDelegate> {
+@interface MainViewController : UIViewController<TrackInfoDelegate, HighScoreSubmitDelegate, HighScoreViewDelegate> {
 	UILabel *_numCorrectLabel;
 	UILabel *_timerLabel;
 	UIImageView *_resultImage;
