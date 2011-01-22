@@ -90,7 +90,23 @@
 -(void)loadNewest {
 	[self downloadComic:comicInfo withURL:comicInfo.startUrl];
 }
-	
+
+-(void)mailThisStrip {
+	MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
+	controller.mailComposeDelegate = self;
+	[controller setSubject:[NSString stringWithFormat:@"Check out this %@ comic!", comicInfo.title]];
+	[controller setMessageBody:comic->url isHTML:NO]; 
+	[self presentModalViewController:controller animated:YES];
+	[controller release];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+	if (result == MFMailComposeResultSent) {
+		NSLog(@"It's away!");
+	}
+	[self dismissModalViewControllerAnimated:YES];
+}
+
 
 -(void)showMoreMenu {
 	
@@ -109,6 +125,7 @@
 	}
 	if (comic != nil) {
 		[actionsheet addButtonWithTitle:@"Open in Safari"];
+		[actionsheet addButtonWithTitle:@"Email to a friend"];
 	}
 	
 	[actionsheet addButtonWithTitle:@"Cancel"];
@@ -140,6 +157,9 @@
 	}
 	else if ([title isEqual:@"Open in Safari"]) {
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:comic->url]];
+	}
+	else if ([title isEqual:@"Email to a friend"]) {
+		[self mailThisStrip];
 	}
 }
 

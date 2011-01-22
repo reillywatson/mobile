@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
 #import "ComicInfo.h"
 #import "Downloader.h"
 #import "TappableView.h"
 #import "TappableWebView.h"
 
-@interface Viewer : UIViewController<DownloaderDelegate, UIWebViewDelegate, UIActionSheetDelegate, TappableViewDelegate, TappableWebViewDelegate> {
+@interface Viewer : UIViewController<DownloaderDelegate, UIWebViewDelegate, UIActionSheetDelegate, TappableViewDelegate, TappableWebViewDelegate, MFMailComposeViewControllerDelegate> {
 	NSOperationQueue *opQueue;
 	UIWebView *webView;
 	UIBarButtonItem *prevButton;
@@ -38,7 +39,7 @@
 - (void) webView: (UIWebView *) sender trackSwipeGesture: (UITouch *) touch event: (UIEvent*) event;
 - (void) webView: (UIWebView *) sender endSwipeGesture: (UITouch *) touch event: (UIEvent*) event;
 - (void) webView: (UIWebView *) sender tappedWithTouch: (UITouch*) touch event: (UIEvent*) event;
-
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error;
 
 -(id)initWithComic:(ComicInfo *)info;
 
