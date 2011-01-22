@@ -21,7 +21,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-	UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+	UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Go" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
 	
 	[[[[self navigationController] navigationBar] topItem] setRightBarButtonItem:save];
 	
