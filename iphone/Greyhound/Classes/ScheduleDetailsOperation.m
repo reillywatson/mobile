@@ -47,7 +47,7 @@
 		NSString *cityName = [[cells objectAtIndex:0] objectAtIndex:1];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
-		cityName = [cityName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+		cityName = [cityName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 		NSString *arrives = [[cells objectAtIndex:1] objectAtIndex:1];
 		NSString *departs = [[cells objectAtIndex:2] objectAtIndex:1];
 		NSString *layover = [[cells objectAtIndex:3] objectAtIndex:1];
@@ -56,7 +56,7 @@
 		NSString *remarks = [[cells objectAtIndex:6] objectAtIndex:1];
 		NSLog(@"City: %@ Arrives: %@ Departs: %@ Layover: %@ Company: %@ Schedule:%@ Remarks: %@", cityName, arrives, departs, layover, company, schedule, remarks);
 		ScheduleDetails *details = [[ScheduleDetails alloc] initWithCity:cityName arrives:arrives departs:departs layover:layover company:company schedule:schedule remarks:remarks];
-		[delegate detailsReady:details];
+		[delegate performSelectorOnMainThread:@selector(detailsReady:) withObject:details waitUntilDone:NO];
 	}
 }
 

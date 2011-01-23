@@ -47,7 +47,6 @@
 -(void)gotSchedules:(NSArray *)scheduleData {
 	[schedules removeAllObjects];
 	[schedules addObjectsFromArray:scheduleData];
-	NSLog(@"HEY WE GOT EM %@", schedules);
 	[self.tableView reloadData];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }

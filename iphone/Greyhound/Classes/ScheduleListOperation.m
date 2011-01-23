@@ -62,7 +62,6 @@
 	
 	NSString *params = [NSString stringWithFormat:@"Legs=1&Adults=1&Child2=0&Child5=0&Seniors=0&DMonth=%@&DDay=%@&DHr=&RMonth=%@&RDay=%@&RHr=&OriginState=%@&OriginLocationData=%@%@&DestinationState=%@&DestinationLocationData=%@%@&DiscountCode=&Password=&RequestID=%@&x=48&y=6"
 																								, month, day, month, day, ostateName, ocodeName, ocityName, dstateName, dcodeName, dcityName, _requestID];
-	NSLog(@"PARAMS: %@", params);
 	[request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
 	NSError *error = nil;
 	NSLog(@"HEY, MY REQUEST: %@", request);
@@ -84,7 +83,6 @@
 		NSString *numStops = [data objectAtIndex:7];
 		NSString *detailsURLArgs = [[detailsComponents objectAtIndex:[schedules count]] objectAtIndex:0];
 		detailsURLArgs = [[[detailsURLArgs stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-		NSLog(@"scheduleid: %@ carrier: %@ departs: %@ arrives: %@ duration: %@ stops: %@", scheduleID, carrier, departureTime, arrivalTime, duration, numStops);
 		Schedule *schedule = [[Schedule alloc] initWithScheduleID:scheduleID carrier:carrier departureTime:departureTime arrivalTime:arrivalTime duration:duration numStops:numStops detailsArgs:detailsURLArgs];
 		[schedules addObject:schedule];
 	}
