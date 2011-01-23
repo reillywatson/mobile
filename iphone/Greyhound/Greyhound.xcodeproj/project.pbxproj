@@ -32,6 +32,10 @@
 		B45334D912EAEC3800BCBC15 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B45334D812EAEC3800BCBC15 /* icon.png */; };
 		B453360A12EB634700BCBC15 /* DatePickController.m in Sources */ = {isa = PBXBuildFile; fileRef = B453360812EB634700BCBC15 /* DatePickController.m */; };
 		B453360B12EB634700BCBC15 /* DatePickController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B453360912EB634700BCBC15 /* DatePickController.xib */; };
+		B45336D312EBA0E500BCBC15 /* ScheduleDetailsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B45336D212EBA0E500BCBC15 /* ScheduleDetailsOperation.m */; };
+		B4C39F9912ECC3010058CE57 /* ScheduleDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C39F9812ECC3010058CE57 /* ScheduleDetails.m */; };
+		B4C39FB712ECC49F0058CE57 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C39FB512ECC49F0058CE57 /* DetailsViewController.m */; };
+		B4C39FB812ECC49F0058CE57 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C39FB612ECC49F0058CE57 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +84,13 @@
 		B453360712EB634700BCBC15 /* DatePickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickController.h; sourceTree = "<group>"; };
 		B453360812EB634700BCBC15 /* DatePickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickController.m; sourceTree = "<group>"; };
 		B453360912EB634700BCBC15 /* DatePickController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickController.xib; sourceTree = "<group>"; };
+		B45336D112EBA0E500BCBC15 /* ScheduleDetailsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailsOperation.h; sourceTree = "<group>"; };
+		B45336D212EBA0E500BCBC15 /* ScheduleDetailsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailsOperation.m; sourceTree = "<group>"; };
+		B4C39F9712ECC3010058CE57 /* ScheduleDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetails.h; sourceTree = "<group>"; };
+		B4C39F9812ECC3010058CE57 /* ScheduleDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetails.m; sourceTree = "<group>"; };
+		B4C39FB412ECC49F0058CE57 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		B4C39FB512ECC49F0058CE57 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		B4C39FB612ECC49F0058CE57 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +110,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B4C39FB412ECC49F0058CE57 /* DetailsViewController.h */,
+				B4C39FB512ECC49F0058CE57 /* DetailsViewController.m */,
+				B4C39FB612ECC49F0058CE57 /* DetailsViewController.xib */,
+				B4C39F9712ECC3010058CE57 /* ScheduleDetails.h */,
+				B4C39F9812ECC3010058CE57 /* ScheduleDetails.m */,
+				B45336D112EBA0E500BCBC15 /* ScheduleDetailsOperation.h */,
+				B45336D212EBA0E500BCBC15 /* ScheduleDetailsOperation.m */,
 				B453342E12EAE4D200BCBC15 /* Schedule.h */,
 				B453342F12EAE4D200BCBC15 /* Schedule.m */,
 				B45332C412EAD55500BCBC15 /* ScheduleViewController.h */,
@@ -251,6 +269,7 @@
 				B45332C812EAD55500BCBC15 /* ScheduleViewController.xib in Resources */,
 				B45334D912EAEC3800BCBC15 /* icon.png in Resources */,
 				B453360B12EB634700BCBC15 /* DatePickController.xib in Resources */,
+				B4C39FB812ECC49F0058CE57 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +297,9 @@
 				B45332C712EAD55500BCBC15 /* ScheduleViewController.m in Sources */,
 				B453343012EAE4D200BCBC15 /* Schedule.m in Sources */,
 				B453360A12EB634700BCBC15 /* DatePickController.m in Sources */,
+				B45336D312EBA0E500BCBC15 /* ScheduleDetailsOperation.m in Sources */,
+				B4C39F9912ECC3010058CE57 /* ScheduleDetails.m in Sources */,
+				B4C39FB712ECC49F0058CE57 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

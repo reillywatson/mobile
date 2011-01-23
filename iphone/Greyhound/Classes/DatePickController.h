@@ -18,7 +18,6 @@
 @property (nonatomic, retain) IBOutlet UIDatePicker* datePicker;
 
 -(IBAction)save;
--(IBAction)cancel;
 
 -(void)setLocationStart:(Location *)start end:(Location *)end;
 

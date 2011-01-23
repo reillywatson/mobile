@@ -69,8 +69,10 @@
 	NSString *response = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error] encoding:NSUTF8StringEncoding];
 	//<input type="radio" name="OSched" id="idOSched14" value="14|13|5537|GLC|10:30p|01:25a|00,02:55|0|Y|Y|">
 	NSString *regex = @"<input[^>]*?name=\"OSched\"[^>]*?value=\"([^>]*?)\"";
+	//	openWin('ScheduleDetails.asp?ScheduleIndex=1&amp;CS1=3473192467537936%3ASock1&amp;ID=100678696','Details','width=750,height=350,toolbar=0,location=0,directories=0,status=0,menuBar=0,scrollBars=1,resizable=1' ); newWindow.focus()" >5503</a><br>
+	NSString *detailsRegex = @"ScheduleDetails.asp?(.*?)'";
+	NSArray *detailsComponents = [response arrayOfCaptureComponentsMatchedByRegex:detailsRegex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
 	NSArray *components = [response arrayOfCaptureComponentsMatchedByRegex:regex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
-	NSLog(@"ARRAY: %@", components);
 	NSMutableArray *schedules = [NSMutableArray new];
 	for (NSArray *comp in components) {
 		NSArray *data = [[comp objectAtIndex:0] componentsSeparatedByString:@"|"];
@@ -80,8 +82,10 @@
 		NSString *arrivalTime = [data objectAtIndex:5];
 		NSString *duration = [data objectAtIndex:6];
 		NSString *numStops = [data objectAtIndex:7];
+		NSString *detailsURLArgs = [[detailsComponents objectAtIndex:[schedules count]] objectAtIndex:0];
+		detailsURLArgs = [[[detailsURLArgs stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
 		NSLog(@"scheduleid: %@ carrier: %@ departs: %@ arrives: %@ duration: %@ stops: %@", scheduleID, carrier, departureTime, arrivalTime, duration, numStops);
-		Schedule *schedule = [[Schedule alloc] initWithScheduleID:scheduleID carrier:carrier departureTime:departureTime arrivalTime:arrivalTime duration:duration numStops:numStops];
+		Schedule *schedule = [[Schedule alloc] initWithScheduleID:scheduleID carrier:carrier departureTime:departureTime arrivalTime:arrivalTime duration:duration numStops:numStops detailsArgs:detailsURLArgs];
 		[schedules addObject:schedule];
 	}
 	if (error != nil) {
@@ -90,7 +94,7 @@
 	else {
 		[delegate performSelectorOnMainThread:@selector(gotSchedules:) withObject:schedules waitUntilDone:NO];
 	}
-	//NSLog(@"RESPONSE FROM SERVER: %@", response);
-}//
+//	NSLog(@"RESPONSE FROM SERVER: %@", response);
+}
 
 @end

@@ -103,6 +103,7 @@
 	[op initWithDelegate:self searchText:[timer userInfo]];
 	[_opQueue cancelAllOperations];
 	[_opQueue addOperation:op];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 	_autoCompleteTimer = nil;
 }
 
@@ -126,9 +127,11 @@
 	[itemList removeAllObjects];
 	[itemList addObjectsFromArray:locations];
 	[self.searchDisplayController.searchResultsTableView reloadData];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 -(void)locationsError:(NSError *)error {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	NSLog(@"error retrieving locations: %@", error);
 }
 

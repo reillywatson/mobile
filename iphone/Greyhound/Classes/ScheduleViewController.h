@@ -10,6 +10,7 @@
 #import "Location.h"
 #import "ScheduleConfirmOperation.h"
 #import "ScheduleListOperation.h"
+#import "Schedule.h"
 
 @interface ScheduleViewController : UITableViewController<ScheduleConfirmDelegate, ScheduleListDelegate> {
 	NSMutableArray *schedules;

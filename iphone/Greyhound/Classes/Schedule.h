@@ -17,9 +17,10 @@
 	NSString *arrivalTime;
 	NSString *tripDuration;
 	NSString *numStops;
+	NSString *detailsArgs;
 }
 
 -(id)initWithScheduleID:(NSString *)scheduleID carrier:(NSString *)carrier departureTime:(NSString *)departureTime arrivalTime:(NSString *)arrivalTime
-			   duration:(NSString *)duration numStops:(NSString *)numStops;
+			   duration:(NSString *)duration numStops:(NSString *)numStops detailsArgs:(NSString *)detailsArgs;
 
 @end

@@ -17,6 +17,7 @@
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	_start = nil;
 	_end = nil;
+	self.datePicker.date = [NSDate date];
 	return self;
 }
 
@@ -42,10 +43,6 @@
 	ScheduleViewController *scheduleView = [[ScheduleViewController alloc] initWithNibName:@"ScheduleViewController" bundle:nil];
 	[scheduleView setLocationStart:_start end:_end date:self.datePicker.date];
 	[[self navigationController] pushViewController:scheduleView animated:YES];
-}
-
--(IBAction)cancel {
-	[[self navigationController] popViewControllerAnimated:YES];
 }
 
 @end

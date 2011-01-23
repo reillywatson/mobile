@@ -11,7 +11,7 @@
 
 @implementation Schedule
 
--(id)initWithScheduleID:(NSString *)ascheduleID carrier:(NSString *)acarrier departureTime:(NSString *)adepartureTime arrivalTime:(NSString *)aarrivalTime duration:(NSString *)aduration numStops:(NSString *)anumStops {
+-(id)initWithScheduleID:(NSString *)ascheduleID carrier:(NSString *)acarrier departureTime:(NSString *)adepartureTime arrivalTime:(NSString *)aarrivalTime duration:(NSString *)aduration numStops:(NSString *)anumStops detailsArgs:(NSString *)adetailsargs{
 	self = [super init];
 	scheduleID = [ascheduleID retain];
 	carrier = [acarrier retain];
@@ -19,6 +19,7 @@
 	arrivalTime = [aarrivalTime retain];
 	tripDuration = [aduration retain];
 	numStops = [anumStops retain];
+	detailsArgs = [adetailsargs retain];
 	return self;
 }
 
@@ -30,6 +31,7 @@
 	[arrivalTime release];
 	[tripDuration release];
 	[numStops release];
+	[detailsArgs release];
 }
 
 @end

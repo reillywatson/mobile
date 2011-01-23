@@ -8,6 +8,7 @@
 
 #import "ScheduleViewController.h"
 #import "Schedule.h"
+#import "DetailsViewController.h"
 
 @implementation ScheduleViewController
 
@@ -15,6 +16,7 @@
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	_opQueue = [NSOperationQueue new];
 	schedules = [NSMutableArray new];
+	self.title = @"Schedules";
 	return self;
 }
 
@@ -29,6 +31,7 @@
 	_end = [end retain];
 	_date = [date retain];
 	[_opQueue addOperation:[[ScheduleConfirmOperation alloc] initWithStartLocation:start endLocation:end date:_date delegate:self]];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 //	[_opQueue addOperation:[[ScheduleListOperation alloc] initWith
 }
 
@@ -38,6 +41,7 @@
 
 -(void)confirmationError:(NSError *)error {
 	NSLog(@"Confirmation error: %@", error);
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 -(void)gotSchedules:(NSArray *)scheduleData {
@@ -45,9 +49,11 @@
 	[schedules addObjectsFromArray:scheduleData];
 	NSLog(@"HEY WE GOT EM %@", schedules);
 	[self.tableView reloadData];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 -(void)scheduleError:(NSError *)error {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 
@@ -61,41 +67,48 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
     return [schedules count];
 }
 
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+	
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
-    
+	
 	Schedule *schedule = [schedules objectAtIndex:indexPath.row];
-	NSLog(@"DEPART: %@ ARRIVE: %@ DURATION: %@", schedule->departureTime, schedule->arrivalTime, schedule->tripDuration);
-	[cell.textLabel setText:[NSString stringWithFormat:@"%@-%@ (%@)", schedule->departureTime, schedule->arrivalTime, schedule->tripDuration]];
-    // Configure the cell...
-    
+	NSString *depart = [[schedule->departureTime stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
+	NSString *arrive = [[schedule->arrivalTime stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
+	//dd,hh:mm
+	int days = [[schedule->tripDuration substringToIndex:2] intValue];
+	int hours = [[schedule->tripDuration substringWithRange:NSMakeRange(3, 2)] intValue];
+	int minutes = [[schedule->tripDuration substringWithRange:NSMakeRange(6, 2)] intValue];
+	NSString *duration;
+	if (days > 0) {
+		duration = [NSString stringWithFormat:@"%dd %dh %dm",days,hours,minutes];
+	}
+	else {
+		duration = [NSString stringWithFormat:@"%dh %dm",hours,minutes];
+	}
+	[cell.textLabel setText:[NSString stringWithFormat:@"%@ - %@", depart, arrive]];
+	[cell.detailTextLabel setText:duration];
+		
     return cell;
 }
 
 #pragma mark -
 #pragma mark Table view delegate
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-    */
+	DetailsViewController *details = [[DetailsViewController alloc] initWithNibName:@"DetailsViewController" bundle:nil];
+	[details setSchedule:[schedules objectAtIndex:indexPath.row]];
+	[[self navigationController] pushViewController:details animated:YES];
 }
 
 
