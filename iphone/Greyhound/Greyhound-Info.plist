@@ -9,9 +9,9 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>icon.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>7M4MFF47GJ.greyhound</string>
+	<string>com.vasken.greyhound</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

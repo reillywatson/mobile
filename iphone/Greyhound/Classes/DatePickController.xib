@@ -44,8 +44,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIDatePicker" id="522339759">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">303</int>
-						<string key="NSFrame">{{0, 106}, {320, 216}}</string>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{0, 128}, {320, 216}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -4563,7 +4563,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw3QAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw8OAAA</bytes>
 					</object>
 				</object>
 			</object>
