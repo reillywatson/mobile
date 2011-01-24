@@ -27,19 +27,20 @@
 	_autoCompleteTimer = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+-(void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 	if (_startLocation == nil) {
-		[self.searchBar setPlaceholder:@"Enter your start city"];
-		[self setTitle:@"Select start city"];
+		[self setTitle:@"Select Start City"];
 	}
 	else {
-		[self.searchBar setPlaceholder:@"Enter your destination city"];
-		[self setTitle:@"Select destination city"];
+		[self setTitle:@"Select Destination City"];
 	}
-
+	self.navigationItem.backBarButtonItem =
+	[[UIBarButtonItem alloc] initWithTitle:@"Back"
+									 style: UIBarButtonItemStyleBordered
+									target:nil
+									action:nil];
 }
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
@@ -130,6 +131,8 @@
 -(void)locationsError:(NSError *)error {
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	NSLog(@"error retrieving locations: %@", error);
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error retrieving data, please check your Internet connection." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
 }
 
 - (void)viewDidUnload {

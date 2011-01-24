@@ -42,6 +42,8 @@
 -(void)confirmationError:(NSError *)error {
 	NSLog(@"Confirmation error: %@", error);
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error retrieving data, please check your Internet connection." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
 }
 
 -(void)gotSchedules:(NSArray *)scheduleData {

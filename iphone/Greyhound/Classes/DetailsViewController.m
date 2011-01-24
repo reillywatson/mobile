@@ -37,6 +37,8 @@
 }
 
 -(void)detailsError:(NSError *)error {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error retrieving data, please check your Internet connection." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
 }
 
 -(void)detailsReady:(NSArray *)details {
