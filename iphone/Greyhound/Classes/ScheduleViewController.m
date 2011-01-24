@@ -45,10 +45,21 @@
 }
 
 -(void)gotSchedules:(NSArray *)scheduleData {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	[schedules removeAllObjects];
 	[schedules addObjectsFromArray:scheduleData];
+	if ([scheduleData count] == 0) {
+		NSDateFormatter *dateFormatter = [[NSDateFormatter new] autorelease];
+		[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+		[dateFormatter setDateStyle:NSDateFormatterMediumStyle];		
+		NSString *message = [NSString stringWithFormat:@"No schedules from %@ to %@ for %@", _start->name, _end->name, [dateFormatter stringFromDate:_date]];
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No results found" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[self.tableView setHidden:YES];
+		return;
+	}
+	[self.tableView setHidden:NO];
 	[self.tableView reloadData];
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 -(void)scheduleError:(NSError *)error {

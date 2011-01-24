@@ -49,15 +49,14 @@
 						<reference key="NSSuperview" ref="709618507"/>
 						<int key="IBUIContentMode">3</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<string key="IBPlaceholder">Enter city name</string>
 						<bool key="IBShowsSearchResultsButton">YES</bool>
 						<object class="IBUITextInputTraits" key="IBTextInputTraits">
 							<int key="IBUIAutocapitalizationType">1</int>
 							<int key="IBUIAutocorrectionType">1</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
-						<object class="NSArray" key="IBScopeButtonTitles">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-						</object>
+						<reference key="IBScopeButtonTitles" ref="0"/>
 					</object>
 				</object>
 				<string key="NSFrameSize">{265, 306}</string>
