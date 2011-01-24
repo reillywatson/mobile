@@ -10,10 +10,12 @@
 #import "Schedule.h"
 #import "ScheduleDetailsOperation.h"
 
-@interface DetailsViewController : UITableViewController<ScheduleDetailsDelegate> {
+@interface DetailsViewController : UIViewController<ScheduleDetailsDelegate> {
 	NSOperationQueue *_opQueue;
-	NSMutableArray *_details;
+	UIWebView *_webView;
 }
+
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
 
 -(void)setSchedule:(Schedule *)schedule;
 

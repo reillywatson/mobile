@@ -45,4 +45,8 @@
 	[[self navigationController] pushViewController:scheduleView animated:YES];
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+	return YES;
+}
+
 @end

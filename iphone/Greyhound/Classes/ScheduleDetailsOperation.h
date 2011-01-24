@@ -12,7 +12,7 @@
 
 @protocol ScheduleDetailsDelegate
 
--(void)detailsReady:(ScheduleDetails *)details;
+-(void)detailsReady:(NSArray *)details;
 -(void)detailsError:(NSError *)error;
 
 @end

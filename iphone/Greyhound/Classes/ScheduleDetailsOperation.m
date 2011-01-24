@@ -40,6 +40,7 @@
 	NSString *stopRegex = @"<tr>[^<]*?<!--Location Cell-->(.*?)</tr>";
 	NSString *cellRegex = @"<td[^>]*?>(.*?)</td>";
 	NSArray *stops = [response arrayOfCaptureComponentsMatchedByRegex:stopRegex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
+	NSMutableArray *detailsList = [[NSMutableArray new] autorelease];
 	for (int i = 0; i < [stops count]; i++) {
 		NSString *stopDetails = [[stops objectAtIndex:i] objectAtIndex:1];
 //		NSLog(@"STOP: %@", stopDetails);
@@ -56,8 +57,9 @@
 		NSString *remarks = [[cells objectAtIndex:6] objectAtIndex:1];
 		NSLog(@"City: %@ Arrives: %@ Departs: %@ Layover: %@ Company: %@ Schedule:%@ Remarks: %@", cityName, arrives, departs, layover, company, schedule, remarks);
 		ScheduleDetails *details = [[ScheduleDetails alloc] initWithCity:cityName arrives:arrives departs:departs layover:layover company:company schedule:schedule remarks:remarks];
-		[delegate performSelectorOnMainThread:@selector(detailsReady:) withObject:details waitUntilDone:NO];
+		[detailsList addObject:details];
 	}
+	[delegate performSelectorOnMainThread:@selector(detailsReady:) withObject:detailsList waitUntilDone:NO];
 }
 
 @end

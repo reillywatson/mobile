@@ -110,6 +110,9 @@
 	[[self navigationController] pushViewController:details animated:YES];
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+	return YES;
+}
 
 
 @end
