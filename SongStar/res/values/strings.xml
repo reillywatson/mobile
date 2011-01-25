@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--  SPLASH SCREEN -->
+    <string name="loading">Loading Music Catalog...</string>
+    
+    <!--  GAME SCREEN -->
+    <string name="streak">%1$d in a row</string>
+	<string name="error_no_internet">Ooops! We couldn\'t reach our servers. Make sure you\'re connected to the internet and try again.</string>
+    <string name="error_cant_submit_score">Sorry! There was an error submitting your score.</string>
+    
+    <string name="submit_score">Submit Score: %1$d</string>
+    <string name="high_scores">High Scores</string>
+    <string name="achievements">Achievements</string>
+    
+    <string name="enter_name">Enter Your Name</string>
+    <string name="submit_dialog_send">Send</string>
+    <string name="submit_dialog_cancel">Nevermind</string>
+    
+    <!--  HIGH SCORE SCREEN -->
+    <string name="best_today">Today\'s Best</string>
+    <string name="best_ever">Best Ever</string>
+        
+    <!--  ACHIEVEMENTS -->
+    <string name="ach1">2 in a Row</string>
+    <string name="ach2">5 in a Row</string>
+    <string name="ach3">10 in a Row</string>
+    <string name="ach4">15 in a Row</string>
+    <string name="ach5">20 in a Row</string>
+    <string name="ach6">30 in a Row</string>
+    <string name="ach7">50 in a Row</string>
+    <string name="ach8">75 in a Row</string>
+    <string name="ach9">100 in a Row</string>
+    <string name="ach10">200 in a Row</string>
+    <string name="ach11">300 in a Row</string>
+    <string name="ach12">2 Days in a Row</string>
+    <string name="ach13">2 Weeks in a Row</string>
+    <string name="ach14">7 Days Straight</string>
+    <string name="ach15">Consecutive Months</string>
+
+	<!-- GAME SETTINGS -->
+	<string name="app_name">SongStar: Rock</string>
+    <string name="seconds">10</string>
+	<string name="genre">21</string>
+    
+</resources>
