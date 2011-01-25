@@ -16,7 +16,7 @@ public class CronServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		
-		HighScoreManager theManager = new HighScoreManager();
+		HighScoreManager theManager = HighScoreManager.sharedInstace();
 		long entriesRemoved = theManager.removeOldHighscores();
 		
 		System.out.println("Cron Job has been executed and removed " + entriesRemoved + " entries");

@@ -19,10 +19,6 @@ public class HighScoreManager {
 	private static final String ENCRYPTION_SEED = "T4iSisV4sk3ns4w3s0m3S3cr3Tk39";
 	
 	private static HighScoreManager INSTANCE = null;
-
-	
-	private HighScoreManager() {	
-	}
 	
 	public static HighScoreManager sharedInstace() {
 		if (INSTANCE == null) {
@@ -166,5 +162,8 @@ public class HighScoreManager {
 		    }
 		}
 		return result;
+	}
+	
+	private HighScoreManager() {	
 	}
 }

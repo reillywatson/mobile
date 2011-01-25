@@ -16,7 +16,11 @@ public class MusicCatalogManager {
 	}
 	
 	public void updateCatalog() {
-		// TODO
+		// Make genre request
+		
+		// Parse response
+		
+		// Save list of songs
 	}
 	
 	public List<Song> getSongCatalog() {
