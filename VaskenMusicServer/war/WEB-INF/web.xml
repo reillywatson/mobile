@@ -24,6 +24,22 @@
       <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
+  <servlet>
+    <servlet-name>com.vasken.music.server.CatalogUpdaterServlet</servlet-name>
+    <servlet-class>com.vasken.music.server.CatalogUpdaterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.vasken.music.server.CatalogUpdaterServlet</servlet-name>
+    <url-pattern>/tasks/catalogUpdateJob</url-pattern>
+  </servlet-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/tasks/catalogUpdateJob</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>

@@ -20,6 +20,10 @@ public class HighScoreManager {
 	
 	private static HighScoreManager INSTANCE = null;
 
+	
+	private HighScoreManager() {	
+	}
+	
 	public static HighScoreManager sharedInstace() {
 		if (INSTANCE == null) {
 			INSTANCE = new HighScoreManager();

@@ -21,8 +21,7 @@ public class VaskenMusicServerServlet extends HttpServlet {
 	private static final String VERSION = "version";
 	private static final String HASH = "id";
 	
-	public void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws IOException {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 		String genre = req.getParameter(GENRE);
 
@@ -34,9 +33,7 @@ public class VaskenMusicServerServlet extends HttpServlet {
 	}
 	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		StringBuilder response;
 		try {
 			HighScoreManager theManager = HighScoreManager.sharedInstace();

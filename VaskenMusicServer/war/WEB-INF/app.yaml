@@ -10,6 +10,10 @@ handlers:
   servlet: com.vasken.music.server.CronServlet
   login: admin
 
+- url: /tasks/catalogUpdateJob
+  servlet: com.vasken.music.server.CatalogUpdaterServlet
+  login: admin
+  
 welcome_files:
   - index.html
   
