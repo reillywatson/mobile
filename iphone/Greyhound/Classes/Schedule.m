@@ -11,7 +11,7 @@
 
 @implementation Schedule
 
--(id)initWithScheduleID:(NSString *)ascheduleID carrier:(NSString *)acarrier departureTime:(NSString *)adepartureTime arrivalTime:(NSString *)aarrivalTime duration:(NSString *)aduration numStops:(NSString *)anumStops detailsArgs:(NSString *)adetailsargs{
+-(id)initWithScheduleID:(NSString *)ascheduleID carrier:(NSString *)acarrier departureTime:(NSString *)adepartureTime arrivalTime:(NSString *)aarrivalTime duration:(NSString *)aduration numStops:(NSString *)anumStops detailsArgs:(NSString *)adetailsargs isCanadian:(BOOL)aisCanadian {
 	self = [super init];
 	scheduleID = [ascheduleID retain];
 	carrier = [acarrier retain];
@@ -20,6 +20,7 @@
 	tripDuration = [aduration retain];
 	numStops = [anumStops retain];
 	detailsArgs = [adetailsargs retain];
+	isCanadian = aisCanadian;
 	return self;
 }
 

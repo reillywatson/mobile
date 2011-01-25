@@ -36,6 +36,7 @@
 		B4C39F9912ECC3010058CE57 /* ScheduleDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C39F9812ECC3010058CE57 /* ScheduleDetails.m */; };
 		B4C3A05D12ED55410058CE57 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C3A05B12ED55410058CE57 /* DetailsViewController.m */; };
 		B4C3A05E12ED55410058CE57 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A05C12ED55410058CE57 /* DetailsViewController.xib */; };
+		B4F1585E12EE9E4D006F875B /* URLResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F1585D12EE9E4D006F875B /* URLResolver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,8 @@
 		B4C3A05A12ED55410058CE57 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		B4C3A05B12ED55410058CE57 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		B4C3A05C12ED55410058CE57 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		B4F1585C12EE9E4D006F875B /* URLResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLResolver.h; sourceTree = "<group>"; };
+		B4F1585D12EE9E4D006F875B /* URLResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLResolver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B4F1585C12EE9E4D006F875B /* URLResolver.h */,
+				B4F1585D12EE9E4D006F875B /* URLResolver.m */,
 				B4C39F9712ECC3010058CE57 /* ScheduleDetails.h */,
 				B4C39F9812ECC3010058CE57 /* ScheduleDetails.m */,
 				B45336D112EBA0E500BCBC15 /* ScheduleDetailsOperation.h */,
@@ -300,6 +305,7 @@
 				B45336D312EBA0E500BCBC15 /* ScheduleDetailsOperation.m in Sources */,
 				B4C39F9912ECC3010058CE57 /* ScheduleDetails.m in Sources */,
 				B4C3A05D12ED55410058CE57 /* DetailsViewController.m in Sources */,
+				B4F1585E12EE9E4D006F875B /* URLResolver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

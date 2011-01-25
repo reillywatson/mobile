@@ -18,9 +18,10 @@
 	NSString *tripDuration;
 	NSString *numStops;
 	NSString *detailsArgs;
+	BOOL isCanadian;
 }
 
 -(id)initWithScheduleID:(NSString *)scheduleID carrier:(NSString *)carrier departureTime:(NSString *)departureTime arrivalTime:(NSString *)arrivalTime
-			   duration:(NSString *)duration numStops:(NSString *)numStops detailsArgs:(NSString *)detailsArgs;
+			   duration:(NSString *)duration numStops:(NSString *)numStops detailsArgs:(NSString *)detailsArgs isCanadian:(BOOL)isCanadian;
 
 @end

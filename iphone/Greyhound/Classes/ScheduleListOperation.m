@@ -9,7 +9,7 @@
 #import "ScheduleListOperation.h"
 #import "RegexKitLite.h"
 #import "Schedule.h"
-
+#import "URLResolver.h"
 
 @implementation ScheduleListOperation
 
@@ -33,7 +33,8 @@
 
 
 -(void)main {
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.greyhound.ca/home/ticketcenter/en/step3.asp"]];
+	NSString *url = [URLResolver scheduleListURLForStart:_start end:_end];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
 	[request setHTTPMethod:@"POST"];
 	NSArray *startNameComponents = [_start->name componentsSeparatedByString:@","];
 	if ([startNameComponents count] != 2) {
@@ -83,7 +84,7 @@
 		NSString *numStops = [data objectAtIndex:7];
 		NSString *detailsURLArgs = [[detailsComponents objectAtIndex:[schedules count]] objectAtIndex:0];
 		detailsURLArgs = [[[detailsURLArgs stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-		Schedule *schedule = [[Schedule alloc] initWithScheduleID:scheduleID carrier:carrier departureTime:departureTime arrivalTime:arrivalTime duration:duration numStops:numStops detailsArgs:detailsURLArgs];
+		Schedule *schedule = [[Schedule alloc] initWithScheduleID:scheduleID carrier:carrier departureTime:departureTime arrivalTime:arrivalTime duration:duration numStops:numStops detailsArgs:detailsURLArgs isCanadian:[URLResolver isCanadianStart:_start end:_end]];
 		[schedules addObject:schedule];
 	}
 	if (error != nil) {
