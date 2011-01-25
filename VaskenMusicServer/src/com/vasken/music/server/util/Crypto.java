@@ -1,8 +1,7 @@
-package com.vasken.music.server.manager;
+package com.vasken.music.server.util;
 
 import java.security.MessageDigest;
 
-import com.vasken.music.server.util.Base64;
 
 public class Crypto {
 	public static boolean verifyHash(String privateKey, String data, String base64Hash) throws Exception {

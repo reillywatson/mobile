@@ -251,8 +251,6 @@ public class Main extends Activity {
 			});
 		} catch (Exception e1) {
 			Toast.makeText(theContext, R.string.error_cant_submit_score, Toast.LENGTH_LONG).show();
-			
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 	}
@@ -293,16 +291,16 @@ public class Main extends Activity {
 	final JSONCache cache = new JSONCache();
 	
 	class JSONCache { 
-		JSONObject _obj;
+		JSONArray _obj;
 		String _id;
 		
-		JSONObject cachedObject(String id) {
+		JSONArray cachedObject(String id) {
 			if (_id != null && _id.equals(id))
 				return _obj;
 			return null;
 		}
 		
-		void cacheObject(String id, JSONObject obj) {
+		void cacheObject(String id, JSONArray obj) {
 			_id = id;
 			_obj = obj;
 		}
@@ -343,15 +341,14 @@ public class Main extends Activity {
 	
 	class BackgroundWorker extends UserTask<String, List<String>, List<String>> {
 		
-		void parseJSON(JSONObject json) throws JSONException {
+		void parseJSON(JSONArray catalog) throws JSONException {
 			List<String> tracks = new LinkedList<String>();
-			JSONArray entries = json.getJSONObject("feed").getJSONArray("entry");
 			while (tracks.size() < NUM_ANSWERS) {
-				JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
-				String title = randomTrack.getJSONObject("title").getString("label");
+				JSONObject randomTrack = catalog.getJSONObject((int) (Math.random() * catalog.length()));
+				String title = randomTrack.getString("title");
 				if (!tracks.contains(title)) {
 					if (tracks.size() == 0) {
-						String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
+						String link = randomTrack.getString("link");
 						previewUrlReady(link);
 					}
 					tracks.add(title);
@@ -391,13 +388,12 @@ public class Main extends Activity {
 		@Override
 		public List<String> doInBackground(String... tags) {
 			final List<String> tracks = new LinkedList<String>();
-			final String url = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/" 
-				+ "sf=143441/" 			// Some magic shit
-				+ "limit=300/" 			// Number of results 
-				+ "genre=" + getString(R.string.genre) + "/"  			// Type of music
-				+ "explicit=true/"  	// Naughty songs
-				+ "json";
-			JSONObject json = cache.cachedObject(url);
+			
+			final String url = "http://vaskenmusic.appspot.com/" +
+					"vaskenmusicserver" +
+					"?genre=" + getString(R.string.genre) +
+					"&catalog=true";
+			JSONArray json = cache.cachedObject(url);
 			
 			if (json != null) {
 				try {
@@ -411,7 +407,7 @@ public class Main extends Activity {
 						public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
 							if (isFinal) {
 								try {
-									JSONObject json = new JSONObject(responseSoFar.toString());
+									JSONArray json = new JSONArray(responseSoFar.toString());
 									parseJSON(json);
 									cache.cacheObject(url, json);
 								} catch (JSONException e) {}

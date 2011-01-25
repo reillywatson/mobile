@@ -9,6 +9,7 @@ import javax.jdo.Query;
 
 import com.google.appengine.repackaged.com.google.common.base.Pair;
 import com.vasken.music.server.model.HighScoreEntry;
+import com.vasken.music.server.util.Crypto;
 
 public class HighScoreManager {
 

@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.NotPersistent;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -60,9 +61,11 @@ public class HighScoreEntry {
     @Persistent
     private Date date;
     
+    @NotPersistent 
     private boolean isHighScoreToday;
 
-	private boolean isHighScoreEver;
+    @NotPersistent 
+    private boolean isHighScoreEver;
 	
 	public HighScoreEntry(String name, int score, String genre, String version, Date date) {
 		this.name = name;

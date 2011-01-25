@@ -8,13 +8,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.google.appengine.repackaged.com.google.common.base.Pair;
 import com.vasken.music.server.manager.HighScoreManager;
+import com.vasken.music.server.manager.MusicCatalogManager;
 import com.vasken.music.server.model.HighScoreEntry;
+import com.vasken.music.server.model.Song;
 	
 @SuppressWarnings("serial")
 public class VaskenMusicServerServlet extends HttpServlet {
 
+	private static final String GET_CATALOG = "catalog";
 	private static final String NAME = "name";
 	private static final String SCORE = "score";
 	private static final String GENRE = "genre";
@@ -22,16 +28,23 @@ public class VaskenMusicServerServlet extends HttpServlet {
 	private static final String HASH = "id";
 	
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-
+		String requestingCatalog = req.getParameter(GET_CATALOG);
 		String genre = req.getParameter(GENRE);
-
-		HighScoreManager theManager = HighScoreManager.sharedInstace();
-		StringBuilder response = getJSONResponse(theManager, genre);
-		
-		resp.setContentType("application/json");
-		resp.getWriter().print(response);
+		if (requestingCatalog == null) {
+			HighScoreManager theManager = HighScoreManager.sharedInstace();
+			StringBuilder response = getJSONHighScoreResponse(theManager, genre);
+			
+			resp.setContentType("application/json");
+			resp.getWriter().print(response);
+		} else {
+			MusicCatalogManager theManager = MusicCatalogManager.sharedInstace();
+			StringBuilder response = getJSONCatalogResponse(theManager, genre);
+			
+			resp.setContentType("application/json");
+			resp.getWriter().print(response);
+		}
 	}
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		StringBuilder response;
@@ -51,7 +64,7 @@ public class VaskenMusicServerServlet extends HttpServlet {
 				theManager.save(entry);
 			}
 			
-			response = getJSONResponse(theManager, entry.getGenre());
+			response = getJSONHighScoreResponse(theManager, entry.getGenre());
 			
 		} catch (Exception e){
 			response = new StringBuilder();
@@ -72,7 +85,31 @@ public class VaskenMusicServerServlet extends HttpServlet {
 		
 	}
 	
-	private StringBuilder getJSONResponse(HighScoreManager theManager, String genre) {
+	private StringBuilder getJSONCatalogResponse(MusicCatalogManager theManager, String genre) {
+		StringBuilder result = new StringBuilder();
+		
+		List<Song> catalog = theManager.getSongCatalog(genre);
+		if (catalog.isEmpty()) {
+			// Be Paranoid
+			System.err.println("Catalog was empty for this genre " + genre);
+			try {
+				theManager.updateCatalog();
+				catalog = theManager.getSongCatalog(genre);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		try {
+			result.append(JSONObject.valueToString(catalog));
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
+	
+	private StringBuilder getJSONHighScoreResponse(HighScoreManager theManager, String genre) {
 		Pair<List<HighScoreEntry>, List<HighScoreEntry>> highScores = theManager.getHighScores(genre);
 		
 		StringBuilder sb = new StringBuilder();
