@@ -160,11 +160,15 @@
 -(void)showHighScores {
 	HighScoreViewController *controller = [[HighScoreViewController alloc] initWithNibName:@"HighScoreViewController" bundle:nil];
 	
-	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+	controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	[controller setDelegate:self];
 	[self presentModalViewController:controller animated:YES];
 	
 	[controller release];
-	
+}
+
+-(void)highScoreViewFinished:(HighScoreViewController *)controller {
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 -(void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSUInteger)index {

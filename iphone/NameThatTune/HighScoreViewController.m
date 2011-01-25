@@ -39,6 +39,16 @@
 	[self.tableView reloadData];
 }
 
+-(void)setDelegate:(id<HighScoreViewDelegate>)theDelegate {
+	delegate = theDelegate;
+}
+
+-(IBAction)dismiss {
+	if (delegate != nil) {
+		[delegate highScoreViewFinished:self];
+	}
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	if (_scores == nil || [_scores count] == 0)
 		return 0;
