@@ -8,6 +8,7 @@
 
 #import "ScheduleConfirmOperation.h"
 #import "RegexKitLite.h"
+#import "URLResolver.h"
 
 @implementation ScheduleConfirmOperation
 
@@ -28,7 +29,8 @@
 }
 
 -(void)main {
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.greyhound.ca/home/ticketcenter/en/step2.asp"]];
+	NSString *url = [URLResolver scheduleConfirmURLForStart:_start end:_end];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
 	[request setHTTPMethod:@"POST"];
 	
 	NSCalendar *gregorian = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];

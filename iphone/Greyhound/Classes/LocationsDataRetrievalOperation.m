@@ -21,8 +21,9 @@
 	return self;
 }
 
+
 -(void)main {
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.greyhound.ca/FareFinder/Services/Locations.asmx/GetDestinationLocationsByName"]];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.greyhound.com/services/locations.asmx/GetDestinationLocationsByName"]];
 	[request setHTTPMethod:@"POST"];
 	[request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-type"];
 	NSString *params = [NSString stringWithFormat:@"{\"context\":{\"Text\":\"%@\",\"NumberOfItems\":0}}", searchText];

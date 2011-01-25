@@ -17,10 +17,9 @@
 	NSString *layover;
 	NSString *company;
 	NSString *schedule;
-	NSString *remarks;
 }
 
--(id)initWithCity:(NSString *)acityName arrives:(NSString *)aarrives departs:(NSString *)adeparts layover:(NSString *)alayover company:(NSString *)acompany schedule:(NSString *)aschedule remarks:(NSString *)aremarks;
+-(id)initWithCity:(NSString *)acityName arrives:(NSString *)aarrives departs:(NSString *)adeparts layover:(NSString *)alayover company:(NSString *)acompany schedule:(NSString *)aschedule;
 
 
 @end

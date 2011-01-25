@@ -11,7 +11,7 @@
 
 @implementation ScheduleDetails
 
--(id)initWithCity:(NSString *)acityName arrives:(NSString *)aarrives departs:(NSString *)adeparts layover:(NSString *)alayover company:(NSString *)acompany schedule:(NSString *)aschedule remarks:(NSString *)aremarks {
+-(id)initWithCity:(NSString *)acityName arrives:(NSString *)aarrives departs:(NSString *)adeparts layover:(NSString *)alayover company:(NSString *)acompany schedule:(NSString *)aschedule {
 	self = [super init];
 	cityName = [acityName retain];
 	arrives = [aarrives retain];
@@ -19,7 +19,6 @@
 	layover = [alayover retain];
 	company = [acompany retain];
 	schedule = [aschedule retain];
-	remarks = [aremarks retain];
 	return self;
 }
 
@@ -31,7 +30,6 @@
 	[layover release];
 	[company release];
 	[schedule release];
-	[remarks release];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "ScheduleDetailsOperation.h"
 #import "RegexKitLite.h"
 #import "ScheduleDetails.h"
+#import "URLResolver.h"
 
 @implementation ScheduleDetailsOperation
 
@@ -25,8 +26,7 @@
 }
 
 -(void)main {
-	
-	NSString *url = [NSString stringWithFormat:@"http://www.greyhound.ca/home/ticketcenter/en/%@", _schedule->detailsArgs];
+	NSString *url = [URLResolver scheduleDetailsURLForSchedule:_schedule];
 //	url = @"http://www.greyhound.ca/home/ticketcenter/en/ScheduleDetails.asp?ScheduleIndex=7&CS1=3473264952460496:Sock&ID=100706615"
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
 	NSLog(@"HEY, MY REQUEST: %@", request);
@@ -43,8 +43,8 @@
 	NSMutableArray *detailsList = [[NSMutableArray new] autorelease];
 	for (int i = 0; i < [stops count]; i++) {
 		NSString *stopDetails = [[stops objectAtIndex:i] objectAtIndex:1];
-//		NSLog(@"STOP: %@", stopDetails);
 		NSArray *cells = [stopDetails arrayOfCaptureComponentsMatchedByRegex:cellRegex options:RKLDotAll range:NSMakeRange(0, [stopDetails length]) error:nil];
+		NSLog(@"CELLS: %@", cells);
 		NSString *cityName = [[cells objectAtIndex:0] objectAtIndex:1];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
@@ -54,9 +54,8 @@
 		NSString *layover = [[cells objectAtIndex:3] objectAtIndex:1];
 		NSString *company = [[cells objectAtIndex:4] objectAtIndex:1];
 		NSString *schedule = [[cells objectAtIndex:5] objectAtIndex:1];
-		NSString *remarks = [[cells objectAtIndex:6] objectAtIndex:1];
-		NSLog(@"City: %@ Arrives: %@ Departs: %@ Layover: %@ Company: %@ Schedule:%@ Remarks: %@", cityName, arrives, departs, layover, company, schedule, remarks);
-		ScheduleDetails *details = [[ScheduleDetails alloc] initWithCity:cityName arrives:arrives departs:departs layover:layover company:company schedule:schedule remarks:remarks];
+		NSLog(@"City: %@ Arrives: %@ Departs: %@ Layover: %@ Company: %@ Schedule:%@", cityName, arrives, departs, layover, company, schedule);
+		ScheduleDetails *details = [[ScheduleDetails alloc] initWithCity:cityName arrives:arrives departs:departs layover:layover company:company schedule:schedule];
 		[detailsList addObject:details];
 	}
 	[delegate performSelectorOnMainThread:@selector(detailsReady:) withObject:detailsList waitUntilDone:NO];
