@@ -38,7 +38,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vasken.songstar.rock.R;
 import com.vasken.util.UserTask;
 import com.vasken.util.WebRequester;
 import com.vasken.util.WebRequester.RequestCallback;
