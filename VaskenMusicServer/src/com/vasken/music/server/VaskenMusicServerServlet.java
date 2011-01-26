@@ -20,7 +20,7 @@ import com.vasken.music.server.model.Song;
 @SuppressWarnings("serial")
 public class VaskenMusicServerServlet extends HttpServlet {
 
-	private static final String GET_CATALOG = "catalog";
+	private static final String CATALOG = "catalog";
 	private static final String NAME = "name";
 	private static final String SCORE = "score";
 	private static final String GENRE = "genre";
@@ -28,21 +28,20 @@ public class VaskenMusicServerServlet extends HttpServlet {
 	private static final String HASH = "id";
 	
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		String requestingCatalog = req.getParameter(GET_CATALOG);
+		String requestingCatalog = req.getParameter(CATALOG);
 		String genre = req.getParameter(GENRE);
+		
+		StringBuilder response = null;
 		if (requestingCatalog == null) {
 			HighScoreManager theManager = HighScoreManager.sharedInstace();
-			StringBuilder response = getJSONHighScoreResponse(theManager, genre);
-			
-			resp.setContentType("application/json");
-			resp.getWriter().print(response);
+			response = getJSONHighScoreResponse(theManager, genre);
 		} else {
 			MusicCatalogManager theManager = MusicCatalogManager.sharedInstace();
-			StringBuilder response = getJSONCatalogResponse(theManager, genre);
-			
-			resp.setContentType("application/json");
-			resp.getWriter().print(response);
+			response = getJSONCatalogResponse(theManager, genre);
 		}
+		
+		resp.setContentType("application/json");
+		resp.getWriter().print(response);
 	}
 
 	@Override
@@ -101,7 +100,7 @@ public class VaskenMusicServerServlet extends HttpServlet {
 		}
 		
 		try {
-			result.append(JSONObject.valueToString(catalog));
+			result.append("{ catalog: " + JSONObject.valueToString(catalog)+ " }");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

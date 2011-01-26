@@ -294,17 +294,17 @@ public class Main extends Activity {
 	final JSONCache cache = new JSONCache();
 	
 	class JSONCache { 
-		JSONArray _obj;
+		JSONObject _obj;
 		String _id;
 		
-		JSONArray cachedObject(String id) {
+		JSONObject cachedObject(String id) {
 			if (_id != null && _id.equals(id)) {
 				return _obj;
 			}
 			return null;
 		}
 		
-		void cacheObject(String id, JSONArray obj) {
+		void cacheObject(String id, JSONObject obj) {
 			_id = id;
 			_obj = obj;
 		}
@@ -344,23 +344,6 @@ public class Main extends Activity {
 	};
 	
 	class BackgroundWorker extends UserTask<String, List<String>, List<String>> {
-		
-		void parseJSON(JSONArray catalog) throws JSONException {
-			List<String> tracks = new LinkedList<String>();
-			while (tracks.size() < NUM_ANSWERS) {
-				JSONObject randomTrack = catalog.getJSONObject((int) (Math.random() * catalog.length()));
-				String title = randomTrack.getString("title");
-				if (!tracks.contains(title)) {
-					if (tracks.size() == 0) {
-						String link = randomTrack.getString("link");
-						previewUrlReady(link);
-					}
-					tracks.add(title);
-				}
-			}
-			displayOptions(tracks);
-		}
-		
 		private void previewUrlReady(String url) {
 			player.stop();
 			// I should be able to reuse the same MediaPlayer, but I keep
@@ -420,54 +403,136 @@ public class Main extends Activity {
 		public List<String> doInBackground(String... tags) {
 			final List<String> tracks = new LinkedList<String>();
 			
-			final String url = "http://vaskenmusic.appspot.com/" +
-					"vaskenmusicserver" +
-					"?genre=" + getString(R.string.genre) +
-					"&catalog=true";
-			JSONArray json = cache.cachedObject(url);
-			
-			if (json != null) {
-				try {
-					parseJSON(json);
-				} catch (JSONException e) {}
-			}
-			else {				
-				try {
-					new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
-						@Override
-						public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
-							if (isFinal) {
-								try {
-									JSONArray json = new JSONArray(responseSoFar.toString());
-									parseJSON(json);
-									cache.cacheObject(url, json);
-								} catch (JSONException e) {}
-								return true;
+			try {
+				makeVaskenCatalogRequest();
+			} catch(UnknownHostException u) {
+				// We're probably not online
+				runOnUiThread(new Runnable() {
+					public void run() {
+						AlertDialog.Builder alert = new AlertDialog.Builder(theContext);
+						alert.setTitle(R.string.error_dialog_title);
+						alert.setIcon(R.drawable.dialog);
+						alert.setMessage(R.string.error_no_internet);
+						alert.setPositiveButton(R.string.error_dialog_button, new OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								finish();
 							}
-							return false;
-						}
-					});
-				} catch(UnknownHostException u) {
-					runOnUiThread(new Runnable() {
-						public void run() {
-							AlertDialog.Builder alert = new AlertDialog.Builder(theContext);
-							alert.setTitle(R.string.error_dialog_title);
-							alert.setIcon(R.drawable.dialog);
-							alert.setMessage(R.string.error_no_internet);
-							alert.setPositiveButton(R.string.error_dialog_button, new OnClickListener() {
-								@Override
-								public void onClick(DialogInterface dialog, int which) {
-									finish();
-								}
-							});
-							alert.show();
-						};
-					});
-				} catch (Exception e) {
-					e.printStackTrace();
+						});
+						alert.show();
+					};
+				});
+			} catch (Exception e) {
+				// There's something wrong with our server. 
+				// Go directly to the source 
+				try {
+					makeLiveCatalogRequest();
+				} catch (Exception e1) {
+					// We're hosed
+					e1.printStackTrace();
 				}
 			}
 			return tracks;
 		}
+		
+		private void makeLiveCatalogRequest() throws Exception {
+			Log.d(Main.class.toString(), "Making LIVE Catalog Request");
+
+			final String url = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/" 
+				+ "sf=143441/" 			// Some magic shit
+				+ "limit=300/" 			// Number of results 
+				+ "genre=" + getString(R.string.genre) + "/"  			// Type of music
+				+ "explicit=true/"  	// Naughty songs
+				+ "json";
+			JSONObject json = cache.cachedObject(url);
+			
+			if (json != null) {
+				try {
+					parseItunesJSON(json);
+				} catch (JSONException e) {}
+			} else {				
+				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
+					@Override
+					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+						if (isFinal) {
+							try {
+								JSONObject json = new JSONObject(responseSoFar.toString());
+								parseItunesJSON(json);
+								cache.cacheObject(url, json);
+							} catch (JSONException e) {}
+							return true;
+						}
+						return false;
+					}
+				});
+			}
+		}
+
+		public void makeVaskenCatalogRequest() throws Exception {
+			Log.d(Main.class.toString(), "Making Cached Catalog Request");
+			final String url = "http://vaskenmusic.appspot.com/" +
+			"vaskenmusicserver" +
+			"?genre=" + getString(R.string.genre) +
+			"&catalog=true";
+			JSONObject json = cache.cachedObject(url);
+			
+			if (json != null) {
+				try {
+					parseVaskenJSON(json);
+				} catch (JSONException e) {}
+			} else {
+				new WebRequester().makeRequest(new HttpGet(url), new RequestCallback() {
+					@Override
+					public boolean handlePartialResponse(StringBuilder responseSoFar, boolean isFinal) {
+						if (isFinal) {
+							try {
+								JSONObject json = new JSONObject(responseSoFar.toString());
+								parseVaskenJSON(json);
+								cache.cacheObject(url, json);
+							} catch (JSONException e) {}
+							return true;
+						}
+						return false;
+					}
+				});
+			}
+		}
+		
+		private void parseVaskenJSON(JSONObject container) throws JSONException {
+			List<String> tracks = new LinkedList<String>();
+			
+			JSONArray catalog = container.getJSONArray("catalog");
+			while (tracks.size() < NUM_ANSWERS) {
+				JSONObject randomTrack = catalog.getJSONObject((int) (Math.random() * catalog.length()));
+				String title = randomTrack.getString("title");
+				if (!tracks.contains(title)) {
+					if (tracks.size() == 0) {
+						String link = randomTrack.getString("link");
+						previewUrlReady(link);
+					}
+					tracks.add(title);
+				}
+			}
+			displayOptions(tracks);
+		}
+		
+		private void parseItunesJSON(JSONObject catalog) throws JSONException {
+			List<String> tracks = new LinkedList<String>();
+			JSONArray entries = catalog.getJSONObject("feed").getJSONArray("entry");
+			while (tracks.size() < NUM_ANSWERS) {
+				JSONObject randomTrack = entries.getJSONObject((int) (Math.random() * entries.length()));
+				String title = randomTrack.getJSONObject("title").getString("label");
+				if (!tracks.contains(title)) {
+					if (tracks.size() == 0) {
+						String link = randomTrack.getJSONArray("link").getJSONObject(1).getJSONObject("attributes").getString("href");
+						previewUrlReady(link);
+					}
+					tracks.add(title);
+				}
+			}
+			displayOptions(tracks);
+		}
 	}
+
+	
 }
