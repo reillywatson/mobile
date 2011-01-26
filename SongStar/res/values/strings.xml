@@ -4,10 +4,12 @@
     <string name="loading">Loading Music Catalog...</string>
     
     <!--  GAME SCREEN -->
-    <string name="streak">%1$d in a row</string>
+    <string name="error_dialog_title">No network connection</string>
 	<string name="error_no_internet">Ooops! We couldn\'t reach our servers. Make sure you\'re connected to the internet and try again.</string>
     <string name="error_cant_submit_score">Sorry! There was an error submitting your score.</string>
+    <string name="error_dialog_button">Ok</string>
     
+    <string name="streak">%1$d in a row</string>
     <string name="submit_score">Submit Score: %1$d</string>
     <string name="high_scores">High Scores</string>
     <string name="achievements">Achievements</string>

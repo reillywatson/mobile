@@ -1,6 +1,8 @@
 package com.vasken.songstar.rock;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.UnknownHostException;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,9 +22,11 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
@@ -294,8 +298,9 @@ public class Main extends Activity {
 		String _id;
 		
 		JSONArray cachedObject(String id) {
-			if (_id != null && _id.equals(id))
+			if (_id != null && _id.equals(id)) {
 				return _obj;
+			}
 			return null;
 		}
 		
@@ -362,6 +367,7 @@ public class Main extends Activity {
 			// getting errors that I don't yet understand about invalid states
 			player.release();
 			player = new MediaPlayer();
+
 			try {
 				player.setDataSource(url);
 				player.prepare();
@@ -376,10 +382,36 @@ public class Main extends Activity {
 					});
 				}
 				runOnUiThread(mSetupTimeTask);
-
-			} catch (Exception e) {
+			} catch (IllegalStateException e) {
 				e.printStackTrace();
 				sampleRetrievalError();
+				return;
+			} catch (IOException e) {
+				e.printStackTrace();
+				ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+				boolean hasMobileConnection = conMan.getNetworkInfo(0).isConnectedOrConnecting();
+				boolean hasWifiConnection = conMan.getNetworkInfo(1).isConnectedOrConnecting();
+				
+				if (!hasMobileConnection && !hasWifiConnection) {
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							AlertDialog.Builder alert = new AlertDialog.Builder(theContext);
+							alert.setTitle(R.string.error_dialog_title);
+							alert.setIcon(R.drawable.dialog);
+							alert.setMessage(R.string.error_no_internet);
+							alert.setPositiveButton(R.string.error_dialog_button, new OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									finish();
+								}
+							});
+							alert.show();
+						}
+					});
+				} else {
+					sampleRetrievalError();
+				}
 				return;
 			}
 		}
@@ -415,8 +447,24 @@ public class Main extends Activity {
 							return false;
 						}
 					});
+				} catch(UnknownHostException u) {
+					runOnUiThread(new Runnable() {
+						public void run() {
+							AlertDialog.Builder alert = new AlertDialog.Builder(theContext);
+							alert.setTitle(R.string.error_dialog_title);
+							alert.setIcon(R.drawable.dialog);
+							alert.setMessage(R.string.error_no_internet);
+							alert.setPositiveButton(R.string.error_dialog_button, new OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialog, int which) {
+									finish();
+								}
+							});
+							alert.show();
+						};
+					});
 				} catch (Exception e) {
-					Toast.makeText(theContext, R.string.error_no_internet, Toast.LENGTH_LONG).show();
+					e.printStackTrace();
 				}
 			}
 			return tracks;

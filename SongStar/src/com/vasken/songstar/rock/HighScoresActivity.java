@@ -51,7 +51,6 @@ public class HighScoresActivity extends Activity {
 							fillLayoutWithData(scoresEver, tableLayoutEver);
 						} catch (JSONException e) {
 							e.printStackTrace();
-							Toast.makeText(theContext, R.string.error_no_internet, Toast.LENGTH_LONG).show();
 						}
 						return true;
 					}
@@ -60,6 +59,12 @@ public class HighScoresActivity extends Activity {
 			});
 		} catch (Exception e) {
 			e.printStackTrace();
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					Toast.makeText(theContext, R.string.error_no_internet, Toast.LENGTH_LONG).show();					
+				}
+			});
 		}
 	}
 	
