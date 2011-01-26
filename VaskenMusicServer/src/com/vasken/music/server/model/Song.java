@@ -60,7 +60,7 @@ public class Song {
 		return dateAdded;
 	}
 	
-	public String toString() {
+	public String toJSONString() {
 		return "{ title: \""+this.title+"\", link: \""+ this.link +"\" }";
 	}
 }
