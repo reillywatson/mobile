@@ -423,7 +423,6 @@ public class Main extends Activity {
 					};
 				});
 			} catch (Exception e) {
-				e.printStackTrace();
 				// There's something wrong with our server. 
 				// Go directly to the source 
 				try {

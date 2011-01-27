@@ -1572,7 +1572,6 @@ public class JSONObject {
              if (object instanceof Map) {
                  return new JSONObject((Map)object);
              }
-             
              Package objectPackage = object.getClass().getPackage();
              String objectPackageName = ( objectPackage != null ? objectPackage.getName() : "" );
              if (objectPackageName.startsWith("java.") ||
