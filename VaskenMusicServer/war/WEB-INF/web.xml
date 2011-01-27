@@ -30,6 +30,22 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>com.vasken.music.server.CatalogUpdaterServlet</servlet-name>
+    <url-pattern>/tasks/catalogUpdater</url-pattern>
+  </servlet-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/tasks/catalogUpdater</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <servlet>
+    <servlet-name>com.vasken.music.server.CatalogCronServlet</servlet-name>
+    <servlet-class>com.vasken.music.server.CatalogCronServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>com.vasken.music.server.CatalogCronServlet</servlet-name>
     <url-pattern>/tasks/catalogUpdateJob</url-pattern>
   </servlet-mapping>
   <security-constraint>

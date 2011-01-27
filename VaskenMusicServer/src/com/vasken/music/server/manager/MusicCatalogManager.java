@@ -17,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.vasken.music.server.model.Genre;
 import com.vasken.music.server.model.Song;
 
 public class MusicCatalogManager {
@@ -44,22 +45,30 @@ public class MusicCatalogManager {
 		return catalog;
 	}
 	
-	public StringBuffer updateCatalog() throws JSONException {
-		StringBuffer result = new  StringBuffer();
-		for (int i=21; i<22; i++) {
-			String genre = String.valueOf(i);
-			
+	public StringBuffer updateCatalog()  {
+		StringBuffer result = new StringBuffer("The catalog has been updated.\n");
+		long timeInMilis = new Date().getTime();
+		for (Genre genre : Genre.values()) {
+			String genreCode = String.valueOf(genre.getCode());
+				
 			// Make genre request
-			StringBuilder response = makeGenreRequest(genre);
-			
-			// Parse response
-			List<Song> songs = parseResponse(response, genre);
-			
-			// Save list of songs
-			saveSongCatalog(songs);
-			
-			result.append(genre).append(" - ").append(songs.size()).append("\n");
+			StringBuilder response = makeGenreRequest(genreCode);
+
+			try {
+				// Parse response
+				List<Song> songs = parseResponse(response, genreCode);
+				
+				// Save list of songs
+				saveSongCatalog(songs);
+				
+				result.append(genre.getTitle()).append(" - ").append(songs.size()).append("\n");
+			} catch (JSONException e) {
+				System.out.println(response);
+				e.printStackTrace();
+				result.append(genre.getTitle()).append(" FAILED\n");
+			}
 		}
+		result.append("Update took " + (new Date().getTime() - timeInMilis) + " miliseconds") ;
 		
 		return result;
 	}

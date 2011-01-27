@@ -1573,13 +1573,6 @@ public class JSONObject {
                  return new JSONObject((Map)object);
              }
              
-             try {
-	             Method method = object.getClass().getMethod("toJSONString");
-	             if (method != null) {
-	            	 return method.invoke(object);
-	             }
-             } catch (Exception ignore) {}
-             
              Package objectPackage = object.getClass().getPackage();
              String objectPackageName = ( objectPackage != null ? objectPackage.getName() : "" );
              if (objectPackageName.startsWith("java.") ||

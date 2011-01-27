@@ -6,8 +6,13 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+import org.json.JSONString;
+
+import com.google.appengine.repackaged.org.json.JSONException;
+import com.google.appengine.repackaged.org.json.JSONObject;
+
 @PersistenceCapable
-public class Song {
+public class Song implements JSONString{
 	@PrimaryKey
     @Persistent
 	private String title;
@@ -61,6 +66,15 @@ public class Song {
 	}
 	
 	public String toJSONString() {
-		return "{ title: \""+this.title+"\", link: \""+ this.link +"\" }";
+		JSONObject result = new JSONObject();
+		try {
+			result.put("title", this.title);
+			result.put("link", this.link);
+			return result.toString();
+		} catch (JSONException e) {
+			e.printStackTrace();
+			return "{\"title\":\""+this.title+"\",\"link\":\""+this.link+"\"}";
+		}
+		
 	}
 }

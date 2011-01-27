@@ -91,16 +91,12 @@ public class VaskenMusicServerServlet extends HttpServlet {
 		if (catalog.isEmpty()) {
 			// Be Paranoid
 			System.err.println("Catalog was empty for this genre " + genre);
-			try {
-				theManager.updateCatalog();
-				catalog = theManager.getSongCatalog(genre);
-			} catch (JSONException e) {
-				e.printStackTrace();
-			}
+//			theManager.updateCatalog();
+//			catalog = theManager.getSongCatalog(genre);
 		}
 		
 		try {
-			result.append("{ catalog: " + JSONObject.valueToString(catalog)+ " }");
+			result.append("{ \"catalog\" : " + JSONObject.valueToString(catalog)+ " }");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

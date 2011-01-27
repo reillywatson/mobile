@@ -423,6 +423,7 @@ public class Main extends Activity {
 					};
 				});
 			} catch (Exception e) {
+				e.printStackTrace();
 				// There's something wrong with our server. 
 				// Go directly to the source 
 				try {
@@ -489,7 +490,9 @@ public class Main extends Activity {
 								JSONObject json = new JSONObject(responseSoFar.toString());
 								parseVaskenJSON(json);
 								cache.cacheObject(url, json);
-							} catch (JSONException e) {}
+							} catch (JSONException e) {
+								e.printStackTrace();
+							}
 							return true;
 						}
 						return false;
