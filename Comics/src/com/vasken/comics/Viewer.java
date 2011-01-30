@@ -1,4 +1,4 @@
-package com.vasken.comicstrips;
+package com.vasken.comics;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,8 +20,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vasken.comicstrips.R;
-import com.vasken.comicstrips.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.Downloader;
+import com.vasken.comics.R;
 import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
 

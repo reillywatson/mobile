@@ -1,4 +1,4 @@
-package com.vasken.comicstrips;
+package com.vasken.comics;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.util.Log;
 
-import com.vasken.comicstrips.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.Downloader;
 
 public class ComicInfo implements Comparable<ComicInfo> {
 	public String name;

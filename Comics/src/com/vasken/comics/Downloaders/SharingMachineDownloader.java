@@ -1,4 +1,4 @@
-package com.vasken.comicstrips.Downloaders;
+package com.vasken.comics.Downloaders;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -6,7 +6,7 @@ import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.vasken.comicstrips.Comic;
+import com.vasken.comics.Comic;
 
 import android.util.Log;
 

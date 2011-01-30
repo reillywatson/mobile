@@ -1,4 +1,4 @@
-package com.vasken.comicstrips;
+package com.vasken.comics;
 
 import android.graphics.Bitmap;
 

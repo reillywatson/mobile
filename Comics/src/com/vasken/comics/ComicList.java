@@ -1,4 +1,4 @@
-package com.vasken.comicstrips;
+package com.vasken.comics;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,9 +6,9 @@ import java.util.concurrent.Callable;
 
 import android.content.Context;
 
-import com.vasken.comicstrips.R;
-import com.vasken.comicstrips.Downloaders.Downloader;
-import com.vasken.comicstrips.Downloaders.SharingMachineDownloader;
+import com.vasken.comics.Downloaders.Downloader;
+import com.vasken.comics.Downloaders.SharingMachineDownloader;
+import com.vasken.comics.R;
 
 public class ComicList {
 	

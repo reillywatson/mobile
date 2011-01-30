@@ -1,4 +1,4 @@
-package com.vasken.comicstrips.Downloaders;
+package com.vasken.comics.Downloaders;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,8 +19,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import com.vasken.comicstrips.Comic;
-import com.vasken.comicstrips.ComicInfo;
+import com.vasken.comics.Comic;
+import com.vasken.comics.ComicInfo;
 import com.vasken.util.WebRequester;
 
 public class Downloader implements WebRequester.RequestCallback {

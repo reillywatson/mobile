@@ -1,9 +1,9 @@
-package com.vasken.comicstrips;
+package com.vasken.comics;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import com.vasken.comicstrips.R;
+import com.vasken.comics.R;
 
 import android.app.Dialog;
 import android.app.ListActivity;
