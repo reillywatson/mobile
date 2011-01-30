@@ -1,0 +1,9 @@
+{
+    "Name" : "Sinfest",
+    "StartURL" : "http://sinfest.net/",
+	"ImagePattern" : "<img src=\"http://sinfest.net/comikaze/(.*?)\"",
+	"TitlePattern" : "<img src=\"http://sinfest.net/comikaze/.*?\" alt=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img src=\"images/prev_a.gif\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"><img src=\"images/next_a.gif\"",
+	"BaseComicURL" : "http://www.sinfest.net/comikaze/"
+}

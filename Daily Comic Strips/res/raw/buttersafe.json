@@ -1,0 +1,9 @@
+{
+    "Name" : "Buttersafe",
+    "StartURL" : "http://buttersafe.com/",
+	"ImagePattern" : "<div id=\"comic\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\">.*?<img .*? title=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" rel=\"next\"",
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=1307"
+}

@@ -1,0 +1,13 @@
+{
+    "Name" : "A Softer World",
+    "StartURL" : "http://www.asofterworld.com/",
+	"ImagePattern" : "<span class=\"rss-content\">.*?<img [^>]*? src=\"(.*?)\"",
+	"TitlePattern" : "<TITLE>A Softer World: (.*?)</TITLE>",
+	"PrevComicPattern" : "<span class=\"rss-content\">.*?dopeoplereallystillusespacers.*?href=\"(.*?)\"",
+	"NextComicPattern" : "http://www.asofterworld.com/stumbleupon.gif.*?href=\"(.*?)\"",
+    "AltTextPattern" : "<span class=\"rss-content\">.*?<img [^>]*? title=\"(.*?)\"",
+    "BasePrevNextURL" : "http://www.asofterworld.com/",
+    "BaseComicURL" : "http://www.asofterworld.com/",
+
+	"RandomLink" : "http://www.ohnorobot.com/random.pl?comic=796"
+}

@@ -1,0 +1,9 @@
+{
+    "Name" : "Dominic Deegan: Oracle For Hire",
+    "StartURL" : "http://www.dominic-deegan.com/",
+	"ImagePattern" : "<div class='comic'>.*?<img src=\"(.*?)\"",
+    "TitlePattern" : "<div class='date'>(.*?)</div>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img [^>]*? alt='Previous'",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"><img [^>]*? alt='Next'",
+    "BasePrevNextURL" : "http://www.dominic-deegan.com/"
+}

@@ -1,0 +1,12 @@
+{
+    "Name" : "Diesel Sweeties",
+    "StartURL" : "http://www.dieselsweeties.com/",
+	"ImagePattern" : "<img [^>]*?src=\"/hstrips/([^>]*?)\"",
+	"TitlePattern" : "<img title=\"([^>]*?)\" src=\"/hstrips",
+	"PrevComicPattern" : "<a [^>]*?href=\"([^>]*?)\"[^>]*?><[^>]*? alt=\"[^\"]*?previous webcomic\"",
+	"NextComicPattern" : "<a [^>]*?href=\"([^>]*?)\"[^>]*?><[^>]*? alt=\"[^\"]*?next webcomic\"",
+	"BaseComicURL" : "http://www.dieselsweeties.com/hstrips/",
+    "BasePrevNextURL" : "http://www.dieselsweeties.com/",
+    "RandomComicPattern" : "<a href=\"([^>]*?)\" title=\"random diesel sweeties comic\"",
+    "BaseRandomComicURL" : "http://www.dieselsweeties.com/"
+}

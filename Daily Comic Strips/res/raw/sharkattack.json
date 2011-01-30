@@ -1,0 +1,10 @@
+{
+    "Name" : "Shark Attack!",
+    "StartURL" : "http://www.sharkattackcomics.com/",
+	"ImagePattern" : "<img src=\"/images/strips/(.*?)\"",
+	"TitlePattern" : "<title>Shark attack! Webcomic - (.*?)</title>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">[^<]*?<img src=\"/images/SAC_Previous_002.png\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">[^<]*?<img src=\"/images/SAC_Next_002.png\"",
+	"BaseComicURL" : "http://www.sharkattackcomics.com/images/strips/",
+    "BasePrevNextURL" : "http://www.sharkattackcomics.com"
+}

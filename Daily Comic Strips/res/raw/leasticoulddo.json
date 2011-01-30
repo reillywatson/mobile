@@ -1,0 +1,8 @@
+{
+    "Name" : "The Least I Could Do",
+    "StartURL" : "http://leasticoulddo.com/",
+	"ImagePattern" : "id=\"comic\">.*?<img src=\"(.*?)\"",
+	"PrevComicPattern" : "<div id=\"nav-previous\"><a href=\"(.*?)\"",
+	"NextComicPattern" : "<div id=\"nav-next\"><a href=\"(.*?)\"",
+    "BasePrevNextURL" : "http://leasticoulddo.com"
+}

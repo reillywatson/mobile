@@ -1,0 +1,12 @@
+{
+    "Name" : "AmazingSuperPowers",
+    "StartURL" : "http://www.amazingsuperpowers.com/",
+	"ImagePattern" : "img src=\"http://www.amazingsuperpowers.com/comics/(.*?)\"",
+	"TitlePattern" : "img src=\"http://www.amazingsuperpowers.com/comics/.*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "<div class=\"nav-previous\"><a href=\"(.*?)\"",
+	"NextComicPattern" : "<div class=\"nav-next\"><a href=\"(.*?)\"",
+    "AltTextPattern" : "img src=\"http://www.amazingsuperpowers.com/comics/.*?title=\"(.*?)\"",
+	"BaseComicURL" : "http://www.amazingsuperpowers.com/comics/",
+    "BasePrevNextURL" : "",
+	"RandomLink" : "http://www.amazingsuperpowers.com/cgi/rand_link.cgi"
+}

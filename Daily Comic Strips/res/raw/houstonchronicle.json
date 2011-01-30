@@ -1,0 +1,8 @@
+{
+	"ImagePattern" : "<img src=\"([^>]*?)\" alt=\"Comic image\"",
+	"TitlePattern" : "Previous Day.*?<strong>(.*?)</strong>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\">Previous Day",
+	"NextComicPattern" : "<a href=\"([^>]*?)\">Next Day",
+    "BasePrevNextURL" : "http://www.chron.com/apps/comics/",
+    "RequiresReferrer" : "true"
+}

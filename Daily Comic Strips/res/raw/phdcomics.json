@@ -1,0 +1,10 @@
+{
+    "Name" : "PHD (Piled Higher and Deeper)",
+    "StartURL" : "http://www.phdcomics.com/comics/archive.php",
+	"ImagePattern" : "<img src=http://www.phdcomics.com/comics/archive/([^>]*?) align=top",
+	"TitlePattern" : "<title>PHD Comics: ([^<]*?)</title>",
+	"PrevComicPattern" : "<a href=([^>]*?)><img[^>]*?src=images/prev_button.gif",
+	"NextComicPattern" : "<a href=([^>]*?)><img[^>]*?src=images/next_button.gif",
+	"BaseComicURL" : "http://www.phdcomics.com/comics/archive/",
+    "BasePrevNextURL" : "http://www.phdcomics.com/comics/"
+}

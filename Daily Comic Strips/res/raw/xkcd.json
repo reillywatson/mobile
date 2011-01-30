@@ -1,0 +1,13 @@
+{
+	"Name" : "XKCD",
+	"ImagePattern" : "<h3>Image URL \\(for hotlinking/embedding\\): (.*?)</h3>",
+	"TitlePattern" : "<title>xkcd: (.*?)</title>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" accesskey=\"p\">",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" accesskey=\"n\">",
+	"AltTextPattern" : "<img.*? title=\"(.*?)\".*?/>",
+	"RandomLink" : "http://dynamic.xkcd.com/random/comic/",
+	"BasePrevNextURL" : "http://xkcd.com",
+	"StartURL" : "http://xkcd.com/",
+	"ComicPickerStyle" : "NumberPicker",
+	"ComicPickerPattern" : "http://xkcd.com/%s/"
+}

@@ -1,0 +1,10 @@
+{
+    "Name" : "Nedroid",
+    "StartURL" : "http://nedroid.com/",
+	"ImagePattern" : "<div id=\"comic\"[^>]*?>[^<]*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\"[^>]*?>[^<]*?<img .*? alt=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "a href=\"([^>]*?)\" rel=\"next\"",
+    "AltTextPattern" : "<div id=\"comic\"[^>]*?>[^<]*?<img .*? title=\"(.*?)\"",
+	"RandomLink" : "http://nedroid.com/?randomcomic=1"
+}
