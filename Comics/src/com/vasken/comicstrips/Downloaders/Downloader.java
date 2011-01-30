@@ -230,7 +230,12 @@ public class Downloader implements WebRequester.RequestCallback {
 		Log.d("GETTING COMIC", url);
 		comic = null;
 		HttpUriRequest request = createHttpRequest(url);
-		requester.makeRequest(request, this);
+		try {
+			requester.makeRequest(request, this);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return comic;
 	}
 	

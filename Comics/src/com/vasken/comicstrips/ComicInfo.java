@@ -76,6 +76,9 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	
 	public ComicInfo (Context context, int jsonResID) {
 		parseJSON(context, jsonResID);
+		if (this.name == null) {
+			Log.e("----------------------------------", String.valueOf(jsonResID));
+		}
 	}
 	
 	public ComicInfo(Context context, int resID, String name, String startUrl) {
@@ -92,12 +95,7 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	
 	@Override
 	public int compareTo(ComicInfo another) {
-		try {
-			return name.replaceFirst("The ", "").compareTo(another.name.replaceFirst("The ", ""));
-		} catch (NullPointerException e) {
-			Log.e(ComicInfo.class.toString(), "Something is null... " + "name: " + name + " another: " + another + " another.name: " + another.name);
-			return 0;
-		}
+		return name.replaceFirst("The ", "").compareTo(another.name.replaceFirst("The ", ""));
 	}
 	
 	@Override
