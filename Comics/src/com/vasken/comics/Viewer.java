@@ -21,7 +21,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.vasken.comics.Downloaders.Downloader;
-import com.vasken.comics.R;
 import com.vasken.util.StringUtils;
 import com.vasken.util.UserTask;
 
@@ -39,7 +38,9 @@ public class Viewer extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.viewer);
+		
 		WebView webView = (WebView) Viewer.this.findViewById(R.id.WebView);
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.setBackgroundColor(0);

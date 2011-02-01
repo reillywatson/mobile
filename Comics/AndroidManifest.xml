@@ -11,30 +11,27 @@
 			</intent-filter>
 		</activity>
 		<activity android:name=".Viewer" />
-		
 		<!-- AdMobActivity definition -->
 		<activity android:name="com.admob.android.ads.AdMobActivity"
-		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-		android:configChanges="orientation|keyboard|keyboardHidden" />
-		<!-- Track Market installs -->          
-		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
-		android:exported="true">
-		<intent-filter>
-		   <action android:name="com.android.vending.INSTALL_REFERRER" />
-		</intent-filter>
-		</receiver>
-
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation|keyboard|keyboardHidden" />
+		
 		<!-- The application's publisher ID assigned by AdMob -->
         <meta-data android:value="a14bee0f404f787" android:name="ADMOB_PUBLISHER_ID" />
         <meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+        
+		<!-- Track Market installs -->          
+		<receiver android:name="com.admob.android.ads.analytics.InstallReceiver"
+			android:exported="true">
+			<intent-filter>
+			   <action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
 
     </application>
     <uses-sdk android:minSdkVersion="3" />
-
-<!-- AdMob SDK permissions -->
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-
-
+	
+	<!-- AdMob SDK permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 </manifest> 
