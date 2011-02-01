@@ -1,6 +1,6 @@
-package com.vasken.songster.rock.model;
+package com.vasken.songstar.rock.model;
 
-import com.vasken.songster.rock.R;
+import com.vasken.songstar.rock.R;
 
 import android.util.Log;
 

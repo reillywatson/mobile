@@ -1,4 +1,4 @@
-package com.vasken.songster.rock;
+package com.vasken.songstar.rock;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -40,9 +40,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vasken.songster.rock.manager.State;
-import com.vasken.songster.rock.manager.UserActionManager;
-import com.vasken.songster.rock.model.Achievement;
+import com.vasken.songstar.rock.manager.State;
+import com.vasken.songstar.rock.manager.UserActionManager;
+import com.vasken.songstar.rock.model.Achievement;
 import com.vasken.util.UserTask;
 import com.vasken.util.WebRequester;
 import com.vasken.util.WebRequester.RequestCallback;
@@ -352,15 +352,6 @@ public class Main extends Activity {
 				player.setDataSource(url);
 				player.prepare();
 				player.start();
-
-				if (findViewById(R.id.splashScreen) != null) {
-					runOnUiThread(new Runnable() {
-						@Override
-						public void run() {
-							showGameScreen();
-						}
-					});
-				}
 				runOnUiThread(mSetupTimeTask);
 			} catch (IllegalStateException e) {
 				e.printStackTrace();
@@ -499,6 +490,15 @@ public class Main extends Activity {
 		
 		private void parseVaskenJSON(JSONObject container) throws JSONException {
 			List<String> tracks = new LinkedList<String>();
+
+			if (findViewById(R.id.splashScreen) != null) {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						showGameScreen();
+					}
+				});
+			}
 			
 			JSONArray catalog = container.getJSONArray("catalog");
 			while (tracks.size() < NUM_ANSWERS) {

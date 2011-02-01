@@ -1,17 +1,17 @@
-package com.vasken.songster.rock.manager;
+package com.vasken.songstar.rock.manager;
 
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.vasken.songster.rock.Main;
-import com.vasken.songster.rock.model.Achievement;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.Log;
+
+import com.vasken.songstar.rock.Main;
+import com.vasken.songstar.rock.model.Achievement;
 
 public class State {
 	private static final String PREFERENCES_NAME = "PREFERENCES_NAME";

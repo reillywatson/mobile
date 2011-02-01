@@ -1,4 +1,4 @@
-package com.vasken.songster.rock.util;
+package com.vasken.songstar.rock.util;
 
 import java.security.MessageDigest;
 

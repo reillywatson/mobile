@@ -1,8 +1,8 @@
-package com.vasken.songster.rock;
+package com.vasken.songstar.rock;
 
-import com.vasken.songster.rock.R;
-import com.vasken.songster.rock.manager.State;
-import com.vasken.songster.rock.model.Achievement;
+import com.vasken.songstar.rock.R;
+import com.vasken.songstar.rock.manager.State;
+import com.vasken.songstar.rock.model.Achievement;
 
 import android.app.Activity;
 import android.os.Bundle;

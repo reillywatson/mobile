@@ -1,4 +1,4 @@
-package com.vasken.songster.rock;
+package com.vasken.songstar.rock;
 
 import org.apache.http.client.methods.HttpGet;
 import org.json.JSONArray;
@@ -14,7 +14,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vasken.songster.rock.R;
+import com.vasken.songstar.rock.R;
 import com.vasken.util.WebRequester;
 import com.vasken.util.WebRequester.RequestCallback;
 
