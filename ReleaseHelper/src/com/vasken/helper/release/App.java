@@ -18,6 +18,7 @@ public class App {
 	private static final String RES_FOLDER_NAME = "res";
 	private static final String LAYOUT_FOLDER_NAME = "layout";
 	private static final String DRAWABLE_FOLDER_NAME = "drawable";
+	private static final String DRAWABLE_MDPI_FOLDER_NAME = "drawable-mdpi";
 	private static final String RAW_FOLDER_NAME = "raw";
 	private static final String VALUES_FOLDER_NAME = "values";
 	private static final String STRINGS_FILE_NAME = "strings.xml";
@@ -60,7 +61,11 @@ public class App {
 	}
 
 	public void addDrawableFiles(String drawableFiles) {
-		addFiles(drawableFiles, resFolderName + File.separatorChar + DRAWABLE_FOLDER_NAME);
+		if (new File(resFolderName + File.separatorChar + DRAWABLE_FOLDER_NAME).exists()) {
+			addFiles(drawableFiles, resFolderName + File.separatorChar + DRAWABLE_FOLDER_NAME);
+		} else {
+			addFiles(drawableFiles, resFolderName + File.separatorChar + DRAWABLE_MDPI_FOLDER_NAME);
+		}
 	}
 
 	public void addRawFiles(String rawFiles) {
@@ -127,6 +132,12 @@ public class App {
 					"<projectDescription>[\\s]*<name>(.*?)</name>[\\s]*<comment>", 
 					"<projectDescription>\n\t<name>"+newName+"</name>\n\t<comment>");
 		}
+	}
+
+	public void setStrings(String key, String value) {
+		replaceStringInFile(stringsXml, 
+				"<string name=\""+key+"\">(.*?)</string>", 
+				"<string name=\""+key+"\">"+value+"</string>");
 	}
 
 	/****************************************************************/
