@@ -1,7 +1,6 @@
 package com.vasken.movie;
 
-import com.vasken.movie.manager.QuestionManager;
-import com.vasken.movie.model.Question;
+import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,6 +9,9 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.vasken.movie.manager.QuestionManager;
+import com.vasken.movie.model.Question;
 
 public class Trivia extends Activity {
 	private static QuestionManager theManager;
@@ -40,9 +42,10 @@ public class Trivia extends Activity {
 			text.setText(question.getText());
 		}
 		
-		answer1.setText(question.getNextPossibleAnswer());
-		answer2.setText(question.getNextPossibleAnswer());
-		answer3.setText(question.getNextPossibleAnswer());
+		List<String> possibleAnswers = question.getPossibleAnswers(3);
+		answer1.setText(possibleAnswers.get(0));
+		answer2.setText(possibleAnswers.get(1));
+		answer3.setText(possibleAnswers.get(2));
 		
 		answer1.setOnClickListener(new AnswerClickListener(question));
 		answer2.setOnClickListener(new AnswerClickListener(question));
