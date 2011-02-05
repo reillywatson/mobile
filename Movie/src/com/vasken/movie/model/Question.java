@@ -21,4 +21,14 @@ public class Question {
 		return null;
 	}
 
+	public CharSequence getNextPossibleAnswer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getRightAnswer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
