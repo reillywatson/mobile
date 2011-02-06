@@ -36,6 +36,7 @@ public class ComicList {
 //		comics.add(new ComicInfo(context, R.raw.eightbittheater));
 		comics.add(new ComicInfo(context, R.raw.girlgenius));
 		comics.add(new ComicInfo(context, R.raw.girlswithslingshots));
+		comics.add(new ComicInfo(context, R.raw.hipsterhitler));
 		comics.add(new ComicInfo(context, R.raw.jesusandmo));
 		comics.add(new ComicInfo(context, R.raw.kinokofry));
 		comics.add(new ComicInfo(context, R.raw.leasticoulddo));
