@@ -294,6 +294,9 @@ public class ComicList {
 		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Prickly City", "http://www.chron.com/apps/comics/buildcp.mpl?c=92&page=1&cpp=1&v=3.0&quality=high"));
 		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Willy & Ethel", "http://www.chron.com/apps/comics/buildcp.mpl?c=77&page=1&cpp=1&v=3.0&quality=high"));
 
+		comics.add(new ComicInfo(context, R.raw.arcamax, "Red & Rover", "http://www.arcamax.com/redandrover"));
+
+		
 		/**
 		 * King Syndicate Comics
 		 */
