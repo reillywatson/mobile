@@ -28,23 +28,8 @@ public class ComicInfo implements Comparable<ComicInfo> {
 	public String baseComicURL = "";
 	public boolean requiresReferrer;
 	
-	void parseJSON(Context context, int jsonResID) {
+	void populateFromJSON(JSONObject comicJSON) {
 		try {
-	        JSONObject comicJSON = null; //((ComicsApplication)context.getApplicationContext()).getJSONCache().get(new Integer(jsonResID));
-	        if (comicJSON == null) {
-				BufferedReader in = new BufferedReader(new InputStreamReader(context.getResources().openRawResource(jsonResID)), 1024);
-				StringBuilder sb = new StringBuilder();
-				char[] buffer = new char[1024];
-				int bytesRead = in.read(buffer, 0, buffer.length);
-		        int totalBytesRead = 0;
-		        while (bytesRead>=0) {
-		        	sb.append(buffer, 0, bytesRead);
-		        	totalBytesRead += bytesRead;
-		        	bytesRead = in.read(buffer, 0, buffer.length);
-		        }
-				comicJSON = new JSONObject(sb.toString());
-				//((ComicsApplication)context.getApplicationContext()).getJSONCache().put(new Integer(jsonResID), comicJSON);
-	        }
 			if (comicJSON.has("Name"))
 				name = comicJSON.getString("Name");
 			if (comicJSON.has("StartURL"))
@@ -69,9 +54,37 @@ public class ComicInfo implements Comparable<ComicInfo> {
 				baseComicURL = comicJSON.getString("BaseComicURL");
 			if (comicJSON.has("RequiresReferrer"))
 				requiresReferrer = true;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	void parseJSON(Context context, int jsonResID) {
+		try {
+	        JSONObject comicJSON = null; //((ComicsApplication)context.getApplicationContext()).getJSONCache().get(new Integer(jsonResID));
+	        if (comicJSON == null) {
+				BufferedReader in = new BufferedReader(new InputStreamReader(context.getResources().openRawResource(jsonResID)), 1024);
+				StringBuilder sb = new StringBuilder();
+				char[] buffer = new char[1024];
+				int bytesRead = in.read(buffer, 0, buffer.length);
+		        int totalBytesRead = 0;
+		        while (bytesRead>=0) {
+		        	sb.append(buffer, 0, bytesRead);
+		        	totalBytesRead += bytesRead;
+		        	bytesRead = in.read(buffer, 0, buffer.length);
+		        }
+				comicJSON = new JSONObject(sb.toString());
+				populateFromJSON(comicJSON);
+				//((ComicsApplication)context.getApplicationContext()).getJSONCache().put(new Integer(jsonResID), comicJSON);
+	        }
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public ComicInfo(JSONObject comicJSON) {
+		populateFromJSON(comicJSON);
 	}
 	
 	public ComicInfo (Context context, int jsonResID) {
