@@ -194,14 +194,20 @@ public class Downloader implements WebRequester.RequestCallback {
 			Log.d(this.getClass().getName(),"PARSING...");
 			//Log.d("RESPONSE", responseSoFar.toString());
 			comic = newComic();
-			boolean success = parseComic(responseSoFar);
-			success = success & (parsePrevLink(responseSoFar) | parseNextLink(responseSoFar));
-			success &= parseTitle(responseSoFar);
-			success &= parseAltText(responseSoFar);
-			success &= parsePermalink(responseSoFar);
-			success &= parseRandomURL(responseSoFar);
-			if (success) {
-				Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
+			boolean success = false;
+			try {
+				success = parseComic(responseSoFar);
+				success = success & (parsePrevLink(responseSoFar) | parseNextLink(responseSoFar));
+				success &= parseTitle(responseSoFar);
+				success &= parseAltText(responseSoFar);
+				success &= parsePermalink(responseSoFar);
+				success &= parseRandomURL(responseSoFar);
+				if (success) {
+					Log.d(this.getClass().getName(), "WE HAVE A WINNER!");
+				}
+			}
+			catch(Exception e) {
+				e.printStackTrace();
 			}
 			return success;
 		}
@@ -229,8 +235,8 @@ public class Downloader implements WebRequester.RequestCallback {
 	public Comic getComic() {
 		Log.d("GETTING COMIC", url);
 		comic = null;
-		HttpUriRequest request = createHttpRequest(url);
 		try {
+			HttpUriRequest request = createHttpRequest(url);
 			requester.makeRequest(request, this);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

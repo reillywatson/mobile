@@ -207,6 +207,10 @@ public class Viewer extends Activity {
 				tv.setText("");
 			}
 		}
+		else {
+			theLoadingDialog.hide();
+			Toast.makeText(this, "Loading comic failed!", Toast.LENGTH_SHORT).show();
+		}
 	}
 	
 	@Override
