@@ -10,7 +10,7 @@ from google.appengine.ext.db import stats
 
 class Comic(db.Model):
 	name = db.StringProperty()
-	json = db.StringProperty()
+	json = db.StringProperty(multiline=True)
 	platform = db.StringProperty()
 
 class VersionInfo(db.Model):
@@ -78,10 +78,13 @@ class GetJSON(webapp.RequestHandler):
 		
 		self.response.out.write("[")
 		numresults = results.count()
+		i = 0
 		for comic in results:
-			json = comic.json
+			self.response.out.write(comic.json)
+			
 			if i < numresults - 1:
 				self.response.out.write(",")
+			i = i + 1
 		self.response.out.write("]")
 
 
