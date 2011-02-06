@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
 
 import android.content.Context;
 
+import com.vasken.comics.Downloaders.ComicsKingdomDownloader;
 import com.vasken.comics.Downloaders.Downloader;
 import com.vasken.comics.Downloaders.SharingMachineDownloader;
 import com.vasken.comics.R;
@@ -57,11 +58,30 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.vgcats));
 		comics.add(new ComicInfo(context, R.raw.wondermark));
 		comics.add(new ComicInfo(context, R.raw.xkcd));
-		// These three can't be parsed with the standard Downloader, on account of their lack of prev/next links
+		// These can't be parsed with the standard Downloader, on account of their lack of prev/next links
 		comics.add(new ComicInfo("Married To The Sea", "http://www.marriedtothesea.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.marriedtothesea.com"); }}));
 		comics.add(new ComicInfo("Natalie Dee", "http://www.nataliedee.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.nataliedee.com"); }}));
 		comics.add(new ComicInfo("Toothpaste For Dinner", "http://www.toothpastefordinner.com/", new Callable<Downloader>(){public Downloader call() throws Exception { return new SharingMachineDownloader("http://www.toothpastefordinner.com"); }}));
-				
+		comics.add(new ComicInfo("Arctic Circle", "http://content.comicskingdom.net/Arctic/Arctic.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Arctic/Arctic.", false); }}));
+		comics.add(new ComicInfo("DeFlocked", "http://content.comicskingdom.net/Deflocked/Deflocked.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Deflocked/Deflocked.", false); }}));
+		comics.add(new ComicInfo("Flash Gordon", "http://content.comicskingdom.net/Flash/Flash.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Flash/Flash.", true); }}));
+		comics.add(new ComicInfo("Hazel", "http://content.comicskingdom.net/Hazel/Hazel.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Hazel/Hazel.", false); }}));
+		comics.add(new ComicInfo("Heaven's Love Thrift Shop", "http://content.comicskingdom.net/Heavens/Heavens.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Heavens/Heavens.", false); }}));
+		comics.add(new ComicInfo("Henry", "http://content.comicskingdom.net/Henry/Henry.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Henry/Henry.", false); }}));
+		comics.add(new ComicInfo("The Katzenjammer Kids", "http://content.comicskingdom.net/Katzenjammer_Kids/Katzenjammer_Kids.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Katzenjammer_Kids/Katzenjammer_Kids.", true); }}));
+		comics.add(new ComicInfo("Mandrake the Magician", "http://content.comicskingdom.net/Mandrake/Mandrake.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Mandrake/Mandrake.", false); }}));
+		comics.add(new ComicInfo("Oh, Brother!", "http://content.comicskingdom.net/Oh_Brother/Oh_Brother.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Oh_Brother/Oh_Brother.", false); }}));
+		comics.add(new ComicInfo("Ollie and Quentin", "http://content.comicskingdom.net/Ollie/Ollie.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Ollie/Ollie.", false); }}));
+		comics.add(new ComicInfo("On the Fastrack", "http://content.comicskingdom.net/Fast_Track/Fast_Track.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Fast_Track/Fast_Track.", false); }}));
+		comics.add(new ComicInfo("The Pajama Diaries", "http://content.comicskingdom.net/Pajama/Pajama.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Pajama/Pajama.", false); }}));
+		comics.add(new ComicInfo("Popeye", "http://content.comicskingdom.net/Popeye/Popeye.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Popeye/Popeye.", false); }}));
+		comics.add(new ComicInfo("Prince Valiant", "http://content.comicskingdom.net/Prince_Valiant/Prince_Valiant.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Prince_Valiant/Prince_Valiant.", true); }}));
+		comics.add(new ComicInfo("Pros & Cons", "http://content.comicskingdom.net/Lawyer/Lawyer.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Lawyer/Lawyer.", false); }}));
+		comics.add(new ComicInfo("Retail", "http://content.comicskingdom.net/Retail/Retail.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Retail/Retail.", false); }}));
+		comics.add(new ComicInfo("Sam and Silo", "http://content.comicskingdom.net/Sam/Sam.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Sam/Sam.", false); }}));
+		comics.add(new ComicInfo("Tina's Groove", "http://content.comicskingdom.net/Tinas_Groove/Tinas_Groove.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Tinas_Groove/Tinas_Groove.", false); }}));
+		comics.add(new ComicInfo("Todd the Dinosaur", "http://content.comicskingdom.net/Todd/Todd.", new Callable<Downloader>(){public Downloader call() throws Exception { return new ComicsKingdomDownloader("http://content.comicskingdom.net/Todd/Todd.", false); }}));
+		
 		comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Archie", "http://www.creators.com/comics/archie.html"));
 	   	comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Ask Shagg", "http://www.creators.com/comics/ask-shagg.html"));
 		comics.add(new ComicInfo(context, R.raw.creatorsdotcom, "Flare", "http://www.creators.com/comics/flare.html"));
