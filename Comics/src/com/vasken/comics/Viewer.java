@@ -177,8 +177,8 @@ public class Viewer extends Activity {
 				alt.setVisibility(View.GONE);
 			} else {
 				currentURL = null;
-				alt.setVisibility(View.VISIBLE);
-				alt.setText("Unable to load comic");
+				theLoadingDialog.hide();
+				Toast.makeText(this, "Loading comic failed!", Toast.LENGTH_SHORT).show();
 			}
 			Button prev = (Button) Viewer.this.findViewById(R.id.prev_comic);
 			Button next = (Button) Viewer.this.findViewById(R.id.next_comic);

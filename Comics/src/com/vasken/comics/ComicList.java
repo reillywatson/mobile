@@ -250,7 +250,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Prickly City", "http://www.comics.com/prickly_city"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Raising Duncan Classics", "http://www.comics.com/raising_duncan_classics"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Reality Check", "http://www.comics.com/reality_check"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Red & Rover", "http://www.comics.com/red&rover"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Rip Haywire", "http://www.comics.com/rip_haywire"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Ripley's Believe It or Not!", "http://www.comics.com/ripleys_believe_it_or_not"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Rose Is Rose", "http://www.comics.com/rose_is_rose"));
