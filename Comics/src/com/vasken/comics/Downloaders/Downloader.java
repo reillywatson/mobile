@@ -64,6 +64,8 @@ public class Downloader implements WebRequester.RequestCallback {
 		Log.d("COMIC PATTERN", comicPattern.toString());
 		if (titlePattern != null)
 			Log.d("TITLE PATTERN", titlePattern.toString());
+		Log.d("PREV PATTERN", prevComicPattern.toString());
+		Log.d("NEXT PATTERN", nextComicPattern.toString());
 		
 	}
 	
