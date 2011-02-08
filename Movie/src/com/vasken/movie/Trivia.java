@@ -43,9 +43,11 @@ public class Trivia extends Activity {
 		}
 		
 		List<String> possibleAnswers = question.getPossibleAnswers(3);
-		answer1.setText(possibleAnswers.get(0));
-		answer2.setText(possibleAnswers.get(1));
-		answer3.setText(possibleAnswers.get(2));
+		if (possibleAnswers.size() > 2) {
+			answer1.setText(possibleAnswers.get(0));
+			answer2.setText(possibleAnswers.get(1));
+			answer3.setText(possibleAnswers.get(2));
+		}
 		
 		answer1.setOnClickListener(new AnswerClickListener(question));
 		answer2.setOnClickListener(new AnswerClickListener(question));
