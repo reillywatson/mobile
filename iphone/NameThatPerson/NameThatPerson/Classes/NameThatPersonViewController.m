@@ -53,7 +53,7 @@
     [super viewDidLoad];
 	opQueue = [NSOperationQueue new];
 	answers = [NSMutableArray new];
-	people = [[self listForPath:[[NSBundle mainBundle] pathForResource:@"actresses" ofType:@"txt"]] retain];
+	people = [[self listForPath:[[NSBundle mainBundle] pathForResource:@"oscarnominees" ofType:@"txt"]] retain];
 	[self newRound];
 }
 
