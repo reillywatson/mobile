@@ -10,7 +10,7 @@
 
 @protocol PictureRetrievalDelegate
 
--(void)imageReady:(NSData *)image;
+-(void)imageReady:(UIImage *)image;
 
 @end
 

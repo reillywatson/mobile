@@ -65,10 +65,11 @@
 	[answers addObject:[people randomElement]];
 	[answers addObject:[people randomElement]];
 	[opQueue addOperation:op];
+	[self.view setUserInteractionEnabled:NO];
 }
 
--(void)imageReady:(NSData *)image {
-	[self.imageView setImage:[UIImage imageWithData:image]];
+-(void)imageReady:(UIImage *)image {
+	[self.imageView setImage:image];
 	NSArray *buttons = [NSArray arrayWithObjects:_opt1,_opt2,_opt3,nil];
 	for (UIButton *button in buttons) {
 		[button setTitle:@"" forState:UIControlStateNormal];
@@ -82,6 +83,7 @@
 			numAssigned++;
 		}
 	}
+	[self.view setUserInteractionEnabled:YES];
 }
 
 -(void)answerSelected:(UIButton *)button {
