@@ -16,17 +16,24 @@ public class LoadingActivity extends Activity {
 		// TODO: setup UI
 		
 		// Get sqlite Catalog and move it
-		DataManager theManager = new DataManager();
+		final DataManager theManager = new DataManager(this);
 		if (!theManager.databaseIsOkay()) {
 			theManager.setOnDoneListener( new LoadListener() {
 				@Override
 				protected void onDone() {
 					Log.d(this.getClass().toString(), "Finished downloading the catalog!");
+					theManager.openDataBase();
+					
+					theManager.test();
 				}
 			});
 			theManager.loadCatalog();
 		} else {
 			Log.d(this.getClass().toString(), "The catalog was found locally");
+			theManager.openDataBase();
+			theManager.test();
 		}
+		
+		
 	}
 }
