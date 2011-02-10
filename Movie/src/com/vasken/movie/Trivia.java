@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.vasken.movie.manager.DatabaseManager;
 import com.vasken.movie.manager.QuestionManager;
 import com.vasken.movie.model.Question;
 
@@ -27,7 +28,9 @@ public class Trivia extends Activity {
     }
 
 	private void loadNextQuestion() {
-		Question question = theManager.getNextQuestion();
+
+		DatabaseManager dbManager = new DatabaseManager(this);
+		Question question = theManager.getNextQuestion(dbManager);
         
 		ImageView image = (ImageView)findViewById(R.id.image);
 		TextView text = (TextView)findViewById(R.id.text);

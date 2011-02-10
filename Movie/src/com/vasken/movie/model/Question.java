@@ -52,6 +52,7 @@ public class Question {
 	public List<String> getPossibleAnswers(int size) {
 		if ( size > (wrongAnswers.size()+1) ) {
 			Log.w(this.getClass().toString(), "BUG! There's not that many unique questions available");
+			return new ArrayList<String>();
 		}
 		
 		Collections.shuffle(wrongAnswers);

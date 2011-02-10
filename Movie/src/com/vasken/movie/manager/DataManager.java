@@ -9,47 +9,35 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import android.content.Context;
-import android.database.Cursor;
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Environment;
 import android.util.Log;
 
-public class DataManager extends SQLiteOpenHelper{
-
-	private static final String DB_URL = "http://dl.dropbox.com/u/3091257/Vasken/oscars/oscars.sqlite";
-	private static final String DB_PATH = "/Android/data/com.vasken.movie/files/";
-	private static final String DB_NAME = "oscars.sqlite";
-
-    private SQLiteDatabase theDataBase;
-    private String dbPath;
+public class DataManager{
     
-	public DataManager(Context context) {
-		super(context, DB_NAME, null, 1);
-	}
 	private LoadListener loadListener;
+    DatabaseManager dbManager;
+    String dbPath;
+    
+	public DataManager(Context context) {		
+		dbManager = new DatabaseManager(context);
+        dbPath = dbManager.getDbPath();
+	}
 	
 	public void loadCatalog() {
-    	this.getReadableDatabase();
+		dbManager.getReadableDatabase();
     	
 		try {
-            URL url = new URL(DB_URL);
+            URL url = new URL(DatabaseManager.DB_URL);
             InputStream reader = url.openStream();
             
-            dbPath = Environment.getExternalStorageDirectory().getAbsolutePath() + DB_PATH;
-            if (!Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            	Log.d(getClass().toString(), "SD card not available: ");
-            	dbPath = Environment.getDataDirectory().getAbsolutePath() + DB_PATH;
-            }
             File dir = new File(dbPath);
             if (!dir.exists()) {
             	dir.mkdirs();
             }
             
             Log.d(getClass().toString(), "Database path: " + dbPath);
-			OutputStream writer = new FileOutputStream(dbPath + DB_NAME);
+			OutputStream writer = new FileOutputStream(dbPath + DatabaseManager.DB_NAME);
 
 			// Copy the database file from the web to the Android
 			byte[] buffer = new byte[1024];
@@ -69,7 +57,7 @@ public class DataManager extends SQLiteOpenHelper{
 			}
 
 		} catch (MalformedURLException e) {
-        	System.err.println("URL is wrong: " + DB_URL);
+        	System.err.println("URL is wrong: " + DatabaseManager.DB_URL);
         	e.printStackTrace();
         	// Notify Listeners
     		if (null != this.loadListener) {
@@ -85,11 +73,11 @@ public class DataManager extends SQLiteOpenHelper{
         }
 	}
 
-	// The database is okay if:
-	//	- it exists locally
-	//	- it's as new as the one on the server
 	public boolean databaseIsOkay() {
-		return foundDatabase();
+		boolean existsLocally = foundDatabase();
+		boolean isNewest = true; // TODO: Check the dbVersion with the server
+
+		return existsLocally && isNewest;
 	}
 
 	public void setOnDoneListener(LoadListener loadListener) {
@@ -100,7 +88,7 @@ public class DataManager extends SQLiteOpenHelper{
 		SQLiteDatabase checkDB = null;
 		 
     	try{
-    		checkDB = SQLiteDatabase.openDatabase(dbPath+DB_NAME, null, SQLiteDatabase.OPEN_READONLY);
+    		checkDB = SQLiteDatabase.openDatabase(dbPath + DatabaseManager.DB_NAME, null, SQLiteDatabase.OPEN_READONLY);
     	}catch(SQLiteException e){
     		//database does't exist yet.
     	}
@@ -111,57 +99,11 @@ public class DataManager extends SQLiteOpenHelper{
  
     	return checkDB != null ? true : false;
 	}
-	 
-    public void openDataBase() throws SQLException{
-    	theDataBase = SQLiteDatabase.openDatabase(dbPath + DB_NAME, null, SQLiteDatabase.OPEN_READONLY);
-    }
-    
-    public void getEntry() {
-//    	Cursor cursor = theDataBase.query(table, columns, selection, selectionArgs, groupBy, having, orderBy);
-//    	if (cursor.moveToFirst()) {
-//    		cursor.
-//    	}
-    }
 	
-    @Override
-	public synchronized void close() {
-    	if(theDataBase != null) {
-    		theDataBase.close();
-    	}
-    	super.close();
-	}
- 
-	@Override
-	public void onCreate(SQLiteDatabase db) {
-	}
- 
-	@Override
-	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-	}
 
 	public void test() {
-    	Cursor cursor = theDataBase.query(
-    				"Oscar"
-    			, new String[]{"AwardName", "Year", "Film", "Nominee", "Role", "IsWinner", "Actors" }	// Columns
-    			, null													// Selection (where)
-    			, new String[]{}										// Selection args
-    			, null													// Group By
-    			, null													// Having
-    			, null													// Order By
-    			, null);												// Limit
-    	Log.d("-------", String.valueOf(cursor.getCount()));
-    	if (cursor.moveToFirst()) {
-    		while (cursor.moveToNext()) {
-    			Log.d("-------", 
-    					cursor.getString(0) + " " +
-    					cursor.getString(1) + " " +
-    					cursor.getString(2) + " " +
-    					cursor.getString(3) + " " +
-    					cursor.getString(4) + " " +
-    					(cursor.getInt(5) == 1? "WON" : "LOSER") + " " +
-    					cursor.getString(6));
-    		}
-    	}
+		dbManager.openDataBase();
+		dbManager.test();
 	}
 
 }
