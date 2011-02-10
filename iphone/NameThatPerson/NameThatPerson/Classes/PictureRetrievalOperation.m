@@ -34,11 +34,14 @@
 	SBJSON *jsonEngine = [[SBJSON new] autorelease];
 	NSDictionary *json = [jsonEngine objectWithString:response];
 	NSArray *results = [[json objectForKey:@"responseData"] objectForKey:@"results"];
-	NSString *imageUrl = [[results randomElement] objectForKey:@"unescapedUrl"];
-	NSLog(@"IMAGE URL: %@", imageUrl);
-	NSURLRequest *imageRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:imageUrl]];
-	error = nil;
-	NSData *image = [NSURLConnection sendSynchronousRequest:imageRequest returningResponse:nil error:&error];
+	UIImage *image = nil;
+	while (image == nil) {
+		NSString *imageUrl = [[results randomElement] objectForKey:@"unescapedUrl"];
+		NSLog(@"IMAGE URL: %@", imageUrl);
+		NSURLRequest *imageRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:imageUrl]];
+		error = nil;
+		image = [UIImage imageWithData:[NSURLConnection sendSynchronousRequest:imageRequest returningResponse:nil error:&error]];
+	}
 	[delegate performSelectorOnMainThread:@selector(imageReady:) withObject:image waitUntilDone:NO];
 	
 }
