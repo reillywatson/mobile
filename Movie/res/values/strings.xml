@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Trivia!</string>
-    <string name="app_name">OscarsTrivia</string>
+    <string name="actor_template">Who won the %1$s Oscar in %2$s for his role as %3$s, in the movie %4$s?</string>
+    <string name="actress_template">Who won the %1$s Oscar in %2$s for her role as %3$s, in the movie %4$s?</string>
+    <string name="movie_template">Which film won the Oscar for Best Picture in %1$s?</string>
+    <string name="app_name">Oscars</string>
 </resources>

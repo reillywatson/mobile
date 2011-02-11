@@ -99,11 +99,5 @@ public class DataManager{
  
     	return checkDB != null ? true : false;
 	}
-	
-
-	public void test() {
-		dbManager.openDataBase();
-		dbManager.test();
-	}
 
 }

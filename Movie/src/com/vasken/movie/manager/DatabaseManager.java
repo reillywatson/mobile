@@ -48,6 +48,18 @@ public class DatabaseManager  extends SQLiteOpenHelper{
     	super.close();
 	}
 	
+	public List<Actor> getBestActressEntries(int year) {
+		List<Actor> result = new ArrayList<Actor>();
+		result = getActorFields(BEST_ACTRESS, year);
+		return result;
+	}
+	
+	public List<Actor> getBestActorEntries(int year) {
+		List<Actor> result = new ArrayList<Actor>();
+		result = getActorFields(BEST_ACTOR, year);
+		return result;
+	}
+	
 	public List<Movie> getBestPictureEntries(int yr) {
 		List<Movie> result = new ArrayList<Movie>();
 		
@@ -63,31 +75,18 @@ public class DatabaseManager  extends SQLiteOpenHelper{
 			, null													// Order By
 			, null);												// Limit
 		
-		if (cursor.moveToFirst()) {
-    		while (cursor.moveToNext()) {
-    			Movie actor = new Movie( 
-    					award					 // award
-    					, yr		 			 // year
-    					, cursor.getString(2)	 // film
-    					,(cursor.getInt(3) == 1) // isWinner
-    					, cursor.getString(4)	 // actors
-    			);
-    			result.add(actor);
-    		}
-    	}
-		return result;
-	}
-	
-	public List<Actor> getBestActressEntries(int year) {
-		List<Actor> result = new ArrayList<Actor>();
-		result = getActorFields(BEST_ACTRESS, year);
-		return result;
-	}
-	
-	public List<Actor> getBestActorEntries(int year) {
-		List<Actor> result = new ArrayList<Actor>();
-		result = getActorFields(BEST_ACTOR, year);
-		return result;
+   		while (cursor.moveToNext()) {
+   			Movie movie = new Movie( 
+   					award					 // award
+   					, yr		 			 // year
+   					, cursor.getString(2)	 // film
+   					,(cursor.getInt(3) == 1) // isWinner
+   					, cursor.getString(4)	 // actors
+   			);
+   			result.add(movie);
+   		}
+   		cursor.close();
+   		return result;
 	}
 
 	private List<Actor> getActorFields(String award, int yr) {
@@ -104,46 +103,20 @@ public class DatabaseManager  extends SQLiteOpenHelper{
 			, null													// Order By
 			, null);												// Limit
 		
-		if (cursor.moveToFirst()) {
-    		while (cursor.moveToNext()) {
-    			Actor actor = new Actor( 
-    					award					 // award
-    					, yr		 			 // year
-    					, cursor.getString(2)	 // film
-    					, cursor.getString(3)	 // name
-    					, cursor.getString(4)	 // role
-    					,(cursor.getInt(5) == 1) // isWinner
-    			);
-    			result.add(actor);
-    		}
+    	while (cursor.moveToNext()) {
+    		Actor actor = new Actor( 
+    				award					 // award
+    				, yr		 			 // year
+    				, cursor.getString(2)	 // film
+    				, cursor.getString(3)	 // name
+    				, cursor.getString(4)	 // role
+    				,(cursor.getInt(5) == 1) // isWinner
+    		);
+    		result.add(actor);
     	}
+    	cursor.close();
+    	
 		return result;
-	}
-
-	public void test() {
-
-    	Cursor cursor = theDataBase.query(
-    				"Oscar"
-    			, new String[]{"AwardName", "Year", "Film", "Nominee", "Role", "IsWinner", "Actors" }	// Columns
-    			, null													// Selection (where)
-    			, new String[]{}										// Selection args
-    			, null													// Group By
-    			, null													// Having
-    			, null													// Order By
-    			, null);												// Limit
-    	Log.d("-------", String.valueOf(cursor.getCount()));
-    	if (cursor.moveToFirst()) {
-    		while (cursor.moveToNext()) {
-    			Log.d("-------", 
-    					cursor.getString(0) + " " +
-    					cursor.getString(1) + " " +
-    					cursor.getString(2) + " " +
-    					cursor.getString(3) + " " +
-    					cursor.getString(4) + " " +
-    					(cursor.getInt(5) == 1? "WON" : "LOSER") + " " +
-    					cursor.getString(6));
-    		}
-    	}
 	}
 
 	

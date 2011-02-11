@@ -10,6 +10,10 @@ import android.util.Log;
 public class Question {
 	public static final int ImageType = 0;
 	public static final int TextType = 1;
+	
+	public static final int ACTOR = 0;
+	public static final int ACTRESS = 1;
+	public static final int MOVIE = 2;
 
 	private int type;
 	private String text;
@@ -63,4 +67,10 @@ public class Question {
 		return result;
 	}
 
+	@Override
+	public String toString() {
+		return "Question [type=" + type + ", text=" + text + ", image=" + image
+				+ ", wrongAnswers=" + wrongAnswers + ", rightAnswer="
+				+ rightAnswer + "]";
+	}
 }

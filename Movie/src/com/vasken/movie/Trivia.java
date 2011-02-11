@@ -30,7 +30,7 @@ public class Trivia extends Activity {
 	private void loadNextQuestion() {
 
 		DatabaseManager dbManager = new DatabaseManager(this);
-		Question question = theManager.getNextQuestion(dbManager);
+		Question question = theManager.getNextQuestion(this, dbManager, Question.ACTOR);
         
 		ImageView image = (ImageView)findViewById(R.id.image);
 		TextView text = (TextView)findViewById(R.id.text);
