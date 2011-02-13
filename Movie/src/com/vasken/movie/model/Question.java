@@ -10,10 +10,6 @@ import android.util.Log;
 public class Question {
 	public static final int ImageType = 0;
 	public static final int TextType = 1;
-	
-	public static final int ACTOR = 0;
-	public static final int ACTRESS = 1;
-	public static final int MOVIE = 2;
 
 	private int type;
 	private String text;
@@ -37,6 +33,8 @@ public class Question {
 		this.image = image;
 	}
 	
+	public Question() {}
+
 	public int getType() {
 		return type;
 	}
@@ -45,12 +43,30 @@ public class Question {
 		return text;
 	}
 
+	public void setText(String text) {
+		this.text = text;
+		this.type = TextType;
+	}
+
+	public void setImage(Bitmap img) {
+		image = img;
+		this.type = ImageType;
+	}
+
 	public Bitmap getImage() {
 		return image;
 	}
 
-	public Object getRightAnswer() {
+	public String getRightAnswer() {
 		return rightAnswer;
+	}
+
+	public void setRightAnswer(String name) {
+		this.rightAnswer = name;
+	}
+
+	public void setWrongAnswers(List<String> wrongAnswers) {
+		this.wrongAnswers = wrongAnswers;
 	}
 
 	public List<String> getPossibleAnswers(int size) {
