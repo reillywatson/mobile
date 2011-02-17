@@ -1,35 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@drawable/background"
+    android:background="@drawable/trivia_bg"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
     
-	<ImageView  
-		android:id="@+id/image"
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
-    
-	<TextView  
-		android:id="@+id/text"
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
+    <RelativeLayout
+			android:id="@+id/question_area"
+			android:layout_marginLeft="5px"
+			android:layout_marginRight="5px"
+			android:layout_marginTop="40px"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			
+		<LinearLayout
+			android:id="@+id/image_question_area"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			>
+			
+			<ImageView  
+				android:id="@+id/image"
+				android:layout_marginLeft="15px"
+				android:layout_marginTop="20px"
+			    android:layout_width="85px" 
+			    android:layout_height="115px"/>
+			
+			<TextView  
+				android:id="@+id/text"
+				android:textColor="@color/white"
+				android:textSize="20px"
+				android:layout_marginLeft="5px"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	</RelativeLayout>    
 	    
-	<TextView  
+	<Button  
 		android:id="@+id/answer1"
+		android:background="@drawable/trivia_btn"
+		android:layout_marginLeft="2px"
+		android:layout_marginRight="2px"
+		android:layout_marginBottom="3px"
+		android:textColor="@color/white"
+		android:textSize="18px"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    />
-	<TextView  
+	<Button  
 		android:id="@+id/answer2"
+		android:background="@drawable/trivia_btn"
+		android:layout_marginLeft="2px"
+		android:layout_marginRight="2px"
+		android:layout_marginBottom="3px"
+		android:textColor="@color/white"
+		android:textSize="18px"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    />
-	<TextView  
+	<Button  
 		android:id="@+id/answer3"
+		android:background="@drawable/trivia_btn"
+		android:layout_marginLeft="2px"
+		android:layout_marginRight="2px"
+		android:layout_marginBottom="3px"
+		android:textColor="@color/white"
+		android:textSize="18px"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    />

@@ -4,9 +4,9 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,14 +44,15 @@ public class Trivia extends Activity {
         
 		ImageView image = (ImageView)findViewById(R.id.image);
 		TextView text = (TextView)findViewById(R.id.text);
-		TextView answer1 = (TextView)findViewById(R.id.answer1);
-		TextView answer2 = (TextView)findViewById(R.id.answer2);
-		TextView answer3 = (TextView)findViewById(R.id.answer3);
-		
+		Button answer1 = (Button)findViewById(R.id.answer1);
+		Button answer2 = (Button)findViewById(R.id.answer2);
+		Button answer3 = (Button)findViewById(R.id.answer3);
 		
 		if (question.getType() == Question.ImageType) {
+			image.setVisibility(View.VISIBLE);
 			image.setImageBitmap(question.getImage());
 		} else if ( question.getType() == Question.TextType) {
+			image.setVisibility(View.GONE);
 			text.setText(question.getText());
 		}
 		
