@@ -144,6 +144,7 @@ public class QuestionManager {
 				wrongAnswers.add(nominatedItem.getName());
 			}
 		}
+				
 		result.setRightAnswer(winner.getName());
 		result.setWrongAnswers(wrongAnswers);
 		return winner;

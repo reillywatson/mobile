@@ -4,6 +4,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -30,7 +31,7 @@ public class Trivia extends Activity {
         theManager = QuestionManager.sharedInstance();
         
         category = getIntent().getExtras().getString(CategoryActivity.CATEGORY);
-
+        
         loadNextQuestion();
     }
 
@@ -69,24 +70,24 @@ public class Trivia extends Activity {
 	private QuestionType determineQuestionType() {
 		QuestionType questionType = QuestionType.ACTOR;
 		
-		if (category == CategoryActivity.CATEGORY_ACTORS) {
+		if (category.equals(CategoryActivity.CATEGORY_ACTORS)) {
 			if (Math.random() < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
 				questionType = QuestionType.SUPPORTING_ACTOR;
 			} else {
 				questionType = QuestionType.ACTOR;
 			}
-		} else if (category == CategoryActivity.CATEGORY_ACTRESSES) {
+		} else if (category.equals(CategoryActivity.CATEGORY_ACTRESSES)) {
 			if (Math.random() < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
 				questionType = QuestionType.SUPPORTING_ACTRESS;
 			} else {
 				questionType = QuestionType.ACTRESS;
 			}
-		} else if (category == CategoryActivity.CATEGORY_DIRECTORS) {
+		} else if (category.equals(CategoryActivity.CATEGORY_DIRECTORS)) {
 			questionType = QuestionType.DIRECTOR;
-		} else if (category == CategoryActivity.CATEGORY_MOVIES) {
+		} else if (category.equals(CategoryActivity.CATEGORY_MOVIES)) {
 			questionType = QuestionType.MOVIE;
 		}
-			
+
 		return questionType;
 	}
 

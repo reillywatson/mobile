@@ -25,7 +25,8 @@ public class DataManager{
 	}
 	
 	public void loadCatalog() {
-		dbManager.getReadableDatabase();
+		SQLiteDatabase db = dbManager.getReadableDatabase();
+		db.close();
     	
 		try {
             URL url = new URL(DatabaseManager.DB_URL);
