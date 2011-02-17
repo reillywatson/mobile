@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/categories_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+    	android:layout_marginLeft="10px"
+    	android:layout_marginTop="100px"
+	    android:layout_height="wrap_content" >
+	    <Button 
+	    	android:id="@+id/categories_actors"
+	    	android:background="@drawable/category_actors_btn"
+	    	android:layout_marginRight="3px"
+	    	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+	    <Button 
+	    	android:id="@+id/categories_actresses"
+	    	android:background="@drawable/category_actresses_btn"
+	    	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+	</LinearLayout>
+    
+    <LinearLayout
+	    android:orientation="horizontal"
+    	android:layout_marginLeft="10px"
+    	android:layout_marginTop="5px"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    <Button 
+	    	android:id="@+id/categories_movies"
+	    	android:background="@drawable/category_movies_btn"
+	    	android:layout_marginRight="3px"
+	    	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+	    <Button 
+	    	android:id="@+id/categories_directors"
+	    	android:background="@drawable/category_directors_btn"
+	    	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+	</LinearLayout>
+    	
+	
+</LinearLayout>

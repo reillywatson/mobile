@@ -16,7 +16,10 @@ import com.vasken.movie.model.Question;
 import com.vasken.movie.model.QuestionType;
 
 public class Trivia extends Activity {
+	private static final double CHANCE_TO_PICK_SUPPORTING_ACTOR = 0.3;
+	
 	private static QuestionManager theManager;
+	private String category;
 	
     /** Called when the activity is first created. */
     @Override
@@ -25,13 +28,18 @@ public class Trivia extends Activity {
         setContentView(R.layout.main);
         
         theManager = QuestionManager.sharedInstance();
+        
+        category = getIntent().getExtras().getString(CategoryActivity.CATEGORY);
+
         loadNextQuestion();
     }
 
 	private void loadNextQuestion() {
-
 		DatabaseManager dbManager = new DatabaseManager(this);
-		Question question = theManager.getNextQuestion(this, dbManager, QuestionType.ACTOR);
+		
+		QuestionType questionType = determineQuestionType();
+		
+		Question question = theManager.getNextQuestion(this, dbManager, questionType);
         
 		ImageView image = (ImageView)findViewById(R.id.image);
 		TextView text = (TextView)findViewById(R.id.text);
@@ -56,6 +64,30 @@ public class Trivia extends Activity {
 		answer1.setOnClickListener(new AnswerClickListener(question));
 		answer2.setOnClickListener(new AnswerClickListener(question));
 		answer3.setOnClickListener(new AnswerClickListener(question));
+	}
+
+	private QuestionType determineQuestionType() {
+		QuestionType questionType = QuestionType.ACTOR;
+		
+		if (category == CategoryActivity.CATEGORY_ACTORS) {
+			if (Math.random() < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
+				questionType = QuestionType.SUPPORTING_ACTOR;
+			} else {
+				questionType = QuestionType.ACTOR;
+			}
+		} else if (category == CategoryActivity.CATEGORY_ACTRESSES) {
+			if (Math.random() < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
+				questionType = QuestionType.SUPPORTING_ACTRESS;
+			} else {
+				questionType = QuestionType.ACTRESS;
+			}
+		} else if (category == CategoryActivity.CATEGORY_DIRECTORS) {
+			questionType = QuestionType.DIRECTOR;
+		} else if (category == CategoryActivity.CATEGORY_MOVIES) {
+			questionType = QuestionType.MOVIE;
+		}
+			
+		return questionType;
 	}
 
 	private class AnswerClickListener implements OnClickListener {
