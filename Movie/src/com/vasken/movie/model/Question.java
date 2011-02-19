@@ -33,10 +33,14 @@ public class Question {
 		this.image = image;
 	}
 	
-	public Question() {}
+	public Question() {	}
 
 	public int getType() {
 		return type;
+	}
+	
+	public void setType(int type) {
+		this.type = type;
 	}
 
 	public CharSequence getText() {
@@ -45,12 +49,11 @@ public class Question {
 
 	public void setText(String text) {
 		this.text = text;
-		this.type = TextType;
 	}
 
 	public void setImage(Bitmap img) {
-		image = img;
 		this.type = ImageType;
+		image = img;
 	}
 
 	public Bitmap getImage() {

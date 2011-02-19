@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,6 +19,8 @@ import com.vasken.movie.model.QuestionType;
 
 public class Trivia extends Activity {
 	private static final double CHANCE_TO_PICK_SUPPORTING_ACTOR = 0.3;
+	private static final double CHANCE_TO_PICK_QUOTE = 0.9;
+	private static final String QUESTION_TEMPLATE = "<span style='color: white'>%1$s</span>";
 	
 	private static QuestionManager theManager;
 	private String category;
@@ -41,19 +44,22 @@ public class Trivia extends Activity {
 		QuestionType questionType = determineQuestionType();
 		
 		Question question = theManager.getNextQuestion(this, dbManager, questionType);
-        
+
+		WebView text = (WebView)findViewById(R.id.text);
+		text.setBackgroundColor(0);
+		text.getSettings().setMinimumFontSize(20);
 		ImageView image = (ImageView)findViewById(R.id.image);
-		TextView text = (TextView)findViewById(R.id.text);
 		Button answer1 = (Button)findViewById(R.id.answer1);
 		Button answer2 = (Button)findViewById(R.id.answer2);
 		Button answer3 = (Button)findViewById(R.id.answer3);
 		
+		String formattedString = String.format(QUESTION_TEMPLATE, question.getText());
+		text.loadData(formattedString, "text/html", "utf-8");
 		if (question.getType() == Question.ImageType) {
 			image.setVisibility(View.VISIBLE);
 			image.setImageBitmap(question.getImage());
 		} else if ( question.getType() == Question.TextType) {
 			image.setVisibility(View.GONE);
-			text.setText(question.getText());
 		}
 		
 		List<String> possibleAnswers = question.getPossibleAnswers(3);
@@ -86,7 +92,11 @@ public class Trivia extends Activity {
 		} else if (category.equals(CategoryActivity.CATEGORY_DIRECTORS)) {
 			questionType = QuestionType.DIRECTOR;
 		} else if (category.equals(CategoryActivity.CATEGORY_MOVIES)) {
-			questionType = QuestionType.MOVIE;
+			if (Math.random() < CHANCE_TO_PICK_QUOTE) {
+				questionType = QuestionType.QUOTE;
+			} else {
+				questionType = QuestionType.MOVIE;
+			}
 		}
 
 		return questionType;

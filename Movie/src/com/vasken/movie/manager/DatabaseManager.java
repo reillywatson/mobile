@@ -82,7 +82,7 @@ public class DatabaseManager  extends SQLiteOpenHelper{
 		
 		Cursor cursor = theDataBase.query(
 				"Quote"
-				, new String[]{"Film", "Quoute"}	// Columns
+				, new String[]{"Film", "Quote"}		// Columns
 				, null								// Selection (where)
 				, new String[]{}					// Selection args
 				, null								// Group By
@@ -104,7 +104,7 @@ public class DatabaseManager  extends SQLiteOpenHelper{
 		Cursor cursor = theDataBase.rawQuery(
 				"SELECT AwardName, Year, Film, IsWinner, Actors " +
 				"FROM Oscar " +
-				"WHERE year IN ( SELECT year FROM oscar WHERE film LIKE '?')" +
+				"WHERE year IN ( SELECT year FROM oscar WHERE film LIKE ?)" +
 				"	AND awardName like 'Best Picture'" , new String[]{filmName});
 		
 		while (cursor.moveToNext()) {

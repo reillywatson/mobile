@@ -1,75 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.movie"
     android:background="@drawable/trivia_bg"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+	
+	<ImageView
+		android:id="@+id/top_banner"
+		android:background="@drawable/trivia_top_banner"
+		android:layout_alignParentTop="true"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+    
+    <!-- Place an AdMob ad at the bottom of the screen. -->
+    <!-- It has white text on a black background. -->
+    <LinearLayout
+    		android:id="@+id/ad_layout"
+	        android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="48px">
+	    <com.admob.android.ads.AdView
+	    	  android:id="@+id/ad" 
+	          app:backgroundColor="#000000"
+	          app:primaryTextColor="#FFFFFF"
+	          app:secondaryTextColor="#CCCCCC"
+	          app:keywords="Oscars Trivia: Best Movie"
+	          android:layout_width="fill_parent" 
+	          android:layout_height="wrap_content"
+	    />
+    </LinearLayout>
+	
+	<ImageView
+		android:id="@+id/bottom_banner"
+		android:background="@drawable/trivia_bottom_banner"
+		android:layout_above="@id/ad_layout"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+
+	<LinearLayout
+		android:id="@+id/answer_area"
+		android:layout_above="@id/bottom_banner"
+		android:orientation="vertical"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" >
+		<Button  
+			android:id="@+id/answer1"
+			android:background="@drawable/trivia_btn"
+			android:layout_marginLeft="2px"
+			android:layout_marginRight="2px"
+			android:layout_marginBottom="3px"
+			android:textColor="@color/white"
+			android:textSize="18px"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    />
+		<Button  
+			android:id="@+id/answer2"
+			android:background="@drawable/trivia_btn"
+			android:layout_marginLeft="2px"
+			android:layout_marginRight="2px"
+			android:layout_marginBottom="3px"
+			android:textColor="@color/white"
+			android:textSize="18px"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    />
+		<Button  
+			android:id="@+id/answer3"
+			android:background="@drawable/trivia_btn"
+			android:layout_marginLeft="2px"
+			android:layout_marginRight="2px"
+			android:layout_marginBottom="3px"
+			android:textColor="@color/white"
+			android:textSize="18px"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    />
+	</LinearLayout>
     
     <RelativeLayout
 			android:id="@+id/question_area"
+			android:layout_below="@id/top_banner"
+			android:layout_above="@id/answer_area"
+			android:layout_marginTop="5px"
+			android:layout_marginBottom="25px"
 			android:layout_marginLeft="5px"
 			android:layout_marginRight="5px"
-			android:layout_marginTop="40px"
 			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content">
+			android:layout_height="fill_parent">
 			
 		<LinearLayout
-			android:id="@+id/image_question_area"
+			android:id="@+id/image_question_area"	
+			android:background="@drawable/question_area"			
 			android:orientation="horizontal"
 			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content"
-			>
+			android:layout_height="fill_parent">
 			
 			<ImageView  
 				android:id="@+id/image"
+				android:background="@drawable/rounded_corners"
 				android:layout_marginLeft="15px"
-				android:layout_marginTop="20px"
+				android:layout_gravity="center"
 			    android:layout_width="85px" 
 			    android:layout_height="115px"/>
-			
-			<TextView  
-				android:id="@+id/text"
-				android:textColor="@color/white"
-				android:textSize="20px"
-				android:layout_marginLeft="5px"
-			    android:layout_width="fill_parent" 
-			    android:layout_height="wrap_content" />
-		</LinearLayout>
-		
+	
+				<WebView  
+					android:id="@+id/text"
+					android:textColor="@color/white"
+					android:textSize="20px"
+					android:layout_marginLeft="5px"
+					android:layout_gravity="center"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="wrap_content" />
+		</LinearLayout>		
 	</RelativeLayout>    
-	    
-	<Button  
-		android:id="@+id/answer1"
-		android:background="@drawable/trivia_btn"
-		android:layout_marginLeft="2px"
-		android:layout_marginRight="2px"
-		android:layout_marginBottom="3px"
-		android:textColor="@color/white"
-		android:textSize="18px"
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
-	<Button  
-		android:id="@+id/answer2"
-		android:background="@drawable/trivia_btn"
-		android:layout_marginLeft="2px"
-		android:layout_marginRight="2px"
-		android:layout_marginBottom="3px"
-		android:textColor="@color/white"
-		android:textSize="18px"
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
-	<Button  
-		android:id="@+id/answer3"
-		android:background="@drawable/trivia_btn"
-		android:layout_marginLeft="2px"
-		android:layout_marginRight="2px"
-		android:layout_marginBottom="3px"
-		android:textColor="@color/white"
-		android:textSize="18px"
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
-</LinearLayout>
+	
+	
+</RelativeLayout>

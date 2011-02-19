@@ -37,26 +37,45 @@ public class QuestionManager {
 		dbManager.openDataBase();
 		if (QuestionType.ACTOR == questionType) {
 			List<Actor> actors = dbManager.getBestActorEntries(randomYear);
+			if (actors.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeActorQuestion(context, actors, questionType);
 		} else if (QuestionType.ACTRESS == questionType) {
 			List<Actor> actresses = dbManager.getBestActressEntries(randomYear);
+			if (actresses.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeActorQuestion(context, actresses, questionType);
 		} else if (QuestionType.MOVIE == questionType) {
 			List<Movie> movies = dbManager.getBestPictureEntries(randomYear);
+			if (movies.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeMovieQuestion(context, movies, questionType);
 		} else if (QuestionType.DIRECTOR == questionType) {
 			List<NominatedPerson> directors =  dbManager.getBestDirectorEntries(randomYear);
+			if (directors.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeDirectorQuestion(context, directors, questionType);
 		} else if (QuestionType.SUPPORTING_ACTOR == questionType) {
 			List<Actor> supportingActors =  dbManager.getBestSupportingActorEntries(randomYear);
+			if (supportingActors.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeActorQuestion(context, supportingActors, questionType);
 		} else if (QuestionType.SUPPORTING_ACTRESS == questionType) {
 			List<Actor> supportingActresses =  dbManager.getBestSupportingActressesEntries(randomYear);
+			if (supportingActresses.isEmpty()) {
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+			}
 			result = makeActorQuestion(context, supportingActresses, questionType);
 		} else if (QuestionType.QUOTE == questionType) {
 			Quote quote = dbManager.getRandomQuote();
 			if (quote == null) {
 				// Do Error handling
+				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
 			}
 			List<Movie> movies = dbManager.getMoviesFromSameYear(quote.getFilm());
 			result = makeQuoteQuestion(context, quote, movies);
@@ -89,6 +108,7 @@ public class QuestionManager {
 		// Make Question content (either text or image)
 		String text = context.getString(R.string.director_template, winner.getYear(), winner.getFilm());
 		result.setText(text);
+		result.setType(Question.TextType);
 		
 		return result;
 	}
@@ -101,6 +121,7 @@ public class QuestionManager {
 		
 		// Make Question content (either text or image)
 		String text = context.getString(R.string.movie_template, winner.getYear());
+		result.setType(Question.TextType);
 		result.setText(text);
 		
 		return result;
@@ -111,22 +132,33 @@ public class QuestionManager {
 		
 		// Find winner and assign loser answers
 		NominatedItem winner = setWinnerAndLosers(actors, result);
+		Actor actor = (Actor)winner;
 		
 		// Make Question content (either text or image)
 		if (Math.random() < 0.3) {
 			Bitmap image = getImage(winner.getName());
+			
+			int template = 0;
+			if (category == QuestionType.ACTOR || category == QuestionType.SUPPORTING_ACTOR) {				
+				template = R.string.actor_template_img;
+			} else if (category == QuestionType.ACTRESS || category == QuestionType.SUPPORTING_ACTRESS) {
+				template = R.string.actress_template_img;
+			}
+			String text = context.getString(template, actor.getYear(), actor.getRole(), actor.getFilm());
+
+			result.setType(Question.ImageType);
 			result.setImage(image);
+			result.setText(text);
 		} else {
-			String text = "";
-			Actor actor = (Actor)winner;
 			int template = 0;
 			if (category == QuestionType.ACTOR || category == QuestionType.SUPPORTING_ACTOR) {				
 				template = R.string.actor_template;
 			} else if (category == QuestionType.ACTRESS || category == QuestionType.SUPPORTING_ACTRESS) {
 				template = R.string.actress_template;
 			}
-			text = context.getString(template, actor.getAward(), actor.getYear(), actor.getRole(), actor.getFilm());
-			
+			String text = context.getString(template, actor.getAward(), actor.getYear(), actor.getRole(), actor.getFilm());
+
+			result.setType(Question.TextType);
 			result.setText(text);
 		}
 		
