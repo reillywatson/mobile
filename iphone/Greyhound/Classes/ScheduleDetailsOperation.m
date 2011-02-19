@@ -44,7 +44,6 @@
 	for (int i = 0; i < [stops count]; i++) {
 		NSString *stopDetails = [[stops objectAtIndex:i] objectAtIndex:1];
 		NSArray *cells = [stopDetails arrayOfCaptureComponentsMatchedByRegex:cellRegex options:RKLDotAll range:NSMakeRange(0, [stopDetails length]) error:nil];
-		NSLog(@"CELLS: %@", cells);
 		NSString *cityName = [[cells objectAtIndex:0] objectAtIndex:1];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"</b>" withString:@""];

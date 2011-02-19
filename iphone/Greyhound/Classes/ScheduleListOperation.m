@@ -73,6 +73,7 @@
 	NSString *detailsRegex = @"ScheduleDetails.asp?(.*?)'";
 	NSArray *detailsComponents = [response arrayOfCaptureComponentsMatchedByRegex:detailsRegex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
 	NSArray *components = [response arrayOfCaptureComponentsMatchedByRegex:regex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
+	detailsComponents = [detailsComponents subarrayWithRange:NSMakeRange([detailsComponents count] - [components count], [components count])];
 	NSMutableArray *schedules = [NSMutableArray new];
 	for (NSArray *comp in components) {
 		NSArray *data = [[comp objectAtIndex:0] componentsSeparatedByString:@"|"];
