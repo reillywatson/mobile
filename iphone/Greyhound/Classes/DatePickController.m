@@ -17,8 +17,11 @@
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	_start = nil;
 	_end = nil;
-	self.datePicker.date = [NSDate date];
 	return self;
+}
+
+-(void)viewDidLoad {
+	self.datePicker.date = [NSDate date];	
 }
 
 -(void)viewDidAppear:(BOOL)animated {
