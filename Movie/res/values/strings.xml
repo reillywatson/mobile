@@ -6,6 +6,8 @@
     <string name="actress_template_img">This actress won an Oscar in %1$s, for her role as %2$s, in the movie %3$s.</string>
     <string name="movie_template">Which film won the Oscar for Best Picture in %1$s?</string>
     <string name="director_template">Who won the Ocar for Best Director in %1$s for the movie %2$s?</string>
-    <string name="quote_template">Which Ocar-nominated film, from %1$d, is the following quote from? \n %2$s </string>
+    <string name="quote_template">Which Ocar-nominated film, from %1$d, is the following quote from? %2$s </string>
+    <string name="trivia_streak">Current Streak: %1$d</string>
+    <string name="choose_category">Please Choose a Category</string>
     <string name="app_name">Oscars</string>
 </resources>

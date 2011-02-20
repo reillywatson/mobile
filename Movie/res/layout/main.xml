@@ -32,10 +32,12 @@
 	    />
     </LinearLayout>
 	
-	<ImageView
+	<TextView
 		android:id="@+id/bottom_banner"
 		android:background="@drawable/trivia_bottom_banner"
 		android:layout_above="@id/ad_layout"
+		android:textColor="@color/black"
+		android:gravity="center"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    />

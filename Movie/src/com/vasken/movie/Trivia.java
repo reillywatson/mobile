@@ -3,9 +3,12 @@ package com.vasken.movie;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -24,6 +27,7 @@ public class Trivia extends Activity {
 	
 	private static QuestionManager theManager;
 	private String category;
+	private int numRightAnswers;
 	
     /** Called when the activity is first created. */
     @Override
@@ -114,20 +118,47 @@ public class Trivia extends Activity {
 			TextView theView = (TextView)v;
 			if (theView.getText().equals(theQuestion.getRightAnswer())) {
 				handleCorrectAnswer();
-				loadNextQuestion();
 			} else {
 				handleWrongAnswer();
-				loadNextQuestion();
 			}
+			loadNextQuestion();
  		}
 
 	}
 
 	protected void handleCorrectAnswer() {
-		Toast.makeText(this, "RIGHT", Toast.LENGTH_LONG);
+		View layout = getLayoutInflater().inflate(R.layout.result_layout,
+                (ViewGroup) findViewById(R.id.achievement_layout_root));
+
+		ImageView image = (ImageView) layout.findViewById(R.id.result_image);
+		image.setImageResource(R.drawable.trivia_right);
+		
+		Toast toast = new Toast(Trivia.this);
+		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+		toast.setDuration(Toast.LENGTH_SHORT);
+		toast.setView(layout);
+		toast.show();
+		
+		numRightAnswers++;
+		TextView result = (TextView)Trivia.this.findViewById(R.id.bottom_banner);
+		result.setText(Trivia.this.getString(R.string.trivia_streak, numRightAnswers));
 	}
 
 	protected void handleWrongAnswer() {
-		Toast.makeText(this, "WRONG", Toast.LENGTH_LONG);
+		View layout = getLayoutInflater().inflate(R.layout.result_layout,
+                (ViewGroup) findViewById(R.id.achievement_layout_root));
+
+		ImageView image = (ImageView) layout.findViewById(R.id.result_image);
+		image.setImageResource(R.drawable.trivia_wrong);
+		
+		Toast toast = new Toast(Trivia.this);
+		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+		toast.setDuration(Toast.LENGTH_SHORT);
+		toast.setView(layout);
+		toast.show();
+		
+		numRightAnswers = 0;
+		TextView result = (TextView)Trivia.this.findViewById(R.id.bottom_banner);
+		result.setText("");
 	}
 }

@@ -1,48 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@drawable/categories_bg"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.vasken.movie"
+    android:background="@drawable/trivia_bg"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    
-    <LinearLayout
-	    android:orientation="horizontal"
-	    android:layout_width="wrap_content"
-    	android:layout_marginLeft="10px"
-    	android:layout_marginTop="100px"
-	    android:layout_height="wrap_content" >
-	    <Button 
-	    	android:id="@+id/categories_actors"
-	    	android:background="@drawable/category_actors_btn"
-	    	android:layout_marginRight="3px"
-	    	android:layout_width="wrap_content"
-		    android:layout_height="wrap_content" />
-	    <Button 
-	    	android:id="@+id/categories_actresses"
-	    	android:background="@drawable/category_actresses_btn"
-	    	android:layout_width="wrap_content"
-		    android:layout_height="wrap_content" />
-	</LinearLayout>
-    
-    <LinearLayout
-	    android:orientation="horizontal"
-    	android:layout_marginLeft="10px"
-    	android:layout_marginTop="5px"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content" >
-	    <Button 
-	    	android:id="@+id/categories_movies"
-	    	android:background="@drawable/category_movies_btn"
-	    	android:layout_marginRight="3px"
-	    	android:layout_width="wrap_content"
-		    android:layout_height="wrap_content" />
-	    <Button 
-	    	android:id="@+id/categories_directors"
-	    	android:background="@drawable/category_directors_btn"
-	    	android:layout_width="wrap_content"
-		    android:layout_height="wrap_content" />
-	</LinearLayout>
-    	
 	
-</LinearLayout>
+	<ImageView
+		android:id="@+id/top_banner"
+		android:background="@drawable/trivia_top_banner"
+		android:layout_alignParentTop="true"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+    
+    <!-- Place an AdMob ad at the bottom of the screen. -->
+    <!-- It has white text on a black background. -->
+    <LinearLayout
+    		android:id="@+id/ad_layout"
+	        android:layout_alignParentBottom="true"
+	        android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+	    <com.admob.android.ads.AdView
+	    	  android:id="@+id/ad" 
+	          app:backgroundColor="#000000"
+	          app:primaryTextColor="#FFFFFF"
+	          app:secondaryTextColor="#CCCCCC"
+	          app:keywords="Oscars Trivia: Best Movie"
+	          android:layout_width="fill_parent" 
+	          android:layout_height="wrap_content"
+	    />
+    </LinearLayout>
+	
+	<TextView
+		android:id="@+id/bottom_banner"
+		android:background="@drawable/trivia_bottom_banner"
+		android:layout_above="@id/ad_layout"
+		android:textColor="@color/black"
+		android:gravity="center"
+		android:text="@string/choose_category"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" />    
+    
+    <LinearLayout 
+    	android:id="@+id/buttons"
+    	android:orientation="vertical"
+    	android:layout_below="@id/top_banner"
+    	android:layout_above="@id/bottom_banner"
+	    android:layout_marginTop="80px"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+    	
+    	<LinearLayout
+		    android:orientation="horizontal"
+	    	android:gravity="center_horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		    <Button 
+		    	android:id="@+id/categories_actors"
+		    	android:background="@drawable/category_actors_btn"
+		    	android:layout_marginRight="3px"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		    <Button 
+		    	android:id="@+id/categories_actresses"
+		    	android:background="@drawable/category_actresses_btn"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		</LinearLayout>
+		
+	    <LinearLayout
+		    android:id="@+id/bottom_buttons"
+		    android:orientation="horizontal"
+	    	android:layout_marginTop="5px"
+	    	android:layout_marginBottom="5px"
+	    	android:gravity="center_horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		    <Button 
+		    	android:id="@+id/categories_movies"
+		    	android:background="@drawable/category_movies_btn"
+		    	android:layout_marginRight="3px"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		    <Button 
+		    	android:id="@+id/categories_directors"
+		    	android:background="@drawable/category_directors_btn"
+		    	android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		</LinearLayout>
+	    
+	    
+    </LinearLayout>
+	
+</RelativeLayout>

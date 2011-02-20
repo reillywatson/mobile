@@ -91,10 +91,14 @@ public class QuestionManager {
 		
 		int year = 1983;
 		for(Movie movie : movies) {
-			wrongAnswers.add(movie.getName());
-			year = movie.getYear();
+			if (!movie.getName().equals(quote.getFilm())) {
+				wrongAnswers.add(movie.getName());
+				year = movie.getYear();
+			}
 		}
-		String questionText = context.getString(R.string.quote_template, year, quote.getText());
+		
+		StringBuilder quoteText = new StringBuilder("<br/><br/>").append(quote.getText());
+		String questionText = context.getString(R.string.quote_template, year, quoteText);
 
 		return new Question(Question.TextType, questionText, wrongAnswers, quote.getFilm());
 	}
