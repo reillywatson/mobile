@@ -1,15 +1,16 @@
 package com.vasken.movie;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 
-import com.vasken.movie.manager.DataManager;
-import com.vasken.movie.manager.LoadListener;
+import com.vasken.movie.manager.UpdateManager;
 
 public class CategoryActivity extends Activity {
 	public static final String CATEGORY = "CATEGORY";
@@ -18,6 +19,8 @@ public class CategoryActivity extends Activity {
 	public static final String CATEGORY_DIRECTORS = "CATEGORY_DIRECTORS";
 	public static final String CATEGORY_MOVIES = "CATEGORY_MOVIES";
 
+	Dialog theLoadingDialog;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,12 +28,36 @@ public class CategoryActivity extends Activity {
 		// Set layout
 		setContentView(R.layout.categories);
 		
-		// Set a category on button click and load questions
-		prepareButtons();
+		// Set dialog
+		theLoadingDialog = new Dialog(this);
+		theLoadingDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		theLoadingDialog.setContentView(R.layout.loading_dialog);
+		theLoadingDialog.setCancelable(false);
+		theLoadingDialog.show();
 		
-		// Get sqlite catalog and move it
-		prepareDatabase();
-		
+		// Prepare sqlite catalog, when we have it, init buttons
+		prepareDatabaseAndButtons();
+	}
+	
+	private void prepareDatabaseAndButtons() {
+		UpdateManager theManager = new UpdateManager(this);
+		if (!theManager.databaseIsOkay()) {
+			theManager.setOnDoneListener( theManager.new LoadListener() {
+				@Override
+				protected void onDone() {
+					Log.d(this.getClass().toString(), "Finished downloading the catalog!");
+					// Set a category on button click and load questions
+					prepareButtons();
+					theLoadingDialog.hide();
+				}
+			});
+			theManager.loadCatalog(this);
+		} else {
+			Log.d(this.getClass().toString(), "The catalog was found locally");
+			// Set a category on button click and load questions
+			prepareButtons();
+			theLoadingDialog.hide();
+		}
 	}
 
 	private void prepareButtons() {
@@ -71,20 +98,5 @@ public class CategoryActivity extends Activity {
 		Intent intent = new Intent(context, Trivia.class);
 		intent.putExtra(CategoryActivity.CATEGORY, value);
 		context.startActivity(intent);
-	}
-
-	private void prepareDatabase() {
-		final DataManager theManager = new DataManager(this);
-		if (!theManager.databaseIsOkay()) {
-			theManager.setOnDoneListener( new LoadListener() {
-				@Override
-				protected void onDone() {
-					Log.d(this.getClass().toString(), "Finished downloading the catalog!");
-				}
-			});
-			theManager.loadCatalog();
-		} else {
-			Log.d(this.getClass().toString(), "The catalog was found locally");
-		}
 	}
 }

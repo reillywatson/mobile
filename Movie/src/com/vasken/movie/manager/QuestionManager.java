@@ -1,7 +1,10 @@
 package com.vasken.movie.manager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,71 +21,74 @@ import com.vasken.movie.model.Quote;
 
 public class QuestionManager {
 	private static QuestionManager INSTANCE;
-	
-	private static final int MIN_YEAR = 1935;
-	private static final int MAX_YEAR = 2009;
+    
+    private Map<QuestionType, Integer[]> yearRanges;
 
-	public static QuestionManager sharedInstance() {
+	public static QuestionManager sharedInstance(DatabaseManager dbManager) {
 		if (INSTANCE == null) { 
 			INSTANCE = new QuestionManager();
+			// This could be done somewhere else and stored forever
+			// Except it seems to be fairly quick (under 2sec on my phone)
+			// So I'm not too worried about it
+			INSTANCE.populateRanges(dbManager);
 		}
 		return INSTANCE;
 	}
-	
+
+	private void populateRanges(DatabaseManager dbManager) {
+		yearRanges = new HashMap<QuestionType, Integer[]>();
+		
+		dbManager.openDataBase();
+		try {
+			yearRanges.put(QuestionType.ACTOR, dbManager.getYearRanges(QuestionType.ACTOR));
+			yearRanges.put(QuestionType.ACTRESS, dbManager.getYearRanges(QuestionType.ACTRESS));
+			yearRanges.put(QuestionType.DIRECTOR, dbManager.getYearRanges(QuestionType.DIRECTOR));
+			yearRanges.put(QuestionType.MOVIE, dbManager.getYearRanges(QuestionType.MOVIE));
+			yearRanges.put(QuestionType.SUPPORTING_ACTOR, dbManager.getYearRanges(QuestionType.SUPPORTING_ACTOR));
+			yearRanges.put(QuestionType.SUPPORTING_ACTRESS, dbManager.getYearRanges(QuestionType.SUPPORTING_ACTRESS));
+		} finally {
+			dbManager.close();
+		}
+	}
+
 	public Question getNextQuestion(Context context, DatabaseManager dbManager, QuestionType questionType) {
 		Question result = null;
 		
-		int randomYear = getRandomYear();
-		
 		dbManager.openDataBase();
-		if (QuestionType.ACTOR == questionType) {
-			List<Actor> actors = dbManager.getBestActorEntries(randomYear);
-			if (actors.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
+		try {
+			if (QuestionType.QUOTE == questionType) {
+				Quote quote = dbManager.getRandomQuote();
+				List<Movie> movies = dbManager.getMoviesFromSameYear(quote.getFilm());
+				result = makeQuoteQuestion(context, quote, movies);
+			} else {
+				int randomYear = getRandomYear(questionType);
+				if (QuestionType.ACTOR == questionType) {
+					List<Actor> actors = dbManager.getBestActorEntries(randomYear);
+					result = makeActorQuestion(context, actors, questionType);
+				} else if (QuestionType.ACTRESS == questionType) {
+					List<Actor> actresses = dbManager.getBestActressEntries(randomYear);
+					result = makeActorQuestion(context, actresses, questionType);
+				} else if (QuestionType.MOVIE == questionType) {
+					List<Movie> movies = dbManager.getBestPictureEntries(randomYear);
+					result = makeMovieQuestion(context, movies, questionType);
+				} else if (QuestionType.DIRECTOR == questionType) {
+					List<NominatedPerson> directors =  dbManager.getBestDirectorEntries(randomYear);
+					result = makeDirectorQuestion(context, directors, questionType);
+				} else if (QuestionType.SUPPORTING_ACTOR == questionType) {
+					List<Actor> supportingActors =  dbManager.getBestSupportingActorEntries(randomYear);
+					result = makeActorQuestion(context, supportingActors, questionType);
+				} else if (QuestionType.SUPPORTING_ACTRESS == questionType) {
+					List<Actor> supportingActresses =  dbManager.getBestSupportingActressesEntries(randomYear);
+					result = makeActorQuestion(context, supportingActresses, questionType);
+				}
 			}
-			result = makeActorQuestion(context, actors, questionType);
-		} else if (QuestionType.ACTRESS == questionType) {
-			List<Actor> actresses = dbManager.getBestActressEntries(randomYear);
-			if (actresses.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			result = makeActorQuestion(context, actresses, questionType);
-		} else if (QuestionType.MOVIE == questionType) {
-			List<Movie> movies = dbManager.getBestPictureEntries(randomYear);
-			if (movies.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			result = makeMovieQuestion(context, movies, questionType);
-		} else if (QuestionType.DIRECTOR == questionType) {
-			List<NominatedPerson> directors =  dbManager.getBestDirectorEntries(randomYear);
-			if (directors.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			result = makeDirectorQuestion(context, directors, questionType);
-		} else if (QuestionType.SUPPORTING_ACTOR == questionType) {
-			List<Actor> supportingActors =  dbManager.getBestSupportingActorEntries(randomYear);
-			if (supportingActors.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			result = makeActorQuestion(context, supportingActors, questionType);
-		} else if (QuestionType.SUPPORTING_ACTRESS == questionType) {
-			List<Actor> supportingActresses =  dbManager.getBestSupportingActressesEntries(randomYear);
-			if (supportingActresses.isEmpty()) {
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			result = makeActorQuestion(context, supportingActresses, questionType);
-		} else if (QuestionType.QUOTE == questionType) {
-			Quote quote = dbManager.getRandomQuote();
-			if (quote == null) {
-				// Do Error handling
-				Log.d("--------------", "EMPTY!! " + randomYear + " " + questionType);
-			}
-			List<Movie> movies = dbManager.getMoviesFromSameYear(quote.getFilm());
-			result = makeQuoteQuestion(context, quote, movies);
+		} catch(Exception e) {
+			Log.e(this.getClass().toString(), " Failed to get make a question. Retrying... " + questionType);
+			result = getNextQuestion(context, dbManager, questionType);
+		} finally {
+			dbManager.close();
 		}
-		dbManager.close();
 		
-		Log.d(getClass().toString(), result.toString());
 		return result;
 	}
 
@@ -193,8 +199,14 @@ public class QuestionManager {
 		return result;
 	}
 
-	private int getRandomYear() {
-		int year = (int)Math.floor(((Math.random()* (MAX_YEAR-MIN_YEAR)) + MIN_YEAR));
+	private int getRandomYear(QuestionType questionType) {
+		Integer[] range = yearRanges.get(questionType);
+		int minYear = range[0];
+		int maxYear = range[1];
+		
+		Random random = new Random();
+		int year = random.nextInt(maxYear - minYear + 1) + minYear;
+		
 		return year;
 	}
 

@@ -93,7 +93,7 @@ def go():
 			winner = True
 		values = {'AwardName':'Best Actress', 'Year':year, 'IsWinner':winner}
 		
-		actor = line.split('-')[0].strip()
+		actor = line.split(' - ')[0].strip()
 		values['Nominee'] = actor
 		restofline = line[len(actor)+3:]
 		if len(restofline.split(' as ')) > 2:

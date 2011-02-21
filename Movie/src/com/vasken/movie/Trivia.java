@@ -3,7 +3,6 @@ package com.vasken.movie;
 import java.util.List;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -26,6 +25,7 @@ public class Trivia extends Activity {
 	private static final String QUESTION_TEMPLATE = "<span style='color: white'>%1$s</span>";
 	
 	private static QuestionManager theManager;
+	private static DatabaseManager dbManager;
 	private String category;
 	private int numRightAnswers;
 	
@@ -34,8 +34,9 @@ public class Trivia extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
-        theManager = QuestionManager.sharedInstance();
+
+		dbManager = new DatabaseManager(this);
+        theManager = QuestionManager.sharedInstance(dbManager);
         
         category = getIntent().getExtras().getString(CategoryActivity.CATEGORY);
         
@@ -43,7 +44,6 @@ public class Trivia extends Activity {
     }
 
 	private void loadNextQuestion() {
-		DatabaseManager dbManager = new DatabaseManager(this);
 		
 		QuestionType questionType = determineQuestionType();
 		

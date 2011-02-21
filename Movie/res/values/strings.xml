@@ -9,5 +9,9 @@
     <string name="quote_template">Which Ocar-nominated film, from %1$d, is the following quote from? %2$s </string>
     <string name="trivia_streak">Current Streak: %1$d</string>
     <string name="choose_category">Please Choose a Category</string>
+    <string name="loading_catalog">Loading Catalog...</string>
+    
+    <string name="db_location">http://dl.dropbox.com/u/3091257/Vasken/oscars/oscars.sqlite</string>
+    <string name="db_version_location">http://dl.dropbox.com/u/3091257/Vasken/oscars/dbVersion.json</string>
     <string name="app_name">Oscars</string>
 </resources>

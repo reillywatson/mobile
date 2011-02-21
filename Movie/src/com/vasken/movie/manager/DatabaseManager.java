@@ -12,12 +12,12 @@ import android.os.Environment;
 import android.util.Log;
 
 import com.vasken.movie.model.Actor;
-import com.vasken.movie.model.NominatedPerson;
 import com.vasken.movie.model.Movie;
+import com.vasken.movie.model.NominatedPerson;
+import com.vasken.movie.model.QuestionType;
 import com.vasken.movie.model.Quote;
 
 public class DatabaseManager  extends SQLiteOpenHelper{
-	protected static final String DB_URL = "http://dl.dropbox.com/u/3091257/Vasken/oscars/oscars.sqlite";
 	protected static final String DB_PATH = "/Android/data/com.vasken.movie/files/";
 	protected static final String DB_NAME = "oscars.sqlite";
 	
@@ -52,6 +52,62 @@ public class DatabaseManager  extends SQLiteOpenHelper{
     	}
     	super.close();
 	}
+	
+	public Integer[] getYearRanges(QuestionType type) {
+		Integer[] result = new Integer[2];
+		
+		String award = getAwardNameFromQuestionType(type);
+		Cursor cursor = theDataBase.query(
+			"Oscar"
+			, new String[]{"AwardName", "Year"}					// Columns
+			, "AwardName=?"										// Selection (where)
+			, new String[]{award}								// Selection args
+			, null												// Group By
+			, null												// Having
+			, "Year asc"										// Order By
+			, null);											// Limit
+		
+		if (cursor.moveToFirst()) {
+			result[0] = cursor.getInt(1);
+		}
+		
+		if (cursor.moveToLast()) {
+			result[1] = cursor.getInt(1);
+		}
+   		cursor.close();
+   		
+   		Log.d("--------------", award + result[0]+ " " + result[1]);
+   		return result;
+	}
+
+	private String getAwardNameFromQuestionType(QuestionType type) {
+		String awardName = null;
+		
+		switch(type) {
+		case ACTOR:
+			awardName = BEST_ACTOR;
+			break;
+		case ACTRESS:
+			awardName = BEST_ACTRESS;
+			break;
+		case DIRECTOR:
+			awardName = BEST_DIRECTOR;
+			break;
+		case MOVIE:
+			awardName = BEST_PICTURE;
+			break;
+		case SUPPORTING_ACTOR:
+			awardName = BEST_SUPPORTING_ACTOR;
+			break;
+		case SUPPORTING_ACTRESS:
+			awardName = BEST_SUPPORTING_ACTRESS;
+			break;
+		default:
+			break;
+		}
+		
+		return awardName;
+	}
 
 	public List<Actor> getBestSupportingActorEntries(int randomYear) {
 		List<Actor> result = new ArrayList<Actor>();
@@ -74,51 +130,6 @@ public class DatabaseManager  extends SQLiteOpenHelper{
 	public List<Actor> getBestActorEntries(int year) {
 		List<Actor> result = new ArrayList<Actor>();
 		result = getActorFields(BEST_ACTOR, year);
-		return result;
-	}
-
-	public Quote getRandomQuote() {
-		Quote result = null;
-		
-		Cursor cursor = theDataBase.query(
-				"Quote"
-				, new String[]{"Film", "Quote"}		// Columns
-				, null								// Selection (where)
-				, new String[]{}					// Selection args
-				, null								// Group By
-				, null								// Having
-				, "RANDOM()"						// Order By
-				, "1");								// Limit
-		
-		if (cursor.moveToFirst()) {
-			result = new Quote(cursor.getString(0), cursor.getString(1));
-		} 
-		cursor.close();
-		
-		return result;
-	}
-
-	public List<Movie> getMoviesFromSameYear(String filmName) {
-		List<Movie> result = new ArrayList<Movie>();
-		
-		Cursor cursor = theDataBase.rawQuery(
-				"SELECT AwardName, Year, Film, IsWinner, Actors " +
-				"FROM Oscar " +
-				"WHERE year IN ( SELECT year FROM oscar WHERE film LIKE ?)" +
-				"	AND awardName like 'Best Picture'" , new String[]{filmName});
-		
-		while (cursor.moveToNext()) {
-   			Movie movie = new Movie( 
-   					cursor.getString(0)		// award
-   					, cursor.getInt(1)		// year
-   					, cursor.getString(2)	// film
-   					,(cursor.getInt(3) == 1)// isWinner
-   					, cursor.getString(4)	// actors
-   			);
-   			result.add(movie);
-   		}
-		cursor.close();
-		
 		return result;
 	}
 
@@ -207,6 +218,51 @@ public class DatabaseManager  extends SQLiteOpenHelper{
     	}
     	cursor.close();
     	
+		return result;
+	}
+
+	public Quote getRandomQuote() {
+		Quote result = null;
+		
+		Cursor cursor = theDataBase.query(
+				"Quote"
+				, new String[]{"Film", "Quote"}		// Columns
+				, null								// Selection (where)
+				, new String[]{}					// Selection args
+				, null								// Group By
+				, null								// Having
+				, "RANDOM()"						// Order By
+				, "1");								// Limit
+		
+		if (cursor.moveToFirst()) {
+			result = new Quote(cursor.getString(0), cursor.getString(1));
+		} 
+		cursor.close();
+		
+		return result;
+	}
+
+	public List<Movie> getMoviesFromSameYear(String filmName) {
+		List<Movie> result = new ArrayList<Movie>();
+		
+		Cursor cursor = theDataBase.rawQuery(
+				"SELECT AwardName, Year, Film, IsWinner, Actors " +
+				"FROM Oscar " +
+				"WHERE year IN ( SELECT year FROM oscar WHERE film LIKE ?)" +
+				"	AND awardName like 'Best Picture'" , new String[]{filmName});
+		
+		while (cursor.moveToNext()) {
+   			Movie movie = new Movie( 
+   					cursor.getString(0)		// award
+   					, cursor.getInt(1)		// year
+   					, cursor.getString(2)	// film
+   					,(cursor.getInt(3) == 1)// isWinner
+   					, cursor.getString(4)	// actors
+   			);
+   			result.add(movie);
+   		}
+		cursor.close();
+		
 		return result;
 	}
 
