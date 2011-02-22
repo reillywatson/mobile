@@ -170,7 +170,7 @@ public class Trivia extends Activity {
 		image.setImageResource(R.drawable.trivia_right);
 		
 		Toast toast = new Toast(Trivia.this);
-		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 50);
 		toast.setDuration(Toast.LENGTH_SHORT);
 		toast.setView(layout);
 		toast.show();
@@ -194,7 +194,7 @@ public class Trivia extends Activity {
 		image.setImageResource(R.drawable.trivia_wrong);
 		
 		Toast toast = new Toast(Trivia.this);
-		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+		toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 50);
 		toast.setDuration(Toast.LENGTH_SHORT);
 		toast.setView(layout);
 		toast.show();
