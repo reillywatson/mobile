@@ -8,6 +8,8 @@
     <string name="director_template">Who won the Ocar for Best Director in %1$s for the movie %2$s?</string>
     <string name="quote_template">Which Ocar-nominated film, from %1$d, is the following quote from? %2$s </string>
     <string name="trivia_streak">Current Streak: %1$d</string>
+    <string name="best_score">Best Score: %1$d</string>
+    
     <string name="choose_category">Please Choose a Category</string>
     <string name="loading_catalog">Loading Catalog...</string>
     

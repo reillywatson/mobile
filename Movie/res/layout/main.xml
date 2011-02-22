@@ -20,7 +20,7 @@
     		android:id="@+id/ad_layout"
 	        android:layout_alignParentBottom="true"
 			android:layout_width="fill_parent" 
-			android:layout_height="wrap_content">
+			android:layout_height="48px">
 	    <com.admob.android.ads.AdView
 	    	  android:id="@+id/ad" 
 	          app:backgroundColor="#000000"
@@ -32,16 +32,33 @@
 	    />
     </LinearLayout>
 	
-	<TextView
+	<LinearLayout 
 		android:id="@+id/bottom_banner"
 		android:background="@drawable/trivia_bottom_banner"
 		android:layout_above="@id/ad_layout"
-		android:textColor="@color/black"
-		android:gravity="center"
 	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    />
-
+	    android:layout_height="wrap_content">
+		
+		<TextView
+			android:id="@+id/current_streak"
+			android:textColor="@color/black"
+			android:layout_gravity="left"
+			android:gravity="left"
+			android:text="Current Streak: 0"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		
+		<TextView
+			android:id="@+id/best_score"
+			android:textColor="@color/black"
+			android:layout_gravity="right"
+			android:gravity="right"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    />
+	</LinearLayout>
+	
 	<LinearLayout
 		android:id="@+id/answer_area"
 		android:layout_above="@id/bottom_banner"
@@ -106,6 +123,7 @@
 				android:background="@drawable/rounded_corners"
 				android:layout_marginLeft="15px"
 				android:layout_gravity="center"
+				android:visibility="gone"
 			    android:layout_width="85px" 
 			    android:layout_height="115px"/>
 	

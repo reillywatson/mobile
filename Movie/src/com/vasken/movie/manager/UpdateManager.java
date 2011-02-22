@@ -44,6 +44,15 @@ public class UpdateManager{
         DB_VERSION_URL = context.getString(R.string.db_version_location);
         currentDbVersion = context.getPreferences(Activity.MODE_PRIVATE).getInt(DB_VERSION, 0);
 	}
+
+	public void setOnDoneListener(LoadListener loadListener) {
+		this.loadListener = loadListener;
+	}
+
+	public class LoadListener {
+		protected void onDone() {}
+		protected void onError() {}
+	}
 	
 	public void loadCatalog(Activity context) {
 		new UpdateDatabaseTask().execute(context);
@@ -161,14 +170,5 @@ public class UpdateManager{
     	}
  
     	return checkDB != null ? true : false;
-	}
-
-	public void setOnDoneListener(LoadListener loadListener) {
-		this.loadListener = loadListener;
-	}
-
-	public class LoadListener {
-		protected void onDone() {}
-		protected void onError() {}
 	}
 }
