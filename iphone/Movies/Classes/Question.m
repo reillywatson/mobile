@@ -14,6 +14,7 @@
 -(id)initWithQuestionText:(NSString *)text options:(NSArray *)aoptions {
 	self = [super init];
 	options = [aoptions retain];
+	correct = [[aoptions objectAtIndex:0] retain];
 	questionText = [text retain];
 	return self;
 }
@@ -21,6 +22,7 @@
 -(void)dealloc {
 	[super dealloc];
 	[options release];
+	[correct release];
 	[questionText release];
 }
 

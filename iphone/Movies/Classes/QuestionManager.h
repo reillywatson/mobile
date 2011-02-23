@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Question.h"
 
 @interface QuestionManager : NSObject {
-
+	NSDictionary *yearRanges;
 }
 
-+(NSArray *)loadQuestions:(int)questionType;
++(QuestionManager *)sharedInstance;
+-(Question *)newQuestionInCategory:(int)category;
 
 @end

@@ -47,6 +47,7 @@
 		B447F4D61314F8D800E24002 /* NominatedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F4D51314F8D800E24002 /* NominatedItem.m */; };
 		B447F4F11314FB7500E24002 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F4F01314FB7500E24002 /* Quote.m */; };
 		B447F599131508A500E24002 /* oscars.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B447F598131508A500E24002 /* oscars.sqlite */; };
+		B447F64A1315147D00E24002 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F6491315147D00E24002 /* NSMutableArray-Shuffle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,8 @@
 		B447F4EF1314FB7500E24002 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
 		B447F4F01314FB7500E24002 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
 		B447F598131508A500E24002 /* oscars.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = oscars.sqlite; sourceTree = "<group>"; };
+		B447F6481315147D00E24002 /* NSMutableArray-Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-Shuffle.h"; sourceTree = "<group>"; };
+		B447F6491315147D00E24002 /* NSMutableArray-Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray-Shuffle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B447F6481315147D00E24002 /* NSMutableArray-Shuffle.h */,
+				B447F6491315147D00E24002 /* NSMutableArray-Shuffle.m */,
 				1D3623240D0F684500981E51 /* MoviesAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MoviesAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* MoviesViewController.h */,
@@ -322,6 +327,7 @@
 				B447F4AD1314F53600E24002 /* DatabaseManager.m in Sources */,
 				B447F4D61314F8D800E24002 /* NominatedItem.m in Sources */,
 				B447F4F11314FB7500E24002 /* Quote.m in Sources */,
+				B447F64A1315147D00E24002 /* NSMutableArray-Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

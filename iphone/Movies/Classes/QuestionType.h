@@ -10,6 +10,9 @@
 enum QuestionType {
 	QuestionType_Actors,
 	QuestionType_Actresses,
+	QuestionType_SupportingActors,
+	QuestionType_SupportingActresses,
 	QuestionType_Directors,
-	QuestionType_Movies
+	QuestionType_Movies,
+	QuestionType_Quotes
 };

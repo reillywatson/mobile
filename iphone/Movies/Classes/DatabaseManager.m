@@ -83,13 +83,23 @@ PopulateFn quotePop = ^id(sqlite3_stmt *compiledStatement) {
 
 PopulateFn itemPop = ^id(sqlite3_stmt *compiledStatement) {
 	NominatedItem *item = [[NominatedItem new] autorelease];
-	item->awardName = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] retain];
+	char *award = (char *)sqlite3_column_text(compiledStatement, 0);
+	if (award)
+		item->awardName = [[NSString stringWithUTF8String:award] retain];
 	item->year = sqlite3_column_int(compiledStatement, 1);
-	item->film = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] retain];
-	item->nominee = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] retain];
-	item->role = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] retain];
+	char *film = (char *)sqlite3_column_text(compiledStatement, 2);
+	if (film)
+		item->film = [[NSString stringWithUTF8String:film] retain];
+	char *nominee = (char *)sqlite3_column_text(compiledStatement, 3);
+	if (nominee)
+		item->nominee = [[NSString stringWithUTF8String:nominee] retain];
+	char *role = (char *)sqlite3_column_text(compiledStatement, 4);
+	if (role)
+		item->role = [[NSString stringWithUTF8String:role] retain];
 	item->isWinner = (sqlite3_column_int(compiledStatement, 5) != 0);
-	item->actors = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] retain];
+	char *actors = (char *)sqlite3_column_text(compiledStatement, 6);
+	if (actors)
+		item->actors = [[NSString stringWithUTF8String:actors] retain];
 	return item;
 };
 
@@ -112,7 +122,7 @@ PopulateFn itemPop = ^id(sqlite3_stmt *compiledStatement) {
 }
 
 -(NSArray *)getYearRanges:(NSString *)awardname {
-	return [[self populateFromDb:[NSString stringWithFormat:@"select min(year), max(year) from oscar where awardname=%@", awardname] popFn:^id(sqlite3_stmt *compiledStatement) {
+	return [[self populateFromDb:[NSString stringWithFormat:@"select min(year), max(year) from oscar where awardname='%@'", awardname] popFn:^id(sqlite3_stmt *compiledStatement) {
 		NSNumber *min = [NSNumber numberWithInt:sqlite3_column_int(compiledStatement, 0)];
 		NSNumber *max = [NSNumber numberWithInt:sqlite3_column_int(compiledStatement, 1)];
 		NSArray *pair = [NSArray arrayWithObjects:min,max,nil];
@@ -142,6 +152,11 @@ PopulateFn itemPop = ^id(sqlite3_stmt *compiledStatement) {
 -(Quote *)getRandomQuote {
 	NSArray *results = [self populateFromDb:@"select quote, film from quote order by random() limit 1" popFn:quotePop];
 	return [results objectAtIndex:0];
+}
+
+-(NSArray *)getMoviesFromSameYear:(NSString *)film {
+	NSString *statement = [NSString stringWithFormat:@"SELECT AwardName, Year, Film,nominee,role, IsWinner, Actors from oscar where year in ( select year from oscar where film='%@')",[film stringByReplacingOccurrencesOfString:@"'" withString:@"''"]];
+	return [self populateFromDb:statement popFn:itemPop];
 }
 
 @end

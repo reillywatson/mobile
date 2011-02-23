@@ -14,6 +14,7 @@
 	NSString *questionText;
 	NSString *imageUrl;
 	NSArray *options;
+	NSString *correct;
 }
 
 -(id)initWithQuestionText:(NSString *)text options:(NSArray *)aoptions;
