@@ -61,261 +61,87 @@ static DatabaseManager *instance = NULL;
 	sqlite3_close(_db);
 }
 
--(NSArray *)quotesForFilm:(NSString *)film {
-	// this is some pretty weak sql sanitization, but we don't allow the user to enter new films so I don't care!
-	NSString *statement = [NSString stringWithFormat:@"SELECT Quote FROM Quote WHERE Film='%@'",[film stringByReplacingOccurrencesOfString:@"'" withString:@"''"]];
+typedef id(^PopulateFn)(sqlite3_stmt *compiledStatement);
+-(NSArray *)populateFromDb:(NSString *)statement popFn:(PopulateFn)fn {
 	NSMutableArray *results = [NSMutableArray new];
 	sqlite3_stmt *compiledStatement;
 	if (sqlite3_prepare_v2(_db, [statement UTF8String], -1, &compiledStatement, NULL) == SQLITE_OK) {
 		while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-			Quote *quote = [[Quote new] autorelease];
-			quote->film = [film retain];
-			quote->quote = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)] retain];
-			[results addObject:quote];
+			[results addObject:fn(compiledStatement)];
 		}
 	}
 	sqlite3_finalize(compiledStatement);
 	return results;
-	
+}
+
+PopulateFn quotePop = ^id(sqlite3_stmt *compiledStatement) {
+	Quote *quote = [[Quote new] autorelease];
+	quote->quote = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] retain];
+	quote->film = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)] retain];
+	return quote;
+};
+
+PopulateFn itemPop = ^id(sqlite3_stmt *compiledStatement) {
+	NominatedItem *item = [[NominatedItem new] autorelease];
+	item->awardName = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 0)] retain];
+	item->year = sqlite3_column_int(compiledStatement, 1);
+	item->film = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)] retain];
+	item->nominee = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] retain];
+	item->role = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] retain];
+	item->isWinner = (sqlite3_column_int(compiledStatement, 5) != 0);
+	item->actors = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)] retain];
+	return item;
+};
+
+-(NSArray *)quotesForFilm:(NSString *)film {
+	// this is some pretty weak sql sanitization, but we don't allow the user to enter new films so I don't care!
+	NSString *statement = [NSString stringWithFormat:@"SELECT Quote, Film FROM Quote WHERE Film='%@'",[film stringByReplacingOccurrencesOfString:@"'" withString:@"''"]];
+	return [self populateFromDb:statement popFn:quotePop];
 }
 
 -(NSArray *)nominatedItemsFromStatement:(NSString *)statement {
-	NSMutableArray *results = [NSMutableArray new];
-	sqlite3_stmt *compiledStatement;
-	if (sqlite3_prepare_v2(_db, [statement UTF8String], -1, &compiledStatement, NULL) == SQLITE_OK) {
-		while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
-			NominatedItem *item = [[NominatedItem new] autorelease];
-			item->awardName = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)] retain];
-			item->year = sqlite3_column_int(compiledStatement, 2);
-			item->film = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)] retain];
-			item->nominee = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)] retain];
-			item->role = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)] retain];
-			item->isWinner = (sqlite3_column_int(compiledStatement, 6) != 0);
-			item->actors = [[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 7)] retain];
-			[results addObject:item];
-		}
-	}
-	sqlite3_finalize(compiledStatement);
-	return results;
+	return [self populateFromDb:statement popFn:itemPop];
+}
+
+-(NSArray *) nomineesForYear:(int)year awardName:(NSString *)awardName {
+	return [self nominatedItemsFromStatement:[NSString stringWithFormat:@"select awardname,year,film,nominee,role,iswinner,actors from oscar where year=%d and awardname='%@'", year, awardName]];	
 }
 
 -(NSArray *) nomineesForYear:(int)year {
 	return [self nominatedItemsFromStatement:[NSString stringWithFormat:@"select awardname,year,film,nominee,role,iswinner,actors from oscar where year=%d", year]];
 }
 
-/*
-public Integer[] getYearRanges(QuestionType type) {
-	Integer[] result = new Integer[2];
-	
-	String award = getAwardNameFromQuestionType(type);
-	Cursor cursor = theDataBase.query(
-									  "Oscar"
-									  , new String[]{"AwardName", "Year"}					// Columns
-									  , "AwardName=?"										// Selection (where)
-									  , new String[]{award}								// Selection args
-									  , null												// Group By
-									  , null												// Having
-									  , "Year asc"										// Order By
-									  , null);											// Limit
-	
-	if (cursor.moveToFirst()) {
-		result[0] = cursor.getInt(1);
-	}
-	
-	if (cursor.moveToLast()) {
-		result[1] = cursor.getInt(1);
-	}
-	cursor.close();
-	
-	Log.d("--------------", award + result[0]+ " " + result[1]);
-	return result;
+-(NSArray *)getYearRanges:(NSString *)awardname {
+	return [[self populateFromDb:[NSString stringWithFormat:@"select min(year), max(year) from oscar where awardname=%@", awardname] popFn:^id(sqlite3_stmt *compiledStatement) {
+		NSNumber *min = [NSNumber numberWithInt:sqlite3_column_int(compiledStatement, 0)];
+		NSNumber *max = [NSNumber numberWithInt:sqlite3_column_int(compiledStatement, 1)];
+		NSArray *pair = [NSArray arrayWithObjects:min,max,nil];
+		return pair;
+	}] objectAtIndex:0];
 }
 
-private String getAwardNameFromQuestionType(QuestionType type) {
-	String awardName = null;
-	
-	switch(type) {
-		case ACTOR:
-			awardName = BEST_ACTOR;
-			break;
-		case ACTRESS:
-			awardName = BEST_ACTRESS;
-			break;
-		case DIRECTOR:
-			awardName = BEST_DIRECTOR;
-			break;
-		case MOVIE:
-			awardName = BEST_PICTURE;
-			break;
-		case SUPPORTING_ACTOR:
-			awardName = BEST_SUPPORTING_ACTOR;
-			break;
-		case SUPPORTING_ACTRESS:
-			awardName = BEST_SUPPORTING_ACTRESS;
-			break;
-		default:
-			break;
-	}
-	
-	return awardName;
+-(NSArray *)getBestSupportingActorEntries:(int) year {
+	return [self nomineesForYear:year awardName:@"Best Supporting Actor"];
+}
+-(NSArray *)getBestActorEntries:(int)year {
+	return [self nomineesForYear:year awardName:@"Best Actor"];
+}
+-(NSArray *)getBestSupportingActressEntries:(int) year {
+	return [self nomineesForYear:year awardName:@"Best Supporting Actress"];
+}
+-(NSArray *)getBestActressEntries:(int)year {
+	return [self nomineesForYear:year awardName:@"Best Actress"];
+}
+-(NSArray *)getBestPictureEntries:(int)year {
+	return [self nomineesForYear:year awardName:@"Best Picture"];
+}
+-(NSArray *)getBestDirectorEntries:(int)year {
+	return [self nomineesForYear:year awardName:@"Best Director"];
 }
 
-public List<Actor> getBestSupportingActorEntries(int randomYear) {
-	List<Actor> result = new ArrayList<Actor>();
-	result = getActorFields(BEST_SUPPORTING_ACTOR, randomYear);
-	return result;
+-(Quote *)getRandomQuote {
+	NSArray *results = [self populateFromDb:@"select quote, film from quote order by random() limit 1" popFn:quotePop];
+	return [results objectAtIndex:0];
 }
-
-public List<Actor> getBestSupportingActressesEntries(int randomYear) {
-	List<Actor> result = new ArrayList<Actor>();
-	result = getActorFields(BEST_SUPPORTING_ACTRESS, randomYear);
-	return result;
-}
-
-public List<Actor> getBestActressEntries(int year) {
-	List<Actor> result = new ArrayList<Actor>();
-	result = getActorFields(BEST_ACTRESS, year);
-	return result;
-}
-
-public List<Actor> getBestActorEntries(int year) {
-	List<Actor> result = new ArrayList<Actor>();
-	result = getActorFields(BEST_ACTOR, year);
-	return result;
-}
-
-public List<NominatedPerson> getBestDirectorEntries(int randomYear) {
-	List<NominatedPerson> result = new ArrayList<NominatedPerson>();
-	
-	String award = BEST_DIRECTOR;
-	String year = String.valueOf(randomYear);
-	Cursor cursor = theDataBase.query(
-									  "Oscar"
-									  , new String[]{"AwardName", "Year", "Film", "Nominee", "IsWinner" }	// Columns
-									  , "AwardName=? AND Year=?"								// Selection (where)
-									  , new String[]{award, year}								// Selection args
-									  , null													// Group By
-									  , null													// Having
-									  , null													// Order By
-									  , null);												// Limit
-	
-	while (cursor.moveToNext()) {
-		NominatedPerson person = new NominatedPerson( 
-													 award					 // award
-													 , randomYear 			 // year
-													 , cursor.getString(2)	 // film
-													 , cursor.getString(3)	 // nominee
-													 ,(cursor.getInt(4) == 1) // isWinner
-													 );
-		result.add(person);
-	}
-	cursor.close();
-	return result;
-}
-
-public List<Movie> getBestPictureEntries(int yr) {
-	List<Movie> result = new ArrayList<Movie>();
-	
-	String award = BEST_PICTURE;
-	String year = String.valueOf(yr);
-	Cursor cursor = theDataBase.query(
-									  "Oscar"
-									  , new String[]{"AwardName", "Year", "Film", "IsWinner", "Actors" }	// Columns
-									  , "AwardName=? AND Year=?"										// Selection (where)
-									  , new String[]{award, year}								// Selection args
-									  , null													// Group By
-									  , null													// Having
-									  , null													// Order By
-									  , null);												// Limit
-	
-	while (cursor.moveToNext()) {
-		Movie movie = new Movie( 
-								award					 // award
-								, yr		 			 // year
-								, cursor.getString(2)	 // film
-								,(cursor.getInt(3) == 1) // isWinner
-								, cursor.getString(4)	 // actors
-								);
-		result.add(movie);
-	}
-	cursor.close();
-	return result;
-}
-
-private List<Actor> getActorFields(String award, int yr) {
-	List<Actor> result = new ArrayList<Actor>();
-	
-	String year = String.valueOf(yr);
-	Cursor cursor = theDataBase.query(
-									  "Oscar"
-									  , new String[]{"AwardName", "Year", "Film", "Nominee", "Role", "IsWinner" }	// Columns
-									  , "AwardName=? AND Year=?"						// Selection (where)
-									  , new String[]{award, year}								// Selection args
-									  , null													// Group By
-									  , null													// Having
-									  , null													// Order By
-									  , null);												// Limit
-	
-	while (cursor.moveToNext()) {
-		Actor actor = new Actor( 
-								award					 // award
-								, yr		 			 // year
-								, cursor.getString(2)	 // film
-								, cursor.getString(3)	 // name
-								, cursor.getString(4)	 // role
-								,(cursor.getInt(5) == 1) // isWinner
-								);
-		result.add(actor);
-	}
-	cursor.close();
-	
-	return result;
-}
-
-public Quote getRandomQuote() {
-	Quote result = null;
-	
-	Cursor cursor = theDataBase.query(
-									  "Quote"
-									  , new String[]{"Film", "Quote"}		// Columns
-									  , null								// Selection (where)
-									  , new String[]{}					// Selection args
-									  , null								// Group By
-									  , null								// Having
-									  , "RANDOM()"						// Order By
-									  , "1");								// Limit
-	
-	if (cursor.moveToFirst()) {
-		result = new Quote(cursor.getString(0), cursor.getString(1));
-	} 
-	cursor.close();
-	
-	return result;
-}
-
-public List<Movie> getMoviesFromSameYear(String filmName) {
-	List<Movie> result = new ArrayList<Movie>();
-	
-	Cursor cursor = theDataBase.rawQuery(
-										 "SELECT AwardName, Year, Film, IsWinner, Actors " +
-										 "FROM Oscar " +
-										 "WHERE year IN ( SELECT year FROM oscar WHERE film LIKE ?)" +
-										 "	AND awardName like 'Best Picture'" , new String[]{filmName});
-	
-	while (cursor.moveToNext()) {
-		Movie movie = new Movie( 
-								cursor.getString(0)		// award
-								, cursor.getInt(1)		// year
-								, cursor.getString(2)	// film
-								,(cursor.getInt(3) == 1)// isWinner
-								, cursor.getString(4)	// actors
-								);
-		result.add(movie);
-	}
-	cursor.close();
-	
-	return result;
-}*/
-
 
 @end

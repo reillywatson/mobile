@@ -8,7 +8,8 @@
 
 #import "QuestionViewController.h"
 #import "QuestionManager.h"
-
+#import "DatabaseManager.h"
+#import "Quote.h"
 
 @interface QuestionViewController (Private)
 -(void)loadQuestions;
@@ -50,7 +51,8 @@
 	[self.currentStreakLabel setText:[NSString stringWithFormat:@"Current Streak: %d", _correctAnswers]];
 	int bestScore = 100;
 	[self.bestScoreLabel setText:[NSString stringWithFormat:@"Best Score: %d", bestScore]];
-	NSString *content = @"MY TEST CONTENT";
+	Quote *quote = [[DatabaseManager sharedInstance] getRandomQuote];
+	NSString *content = quote->quote;
 	[self.webView loadHTMLString:[NSString stringWithFormat:@"<html><head><style>body{background-color:transparent; color:white; border:1px solid #0f5e92; border-radius:2px; padding:8px;}</style></head><body>%@</body></html>", content] baseURL:nil];
 }
 
