@@ -20,7 +20,7 @@
     		android:id="@+id/ad_layout"
 	        android:layout_alignParentBottom="true"
 			android:layout_width="fill_parent" 
-			android:layout_height="48px">
+			android:layout_height="wrap_content">
 	    <com.admob.android.ads.AdView
 	    	  android:id="@+id/ad" 
 	          app:backgroundColor="#000000"

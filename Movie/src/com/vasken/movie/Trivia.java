@@ -3,9 +3,11 @@ package com.vasken.movie;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebView;
@@ -31,6 +33,7 @@ public class Trivia extends Activity {
 	private String category;
 	private int numRightAnswers;
 	private int bestScore;
+	private Dialog theLoadingDialog;
 	
     /** Called when the activity is first created. */
     @Override
@@ -46,7 +49,15 @@ public class Trivia extends Activity {
         // Set Best Score
         bestScore = getPreferences(MODE_PRIVATE).getInt(BEST_SCORE+category, 0);
         setBestScore(bestScore);
-        
+
+		// Set dialog
+		theLoadingDialog = new Dialog(this);
+		theLoadingDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		theLoadingDialog.setContentView(R.layout.loading_dialog);
+		((TextView)theLoadingDialog.findViewById(R.id.title)).setText(R.string.loading_catalog_question);
+		theLoadingDialog.setCancelable(false);
+		theLoadingDialog.show();
+		
         // Load Next Question
         loadNextQuestion();
     }
@@ -97,6 +108,14 @@ public class Trivia extends Activity {
 				}
 			});
 			return null;
+		}
+		
+		@Override
+		public void onPostExecute(Void result) {
+			super.onPostExecute(result);
+			if (theLoadingDialog.isShowing()) {
+				theLoadingDialog.dismiss();	
+			}
 		}
     }
     
