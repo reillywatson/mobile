@@ -104,7 +104,33 @@ TextGenFn genPictureText = ^NSString *(NominatedItem *item) {
 	return [NSString stringWithFormat:@"Which film won the Oscar for Best Picture in %d?", item->year];
 };
 
+
+static const int CHANCE_TO_PICK_SUPPORTING_ACTOR = 30;
+static const int CHANCE_TO_PICK_QUOTE = 75;
+
+-(int)determineQuestionType:(int)category {
+	int questionType = category;
+	int random = rand() % 100;
+	if (category == QuestionType_Actors) {
+		if (random < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
+			questionType = QuestionType_SupportingActors;
+		}
+	}
+	else if (category == QuestionType_Actresses) {
+		if (random < CHANCE_TO_PICK_SUPPORTING_ACTOR) {
+			questionType = QuestionType_SupportingActresses;
+		}
+	}
+	else if (category == QuestionType_Movies) {
+		if (random < CHANCE_TO_PICK_QUOTE) {
+			questionType = QuestionType_Quotes;
+		}
+	}
+	return questionType;
+}
+
 -(Question *)newQuestionInCategory:(int)category {
+	category = [self determineQuestionType:category];
 	Question *result = nil;
 	if (category == QuestionType_Actors) {
 		result = [self newQuestionForAward:[[DatabaseManager sharedInstance] getBestActorEntries:[self getRandomYear:@"Best Actor"]] textGenFn:genActorText];
