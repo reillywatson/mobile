@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class NameThatPersonViewController;
+@class ListSelectionViewController;
 
 @interface NameThatPersonAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    NameThatPersonViewController *viewController;
+    ListSelectionViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet NameThatPersonViewController *viewController;
+@property (nonatomic, retain) IBOutlet ListSelectionViewController *viewController;
 
 @end
 

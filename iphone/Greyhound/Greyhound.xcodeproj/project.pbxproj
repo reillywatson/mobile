@@ -25,6 +25,7 @@
 		B4333C9D12EAC2460065621E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C9612EAC2460065621E /* SBJsonParser.m */; };
 		B4333C9E12EAC2460065621E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C9812EAC2460065621E /* SBJsonWriter.m */; };
 		B4333CA112EAC2500065621E /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333CA012EAC2500065621E /* RegexKitLite.m */; };
+		B433E382130F4604000C5EBF /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B433E381130F4604000C5EBF /* MainWindow-iPad.xib */; };
 		B45331C012EAC92F00BCBC15 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = B45331BF12EAC92F00BCBC15 /* Location.m */; };
 		B45332C712EAD55500BCBC15 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45332C512EAD55500BCBC15 /* ScheduleViewController.m */; };
 		B45332C812EAD55500BCBC15 /* ScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45332C612EAD55500BCBC15 /* ScheduleViewController.xib */; };
@@ -74,6 +75,7 @@
 		B4333C9812EAC2460065621E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		B4333C9F12EAC2500065621E /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		B4333CA012EAC2500065621E /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		B433E381130F4604000C5EBF /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		B45331BE12EAC92F00BCBC15 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		B45331BF12EAC92F00BCBC15 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		B45332C412EAD55500BCBC15 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				B45334D812EAEC3800BCBC15 /* icon.png */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				B433E381130F4604000C5EBF /* MainWindow-iPad.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Greyhound-Info.plist */,
 			);
@@ -275,6 +278,7 @@
 				B45334D912EAEC3800BCBC15 /* icon.png in Resources */,
 				B453360B12EB634700BCBC15 /* DatePickController.xib in Resources */,
 				B4C3A05E12ED55410058CE57 /* DetailsViewController.xib in Resources */,
+				B433E382130F4604000C5EBF /* MainWindow-iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

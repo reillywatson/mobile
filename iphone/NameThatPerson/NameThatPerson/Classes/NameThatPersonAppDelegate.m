@@ -7,7 +7,7 @@
 //
 
 #import "NameThatPersonAppDelegate.h"
-#import "NameThatPersonViewController.h"
+#import "ListSelectionViewController.h"
 
 @implementation NameThatPersonAppDelegate
 
