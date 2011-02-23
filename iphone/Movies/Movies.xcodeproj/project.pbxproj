@@ -42,6 +42,10 @@
 		B447F4001314928B00E24002 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F3FF1314928B00E24002 /* Question.m */; };
 		B447F40B1314938C00E24002 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F40A1314938C00E24002 /* QuestionManager.m */; };
 		B447F4601314E02400E24002 /* trivia_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F45F1314E02400E24002 /* trivia_button.png */; };
+		B447F4AD1314F53600E24002 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F4AC1314F53600E24002 /* DatabaseManager.m */; };
+		B447F4B11314F59300E24002 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B447F4B01314F59300E24002 /* libsqlite3.0.dylib */; };
+		B447F4D61314F8D800E24002 /* NominatedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F4D51314F8D800E24002 /* NominatedItem.m */; };
+		B447F4F11314FB7500E24002 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F4F01314FB7500E24002 /* Quote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +93,13 @@
 		B447F4091314938C00E24002 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		B447F40A1314938C00E24002 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		B447F45F1314E02400E24002 /* trivia_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_button.png; sourceTree = "<group>"; };
+		B447F4AB1314F53600E24002 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		B447F4AC1314F53600E24002 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		B447F4B01314F59300E24002 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		B447F4D41314F8D800E24002 /* NominatedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NominatedItem.h; sourceTree = "<group>"; };
+		B447F4D51314F8D800E24002 /* NominatedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NominatedItem.m; sourceTree = "<group>"; };
+		B447F4EF1314FB7500E24002 /* Quote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quote.h; sourceTree = "<group>"; };
+		B447F4F01314FB7500E24002 /* Quote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +110,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				B447F4B11314F59300E24002 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +132,12 @@
 				B447F3FF1314928B00E24002 /* Question.m */,
 				B447F4091314938C00E24002 /* QuestionManager.h */,
 				B447F40A1314938C00E24002 /* QuestionManager.m */,
+				B447F4AB1314F53600E24002 /* DatabaseManager.h */,
+				B447F4AC1314F53600E24002 /* DatabaseManager.m */,
+				B447F4D41314F8D800E24002 /* NominatedItem.h */,
+				B447F4D51314F8D800E24002 /* NominatedItem.m */,
+				B447F4EF1314FB7500E24002 /* Quote.h */,
+				B447F4F01314FB7500E24002 /* Quote.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -140,6 +158,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				B447F4B01314F59300E24002 /* libsqlite3.0.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -296,6 +315,9 @@
 				B447F3B61314899300E24002 /* QuestionViewController.m in Sources */,
 				B447F4001314928B00E24002 /* Question.m in Sources */,
 				B447F40B1314938C00E24002 /* QuestionManager.m in Sources */,
+				B447F4AD1314F53600E24002 /* DatabaseManager.m in Sources */,
+				B447F4D61314F8D800E24002 /* NominatedItem.m in Sources */,
+				B447F4F11314FB7500E24002 /* Quote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
