@@ -41,6 +41,7 @@
 		B447F3B71314899300E24002 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B447F3B51314899300E24002 /* QuestionViewController.xib */; };
 		B447F4001314928B00E24002 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F3FF1314928B00E24002 /* Question.m */; };
 		B447F40B1314938C00E24002 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F40A1314938C00E24002 /* QuestionManager.m */; };
+		B447F4601314E02400E24002 /* trivia_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F45F1314E02400E24002 /* trivia_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		B447F3FF1314928B00E24002 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		B447F4091314938C00E24002 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		B447F40A1314938C00E24002 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		B447F45F1314E02400E24002 /* trivia_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		B447F3721314845500E24002 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B447F45F1314E02400E24002 /* trivia_button.png */,
 				B447F3731314845500E24002 /* category_actors.png */,
 				B447F3741314845500E24002 /* category_actors_on.png */,
 				B447F3751314845500E24002 /* category_actors_selected.png */,
@@ -276,6 +279,7 @@
 				B447F39D1314845500E24002 /* trivia_top_banner.9.png in Resources */,
 				B447F39E1314845500E24002 /* trivia_wrong.png in Resources */,
 				B447F3B71314899300E24002 /* QuestionViewController.xib in Resources */,
+				B447F4601314E02400E24002 /* trivia_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

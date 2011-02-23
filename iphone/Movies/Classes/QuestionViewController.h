@@ -15,10 +15,14 @@
 	int _correctAnswers;
 	UIWebView *_webView;
 	UIImageView *_rightWrongImage;
+	UILabel *_currentStreakLabel;
+	UILabel *_bestScoreLabel;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UIImageView *rightWrongImage;
+@property (nonatomic, retain) IBOutlet UILabel *currentStreakLabel;
+@property (nonatomic, retain) IBOutlet UILabel *bestScoreLabel;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil questionType:(int)questionType;
 
