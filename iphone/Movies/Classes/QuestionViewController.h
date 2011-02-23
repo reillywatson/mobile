@@ -14,9 +14,11 @@
 	NSArray *_questions;
 	int _correctAnswers;
 	UIWebView *_webView;
+	UIImageView *_rightWrongImage;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet UIImageView *rightWrongImage;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil questionType:(int)questionType;
 

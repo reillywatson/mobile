@@ -19,6 +19,7 @@
 @implementation QuestionViewController
 
 @synthesize webView = _webView;
+@synthesize rightWrongImage = _rightWrongImage;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil questionType:(int)questionType {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
