@@ -20,6 +20,8 @@
 
 @synthesize webView = _webView;
 @synthesize rightWrongImage = _rightWrongImage;
+@synthesize currentStreakLabel = _currentStreakLabel;
+@synthesize bestScoreLabel = _bestScoreLabel;
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil questionType:(int)questionType {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -45,8 +47,11 @@
 }
 
 -(void)newQuestion {
+	[self.currentStreakLabel setText:[NSString stringWithFormat:@"Current Streak: %d", _correctAnswers]];
+	int bestScore = 100;
+	[self.bestScoreLabel setText:[NSString stringWithFormat:@"Best Score: %d", bestScore]];
 	NSString *content = @"MY TEST CONTENT";
-	[self.webView loadHTMLString:[NSString stringWithFormat:@"<html><head><style>body{background-color:transparent; color:white;}</style></head><body>%@</body></html>", content] baseURL:nil];
+	[self.webView loadHTMLString:[NSString stringWithFormat:@"<html><head><style>body{background-color:transparent; color:white; border:1px solid #0f5e92; border-radius:2px; padding:8px;}</style></head><body>%@</body></html>", content] baseURL:nil];
 }
 
 
