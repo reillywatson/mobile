@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MoviesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MoviesAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MoviesViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MoviesViewController.m */; };
+		B447F3891314845500E24002 /* category_actors.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3731314845500E24002 /* category_actors.png */; };
+		B447F38A1314845500E24002 /* category_actors_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3741314845500E24002 /* category_actors_on.png */; };
+		B447F38B1314845500E24002 /* category_actors_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3751314845500E24002 /* category_actors_selected.png */; };
+		B447F38C1314845500E24002 /* category_actresses.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3761314845500E24002 /* category_actresses.png */; };
+		B447F38D1314845500E24002 /* category_actresses_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3771314845500E24002 /* category_actresses_on.png */; };
+		B447F38E1314845500E24002 /* category_actresses_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3781314845500E24002 /* category_actresses_selected.png */; };
+		B447F38F1314845500E24002 /* category_directors.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3791314845500E24002 /* category_directors.png */; };
+		B447F3901314845500E24002 /* category_directors_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37A1314845500E24002 /* category_directors_on.png */; };
+		B447F3911314845500E24002 /* category_directors_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37B1314845500E24002 /* category_directors_selected.png */; };
+		B447F3921314845500E24002 /* category_movies.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37C1314845500E24002 /* category_movies.png */; };
+		B447F3931314845500E24002 /* category_movies_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37D1314845500E24002 /* category_movies_on.png */; };
+		B447F3941314845500E24002 /* category_movies_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37E1314845500E24002 /* category_movies_selected.png */; };
+		B447F3951314845500E24002 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F37F1314845500E24002 /* icon.png */; };
+		B447F3961314845500E24002 /* scroller.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3801314845500E24002 /* scroller.png */; };
+		B447F3971314845500E24002 /* trivia_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3811314845500E24002 /* trivia_bg.png */; };
+		B447F3981314845500E24002 /* trivia_bottom_banner.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3821314845500E24002 /* trivia_bottom_banner.9.png */; };
+		B447F3991314845500E24002 /* trivia_button.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3831314845500E24002 /* trivia_button.9.png */; };
+		B447F39A1314845500E24002 /* trivia_button_on.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3841314845500E24002 /* trivia_button_on.9.png */; };
+		B447F39B1314845500E24002 /* trivia_button_selected.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3851314845500E24002 /* trivia_button_selected.9.png */; };
+		B447F39C1314845500E24002 /* trivia_right.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3861314845500E24002 /* trivia_right.png */; };
+		B447F39D1314845500E24002 /* trivia_top_banner.9.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3871314845500E24002 /* trivia_top_banner.9.png */; };
+		B447F39E1314845500E24002 /* trivia_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = B447F3881314845500E24002 /* trivia_wrong.png */; };
+		B447F3B61314899300E24002 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F3B41314899300E24002 /* QuestionViewController.m */; };
+		B447F3B71314899300E24002 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B447F3B51314899300E24002 /* QuestionViewController.xib */; };
+		B447F4001314928B00E24002 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F3FF1314928B00E24002 /* Question.m */; };
+		B447F40B1314938C00E24002 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B447F40A1314938C00E24002 /* QuestionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MoviesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MoviesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* MoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Movies_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Movies-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Movies-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B447F3731314845500E24002 /* category_actors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actors.png; sourceTree = "<group>"; };
+		B447F3741314845500E24002 /* category_actors_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actors_on.png; sourceTree = "<group>"; };
+		B447F3751314845500E24002 /* category_actors_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actors_selected.png; sourceTree = "<group>"; };
+		B447F3761314845500E24002 /* category_actresses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actresses.png; sourceTree = "<group>"; };
+		B447F3771314845500E24002 /* category_actresses_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actresses_on.png; sourceTree = "<group>"; };
+		B447F3781314845500E24002 /* category_actresses_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_actresses_selected.png; sourceTree = "<group>"; };
+		B447F3791314845500E24002 /* category_directors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_directors.png; sourceTree = "<group>"; };
+		B447F37A1314845500E24002 /* category_directors_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_directors_on.png; sourceTree = "<group>"; };
+		B447F37B1314845500E24002 /* category_directors_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_directors_selected.png; sourceTree = "<group>"; };
+		B447F37C1314845500E24002 /* category_movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_movies.png; sourceTree = "<group>"; };
+		B447F37D1314845500E24002 /* category_movies_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_movies_on.png; sourceTree = "<group>"; };
+		B447F37E1314845500E24002 /* category_movies_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_movies_selected.png; sourceTree = "<group>"; };
+		B447F37F1314845500E24002 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B447F3801314845500E24002 /* scroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroller.png; sourceTree = "<group>"; };
+		B447F3811314845500E24002 /* trivia_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_bg.png; sourceTree = "<group>"; };
+		B447F3821314845500E24002 /* trivia_bottom_banner.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_bottom_banner.9.png; sourceTree = "<group>"; };
+		B447F3831314845500E24002 /* trivia_button.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_button.9.png; sourceTree = "<group>"; };
+		B447F3841314845500E24002 /* trivia_button_on.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_button_on.9.png; sourceTree = "<group>"; };
+		B447F3851314845500E24002 /* trivia_button_selected.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_button_selected.9.png; sourceTree = "<group>"; };
+		B447F3861314845500E24002 /* trivia_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_right.png; sourceTree = "<group>"; };
+		B447F3871314845500E24002 /* trivia_top_banner.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_top_banner.9.png; sourceTree = "<group>"; };
+		B447F3881314845500E24002 /* trivia_wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trivia_wrong.png; sourceTree = "<group>"; };
+		B447F3AC131488C700E24002 /* QuestionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionType.h; sourceTree = "<group>"; };
+		B447F3B31314899300E24002 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		B447F3B41314899300E24002 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		B447F3B51314899300E24002 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		B447F3FE1314928B00E24002 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		B447F3FF1314928B00E24002 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		B447F4091314938C00E24002 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		B447F40A1314938C00E24002 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MoviesAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MoviesAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* MoviesViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* MoviesViewController.m */,
+				B447F3AC131488C700E24002 /* QuestionType.h */,
+				B447F3B31314899300E24002 /* QuestionViewController.h */,
+				B447F3B41314899300E24002 /* QuestionViewController.m */,
+				B447F3B51314899300E24002 /* QuestionViewController.xib */,
+				B447F3FE1314928B00E24002 /* Question.h */,
+				B447F3FF1314928B00E24002 /* Question.m */,
+				B447F4091314938C00E24002 /* QuestionManager.h */,
+				B447F40A1314938C00E24002 /* QuestionManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Movies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Movies_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B447F3721314845500E24002 /* images */,
+				2899E5210DE3E06400AC0155 /* MoviesViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Movies-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B447F3721314845500E24002 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B447F3731314845500E24002 /* category_actors.png */,
+				B447F3741314845500E24002 /* category_actors_on.png */,
+				B447F3751314845500E24002 /* category_actors_selected.png */,
+				B447F3761314845500E24002 /* category_actresses.png */,
+				B447F3771314845500E24002 /* category_actresses_on.png */,
+				B447F3781314845500E24002 /* category_actresses_selected.png */,
+				B447F3791314845500E24002 /* category_directors.png */,
+				B447F37A1314845500E24002 /* category_directors_on.png */,
+				B447F37B1314845500E24002 /* category_directors_selected.png */,
+				B447F37C1314845500E24002 /* category_movies.png */,
+				B447F37D1314845500E24002 /* category_movies_on.png */,
+				B447F37E1314845500E24002 /* category_movies_selected.png */,
+				B447F37F1314845500E24002 /* icon.png */,
+				B447F3801314845500E24002 /* scroller.png */,
+				B447F3811314845500E24002 /* trivia_bg.png */,
+				B447F3821314845500E24002 /* trivia_bottom_banner.9.png */,
+				B447F3831314845500E24002 /* trivia_button.9.png */,
+				B447F3841314845500E24002 /* trivia_button_on.9.png */,
+				B447F3851314845500E24002 /* trivia_button_selected.9.png */,
+				B447F3861314845500E24002 /* trivia_right.png */,
+				B447F3871314845500E24002 /* trivia_top_banner.9.png */,
+				B447F3881314845500E24002 /* trivia_wrong.png */,
+			);
+			name = images;
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Movies" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movies;
+			productName = Movies;
+			productReference = 1D6058910D05DD3D006BFB54 /* Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Movies" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Movies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* MoviesViewController.xib in Resources */,
+				B447F3891314845500E24002 /* category_actors.png in Resources */,
+				B447F38A1314845500E24002 /* category_actors_on.png in Resources */,
+				B447F38B1314845500E24002 /* category_actors_selected.png in Resources */,
+				B447F38C1314845500E24002 /* category_actresses.png in Resources */,
+				B447F38D1314845500E24002 /* category_actresses_on.png in Resources */,
+				B447F38E1314845500E24002 /* category_actresses_selected.png in Resources */,
+				B447F38F1314845500E24002 /* category_directors.png in Resources */,
+				B447F3901314845500E24002 /* category_directors_on.png in Resources */,
+				B447F3911314845500E24002 /* category_directors_selected.png in Resources */,
+				B447F3921314845500E24002 /* category_movies.png in Resources */,
+				B447F3931314845500E24002 /* category_movies_on.png in Resources */,
+				B447F3941314845500E24002 /* category_movies_selected.png in Resources */,
+				B447F3951314845500E24002 /* icon.png in Resources */,
+				B447F3961314845500E24002 /* scroller.png in Resources */,
+				B447F3971314845500E24002 /* trivia_bg.png in Resources */,
+				B447F3981314845500E24002 /* trivia_bottom_banner.9.png in Resources */,
+				B447F3991314845500E24002 /* trivia_button.9.png in Resources */,
+				B447F39A1314845500E24002 /* trivia_button_on.9.png in Resources */,
+				B447F39B1314845500E24002 /* trivia_button_selected.9.png in Resources */,
+				B447F39C1314845500E24002 /* trivia_right.png in Resources */,
+				B447F39D1314845500E24002 /* trivia_top_banner.9.png in Resources */,
+				B447F39E1314845500E24002 /* trivia_wrong.png in Resources */,
+				B447F3B71314899300E24002 /* QuestionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MoviesAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* MoviesViewController.m in Sources */,
+				B447F3B61314899300E24002 /* QuestionViewController.m in Sources */,
+				B447F4001314928B00E24002 /* Question.m in Sources */,
+				B447F40B1314938C00E24002 /* QuestionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Movies_Prefix.pch;
+				INFOPLIST_FILE = "Movies-Info.plist";
+				PRODUCT_NAME = Movies;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Movies_Prefix.pch;
+				INFOPLIST_FILE = "Movies-Info.plist";
+				PRODUCT_NAME = Movies;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
