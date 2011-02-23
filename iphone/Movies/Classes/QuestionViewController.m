@@ -63,14 +63,18 @@
 	if (_correctAnswers > _bestScore) {
 		_bestScore = _correctAnswers;
 	}
-	[self.bestScoreLabel setText:[NSString stringWithFormat:@"Best Score: %d", _bestScore]];		
-	Question *question = [[QuestionManager sharedInstance] newQuestionInCategory:_questionType];
-	NSString *content = question->questionText;
+	[self.bestScoreLabel setText:[NSString stringWithFormat:@"Best Score: %d", _bestScore]];
+	[_currentQuestion release];
+	_currentQuestion = nil;
+	while (_currentQuestion == nil) {
+		_currentQuestion = [[QuestionManager sharedInstance] newQuestionInCategory:_questionType];
+	}
+	NSString *content = _currentQuestion->questionText;
 	[self.webView loadHTMLString:[NSString stringWithFormat:@"<html><head><style>body{background-color:transparent; color:white;}</style></head><body>%@</body></html>", content] baseURL:nil];
 	NSMutableArray *unset = [NSMutableArray arrayWithObjects:self.opt1, self.opt2,self.opt3, nil];
 	[unset shuffle];
-	NSString *correct = [question->options objectAtIndex:0];
-	NSMutableArray *possibleAnswers = [NSMutableArray arrayWithArray:question->options];
+	NSString *correct = [_currentQuestion->options objectAtIndex:0];
+	NSMutableArray *possibleAnswers = [NSMutableArray arrayWithArray:_currentQuestion->options];
 	[possibleAnswers shuffle];
 	[possibleAnswers removeObject:correct];
 	[possibleAnswers insertObject:correct atIndex:(rand() % [unset count])];
@@ -80,7 +84,6 @@
 		NSLog(@"SETTING ANSWER: %@", [possibleAnswers objectAtIndex:i]);
 		[button setTitle:[possibleAnswers objectAtIndex:i] forState:UIControlStateNormal];
 	}
-	_currentQuestion = question;
 }
 
 -(void)showResultIndicator:(BOOL)success {

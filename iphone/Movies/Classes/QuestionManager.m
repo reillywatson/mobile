@@ -62,6 +62,8 @@ static QuestionManager *INSTANCE = nil;
 
 typedef NSString *(^TextGenFn)(NominatedItem *item);
 -(Question *)newQuestionForAward:(NSArray *)items textGenFn:(TextGenFn)getText {
+	if ([items count] == 0)
+		return nil;
 	NSMutableArray *answers = [NSMutableArray new];
 	NominatedItem *winner = nil;
 	for (int i = 0; i < [items count]; i++) {
@@ -76,7 +78,9 @@ typedef NSString *(^TextGenFn)(NominatedItem *item);
 }
 
 -(Question *)movieQuestion {
-	NSArray *items = [[DatabaseManager sharedInstance] getBestDirectorEntries:[self getRandomYear:@"Best Picture"]];
+	NSArray *items = [[DatabaseManager sharedInstance] getBestPictureEntries:[self getRandomYear:@"Best Picture"]];
+	if ([items count] == 0)
+		return nil;
 	NSMutableArray *answers = [NSMutableArray new];
 	NominatedItem *winner = nil;
 	for (int i = 0; i < [items count]; i++) {
