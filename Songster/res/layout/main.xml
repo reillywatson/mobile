@@ -6,6 +6,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
+    <ImageView
+    	android:id="@+id/background"
+    	android:background="@drawable/bg_game"
+		android:layout_marginTop="5px"
+    	android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"/>
+		
     <!-- Place an AdMob ad at the bottom of the screen. -->
     <!-- It has white text on a black background. -->
     <com.admob.android.ads.AdView
@@ -16,25 +23,44 @@
           app:keywords="Name That Tune: Rock Music"
           android:layout_alignParentBottom="true"
           android:layout_width="fill_parent" 
-          android:layout_height="wrap_content"
+          android:layout_height="48px"
     />
-    
+	
+	<ImageView
+		android:id="@+id/footer"
+    	android:background="@drawable/border"
+		android:layout_above="@id/ad"
+    	android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" />
+	
+	<TextView
+    	android:id="@+id/answerStreak"
+    	android:background="@drawable/result"
+		android:textSize="20dp"
+		android:textColor="@color/white"
+	   	android:gravity="center"
+    	android:layout_above="@id/footer"
+	   	android:layout_centerHorizontal="true"
+	   	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"/>
+		
+    <ImageView
+    	android:id="@+id/answer"
+    	android:layout_centerHorizontal="true"
+    	android:layout_above="@id/answerStreak"
+    	android:background="@drawable/none"
+    	android:layout_marginTop="10px"
+    	android:layout_marginBottom="5px"
+    	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</ImageView>
+	
     <ImageView
 		android:id="@+id/header"
     	android:src="@drawable/border"
     	android:layout_alignParentTop="true"
     	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
- 	
-    <ImageView
-    	android:id="@+id/background"
-    	android:src="@drawable/bg_game"
-		android:layout_marginTop="5px"
-    	android:layout_above="@id/ad"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
+		android:layout_height="wrap_content"/>
 	
 	<RelativeLayout
 		android:id="@+id/timer"
@@ -47,100 +73,57 @@
 		
 		<ImageView
 			android:id="@+id/timerBg"
-	    	android:src="@drawable/timer_bg"
-	    	android:layout_width="wrap_content" 
-			android:layout_height="wrap_content">
-		</ImageView>   
-	
-		<ImageView
-			android:id="@+id/timerCover"
+	    	android:background="@drawable/timer_bg"
 	    	android:src="@drawable/timer_cover"
 	    	android:layout_width="wrap_content" 
-			android:layout_height="wrap_content">
-		</ImageView>
-	
+			android:layout_height="wrap_content"/> 
+			
 		<TextView
 			android:id="@+id/timerTimeLeft"
-			android:textSize="35px"
+			android:textSize="30dp"
 			android:textColor="@color/white"
 			android:layout_centerInParent="true"
 	    	android:layout_width="wrap_content" 
-			android:layout_height="wrap_content">
-		</TextView>
+			android:layout_height="wrap_content"/>
 	</RelativeLayout>
 
-	<Button 
-		android:id="@+id/Button01" 
-		android:layout_alignTop="@id/background"
-		android:background="@drawable/button"
-		android:layout_marginTop="115px"
+	<LinearLayout
+		android:id="@+id/buttons"
+		android:orientation="vertical"
+		android:layout_above="@id/answer"
 		android:layout_marginLeft="5px"
-		android:paddingLeft="5px"
-		android:paddingRight="5px"
-		android:focusable="true"
-		android:layout_width="wrap_content" 
+		android:layout_marginRight="5px"
+		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content">
-	</Button>
-	<Button 
-		android:id="@+id/Button02" 
-		android:layout_below="@id/Button01"
-		android:background="@drawable/button"
-		android:layout_marginTop="5px"
-		android:layout_marginLeft="5px"
-		android:paddingLeft="5px"
-		android:paddingRight="5px"
-		android:focusable="true"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</Button>
-	<Button 
-		android:id="@+id/Button03" 
-		android:layout_below="@id/Button02"
-		android:background="@drawable/button"
-		android:layout_marginTop="5px"
-		android:layout_marginLeft="5px"
-		android:paddingLeft="5px"
-		android:paddingRight="5px"
-		android:focusable="true"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</Button> 
- 	
-    <ImageView
-    	android:id="@+id/answer"
-    	android:layout_centerHorizontal="true"
-    	android:layout_below="@id/Button03"
-    	android:layout_marginTop="10px"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>   
-	
-	<ImageView
-		android:id="@+id/result"
-    	android:src="@drawable/result"
-    	android:layout_centerHorizontal="true"
-		android:layout_alignBottom="@id/background"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>
-	
-	<TextView
-    	android:id="@+id/answerStreak"
-		android:textSize="20px"
-		android:text="@string/streak"
-		android:textColor="@color/white"
-	   	android:layout_centerHorizontal="true"
-		android:layout_alignBottom="@id/background"
-		android:layout_marginBottom="10px"
-	   	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</TextView>
-	
-	<ImageView
-		android:id="@+id/footer"
-    	android:src="@drawable/border"
-		android:layout_above="@id/ad"
-    	android:layout_width="wrap_content" 
-		android:layout_height="wrap_content">
-	</ImageView>	
+		
+		<Button 
+			android:id="@+id/Button01" 
+			android:background="@drawable/button"
+			android:paddingLeft="5px"
+			android:paddingRight="5px"
+			android:focusable="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</Button>
+		<Button 
+			android:id="@+id/Button02" 
+			android:background="@drawable/button"
+			android:layout_marginTop="5px"
+			android:paddingLeft="5px"
+			android:paddingRight="5px"
+			android:focusable="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</Button>
+		<Button 
+			android:id="@+id/Button03"
+			android:background="@drawable/button"
+			android:layout_marginTop="5px"
+			android:paddingLeft="5px"
+			android:paddingRight="5px"
+			android:focusable="true"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+		</Button> 
+	</LinearLayout>
 </RelativeLayout>
