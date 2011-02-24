@@ -29,6 +29,7 @@
 @synthesize opt1 = _opt1;
 @synthesize opt2 = _opt2;
 @synthesize opt3 = _opt3;
+@synthesize adView = _adView;
 
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil questionType:(int)questionType {
@@ -54,7 +55,7 @@
 
 -(void)newGame {
 	_correctAnswers = 0;
-	_bestScore = 0;
+	_bestScore = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"bestScore-%d", _questionType]];
 	[self newQuestion];
 }
 
@@ -62,6 +63,7 @@
 	[self.currentStreakLabel setText:[NSString stringWithFormat:@"Current Streak: %d", _correctAnswers]];
 	if (_correctAnswers > _bestScore) {
 		_bestScore = _correctAnswers;
+		[[NSUserDefaults standardUserDefaults] setInteger:_bestScore forKey:[NSString stringWithFormat:@"bestScore-%d", _questionType]];
 	}
 	[self.bestScoreLabel setText:[NSString stringWithFormat:@"Best Score: %d", _bestScore]];
 	[_currentQuestion release];
@@ -78,10 +80,8 @@
 	[possibleAnswers shuffle];
 	[possibleAnswers removeObject:correct];
 	[possibleAnswers insertObject:correct atIndex:(rand() % [unset count])];
-	NSLog(@"CORRECT: %@", correct);
 	for (int i = 0; i < [unset count]; i++) {
 		UIButton *button = [unset objectAtIndex:i];
-		NSLog(@"SETTING ANSWER: %@", [possibleAnswers objectAtIndex:i]);
 		[button setTitle:[possibleAnswers objectAtIndex:i] forState:UIControlStateNormal];
 	}
 }

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QuestionType.h"
 #import "Question.h"
+#import "AdViewController.h"
 
 @interface QuestionViewController : UIViewController {
 	int _questionType;
@@ -23,6 +24,7 @@
 	UIButton *_opt2;
 	UIButton *_opt3;
 	Question *_currentQuestion;
+	AdViewController *_adView;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
@@ -32,6 +34,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *opt1;
 @property (nonatomic, retain) IBOutlet UIButton *opt2;
 @property (nonatomic, retain) IBOutlet UIButton *opt3;
+@property (nonatomic, retain) IBOutlet AdViewController *adView;
 
 -(IBAction)opt1Selected;
 -(IBAction)opt2Selected;
