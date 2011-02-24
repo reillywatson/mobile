@@ -80,7 +80,7 @@ public class Trivia extends Activity {
 				public void run() {
 					WebView text = (WebView)findViewById(R.id.text);
 					text.setBackgroundColor(0);
-					text.getSettings().setMinimumFontSize(20);
+					text.getSettings().setMinimumFontSize(18);
 					ImageView image = (ImageView)findViewById(R.id.image);
 					Button answer1 = (Button)findViewById(R.id.answer1);
 					Button answer2 = (Button)findViewById(R.id.answer2);

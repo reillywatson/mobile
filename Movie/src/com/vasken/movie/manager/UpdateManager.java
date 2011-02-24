@@ -70,8 +70,15 @@ public class UpdateManager{
 	            InputStream reader = new URL(DB_URL).openStream();
 	            
 	            File dir = new File(dbPath);
-	            if (!dir.exists()) {
-	            	dir.mkdirs();
+	            boolean dirReady = dir.exists();
+	            if (!dirReady) {
+	            	dirReady = dir.mkdirs();
+	            }
+	            
+	            if (!dirReady) {
+	            	System.err.println("Couldn't create " + dbPath);
+		        	loadedSuccessfuly = false;
+		        	return null;
 	            }
 	            
 	            Log.d(getClass().toString(), "Putting new database in path: " + dbPath);
