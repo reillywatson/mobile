@@ -72,6 +72,7 @@
 	[opt3 setText:[[currentQuestion->answers objectAtIndex:2] stringByDecodingXMLEntities]];
 	[webview loadHTMLString:currentQuestion->question baseURL:nil];
 	[progress setImage:[UIImage imageNamed:[NSString stringWithFormat:@"progress%i.png", answersStreak]]];
+	NSLog(@"ANSWER: %@", currentQuestion->correctAnswer);
 }
 
 -(void)displayQuestionNo {
@@ -93,7 +94,10 @@
 }
 
 - (NSString *)publisherIdForAd:(AdMobView *)adView {
-	return @"a14c0899dcb1233";
+	NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+	NSString *admobId = [info objectForKey:@"AdmobID"];
+	NSLog(@"ADMOB ID: %@", admobId);
+	return admobId;
 }
 - (UIViewController *)currentViewControllerForAd:(AdMobView *)adView {
 	return self;

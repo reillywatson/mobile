@@ -23,10 +23,9 @@
 // from http://www.admob.com.  adView will be nil for interstitial requests.
 - (NSString *)publisherIdForAd:(AdMobView *)adView;
 
-// Return the current view controller (AdMobView should be part of its view heirarchy).
+// Return the current view controller (AdMobView should be part of its view hierarchy).
 // Make sure to return the root view controller (e.g. a UINavigationController, not
-// the UIViewController attached to it).  If there is no UIViewController return nil.
-// adView will be nil for interstitial requests.
+// the UIViewController attached to it) .
 - (UIViewController *)currentViewControllerForAd:(AdMobView *)adView;
 
 

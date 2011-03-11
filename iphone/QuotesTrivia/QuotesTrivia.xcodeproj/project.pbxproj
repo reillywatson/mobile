@@ -12,9 +12,57 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B42EBC38131C8A5B00AA5FAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B42EBC39131C8A5B00AA5FAC /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B42EBC3A131C8A5B00AA5FAC /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B42EBC3B131C8A5B00AA5FAC /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B42EBC3C131C8A5B00AA5FAC /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B42EBC3D131C8A5B00AA5FAC /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B42EBC3E131C8A5B00AA5FAC /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B42EBC3F131C8A5B00AA5FAC /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B42EBC40131C8A5B00AA5FAC /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B42EBC41131C8A5B00AA5FAC /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B42EBC42131C8A5B00AA5FAC /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B42EBC43131C8A5B00AA5FAC /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B42EBC44131C8A5B00AA5FAC /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B42EBC45131C8A5B00AA5FAC /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B42EBC46131C8A5B00AA5FAC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B42EBC4A131C8A5B00AA5FAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B42EBC4B131C8A5B00AA5FAC /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B42EBC4C131C8A5B00AA5FAC /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B42EBC4D131C8A5B00AA5FAC /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B42EBC4E131C8A5B00AA5FAC /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B42EBC4F131C8A5B00AA5FAC /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B42EBC50131C8A5B00AA5FAC /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B42EBC51131C8A5B00AA5FAC /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B42EBC52131C8A5B00AA5FAC /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B42EBC53131C8A5B00AA5FAC /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B42EBC54131C8A5B00AA5FAC /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B42EBC55131C8A5B00AA5FAC /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B42EBC56131C8A5B00AA5FAC /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B42EBC57131C8A5B00AA5FAC /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B42EBC58131C8A5B00AA5FAC /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B42EBC59131C8A5B00AA5FAC /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B42EBC5A131C8A5B00AA5FAC /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B42EBC5B131C8A5B00AA5FAC /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B42EBC5C131C8A5B00AA5FAC /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B42EBC5D131C8A5B00AA5FAC /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B42EBC5E131C8A5B00AA5FAC /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B42EBC5F131C8A5B00AA5FAC /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B42EBC60131C8A5B00AA5FAC /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B42EBC62131C8A5B00AA5FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B42EBC63131C8A5B00AA5FAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B42EBC64131C8A5B00AA5FAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B42EBC65131C8A5B00AA5FAC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B42EBC66131C8A5B00AA5FAC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B42EBC67131C8A5B00AA5FAC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B42EBC68131C8A5B00AA5FAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B42EBC83131C8B3400AA5FAC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B42EBC80131C8B3400AA5FAC /* icon.png */; };
+		B42EBC84131C8B3400AA5FAC /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B42EBC81131C8B3400AA5FAC /* quotes.txt */; };
+		B42EBC8A131C8B6600AA5FAC /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B42EBC8B131C8B6600AA5FAC /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B42EBC8C131C8B6600AA5FAC /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
 		B435034611B4C31C00C4B107 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
 		B435035611B4C45600C4B107 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
 		B435038311B4DF4E00C4B107 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
@@ -22,20 +70,360 @@
 		B43503B611B4E67D00C4B107 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
 		B43503DD11B4E92800C4B107 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DB11B4E92800C4B107 /* quotes.txt */; };
 		B43503DE11B4E92800C4B107 /* trivia.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43503DC11B4E92800C4B107 /* trivia.txt */; };
+		B43FDE08131B17B5007133FA /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B43FDE2B131B1857007133FA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B43FDE2C131B1857007133FA /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B43FDE2D131B1857007133FA /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B43FDE2E131B1857007133FA /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B43FDE2F131B1857007133FA /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B43FDE30131B1857007133FA /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B43FDE31131B1857007133FA /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B43FDE32131B1857007133FA /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B43FDE33131B1857007133FA /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B43FDE34131B1857007133FA /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B43FDE35131B1857007133FA /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B43FDE36131B1857007133FA /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B43FDE37131B1857007133FA /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B43FDE38131B1857007133FA /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B43FDE39131B1857007133FA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B43FDE98131B1907007133FA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B43FDE99131B1907007133FA /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B43FDE9A131B1907007133FA /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B43FDE9B131B1907007133FA /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B43FDE9C131B1907007133FA /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B43FDE9D131B1907007133FA /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B43FDE9E131B1907007133FA /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B43FDE9F131B1907007133FA /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B43FDEA0131B1907007133FA /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B43FDEA1131B1907007133FA /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B43FDEA2131B1907007133FA /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B43FDEA3131B1907007133FA /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B43FDEA4131B1907007133FA /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B43FDEA5131B1907007133FA /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B43FDEA6131B1907007133FA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B43FDEA8131B1907007133FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B43FDEA9131B1907007133FA /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B43FDEAA131B1907007133FA /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B43FDEAB131B1907007133FA /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B43FDEAC131B1907007133FA /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B43FDEAD131B1907007133FA /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B43FDEAE131B1907007133FA /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B43FDEAF131B1907007133FA /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B43FDEB0131B1907007133FA /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B43FDEB1131B1907007133FA /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B43FDEB2131B1907007133FA /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B43FDEB3131B1907007133FA /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B43FDEB4131B1907007133FA /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B43FDEB5131B1907007133FA /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B43FDEB6131B1907007133FA /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B43FDEB7131B1907007133FA /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B43FDEB8131B1907007133FA /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B43FDEB9131B1907007133FA /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B43FDEBA131B1907007133FA /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B43FDEBB131B1907007133FA /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B43FDEBC131B1907007133FA /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B43FDEBD131B1907007133FA /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B43FDEBE131B1907007133FA /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B43FDEC0131B1907007133FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B43FDEC1131B1907007133FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B43FDEC2131B1907007133FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B43FDEC3131B1907007133FA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B43FDEC4131B1907007133FA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B43FDEC5131B1907007133FA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B43FDEC6131B1907007133FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B43FDEDD131B198F007133FA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B43FDEDB131B198F007133FA /* icon.png */; };
+		B43FDEDE131B198F007133FA /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B43FDEDC131B198F007133FA /* quotes.txt */; };
+		B441AAC81329BA6C00341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441AAC91329BA6C00341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441AACA1329BA6C00341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441AACB1329BA6C00341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441AACC1329BA6C00341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441AACD1329BA6C00341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441AACE1329BA6C00341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441AACF1329BA6C00341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441AAD01329BA6C00341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441AAD11329BA6C00341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441AAD21329BA6C00341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441AAD31329BA6C00341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441AAD41329BA6C00341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441AAD51329BA6C00341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441AAD61329BA6C00341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441AADA1329BA6C00341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441AADB1329BA6C00341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441AADC1329BA6C00341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441AADD1329BA6C00341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441AADE1329BA6C00341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441AADF1329BA6C00341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441AAE01329BA6C00341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441AAE11329BA6C00341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441AAE21329BA6C00341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441AAE31329BA6C00341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441AAE41329BA6C00341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441AAE51329BA6C00341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441AAE61329BA6C00341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441AAE71329BA6C00341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441AAE81329BA6C00341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441AAE91329BA6C00341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441AAEA1329BA6C00341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441AAEB1329BA6C00341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441AAEC1329BA6C00341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441AAED1329BA6C00341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441AAEE1329BA6C00341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441AAEF1329BA6C00341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441AAF01329BA6C00341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441AAF21329BA6C00341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441AAF31329BA6C00341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441AAF41329BA6C00341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441AAF51329BA6C00341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441AAF61329BA6C00341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441AAF71329BA6C00341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441AAF81329BA6C00341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441AAF91329BA6C00341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441AB051329BC2300341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441AB041329BC2300341FD8 /* icon.png */; };
+		B441AB091329BC4000341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441AB081329BC4000341FD8 /* quotes.txt */; };
+		B441AB891329C64F00341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441AB8A1329C64F00341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441AB8B1329C64F00341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441AB8C1329C64F00341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441AB8D1329C64F00341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441AB8E1329C64F00341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441AB8F1329C64F00341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441AB901329C64F00341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441AB911329C64F00341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441AB921329C64F00341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441AB931329C64F00341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441AB941329C64F00341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441AB951329C64F00341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441AB961329C64F00341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441AB971329C64F00341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441AB9B1329C64F00341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441AB9C1329C64F00341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441AB9D1329C64F00341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441AB9E1329C64F00341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441AB9F1329C64F00341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441ABA01329C64F00341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441ABA11329C64F00341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441ABA21329C64F00341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441ABA31329C64F00341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441ABA41329C64F00341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441ABA51329C64F00341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441ABA61329C64F00341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441ABA71329C64F00341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441ABA81329C64F00341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441ABA91329C64F00341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441ABAA1329C64F00341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441ABAB1329C64F00341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441ABAC1329C64F00341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441ABAD1329C64F00341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441ABAE1329C64F00341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441ABAF1329C64F00341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441ABB01329C64F00341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441ABB11329C64F00341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441ABB31329C64F00341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441ABB41329C64F00341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441ABB51329C64F00341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441ABB61329C64F00341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441ABB71329C64F00341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441ABB81329C64F00341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441ABB91329C64F00341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441ABBA1329C64F00341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441ABC71329C6D900341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441ABC51329C6D900341FD8 /* icon.png */; };
+		B441ABC81329C6D900341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441ABC61329C6D900341FD8 /* quotes.txt */; };
+		B441ABE11329C8DD00341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441ABE21329C8DD00341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441ABE31329C8DD00341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441ABE41329C8DD00341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441ABE51329C8DD00341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441ABE61329C8DD00341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441ABE71329C8DD00341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441ABE81329C8DD00341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441ABE91329C8DD00341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441ABEA1329C8DD00341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441ABEB1329C8DD00341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441ABEC1329C8DD00341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441ABED1329C8DD00341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441ABEE1329C8DD00341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441ABEF1329C8DD00341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441ABF31329C8DD00341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441ABF41329C8DD00341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441ABF51329C8DD00341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441ABF61329C8DD00341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441ABF71329C8DD00341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441ABF81329C8DD00341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441ABF91329C8DD00341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441ABFA1329C8DD00341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441ABFB1329C8DD00341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441ABFC1329C8DD00341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441ABFD1329C8DD00341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441ABFE1329C8DD00341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441ABFF1329C8DD00341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441AC001329C8DD00341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441AC011329C8DD00341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441AC021329C8DD00341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441AC031329C8DD00341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441AC041329C8DD00341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441AC051329C8DD00341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441AC061329C8DD00341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441AC071329C8DD00341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441AC081329C8DD00341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441AC091329C8DD00341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441AC0B1329C8DD00341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441AC0C1329C8DD00341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441AC0D1329C8DD00341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441AC0E1329C8DD00341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441AC0F1329C8DD00341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441AC101329C8DD00341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441AC111329C8DD00341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441AC121329C8DD00341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441AC1D1329C91B00341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441AC1B1329C91B00341FD8 /* icon.png */; };
+		B441AC1E1329C91B00341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441AC1C1329C91B00341FD8 /* quotes.txt */; };
+		B441AC391329CB1D00341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441AC3A1329CB1D00341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441AC3B1329CB1D00341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441AC3C1329CB1D00341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441AC3D1329CB1D00341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441AC3E1329CB1D00341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441AC3F1329CB1D00341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441AC401329CB1D00341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441AC411329CB1D00341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441AC421329CB1D00341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441AC431329CB1D00341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441AC441329CB1D00341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441AC451329CB1D00341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441AC461329CB1D00341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441AC471329CB1D00341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441AC4B1329CB1D00341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441AC4C1329CB1D00341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441AC4D1329CB1D00341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441AC4E1329CB1D00341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441AC4F1329CB1D00341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441AC501329CB1D00341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441AC511329CB1D00341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441AC521329CB1D00341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441AC531329CB1D00341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441AC541329CB1D00341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441AC551329CB1D00341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441AC561329CB1D00341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441AC571329CB1D00341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441AC581329CB1D00341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441AC591329CB1D00341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441AC5A1329CB1D00341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441AC5B1329CB1D00341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441AC5C1329CB1D00341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441AC5D1329CB1D00341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441AC5E1329CB1D00341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441AC5F1329CB1D00341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441AC601329CB1D00341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441AC611329CB1D00341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441AC631329CB1D00341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441AC641329CB1D00341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441AC651329CB1D00341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441AC661329CB1D00341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441AC671329CB1D00341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441AC681329CB1D00341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441AC691329CB1D00341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441AC6A1329CB1D00341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441AC741329CB4700341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441AC721329CB4700341FD8 /* icon.png */; };
+		B441AC751329CB4700341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441AC731329CB4700341FD8 /* quotes.txt */; };
+		B441AC981329D76A00341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441AC991329D76A00341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441AC9A1329D76A00341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441AC9B1329D76A00341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441AC9C1329D76A00341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441AC9D1329D76A00341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441AC9E1329D76A00341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441AC9F1329D76A00341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441ACA01329D76A00341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441ACA11329D76A00341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441ACA21329D76A00341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441ACA31329D76A00341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441ACA41329D76A00341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441ACA51329D76A00341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441ACA61329D76A00341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441ACAA1329D76A00341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441ACAB1329D76A00341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441ACAC1329D76A00341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441ACAD1329D76A00341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441ACAE1329D76A00341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441ACAF1329D76A00341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441ACB01329D76A00341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441ACB11329D76A00341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441ACB21329D76A00341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441ACB31329D76A00341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441ACB41329D76A00341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441ACB51329D76A00341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441ACB61329D76A00341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441ACB71329D76A00341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441ACB81329D76A00341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441ACB91329D76A00341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441ACBA1329D76A00341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441ACBB1329D76A00341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441ACBC1329D76A00341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441ACBD1329D76A00341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441ACBE1329D76A00341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441ACBF1329D76A00341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441ACC01329D76A00341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441ACC21329D76A00341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441ACC31329D76A00341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441ACC41329D76A00341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441ACC51329D76A00341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441ACC61329D76A00341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441ACC71329D76A00341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441ACC81329D76A00341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441ACC91329D76A00341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441ACD41329D7A200341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441ACD21329D7A200341FD8 /* icon.png */; };
+		B441ACD51329D7A200341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441ACD31329D7A200341FD8 /* quotes.txt */; };
+		B441ACE71329DBB600341FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
+		B441ACE81329DBB600341FD8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
+		B441ACE91329DBB600341FD8 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
+		B441ACEA1329DBB600341FD8 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
+		B441ACEB1329DBB600341FD8 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
+		B441ACEC1329DBB600341FD8 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
+		B441ACED1329DBB600341FD8 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
+		B441ACEE1329DBB600341FD8 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
+		B441ACEF1329DBB600341FD8 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
+		B441ACF01329DBB600341FD8 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
+		B441ACF11329DBB600341FD8 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
+		B441ACF21329DBB600341FD8 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
+		B441ACF31329DBB600341FD8 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
+		B441ACF41329DBB600341FD8 /* QuotesTriviaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */; };
+		B441ACF51329DBB600341FD8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B441ACF91329DBB600341FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		B441ACFA1329DBB600341FD8 /* QuotesTriviaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuotesTriviaAppDelegate.m */; };
+		B441ACFB1329DBB600341FD8 /* QuotesTriviaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuotesTriviaViewController.m */; };
+		B441ACFC1329DBB600341FD8 /* QuestionStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435034511B4C31C00C4B107 /* QuestionStore.m */; };
+		B441ACFD1329DBB600341FD8 /* EpisodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B435035511B4C45600C4B107 /* EpisodeStore.m */; };
+		B441ACFE1329DBB600341FD8 /* Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = B435038211B4DF4E00C4B107 /* Quote.m */; };
+		B441ACFF1329DBB600341FD8 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503A811B4E11500C4B107 /* Question.m */; };
+		B441AD001329DBB600341FD8 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B43503B511B4E67D00C4B107 /* QuestionManager.m */; };
+		B441AD011329DBB600341FD8 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
+		B441AD021329DBB600341FD8 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
+		B441AD031329DBB600341FD8 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
+		B441AD041329DBB600341FD8 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
+		B441AD051329DBB600341FD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
+		B441AD061329DBB600341FD8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
+		B441AD071329DBB600341FD8 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
+		B441AD081329DBB600341FD8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2111B8D08600208B63 /* NSDictionary_JSONExtensions.m */; };
+		B441AD091329DBB600341FD8 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2311B8D08600208B63 /* NSScanner_Extensions.m */; };
+		B441AD0A1329DBB600341FD8 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2611B8D08600208B63 /* CJSONDataSerializer.m */; };
+		B441AD0B1329DBB600341FD8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2811B8D08600208B63 /* CJSONDeserializer.m */; };
+		B441AD0C1329DBB600341FD8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2A11B8D08600208B63 /* CJSONScanner.m */; };
+		B441AD0D1329DBB600341FD8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2C11B8D08600208B63 /* CJSONSerializer.m */; };
+		B441AD0E1329DBB600341FD8 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD2E11B8D08600208B63 /* CSerializedJSONData.m */; };
+		B441AD0F1329DBB600341FD8 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43FDE06131B17B5007133FA /* AdViewController.m */; };
+		B441AD111329DBB600341FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		B441AD121329DBB600341FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		B441AD131329DBB600341FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		B441AD141329DBB600341FD8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3C11B8D0A900208B63 /* AudioToolbox.framework */; };
+		B441AD151329DBB600341FD8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD3E11B8D0A900208B63 /* MediaPlayer.framework */; };
+		B441AD161329DBB600341FD8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
+		B441AD171329DBB600341FD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
+		B441AD181329DBB600341FD8 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B42EBC89131C8B6600AA5FAC /* libAdMob.a */; };
+		B441AD2C1329DC9100341FD8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B441AD2A1329DC9100341FD8 /* icon.png */; };
+		B441AD2D1329DC9100341FD8 /* quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B441AD2B1329DC9100341FD8 /* quotes.txt */; };
 		B4440B6D11B62545000F15C2 /* SpeakerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4440B6C11B62545000F15C2 /* SpeakerStore.m */; };
-		B4440CB111B642C1000F15C2 /* progress0.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA711B642C1000F15C2 /* progress0.png */; };
-		B4440CB211B642C1000F15C2 /* progress1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA811B642C1000F15C2 /* progress1.png */; };
-		B4440CB311B642C1000F15C2 /* progress2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CA911B642C1000F15C2 /* progress2.png */; };
-		B4440CB411B642C1000F15C2 /* progress3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAA11B642C1000F15C2 /* progress3.png */; };
-		B4440CB511B642C1000F15C2 /* progress4.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAB11B642C1000F15C2 /* progress4.png */; };
-		B4440CB611B642C1000F15C2 /* progress5.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAC11B642C1000F15C2 /* progress5.png */; };
-		B4440CB711B642C1000F15C2 /* progress6.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAD11B642C1000F15C2 /* progress6.png */; };
-		B4440CB811B642C1000F15C2 /* progress7.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAE11B642C1000F15C2 /* progress7.png */; };
-		B4440CB911B642C1000F15C2 /* progress8.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CAF11B642C1000F15C2 /* progress8.png */; };
-		B4440CBA11B642C1000F15C2 /* progress9.png in Resources */ = {isa = PBXBuildFile; fileRef = B4440CB011B642C1000F15C2 /* progress9.png */; };
 		B4502B2B11BDDBE500BBBBB6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B4502B2A11BDDBE500BBBBB6 /* icon.png */; };
 		B47BCCDB11B896E100208B63 /* NSString-Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCCDA11B896E100208B63 /* NSString-Encoding.m */; };
-		B47BCD2F11B8D08600208B63 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD1711B8D08600208B63 /* libAdMob.a */; };
 		B47BCD3011B8D08600208B63 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1A11B8D08600208B63 /* CDataScanner.m */; };
 		B47BCD3111B8D08600208B63 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1D11B8D08600208B63 /* CDataScanner_Extensions.m */; };
 		B47BCD3211B8D08600208B63 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B47BCD1F11B8D08600208B63 /* NSCharacterSet_Extensions.m */; };
@@ -51,9 +439,6 @@
 		B47BCD4111B8D0A900208B63 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4011B8D0A900208B63 /* MessageUI.framework */; };
 		B47BCD4311B8D0A900208B63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BCD4211B8D0A900208B63 /* QuartzCore.framework */; };
 		B4F95B6211B76EAB003DDCA4 /* TriviaStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95B6111B76EAB003DDCA4 /* TriviaStore.m */; };
-		B4F95B7C11B7835C003DDCA4 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B7B11B7835C003DDCA4 /* answer.png */; };
-		B4F95BA811B787C4003DDCA4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BA711B787C4003DDCA4 /* bg.png */; };
-		B4F95BE011B79060003DDCA4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95BDF11B79060003DDCA4 /* Default.png */; };
 		B4F95BF611B791D2003DDCA4 /* NSMutableArray-Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F95BF511B791D2003DDCA4 /* NSMutableArray-Shuffle.m */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +456,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* QuotesTrivia_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesTrivia_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* QuotesTrivia-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QuotesTrivia-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B42EBC6E131C8A5B00AA5FAC /* QuoteTriviaGoldenGirls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaGoldenGirls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42EBC70131C8A5B00AA5FAC /* goldengirls.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = goldengirls.plist; sourceTree = "<group>"; };
+		B42EBC80131C8B3400AA5FAC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/GGTriv/icon.png; sourceTree = "<group>"; };
+		B42EBC81131C8B3400AA5FAC /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/GGTriv/quotes.txt; sourceTree = "<group>"; };
+		B42EBC89131C8B6600AA5FAC /* libAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMob.a; sourceTree = "<group>"; };
 		B435034411B4C31C00C4B107 /* QuestionStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionStore.h; sourceTree = "<group>"; };
 		B435034511B4C31C00C4B107 /* QuestionStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionStore.m; sourceTree = "<group>"; };
 		B435034911B4C37500C4B107 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -83,6 +473,38 @@
 		B43503B511B4E67D00C4B107 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		B43503DB11B4E92800C4B107 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotes.txt; sourceTree = "<group>"; };
 		B43503DC11B4E92800C4B107 /* trivia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trivia.txt; sourceTree = "<group>"; };
+		B43FDE03131B17B5007133FA /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobDelegateProtocol.h; sourceTree = "<group>"; };
+		B43FDE04131B17B5007133FA /* AdMobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobView.h; sourceTree = "<group>"; };
+		B43FDE05131B17B5007133FA /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		B43FDE06131B17B5007133FA /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		B43FDECC131B1907007133FA /* QuoteTriviaBuffy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaBuffy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43FDECE131B1907007133FA /* buffy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = buffy.plist; sourceTree = "<group>"; };
+		B43FDEDB131B198F007133FA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/buffy/icon.png; sourceTree = "<group>"; };
+		B43FDEDC131B198F007133FA /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/buffy/quotes.txt; sourceTree = "<group>"; };
+		B441AAFE1329BA6C00341FD8 /* QuoteTriviaNCIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaNCIS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441AB001329BA6C00341FD8 /* ncis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ncis.plist; sourceTree = "<group>"; };
+		B441AB041329BC2300341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/ncis/icon.png; sourceTree = "<group>"; };
+		B441AB081329BC4000341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/ncis/quotes.txt; sourceTree = "<group>"; };
+		B441ABBF1329C64F00341FD8 /* QuoteTriviaFamilyGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaFamilyGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441ABC11329C64F00341FD8 /* familyguy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = familyguy.plist; sourceTree = "<group>"; };
+		B441ABC51329C6D900341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/familyguy/icon.png; sourceTree = "<group>"; };
+		B441ABC61329C6D900341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/familyguy/quotes.txt; sourceTree = "<group>"; };
+		B441AC171329C8DD00341FD8 /* QuoteTriviaCharmed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaCharmed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441AC191329C8DD00341FD8 /* charmed.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = charmed.plist; sourceTree = "<group>"; };
+		B441AC1B1329C91B00341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/charmed/icon.png; sourceTree = "<group>"; };
+		B441AC1C1329C91B00341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/charmed/quotes.txt; sourceTree = "<group>"; };
+		B441AC6F1329CB1D00341FD8 /* QuoteTriviaSupernatural.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaSupernatural.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441AC711329CB1D00341FD8 /* supernatural.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = supernatural.plist; sourceTree = "<group>"; };
+		B441AC721329CB4700341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/supernatural/icon.png; sourceTree = "<group>"; };
+		B441AC731329CB4700341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/supernatural/quotes.txt; sourceTree = "<group>"; };
+		B441ACCE1329D76A00341FD8 /* QuoteTriviaSouthPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaSouthPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441ACD01329D76A00341FD8 /* southpark.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = southpark.plist; sourceTree = "<group>"; };
+		B441ACD21329D7A200341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/southpark/icon.png; sourceTree = "<group>"; };
+		B441ACD31329D7A200341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/southpark/quotes.txt; sourceTree = "<group>"; };
+		B441AD1D1329DBB600341FD8 /* QuoteTriviaGreysAnatomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteTriviaGreysAnatomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441AD1F1329DBB600341FD8 /* greysanatomy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = greysanatomy.plist; sourceTree = "<group>"; };
+		B441AD2A1329DC9100341FD8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = TargetSpecific/greysanatomy/icon.png; sourceTree = "<group>"; };
+		B441AD2B1329DC9100341FD8 /* quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = quotes.txt; path = TargetSpecific/greysanatomy/quotes.txt; sourceTree = "<group>"; };
 		B4440B6B11B62545000F15C2 /* SpeakerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakerStore.h; sourceTree = "<group>"; };
 		B4440B6C11B62545000F15C2 /* SpeakerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerStore.m; sourceTree = "<group>"; };
 		B4440CA711B642C1000F15C2 /* progress0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress0.png; sourceTree = "<group>"; };
@@ -98,11 +520,6 @@
 		B4502B2A11BDDBE500BBBBB6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B47BCCD911B896E100208B63 /* NSString-Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Encoding.h"; sourceTree = "<group>"; };
 		B47BCCDA11B896E100208B63 /* NSString-Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Encoding.m"; sourceTree = "<group>"; };
-		B47BCD1311B8D08600208B63 /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobDelegateProtocol.h; sourceTree = "<group>"; };
-		B47BCD1411B8D08600208B63 /* AdMobInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobInterstitialAd.h; sourceTree = "<group>"; };
-		B47BCD1511B8D08600208B63 /* AdMobInterstitialDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobInterstitialDelegateProtocol.h; sourceTree = "<group>"; };
-		B47BCD1611B8D08600208B63 /* AdMobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobView.h; sourceTree = "<group>"; };
-		B47BCD1711B8D08600208B63 /* libAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMob.a; sourceTree = "<group>"; };
 		B47BCD1911B8D08600208B63 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		B47BCD1A11B8D08600208B63 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
 		B47BCD1C11B8D08600208B63 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
@@ -144,11 +561,131 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				B47BCD2F11B8D08600208B63 /* libAdMob.a in Frameworks */,
 				B47BCD3D11B8D0A900208B63 /* AudioToolbox.framework in Frameworks */,
 				B47BCD3F11B8D0A900208B63 /* MediaPlayer.framework in Frameworks */,
 				B47BCD4111B8D0A900208B63 /* MessageUI.framework in Frameworks */,
 				B47BCD4311B8D0A900208B63 /* QuartzCore.framework in Frameworks */,
+				B42EBC8B131C8B6600AA5FAC /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42EBC61131C8A5B00AA5FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42EBC62131C8A5B00AA5FAC /* Foundation.framework in Frameworks */,
+				B42EBC63131C8A5B00AA5FAC /* UIKit.framework in Frameworks */,
+				B42EBC64131C8A5B00AA5FAC /* CoreGraphics.framework in Frameworks */,
+				B42EBC65131C8A5B00AA5FAC /* AudioToolbox.framework in Frameworks */,
+				B42EBC66131C8A5B00AA5FAC /* MediaPlayer.framework in Frameworks */,
+				B42EBC67131C8A5B00AA5FAC /* MessageUI.framework in Frameworks */,
+				B42EBC68131C8A5B00AA5FAC /* QuartzCore.framework in Frameworks */,
+				B42EBC8A131C8B6600AA5FAC /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43FDEBF131B1907007133FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43FDEC0131B1907007133FA /* Foundation.framework in Frameworks */,
+				B43FDEC1131B1907007133FA /* UIKit.framework in Frameworks */,
+				B43FDEC2131B1907007133FA /* CoreGraphics.framework in Frameworks */,
+				B43FDEC3131B1907007133FA /* AudioToolbox.framework in Frameworks */,
+				B43FDEC4131B1907007133FA /* MediaPlayer.framework in Frameworks */,
+				B43FDEC5131B1907007133FA /* MessageUI.framework in Frameworks */,
+				B43FDEC6131B1907007133FA /* QuartzCore.framework in Frameworks */,
+				B42EBC8C131C8B6600AA5FAC /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AAF11329BA6C00341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AAF21329BA6C00341FD8 /* Foundation.framework in Frameworks */,
+				B441AAF31329BA6C00341FD8 /* UIKit.framework in Frameworks */,
+				B441AAF41329BA6C00341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441AAF51329BA6C00341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441AAF61329BA6C00341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441AAF71329BA6C00341FD8 /* MessageUI.framework in Frameworks */,
+				B441AAF81329BA6C00341FD8 /* QuartzCore.framework in Frameworks */,
+				B441AAF91329BA6C00341FD8 /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ABB21329C64F00341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ABB31329C64F00341FD8 /* Foundation.framework in Frameworks */,
+				B441ABB41329C64F00341FD8 /* UIKit.framework in Frameworks */,
+				B441ABB51329C64F00341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441ABB61329C64F00341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441ABB71329C64F00341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441ABB81329C64F00341FD8 /* MessageUI.framework in Frameworks */,
+				B441ABB91329C64F00341FD8 /* QuartzCore.framework in Frameworks */,
+				B441ABBA1329C64F00341FD8 /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AC0A1329C8DD00341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AC0B1329C8DD00341FD8 /* Foundation.framework in Frameworks */,
+				B441AC0C1329C8DD00341FD8 /* UIKit.framework in Frameworks */,
+				B441AC0D1329C8DD00341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441AC0E1329C8DD00341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441AC0F1329C8DD00341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441AC101329C8DD00341FD8 /* MessageUI.framework in Frameworks */,
+				B441AC111329C8DD00341FD8 /* QuartzCore.framework in Frameworks */,
+				B441AC121329C8DD00341FD8 /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AC621329CB1D00341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AC631329CB1D00341FD8 /* Foundation.framework in Frameworks */,
+				B441AC641329CB1D00341FD8 /* UIKit.framework in Frameworks */,
+				B441AC651329CB1D00341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441AC661329CB1D00341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441AC671329CB1D00341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441AC681329CB1D00341FD8 /* MessageUI.framework in Frameworks */,
+				B441AC691329CB1D00341FD8 /* QuartzCore.framework in Frameworks */,
+				B441AC6A1329CB1D00341FD8 /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ACC11329D76A00341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ACC21329D76A00341FD8 /* Foundation.framework in Frameworks */,
+				B441ACC31329D76A00341FD8 /* UIKit.framework in Frameworks */,
+				B441ACC41329D76A00341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441ACC51329D76A00341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441ACC61329D76A00341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441ACC71329D76A00341FD8 /* MessageUI.framework in Frameworks */,
+				B441ACC81329D76A00341FD8 /* QuartzCore.framework in Frameworks */,
+				B441ACC91329D76A00341FD8 /* libAdMob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AD101329DBB600341FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AD111329DBB600341FD8 /* Foundation.framework in Frameworks */,
+				B441AD121329DBB600341FD8 /* UIKit.framework in Frameworks */,
+				B441AD131329DBB600341FD8 /* CoreGraphics.framework in Frameworks */,
+				B441AD141329DBB600341FD8 /* AudioToolbox.framework in Frameworks */,
+				B441AD151329DBB600341FD8 /* MediaPlayer.framework in Frameworks */,
+				B441AD161329DBB600341FD8 /* MessageUI.framework in Frameworks */,
+				B441AD171329DBB600341FD8 /* QuartzCore.framework in Frameworks */,
+				B441AD181329DBB600341FD8 /* libAdMob.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +725,14 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* SimpTriv.app */,
+				B43FDECC131B1907007133FA /* QuoteTriviaBuffy.app */,
+				B42EBC6E131C8A5B00AA5FAC /* QuoteTriviaGoldenGirls.app */,
+				B441AAFE1329BA6C00341FD8 /* QuoteTriviaNCIS.app */,
+				B441ABBF1329C64F00341FD8 /* QuoteTriviaFamilyGuy.app */,
+				B441AC171329C8DD00341FD8 /* QuoteTriviaCharmed.app */,
+				B441AC6F1329CB1D00341FD8 /* QuoteTriviaSupernatural.app */,
+				B441ACCE1329D76A00341FD8 /* QuoteTriviaSouthPark.app */,
+				B441AD1D1329DBB600341FD8 /* QuoteTriviaGreysAnatomy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,7 +740,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				B47BCD1211B8D08600208B63 /* AdMob */,
+				B43FDE02131B17B5007133FA /* AdMob */,
 				B47BCD1811B8D08600208B63 /* TouchJSON */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -218,7 +763,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B4502B2A11BDDBE500BBBBB6 /* icon.png */,
+				B43FDE0D131B17DE007133FA /* ProductSpecific */,
 				B4F95BDF11B79060003DDCA4 /* Default.png */,
 				B4F95BA711B787C4003DDCA4 /* bg.png */,
 				B4F95B7B11B7835C003DDCA4 /* answer.png */,
@@ -232,8 +777,6 @@
 				B4440CAE11B642C1000F15C2 /* progress7.png */,
 				B4440CAF11B642C1000F15C2 /* progress8.png */,
 				B4440CB011B642C1000F15C2 /* progress9.png */,
-				B43503DB11B4E92800C4B107 /* quotes.txt */,
-				B43503DC11B4E92800C4B107 /* trivia.txt */,
 				2899E5210DE3E06400AC0155 /* QuotesTriviaViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* QuotesTrivia-Info.plist */,
@@ -255,16 +798,122 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B47BCD1211B8D08600208B63 /* AdMob */ = {
+		B42EBC27131C8A4B00AA5FAC /* GoldenGirls */ = {
 			isa = PBXGroup;
 			children = (
-				B47BCD1311B8D08600208B63 /* AdMobDelegateProtocol.h */,
-				B47BCD1411B8D08600208B63 /* AdMobInterstitialAd.h */,
-				B47BCD1511B8D08600208B63 /* AdMobInterstitialDelegateProtocol.h */,
-				B47BCD1611B8D08600208B63 /* AdMobView.h */,
-				B47BCD1711B8D08600208B63 /* libAdMob.a */,
+				B42EBC80131C8B3400AA5FAC /* icon.png */,
+				B42EBC81131C8B3400AA5FAC /* quotes.txt */,
+				B42EBC70131C8A5B00AA5FAC /* goldengirls.plist */,
+			);
+			name = GoldenGirls;
+			sourceTree = "<group>";
+		};
+		B43FDE02131B17B5007133FA /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				B42EBC89131C8B6600AA5FAC /* libAdMob.a */,
+				B43FDE03131B17B5007133FA /* AdMobDelegateProtocol.h */,
+				B43FDE04131B17B5007133FA /* AdMobView.h */,
+				B43FDE05131B17B5007133FA /* AdViewController.h */,
+				B43FDE06131B17B5007133FA /* AdViewController.m */,
 			);
 			path = AdMob;
+			sourceTree = "<group>";
+		};
+		B43FDE0D131B17DE007133FA /* ProductSpecific */ = {
+			isa = PBXGroup;
+			children = (
+				B441AD201329DBCF00341FD8 /* GreysAnatomy */,
+				B441ACD11329D77E00341FD8 /* SouthPark */,
+				B441AC351329CADC00341FD8 /* Supernatural */,
+				B441AC1A1329C8F500341FD8 /* Charmed */,
+				B441ABC21329C65700341FD8 /* FamilyGuy */,
+				B441AB011329BABD00341FD8 /* NCIS */,
+				B42EBC27131C8A4B00AA5FAC /* GoldenGirls */,
+				B43FDECF131B1924007133FA /* Buffy */,
+				B43FDE0E131B17EB007133FA /* Simpsons */,
+			);
+			name = ProductSpecific;
+			sourceTree = "<group>";
+		};
+		B43FDE0E131B17EB007133FA /* Simpsons */ = {
+			isa = PBXGroup;
+			children = (
+				B4502B2A11BDDBE500BBBBB6 /* icon.png */,
+				B43503DB11B4E92800C4B107 /* quotes.txt */,
+				B43503DC11B4E92800C4B107 /* trivia.txt */,
+			);
+			name = Simpsons;
+			sourceTree = "<group>";
+		};
+		B43FDECF131B1924007133FA /* Buffy */ = {
+			isa = PBXGroup;
+			children = (
+				B43FDECE131B1907007133FA /* buffy.plist */,
+				B43FDEDB131B198F007133FA /* icon.png */,
+				B43FDEDC131B198F007133FA /* quotes.txt */,
+			);
+			name = Buffy;
+			sourceTree = "<group>";
+		};
+		B441AB011329BABD00341FD8 /* NCIS */ = {
+			isa = PBXGroup;
+			children = (
+				B441AB081329BC4000341FD8 /* quotes.txt */,
+				B441AB041329BC2300341FD8 /* icon.png */,
+				B441AB001329BA6C00341FD8 /* ncis.plist */,
+			);
+			name = NCIS;
+			sourceTree = "<group>";
+		};
+		B441ABC21329C65700341FD8 /* FamilyGuy */ = {
+			isa = PBXGroup;
+			children = (
+				B441ABC51329C6D900341FD8 /* icon.png */,
+				B441ABC61329C6D900341FD8 /* quotes.txt */,
+				B441ABC11329C64F00341FD8 /* familyguy.plist */,
+			);
+			name = FamilyGuy;
+			sourceTree = "<group>";
+		};
+		B441AC1A1329C8F500341FD8 /* Charmed */ = {
+			isa = PBXGroup;
+			children = (
+				B441AC1B1329C91B00341FD8 /* icon.png */,
+				B441AC1C1329C91B00341FD8 /* quotes.txt */,
+				B441AC191329C8DD00341FD8 /* charmed.plist */,
+			);
+			name = Charmed;
+			sourceTree = "<group>";
+		};
+		B441AC351329CADC00341FD8 /* Supernatural */ = {
+			isa = PBXGroup;
+			children = (
+				B441AC721329CB4700341FD8 /* icon.png */,
+				B441AC731329CB4700341FD8 /* quotes.txt */,
+				B441AC711329CB1D00341FD8 /* supernatural.plist */,
+			);
+			name = Supernatural;
+			sourceTree = "<group>";
+		};
+		B441ACD11329D77E00341FD8 /* SouthPark */ = {
+			isa = PBXGroup;
+			children = (
+				B441ACD21329D7A200341FD8 /* icon.png */,
+				B441ACD31329D7A200341FD8 /* quotes.txt */,
+				B441ACD01329D76A00341FD8 /* southpark.plist */,
+			);
+			name = SouthPark;
+			sourceTree = "<group>";
+		};
+		B441AD201329DBCF00341FD8 /* GreysAnatomy */ = {
+			isa = PBXGroup;
+			children = (
+				B441AD2A1329DC9100341FD8 /* icon.png */,
+				B441AD2B1329DC9100341FD8 /* quotes.txt */,
+				B441AD1F1329DBB600341FD8 /* greysanatomy.plist */,
+			);
+			name = GreysAnatomy;
 			sourceTree = "<group>";
 		};
 		B47BCD1811B8D08600208B63 /* TouchJSON */ = {
@@ -330,6 +979,142 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* SimpTriv.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B42EBC36131C8A5B00AA5FAC /* GoldenGirls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42EBC6A131C8A5B00AA5FAC /* Build configuration list for PBXNativeTarget "GoldenGirls" */;
+			buildPhases = (
+				B42EBC37131C8A5B00AA5FAC /* Resources */,
+				B42EBC49131C8A5B00AA5FAC /* Sources */,
+				B42EBC61131C8A5B00AA5FAC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoldenGirls;
+			productName = QuotesTrivia;
+			productReference = B42EBC6E131C8A5B00AA5FAC /* QuoteTriviaGoldenGirls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B43FDE93131B1907007133FA /* Buffy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43FDEC8131B1907007133FA /* Build configuration list for PBXNativeTarget "Buffy" */;
+			buildPhases = (
+				B43FDE94131B1907007133FA /* Resources */,
+				B43FDEA7131B1907007133FA /* Sources */,
+				B43FDEBF131B1907007133FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Buffy;
+			productName = QuotesTrivia;
+			productReference = B43FDECC131B1907007133FA /* QuoteTriviaBuffy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441AAC61329BA6C00341FD8 /* NCIS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441AAFA1329BA6C00341FD8 /* Build configuration list for PBXNativeTarget "NCIS" */;
+			buildPhases = (
+				B441AAC71329BA6C00341FD8 /* Resources */,
+				B441AAD91329BA6C00341FD8 /* Sources */,
+				B441AAF11329BA6C00341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NCIS;
+			productName = QuotesTrivia;
+			productReference = B441AAFE1329BA6C00341FD8 /* QuoteTriviaNCIS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441AB871329C64F00341FD8 /* FamilyGuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441ABBB1329C64F00341FD8 /* Build configuration list for PBXNativeTarget "FamilyGuy" */;
+			buildPhases = (
+				B441AB881329C64F00341FD8 /* Resources */,
+				B441AB9A1329C64F00341FD8 /* Sources */,
+				B441ABB21329C64F00341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FamilyGuy;
+			productName = QuotesTrivia;
+			productReference = B441ABBF1329C64F00341FD8 /* QuoteTriviaFamilyGuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441ABDF1329C8DD00341FD8 /* Charmed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441AC131329C8DD00341FD8 /* Build configuration list for PBXNativeTarget "Charmed" */;
+			buildPhases = (
+				B441ABE01329C8DD00341FD8 /* Resources */,
+				B441ABF21329C8DD00341FD8 /* Sources */,
+				B441AC0A1329C8DD00341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Charmed;
+			productName = QuotesTrivia;
+			productReference = B441AC171329C8DD00341FD8 /* QuoteTriviaCharmed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441AC371329CB1D00341FD8 /* Supernatural */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441AC6B1329CB1D00341FD8 /* Build configuration list for PBXNativeTarget "Supernatural" */;
+			buildPhases = (
+				B441AC381329CB1D00341FD8 /* Resources */,
+				B441AC4A1329CB1D00341FD8 /* Sources */,
+				B441AC621329CB1D00341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Supernatural;
+			productName = QuotesTrivia;
+			productReference = B441AC6F1329CB1D00341FD8 /* QuoteTriviaSupernatural.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441AC961329D76A00341FD8 /* SouthPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441ACCA1329D76A00341FD8 /* Build configuration list for PBXNativeTarget "SouthPark" */;
+			buildPhases = (
+				B441AC971329D76A00341FD8 /* Resources */,
+				B441ACA91329D76A00341FD8 /* Sources */,
+				B441ACC11329D76A00341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SouthPark;
+			productName = QuotesTrivia;
+			productReference = B441ACCE1329D76A00341FD8 /* QuoteTriviaSouthPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B441ACE51329DBB600341FD8 /* GreysAnatomy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B441AD191329DBB600341FD8 /* Build configuration list for PBXNativeTarget "GreysAnatomy" */;
+			buildPhases = (
+				B441ACE61329DBB600341FD8 /* Resources */,
+				B441ACF81329DBB600341FD8 /* Sources */,
+				B441AD101329DBB600341FD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreysAnatomy;
+			productName = QuotesTrivia;
+			productReference = B441AD1D1329DBB600341FD8 /* QuoteTriviaGreysAnatomy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -350,6 +1135,14 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* SimpTriv */,
+				B43FDE93131B1907007133FA /* Buffy */,
+				B42EBC36131C8A5B00AA5FAC /* GoldenGirls */,
+				B441AAC61329BA6C00341FD8 /* NCIS */,
+				B441AB871329C64F00341FD8 /* FamilyGuy */,
+				B441ABDF1329C8DD00341FD8 /* Charmed */,
+				B441AC371329CB1D00341FD8 /* Supernatural */,
+				B441AC961329D76A00341FD8 /* SouthPark */,
+				B441ACE51329DBB600341FD8 /* GreysAnatomy */,
 			);
 		};
 /* End PBXProject section */
@@ -359,24 +1152,216 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* QuotesTriviaViewController.xib in Resources */,
 				B43503DD11B4E92800C4B107 /* quotes.txt in Resources */,
 				B43503DE11B4E92800C4B107 /* trivia.txt in Resources */,
-				B4440CB111B642C1000F15C2 /* progress0.png in Resources */,
-				B4440CB211B642C1000F15C2 /* progress1.png in Resources */,
-				B4440CB311B642C1000F15C2 /* progress2.png in Resources */,
-				B4440CB411B642C1000F15C2 /* progress3.png in Resources */,
-				B4440CB511B642C1000F15C2 /* progress4.png in Resources */,
-				B4440CB611B642C1000F15C2 /* progress5.png in Resources */,
-				B4440CB711B642C1000F15C2 /* progress6.png in Resources */,
-				B4440CB811B642C1000F15C2 /* progress7.png in Resources */,
-				B4440CB911B642C1000F15C2 /* progress8.png in Resources */,
-				B4440CBA11B642C1000F15C2 /* progress9.png in Resources */,
-				B4F95B7C11B7835C003DDCA4 /* answer.png in Resources */,
-				B4F95BA811B787C4003DDCA4 /* bg.png in Resources */,
-				B4F95BE011B79060003DDCA4 /* Default.png in Resources */,
 				B4502B2B11BDDBE500BBBBB6 /* icon.png in Resources */,
+				B43FDE2B131B1857007133FA /* Default.png in Resources */,
+				B43FDE2C131B1857007133FA /* bg.png in Resources */,
+				B43FDE2D131B1857007133FA /* answer.png in Resources */,
+				B43FDE2E131B1857007133FA /* progress0.png in Resources */,
+				B43FDE2F131B1857007133FA /* progress1.png in Resources */,
+				B43FDE30131B1857007133FA /* progress2.png in Resources */,
+				B43FDE31131B1857007133FA /* progress3.png in Resources */,
+				B43FDE32131B1857007133FA /* progress4.png in Resources */,
+				B43FDE33131B1857007133FA /* progress5.png in Resources */,
+				B43FDE34131B1857007133FA /* progress6.png in Resources */,
+				B43FDE35131B1857007133FA /* progress7.png in Resources */,
+				B43FDE36131B1857007133FA /* progress8.png in Resources */,
+				B43FDE37131B1857007133FA /* progress9.png in Resources */,
+				B43FDE38131B1857007133FA /* QuotesTriviaViewController.xib in Resources */,
+				B43FDE39131B1857007133FA /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42EBC37131C8A5B00AA5FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42EBC38131C8A5B00AA5FAC /* Default.png in Resources */,
+				B42EBC39131C8A5B00AA5FAC /* bg.png in Resources */,
+				B42EBC3A131C8A5B00AA5FAC /* answer.png in Resources */,
+				B42EBC3B131C8A5B00AA5FAC /* progress0.png in Resources */,
+				B42EBC3C131C8A5B00AA5FAC /* progress1.png in Resources */,
+				B42EBC3D131C8A5B00AA5FAC /* progress2.png in Resources */,
+				B42EBC3E131C8A5B00AA5FAC /* progress3.png in Resources */,
+				B42EBC3F131C8A5B00AA5FAC /* progress4.png in Resources */,
+				B42EBC40131C8A5B00AA5FAC /* progress5.png in Resources */,
+				B42EBC41131C8A5B00AA5FAC /* progress6.png in Resources */,
+				B42EBC42131C8A5B00AA5FAC /* progress7.png in Resources */,
+				B42EBC43131C8A5B00AA5FAC /* progress8.png in Resources */,
+				B42EBC44131C8A5B00AA5FAC /* progress9.png in Resources */,
+				B42EBC45131C8A5B00AA5FAC /* QuotesTriviaViewController.xib in Resources */,
+				B42EBC46131C8A5B00AA5FAC /* MainWindow.xib in Resources */,
+				B42EBC83131C8B3400AA5FAC /* icon.png in Resources */,
+				B42EBC84131C8B3400AA5FAC /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43FDE94131B1907007133FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43FDE98131B1907007133FA /* Default.png in Resources */,
+				B43FDE99131B1907007133FA /* bg.png in Resources */,
+				B43FDE9A131B1907007133FA /* answer.png in Resources */,
+				B43FDE9B131B1907007133FA /* progress0.png in Resources */,
+				B43FDE9C131B1907007133FA /* progress1.png in Resources */,
+				B43FDE9D131B1907007133FA /* progress2.png in Resources */,
+				B43FDE9E131B1907007133FA /* progress3.png in Resources */,
+				B43FDE9F131B1907007133FA /* progress4.png in Resources */,
+				B43FDEA0131B1907007133FA /* progress5.png in Resources */,
+				B43FDEA1131B1907007133FA /* progress6.png in Resources */,
+				B43FDEA2131B1907007133FA /* progress7.png in Resources */,
+				B43FDEA3131B1907007133FA /* progress8.png in Resources */,
+				B43FDEA4131B1907007133FA /* progress9.png in Resources */,
+				B43FDEA5131B1907007133FA /* QuotesTriviaViewController.xib in Resources */,
+				B43FDEA6131B1907007133FA /* MainWindow.xib in Resources */,
+				B43FDEDD131B198F007133FA /* icon.png in Resources */,
+				B43FDEDE131B198F007133FA /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AAC71329BA6C00341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AAC81329BA6C00341FD8 /* Default.png in Resources */,
+				B441AAC91329BA6C00341FD8 /* bg.png in Resources */,
+				B441AACA1329BA6C00341FD8 /* answer.png in Resources */,
+				B441AACB1329BA6C00341FD8 /* progress0.png in Resources */,
+				B441AACC1329BA6C00341FD8 /* progress1.png in Resources */,
+				B441AACD1329BA6C00341FD8 /* progress2.png in Resources */,
+				B441AACE1329BA6C00341FD8 /* progress3.png in Resources */,
+				B441AACF1329BA6C00341FD8 /* progress4.png in Resources */,
+				B441AAD01329BA6C00341FD8 /* progress5.png in Resources */,
+				B441AAD11329BA6C00341FD8 /* progress6.png in Resources */,
+				B441AAD21329BA6C00341FD8 /* progress7.png in Resources */,
+				B441AAD31329BA6C00341FD8 /* progress8.png in Resources */,
+				B441AAD41329BA6C00341FD8 /* progress9.png in Resources */,
+				B441AAD51329BA6C00341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441AAD61329BA6C00341FD8 /* MainWindow.xib in Resources */,
+				B441AB051329BC2300341FD8 /* icon.png in Resources */,
+				B441AB091329BC4000341FD8 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AB881329C64F00341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AB891329C64F00341FD8 /* Default.png in Resources */,
+				B441AB8A1329C64F00341FD8 /* bg.png in Resources */,
+				B441AB8B1329C64F00341FD8 /* answer.png in Resources */,
+				B441AB8C1329C64F00341FD8 /* progress0.png in Resources */,
+				B441AB8D1329C64F00341FD8 /* progress1.png in Resources */,
+				B441AB8E1329C64F00341FD8 /* progress2.png in Resources */,
+				B441AB8F1329C64F00341FD8 /* progress3.png in Resources */,
+				B441AB901329C64F00341FD8 /* progress4.png in Resources */,
+				B441AB911329C64F00341FD8 /* progress5.png in Resources */,
+				B441AB921329C64F00341FD8 /* progress6.png in Resources */,
+				B441AB931329C64F00341FD8 /* progress7.png in Resources */,
+				B441AB941329C64F00341FD8 /* progress8.png in Resources */,
+				B441AB951329C64F00341FD8 /* progress9.png in Resources */,
+				B441AB961329C64F00341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441AB971329C64F00341FD8 /* MainWindow.xib in Resources */,
+				B441ABC71329C6D900341FD8 /* icon.png in Resources */,
+				B441ABC81329C6D900341FD8 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ABE01329C8DD00341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ABE11329C8DD00341FD8 /* Default.png in Resources */,
+				B441ABE21329C8DD00341FD8 /* bg.png in Resources */,
+				B441ABE31329C8DD00341FD8 /* answer.png in Resources */,
+				B441ABE41329C8DD00341FD8 /* progress0.png in Resources */,
+				B441ABE51329C8DD00341FD8 /* progress1.png in Resources */,
+				B441ABE61329C8DD00341FD8 /* progress2.png in Resources */,
+				B441ABE71329C8DD00341FD8 /* progress3.png in Resources */,
+				B441ABE81329C8DD00341FD8 /* progress4.png in Resources */,
+				B441ABE91329C8DD00341FD8 /* progress5.png in Resources */,
+				B441ABEA1329C8DD00341FD8 /* progress6.png in Resources */,
+				B441ABEB1329C8DD00341FD8 /* progress7.png in Resources */,
+				B441ABEC1329C8DD00341FD8 /* progress8.png in Resources */,
+				B441ABED1329C8DD00341FD8 /* progress9.png in Resources */,
+				B441ABEE1329C8DD00341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441ABEF1329C8DD00341FD8 /* MainWindow.xib in Resources */,
+				B441AC1D1329C91B00341FD8 /* icon.png in Resources */,
+				B441AC1E1329C91B00341FD8 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AC381329CB1D00341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AC391329CB1D00341FD8 /* Default.png in Resources */,
+				B441AC3A1329CB1D00341FD8 /* bg.png in Resources */,
+				B441AC3B1329CB1D00341FD8 /* answer.png in Resources */,
+				B441AC3C1329CB1D00341FD8 /* progress0.png in Resources */,
+				B441AC3D1329CB1D00341FD8 /* progress1.png in Resources */,
+				B441AC3E1329CB1D00341FD8 /* progress2.png in Resources */,
+				B441AC3F1329CB1D00341FD8 /* progress3.png in Resources */,
+				B441AC401329CB1D00341FD8 /* progress4.png in Resources */,
+				B441AC411329CB1D00341FD8 /* progress5.png in Resources */,
+				B441AC421329CB1D00341FD8 /* progress6.png in Resources */,
+				B441AC431329CB1D00341FD8 /* progress7.png in Resources */,
+				B441AC441329CB1D00341FD8 /* progress8.png in Resources */,
+				B441AC451329CB1D00341FD8 /* progress9.png in Resources */,
+				B441AC461329CB1D00341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441AC471329CB1D00341FD8 /* MainWindow.xib in Resources */,
+				B441AC741329CB4700341FD8 /* icon.png in Resources */,
+				B441AC751329CB4700341FD8 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AC971329D76A00341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AC981329D76A00341FD8 /* Default.png in Resources */,
+				B441AC991329D76A00341FD8 /* bg.png in Resources */,
+				B441AC9A1329D76A00341FD8 /* answer.png in Resources */,
+				B441AC9B1329D76A00341FD8 /* progress0.png in Resources */,
+				B441AC9C1329D76A00341FD8 /* progress1.png in Resources */,
+				B441AC9D1329D76A00341FD8 /* progress2.png in Resources */,
+				B441AC9E1329D76A00341FD8 /* progress3.png in Resources */,
+				B441AC9F1329D76A00341FD8 /* progress4.png in Resources */,
+				B441ACA01329D76A00341FD8 /* progress5.png in Resources */,
+				B441ACA11329D76A00341FD8 /* progress6.png in Resources */,
+				B441ACA21329D76A00341FD8 /* progress7.png in Resources */,
+				B441ACA31329D76A00341FD8 /* progress8.png in Resources */,
+				B441ACA41329D76A00341FD8 /* progress9.png in Resources */,
+				B441ACA51329D76A00341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441ACA61329D76A00341FD8 /* MainWindow.xib in Resources */,
+				B441ACD41329D7A200341FD8 /* icon.png in Resources */,
+				B441ACD51329D7A200341FD8 /* quotes.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ACE61329DBB600341FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ACE71329DBB600341FD8 /* Default.png in Resources */,
+				B441ACE81329DBB600341FD8 /* bg.png in Resources */,
+				B441ACE91329DBB600341FD8 /* answer.png in Resources */,
+				B441ACEA1329DBB600341FD8 /* progress0.png in Resources */,
+				B441ACEB1329DBB600341FD8 /* progress1.png in Resources */,
+				B441ACEC1329DBB600341FD8 /* progress2.png in Resources */,
+				B441ACED1329DBB600341FD8 /* progress3.png in Resources */,
+				B441ACEE1329DBB600341FD8 /* progress4.png in Resources */,
+				B441ACEF1329DBB600341FD8 /* progress5.png in Resources */,
+				B441ACF01329DBB600341FD8 /* progress6.png in Resources */,
+				B441ACF11329DBB600341FD8 /* progress7.png in Resources */,
+				B441ACF21329DBB600341FD8 /* progress8.png in Resources */,
+				B441ACF31329DBB600341FD8 /* progress9.png in Resources */,
+				B441ACF41329DBB600341FD8 /* QuotesTriviaViewController.xib in Resources */,
+				B441ACF51329DBB600341FD8 /* MainWindow.xib in Resources */,
+				B441AD2C1329DC9100341FD8 /* icon.png in Resources */,
+				B441AD2D1329DC9100341FD8 /* quotes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +1394,247 @@
 				B47BCD3711B8D08600208B63 /* CJSONScanner.m in Sources */,
 				B47BCD3811B8D08600208B63 /* CJSONSerializer.m in Sources */,
 				B47BCD3911B8D08600208B63 /* CSerializedJSONData.m in Sources */,
+				B43FDE08131B17B5007133FA /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42EBC49131C8A5B00AA5FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42EBC4A131C8A5B00AA5FAC /* main.m in Sources */,
+				B42EBC4B131C8A5B00AA5FAC /* QuotesTriviaAppDelegate.m in Sources */,
+				B42EBC4C131C8A5B00AA5FAC /* QuotesTriviaViewController.m in Sources */,
+				B42EBC4D131C8A5B00AA5FAC /* QuestionStore.m in Sources */,
+				B42EBC4E131C8A5B00AA5FAC /* EpisodeStore.m in Sources */,
+				B42EBC4F131C8A5B00AA5FAC /* Quote.m in Sources */,
+				B42EBC50131C8A5B00AA5FAC /* Question.m in Sources */,
+				B42EBC51131C8A5B00AA5FAC /* QuestionManager.m in Sources */,
+				B42EBC52131C8A5B00AA5FAC /* SpeakerStore.m in Sources */,
+				B42EBC53131C8A5B00AA5FAC /* TriviaStore.m in Sources */,
+				B42EBC54131C8A5B00AA5FAC /* NSMutableArray-Shuffle.m in Sources */,
+				B42EBC55131C8A5B00AA5FAC /* NSString-Encoding.m in Sources */,
+				B42EBC56131C8A5B00AA5FAC /* CDataScanner.m in Sources */,
+				B42EBC57131C8A5B00AA5FAC /* CDataScanner_Extensions.m in Sources */,
+				B42EBC58131C8A5B00AA5FAC /* NSCharacterSet_Extensions.m in Sources */,
+				B42EBC59131C8A5B00AA5FAC /* NSDictionary_JSONExtensions.m in Sources */,
+				B42EBC5A131C8A5B00AA5FAC /* NSScanner_Extensions.m in Sources */,
+				B42EBC5B131C8A5B00AA5FAC /* CJSONDataSerializer.m in Sources */,
+				B42EBC5C131C8A5B00AA5FAC /* CJSONDeserializer.m in Sources */,
+				B42EBC5D131C8A5B00AA5FAC /* CJSONScanner.m in Sources */,
+				B42EBC5E131C8A5B00AA5FAC /* CJSONSerializer.m in Sources */,
+				B42EBC5F131C8A5B00AA5FAC /* CSerializedJSONData.m in Sources */,
+				B42EBC60131C8A5B00AA5FAC /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43FDEA7131B1907007133FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43FDEA8131B1907007133FA /* main.m in Sources */,
+				B43FDEA9131B1907007133FA /* QuotesTriviaAppDelegate.m in Sources */,
+				B43FDEAA131B1907007133FA /* QuotesTriviaViewController.m in Sources */,
+				B43FDEAB131B1907007133FA /* QuestionStore.m in Sources */,
+				B43FDEAC131B1907007133FA /* EpisodeStore.m in Sources */,
+				B43FDEAD131B1907007133FA /* Quote.m in Sources */,
+				B43FDEAE131B1907007133FA /* Question.m in Sources */,
+				B43FDEAF131B1907007133FA /* QuestionManager.m in Sources */,
+				B43FDEB0131B1907007133FA /* SpeakerStore.m in Sources */,
+				B43FDEB1131B1907007133FA /* TriviaStore.m in Sources */,
+				B43FDEB2131B1907007133FA /* NSMutableArray-Shuffle.m in Sources */,
+				B43FDEB3131B1907007133FA /* NSString-Encoding.m in Sources */,
+				B43FDEB4131B1907007133FA /* CDataScanner.m in Sources */,
+				B43FDEB5131B1907007133FA /* CDataScanner_Extensions.m in Sources */,
+				B43FDEB6131B1907007133FA /* NSCharacterSet_Extensions.m in Sources */,
+				B43FDEB7131B1907007133FA /* NSDictionary_JSONExtensions.m in Sources */,
+				B43FDEB8131B1907007133FA /* NSScanner_Extensions.m in Sources */,
+				B43FDEB9131B1907007133FA /* CJSONDataSerializer.m in Sources */,
+				B43FDEBA131B1907007133FA /* CJSONDeserializer.m in Sources */,
+				B43FDEBB131B1907007133FA /* CJSONScanner.m in Sources */,
+				B43FDEBC131B1907007133FA /* CJSONSerializer.m in Sources */,
+				B43FDEBD131B1907007133FA /* CSerializedJSONData.m in Sources */,
+				B43FDEBE131B1907007133FA /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AAD91329BA6C00341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AADA1329BA6C00341FD8 /* main.m in Sources */,
+				B441AADB1329BA6C00341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441AADC1329BA6C00341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441AADD1329BA6C00341FD8 /* QuestionStore.m in Sources */,
+				B441AADE1329BA6C00341FD8 /* EpisodeStore.m in Sources */,
+				B441AADF1329BA6C00341FD8 /* Quote.m in Sources */,
+				B441AAE01329BA6C00341FD8 /* Question.m in Sources */,
+				B441AAE11329BA6C00341FD8 /* QuestionManager.m in Sources */,
+				B441AAE21329BA6C00341FD8 /* SpeakerStore.m in Sources */,
+				B441AAE31329BA6C00341FD8 /* TriviaStore.m in Sources */,
+				B441AAE41329BA6C00341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441AAE51329BA6C00341FD8 /* NSString-Encoding.m in Sources */,
+				B441AAE61329BA6C00341FD8 /* CDataScanner.m in Sources */,
+				B441AAE71329BA6C00341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441AAE81329BA6C00341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441AAE91329BA6C00341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441AAEA1329BA6C00341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441AAEB1329BA6C00341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441AAEC1329BA6C00341FD8 /* CJSONDeserializer.m in Sources */,
+				B441AAED1329BA6C00341FD8 /* CJSONScanner.m in Sources */,
+				B441AAEE1329BA6C00341FD8 /* CJSONSerializer.m in Sources */,
+				B441AAEF1329BA6C00341FD8 /* CSerializedJSONData.m in Sources */,
+				B441AAF01329BA6C00341FD8 /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AB9A1329C64F00341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AB9B1329C64F00341FD8 /* main.m in Sources */,
+				B441AB9C1329C64F00341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441AB9D1329C64F00341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441AB9E1329C64F00341FD8 /* QuestionStore.m in Sources */,
+				B441AB9F1329C64F00341FD8 /* EpisodeStore.m in Sources */,
+				B441ABA01329C64F00341FD8 /* Quote.m in Sources */,
+				B441ABA11329C64F00341FD8 /* Question.m in Sources */,
+				B441ABA21329C64F00341FD8 /* QuestionManager.m in Sources */,
+				B441ABA31329C64F00341FD8 /* SpeakerStore.m in Sources */,
+				B441ABA41329C64F00341FD8 /* TriviaStore.m in Sources */,
+				B441ABA51329C64F00341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441ABA61329C64F00341FD8 /* NSString-Encoding.m in Sources */,
+				B441ABA71329C64F00341FD8 /* CDataScanner.m in Sources */,
+				B441ABA81329C64F00341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441ABA91329C64F00341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441ABAA1329C64F00341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441ABAB1329C64F00341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441ABAC1329C64F00341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441ABAD1329C64F00341FD8 /* CJSONDeserializer.m in Sources */,
+				B441ABAE1329C64F00341FD8 /* CJSONScanner.m in Sources */,
+				B441ABAF1329C64F00341FD8 /* CJSONSerializer.m in Sources */,
+				B441ABB01329C64F00341FD8 /* CSerializedJSONData.m in Sources */,
+				B441ABB11329C64F00341FD8 /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ABF21329C8DD00341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ABF31329C8DD00341FD8 /* main.m in Sources */,
+				B441ABF41329C8DD00341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441ABF51329C8DD00341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441ABF61329C8DD00341FD8 /* QuestionStore.m in Sources */,
+				B441ABF71329C8DD00341FD8 /* EpisodeStore.m in Sources */,
+				B441ABF81329C8DD00341FD8 /* Quote.m in Sources */,
+				B441ABF91329C8DD00341FD8 /* Question.m in Sources */,
+				B441ABFA1329C8DD00341FD8 /* QuestionManager.m in Sources */,
+				B441ABFB1329C8DD00341FD8 /* SpeakerStore.m in Sources */,
+				B441ABFC1329C8DD00341FD8 /* TriviaStore.m in Sources */,
+				B441ABFD1329C8DD00341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441ABFE1329C8DD00341FD8 /* NSString-Encoding.m in Sources */,
+				B441ABFF1329C8DD00341FD8 /* CDataScanner.m in Sources */,
+				B441AC001329C8DD00341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441AC011329C8DD00341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441AC021329C8DD00341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441AC031329C8DD00341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441AC041329C8DD00341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441AC051329C8DD00341FD8 /* CJSONDeserializer.m in Sources */,
+				B441AC061329C8DD00341FD8 /* CJSONScanner.m in Sources */,
+				B441AC071329C8DD00341FD8 /* CJSONSerializer.m in Sources */,
+				B441AC081329C8DD00341FD8 /* CSerializedJSONData.m in Sources */,
+				B441AC091329C8DD00341FD8 /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441AC4A1329CB1D00341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441AC4B1329CB1D00341FD8 /* main.m in Sources */,
+				B441AC4C1329CB1D00341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441AC4D1329CB1D00341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441AC4E1329CB1D00341FD8 /* QuestionStore.m in Sources */,
+				B441AC4F1329CB1D00341FD8 /* EpisodeStore.m in Sources */,
+				B441AC501329CB1D00341FD8 /* Quote.m in Sources */,
+				B441AC511329CB1D00341FD8 /* Question.m in Sources */,
+				B441AC521329CB1D00341FD8 /* QuestionManager.m in Sources */,
+				B441AC531329CB1D00341FD8 /* SpeakerStore.m in Sources */,
+				B441AC541329CB1D00341FD8 /* TriviaStore.m in Sources */,
+				B441AC551329CB1D00341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441AC561329CB1D00341FD8 /* NSString-Encoding.m in Sources */,
+				B441AC571329CB1D00341FD8 /* CDataScanner.m in Sources */,
+				B441AC581329CB1D00341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441AC591329CB1D00341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441AC5A1329CB1D00341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441AC5B1329CB1D00341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441AC5C1329CB1D00341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441AC5D1329CB1D00341FD8 /* CJSONDeserializer.m in Sources */,
+				B441AC5E1329CB1D00341FD8 /* CJSONScanner.m in Sources */,
+				B441AC5F1329CB1D00341FD8 /* CJSONSerializer.m in Sources */,
+				B441AC601329CB1D00341FD8 /* CSerializedJSONData.m in Sources */,
+				B441AC611329CB1D00341FD8 /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ACA91329D76A00341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ACAA1329D76A00341FD8 /* main.m in Sources */,
+				B441ACAB1329D76A00341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441ACAC1329D76A00341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441ACAD1329D76A00341FD8 /* QuestionStore.m in Sources */,
+				B441ACAE1329D76A00341FD8 /* EpisodeStore.m in Sources */,
+				B441ACAF1329D76A00341FD8 /* Quote.m in Sources */,
+				B441ACB01329D76A00341FD8 /* Question.m in Sources */,
+				B441ACB11329D76A00341FD8 /* QuestionManager.m in Sources */,
+				B441ACB21329D76A00341FD8 /* SpeakerStore.m in Sources */,
+				B441ACB31329D76A00341FD8 /* TriviaStore.m in Sources */,
+				B441ACB41329D76A00341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441ACB51329D76A00341FD8 /* NSString-Encoding.m in Sources */,
+				B441ACB61329D76A00341FD8 /* CDataScanner.m in Sources */,
+				B441ACB71329D76A00341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441ACB81329D76A00341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441ACB91329D76A00341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441ACBA1329D76A00341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441ACBB1329D76A00341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441ACBC1329D76A00341FD8 /* CJSONDeserializer.m in Sources */,
+				B441ACBD1329D76A00341FD8 /* CJSONScanner.m in Sources */,
+				B441ACBE1329D76A00341FD8 /* CJSONSerializer.m in Sources */,
+				B441ACBF1329D76A00341FD8 /* CSerializedJSONData.m in Sources */,
+				B441ACC01329D76A00341FD8 /* AdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B441ACF81329DBB600341FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B441ACF91329DBB600341FD8 /* main.m in Sources */,
+				B441ACFA1329DBB600341FD8 /* QuotesTriviaAppDelegate.m in Sources */,
+				B441ACFB1329DBB600341FD8 /* QuotesTriviaViewController.m in Sources */,
+				B441ACFC1329DBB600341FD8 /* QuestionStore.m in Sources */,
+				B441ACFD1329DBB600341FD8 /* EpisodeStore.m in Sources */,
+				B441ACFE1329DBB600341FD8 /* Quote.m in Sources */,
+				B441ACFF1329DBB600341FD8 /* Question.m in Sources */,
+				B441AD001329DBB600341FD8 /* QuestionManager.m in Sources */,
+				B441AD011329DBB600341FD8 /* SpeakerStore.m in Sources */,
+				B441AD021329DBB600341FD8 /* TriviaStore.m in Sources */,
+				B441AD031329DBB600341FD8 /* NSMutableArray-Shuffle.m in Sources */,
+				B441AD041329DBB600341FD8 /* NSString-Encoding.m in Sources */,
+				B441AD051329DBB600341FD8 /* CDataScanner.m in Sources */,
+				B441AD061329DBB600341FD8 /* CDataScanner_Extensions.m in Sources */,
+				B441AD071329DBB600341FD8 /* NSCharacterSet_Extensions.m in Sources */,
+				B441AD081329DBB600341FD8 /* NSDictionary_JSONExtensions.m in Sources */,
+				B441AD091329DBB600341FD8 /* NSScanner_Extensions.m in Sources */,
+				B441AD0A1329DBB600341FD8 /* CJSONDataSerializer.m in Sources */,
+				B441AD0B1329DBB600341FD8 /* CJSONDeserializer.m in Sources */,
+				B441AD0C1329DBB600341FD8 /* CJSONScanner.m in Sources */,
+				B441AD0D1329DBB600341FD8 /* CJSONSerializer.m in Sources */,
+				B441AD0E1329DBB600341FD8 /* CSerializedJSONData.m in Sources */,
+				B441AD0F1329DBB600341FD8 /* AdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +1676,515 @@
 			};
 			name = Release;
 		};
+		B42EBC6B131C8A5B00AA5FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = goldengirls.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				PRODUCT_NAME = QuoteTriviaGoldenGirls;
+			};
+			name = Debug;
+		};
+		B42EBC6C131C8A5B00AA5FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = goldengirls.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				PRODUCT_NAME = QuoteTriviaGoldenGirls;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B42EBC6D131C8A5B00AA5FAC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = goldengirls.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaGoldenGirls;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B43FDEC9131B1907007133FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = buffy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				PRODUCT_NAME = QuoteTriviaBuffy;
+			};
+			name = Debug;
+		};
+		B43FDECA131B1907007133FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = buffy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				PRODUCT_NAME = QuoteTriviaBuffy;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B43FDECB131B1907007133FA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = buffy.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaBuffy;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441AAFB1329BA6C00341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = ncis.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaNCIS;
+			};
+			name = Debug;
+		};
+		B441AAFC1329BA6C00341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = ncis.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaNCIS;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441AAFD1329BA6C00341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = ncis.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+					"\\\"$(SRCROOT)/AdMob\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaNCIS;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441ABBC1329C64F00341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = familyguy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaFamilyGuy;
+			};
+			name = Debug;
+		};
+		B441ABBD1329C64F00341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = familyguy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaFamilyGuy;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441ABBE1329C64F00341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = familyguy.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/AdMob\\\\\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaFamilyGuy;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441AC141329C8DD00341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = charmed.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaCharmed;
+			};
+			name = Debug;
+		};
+		B441AC151329C8DD00341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = charmed.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaCharmed;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441AC161329C8DD00341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = charmed.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaCharmed;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441AC6C1329CB1D00341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = supernatural.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaSupernatural;
+			};
+			name = Debug;
+		};
+		B441AC6D1329CB1D00341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = supernatural.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaSupernatural;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441AC6E1329CB1D00341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = supernatural.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaSupernatural;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441ACCB1329D76A00341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = southpark.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaSouthPark;
+			};
+			name = Debug;
+		};
+		B441ACCC1329D76A00341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = southpark.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaSouthPark;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441ACCD1329D76A00341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = southpark.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaSouthPark;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
+		B441AD1A1329DBB600341FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = greysanatomy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaGreysAnatomy;
+			};
+			name = Debug;
+		};
+		B441AD1B1329DBB600341FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = greysanatomy.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				PRODUCT_NAME = QuoteTriviaGreysAnatomy;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B441AD1C1329DBB600341FD8 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuotesTrivia_Prefix.pch;
+				INFOPLIST_FILE = greysanatomy.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"$(SRCROOT)/AdMob\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = QuoteTriviaGreysAnatomy;
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Distribution;
+		};
 		B4502B5E11BDDE2A00BBBBB6 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,8 +2195,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-L/Users/reilly/hgrepo/iphone/QuotesTrivia/AdMob";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution;
 		};
@@ -480,6 +2216,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/AdMob\"",
 				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = SimpTriv;
 				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
@@ -495,8 +2232,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-L/Users/reilly/hgrepo/iphone/QuotesTrivia/AdMob";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -509,8 +2247,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-L/Users/reilly/hgrepo/iphone/QuotesTrivia/AdMob";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -523,6 +2262,86 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 				B4502B5F11BDDE2A00BBBBB6 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B42EBC6A131C8A5B00AA5FAC /* Build configuration list for PBXNativeTarget "GoldenGirls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42EBC6B131C8A5B00AA5FAC /* Debug */,
+				B42EBC6C131C8A5B00AA5FAC /* Release */,
+				B42EBC6D131C8A5B00AA5FAC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43FDEC8131B1907007133FA /* Build configuration list for PBXNativeTarget "Buffy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43FDEC9131B1907007133FA /* Debug */,
+				B43FDECA131B1907007133FA /* Release */,
+				B43FDECB131B1907007133FA /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441AAFA1329BA6C00341FD8 /* Build configuration list for PBXNativeTarget "NCIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441AAFB1329BA6C00341FD8 /* Debug */,
+				B441AAFC1329BA6C00341FD8 /* Release */,
+				B441AAFD1329BA6C00341FD8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441ABBB1329C64F00341FD8 /* Build configuration list for PBXNativeTarget "FamilyGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441ABBC1329C64F00341FD8 /* Debug */,
+				B441ABBD1329C64F00341FD8 /* Release */,
+				B441ABBE1329C64F00341FD8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441AC131329C8DD00341FD8 /* Build configuration list for PBXNativeTarget "Charmed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441AC141329C8DD00341FD8 /* Debug */,
+				B441AC151329C8DD00341FD8 /* Release */,
+				B441AC161329C8DD00341FD8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441AC6B1329CB1D00341FD8 /* Build configuration list for PBXNativeTarget "Supernatural" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441AC6C1329CB1D00341FD8 /* Debug */,
+				B441AC6D1329CB1D00341FD8 /* Release */,
+				B441AC6E1329CB1D00341FD8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441ACCA1329D76A00341FD8 /* Build configuration list for PBXNativeTarget "SouthPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441ACCB1329D76A00341FD8 /* Debug */,
+				B441ACCC1329D76A00341FD8 /* Release */,
+				B441ACCD1329D76A00341FD8 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B441AD191329DBB600341FD8 /* Build configuration list for PBXNativeTarget "GreysAnatomy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B441AD1A1329DBB600341FD8 /* Debug */,
+				B441AD1B1329DBB600341FD8 /* Release */,
+				B441AD1C1329DBB600341FD8 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
