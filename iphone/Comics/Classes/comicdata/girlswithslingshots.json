@@ -1,9 +1,8 @@
 {
     "Name" : "Girls with Slingshots",
-    "StartURL" : "http://www.gwscomic.com/",
-	"ImagePattern" : "div id=gwsblog.*?<img src=\"(.*?)\"",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\" [^>]*?><img name=\"img2\"",
-	"NextComicPattern" : "<a href=\"([^>]*?)\" [^>]*?><img name=\"img4\"",
-	"BaseComicURL" : "http://www.gwscomic.com/",
-    "BasePrevNextURL" : "http://www.gwscomic.com/"
+    "StartURL" : "http://www.girlswithslingshots.com/",
+	"ImagePattern" : "div.id=\"comic\">[^<]*?<img.src=\"([^>]*?)\"",
+	"AltTextPattern" : "div.id=\"comic\">[^<]*?<img[^>]*?title=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a.href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "<a.href=\"([^>]*?)\" rel=\"next\""
 }

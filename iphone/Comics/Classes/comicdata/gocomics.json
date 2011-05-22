@@ -1,8 +1,7 @@
-{
-	"ImagePattern" : "http://imgsrv.gocomics.com/dim/\\?fh=(.*?)\"",
+{    
+	"ImagePattern" : "<link rel=\"image_src\" href=\"([^>]*?)\"",
 	"TitlePattern" : "<span class=\"authorText\">.*?</strong>(.*?)</span>",
 	"PrevComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\"><< Previous</a>",
 	"NextComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\">Next >></a>",
-	"BasePrevNextURL" : "http://www.gocomics.com",
-	"BaseComicURL" : "http://imgsrv.gocomics.com/dim?fh="
+	"BasePrevNextURL" : "http://www.gocomics.com"
 }

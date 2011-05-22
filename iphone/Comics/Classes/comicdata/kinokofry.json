@@ -1,9 +1,11 @@
 {
     "Name" : "KinokoFry",
     "StartURL" : "http://kinokofry.com",
-	"ImagePattern" : "<div class=\"object\"><img src=\"([^>]*?)\"",
+	"ImagePattern" : "http://kinokofry.com/wp-content/webcomic/(.*?)\"",
 	"TitlePattern" : "<div class=\"object\"><img [^>]*?alt=\"([^>]*?)\"",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\"[^>]*?class=\"previous-comic-link\"",
-	"NextComicPattern" : "<a href=\"([^>]*?)\"[^>]*?class=\"next-comic-link\"",
-    "AltTextPattern" : "<div class=\"object\"><img [^>]*?title=\"([^>]*?)\""
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"[^>]*?rel=\"previous\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"[^>]*?rel=\"next\"",
+    "AltTextPattern" : "<div class=\"object\"><img [^>]*?title=\"([^>]*?)\"",
+	"BaseComicURL" : "http://kinokofry.com/wp-content/webcomic/"
 }
+

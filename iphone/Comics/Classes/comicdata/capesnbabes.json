@@ -1,9 +1,8 @@
 {
     "Name" : "Capes -N- Babes",
     "StartURL" : "http://www.capesnbabes.com/",
-	"ImagePattern" : "<div id=[\"']comic[\"']>[^<]*?<img src='(.*?)'",
-	"TitlePattern" : "<title>{1,1}Capes -N- Babes, a webcomic by Chris Flick?  &raquo; ?Archive   ?&raquo;?(.*?)</title>",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\">&laquo; Previous",
-	"NextComicPattern" : "<a href=\"([^>]*?)\">Next &raquo;",
-    "RandomComicPattern" : "Random Comic.*?<a href=\"(.*?)\""
+	"ImagePattern" : "<div id=\"comic\"><img src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\"><img[^>]*?title=\"([^>]*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"navi navi-prev\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"navi navi-next\""
 }

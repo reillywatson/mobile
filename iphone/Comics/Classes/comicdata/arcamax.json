@@ -1,7 +1,7 @@
 {
-	"ImagePattern" : "div class=\"toon\".*?<a href=\"(.*?)\"",
-	"TitlePattern" : "div class=\"toon\".*?<a .*? alt=\"(.*?)\"",
-	"PrevComicPattern" : "Today's</.*?<a class=\"next\" href=\"(.*?)\"",
-	"NextComicPattern" : "Previous</.*?<a class=\"next\" href=\"(.*?)\">Next",
+	"ImagePattern" : "article class=\"comic\".*?<img src=\"([^>]*?)\"",
+	"TitlePattern" : "<b class=\"current\">([^<]*?)</b>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"prev\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"next\"",
     "BasePrevNextURL" : "http://www.arcamax.com"
 }
