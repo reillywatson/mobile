@@ -2,7 +2,7 @@
     "Name" : "Wondermark",
     "StartURL" : "http://wondermark.com/",
 	"ImagePattern" : "<div id=\"comic\".*? src=\"(.*?)\"",
-	"TitlePattern" : "a2a_config.linkname=\"(.*?)\";",
+	"TitlePattern" : "st_title='([^>]*?)'",
 	"PrevComicPattern" : "<div class=\"comic-nav-previous\">[^<]*?<a href=\"(.*?)\"",
 	"NextComicPattern" : "<div class=\"comic-nav-next\">[^<]*?<a href=\"(.*?)\"",
     "AltTextPattern" : "<div id=\"comic\".*? title=\"(.*?)\"",

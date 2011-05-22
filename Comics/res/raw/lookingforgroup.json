@@ -3,7 +3,7 @@
     "StartURL" : "http://www.lfgcomic.com/page/latest",
 	"ImagePattern" : "id=\"comic\">.*?<img src=\"(.*?)\"",
 	"TitlePattern" : "<title>Looking For Group &raquo; (.*?)</title>",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\"><img alt=\"Previous\"",
-	"NextComicPattern" : "<a href=\"([^>]*?)\"><img alt=\"Next\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" id=\"navtop-prev\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" id=\"navtop-next\"",
     "BasePrevNextURL" : "http://www.lfgcomic.com"
 }

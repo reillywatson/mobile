@@ -155,7 +155,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Last Kiss", "http://www.gocomics.com/lastkiss"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Legend of Bill", "http://www.gocomics.com/legendofbill"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Lio", "http://www.gocomics.com/lio"));
-		comics.add(new ComicInfo(context, R.raw.gocomics, "Little Otto", "http://www.gocomics.com/littleotto"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Maintaining", "http://www.gocomics.com/maintaining"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Mal and Chad", "http://www.gocomics.com/malandchad"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Mutt & Jeff", "http://www.gocomics.com/muttandjeff"));
@@ -193,7 +192,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Alley Oop", "http://www.comics.com/alley_oop"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Andy Capp", "http://www.comics.com/andy_capp"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Animal Crackers", "http://www.comics.com/animal_crackers"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Annie", "http://www.comics.com/annie"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Arlo & Janis", "http://www.comics.com/arlo&janis"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "B.C.", "http://www.comics.com/bc"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Ballard Street", "http://www.comics.com/ballard_street"));
@@ -203,7 +201,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Bliss", "http://www.comics.com/bliss"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Bottom Liners", "http://www.comics.com/bottom_liners"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Bound and Gagged", "http://www.comics.com/bound_and_gagged"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Brenda Starr", "http://www.comics.com/brenda_starr"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Brevity", "http://www.comics.com/brevity"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Brewster Rockit", "http://www.comics.com/brewster_rockit"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Broom-Hilda", "http://www.comics.com/broom-hilda"));
@@ -222,7 +219,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Farcus", "http://www.comics.com/farcus"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Fat Cats Classics", "http://www.comics.com/fat_cats_classics"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Ferd'nand", "http://www.comics.com/ferdnand"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Flight Deck", "http://www.comics.com/flight_deck"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Flo & Friends", "http://www.comics.com/flo&friends"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Fort Knox", "http://www.comics.com/fort_knox"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Frank & Ernest", "http://www.comics.com/frank&ernest"));
@@ -239,8 +235,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Herb and Jamaal", "http://www.comics.com/herb_and_jamaal"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Herman", "http://www.comics.com/herman"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Home and Away", "http://www.comics.com/home_and_away"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "It's All About You", "http://www.comics.com/its_all_about_you"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Jane's World", "http://www.comics.com/janes_world"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Jump Start", "http://www.comics.com/jump_start"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Kit 'N' Carlyle", "http://www.comics.com/kit_n_carlyle"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Li'l Abner Classics", "http://www.comics.com/lil_abner_classics"));
@@ -265,7 +259,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "One Big Happy Classics", "http://www.comics.com/one_big_happy_classics"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Over the Hedge", "http://www.comics.com/over_the_hedge"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "PC and Pixel", "http://www.comics.com/pc_and_pixel"));
-		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Peanuts", "http://www.comics.com/peanuts"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Pearls Before Swine", "http://www.comics.com/pearls_before_swine"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Pickles", "http://www.comics.com/pickles"));
 		comics.add(new ComicInfo(context, R.raw.comicsdotcom, "Pluggers", "http://www.comics.com/pluggers"));
@@ -315,8 +308,6 @@ public class ComicList {
 		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Boffo", "http://www.chron.com/apps/comics/buildcp.mpl?c=12&page=1&cpp=1&v=3.0&quality=high"));
 		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Prickly City", "http://www.chron.com/apps/comics/buildcp.mpl?c=92&page=1&cpp=1&v=3.0&quality=high"));
 		//		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Willy & Ethel", "http://www.chron.com/apps/comics/buildcp.mpl?c=77&page=1&cpp=1&v=3.0&quality=high"));
-
-		comics.add(new ComicInfo(context, R.raw.arcamax, "Red & Rover", "http://www.arcamax.com/redandrover"));
 
 		
 		/**
