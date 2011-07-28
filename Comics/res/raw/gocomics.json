@@ -1,5 +1,5 @@
 {
-	"ImagePattern" : "<link rel=\"image_src\" href=\"([^>]*?)\"",
+	"ImagePattern" : "<img[^>]*?class=\"strip\" src=\"([^>]*?)\"",
 	"TitlePattern" : "<ul class=\"feature-nav\">[^<]*?<li>([^<]*?)</li>",
 	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"prev\">[^<]*?Previous",
 	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"next\">[^<]*?Next",

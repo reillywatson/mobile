@@ -1,7 +1,0 @@
-{
-	"ImagePattern" : "<div class=\"STR_Comic\">.*?<img src=\"(.*?)\"",
-	"TitlePattern" : "<div class=\"STR_Container FirstStrip\" .*? DateStrip:'(.*?)'",
-	"PrevComicPattern" : "<div class=\"STR_Container FirstStrip\" .*? Link_Previous: '(.*?)'",
-	"NextComicPattern" : "<div class=\"STR_Container FirstStrip\" .*? Link_Next: '(.*?)'",
-    "BasePrevNextURL" : "http://www.comics.com"
-}

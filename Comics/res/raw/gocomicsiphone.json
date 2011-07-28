@@ -1,7 +1,0 @@
-{
-	"ImagePattern" : "<link rel=\"image_src\" href=\"([^>]*?)\"",
-	"TitlePattern" : "<ul class=\"feature-nav\">[^<]*?<li>([^<]*?)</li>",
-	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"prev\">[^<]*?Previous",
-	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"next\">[^<]*?Next",
-	"BasePrevNextURL" : "http://www.gocomics.com"
-}
