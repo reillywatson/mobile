@@ -13,7 +13,7 @@
 		<activity android:name=".Viewer" />
 
 	</application>
-	<uses-sdk android:minSdkVersion="3" />
+	<uses-sdk android:minSdkVersion="4" />
 
 	<uses-permission android:name="android.permission.INTERNET" />
 

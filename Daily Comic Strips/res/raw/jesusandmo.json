@@ -1,0 +1,8 @@
+{
+    "Name" : "Jesus and Mo",
+    "StartURL" : "http://www.jesusandmo.net/",
+	"ImagePattern" : "<div id=\"comic\">[^<]*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\">[^<]*?<img .*? alt=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "a href=\"([^>]*?)\" rel=\"next\""
+}

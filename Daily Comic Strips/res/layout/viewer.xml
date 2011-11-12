@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res/com.vasken.comicstrips"
-	android:layout_margin="3px"
+	android:layout_margin="3dp"
     android:background="@color/black"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -30,9 +30,9 @@
 			android:id="@+id/title" 
 			android:layout_toLeftOf="@id/next_comic"
 			android:layout_toRightOf="@id/prev_comic"
-			android:layout_marginTop="10px"
+			android:layout_marginTop="10dp"
 			android:gravity="center"
-			android:textSize="18px"
+			android:textSize="18dp"
 			android:textStyle="bold"
 			android:textColor="@color/white"
 			android:layout_width="wrap_content" 

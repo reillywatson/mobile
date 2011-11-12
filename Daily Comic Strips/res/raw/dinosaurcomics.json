@@ -1,10 +1,10 @@
 {
     "Name" : "Dinosaur Comics",
     "StartURL" : "http://www.qwantz.com/index.php",
-	"ImagePattern" : "<div id=\"comic\">.*?<img src=\"(.*?)\"",
+	"ImagePattern" : "<img src=\"([^>]*?)\" class=\"comic\"",
 	"TitlePattern" : "<title>Dinosaur Comics - (.*?) - awesome fun times!</title>",
-	"PrevComicPattern" : "<div id=\"previous\">.*?<a href=\"(.*?)\">",
-	"NextComicPattern" : "<div id=\"next\">.*?<a href=\"(.*?)\">",
+	"PrevComicPattern" : "<a[^>]*?rel=\"prev\" href=\"([^>]*?)\"",
+	"NextComicPattern" : "<a[^>]*?rel=\"next\" href=\"([^>]*?)\"",
     "AltTextPattern" : "<div id=\"comic\">.*?<img src=\".*?\" class=\"comic\" title=\"(.*?)\"",
     "RandomComicPattern" : "trex-omg.gif\".*?<a href=\"(.*?)\""
 }
