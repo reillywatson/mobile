@@ -78,11 +78,7 @@
 	NSLog(@"HEY, MY REQUEST: %@", request);
 	
 	NSString *responseStr = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error] encoding:NSUTF8StringEncoding];
-	
-	
-	
-	// this is the key to the whole response!
-//	<input type="hidden" name="RequestID" value="100657914" />
+
 	if (error != nil) {
 		NSLog(@"OH SHIT DAWG, GETTING LOCATION DATA FAILED: %@", error);
 		[delegate confirmationError:error];
