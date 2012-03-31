@@ -11,7 +11,7 @@
 
 @protocol ScheduleConfirmDelegate
 
--(void)gotConfirmationCode:(NSString *)code;
+-(void)gotSchedules:(NSArray *)schedules;
 -(void)confirmationError:(NSError *)error;
 
 @end

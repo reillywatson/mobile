@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Location.h"
 #import "ScheduleConfirmOperation.h"
-#import "ScheduleListOperation.h"
 #import "Schedule.h"
 
-@interface ScheduleViewController : UITableViewController<ScheduleConfirmDelegate, ScheduleListDelegate> {
+@interface ScheduleViewController : UITableViewController<ScheduleConfirmDelegate> {
 	NSMutableArray *schedules;
 	NSOperationQueue *_opQueue;
 	Location *_start;

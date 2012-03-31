@@ -32,11 +32,6 @@
 	_date = [date retain];
 	[_opQueue addOperation:[[ScheduleConfirmOperation alloc] initWithStartLocation:start endLocation:end date:_date delegate:self]];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-//	[_opQueue addOperation:[[ScheduleListOperation alloc] initWith
-}
-
--(void)gotConfirmationCode:(NSString *)code {
-	[_opQueue addOperation:[[ScheduleListOperation alloc] initWithStartLocation:_start endLocation:_end requestID:code date:_date delegate:self]];
 }
 
 -(void)confirmationError:(NSError *)error {

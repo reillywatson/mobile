@@ -17,7 +17,6 @@
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
 		B4333C8312EAC1ED0065621E /* LocationsDataRetrievalOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C7E12EAC1ED0065621E /* LocationsDataRetrievalOperation.m */; };
 		B4333C8412EAC1ED0065621E /* ScheduleConfirmOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C8012EAC1ED0065621E /* ScheduleConfirmOperation.m */; };
-		B4333C8512EAC1ED0065621E /* ScheduleListOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C8212EAC1ED0065621E /* ScheduleListOperation.m */; };
 		B4333C9912EAC2460065621E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C8E12EAC2460065621E /* NSObject+SBJSON.m */; };
 		B4333C9A12EAC2460065621E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C9012EAC2460065621E /* NSString+SBJSON.m */; };
 		B4333C9B12EAC2460065621E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B4333C9212EAC2460065621E /* SBJSON.m */; };
@@ -57,8 +56,6 @@
 		B4333C7E12EAC1ED0065621E /* LocationsDataRetrievalOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsDataRetrievalOperation.m; sourceTree = "<group>"; };
 		B4333C7F12EAC1ED0065621E /* ScheduleConfirmOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleConfirmOperation.h; sourceTree = "<group>"; };
 		B4333C8012EAC1ED0065621E /* ScheduleConfirmOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleConfirmOperation.m; sourceTree = "<group>"; };
-		B4333C8112EAC1ED0065621E /* ScheduleListOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleListOperation.h; sourceTree = "<group>"; };
-		B4333C8212EAC1ED0065621E /* ScheduleListOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleListOperation.m; sourceTree = "<group>"; };
 		B4333C8C12EAC2460065621E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		B4333C8D12EAC2460065621E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		B4333C8E12EAC2460065621E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -128,8 +125,6 @@
 				B4333C7E12EAC1ED0065621E /* LocationsDataRetrievalOperation.m */,
 				B4333C7F12EAC1ED0065621E /* ScheduleConfirmOperation.h */,
 				B4333C8012EAC1ED0065621E /* ScheduleConfirmOperation.m */,
-				B4333C8112EAC1ED0065621E /* ScheduleListOperation.h */,
-				B4333C8212EAC1ED0065621E /* ScheduleListOperation.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* GreyhoundAppDelegate.h */,
@@ -290,7 +285,6 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				B4333C8312EAC1ED0065621E /* LocationsDataRetrievalOperation.m in Sources */,
 				B4333C8412EAC1ED0065621E /* ScheduleConfirmOperation.m in Sources */,
-				B4333C8512EAC1ED0065621E /* ScheduleListOperation.m in Sources */,
 				B4333C9912EAC2460065621E /* NSObject+SBJSON.m in Sources */,
 				B4333C9A12EAC2460065621E /* NSString+SBJSON.m in Sources */,
 				B4333C9B12EAC2460065621E /* SBJSON.m in Sources */,
