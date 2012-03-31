@@ -9,6 +9,7 @@
 #import "LocationsDataRetrievalOperation.h"
 #import "SBJSON.h"
 #import "Location.h"
+#import "URLResolver.h"
 
 @implementation LocationsDataRetrievalOperation
 
@@ -21,12 +22,12 @@
 	return self;
 }
 
-
--(void)main {
-	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.greyhound.com/services/locations.asmx/GetDestinationLocationsByName"]];
+-(NSArray *)locationsForString:(NSString *)text {
+	NSString *url = [URLResolver locationsURLForText:text];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
 	[request setHTTPMethod:@"POST"];
 	[request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-type"];
-	NSString *params = [NSString stringWithFormat:@"{\"context\":{\"Text\":\"%@\",\"NumberOfItems\":0}}", searchText];
+	NSString *params = [NSString stringWithFormat:@"{\"context\":{\"Text\":\"%@\",\"NumberOfItems\":0}}", text];
 	[request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
 	NSError *error = nil;
 	NSLog(@"HEY, MY REQUEST: %@", request);
@@ -40,7 +41,6 @@
 		if (enabled) {
 			NSString *name = [item objectForKey:@"Text"];
 			NSString *locationId = [item objectForKey:@"Value"];
-			locationId = [[locationId componentsSeparatedByString:@"|"] objectAtIndex:0];
 			Location *location = [[Location alloc] initWithName:name locationID:locationId];
 			[locations addObject:location];
 		}
@@ -52,7 +52,12 @@
 	else {
 		[delegate performSelectorOnMainThread:@selector(locationsFound:) withObject:locations waitUntilDone:NO];
 	}
-//	NSLog(@"RESPONSE FROM SERVER: %@", response);
+	//NSLog(@"RESPONSE FROM SERVER: %@", response);
+	return locations;
+}
+
+-(void)main {
+	[self locationsForString:searchText];
 }
 
 -(void)dealloc {

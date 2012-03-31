@@ -24,5 +24,5 @@
 @property (nonatomic, readonly) NSString *searchText;
 
 -(id)initWithDelegate:(NSObject<LocationsDataRetrievalDelegate>*) aDelegate searchText:(NSString *)searchText;
-
+-(NSArray *)locationsForString:(NSString *)searchText;
 @end

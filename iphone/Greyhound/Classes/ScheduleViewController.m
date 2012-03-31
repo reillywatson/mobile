@@ -94,19 +94,19 @@
     }
 	
 	Schedule *schedule = [schedules objectAtIndex:indexPath.row];
-	NSString *depart = [[schedule->departureTime stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
-	NSString *arrive = [[schedule->arrivalTime stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
+	NSString *depart = [schedule->departureTime substringToIndex:[schedule->departureTime rangeOfString:@"<"].location];// stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
+	NSString *arrive = [schedule->arrivalTime substringToIndex:[schedule->arrivalTime rangeOfString:@"<"].location];// stringByReplacingOccurrencesOfString:@"a" withString:@"AM"] stringByReplacingOccurrencesOfString:@"p" withString:@"PM"];
+	NSString *duration = schedule->tripDuration;
 	//dd,hh:mm
-	int days = [[schedule->tripDuration substringToIndex:2] intValue];
+/*	int days = [[schedule->tripDuration substringToIndex:2] intValue];
 	int hours = [[schedule->tripDuration substringWithRange:NSMakeRange(3, 2)] intValue];
 	int minutes = [[schedule->tripDuration substringWithRange:NSMakeRange(6, 2)] intValue];
-	NSString *duration;
 	if (days > 0) {
 		duration = [NSString stringWithFormat:@"%dd %dh %dm",days,hours,minutes];
 	}
 	else {
 		duration = [NSString stringWithFormat:@"%dh %dm",hours,minutes];
-	}
+	}*/
 	[cell.textLabel setText:[NSString stringWithFormat:@"%@ - %@", depart, arrive]];
 	[cell.detailTextLabel setText:duration];
 		

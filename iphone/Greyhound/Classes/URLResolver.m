@@ -18,38 +18,49 @@
 	return [canStates containsObject:state];
 }
 
-+(NSString *)stateForLocation:(Location *)location {
-	NSArray *startNameComponents = [location->name componentsSeparatedByString:@","];
++(NSString *)stateForText:(NSString *)text {
+	NSArray *startNameComponents = [text componentsSeparatedByString:@","];
 	if ([startNameComponents count] != 2)
 		return nil;
-	return [[startNameComponents objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+	return [[startNameComponents objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];	
+}
+
++(NSString *)stateForLocation:(Location *)location {
+	return [URLResolver stateForText:location->name];
 }
 
 +(BOOL)isCanadianStart:(Location *)start end:(Location *)end {
-	if ([URLResolver stateIsCanadian:[URLResolver stateForLocation:start]] && [URLResolver stateIsCanadian:[URLResolver stateForLocation:start]]) {
+	if ([URLResolver stateIsCanadian:[URLResolver stateForLocation:start]] && [URLResolver stateIsCanadian:[URLResolver stateForLocation:end]]) {
 		return YES;
 	}
 	return NO;
 }
 
-+(NSString *)scheduleListURLForStart:(Location *)start end:(Location *)end {
-	if ([URLResolver isCanadianStart:start end:end]) {
-		return @"http://www.greyhound.ca/home/ticketcenter/en/step3.asp";
++(NSString *)locationsURLForText:(NSString *)text {
+	if ([URLResolver stateIsCanadian:[URLResolver stateForText:text]]) {
+		return @"http://www.greyhound.ca/services/locations.asmx/GetDestinationLocationsByName";		
 	}
-	return @"http://www.greyhound.com/ticketcenter/en/Step3.asp";
+	return @"http://www.greyhound.com/services/locations.asmx/GetDestinationLocationsByName";
 }
 
 +(NSString *)scheduleConfirmURLForStart:(Location *)start end:(Location *)end {
 	if ([URLResolver isCanadianStart:start end:end]) {
-		return @"http://www.greyhound.ca/home/ticketcenter/en/step2.asp";
+		return @"https://www.greyhound.ca/services/farefinder.asmx/Search";
 	}
-	return @"http://www.greyhound.com/ticketcenter/en/step2.asp";
+	return @"https://www.greyhound.com/services/farefinder.asmx/Search";
 }
+
++(NSString *)step2URLForStart:(Location *)start end:(Location *)end {
+	if ([URLResolver isCanadianStart:start end:end]) {
+		return @"https://www.greyhound.ca/farefinder/step2.aspx";
+	}
+	return @"https://www.greyhound.com/farefinder/step2.aspx";
+};
 
 +(NSString *)scheduleDetailsURLForSchedule:(Schedule *)schedule {
 	if (schedule->isCanadian)
-		return [NSString stringWithFormat:@"http://www.greyhound.ca/home/ticketcenter/en/%@", schedule->detailsArgs];
-	return [NSString stringWithFormat:@"http://www.greyhound.com/ticketcenter/en/%@", schedule->detailsArgs];
+		return @"https://www.greyhound.ca/services/farefinder.asmx/GetScheduleDetails";
+	return @"https://www.greyhound.com/services/farefinder.asmx/GetScheduleDetails";
 }
 
 @end

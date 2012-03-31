@@ -10,6 +10,21 @@
 #import "RegexKitLite.h"
 #import "ScheduleDetails.h"
 #import "URLResolver.h"
+#import "SBJSON.h"
+
+@interface NSDictionary (Extensions)
+-(id)objectForKey:(NSString *)key defaultValue:(id)def;
+@end
+
+@implementation NSDictionary (Extensions)
+-(id)objectForKey:(NSString *)key defaultValue:(id)def {
+	id obj = [self objectForKey:key];
+	if (obj == nil || [obj isKindOfClass:[NSNull class]]) {
+		return def;
+	}
+	return obj;
+}
+@end
 
 @implementation ScheduleDetailsOperation
 
@@ -27,32 +42,39 @@
 
 -(void)main {
 	NSString *url = [URLResolver scheduleDetailsURLForSchedule:_schedule];
-//	url = @"http://www.greyhound.ca/home/ticketcenter/en/ScheduleDetails.asp?ScheduleIndex=7&CS1=3473264952460496:Sock&ID=100706615"
-	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+	[request setHTTPMethod:@"POST"];
+	NSString *data = [NSString stringWithFormat:@"{\"request\":{\"__type\":\"Greyhound.Website.DataObjects.ClientScheduleDetailRequest\",\"Key\":\"%@\"}}", _schedule->scheduleID];
+	[request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];	
+	[request setHTTPBody:[data dataUsingEncoding:NSUTF8StringEncoding]];
+	
 	NSLog(@"HEY, MY REQUEST: %@", request);
 	NSError *error =nil;
 	NSString *response = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error] encoding:NSUTF8StringEncoding];
-//	NSLog(@"RESPONSE FROM SERVER: %@", response);
+	NSLog(@"RESPONSE FROM SERVER: %@", response);
 	if (error != nil) {
 		NSLog(@"DETAILS ERROR: %@", error);
 		return;
 	}
-	NSString *stopRegex = @"<tr>[^<]*?<!--Location Cell-->(.*?)</tr>";
-	NSString *cellRegex = @"<td[^>]*?>(.*?)</td>";
-	NSArray *stops = [response arrayOfCaptureComponentsMatchedByRegex:stopRegex options:RKLDotAll range:NSMakeRange(0, [response length]) error:nil];
+	
+	SBJSON *engine = [[SBJSON new] autorelease];
+	NSArray *stops = [[[engine objectWithString:response] objectForKey:@"d"] objectForKey:@"Items"];
 	NSMutableArray *detailsList = [[NSMutableArray new] autorelease];
-	for (int i = 0; i < [stops count]; i++) {
-		NSString *stopDetails = [[stops objectAtIndex:i] objectAtIndex:1];
-		NSArray *cells = [stopDetails arrayOfCaptureComponentsMatchedByRegex:cellRegex options:RKLDotAll range:NSMakeRange(0, [stopDetails length]) error:nil];
-		NSString *cityName = [[cells objectAtIndex:0] objectAtIndex:1];
-		cityName = [cityName stringByReplacingOccurrencesOfString:@"<b>" withString:@""];
-		cityName = [cityName stringByReplacingOccurrencesOfString:@"</b>" withString:@""];
-		cityName = [cityName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		NSString *arrives = [[cells objectAtIndex:1] objectAtIndex:1];
-		NSString *departs = [[cells objectAtIndex:2] objectAtIndex:1];
-		NSString *layover = [[cells objectAtIndex:3] objectAtIndex:1];
-		NSString *company = [[cells objectAtIndex:4] objectAtIndex:1];
-		NSString *schedule = [[cells objectAtIndex:5] objectAtIndex:1];
+	for (NSDictionary *stop in stops) {
+		NSString *cityName = [stop objectForKey:@"Location" defaultValue:@""];
+		cityName = [cityName stringByReplacingOccurrencesOfString:@"(START)" withString:@""];
+		cityName = [cityName stringByReplacingOccurrencesOfString:@"(END)" withString:@""];
+		if ([cityName hasPrefix:@" - "]) {
+			cityName = [cityName substringFromIndex:3];
+		}
+		NSString *arrives = [stop objectForKey:@"Arrives" defaultValue:@""];
+		NSString *departs = [stop objectForKey:@"Departs" defaultValue:@""];
+		if ([departs isEqualToString:@"(TRANSFER)"]) {
+			departs = @"TRANSFER";
+		}
+		NSString *layover = [stop objectForKey:@"Layover" defaultValue:@""];
+		NSString *schedule = [stop objectForKey:@"Schedule" defaultValue:@""];
+		NSString *company = [stop objectForKey:@"Carrier" defaultValue:@""];
 		NSLog(@"City: %@ Arrives: %@ Departs: %@ Layover: %@ Company: %@ Schedule:%@", cityName, arrives, departs, layover, company, schedule);
 		ScheduleDetails *details = [[ScheduleDetails alloc] initWithCity:cityName arrives:arrives departs:departs layover:layover company:company schedule:schedule];
 		[detailsList addObject:details];

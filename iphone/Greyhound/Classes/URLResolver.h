@@ -14,8 +14,8 @@
 
 }
 +(BOOL)isCanadianStart:(Location *)start end:(Location *)end;
-+(NSString *)scheduleListURLForStart:(Location *)start end:(Location *)end;
 +(NSString *)scheduleConfirmURLForStart:(Location *)start end:(Location *)end;
 +(NSString *)scheduleDetailsURLForSchedule:(Schedule *)schedule;
-
++(NSString *)step2URLForStart:(Location *)start end:(Location *)end;
++(NSString *)locationsURLForText:(NSString *)text;
 @end
