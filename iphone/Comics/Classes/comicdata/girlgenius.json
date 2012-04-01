@@ -1,0 +1,8 @@
+{
+    "Name" : "Girl Genius",
+    "StartURL" : "http://www.girlgeniusonline.com/comic.php",
+	"ImagePattern" : "www.girlgeniusonline.com/ggmain/strips/(.*?)'",
+	"PrevComicPattern" : "<a href='([^>]*?)'><img border=0 alt='The Previous Comic'",
+	"NextComicPattern" : "<a href='([^>]*?)'><img border=0 alt='The Next Comic'",
+	"BaseComicURL" : "http://www.girlgeniusonline.com/ggmain/strips/"
+}
