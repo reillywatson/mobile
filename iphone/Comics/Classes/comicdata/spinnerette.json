@@ -1,0 +1,8 @@
+{
+    "Name" : "Spinnerette",
+    "StartURL" : "http://krakowstudios.com/spinnerette/",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "nav-previous\">[^>]*?href=\"([^>]*?)\"",
+	"NextComicPattern" : "nav-next\">[^>]*?href=\"([^>]*?)\""
+}

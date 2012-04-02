@@ -1,0 +1,9 @@
+{
+    "Name" : "21st Century Coeds",
+    "StartURL" : "http://twentyfirstcenturycoeds.comicgenesis.com",
+	"ImagePattern" : "img alt=\"Comic\".*?src=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^<]*?<img alt=\"Previous comic\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^<]*?<img alt=\"Next comic\"",
+	"BaseComicURL" : "http://twentyfirstcenturycoeds.comicgenesis.com",
+    "BasePrevNextURL" : "http://twentyfirstcenturycoeds.comicgenesis.com"
+}

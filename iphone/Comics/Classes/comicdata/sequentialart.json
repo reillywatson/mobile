@@ -1,0 +1,9 @@
+{
+    "Name" : "Sequential Art",
+    "StartURL" : "http://www.collectedcurios.com/sequentialart.php",
+	"ImagePattern" : "id=\"strip\" src=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\"[^<]*?<img src=\"Nav_BackOne.gif\"",
+	"NextComicPattern" : "<a href=\"([^>]*?)\"[^<]*?<img src=\"Nav_ForwardOne.gif\"",
+	"BaseComicURL" : "http://www.collectedcurios.com/",
+    "BasePrevNextURL" : "http://www.collectedcurios.com/"
+}

@@ -1,0 +1,7 @@
+{
+    "Name" : "Candi",
+    "StartURL" : "http://candicomics.com",
+	"ImagePattern" : "img class=\"ksc\"[^>]*?src=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\" rel=\"next\""
+}

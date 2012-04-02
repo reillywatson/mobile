@@ -1,0 +1,10 @@
+{
+    "Name" : "The Landscaper",
+    "StartURL" : "http://landscaper.visual-assault.net/comic/latest",
+	"ImagePattern" : "class='comic'.*?src=\"(.*?)\"",
+	"TitlePattern" : "class='comic'.*?<h2>(.*?)</h2>",
+	"PrevComicPattern" : "href=\"([^>]*?)\">&lsaquo; Previous",
+	"NextComicPattern" : "href=\"([^>]*?)\">Next",
+	"BaseComicURL" : "http://landscaper.visual-assault.net",
+    "BasePrevNextURL" : "http://landscaper.visual-assault.net"
+}

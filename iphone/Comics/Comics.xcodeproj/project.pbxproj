@@ -93,6 +93,19 @@
 		B4F3B1561528D5F8007E4866 /* hipsterhitler.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1521528D5F8007E4866 /* hipsterhitler.json */; };
 		B4F3B1571528D5F8007E4866 /* jesusandmo.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1531528D5F8007E4866 /* jesusandmo.json */; };
 		B4F3B1581528D5F8007E4866 /* starslip.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1541528D5F8007E4866 /* starslip.json */; };
+		B4F3B22D15292FE0007E4866 /* landscaper.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B22C15292FE0007E4866 /* landscaper.json */; };
+		B4F3B241152931E9007E4866 /* twentyfirstcenturycoeds.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B240152931E9007E4866 /* twentyfirstcenturycoeds.json */; };
+		B4F3B24815293358007E4866 /* candi.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B24715293358007E4866 /* candi.json */; };
+		B4F3B26015293797007E4866 /* grrlpower.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B25F15293797007E4866 /* grrlpower.json */; };
+		B4F3B269152939D1007E4866 /* sequentialart.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B268152939D1007E4866 /* sequentialart.json */; };
+		B4F3B27015293C76007E4866 /* danandmabsfurryadventures.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B26F15293C76007E4866 /* danandmabsfurryadventures.json */; };
+		B4F3B28B152944FE007E4866 /* uptomynipples.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B28A152944FE007E4866 /* uptomynipples.json */; };
+		B4F3B295152946C6007E4866 /* spinnerette.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B294152946C6007E4866 /* spinnerette.json */; };
+		B4F3B2AB152948AB007E4866 /* goblins.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B2AA152948AB007E4866 /* goblins.json */; };
+		B4F3B2B615294A06007E4866 /* elgoonishshive.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B2B515294A06007E4866 /* elgoonishshive.json */; };
+		B4F3B2E915294E9E007E4866 /* eeriecuties.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B2E815294E9E007E4866 /* eeriecuties.json */; };
+		B4F3B2F715295074007E4866 /* zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B2F615295074007E4866 /* zodiac.json */; };
+		B4F3B304152951FE007E4866 /* gunnerkriggcourt.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B303152951FE007E4866 /* gunnerkriggcourt.json */; };
 		B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B3411A319F9003A56F4 /* iconsmall.png */; };
 /* End PBXBuildFile section */
 
@@ -220,6 +233,19 @@
 		B4F3B1521528D5F8007E4866 /* hipsterhitler.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hipsterhitler.json; sourceTree = "<group>"; };
 		B4F3B1531528D5F8007E4866 /* jesusandmo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jesusandmo.json; sourceTree = "<group>"; };
 		B4F3B1541528D5F8007E4866 /* starslip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = starslip.json; sourceTree = "<group>"; };
+		B4F3B22C15292FE0007E4866 /* landscaper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landscaper.json; sourceTree = "<group>"; };
+		B4F3B240152931E9007E4866 /* twentyfirstcenturycoeds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twentyfirstcenturycoeds.json; sourceTree = "<group>"; };
+		B4F3B24715293358007E4866 /* candi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = candi.json; sourceTree = "<group>"; };
+		B4F3B25F15293797007E4866 /* grrlpower.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grrlpower.json; sourceTree = "<group>"; };
+		B4F3B268152939D1007E4866 /* sequentialart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sequentialart.json; sourceTree = "<group>"; };
+		B4F3B26F15293C76007E4866 /* danandmabsfurryadventures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = danandmabsfurryadventures.json; sourceTree = "<group>"; };
+		B4F3B28A152944FE007E4866 /* uptomynipples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uptomynipples.json; sourceTree = "<group>"; };
+		B4F3B294152946C6007E4866 /* spinnerette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spinnerette.json; sourceTree = "<group>"; };
+		B4F3B2AA152948AB007E4866 /* goblins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = goblins.json; sourceTree = "<group>"; };
+		B4F3B2B515294A06007E4866 /* elgoonishshive.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elgoonishshive.json; sourceTree = "<group>"; };
+		B4F3B2E815294E9E007E4866 /* eeriecuties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eeriecuties.json; sourceTree = "<group>"; };
+		B4F3B2F615295074007E4866 /* zodiac.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zodiac.json; sourceTree = "<group>"; };
+		B4F3B303152951FE007E4866 /* gunnerkriggcourt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gunnerkriggcourt.json; sourceTree = "<group>"; };
 		B4F95B3411A319F9003A56F4 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -373,6 +399,19 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B4F3B303152951FE007E4866 /* gunnerkriggcourt.json */,
+				B4F3B2F615295074007E4866 /* zodiac.json */,
+				B4F3B2E815294E9E007E4866 /* eeriecuties.json */,
+				B4F3B2B515294A06007E4866 /* elgoonishshive.json */,
+				B4F3B2AA152948AB007E4866 /* goblins.json */,
+				B4F3B294152946C6007E4866 /* spinnerette.json */,
+				B4F3B28A152944FE007E4866 /* uptomynipples.json */,
+				B4F3B26F15293C76007E4866 /* danandmabsfurryadventures.json */,
+				B4F3B268152939D1007E4866 /* sequentialart.json */,
+				B4F3B25F15293797007E4866 /* grrlpower.json */,
+				B4F3B24715293358007E4866 /* candi.json */,
+				B4F3B240152931E9007E4866 /* twentyfirstcenturycoeds.json */,
+				B4F3B22C15292FE0007E4866 /* landscaper.json */,
 				B4F3B1511528D5F8007E4866 /* eightbittheater.json */,
 				B4F3B1521528D5F8007E4866 /* hipsterhitler.json */,
 				B4F3B1531528D5F8007E4866 /* jesusandmo.json */,
@@ -543,6 +582,19 @@
 				B4F3B1561528D5F8007E4866 /* hipsterhitler.json in Resources */,
 				B4F3B1571528D5F8007E4866 /* jesusandmo.json in Resources */,
 				B4F3B1581528D5F8007E4866 /* starslip.json in Resources */,
+				B4F3B22D15292FE0007E4866 /* landscaper.json in Resources */,
+				B4F3B241152931E9007E4866 /* twentyfirstcenturycoeds.json in Resources */,
+				B4F3B24815293358007E4866 /* candi.json in Resources */,
+				B4F3B26015293797007E4866 /* grrlpower.json in Resources */,
+				B4F3B269152939D1007E4866 /* sequentialart.json in Resources */,
+				B4F3B27015293C76007E4866 /* danandmabsfurryadventures.json in Resources */,
+				B4F3B28B152944FE007E4866 /* uptomynipples.json in Resources */,
+				B4F3B295152946C6007E4866 /* spinnerette.json in Resources */,
+				B4F3B2AB152948AB007E4866 /* goblins.json in Resources */,
+				B4F3B2B615294A06007E4866 /* elgoonishshive.json in Resources */,
+				B4F3B2E915294E9E007E4866 /* eeriecuties.json in Resources */,
+				B4F3B2F715295074007E4866 /* zodiac.json in Resources */,
+				B4F3B304152951FE007E4866 /* gunnerkriggcourt.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

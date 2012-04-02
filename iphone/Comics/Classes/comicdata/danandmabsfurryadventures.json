@@ -1,0 +1,10 @@
+{
+    "Name" : "Dan and Mab's Furry Adventures",
+    "StartURL" : "http://www.missmab.com",
+	"ImagePattern" : "SRC=\"[^>]*?Vol(.*?)\"",
+	"TitlePattern" : "SRC=\"[^>]*?Vol.*?<I>([^<]*?)<",
+	"PrevComicPattern" : "HREF=\"[^>]*?Vol([^>]*?)\">[^<]*?<IMG SRC=\"[^>]*?comicprev.gif",
+	"NextComicPattern" : "HREF=\"[^>]*?Vol([^>]*?)\">[^<]*?<IMG SRC=\"[^>]*?comicnext.gif",
+	"BaseComicURL" : "http://www.missmab.com/Comics/Vol",
+    "BasePrevNextURL" : "http://www.missmab.com/Comics/Vol"
+}

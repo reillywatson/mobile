@@ -1,0 +1,8 @@
+{
+    "Name" : "Grrl Power",
+    "StartURL" : "http://www.grrlpowercomic.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "class=\"post-title\">[^>]*?>([^<]*?)<",
+	"PrevComicPattern" : "a href=\"([^>]*?)\"[^>]*?navi-prev",
+	"NextComicPattern" : "a href=\"([^>]*?)\"[^>]*?navi-next"
+}

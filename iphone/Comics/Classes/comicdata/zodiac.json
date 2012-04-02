@@ -1,0 +1,8 @@
+{
+    "Name" : "ZODIAC",
+    "StartURL" : "http://www.webcomicsnation.com/johnmann/zodiac/series.php",
+	"ImagePattern" : "name=\"strip1\">.*?src=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^<]*?<img[^>]*?previous",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^<]*?<img[^>]*?next",
+    "AltTextPattern" : "name=\"strip1\">.*?alt=\"(.*?)\""
+}

@@ -1,0 +1,8 @@
+{
+    "Name" : "Gunnerkrigg Court",
+    "StartURL" : "http://www.gunnerkrigg.com",
+	"ImagePattern" : "rss-content.*?src=\"(.*?)\"",
+	"TitlePattern" : "rss-content.*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^<]*?<img[^>]*?prev",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^<]*?<img[^>]*?next"
+}

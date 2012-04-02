@@ -1,0 +1,8 @@
+{
+    "Name" : "Up to my Nipples",
+    "StartURL" : "http://uptomynipples.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?<h2>(.*?)</h2>",
+	"PrevComicPattern" : "href=\"([^>]*?)\" rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\" rel=\"next\""
+}

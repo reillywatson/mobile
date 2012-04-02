@@ -1,0 +1,8 @@
+{
+    "Name" : "Eerie Cuties",
+    "TitlePattern" : "<title>Eerie Cuties :: (.*?)</title>",
+    "StartURL" : "http://www.eeriecuties.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"PrevComicPattern" : "prevt\" href=\"([^>]*?)\"",
+	"NextComicPattern" : "nextt\" href=\"([^>]*?)\""
+}

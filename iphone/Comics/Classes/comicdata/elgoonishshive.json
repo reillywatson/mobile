@@ -1,0 +1,10 @@
+{
+    "Name" : "El Goonish Shive",
+    "StartURL" : "http://egscomics.com",
+	"ImagePattern" : "class='comic'.*?src='(.*?)'",
+	"TitlePattern" : "class='comic'.*?title='Comic for (.*?)'",
+	"PrevComicPattern" : "a href='([^>]*?)'[^>]*?arrow_prev_h",
+	"NextComicPattern" : "a href='([^>]*?)'[^>]*?arrow_next_h",
+	"BaseComicURL" : "http://egscomics.com/",
+    "BasePrevNextURL" : "http://egscomics.com/"
+}
