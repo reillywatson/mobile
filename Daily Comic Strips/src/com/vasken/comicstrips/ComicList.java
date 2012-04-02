@@ -306,7 +306,6 @@ public class ComicList {
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Yenny", "http://www.gocomics.com/yenny"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Zack Hill", "http://www.gocomics.com/zackhill"));
 		comics.add(new ComicInfo(context, R.raw.gocomics, "Ziggy", "http://www.gocomics.com/ziggy"));
-		
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Apartment 3-G", "http://www.chron.com/apps/comics/buildcp.mpl?c=100&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Between Friends", "http://www.chron.com/apps/comics/buildcp.mpl?c=143&page=1&cpp=1&v=3.0&quality=high"));
 		comics.add(new ComicInfo(context, R.raw.houstonchronicle, "Crock", "http://www.chron.com/apps/comics/buildcp.mpl?c=106&page=1&cpp=1&v=3.0&quality=high"));

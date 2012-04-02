@@ -1,0 +1,8 @@
+{
+    "Name" : "8-Bit Theater",
+    "StartURL" : "http://www.nuklearpower.com/8-bit-theater/",
+	"ImagePattern" : "<div id=\"comic\">[^<]*?<img[^>]*?src=\"(.*?)\"",
+	"TitlePattern" : "<div id=\"comic\">[^<]*?<img[^>]*?title=\"(.*?)\"",
+	"PrevComicPattern" : "<div class=\"navbar-previous\"><a href=\"([^>]*?)\"",
+	"NextComicPattern" : "<div class=\"navbar-next\"><a href=\"([^>]*?)\""
+}

@@ -89,6 +89,10 @@
 		B47B38CF11A1277600D120FB /* xkcd.json in Resources */ = {isa = PBXBuildFile; fileRef = B47B38CD11A1277600D120FB /* xkcd.json */; };
 		B4C1ED9911ED819500595119 /* iconipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C1ED9811ED819500595119 /* iconipad.png */; };
 		B4E7682012015BDE0009BD3F /* alessonislearned.json in Resources */ = {isa = PBXBuildFile; fileRef = B4E7681F12015BDE0009BD3F /* alessonislearned.json */; };
+		B4F3B1551528D5F8007E4866 /* eightbittheater.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1511528D5F8007E4866 /* eightbittheater.json */; };
+		B4F3B1561528D5F8007E4866 /* hipsterhitler.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1521528D5F8007E4866 /* hipsterhitler.json */; };
+		B4F3B1571528D5F8007E4866 /* jesusandmo.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1531528D5F8007E4866 /* jesusandmo.json */; };
+		B4F3B1581528D5F8007E4866 /* starslip.json in Resources */ = {isa = PBXBuildFile; fileRef = B4F3B1541528D5F8007E4866 /* starslip.json */; };
 		B4F95B3511A319F9003A56F4 /* iconsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F95B3411A319F9003A56F4 /* iconsmall.png */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +216,10 @@
 		B47B38CD11A1277600D120FB /* xkcd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xkcd.json; sourceTree = "<group>"; };
 		B4C1ED9811ED819500595119 /* iconipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconipad.png; sourceTree = "<group>"; };
 		B4E7681F12015BDE0009BD3F /* alessonislearned.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alessonislearned.json; sourceTree = "<group>"; };
+		B4F3B1511528D5F8007E4866 /* eightbittheater.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eightbittheater.json; sourceTree = "<group>"; };
+		B4F3B1521528D5F8007E4866 /* hipsterhitler.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hipsterhitler.json; sourceTree = "<group>"; };
+		B4F3B1531528D5F8007E4866 /* jesusandmo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jesusandmo.json; sourceTree = "<group>"; };
+		B4F3B1541528D5F8007E4866 /* starslip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = starslip.json; sourceTree = "<group>"; };
 		B4F95B3411A319F9003A56F4 /* iconsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsmall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -365,6 +373,10 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B4F3B1511528D5F8007E4866 /* eightbittheater.json */,
+				B4F3B1521528D5F8007E4866 /* hipsterhitler.json */,
+				B4F3B1531528D5F8007E4866 /* jesusandmo.json */,
+				B4F3B1541528D5F8007E4866 /* starslip.json */,
 				B426CA3E1232C277008B2764 /* moe.json */,
 				B426CA2E1232213A008B2764 /* harkavagrant.json */,
 				B426CA2A12321F57008B2764 /* kinokofry.json */,
@@ -527,6 +539,10 @@
 				B426CA2B12321F57008B2764 /* kinokofry.json in Resources */,
 				B426CA2F1232213A008B2764 /* harkavagrant.json in Resources */,
 				B426CA3F1232C277008B2764 /* moe.json in Resources */,
+				B4F3B1551528D5F8007E4866 /* eightbittheater.json in Resources */,
+				B4F3B1561528D5F8007E4866 /* hipsterhitler.json in Resources */,
+				B4F3B1571528D5F8007E4866 /* jesusandmo.json in Resources */,
+				B4F3B1581528D5F8007E4866 /* starslip.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

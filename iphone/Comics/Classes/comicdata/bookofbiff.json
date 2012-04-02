@@ -1,8 +1,8 @@
 {
     "Name" : "The Book of Biff",
     "StartURL" : "http://www.thebookofbiff.com/",
-	"ImagePattern" : "<div.id=\"comic\">[^<]*?<img.src=\"(.*?)\"",
-	"TitlePattern" : "<div.id=\"comic\">[^<]*?<img.*?alt=\"(.*?)\"",
-	"PrevComicPattern" : "<a.href=\"([^>]*?)\" rel=\"prev\"",
-	"NextComicPattern" : "a.href=\"([^>]*?)\" rel=\"next\""
+	"ImagePattern" : "<div.id=\"comic\">.*?<img.src=\"(.*?)\"",
+	"TitlePattern" : "<div.id=\"comic\">.*?<img.*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "<a.href=\"([^>]*?)\"[^>]*?navi-prev",
+	"NextComicPattern" : "a.href=\"([^>]*?)\"[^<]*?navi-next"
 }

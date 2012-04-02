@@ -3,5 +3,6 @@
 	"TitlePattern" : "<b class=\"current\">([^<]*?)</b>",
 	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"prev\"",
 	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"next\"",
-    "BasePrevNextURL" : "http://www.arcamax.com"
+    "BasePrevNextURL" : "http://www.arcamax.com",
+    "BaseComicURL" : "http://www.arcamax.com"
 }

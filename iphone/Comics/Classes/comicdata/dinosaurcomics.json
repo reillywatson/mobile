@@ -5,6 +5,6 @@
 	"TitlePattern" : "<title>Dinosaur Comics - (.*?) - awesome fun times!</title>",
 	"PrevComicPattern" : "<a[^>]*?rel=\"prev\" href=\"([^>]*?)\"",
 	"NextComicPattern" : "<a[^>]*?rel=\"next\" href=\"([^>]*?)\"",
-    "AltTextPattern" : "<div id=\"comic\">.*?<img src=\".*?\" class=\"comic\" title=\"(.*?)\"",
+    "AltTextPattern" : "<img src=\".*?\" class=\"comic\" title=\"(.*?)\"",
     "RandomComicPattern" : "trex-omg.gif\".*?<a href=\"(.*?)\""
 }

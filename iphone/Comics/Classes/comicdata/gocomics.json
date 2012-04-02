@@ -1,7 +1,7 @@
-{    
-	"ImagePattern" : "<link rel=\"image_src\" href=\"([^>]*?)\"",
-	"TitlePattern" : "<span class=\"authorText\">.*?</strong>(.*?)</span>",
-	"PrevComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\"><< Previous</a>",
-	"NextComicPattern" : "<span class=\"archiveText\">.*?<a href=\"([^>]*?)\">Next >></a>",
+{
+	"ImagePattern" : "<img[^>]*?class=\"strip\"[^>]*?src=\"([^>]*?)\"",
+	"TitlePattern" : "<ul class=\"feature-nav\">[^<]*?<li>([^<]*?)</li>",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" class=\"prev\">[^<]*?Previous",
+	"NextComicPattern" : "<a href=\"([^>]*?)\" class=\"next\">[^<]*?Next",
 	"BasePrevNextURL" : "http://www.gocomics.com"
 }

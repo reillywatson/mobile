@@ -33,7 +33,13 @@
 	NSArray *components = [str captureComponentsMatchedByRegex:p options:RKLDotAll range:NSMakeRange(0, [str length]) error:nil];
 	if ([components count] > 1) {
 		NSString *imageURL = [[components objectAtIndex:1] stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-		comic->image = [[baseComicURL stringByAppendingString:imageURL] retain];
+		if ([imageURL hasPrefix:@"http"]) {
+			comic->image = [imageURL retain];
+		}
+		else {
+			comic->image = [[baseComicURL stringByAppendingString:imageURL] retain];
+		}
+		
 		NSLog(@"COMIC URL: %@", comic->image);
 	}
 	else {
@@ -49,7 +55,12 @@
 	if ([components count] > 1) {
 		NSString *prev = [components objectAtIndex:1];
 		if (![prev isEqual:@"#"] && ![prev isEqual:@"/"] && ![prev isEqual:url] && [prev length] > 0) {
-			comic->prevUrl = [[[self basePrevNextURL] stringByAppendingString:prev] retain];
+			if ([prev hasPrefix:@"http"]) {
+				comic->prevUrl = [prev retain];
+			}
+			else {
+				comic->prevUrl = [[[self basePrevNextURL] stringByAppendingString:prev] retain];
+			}
 			NSLog(@"PREV URL: %@", comic->prevUrl);
 		}
 	}
@@ -63,7 +74,12 @@
 	if ([components count] > 1) {
 		NSString *next = [components objectAtIndex:1];
 		if (![next isEqual:@"#"] && ![next isEqual:@"/"] && ![next isEqual:url] && [next length] > 0) {
-			comic->nextUrl = [[[self basePrevNextURL] stringByAppendingString:next] retain];
+			if ([next hasPrefix:@"http"]) {
+				comic->nextUrl = [next retain];
+			}
+			else {
+				comic->nextUrl = [[[self basePrevNextURL] stringByAppendingString:next] retain];
+			}
 			NSLog(@"NEXT URL: %@", comic->nextUrl);
 		}
 	}

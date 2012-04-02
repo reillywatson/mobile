@@ -1,10 +1,10 @@
 {
     "Name" : "The Perry Bible Fellowship",
-    "StartURL" : "http://pbfcomics.com/?cid=PBF247-Catch_Phrase.jpg",
-	"ImagePattern" : "<img id=\"topimg\" src=\"(.*?)\"",
+    "StartURL" : "http://pbfcomics.com/250",
+	"ImagePattern" : "id=\"topimg\".*?src=\"(.*?)\"",
 	"TitlePattern" : "<center>.*?<span class=\"main\">.*?<b>([^<]*?)<",
-	"PrevComicPattern" : "<A id=older href=\"([^>]*?)\">Older</A>",
-	"NextComicPattern" : "<A id=older href=\"([^>]*?)\">Newer</A>",
-	"BaseComicURL" : "http://pbfcomics.com/",
-    "BasePrevNextURL" : "http://pbfcomics.com/"
+	"PrevComicPattern" : "id=\"older\" href=\"([^>]*?)\">Older",
+	"NextComicPattern" : "id=\"older\" href=\"([^>]*?)\">Newer",
+	"BaseComicURL" : "http://pbfcomics.com",
+    "BasePrevNextURL" : "http://pbfcomics.com"
 }

@@ -1,9 +1,8 @@
 {
     "Name" : "Penny Arcade",
     "StartURL" : "http://www.penny-arcade.com/comic/",
-	"ImagePattern" : "<div class=\"body\">.*?<img src=\"(.*?)\"",
-	"TitlePattern" : "<div class=\"body\">.*?<img src=\".*?\" alt=\"(.*?)\"",
-	"PrevComicPattern" : "<li class=\"float_left back\"><a href=\"(.*?)\">",
-	"NextComicPattern" : "<li class=\"float_left next\"><a href=\"(.*?)\">",
-    "BasePrevNextURL" : "http://www.penny-arcade.com"
+	"ImagePattern" : "<div class=\"post comic\">.*?<img src=\"(.*?)\"",
+	"TitlePattern" : "<div class=\"post comic\">.*?<img.*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "class=\"btnPrev.*?href=\"(.*?)\"",
+	"NextComicPattern" : "class=\"btnNext.*?href=\"(.*?)\""
 }

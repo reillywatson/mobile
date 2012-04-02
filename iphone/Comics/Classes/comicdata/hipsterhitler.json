@@ -1,0 +1,7 @@
+{
+    "Name" : "Hipster Hitler",
+    "StartURL" : "http://hipsterhitler.com/",
+	"ImagePattern" : "<span class=\"webcomic-object[^>]*?>[^<]*?<img src=\"(.*?)\"",
+	"PrevComicPattern" : "<a href=\"([^>]*?)\" rel=\"previous\"",
+	"NextComicPattern" : "a href=\"([^>]*?)\" rel=\"next\""
+}
