@@ -53,6 +53,10 @@
 		B423336C152BF36F006A0172 /* menagea3.json in Resources */ = {isa = PBXBuildFile; fileRef = B423336B152BF36F006A0172 /* menagea3.json */; };
 		B423337B152BF4A5006A0172 /* twilightlady.json in Resources */ = {isa = PBXBuildFile; fileRef = B423337A152BF4A5006A0172 /* twilightlady.json */; };
 		B4233380152BF5C7006A0172 /* archipelago.json in Resources */ = {isa = PBXBuildFile; fileRef = B423337F152BF5C7006A0172 /* archipelago.json */; };
+		B4233387152BFD12006A0172 /* thebeastlegion.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233386152BFD12006A0172 /* thebeastlegion.json */; };
+		B423338C152BFD98006A0172 /* wapsisquare.json in Resources */ = {isa = PBXBuildFile; fileRef = B423338B152BFD98006A0172 /* wapsisquare.json */; };
+		B4233391152BFE4E006A0172 /* sandraandwoo.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233390152BFE4E006A0172 /* sandraandwoo.json */; };
+		B4233396152BFFD2006A0172 /* supernormalstep.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233395152BFFD2006A0172 /* supernormalstep.json */; };
 		B426CA2B12321F57008B2764 /* kinokofry.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2A12321F57008B2764 /* kinokofry.json */; };
 		B426CA2F1232213A008B2764 /* harkavagrant.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2E1232213A008B2764 /* harkavagrant.json */; };
 		B426CA3F1232C277008B2764 /* moe.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA3E1232C277008B2764 /* moe.json */; };
@@ -209,6 +213,10 @@
 		B423336B152BF36F006A0172 /* menagea3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menagea3.json; sourceTree = "<group>"; };
 		B423337A152BF4A5006A0172 /* twilightlady.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twilightlady.json; sourceTree = "<group>"; };
 		B423337F152BF5C7006A0172 /* archipelago.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = archipelago.json; sourceTree = "<group>"; };
+		B4233386152BFD12006A0172 /* thebeastlegion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thebeastlegion.json; sourceTree = "<group>"; };
+		B423338B152BFD98006A0172 /* wapsisquare.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wapsisquare.json; sourceTree = "<group>"; };
+		B4233390152BFE4E006A0172 /* sandraandwoo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sandraandwoo.json; sourceTree = "<group>"; };
+		B4233395152BFFD2006A0172 /* supernormalstep.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = supernormalstep.json; sourceTree = "<group>"; };
 		B426CA2A12321F57008B2764 /* kinokofry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kinokofry.json; sourceTree = "<group>"; };
 		B426CA2E1232213A008B2764 /* harkavagrant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = harkavagrant.json; sourceTree = "<group>"; };
 		B426CA3E1232C277008B2764 /* moe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moe.json; sourceTree = "<group>"; };
@@ -453,6 +461,10 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B4233395152BFFD2006A0172 /* supernormalstep.json */,
+				B4233390152BFE4E006A0172 /* sandraandwoo.json */,
+				B423338B152BFD98006A0172 /* wapsisquare.json */,
+				B4233386152BFD12006A0172 /* thebeastlegion.json */,
 				B423337F152BF5C7006A0172 /* archipelago.json */,
 				B423337A152BF4A5006A0172 /* twilightlady.json */,
 				B423336B152BF36F006A0172 /* menagea3.json */,
@@ -703,6 +715,10 @@
 				B423336C152BF36F006A0172 /* menagea3.json in Resources */,
 				B423337B152BF4A5006A0172 /* twilightlady.json in Resources */,
 				B4233380152BF5C7006A0172 /* archipelago.json in Resources */,
+				B4233387152BFD12006A0172 /* thebeastlegion.json in Resources */,
+				B423338C152BFD98006A0172 /* wapsisquare.json in Resources */,
+				B4233391152BFE4E006A0172 /* sandraandwoo.json in Resources */,
+				B4233396152BFFD2006A0172 /* supernormalstep.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

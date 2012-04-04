@@ -1,0 +1,9 @@
+{
+    "Name" : "Wapsi Square",
+    "StartURL" : "http://wapsisquare.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-prev",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-next",
+    "RandomLink" : "http://wapsisquare.com/?randomcomic&nocache=1"
+}

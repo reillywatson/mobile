@@ -1,0 +1,8 @@
+{
+    "Name" : "The Beast Legion",
+    "StartURL" : "http://www.thebeastlegion.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?alt=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-prev",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-next"
+}

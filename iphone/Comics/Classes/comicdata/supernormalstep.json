@@ -1,0 +1,10 @@
+{
+    "Name" : "Supernormal Step",
+    "StartURL" : "http://www.supernormalstep.com/",
+	"ImagePattern" : "id=\"index_r5_c1\".*?src=\"(.*?)\"",
+	"TitlePattern" : "<title>Supernormal Step - (.*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\">[^>]*?prev.gif",
+	"NextComicPattern" : "href=\"([^>]*?)\">[^>]*?next.gif",
+	"BaseComicURL" : "http://www.supernormalstep.com/",
+    "BasePrevNextURL" : "http://www.supernormalstep.com/"
+}
