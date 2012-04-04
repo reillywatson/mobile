@@ -1,0 +1,10 @@
+{
+    "Name" : "Devilbear: The Grimoires of Bearalzebub",
+    "StartURL" : "http://www.thedevilbear.com/",
+	"ImagePattern" : "id=\"cg_img\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"cg_img\">[^<]*?<a href=\"\\?p=(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?id=\"cg_back\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?id=\"cg_next\"",
+	"BaseComicURL" : "http://www.thedevilbear.com/",
+    "BasePrevNextURL" : "http://www.thedevilbear.com/"
+}

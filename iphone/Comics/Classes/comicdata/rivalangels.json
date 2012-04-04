@@ -1,0 +1,9 @@
+{
+    "Name" : "Rival Angels",
+    "StartURL" : "http://www.rivalangels.com/",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-prev",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-next",
+	"RandomLink" : "http://www.rivalangels.com/?randomcomic"
+}

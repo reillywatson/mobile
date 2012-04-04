@@ -1,0 +1,10 @@
+{
+    "Name" : "Not a Villain",
+    "StartURL" : "http://navcomic.com",
+	"ImagePattern" : "webcomic-object-full.*?src=\"(.*?)\"",
+	"TitlePattern" : "webcomic-object-full.*?alt=\"'Not A Villain' Webcomic - (.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"previous\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"next\"",
+    "AltTextPattern" : "webcomic-object-full.*?title=\"(.*?)\"",
+	"RandomComicPattern" : "href=\"([^>]*?)\"[^>]rel=\"random\""
+}

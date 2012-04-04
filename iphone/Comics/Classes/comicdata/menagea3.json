@@ -1,0 +1,8 @@
+{
+    "Name" : "Ménage à 3",
+    "StartURL" : "http://www.menagea3.net/",
+	"ImagePattern" : "id=\"cc\".*?src=\"(.*?)\"",
+	"TitlePattern" : "<title>M&eacute;nage &agrave; 3 :: (.*?)<",
+	"PrevComicPattern" : "id=\"cn.prev\"[^>]*?href=\"([^>]*?)\"",
+	"NextComicPattern" : "id=\"cn.next\"[^>]*?href=\"([^>]*?)\""
+}

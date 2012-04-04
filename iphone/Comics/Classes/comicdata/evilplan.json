@@ -1,0 +1,7 @@
+{
+    "Name" : "Evil Plan",
+    "StartURL" : "http://evilplan.thewebcomic.com",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?id=\"comic_image\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?>[^<]*?<[^>]*?Previousbutton.jpg\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?>[^<]*?<[^>]*?Nextbutton.jpg\""
+}

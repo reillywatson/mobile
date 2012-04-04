@@ -1,0 +1,8 @@
+{
+    "Name" : "Ballerina Mafia",
+    "StartURL" : "http://www.ballerinamafia.net",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?alt=\"Comic goes here.\"",
+	"TitlePattern" : "id=\"comictitle\">([^<]*?)&bull;",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?class=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?class=\"next\""
+}

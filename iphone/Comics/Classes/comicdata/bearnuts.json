@@ -1,0 +1,8 @@
+{
+    "Name" : "Bear Nuts",
+    "StartURL" : "http://www.bearnutscomic.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^<]*?<span class=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^<]*?<span class=\"next\""
+}

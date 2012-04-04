@@ -1,0 +1,8 @@
+{
+    "Name" : "Romantically Apocalyptic",
+    "StartURL" : "http://romanticallyapocalyptic.com/",
+	"ImagePattern" : "\"field-content\".*?src=\"(.*?)\"",
+	"TitlePattern" : "\"field-content\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?accesskey=\"p\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?accesskey=\"n\""
+}

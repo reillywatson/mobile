@@ -1,0 +1,8 @@
+{
+    "Name" : "Twilight Lady",
+    "StartURL" : "http://www.twilightlady.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-prev-in",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-next"
+}

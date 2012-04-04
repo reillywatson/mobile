@@ -1,0 +1,8 @@
+{
+    "Name" : "Dreamscar",
+    "StartURL" : "http://www.dream-scar.net",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?id=\"comic\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?id=\"page_nav_previous\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?id=\"page_nav_next\"",
+    "BasePrevNextURL" : "http://www.dream-scar.net/"
+}

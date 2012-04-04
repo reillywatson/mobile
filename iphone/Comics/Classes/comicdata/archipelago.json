@@ -1,0 +1,8 @@
+{
+    "Name" : "Archipelago",
+    "StartURL" : "http://archipelagocomic.com/comic/",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?id=\"comicimg\"",
+	"TitlePattern" : "<title>Archipelago - (.*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?>Prev",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?>Next"
+}

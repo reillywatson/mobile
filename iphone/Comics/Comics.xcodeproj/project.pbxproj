@@ -26,6 +26,33 @@
 		B4103EFD11A0D4D700212656 /* DownloaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4103EFC11A0D4D700212656 /* DownloaderFactory.m */; };
 		B4121F4511C1584F00798FFD /* SubscriptionVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */; };
 		B41E540D11ABA0ED00F5D6D5 /* UIWebView+Images.m in Sources */ = {isa = PBXBuildFile; fileRef = B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */; };
+		B42332A4152BD3E2006A0172 /* slightlydamned.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332A3152BD3E2006A0172 /* slightlydamned.json */; };
+		B42332B3152BD50A006A0172 /* notavillain.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332B2152BD50A006A0172 /* notavillain.json */; };
+		B42332C4152BD81F006A0172 /* twokinds.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332C3152BD81F006A0172 /* twokinds.json */; };
+		B42332D6152BD9D6006A0172 /* weshadows.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332D5152BD9D6006A0172 /* weshadows.json */; };
+		B42332DD152BDAE1006A0172 /* thedreamlandchronicles.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332DC152BDAE1006A0172 /* thedreamlandchronicles.json */; };
+		B42332E2152BDB32006A0172 /* bearnuts.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332E1152BDB32006A0172 /* bearnuts.json */; };
+		B42332EB152BDC7E006A0172 /* shadowbinders.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332EA152BDC7E006A0172 /* shadowbinders.json */; };
+		B42332F0152BDE1E006A0172 /* precocious.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332EF152BDE1E006A0172 /* precocious.json */; };
+		B42332FD152BDFED006A0172 /* gaia.json in Resources */ = {isa = PBXBuildFile; fileRef = B42332FC152BDFED006A0172 /* gaia.json */; };
+		B4233302152BE139006A0172 /* theothergreymeat.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233301152BE139006A0172 /* theothergreymeat.json */; };
+		B4233307152BE280006A0172 /* ballerinamafia.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233306152BE280006A0172 /* ballerinamafia.json */; };
+		B4233310152BE3EC006A0172 /* dreamscar.json in Resources */ = {isa = PBXBuildFile; fileRef = B423330F152BE3EC006A0172 /* dreamscar.json */; };
+		B423331C152BE4EB006A0172 /* exiern.json in Resources */ = {isa = PBXBuildFile; fileRef = B423331B152BE4EB006A0172 /* exiern.json */; };
+		B4233326152BE7B3006A0172 /* evildiva.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233325152BE7B3006A0172 /* evildiva.json */; };
+		B423332D152BE85E006A0172 /* bluemilkspecial.json in Resources */ = {isa = PBXBuildFile; fileRef = B423332C152BE85E006A0172 /* bluemilkspecial.json */; };
+		B4233332152BE918006A0172 /* thechallengesofzona.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233331152BE918006A0172 /* thechallengesofzona.json */; };
+		B4233337152BE992006A0172 /* amya.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233336152BE992006A0172 /* amya.json */; };
+		B423333C152BEA8E006A0172 /* evilplan.json in Resources */ = {isa = PBXBuildFile; fileRef = B423333B152BEA8E006A0172 /* evilplan.json */; };
+		B4233341152BECCB006A0172 /* romanticallyapocalyptic.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233340152BECCB006A0172 /* romanticallyapocalyptic.json */; };
+		B4233348152BED81006A0172 /* magellan.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233347152BED81006A0172 /* magellan.json */; };
+		B423334D152BEE0B006A0172 /* mylifewithfel.json in Resources */ = {isa = PBXBuildFile; fileRef = B423334C152BEE0B006A0172 /* mylifewithfel.json */; };
+		B4233352152BEF29006A0172 /* puck.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233351152BEF29006A0172 /* puck.json */; };
+		B423335A152BF007006A0172 /* devilbear.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233359152BF007006A0172 /* devilbear.json */; };
+		B4233367152BF1B5006A0172 /* rivalangels.json in Resources */ = {isa = PBXBuildFile; fileRef = B4233366152BF1B5006A0172 /* rivalangels.json */; };
+		B423336C152BF36F006A0172 /* menagea3.json in Resources */ = {isa = PBXBuildFile; fileRef = B423336B152BF36F006A0172 /* menagea3.json */; };
+		B423337B152BF4A5006A0172 /* twilightlady.json in Resources */ = {isa = PBXBuildFile; fileRef = B423337A152BF4A5006A0172 /* twilightlady.json */; };
+		B4233380152BF5C7006A0172 /* archipelago.json in Resources */ = {isa = PBXBuildFile; fileRef = B423337F152BF5C7006A0172 /* archipelago.json */; };
 		B426CA2B12321F57008B2764 /* kinokofry.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2A12321F57008B2764 /* kinokofry.json */; };
 		B426CA2F1232213A008B2764 /* harkavagrant.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA2E1232213A008B2764 /* harkavagrant.json */; };
 		B426CA3F1232C277008B2764 /* moe.json in Resources */ = {isa = PBXBuildFile; fileRef = B426CA3E1232C277008B2764 /* moe.json */; };
@@ -155,6 +182,33 @@
 		B4121F4411C1584F00798FFD /* SubscriptionVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionVisitor.m; sourceTree = "<group>"; };
 		B41E540B11ABA0ED00F5D6D5 /* UIWebView+Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Images.h"; sourceTree = "<group>"; };
 		B41E540C11ABA0ED00F5D6D5 /* UIWebView+Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Images.m"; sourceTree = "<group>"; };
+		B42332A3152BD3E2006A0172 /* slightlydamned.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = slightlydamned.json; sourceTree = "<group>"; };
+		B42332B2152BD50A006A0172 /* notavillain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notavillain.json; sourceTree = "<group>"; };
+		B42332C3152BD81F006A0172 /* twokinds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twokinds.json; sourceTree = "<group>"; };
+		B42332D5152BD9D6006A0172 /* weshadows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weshadows.json; sourceTree = "<group>"; };
+		B42332DC152BDAE1006A0172 /* thedreamlandchronicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thedreamlandchronicles.json; sourceTree = "<group>"; };
+		B42332E1152BDB32006A0172 /* bearnuts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bearnuts.json; sourceTree = "<group>"; };
+		B42332EA152BDC7E006A0172 /* shadowbinders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shadowbinders.json; sourceTree = "<group>"; };
+		B42332EF152BDE1E006A0172 /* precocious.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = precocious.json; sourceTree = "<group>"; };
+		B42332FC152BDFED006A0172 /* gaia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gaia.json; sourceTree = "<group>"; };
+		B4233301152BE139006A0172 /* theothergreymeat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = theothergreymeat.json; sourceTree = "<group>"; };
+		B4233306152BE280006A0172 /* ballerinamafia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ballerinamafia.json; sourceTree = "<group>"; };
+		B423330F152BE3EC006A0172 /* dreamscar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dreamscar.json; sourceTree = "<group>"; };
+		B423331B152BE4EB006A0172 /* exiern.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exiern.json; sourceTree = "<group>"; };
+		B4233325152BE7B3006A0172 /* evildiva.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = evildiva.json; sourceTree = "<group>"; };
+		B423332C152BE85E006A0172 /* bluemilkspecial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bluemilkspecial.json; sourceTree = "<group>"; };
+		B4233331152BE918006A0172 /* thechallengesofzona.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thechallengesofzona.json; sourceTree = "<group>"; };
+		B4233336152BE992006A0172 /* amya.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = amya.json; sourceTree = "<group>"; };
+		B423333B152BEA8E006A0172 /* evilplan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = evilplan.json; sourceTree = "<group>"; };
+		B4233340152BECCB006A0172 /* romanticallyapocalyptic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = romanticallyapocalyptic.json; sourceTree = "<group>"; };
+		B4233347152BED81006A0172 /* magellan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magellan.json; sourceTree = "<group>"; };
+		B423334C152BEE0B006A0172 /* mylifewithfel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mylifewithfel.json; sourceTree = "<group>"; };
+		B4233351152BEF29006A0172 /* puck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = puck.json; sourceTree = "<group>"; };
+		B4233359152BF007006A0172 /* devilbear.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = devilbear.json; sourceTree = "<group>"; };
+		B4233366152BF1B5006A0172 /* rivalangels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rivalangels.json; sourceTree = "<group>"; };
+		B423336B152BF36F006A0172 /* menagea3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menagea3.json; sourceTree = "<group>"; };
+		B423337A152BF4A5006A0172 /* twilightlady.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twilightlady.json; sourceTree = "<group>"; };
+		B423337F152BF5C7006A0172 /* archipelago.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = archipelago.json; sourceTree = "<group>"; };
 		B426CA2A12321F57008B2764 /* kinokofry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kinokofry.json; sourceTree = "<group>"; };
 		B426CA2E1232213A008B2764 /* harkavagrant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = harkavagrant.json; sourceTree = "<group>"; };
 		B426CA3E1232C277008B2764 /* moe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moe.json; sourceTree = "<group>"; };
@@ -399,6 +453,33 @@
 		B47B38CB11A1277600D120FB /* comicdata */ = {
 			isa = PBXGroup;
 			children = (
+				B423337F152BF5C7006A0172 /* archipelago.json */,
+				B423337A152BF4A5006A0172 /* twilightlady.json */,
+				B423336B152BF36F006A0172 /* menagea3.json */,
+				B4233366152BF1B5006A0172 /* rivalangels.json */,
+				B4233359152BF007006A0172 /* devilbear.json */,
+				B4233351152BEF29006A0172 /* puck.json */,
+				B423334C152BEE0B006A0172 /* mylifewithfel.json */,
+				B4233347152BED81006A0172 /* magellan.json */,
+				B4233340152BECCB006A0172 /* romanticallyapocalyptic.json */,
+				B423333B152BEA8E006A0172 /* evilplan.json */,
+				B4233336152BE992006A0172 /* amya.json */,
+				B4233331152BE918006A0172 /* thechallengesofzona.json */,
+				B423332C152BE85E006A0172 /* bluemilkspecial.json */,
+				B4233325152BE7B3006A0172 /* evildiva.json */,
+				B423331B152BE4EB006A0172 /* exiern.json */,
+				B423330F152BE3EC006A0172 /* dreamscar.json */,
+				B4233306152BE280006A0172 /* ballerinamafia.json */,
+				B4233301152BE139006A0172 /* theothergreymeat.json */,
+				B42332FC152BDFED006A0172 /* gaia.json */,
+				B42332EF152BDE1E006A0172 /* precocious.json */,
+				B42332EA152BDC7E006A0172 /* shadowbinders.json */,
+				B42332E1152BDB32006A0172 /* bearnuts.json */,
+				B42332DC152BDAE1006A0172 /* thedreamlandchronicles.json */,
+				B42332D5152BD9D6006A0172 /* weshadows.json */,
+				B42332C3152BD81F006A0172 /* twokinds.json */,
+				B42332B2152BD50A006A0172 /* notavillain.json */,
+				B42332A3152BD3E2006A0172 /* slightlydamned.json */,
 				B4F3B303152951FE007E4866 /* gunnerkriggcourt.json */,
 				B4F3B2F615295074007E4866 /* zodiac.json */,
 				B4F3B2E815294E9E007E4866 /* eeriecuties.json */,
@@ -595,6 +676,33 @@
 				B4F3B2E915294E9E007E4866 /* eeriecuties.json in Resources */,
 				B4F3B2F715295074007E4866 /* zodiac.json in Resources */,
 				B4F3B304152951FE007E4866 /* gunnerkriggcourt.json in Resources */,
+				B42332A4152BD3E2006A0172 /* slightlydamned.json in Resources */,
+				B42332B3152BD50A006A0172 /* notavillain.json in Resources */,
+				B42332C4152BD81F006A0172 /* twokinds.json in Resources */,
+				B42332D6152BD9D6006A0172 /* weshadows.json in Resources */,
+				B42332DD152BDAE1006A0172 /* thedreamlandchronicles.json in Resources */,
+				B42332E2152BDB32006A0172 /* bearnuts.json in Resources */,
+				B42332EB152BDC7E006A0172 /* shadowbinders.json in Resources */,
+				B42332F0152BDE1E006A0172 /* precocious.json in Resources */,
+				B42332FD152BDFED006A0172 /* gaia.json in Resources */,
+				B4233302152BE139006A0172 /* theothergreymeat.json in Resources */,
+				B4233307152BE280006A0172 /* ballerinamafia.json in Resources */,
+				B4233310152BE3EC006A0172 /* dreamscar.json in Resources */,
+				B423331C152BE4EB006A0172 /* exiern.json in Resources */,
+				B4233326152BE7B3006A0172 /* evildiva.json in Resources */,
+				B423332D152BE85E006A0172 /* bluemilkspecial.json in Resources */,
+				B4233332152BE918006A0172 /* thechallengesofzona.json in Resources */,
+				B4233337152BE992006A0172 /* amya.json in Resources */,
+				B423333C152BEA8E006A0172 /* evilplan.json in Resources */,
+				B4233341152BECCB006A0172 /* romanticallyapocalyptic.json in Resources */,
+				B4233348152BED81006A0172 /* magellan.json in Resources */,
+				B423334D152BEE0B006A0172 /* mylifewithfel.json in Resources */,
+				B4233352152BEF29006A0172 /* puck.json in Resources */,
+				B423335A152BF007006A0172 /* devilbear.json in Resources */,
+				B4233367152BF1B5006A0172 /* rivalangels.json in Resources */,
+				B423336C152BF36F006A0172 /* menagea3.json in Resources */,
+				B423337B152BF4A5006A0172 /* twilightlady.json in Resources */,
+				B4233380152BF5C7006A0172 /* archipelago.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,8 @@
+{
+    "Name" : "Amya",
+    "StartURL" : "http://www.amyachronicles.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?navi-next\""
+}

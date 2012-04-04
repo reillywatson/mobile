@@ -1,0 +1,11 @@
+{
+    "Name" : "Precocious",
+    "StartURL" : "http://www.precociouscomic.com",
+	"ImagePattern" : "class=\"comicContent.*?src=\"(.*?)\"",
+	"TitlePattern" : "class=\"title[^\"]*?\">(.*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\">[^<]*?<IMG src=[^>]*?back_arrow.png",
+	"NextComicPattern" : "href=\"([^>]*?)\">[^<]*?<IMG src=[^>]*?next_arrow.png",
+    "AltTextPattern" : "class=\"comicContent.*?title=\"(.*?)\"",
+	"BaseComicURL" : "http://www.precociouscomic.com",
+    "BasePrevNextURL" : "http://www.precociouscomic.com"
+}

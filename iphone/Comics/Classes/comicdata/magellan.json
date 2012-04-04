@@ -1,0 +1,8 @@
+{
+    "Name" : "Magellan",
+    "StartURL" : "http://magellanverse.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"next\""
+}

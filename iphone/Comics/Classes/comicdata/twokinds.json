@@ -1,0 +1,8 @@
+{
+    "Name" : "Two Kinds",
+    "StartURL" : "http://twokinds.keenspot.com/archive.php",
+	"ImagePattern" : "class=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "class='date'[^<]*?Comic for (.*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"next\""
+}

@@ -1,0 +1,7 @@
+{
+    "Name" : "We Shadows",
+    "StartURL" : "http://weshadows.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"next\""
+}

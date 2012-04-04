@@ -1,12 +1,12 @@
 {
-    "Name" : ,
-    "StartURL" : ,
-	"ImagePattern" : ,
-	"TitlePattern" : ,
-	"PrevComicPattern" : ,
-	"NextComicPattern" : ,
-    "AltTextPattern" : ,
-	"BaseComicURL" : ,
-    "BasePrevNextURL" : ,
-	"RandomLink" : 
+    "Name" : "",
+    "StartURL" : "",
+	"ImagePattern" : "",
+	"TitlePattern" : "",
+	"PrevComicPattern" : "",
+	"NextComicPattern" : "",
+    "AltTextPattern" : "",
+	"BaseComicURL" : "",
+    "BasePrevNextURL" : "",
+	"RandomLink" : ""
 }

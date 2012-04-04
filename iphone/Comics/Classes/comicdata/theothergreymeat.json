@@ -1,0 +1,10 @@
+{
+    "Name" : "The Other Grey Meat",
+    "StartURL" : "http://greymeat.com",
+	"ImagePattern" : "id=\"comic-wrap\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\">[^<]*?<[^>]*?prev-f.png",
+	"NextComicPattern" : "href=\"([^>]*?)\">[^<]*?<[^>]*?next-f.png",
+    "BasePrevNextURL" : "http://greymeat.com",
+    "BaseImageURL" : "http://greymeat.com"
+}

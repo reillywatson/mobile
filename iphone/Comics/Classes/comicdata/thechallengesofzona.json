@@ -1,0 +1,8 @@
+{
+    "Name" : "The Challenges of Zona",
+    "StartURL" : "http://www.soulgeek.com/comics/zona/",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\">[^<]*?<span class=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\">[^<]*?<span class=\"next\""
+}

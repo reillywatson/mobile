@@ -1,0 +1,8 @@
+{
+    "Name" : "The Dreamland Chronicles",
+    "StartURL" : "http://www.thedreamlandchronicles.com",
+	"ImagePattern" : "id=\"comic\".*?src=\"(.*?)\"",
+	"TitlePattern" : "id=\"comic\".*?title=\"(.*?)\"",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"prev\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?rel=\"next\""
+}

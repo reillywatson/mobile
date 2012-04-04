@@ -1,0 +1,8 @@
+{
+    "Name" : "Puck",
+    "StartURL" : "http://puck.smackjeeves.com",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?id=\"comic_image\"",
+    "TitlePattern" : "selected=\"selected\">([^<]*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?>< Back",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?>Next >"
+}

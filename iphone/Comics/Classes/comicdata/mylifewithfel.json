@@ -1,0 +1,8 @@
+{
+    "Name" : "My Life with Fel",
+    "StartURL" : "http://mylifewithfel.smackjeeves.com",
+	"ImagePattern" : "src=\"([^>]*?)\"[^>]*?id=\"comic_image\"",
+    "TitlePattern" : "selected=\"selected\">([^<]*?)<",
+	"PrevComicPattern" : "href=\"([^>]*?)\"[^>]*?title=\"previous\"",
+	"NextComicPattern" : "href=\"([^>]*?)\"[^>]*?title=\"next\""
+}
