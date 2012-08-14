@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41F5C9A15D9E7B50083FA44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5C9915D9E7B50083FA44 /* UIKit.framework */; };
+		B41F5C9C15D9E7B50083FA44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5C9B15D9E7B50083FA44 /* Foundation.framework */; };
+		B41F5C9E15D9E7B50083FA44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5C9D15D9E7B50083FA44 /* CoreGraphics.framework */; };
+		B41F5CA415D9E7B50083FA44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B41F5CA215D9E7B50083FA44 /* InfoPlist.strings */; };
+		B41F5CA615D9E7B50083FA44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CA515D9E7B50083FA44 /* main.m */; };
+		B41F5CAA15D9E7B50083FA44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CA915D9E7B50083FA44 /* AppDelegate.m */; };
+		B41F5CAD15D9E7B50083FA44 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41F5CAB15D9E7B50083FA44 /* MainStoryboard_iPhone.storyboard */; };
+		B41F5CB015D9E7B50083FA44 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41F5CAE15D9E7B50083FA44 /* MainStoryboard_iPad.storyboard */; };
+		B41F5CB315D9E7B50083FA44 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CB215D9E7B50083FA44 /* MasterViewController.m */; };
+		B41F5CB615D9E7B50083FA44 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CB515D9E7B50083FA44 /* DetailViewController.m */; };
+		B41F5CBE15D9E7B50083FA44 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5CBD15D9E7B50083FA44 /* SenTestingKit.framework */; };
+		B41F5CBF15D9E7B50083FA44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5C9915D9E7B50083FA44 /* UIKit.framework */; };
+		B41F5CC015D9E7B50083FA44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F5C9B15D9E7B50083FA44 /* Foundation.framework */; };
+		B41F5CC815D9E7B50083FA44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B41F5CC615D9E7B50083FA44 /* InfoPlist.strings */; };
+		B41F5CCB15D9E7B50083FA44 /* OfflineWikipediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CCA15D9E7B50083FA44 /* OfflineWikipediaTests.m */; };
+		B41F5D1115D9E80E0083FA44 /* article.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CD515D9E80E0083FA44 /* article.cpp */; };
+		B41F5D1215D9E80E0083FA44 /* articlesearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CD715D9E80E0083FA44 /* articlesearch.cpp */; };
+		B41F5D1615D9E80E0083FA44 /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CE115D9E80E0083FA44 /* cluster.cpp */; };
+		B41F5D1815D9E80E0083FA44 /* dirent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CE515D9E80E0083FA44 /* dirent.cpp */; };
+		B41F5D1915D9E80E0083FA44 /* envvalue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CE815D9E80E0083FA44 /* envvalue.cpp */; };
+		B41F5D1A15D9E80E0083FA44 /* file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CEB15D9E80E0083FA44 /* file.cpp */; };
+		B41F5D1B15D9E80E0083FA44 /* fileheader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CED15D9E80E0083FA44 /* fileheader.cpp */; };
+		B41F5D1C15D9E80E0083FA44 /* fileimpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CEF15D9E80E0083FA44 /* fileimpl.cpp */; };
+		B41F5D1D15D9E80E0083FA44 /* fstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CF215D9E80E0083FA44 /* fstream.cpp */; };
+		B41F5D1E15D9E80E0083FA44 /* indexarticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CF415D9E80E0083FA44 /* indexarticle.cpp */; };
+		B41F5D2115D9E80E0083FA44 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CFB15D9E80E0083FA44 /* md5.c */; };
+		B41F5D2215D9E80E0083FA44 /* md5stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5CFD15D9E80E0083FA44 /* md5stream.cpp */; };
+		B41F5D2315D9E80E0083FA44 /* ptrstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0015D9E80E0083FA44 /* ptrstream.cpp */; };
+		B41F5D2415D9E80E0083FA44 /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0315D9E80E0083FA44 /* search.cpp */; };
+		B41F5D2515D9E80E0083FA44 /* template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0615D9E80E0083FA44 /* template.cpp */; };
+		B41F5D2615D9E80E0083FA44 /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0815D9E80E0083FA44 /* unicode.cpp */; };
+		B41F5D2815D9E80E0083FA44 /* uuid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0C15D9E80E0083FA44 /* uuid.cpp */; };
+		B41F5D2915D9E80E0083FA44 /* zintstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D0F15D9E80E0083FA44 /* zintstream.cpp */; };
+		B41F5D5615D9F2040083FA44 /* ZimBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = B41F5D5515D9F2040083FA44 /* ZimBridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B41F5CC115D9E7B50083FA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B41F5C8C15D9E7B50083FA44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B41F5C9415D9E7B50083FA44;
+			remoteInfo = OfflineWikipedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B41F5C9515D9E7B50083FA44 /* OfflineWikipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineWikipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41F5C9915D9E7B50083FA44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B41F5C9B15D9E7B50083FA44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B41F5C9D15D9E7B50083FA44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B41F5CA115D9E7B50083FA44 /* OfflineWikipedia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OfflineWikipedia-Info.plist"; sourceTree = "<group>"; };
+		B41F5CA315D9E7B50083FA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B41F5CA515D9E7B50083FA44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B41F5CA715D9E7B50083FA44 /* OfflineWikipedia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OfflineWikipedia-Prefix.pch"; sourceTree = "<group>"; };
+		B41F5CA815D9E7B50083FA44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B41F5CA915D9E7B50083FA44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B41F5CAC15D9E7B50083FA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B41F5CAF15D9E7B50083FA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B41F5CB115D9E7B50083FA44 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B41F5CB215D9E7B50083FA44 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B41F5CB415D9E7B50083FA44 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B41F5CB515D9E7B50083FA44 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B41F5CBC15D9E7B50083FA44 /* OfflineWikipediaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfflineWikipediaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41F5CBD15D9E7B50083FA44 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B41F5CC515D9E7B50083FA44 /* OfflineWikipediaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OfflineWikipediaTests-Info.plist"; sourceTree = "<group>"; };
+		B41F5CC715D9E7B50083FA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B41F5CC915D9E7B50083FA44 /* OfflineWikipediaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfflineWikipediaTests.h; sourceTree = "<group>"; };
+		B41F5CCA15D9E7B50083FA44 /* OfflineWikipediaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OfflineWikipediaTests.m; sourceTree = "<group>"; };
+		B41F5CD515D9E80E0083FA44 /* article.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = article.cpp; path = OfflineWikipedia/zim/article.cpp; sourceTree = "<group>"; };
+		B41F5CD715D9E80E0083FA44 /* articlesearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = articlesearch.cpp; path = OfflineWikipedia/zim/articlesearch.cpp; sourceTree = "<group>"; };
+		B41F5CE115D9E80E0083FA44 /* cluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cluster.cpp; path = OfflineWikipedia/zim/cluster.cpp; sourceTree = "<group>"; };
+		B41F5CE515D9E80E0083FA44 /* dirent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dirent.cpp; path = OfflineWikipedia/zim/dirent.cpp; sourceTree = "<group>"; };
+		B41F5CE815D9E80E0083FA44 /* envvalue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = envvalue.cpp; path = OfflineWikipedia/zim/envvalue.cpp; sourceTree = "<group>"; };
+		B41F5CEB15D9E80E0083FA44 /* file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file.cpp; path = OfflineWikipedia/zim/file.cpp; sourceTree = "<group>"; };
+		B41F5CED15D9E80E0083FA44 /* fileheader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fileheader.cpp; path = OfflineWikipedia/zim/fileheader.cpp; sourceTree = "<group>"; };
+		B41F5CEF15D9E80E0083FA44 /* fileimpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fileimpl.cpp; path = OfflineWikipedia/zim/fileimpl.cpp; sourceTree = "<group>"; };
+		B41F5CF215D9E80E0083FA44 /* fstream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fstream.cpp; path = OfflineWikipedia/zim/fstream.cpp; sourceTree = "<group>"; };
+		B41F5CF415D9E80E0083FA44 /* indexarticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = indexarticle.cpp; path = OfflineWikipedia/zim/indexarticle.cpp; sourceTree = "<group>"; };
+		B41F5CFB15D9E80E0083FA44 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = md5.c; path = OfflineWikipedia/zim/md5.c; sourceTree = "<group>"; };
+		B41F5CFD15D9E80E0083FA44 /* md5stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = md5stream.cpp; path = OfflineWikipedia/zim/md5stream.cpp; sourceTree = "<group>"; };
+		B41F5D0015D9E80E0083FA44 /* ptrstream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ptrstream.cpp; path = OfflineWikipedia/zim/ptrstream.cpp; sourceTree = "<group>"; };
+		B41F5D0315D9E80E0083FA44 /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = search.cpp; path = OfflineWikipedia/zim/search.cpp; sourceTree = "<group>"; };
+		B41F5D0615D9E80E0083FA44 /* template.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = template.cpp; path = OfflineWikipedia/zim/template.cpp; sourceTree = "<group>"; };
+		B41F5D0815D9E80E0083FA44 /* unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unicode.cpp; path = OfflineWikipedia/zim/unicode.cpp; sourceTree = "<group>"; };
+		B41F5D0C15D9E80E0083FA44 /* uuid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = uuid.cpp; path = OfflineWikipedia/zim/uuid.cpp; sourceTree = "<group>"; };
+		B41F5D0F15D9E80E0083FA44 /* zintstream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = zintstream.cpp; path = OfflineWikipedia/zim/zintstream.cpp; sourceTree = "<group>"; };
+		B41F5D2A15D9E9F10083FA44 /* article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = article.h; path = OfflineWikipedia/zim/article.h; sourceTree = "<group>"; };
+		B41F5D2B15D9E9F10083FA44 /* articlesearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = articlesearch.h; path = OfflineWikipedia/zim/articlesearch.h; sourceTree = "<group>"; };
+		B41F5D2C15D9E9F10083FA44 /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blob.h; path = OfflineWikipedia/zim/blob.h; sourceTree = "<group>"; };
+		B41F5D2D15D9E9F10083FA44 /* bunzip2stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bunzip2stream.h; path = OfflineWikipedia/zim/bunzip2stream.h; sourceTree = "<group>"; };
+		B41F5D2E15D9E9F10083FA44 /* bzip2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bzip2.h; path = OfflineWikipedia/zim/bzip2.h; sourceTree = "<group>"; };
+		B41F5D2F15D9E9F10083FA44 /* bzip2stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bzip2stream.h; path = OfflineWikipedia/zim/bzip2stream.h; sourceTree = "<group>"; };
+		B41F5D3015D9E9F10083FA44 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cache.h; path = OfflineWikipedia/zim/cache.h; sourceTree = "<group>"; };
+		B41F5D3115D9E9F10083FA44 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cluster.h; path = OfflineWikipedia/zim/cluster.h; sourceTree = "<group>"; };
+		B41F5D3215D9E9F10083FA44 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = OfflineWikipedia/zim/config.h; sourceTree = "<group>"; };
+		B41F5D3315D9E9F10083FA44 /* deflatestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deflatestream.h; path = OfflineWikipedia/zim/deflatestream.h; sourceTree = "<group>"; };
+		B41F5D3415D9E9F10083FA44 /* dirent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dirent.h; path = OfflineWikipedia/zim/dirent.h; sourceTree = "<group>"; };
+		B41F5D3515D9E9F10083FA44 /* endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = endian.h; path = OfflineWikipedia/zim/endian.h; sourceTree = "<group>"; };
+		B41F5D3615D9E9F10083FA44 /* envvalue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = envvalue.h; path = OfflineWikipedia/zim/envvalue.h; sourceTree = "<group>"; };
+		B41F5D3715D9E9F10083FA44 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = error.h; path = OfflineWikipedia/zim/error.h; sourceTree = "<group>"; };
+		B41F5D3815D9E9F10083FA44 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = file.h; path = OfflineWikipedia/zim/file.h; sourceTree = "<group>"; };
+		B41F5D3915D9E9F10083FA44 /* fileheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileheader.h; path = OfflineWikipedia/zim/fileheader.h; sourceTree = "<group>"; };
+		B41F5D3A15D9E9F10083FA44 /* fileimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileimpl.h; path = OfflineWikipedia/zim/fileimpl.h; sourceTree = "<group>"; };
+		B41F5D3B15D9E9F10083FA44 /* fileiterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileiterator.h; path = OfflineWikipedia/zim/fileiterator.h; sourceTree = "<group>"; };
+		B41F5D3C15D9E9F10083FA44 /* fstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fstream.h; path = OfflineWikipedia/zim/fstream.h; sourceTree = "<group>"; };
+		B41F5D3D15D9E9F10083FA44 /* indexarticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = indexarticle.h; path = OfflineWikipedia/zim/indexarticle.h; sourceTree = "<group>"; };
+		B41F5D3E15D9E9F10083FA44 /* inflatestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inflatestream.h; path = OfflineWikipedia/zim/inflatestream.h; sourceTree = "<group>"; };
+		B41F5D3F15D9E9F10083FA44 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = OfflineWikipedia/zim/log.h; sourceTree = "<group>"; };
+		B41F5D4015D9E9F10083FA44 /* lzmastream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzmastream.h; path = OfflineWikipedia/zim/lzmastream.h; sourceTree = "<group>"; };
+		B41F5D4115D9E9F10083FA44 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = OfflineWikipedia/zim/md5.h; sourceTree = "<group>"; };
+		B41F5D4215D9E9F10083FA44 /* md5stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5stream.h; path = OfflineWikipedia/zim/md5stream.h; sourceTree = "<group>"; };
+		B41F5D4315D9E9F10083FA44 /* noncopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noncopyable.h; path = OfflineWikipedia/zim/noncopyable.h; sourceTree = "<group>"; };
+		B41F5D4415D9E9F10083FA44 /* ptrstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptrstream.h; path = OfflineWikipedia/zim/ptrstream.h; sourceTree = "<group>"; };
+		B41F5D4515D9E9F10083FA44 /* refcounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refcounted.h; path = OfflineWikipedia/zim/refcounted.h; sourceTree = "<group>"; };
+		B41F5D4615D9E9F10083FA44 /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = search.h; path = OfflineWikipedia/zim/search.h; sourceTree = "<group>"; };
+		B41F5D4715D9E9F10083FA44 /* smartptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smartptr.h; path = OfflineWikipedia/zim/smartptr.h; sourceTree = "<group>"; };
+		B41F5D4815D9E9F10083FA44 /* template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = template.h; path = OfflineWikipedia/zim/template.h; sourceTree = "<group>"; };
+		B41F5D4915D9E9F10083FA44 /* unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unicode.h; path = OfflineWikipedia/zim/unicode.h; sourceTree = "<group>"; };
+		B41F5D4A15D9E9F10083FA44 /* unlzmastream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unlzmastream.h; path = OfflineWikipedia/zim/unlzmastream.h; sourceTree = "<group>"; };
+		B41F5D4B15D9E9F10083FA44 /* uuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uuid.h; path = OfflineWikipedia/zim/uuid.h; sourceTree = "<group>"; };
+		B41F5D4C15D9E9F10083FA44 /* zim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zim.h; path = OfflineWikipedia/zim/zim.h; sourceTree = "<group>"; };
+		B41F5D4D15D9E9F10083FA44 /* zintstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zintstream.h; path = OfflineWikipedia/zim/zintstream.h; sourceTree = "<group>"; };
+		B41F5D5215D9F1E70083FA44 /* ZimBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZimBridge.h; sourceTree = "<group>"; };
+		B41F5D5515D9F2040083FA44 /* ZimBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZimBridge.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41F5C9215D9E7B50083FA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5C9A15D9E7B50083FA44 /* UIKit.framework in Frameworks */,
+				B41F5C9C15D9E7B50083FA44 /* Foundation.framework in Frameworks */,
+				B41F5C9E15D9E7B50083FA44 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F5CB815D9E7B50083FA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5CBE15D9E7B50083FA44 /* SenTestingKit.framework in Frameworks */,
+				B41F5CBF15D9E7B50083FA44 /* UIKit.framework in Frameworks */,
+				B41F5CC015D9E7B50083FA44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41F5C8A15D9E7B50083FA44 = {
+			isa = PBXGroup;
+			children = (
+				B41F5CD415D9E7D20083FA44 /* zim */,
+				B41F5C9F15D9E7B50083FA44 /* OfflineWikipedia */,
+				B41F5CC315D9E7B50083FA44 /* OfflineWikipediaTests */,
+				B41F5C9815D9E7B50083FA44 /* Frameworks */,
+				B41F5C9615D9E7B50083FA44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B41F5C9615D9E7B50083FA44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5C9515D9E7B50083FA44 /* OfflineWikipedia.app */,
+				B41F5CBC15D9E7B50083FA44 /* OfflineWikipediaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41F5C9815D9E7B50083FA44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5C9915D9E7B50083FA44 /* UIKit.framework */,
+				B41F5C9B15D9E7B50083FA44 /* Foundation.framework */,
+				B41F5C9D15D9E7B50083FA44 /* CoreGraphics.framework */,
+				B41F5CBD15D9E7B50083FA44 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41F5C9F15D9E7B50083FA44 /* OfflineWikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5CA815D9E7B50083FA44 /* AppDelegate.h */,
+				B41F5CA915D9E7B50083FA44 /* AppDelegate.m */,
+				B41F5CAB15D9E7B50083FA44 /* MainStoryboard_iPhone.storyboard */,
+				B41F5CAE15D9E7B50083FA44 /* MainStoryboard_iPad.storyboard */,
+				B41F5CB115D9E7B50083FA44 /* MasterViewController.h */,
+				B41F5CB215D9E7B50083FA44 /* MasterViewController.m */,
+				B41F5CB415D9E7B50083FA44 /* DetailViewController.h */,
+				B41F5CB515D9E7B50083FA44 /* DetailViewController.m */,
+				B41F5CA015D9E7B50083FA44 /* Supporting Files */,
+				B41F5D5215D9F1E70083FA44 /* ZimBridge.h */,
+				B41F5D5515D9F2040083FA44 /* ZimBridge.mm */,
+			);
+			path = OfflineWikipedia;
+			sourceTree = "<group>";
+		};
+		B41F5CA015D9E7B50083FA44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5CA115D9E7B50083FA44 /* OfflineWikipedia-Info.plist */,
+				B41F5CA215D9E7B50083FA44 /* InfoPlist.strings */,
+				B41F5CA515D9E7B50083FA44 /* main.m */,
+				B41F5CA715D9E7B50083FA44 /* OfflineWikipedia-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41F5CC315D9E7B50083FA44 /* OfflineWikipediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5CC915D9E7B50083FA44 /* OfflineWikipediaTests.h */,
+				B41F5CCA15D9E7B50083FA44 /* OfflineWikipediaTests.m */,
+				B41F5CC415D9E7B50083FA44 /* Supporting Files */,
+			);
+			path = OfflineWikipediaTests;
+			sourceTree = "<group>";
+		};
+		B41F5CC415D9E7B50083FA44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5CC515D9E7B50083FA44 /* OfflineWikipediaTests-Info.plist */,
+				B41F5CC615D9E7B50083FA44 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B41F5CD415D9E7D20083FA44 /* zim */ = {
+			isa = PBXGroup;
+			children = (
+				B41F5D2A15D9E9F10083FA44 /* article.h */,
+				B41F5D2B15D9E9F10083FA44 /* articlesearch.h */,
+				B41F5D2C15D9E9F10083FA44 /* blob.h */,
+				B41F5D2D15D9E9F10083FA44 /* bunzip2stream.h */,
+				B41F5D2E15D9E9F10083FA44 /* bzip2.h */,
+				B41F5D2F15D9E9F10083FA44 /* bzip2stream.h */,
+				B41F5D3015D9E9F10083FA44 /* cache.h */,
+				B41F5D3115D9E9F10083FA44 /* cluster.h */,
+				B41F5D3215D9E9F10083FA44 /* config.h */,
+				B41F5D3315D9E9F10083FA44 /* deflatestream.h */,
+				B41F5D3415D9E9F10083FA44 /* dirent.h */,
+				B41F5D3515D9E9F10083FA44 /* endian.h */,
+				B41F5D3615D9E9F10083FA44 /* envvalue.h */,
+				B41F5D3715D9E9F10083FA44 /* error.h */,
+				B41F5D3815D9E9F10083FA44 /* file.h */,
+				B41F5D3915D9E9F10083FA44 /* fileheader.h */,
+				B41F5D3A15D9E9F10083FA44 /* fileimpl.h */,
+				B41F5D3B15D9E9F10083FA44 /* fileiterator.h */,
+				B41F5D3C15D9E9F10083FA44 /* fstream.h */,
+				B41F5D3D15D9E9F10083FA44 /* indexarticle.h */,
+				B41F5D3E15D9E9F10083FA44 /* inflatestream.h */,
+				B41F5D3F15D9E9F10083FA44 /* log.h */,
+				B41F5D4015D9E9F10083FA44 /* lzmastream.h */,
+				B41F5D4115D9E9F10083FA44 /* md5.h */,
+				B41F5D4215D9E9F10083FA44 /* md5stream.h */,
+				B41F5D4315D9E9F10083FA44 /* noncopyable.h */,
+				B41F5D4415D9E9F10083FA44 /* ptrstream.h */,
+				B41F5D4515D9E9F10083FA44 /* refcounted.h */,
+				B41F5D4615D9E9F10083FA44 /* search.h */,
+				B41F5D4715D9E9F10083FA44 /* smartptr.h */,
+				B41F5D4815D9E9F10083FA44 /* template.h */,
+				B41F5D4915D9E9F10083FA44 /* unicode.h */,
+				B41F5D4A15D9E9F10083FA44 /* unlzmastream.h */,
+				B41F5D4B15D9E9F10083FA44 /* uuid.h */,
+				B41F5D4C15D9E9F10083FA44 /* zim.h */,
+				B41F5D4D15D9E9F10083FA44 /* zintstream.h */,
+				B41F5CD515D9E80E0083FA44 /* article.cpp */,
+				B41F5CD715D9E80E0083FA44 /* articlesearch.cpp */,
+				B41F5CE115D9E80E0083FA44 /* cluster.cpp */,
+				B41F5CE515D9E80E0083FA44 /* dirent.cpp */,
+				B41F5CE815D9E80E0083FA44 /* envvalue.cpp */,
+				B41F5CEB15D9E80E0083FA44 /* file.cpp */,
+				B41F5CED15D9E80E0083FA44 /* fileheader.cpp */,
+				B41F5CEF15D9E80E0083FA44 /* fileimpl.cpp */,
+				B41F5CF215D9E80E0083FA44 /* fstream.cpp */,
+				B41F5CF415D9E80E0083FA44 /* indexarticle.cpp */,
+				B41F5CFB15D9E80E0083FA44 /* md5.c */,
+				B41F5CFD15D9E80E0083FA44 /* md5stream.cpp */,
+				B41F5D0015D9E80E0083FA44 /* ptrstream.cpp */,
+				B41F5D0315D9E80E0083FA44 /* search.cpp */,
+				B41F5D0615D9E80E0083FA44 /* template.cpp */,
+				B41F5D0815D9E80E0083FA44 /* unicode.cpp */,
+				B41F5D0C15D9E80E0083FA44 /* uuid.cpp */,
+				B41F5D0F15D9E80E0083FA44 /* zintstream.cpp */,
+			);
+			name = zim;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41F5C9415D9E7B50083FA44 /* OfflineWikipedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41F5CCE15D9E7B50083FA44 /* Build configuration list for PBXNativeTarget "OfflineWikipedia" */;
+			buildPhases = (
+				B41F5C9115D9E7B50083FA44 /* Sources */,
+				B41F5C9215D9E7B50083FA44 /* Frameworks */,
+				B41F5C9315D9E7B50083FA44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OfflineWikipedia;
+			productName = OfflineWikipedia;
+			productReference = B41F5C9515D9E7B50083FA44 /* OfflineWikipedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B41F5CBB15D9E7B50083FA44 /* OfflineWikipediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41F5CD115D9E7B50083FA44 /* Build configuration list for PBXNativeTarget "OfflineWikipediaTests" */;
+			buildPhases = (
+				B41F5CB715D9E7B50083FA44 /* Sources */,
+				B41F5CB815D9E7B50083FA44 /* Frameworks */,
+				B41F5CB915D9E7B50083FA44 /* Resources */,
+				B41F5CBA15D9E7B50083FA44 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B41F5CC215D9E7B50083FA44 /* PBXTargetDependency */,
+			);
+			name = OfflineWikipediaTests;
+			productName = OfflineWikipediaTests;
+			productReference = B41F5CBC15D9E7B50083FA44 /* OfflineWikipediaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41F5C8C15D9E7B50083FA44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Reilly Watson";
+			};
+			buildConfigurationList = B41F5C8F15D9E7B50083FA44 /* Build configuration list for PBXProject "OfflineWikipedia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B41F5C8A15D9E7B50083FA44;
+			productRefGroup = B41F5C9615D9E7B50083FA44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41F5C9415D9E7B50083FA44 /* OfflineWikipedia */,
+				B41F5CBB15D9E7B50083FA44 /* OfflineWikipediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41F5C9315D9E7B50083FA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5CA415D9E7B50083FA44 /* InfoPlist.strings in Resources */,
+				B41F5CAD15D9E7B50083FA44 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B41F5CB015D9E7B50083FA44 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F5CB915D9E7B50083FA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5CC815D9E7B50083FA44 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B41F5CBA15D9E7B50083FA44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41F5C9115D9E7B50083FA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5CA615D9E7B50083FA44 /* main.m in Sources */,
+				B41F5CAA15D9E7B50083FA44 /* AppDelegate.m in Sources */,
+				B41F5CB315D9E7B50083FA44 /* MasterViewController.m in Sources */,
+				B41F5CB615D9E7B50083FA44 /* DetailViewController.m in Sources */,
+				B41F5D1115D9E80E0083FA44 /* article.cpp in Sources */,
+				B41F5D1215D9E80E0083FA44 /* articlesearch.cpp in Sources */,
+				B41F5D1615D9E80E0083FA44 /* cluster.cpp in Sources */,
+				B41F5D1815D9E80E0083FA44 /* dirent.cpp in Sources */,
+				B41F5D1915D9E80E0083FA44 /* envvalue.cpp in Sources */,
+				B41F5D1A15D9E80E0083FA44 /* file.cpp in Sources */,
+				B41F5D1B15D9E80E0083FA44 /* fileheader.cpp in Sources */,
+				B41F5D1C15D9E80E0083FA44 /* fileimpl.cpp in Sources */,
+				B41F5D1D15D9E80E0083FA44 /* fstream.cpp in Sources */,
+				B41F5D1E15D9E80E0083FA44 /* indexarticle.cpp in Sources */,
+				B41F5D2115D9E80E0083FA44 /* md5.c in Sources */,
+				B41F5D2215D9E80E0083FA44 /* md5stream.cpp in Sources */,
+				B41F5D2315D9E80E0083FA44 /* ptrstream.cpp in Sources */,
+				B41F5D2415D9E80E0083FA44 /* search.cpp in Sources */,
+				B41F5D2515D9E80E0083FA44 /* template.cpp in Sources */,
+				B41F5D2615D9E80E0083FA44 /* unicode.cpp in Sources */,
+				B41F5D2815D9E80E0083FA44 /* uuid.cpp in Sources */,
+				B41F5D2915D9E80E0083FA44 /* zintstream.cpp in Sources */,
+				B41F5D5615D9F2040083FA44 /* ZimBridge.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F5CB715D9E7B50083FA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41F5CCB15D9E7B50083FA44 /* OfflineWikipediaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B41F5CC215D9E7B50083FA44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B41F5C9415D9E7B50083FA44 /* OfflineWikipedia */;
+			targetProxy = B41F5CC115D9E7B50083FA44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B41F5CA215D9E7B50083FA44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41F5CA315D9E7B50083FA44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B41F5CAB15D9E7B50083FA44 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41F5CAC15D9E7B50083FA44 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B41F5CAE15D9E7B50083FA44 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41F5CAF15D9E7B50083FA44 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B41F5CC615D9E7B50083FA44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41F5CC715D9E7B50083FA44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B41F5CCC15D9E7B50083FA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OfflineWikipedia/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B41F5CCD15D9E7B50083FA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OfflineWikipedia/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B41F5CCF15D9E7B50083FA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineWikipedia/OfflineWikipedia-Prefix.pch";
+				INFOPLIST_FILE = "OfflineWikipedia/OfflineWikipedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B41F5CD015D9E7B50083FA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineWikipedia/OfflineWikipedia-Prefix.pch";
+				INFOPLIST_FILE = "OfflineWikipedia/OfflineWikipedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B41F5CD215D9E7B50083FA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OfflineWikipedia.app/OfflineWikipedia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineWikipedia/OfflineWikipedia-Prefix.pch";
+				INFOPLIST_FILE = "OfflineWikipediaTests/OfflineWikipediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B41F5CD315D9E7B50083FA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OfflineWikipedia.app/OfflineWikipedia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineWikipedia/OfflineWikipedia-Prefix.pch";
+				INFOPLIST_FILE = "OfflineWikipediaTests/OfflineWikipediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41F5C8F15D9E7B50083FA44 /* Build configuration list for PBXProject "OfflineWikipedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41F5CCC15D9E7B50083FA44 /* Debug */,
+				B41F5CCD15D9E7B50083FA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41F5CCE15D9E7B50083FA44 /* Build configuration list for PBXNativeTarget "OfflineWikipedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41F5CCF15D9E7B50083FA44 /* Debug */,
+				B41F5CD015D9E7B50083FA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B41F5CD115D9E7B50083FA44 /* Build configuration list for PBXNativeTarget "OfflineWikipediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41F5CD215D9E7B50083FA44 /* Debug */,
+				B41F5CD315D9E7B50083FA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41F5C8C15D9E7B50083FA44 /* Project object */;
+}
