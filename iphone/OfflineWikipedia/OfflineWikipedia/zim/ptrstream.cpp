@@ -17,7 +17,7 @@
  *
  */
 
-#include "ptrstream.h"
+#include "ptrstream.hpp"
 
 namespace zim
 {

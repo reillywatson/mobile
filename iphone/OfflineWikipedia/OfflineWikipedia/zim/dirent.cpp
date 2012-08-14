@@ -17,10 +17,10 @@
  *
  */
 
-#include <zim/dirent.h>
-#include <zim/zim.h>
-#include <zim/endian.h>
-#include "log.h"
+#include <zim/dirent.hpp>
+#include <zim/zim.hpp>
+#include <zim/endian.hpp>
+#include "log.hpp"
 #include <algorithm>
 
 log_define("zim.dirent")

@@ -17,12 +17,12 @@
  *
  */
 
-#include <zim/indexarticle.h>
-#include <zim/zintstream.h>
+#include <zim/indexarticle.hpp>
+#include <zim/zintstream.hpp>
 #include <sstream>
 #include <stdexcept>
-#include "log.h"
-#include "ptrstream.h"
+#include "log.hpp"
+#include "ptrstream.hpp"
 
 log_define("zim.indexarticle")
 

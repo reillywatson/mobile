@@ -17,12 +17,12 @@
  *
  */
 
-#include <zim/article.h>
-#include <zim/template.h>
+#include <zim/article.hpp>
+#include <zim/template.hpp>
 #include <sstream>
 #include <iostream>
 #include <stdexcept>
-#include "log.h"
+#include "log.hpp"
 
 log_define("zim.article")
 

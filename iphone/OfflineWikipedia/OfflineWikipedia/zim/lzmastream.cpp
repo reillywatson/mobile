@@ -17,8 +17,8 @@
  *
  */
 
-#include <zim/lzmastream.h>
-#include <zim/zim.h>
+#include <zim/lzmastream.hpp>
+#include <zim/zim.hpp>
 #include "log.h"
 #include <cstring>
 #include <sstream>

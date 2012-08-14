@@ -17,10 +17,10 @@
  *
  */
 
-#include <zim/file.h>
-#include <zim/article.h>
-#include "log.h"
-#include <zim/fileiterator.h>
+#include <zim/file.hpp>
+#include <zim/article.hpp>
+#include "log.hpp"
+#include <zim/fileiterator.hpp>
 
 log_define("zim.file")
 

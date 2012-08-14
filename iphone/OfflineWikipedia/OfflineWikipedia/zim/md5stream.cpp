@@ -29,7 +29,7 @@
  * copied from cxxtools
  */
 
-#include "md5stream.h"
+#include "md5stream.hpp"
 #include <cstring>
 
 namespace zim

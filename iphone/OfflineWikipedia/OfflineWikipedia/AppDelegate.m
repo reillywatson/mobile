@@ -7,13 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#include <zim/zim.h>
-
-static void tryIt() {
-    zim::File file("/Users/reilly/Library/Application Support/iPhone Simulator/5.1/Applications/ADD34910-B16F-46B9-8907-CBCF9AAE5025/Documents/wiki.zim");
-}
-
+#import "ZimBridge.h"
 
 @implementation AppDelegate
 
@@ -25,16 +19,7 @@ static void tryIt() {
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
-    tryIt();
-    NSString *fileName = @"wiki.zim";
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *appFile = [documentsDirectory stringByAppendingPathComponent:fileName];
-    NSError *err = nil;
-    NSData *data = [NSData dataWithContentsOfFile:appFile options:NSDataReadingMappedIfSafe error:&err];
-    NSLog(@"GOT %d BYTES", [data length]);
-    NSLog(@"PATH: %@", appFile);
-    NSLog(@"ERROR: %@", err);
+    [[ZimBridge new] go];
     return YES;
 }
 							

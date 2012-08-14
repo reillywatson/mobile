@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ZimBridge : NSObject
-
+-(void)go;
 @end

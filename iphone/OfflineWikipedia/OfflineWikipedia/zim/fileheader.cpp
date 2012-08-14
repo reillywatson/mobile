@@ -17,10 +17,10 @@
  *
  */
 
-#include <zim/fileheader.h>
+#include <zim/fileheader.hpp>
 #include <iostream>
 #include <algorithm>
-#include "log.h"
+#include "log.hpp"
 
 log_define("zim.file.header")
 

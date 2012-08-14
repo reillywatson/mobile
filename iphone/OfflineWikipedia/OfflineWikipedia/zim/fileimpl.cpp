@@ -17,24 +17,24 @@
  *
  */
 
-#include <zim/fileimpl.h>
-#include <zim/error.h>
-#include <zim/dirent.h>
-#include <zim/endian.h>
+#include <zim/fileimpl.hpp>
+#include <zim/error.hpp>
+#include <zim/dirent.hpp>
+#include <zim/endian.hpp>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sstream>
 #include <errno.h>
 #include <cstring>
-#include "config.h"
-#include "log.h"
-#include "envvalue.h"
+#include "config.hpp"
+#include "log.hpp"
+#include "envvalue.hpp"
 
 #ifdef WITH_CXXTOOLS
 #  include <cxxtools/systemerror.h>
 #  include <cxxtools/md5stream.h>
 #else
-#  include "md5stream.h"
+#  include "md5stream.hpp"
 #endif
 
 log_define("zim.file.impl")

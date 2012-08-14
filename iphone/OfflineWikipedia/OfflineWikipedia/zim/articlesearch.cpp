@@ -17,7 +17,7 @@
  *
  */
 
-#include <zim/articlesearch.h>
+#include <zim/articlesearch.hpp>
 
 namespace zim
 {

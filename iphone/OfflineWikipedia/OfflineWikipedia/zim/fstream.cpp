@@ -17,9 +17,9 @@
  *
  */
 
-#include <zim/fstream.h>
-#include "log.h"
-#include "config.h"
+#include <zim/fstream.hpp>
+#include "log.hpp"
+#include "config.hpp"
 #include <sstream>
 #include <stdexcept>
 #include <errno.h>

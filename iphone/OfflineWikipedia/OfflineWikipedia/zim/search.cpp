@@ -17,11 +17,11 @@
  *
  */
 
-#include <zim/search.h>
-#include <zim/fileiterator.h>
-#include <zim/indexarticle.h>
+#include <zim/search.hpp>
+#include <zim/fileiterator.hpp>
+#include <zim/indexarticle.hpp>
 #include <sstream>
-#include "log.h"
+#include "log.hpp"
 #include <map>
 #include <math.h>
 #include <cctype>

@@ -17,11 +17,11 @@
  *
  */
 
-#include <zim/uuid.h>
+#include <zim/uuid.hpp>
 #include <iostream>
 #include <time.h>
-#include <zim/zim.h> // necessary to have the new types
-#include "log.h"
+#include <zim/zim.hpp> // necessary to have the new types
+#include "log.hpp"
 #ifdef WITH_CXXTOOLS
 #include <cxxtools/md5stream.h>
 #endif

@@ -18,13 +18,13 @@
  */
 
 
-#include <zim/unlzmastream.h>
-#include <zim/zim.h>
-#include "log.h"
-#include "config.h"
+#include <zim/unlzmastream.hpp>
+#include <zim/zim.hpp>
+#include "log.hpp"
+#include "config.hpp"
 #include <sstream>
 #include <cstring>
-#include "envvalue.h"
+#include "envvalue.hpp"
 
 log_define("zim.lzma.uncompress")
 

@@ -17,16 +17,16 @@
  *
  */
 
-#include <zim/cluster.h>
-#include <zim/blob.h>
-#include <zim/endian.h>
+#include <zim/cluster.hpp>
+#include <zim/blob.hpp>
+#include <zim/endian.hpp>
 #include <stdlib.h>
 #include <stdexcept>
 #include <sstream>
 
-#include "log.h"
+#include "log.hpp"
 
-#include "config.h"
+#include "config.hpp"
 
 #ifdef ENABLE_ZLIB
 #include <zim/deflatestream.h>
