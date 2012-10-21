@@ -7,7 +7,6 @@
 //
 
 #import "ScheduleConfirmOperation.h"
-#import "RegexKitLite.h"
 #import "URLResolver.h"
 #import "SBJSON.h"
 #import "LocationsDataRetrievalOperation.h"
@@ -21,6 +20,14 @@
 	_date = [date retain];
 	delegate = aDelegate;
 	return self;
+}
+
+-(id)init {
+    self = [super init];
+    _start = nil;
+    _end = nil;
+    _date = nil;
+    return self;
 }
 
 -(void)dealloc {
@@ -84,15 +91,20 @@
 		[delegate confirmationError:error];
 	}
 	else {
-		NSArray *components = [responseStr captureComponentsMatchedByRegex:@"FareFinder.Step2.Initialize\\s*\\((.*?), false\\);" options:RKLDotAll range:NSMakeRange(0, [responseStr length]) error:&error];
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"FareFinder.Step2.Initialize\\s*\\((.*?), false\\);" options:NSRegularExpressionDotMatchesLineSeparators error:&error];
+        NSString *result = @"";
+        NSArray *components = [regex matchesInString:responseStr options:0 range:NSMakeRange(0, [responseStr length])];
+        if ([components count] == 1) {
+            result = [responseStr substringWithRange:[[components objectAtIndex:0] rangeAtIndex:1]];
+        }
 		if (error != nil) {
 			NSLog(@"REGEX ERROR: %@", error);
 		}
 		NSMutableArray *schedules = [NSMutableArray new];
-		if ([components count] > 1) {
-			NSLog(@"GOT IT: %@", [components objectAtIndex:1]);
+		if ([result length] > 0) {
+			NSLog(@"GOT IT: %@", result);
 			SBJSON *jsonEngine = [[SBJSON new] autorelease];
-			NSDictionary *json = [jsonEngine objectWithString:[components objectAtIndex:1]];
+			NSDictionary *json = [jsonEngine objectWithString:result];
 			NSArray *scheduleDatas = [json objectForKey:@"SchedulesDepart"];
 			for (NSDictionary *scheduleData in scheduleDatas) {
 				NSString *departureTime = [scheduleData objectForKey:@"DisplayDeparts"];

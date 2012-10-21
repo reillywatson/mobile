@@ -22,6 +22,19 @@
 	return self;
 }
 
+-(id)init {
+    self = [super init];
+    searchText = nil;
+    delegate = nil;
+    return self;
+}
+
+-(void)dealloc {
+	[super dealloc];
+	[searchText release];
+}
+
+
 -(NSArray *)locationsForString:(NSString *)text {
 	NSString *url = [URLResolver locationsURLForText:text];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -58,11 +71,6 @@
 
 -(void)main {
 	[self locationsForString:searchText];
-}
-
--(void)dealloc {
-	[super dealloc];
-	[searchText release];
 }
 
 @end

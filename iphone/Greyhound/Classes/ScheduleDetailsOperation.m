@@ -7,7 +7,6 @@
 //
 
 #import "ScheduleDetailsOperation.h"
-#import "RegexKitLite.h"
 #import "ScheduleDetails.h"
 #import "URLResolver.h"
 #import "SBJSON.h"
@@ -33,6 +32,12 @@
 	_schedule = [schedule retain];
 	delegate = adelegate;
 	return self;
+}
+
+-(id)init {
+    self = [super init];
+    _schedule = nil;
+    return self;
 }
 
 -(void)dealloc {
