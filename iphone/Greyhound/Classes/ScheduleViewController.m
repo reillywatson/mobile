@@ -20,16 +20,11 @@
 	return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[_opQueue release];
-	[schedules release];
-}
 
 -(void)setLocationStart:(Location *)start end:(Location *)end date:(NSDate *)date {
-	_start = [start retain];
-	_end = [end retain];
-	_date = [date retain];
+	_start = start;
+	_end = end;
+	_date = date;
 	[_opQueue addOperation:[[ScheduleConfirmOperation alloc] initWithStartLocation:start endLocation:end date:_date delegate:self]];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
@@ -46,7 +41,7 @@
 	[schedules removeAllObjects];
 	[schedules addObjectsFromArray:scheduleData];
 	if ([scheduleData count] == 0) {
-		NSDateFormatter *dateFormatter = [[NSDateFormatter new] autorelease];
+		NSDateFormatter *dateFormatter = [NSDateFormatter new];
 		[dateFormatter setTimeStyle:NSDateFormatterNoStyle];
 		[dateFormatter setDateStyle:NSDateFormatterMediumStyle];		
 		NSString *message = [NSString stringWithFormat:@"No schedules from %@ to %@ for %@", _start->name, _end->name, [dateFormatter stringFromDate:_date]];
@@ -85,7 +80,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
 	
 	Schedule *schedule = [schedules objectAtIndex:indexPath.row];

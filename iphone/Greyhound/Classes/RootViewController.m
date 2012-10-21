@@ -62,7 +62,7 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
 	if (cell == nil)
 	{
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID] autorelease];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
 	
@@ -90,15 +90,13 @@
 	}
 	
     [[self navigationController] pushViewController:next animated:YES];
-    [next release];
 }
 
 #pragma mark -
 #pragma mark UISearchDisplayController Delegate Methods
 
 -(void)getLocations:(NSTimer *)timer {
-	LocationsDataRetrievalOperation *op = [LocationsDataRetrievalOperation alloc];
-	[op initWithDelegate:self searchText:[timer userInfo]];
+	LocationsDataRetrievalOperation *op = [[LocationsDataRetrievalOperation alloc] initWithDelegate:self searchText:[timer userInfo]];
 	[_opQueue cancelAllOperations];
 	[_opQueue addOperation:op];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
@@ -138,16 +136,11 @@
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
-	[_opQueue release];
 	_opQueue = nil;
-	[itemList release];
 	itemList = nil;
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

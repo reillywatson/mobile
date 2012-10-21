@@ -19,8 +19,8 @@
 	NSTimer *_autoCompleteTimer;
 }
 
-@property (nonatomic, retain) Location *startLocation;
+@property (nonatomic, strong) Location *startLocation;
 
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 
 @end

@@ -29,10 +29,6 @@
     return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[searchText release];
-}
 
 
 -(NSArray *)locationsForString:(NSString *)text {
@@ -45,7 +41,7 @@
 	NSError *error = nil;
 	NSLog(@"HEY, MY REQUEST: %@", request);
 	NSString *response = [[NSString alloc] initWithData:[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error] encoding:NSUTF8StringEncoding];
-	SBJSON *jsonEngine = [[SBJSON new] autorelease];
+	SBJSON *jsonEngine = [SBJSON new];
 	NSDictionary *json = [jsonEngine objectWithString:response];
 	NSArray *items = [[json objectForKey:@"d"] objectForKey:@"Items"];
 	NSMutableArray *locations = [NSMutableArray array];

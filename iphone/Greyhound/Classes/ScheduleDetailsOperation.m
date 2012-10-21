@@ -29,7 +29,7 @@
 
 -(id)initWithSchedule:(Schedule *)schedule delegate:(NSObject<ScheduleDetailsDelegate> *)adelegate {
 	self = [super init];
-	_schedule = [schedule retain];
+	_schedule = schedule;
 	delegate = adelegate;
 	return self;
 }
@@ -40,10 +40,6 @@
     return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[_schedule release];
-}
 
 -(void)main {
 	NSString *url = [URLResolver scheduleDetailsURLForSchedule:_schedule];
@@ -62,9 +58,9 @@
 		return;
 	}
 	
-	SBJSON *engine = [[SBJSON new] autorelease];
+	SBJSON *engine = [SBJSON new];
 	NSArray *stops = [[[engine objectWithString:response] objectForKey:@"d"] objectForKey:@"Items"];
-	NSMutableArray *detailsList = [[NSMutableArray new] autorelease];
+	NSMutableArray *detailsList = [NSMutableArray new];
 	for (NSDictionary *stop in stops) {
 		NSString *cityName = [stop objectForKey:@"Location" defaultValue:@""];
 		cityName = [cityName stringByReplacingOccurrencesOfString:@"(START)" withString:@""];

@@ -32,15 +32,10 @@
 }
 
 -(void)setLocationStart:(Location *)start end:(Location *)end {
-	_start = [start retain];
-	_end = [end retain];
+	_start = start;
+	_end = end;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[_start release];
-	[_end release];
-}
 
 -(IBAction)save {
 	ScheduleViewController *scheduleView = [[ScheduleViewController alloc] initWithNibName:@"ScheduleViewController" bundle:nil];

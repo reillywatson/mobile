@@ -15,7 +15,7 @@
 	Location *_end;
 }
 
-@property (nonatomic, retain) IBOutlet UIDatePicker* datePicker;
+@property (nonatomic, strong) IBOutlet UIDatePicker* datePicker;
 
 -(IBAction)save;
 

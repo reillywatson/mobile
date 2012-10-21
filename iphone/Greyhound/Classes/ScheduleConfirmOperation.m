@@ -15,9 +15,9 @@
 
 -(id)initWithStartLocation:(Location *)start endLocation:(Location *)end date:(NSDate *)date delegate:(id <ScheduleConfirmDelegate>)aDelegate {
 	self = [super init];
-	_start = [start retain];
-	_end = [end retain];
-	_date = [date retain];
+	_start = start;
+	_end = end;
+	_date = date;
 	delegate = aDelegate;
 	return self;
 }
@@ -30,33 +30,25 @@
     return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[_start release];
-	[_end release];
-	[_date release];
-}
 
 -(void)main {
 	NSString *url = [URLResolver scheduleConfirmURLForStart:_start end:_end];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
 	[request setHTTPMethod:@"POST"];
 	
-	NSDateFormatter *formatter = [[NSDateFormatter new] autorelease];
+	NSDateFormatter *formatter = [NSDateFormatter new];
 	[formatter setDateFormat:@"dd MMMM yyyy"];
 	NSString *date = [formatter stringFromDate:_date];
 	
 	if ([URLResolver isCanadianStart:_start end:_end]) {
 		// apparently there are incompatible location IDs between the Canadian and US sites now.  Gross!
-		NSArray *startLocs = [[[LocationsDataRetrievalOperation new] autorelease] locationsForString:_start->name];
-		NSArray *endLocs = [[[LocationsDataRetrievalOperation new] autorelease] locationsForString:_end->name];
+		NSArray *startLocs = [[LocationsDataRetrievalOperation new] locationsForString:_start->name];
+		NSArray *endLocs = [[LocationsDataRetrievalOperation new] locationsForString:_end->name];
 		if ([startLocs count] > 0) {
-			[_start release];
-			_start = [[startLocs objectAtIndex:0] retain];
+			_start = [startLocs objectAtIndex:0];
 		}
 		if ([endLocs count] > 0) {
-			[_end release];
-			_end = [[endLocs objectAtIndex:0] retain];
+			_end = [endLocs objectAtIndex:0];
 		}
 	}
 	
@@ -103,7 +95,7 @@
 		NSMutableArray *schedules = [NSMutableArray new];
 		if ([result length] > 0) {
 			NSLog(@"GOT IT: %@", result);
-			SBJSON *jsonEngine = [[SBJSON new] autorelease];
+			SBJSON *jsonEngine = [SBJSON new];
 			NSDictionary *json = [jsonEngine objectWithString:result];
 			NSArray *scheduleDatas = [json objectForKey:@"SchedulesDepart"];
 			for (NSDictionary *scheduleData in scheduleDatas) {
@@ -121,7 +113,7 @@
 		else {
 			NSLog(@"Oh shit, we got no results!");
 		}
-		[delegate performSelectorOnMainThread:@selector(gotSchedules:) withObject:schedules waitUntilDone:NO];
+		[((NSObject*)delegate) performSelectorOnMainThread:@selector(gotSchedules:) withObject:schedules waitUntilDone:NO];
 	}
 //	NSLog(@"RESPONSE FROM SERVER: %@", responseStr);
 }

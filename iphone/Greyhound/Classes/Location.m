@@ -13,15 +13,10 @@
 
 -(id)initWithName:(NSString *)aName locationID:(NSString *)aLocationID {
 	self = [super init];
-	name = [aName retain];
-	locationId = [aLocationID retain];
+	name = aName;
+	locationId = aLocationID;
 	return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[name release];
-	[locationId release];
-}
 
 @end

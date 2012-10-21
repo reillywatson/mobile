@@ -19,10 +19,6 @@
 	return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[_opQueue release];
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.

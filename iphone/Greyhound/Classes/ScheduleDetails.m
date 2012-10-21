@@ -13,23 +13,14 @@
 
 -(id)initWithCity:(NSString *)acityName arrives:(NSString *)aarrives departs:(NSString *)adeparts layover:(NSString *)alayover company:(NSString *)acompany schedule:(NSString *)aschedule {
 	self = [super init];
-	cityName = [acityName retain];
-	arrives = [aarrives retain];
-	departs = [adeparts retain];
-	layover = [alayover retain];
-	company = [acompany retain];
-	schedule = [aschedule retain];
+	cityName = acityName;
+	arrives = aarrives;
+	departs = adeparts;
+	layover = alayover;
+	company = acompany;
+	schedule = aschedule;
 	return self;
 }
 
--(void)dealloc {
-	[super dealloc];
-	[cityName release];
-	[arrives release];
-	[departs release];
-	[layover release];
-	[company release];
-	[schedule release];
-}
 
 @end
