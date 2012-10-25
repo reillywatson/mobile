@@ -9,4 +9,14 @@
 #import "Board.h"
 
 @implementation Board
+
+-(id)init {
+    self = [super init];
+    for (int i = 0; i < 25; i++) {
+        self->owners[i] = Empty;
+        self->letters[i] = ' ';
+    }
+    return self;
+}
+
 @end

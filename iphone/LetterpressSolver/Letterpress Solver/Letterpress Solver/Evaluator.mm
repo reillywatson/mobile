@@ -63,11 +63,26 @@ std::vector<int> neighbours(int i) {
     return neighbours;
 }
 
+bool isProtected(int cell, CellOwner* owners) {
+    std::vector<int> n = neighbours(cell);
+    bool result = true;
+    for (int i = 0; i < n.size(); i++) {
+        if (owners[n[i]] != owners[cell]) {
+            result = false;
+            break;
+        }
+    }
+    return result;
+}
+                         
 -(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board {
     CellOwner newOwners[25];
     memcpy(&newOwners, board->owners, 25 * sizeof(CellOwner));
     for (NSNumber *cell in path) {
-        newOwners[[cell intValue]] = Mine;
+        int cellVal = [cell intValue];
+        if (!isProtected(cellVal, board->owners)) {
+            newOwners[cellVal] = Mine;
+        }
     }
     int myScore = 0;
     int theirScore = 0;
@@ -76,29 +91,13 @@ std::vector<int> neighbours(int i) {
     for (int i = 0; i < 25; i++) {
         if (newOwners[i] == Mine) {
             myScore++;
-            bool isProtected = true;
-            std::vector<int> n = neighbours(i);
-            for (int i = 0; i < n.size(); i++) {
-                if (newOwners[n[i]] != Mine) {
-                    isProtected = false;
-                    break;
-                }
-            }
-            if (isProtected) {
+            if (isProtected(i, newOwners)) {
                 myProtected++;
             }
         }
         if (newOwners[i] == Theirs) {
             theirScore++;
-            bool isProtected = true;
-            std::vector<int> n = neighbours(i);
-            for (int i = 0; i < n.size(); i++) {
-                if (newOwners[n[i]] != Theirs) {
-                    isProtected = false;
-                    break;
-                }
-            }
-            if (isProtected) {
+            if (isProtected(i, newOwners)) {
                 theirProtected++;
             }
         }
