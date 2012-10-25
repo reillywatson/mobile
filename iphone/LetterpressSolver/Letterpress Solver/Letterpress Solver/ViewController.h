@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 
+    UIImagePickerController *picker;
+    IBOutlet UIImageView * selectedImage;
+}
+
+@property (nonatomic, retain) UIImageView * selectedImage;
+
+- (IBAction) importImageClicked;
+- (IBAction) manualEntryClicked;
 @end
