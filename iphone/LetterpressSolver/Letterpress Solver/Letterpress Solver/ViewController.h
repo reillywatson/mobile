@@ -12,6 +12,7 @@
 
     UIImagePickerController *picker;
     IBOutlet UIImageView * selectedImage;
+    NSArray *_words;
 }
 
 @property (nonatomic, retain) UIImageView * selectedImage;

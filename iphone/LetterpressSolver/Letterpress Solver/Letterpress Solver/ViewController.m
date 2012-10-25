@@ -20,6 +20,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"txt"];
+    _words = [[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil] componentsSeparatedByString:@"\n"];
 }
 
 - (void)didReceiveMemoryWarning
