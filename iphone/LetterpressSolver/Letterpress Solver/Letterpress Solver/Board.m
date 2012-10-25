@@ -9,13 +9,4 @@
 #import "Board.h"
 
 @implementation Board
-
-
--(CellOwner)ownerAtCell:(int)cellNum {
-    return Empty;
-}
--(char)letterAtCell:(int)cellNum {
-    return 'a';
-}
-
 @end

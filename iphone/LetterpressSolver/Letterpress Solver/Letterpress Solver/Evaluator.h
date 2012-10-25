@@ -9,8 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "Board.h"
 
+typedef struct {
+    int myScore;
+    int theirScore;
+    int myProtected;
+    int theirProtected;
+} Evaluation;
+
 @interface Evaluator : NSObject
 
 -(NSArray*)findAllWordsWithBoard:(Board*)board;
+-(NSArray *)allPossiblePathsForWord:(NSString*)word withBoard:(Board *)board subpath:(NSArray *)currentSubpath;
+-(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board;
 
 @end

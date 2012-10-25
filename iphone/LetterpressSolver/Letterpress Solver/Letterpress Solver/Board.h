@@ -11,11 +11,8 @@
 
 
 @interface Board : NSObject {
-    NSArray *letters;
-    NSArray *owners;
+@public
+    CellOwner owners[25];
+    char letters[25];
 }
-
--(CellOwner)ownerAtCell:(int)cellNum;
--(char)letterAtCell:(int)cellNum;
-
 @end

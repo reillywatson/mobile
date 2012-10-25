@@ -10,9 +10,13 @@
 
 @implementation AppDelegate
 
+@synthesize words;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"txt"];
+    words = [[NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil] componentsSeparatedByString:@"\n"];
     return YES;
 }
 							

@@ -26,7 +26,7 @@
 		B4E0B6AC1639028A004E6491 /* Letterpress_SolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6AB1639028A004E6491 /* Letterpress_SolverTests.m */; };
 		B4E0B6B6163902DE004E6491 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B6B5163902DE004E6491 /* words.txt */; };
 		B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */; };
-		B4E0B6BE16399976004E6491 /* Evaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BD16399976004E6491 /* Evaluator.m */; };
+		B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BD16399976004E6491 /* Evaluator.mm */; };
 		B4E0B6C1163999B4004E6491 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C0163999B4004E6491 /* Board.m */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +68,7 @@
 		B4E0B6B916391257004E6491 /* ManualEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualEntryViewController.h; sourceTree = "<group>"; };
 		B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualEntryViewController.m; sourceTree = "<group>"; };
 		B4E0B6BC16399976004E6491 /* Evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evaluator.h; sourceTree = "<group>"; };
-		B4E0B6BD16399976004E6491 /* Evaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evaluator.m; sourceTree = "<group>"; };
+		B4E0B6BD16399976004E6491 /* Evaluator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Evaluator.mm; sourceTree = "<group>"; };
 		B4E0B6BF163999B4004E6491 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		B4E0B6C0163999B4004E6491 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		B4E0B6C216399A25004E6491 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				B4E0B6B916391257004E6491 /* ManualEntryViewController.h */,
 				B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */,
 				B4E0B6BC16399976004E6491 /* Evaluator.h */,
-				B4E0B6BD16399976004E6491 /* Evaluator.m */,
+				B4E0B6BD16399976004E6491 /* Evaluator.mm */,
 				B4E0B6BF163999B4004E6491 /* Board.h */,
 				B4E0B6C0163999B4004E6491 /* Board.m */,
 				B4E0B6C216399A25004E6491 /* CellOwner.h */,
@@ -299,7 +299,7 @@
 				B4E0B6881639028A004E6491 /* AppDelegate.m in Sources */,
 				B4E0B6971639028A004E6491 /* ViewController.m in Sources */,
 				B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */,
-				B4E0B6BE16399976004E6491 /* Evaluator.m in Sources */,
+				B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */,
 				B4E0B6C1163999B4004E6491 /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

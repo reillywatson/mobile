@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSArray *words;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) NSArray *words;
 
 @end
