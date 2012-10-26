@@ -12,20 +12,8 @@
 #include <vector>
 
 @implementation Evaluator
-#if 0
-def allpaths(board, word, currentSubpath):
-    paths = []
-    if word == "":
-        return paths
-    for letter in board:
-        if letter == word[0] and currentSubpath[letter] == False:
-            newSubpath = list(currentSubpath)
-            newSubpath.append(letter)
-            paths.extend(allpaths(board, word[1:], newSubpath)
-    return paths
-#endif
 
--(NSArray *)allPossiblePathsForWord:(NSString*)word withBoard:(Board *)board subpath:(NSArray *)currentSubpath {
++(NSArray *)allPossiblePathsForWord:(NSString*)word withBoard:(Board *)board subpath:(NSArray *)currentSubpath {
     NSMutableArray *paths = [NSMutableArray new];
     if ([word length] == 0) {
         [paths addObject:currentSubpath];
@@ -63,7 +51,10 @@ std::vector<int> neighbours(int i) {
     return neighbours;
 }
 
-bool isProtected(int cell, CellOwner* owners) {
++(bool)isProtected:(int) cell owners:(CellOwner*) owners {
+    if (owners[cell] == Empty) {
+        return false;
+    }
     std::vector<int> n = neighbours(cell);
     bool result = true;
     for (int i = 0; i < n.size(); i++) {
@@ -74,13 +65,13 @@ bool isProtected(int cell, CellOwner* owners) {
     }
     return result;
 }
-                         
--(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board {
+
++(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board {
     CellOwner newOwners[25];
     memcpy(&newOwners, board->owners, 25 * sizeof(CellOwner));
     for (NSNumber *cell in path) {
         int cellVal = [cell intValue];
-        if (!isProtected(cellVal, board->owners)) {
+        if (![Evaluator isProtected:cellVal owners:board->owners]) {
             newOwners[cellVal] = Mine;
         }
     }
@@ -91,13 +82,13 @@ bool isProtected(int cell, CellOwner* owners) {
     for (int i = 0; i < 25; i++) {
         if (newOwners[i] == Mine) {
             myScore++;
-            if (isProtected(i, newOwners)) {
+            if (![Evaluator isProtected:i owners:board->owners]) {
                 myProtected++;
             }
         }
         if (newOwners[i] == Theirs) {
             theirScore++;
-            if (isProtected(i, newOwners)) {
+            if (![Evaluator isProtected:i owners:board->owners]) {
                 theirProtected++;
             }
         }
@@ -105,7 +96,7 @@ bool isProtected(int cell, CellOwner* owners) {
     return Evaluation { myScore, theirScore, myProtected, theirProtected };
 }
 
--(NSArray*)findAllWordsWithBoard:(Board*)board {
++(NSArray*)findAllWordsWithBoard:(Board*)board {
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     NSArray *words = [delegate words];
     NSMutableArray *results = [NSMutableArray new];
@@ -134,5 +125,40 @@ bool isProtected(int cell, CellOwner* owners) {
         }
     }
     return results;
+}
+
++(NSComparisonResult)comparePath:(NSArray *)firstPath withPath:(NSArray *)secondPath withBoard:(Board *)board {
+    Evaluation firstEval = [Evaluator evaluatePath:firstPath withBoard:board];
+    Evaluation secondEval = [Evaluator evaluatePath:secondPath withBoard:board];
+    int firstScoreDiff = firstEval.myScore - firstEval.theirScore;
+    int secondScoreDiff = secondEval.myScore - secondEval.theirScore;
+    if (ABS(firstScoreDiff - secondScoreDiff) > 2) {
+        if (firstScoreDiff > secondScoreDiff) {
+            return NSOrderedDescending;
+        }
+        return NSOrderedAscending;
+    }
+    int firstProtected = firstEval.myProtected - firstEval.theirProtected;
+    int secondProtected = secondEval.myProtected - secondEval.theirProtected;
+    if (ABS(firstProtected - secondProtected) > 2) {
+        if (firstProtected > secondProtected) {
+            return NSOrderedDescending;
+        }
+        return NSOrderedAscending;
+    }
+    if (firstScoreDiff > secondScoreDiff) {
+        return NSOrderedDescending;
+    }
+    if (secondScoreDiff > firstScoreDiff) {
+        return NSOrderedAscending;
+    }
+    if (firstProtected > secondProtected) {
+        return NSOrderedDescending;
+    }
+    if (secondProtected > firstProtected) {
+        return NSOrderedAscending;
+    }
+    return NSOrderedSame;
+
 }
 @end

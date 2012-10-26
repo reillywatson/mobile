@@ -18,8 +18,9 @@ typedef struct {
 
 @interface Evaluator : NSObject
 
--(NSArray*)findAllWordsWithBoard:(Board*)board;
--(NSArray *)allPossiblePathsForWord:(NSString*)word withBoard:(Board *)board subpath:(NSArray *)currentSubpath;
--(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board;
-
++(NSArray*)findAllWordsWithBoard:(Board*)board;
++(NSArray *)allPossiblePathsForWord:(NSString*)word withBoard:(Board *)board subpath:(NSArray *)currentSubpath;
++(Evaluation) evaluatePath:(NSArray *)path withBoard:(Board*)board;
++(bool)isProtected:(int)cell owners:(CellOwner*)owners;
++(NSComparisonResult)comparePath:(NSArray*)firstPath withPath:(NSArray*)secondPath withBoard:(Board*)board;
 @end

@@ -19,4 +19,16 @@
     return self;
 }
 
+-(Board*)boardByAddingPath:(NSArray *)path {
+    Board *board = [Board alloc];
+    for (int i = 0; i < 25; i++) {
+        board->owners[i] = owners[i];
+        board->letters[i] = letters[i];
+    }
+    for (NSNumber *num in path) {
+        board->owners[[num intValue]] = Mine;
+    }
+    return board;
+}
+
 @end

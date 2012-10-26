@@ -15,4 +15,5 @@
     CellOwner owners[25];
     char letters[25];
 }
+-(Board*)boardByAddingPath:(NSArray*)path;
 @end

@@ -18,17 +18,16 @@
 		B4E0B68E1639028A004E6491 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B68D1639028A004E6491 /* Default-568h@2x.png */; };
 		B4E0B6911639028A004E6491 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B68F1639028A004E6491 /* MainStoryboard_iPhone.storyboard */; };
 		B4E0B6941639028A004E6491 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B6921639028A004E6491 /* MainStoryboard_iPad.storyboard */; };
-		B4E0B6971639028A004E6491 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6961639028A004E6491 /* ViewController.m */; };
 		B4E0B69F1639028A004E6491 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B69E1639028A004E6491 /* SenTestingKit.framework */; };
 		B4E0B6A01639028A004E6491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B6771639028A004E6491 /* UIKit.framework */; };
 		B4E0B6A11639028A004E6491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B6791639028A004E6491 /* Foundation.framework */; };
 		B4E0B6A91639028A004E6491 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B6A71639028A004E6491 /* InfoPlist.strings */; };
 		B4E0B6AC1639028A004E6491 /* Letterpress_SolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6AB1639028A004E6491 /* Letterpress_SolverTests.m */; };
 		B4E0B6B6163902DE004E6491 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4E0B6B5163902DE004E6491 /* words.txt */; };
-		B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */; };
+		B4E0B6BB16391257004E6491 /* ManualEntryViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BA16391257004E6491 /* ManualEntryViewController.mm */; };
 		B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BD16399976004E6491 /* Evaluator.mm */; };
 		B4E0B6C1163999B4004E6491 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C0163999B4004E6491 /* Board.m */; };
-		B4E0B6C5163A1F30004E6491 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C4163A1F30004E6491 /* BoardView.m */; };
+		B4E0B6C5163A1F30004E6491 /* BoardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C4163A1F30004E6491 /* BoardView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +56,6 @@
 		B4E0B68D1639028A004E6491 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B4E0B6901639028A004E6491 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B4E0B6931639028A004E6491 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B4E0B6951639028A004E6491 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B4E0B6961639028A004E6491 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B4E0B69D1639028A004E6491 /* Letterpress SolverTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Letterpress SolverTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E0B69E1639028A004E6491 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B4E0B6A61639028A004E6491 /* Letterpress SolverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Letterpress SolverTests-Info.plist"; sourceTree = "<group>"; };
@@ -67,14 +64,14 @@
 		B4E0B6AB1639028A004E6491 /* Letterpress_SolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Letterpress_SolverTests.m; sourceTree = "<group>"; };
 		B4E0B6B5163902DE004E6491 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		B4E0B6B916391257004E6491 /* ManualEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualEntryViewController.h; sourceTree = "<group>"; };
-		B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualEntryViewController.m; sourceTree = "<group>"; };
+		B4E0B6BA16391257004E6491 /* ManualEntryViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ManualEntryViewController.mm; sourceTree = "<group>"; };
 		B4E0B6BC16399976004E6491 /* Evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evaluator.h; sourceTree = "<group>"; };
 		B4E0B6BD16399976004E6491 /* Evaluator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Evaluator.mm; sourceTree = "<group>"; };
 		B4E0B6BF163999B4004E6491 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		B4E0B6C0163999B4004E6491 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		B4E0B6C216399A25004E6491 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
 		B4E0B6C3163A1F30004E6491 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
-		B4E0B6C4163A1F30004E6491 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
+		B4E0B6C4163A1F30004E6491 /* BoardView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BoardView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,18 +135,16 @@
 				B4E0B6871639028A004E6491 /* AppDelegate.m */,
 				B4E0B68F1639028A004E6491 /* MainStoryboard_iPhone.storyboard */,
 				B4E0B6921639028A004E6491 /* MainStoryboard_iPad.storyboard */,
-				B4E0B6951639028A004E6491 /* ViewController.h */,
-				B4E0B6961639028A004E6491 /* ViewController.m */,
 				B4E0B67E1639028A004E6491 /* Supporting Files */,
 				B4E0B6B916391257004E6491 /* ManualEntryViewController.h */,
-				B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */,
+				B4E0B6BA16391257004E6491 /* ManualEntryViewController.mm */,
 				B4E0B6BC16399976004E6491 /* Evaluator.h */,
 				B4E0B6BD16399976004E6491 /* Evaluator.mm */,
 				B4E0B6BF163999B4004E6491 /* Board.h */,
 				B4E0B6C0163999B4004E6491 /* Board.m */,
 				B4E0B6C216399A25004E6491 /* CellOwner.h */,
 				B4E0B6C3163A1F30004E6491 /* BoardView.h */,
-				B4E0B6C4163A1F30004E6491 /* BoardView.m */,
+				B4E0B6C4163A1F30004E6491 /* BoardView.mm */,
 			);
 			path = "Letterpress Solver";
 			sourceTree = "<group>";
@@ -302,11 +297,10 @@
 			files = (
 				B4E0B6841639028A004E6491 /* main.m in Sources */,
 				B4E0B6881639028A004E6491 /* AppDelegate.m in Sources */,
-				B4E0B6971639028A004E6491 /* ViewController.m in Sources */,
-				B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */,
+				B4E0B6BB16391257004E6491 /* ManualEntryViewController.mm in Sources */,
 				B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */,
 				B4E0B6C1163999B4004E6491 /* Board.m in Sources */,
-				B4E0B6C5163A1F30004E6491 /* BoardView.m in Sources */,
+				B4E0B6C5163A1F30004E6491 /* BoardView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
