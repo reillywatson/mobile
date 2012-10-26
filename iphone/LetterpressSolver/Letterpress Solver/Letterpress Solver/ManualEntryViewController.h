@@ -15,6 +15,10 @@
     BoardView *boardView;
     UITextView *textView;
     int _cursorLocation;
+    CellOwner _selectedOwner;
 }
+
+-(IBAction)showKeyboard;
+-(IBAction)showWords;
 
 @end

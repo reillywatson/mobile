@@ -24,6 +24,10 @@
     return self;
 }
 
+-(IBAction)showKeyboard {
+    [textView becomeFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,9 +37,11 @@
     [[self view] addSubview:textView];
     [textView setDelegate:self];
     [textView becomeFirstResponder];
+
     _cursorLocation = 0;
     
     _board = [Board new];
+    _selectedOwner = Empty;
     
     boardView = (BoardView*)[self view];
     boardView->_board = _board;
@@ -154,27 +160,51 @@
     if (sender.state == UIGestureRecognizerStateEnded) {
         CGPoint point = [sender locationOfTouch:0 inView:boardView];
         int cellWidth = boardView.frame.size.width / 5;
-        int cellHeight = boardView.frame.size.height / 5;
+        int cellHeight = cellWidth;//boardView.frame.size.height / 5;
         int row = point.y / cellHeight;
         int col = point.x / cellWidth;
-        _cursorLocation = row*5+col;
+        if (row >= 5) {
+            int segmentSize = boardView.frame.size.width / 3;
+            if (point.x <= segmentSize) {
+                _selectedOwner = Mine;
+            }
+            else if (point.x <= segmentSize * 2) {
+                _selectedOwner = Empty;
+            }
+            else {
+                _selectedOwner = Theirs;
+            }
+        }
+        else {
+            _cursorLocation = row*5+col;
+            _board->owners[_cursorLocation] = _selectedOwner;
+            [boardView setNeedsDisplay];
+        }
         NSLog(@"Single Tap!!!");
     }
 }
 
 - (void)textViewDidChange:(UITextView *)aTextView {
+    if ([aTextView.text isEqualToString:@"\n"]) {
+        [aTextView resignFirstResponder];
+        aTextView.text = @"";
+        return;
+    }
     NSString *text = [[[aTextView text] uppercaseString] stringByTrimmingCharactersInSet:[[NSCharacterSet uppercaseLetterCharacterSet] invertedSet]];
     char newChar = ' ';
     if ([text length] > 0) {
-        newChar = [text characterAtIndex:0];
+        newChar = [text characterAtIndex:[text length] - 1];
     }
-    NSLog(@"%c", newChar);
     _board->letters[_cursorLocation] = newChar;
     if (newChar != ' ' && _cursorLocation < 24) {
         _cursorLocation++;
     }
     aTextView.text = @"";
     [boardView setNeedsDisplay];
+}
+
+-(IBAction)showWords {
+
 }
 
 @end

@@ -48,7 +48,15 @@
         return;
     }
     int cellWidth = [self frame].size.width / 5;
-    int cellHeight = [self frame].size.height / 5;
+    int cellHeight = cellWidth;//[self frame].size.height / 5;
+    int segmentWidth = self.frame.size.width / 3;
+    int segmentHeight = self.frame.size.height - (cellHeight * 5) - 60;
+    CGRect redRegion = CGRectMake(0, cellHeight*5 + 30, segmentWidth, segmentHeight);
+    [self fillRect:redRegion withColor:[UIColor redColor]];
+    CGRect grayRegion = CGRectMake(segmentWidth, cellHeight*5 + 30, segmentWidth, segmentHeight);
+    [self fillRect:grayRegion withColor:[UIColor grayColor]];
+    CGRect blueRegion = CGRectMake(segmentWidth * 2, cellHeight*5 + 30, segmentWidth, segmentHeight);
+    [self fillRect:blueRegion withColor:[UIColor blueColor]];
     for (int row = 0; row < 5; row++) {
         for (int col = 0; col < 5; col++) {
             int i = row*5+col;
@@ -67,6 +75,7 @@
             [self drawChar:_board->letters[i] inRect:rect];
         }
     }
+    [super drawRect:rect];
 }
 
 
