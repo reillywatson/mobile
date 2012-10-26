@@ -76,7 +76,8 @@
             [self fillRect:rect withColor:color];
             [self strokeRect:rect withColor:[UIColor blackColor]];
             NSString *string = [NSString stringWithFormat:@"%c", _board->letters[i]];
-            [string drawInRect:rect withFont:[UIFont fontWithName:@"Helvetica" size:(cellHeight / 2)]];
+            CGRect textRect = CGRectMake(rect.origin.x + rect.size.width/3, rect.origin.y+rect.size.height/3, rect.size.width, rect.size.height);
+            [string drawInRect:textRect withFont:[UIFont fontWithName:@"Helvetica" size:(cellHeight / 2)]];
 //            [string drawAtPoint:CGPointMake(0,0) withFont:[UIFont fontWithName:@"Helvetica" size:20]];
             [self drawChar:_board->letters[i] inRect:rect];
         }

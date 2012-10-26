@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40A196A163A8B1B00606FEF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B40A1968163A8B1B00606FEF /* Icon.png */; };
+		B40A196B163A8B1B00606FEF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B40A1969163A8B1B00606FEF /* Icon@2x.png */; };
+		B4BEA89C163A6FED00169E14 /* FoundWordsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEA89B163A6FED00169E14 /* FoundWordsTableViewController.m */; };
+		B4BEA8A0163A711600169E14 /* FoundWordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEA89F163A711600169E14 /* FoundWordsTableViewCell.m */; };
 		B4E0B6781639028A004E6491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B6771639028A004E6491 /* UIKit.framework */; };
 		B4E0B67A1639028A004E6491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B6791639028A004E6491 /* Foundation.framework */; };
 		B4E0B67C1639028A004E6491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E0B67B1639028A004E6491 /* CoreGraphics.framework */; };
@@ -41,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B40A1968163A8B1B00606FEF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B40A1969163A8B1B00606FEF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B4BEA89A163A6FED00169E14 /* FoundWordsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundWordsTableViewController.h; sourceTree = "<group>"; };
+		B4BEA89B163A6FED00169E14 /* FoundWordsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundWordsTableViewController.m; sourceTree = "<group>"; };
+		B4BEA89E163A711600169E14 /* FoundWordsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundWordsTableViewCell.h; sourceTree = "<group>"; };
+		B4BEA89F163A711600169E14 /* FoundWordsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundWordsTableViewCell.m; sourceTree = "<group>"; };
 		B4E0B6731639028A004E6491 /* Letterpress Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Letterpress Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E0B6771639028A004E6491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B4E0B6791639028A004E6491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +141,8 @@
 		B4E0B67D1639028A004E6491 /* Letterpress Solver */ = {
 			isa = PBXGroup;
 			children = (
+				B40A1968163A8B1B00606FEF /* Icon.png */,
+				B40A1969163A8B1B00606FEF /* Icon@2x.png */,
 				B4E0B6861639028A004E6491 /* AppDelegate.h */,
 				B4E0B6871639028A004E6491 /* AppDelegate.m */,
 				B4E0B68F1639028A004E6491 /* MainStoryboard_iPhone.storyboard */,
@@ -145,6 +157,10 @@
 				B4E0B6C216399A25004E6491 /* CellOwner.h */,
 				B4E0B6C3163A1F30004E6491 /* BoardView.h */,
 				B4E0B6C4163A1F30004E6491 /* BoardView.mm */,
+				B4BEA89A163A6FED00169E14 /* FoundWordsTableViewController.h */,
+				B4BEA89B163A6FED00169E14 /* FoundWordsTableViewController.m */,
+				B4BEA89E163A711600169E14 /* FoundWordsTableViewCell.h */,
+				B4BEA89F163A711600169E14 /* FoundWordsTableViewCell.m */,
 			);
 			path = "Letterpress Solver";
 			sourceTree = "<group>";
@@ -261,6 +277,8 @@
 				B4E0B6911639028A004E6491 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B4E0B6941639028A004E6491 /* MainStoryboard_iPad.storyboard in Resources */,
 				B4E0B6B6163902DE004E6491 /* words.txt in Resources */,
+				B40A196A163A8B1B00606FEF /* Icon.png in Resources */,
+				B40A196B163A8B1B00606FEF /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +319,8 @@
 				B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */,
 				B4E0B6C1163999B4004E6491 /* Board.m in Sources */,
 				B4E0B6C5163A1F30004E6491 /* BoardView.mm in Sources */,
+				B4BEA89C163A6FED00169E14 /* FoundWordsTableViewController.m in Sources */,
+				B4BEA8A0163A711600169E14 /* FoundWordsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,14 +416,15 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -417,6 +438,7 @@
 				GCC_PREFIX_HEADER = "Letterpress Solver/Letterpress Solver-Prefix.pch";
 				INFOPLIST_FILE = "Letterpress Solver/Letterpress Solver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,6 +450,7 @@
 				GCC_PREFIX_HEADER = "Letterpress Solver/Letterpress Solver-Prefix.pch";
 				INFOPLIST_FILE = "Letterpress Solver/Letterpress Solver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,6 +508,7 @@
 				B4E0B6B11639028A004E6491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4E0B6B21639028A004E6491 /* Build configuration list for PBXNativeTarget "Letterpress SolverTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +517,7 @@
 				B4E0B6B41639028A004E6491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

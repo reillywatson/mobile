@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mVI-kL-uOv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KiV-FT-Oa8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--Manual Entry View Controller-->
+        <!--Navigation Controller - Enter Letters-->
+        <scene sceneID="Ugn-Sb-As7">
+            <objects>
+                <navigationController title="Enter Letters" definesPresentationContext="YES" id="KiV-FT-Oa8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zib-XZ-nni">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mVI-kL-uOv" kind="relationship" relationship="rootViewController" id="hVI-f8-rJb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7X-T1-Eb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="-687"/>
+        </scene>
+        <!--Manual Entry View Controller - Enter Letters-->
         <scene sceneID="9vl-Tc-21q">
             <objects>
-                <viewController id="mVI-kL-uOv" customClass="ManualEntryViewController" sceneMemberID="viewController">
+                <viewController title="Enter Letters" id="mVI-kL-uOv" customClass="ManualEntryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p2b-0q-u4s">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TE-1f-q3J">
@@ -118,16 +133,107 @@
                     <navigationItem key="navigationItem" id="KRc-bT-sv4"/>
                     <connections>
                         <outlet property="boardView" destination="va7-7Q-1jL" id="bS1-55-I77"/>
+                        <segue destination="mFu-lb-Zp3" kind="push" identifier="showWordList" id="bWq-OT-GoM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sy2-DE-Qiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-30"/>
+            <point key="canvasLocation" x="894" y="-50"/>
+        </scene>
+        <!--Found Words Table View Controller - Found Words-->
+        <scene sceneID="z2q-xP-lHg">
+            <objects>
+                <tableViewController title="Found Words" id="mFu-lb-Zp3" customClass="FoundWordsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" id="OnJ-f9-Kys">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="com.reilly.boardcells" rowHeight="83" id="Bkq-OB-nXa" customClass="FoundWordsTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="83"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-5r-8rN">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="155" id="DZj-qT-LpE"/>
+                                                <constraint firstAttribute="height" constant="32" id="RbY-fd-gLP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-z8-AfX" customClass="BoardView">
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iii-3O-F1I">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="owy-zU-QYr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-tK-b6K">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="2pP-6g-Msm"/>
+                                                <constraint firstAttribute="width" constant="48" id="yl8-pQ-PUi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="nyG-5r-8rN" firstAttribute="top" secondItem="Bkq-OB-nXa" secondAttribute="top" constant="7" id="1hH-WB-MaN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ymn-z8-AfX" secondAttribute="trailing" constant="229" id="8Cb-YS-tV5"/>
+                                    <constraint firstItem="Iii-3O-F1I" firstAttribute="top" secondItem="nyG-5r-8rN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AX4-j3-OLA"/>
+                                    <constraint firstItem="Ymn-z8-AfX" firstAttribute="centerY" secondItem="Bkq-OB-nXa" secondAttribute="centerY" type="default" id="JrV-Yi-TNe"/>
+                                    <constraint firstItem="Iii-3O-F1I" firstAttribute="leading" secondItem="nyG-5r-8rN" secondAttribute="leading" type="default" id="Ohe-tB-Tkk"/>
+                                    <constraint firstItem="nyG-5r-8rN" firstAttribute="leading" secondItem="Bkq-OB-nXa" secondAttribute="leading" constant="151" id="OuX-4r-UwJ"/>
+                                    <constraint firstItem="Ymn-z8-AfX" firstAttribute="leading" secondItem="Bkq-OB-nXa" secondAttribute="leading" type="default" id="TGc-x5-G2Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aah-tK-b6K" secondAttribute="bottom" constant="11" id="W5n-0S-82Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aah-tK-b6K" secondAttribute="trailing" constant="58" id="YgM-fZ-6xn"/>
+                                    <constraint firstItem="Ymn-z8-AfX" firstAttribute="top" secondItem="Bkq-OB-nXa" secondAttribute="top" type="default" id="zax-0d-igs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="board" destination="Ymn-z8-AfX" id="heX-tO-5wx"/>
+                                    <outlet property="myScore" destination="Aah-tK-b6K" id="yKr-ua-Ilp"/>
+                                    <outlet property="theirScore" destination="Iii-3O-F1I" id="7Pj-yX-Trb"/>
+                                    <outlet property="word" destination="nyG-5r-8rN" id="0QV-Jg-aG3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mFu-lb-Zp3" id="uQN-5T-9bu"/>
+                            <outlet property="delegate" destination="mFu-lb-Zp3" id="Dle-Tx-ft7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtY-t5-WMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="-189"/>
         </scene>
     </scenes>
     <classes>
         <class className="BoardView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BoardView.h"/>
+        </class>
+        <class className="FoundWordsTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FoundWordsTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="board" candidateClass="BoardView"/>
+                <relationship kind="outlet" name="myScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="theirScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="word" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FoundWordsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FoundWordsTableViewController.h"/>
         </class>
         <class className="ManualEntryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ManualEntryViewController.h"/>

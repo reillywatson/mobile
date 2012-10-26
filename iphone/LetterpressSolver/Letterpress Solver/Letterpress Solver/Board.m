@@ -20,7 +20,7 @@
 }
 
 -(Board*)boardByAddingPath:(NSArray *)path {
-    Board *board = [Board alloc];
+    Board *board = [[Board alloc] init];
     for (int i = 0; i < 25; i++) {
         board->owners[i] = owners[i];
         board->letters[i] = letters[i];

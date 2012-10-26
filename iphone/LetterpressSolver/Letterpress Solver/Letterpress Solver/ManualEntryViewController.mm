@@ -8,6 +8,7 @@
 
 #import "ManualEntryViewController.h"
 #import "Evaluator.h"
+#import "FoundWordsTableViewController.h"
 
 @interface ManualEntryViewController ()
 
@@ -38,6 +39,7 @@
     [[self view] addSubview:textView];
     [textView setDelegate:self];
     [textView becomeFirstResponder];
+    [self setTitle:@"Enter Letters"];
     
     _cursorLocation = 0;
     
@@ -99,12 +101,23 @@
     NSArray *path = [NSArray new];
     NSMutableArray *paths = [NSMutableArray new];
     for (NSString *word in words) {
-        [paths addObjectsFromArray:[Evaluator allPossiblePathsForWord:word withBoard:_board subpath:path]];
+        NSArray *all =[Evaluator allPossiblePathsForWord:word withBoard:_board subpath:path];
+        [paths addObjectsFromArray:all];
     }
-    NSArray *sorted = [paths sortedArrayUsingComparator:^NSComparisonResult(NSArray *firstPath, NSArray *secondPath) {
+     _foundWords = [paths sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(NSArray *firstPath, NSArray *secondPath) {
         return [Evaluator comparePath:firstPath withPath:secondPath withBoard:_board];
     }];
-    NSLog(@"SORTED: %@", sorted);
+    [self performSegueWithIdentifier:@"showWordList" sender:self];
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (sender == self) {
+        FoundWordsTableViewController *controller = [segue destinationViewController];
+        controller.board = self.board;
+        controller.paths = self.foundWords;
+        [controller.tableView reloadData];
+    }
 }
 
 @end

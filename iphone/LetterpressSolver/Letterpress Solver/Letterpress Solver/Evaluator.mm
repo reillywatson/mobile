@@ -7,9 +7,9 @@
 //
 
 #import "Evaluator.h"
-#include "AppDelegate.h"
-#include <UIKit/UIKit.h>
-#include <vector>
+#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+#import <vector>
 
 @implementation Evaluator
 
@@ -20,9 +20,13 @@
         return paths;
     }
     char goal = [word characterAtIndex:0];
-    for (int i = 0; i < 25; i++) {
+    int start = 0;
+    if ([currentSubpath count] > 0) {
+        start = [[currentSubpath lastObject] intValue] + 1;
+    }
+    for (int i = start; i < 25; i++) {
         NSNumber *num = [NSNumber numberWithInt:i];
-        if (board->letters[i] == goal && ![currentSubpath containsObject:num]) {
+        if (board->letters[i] == goal) {
             NSMutableArray *newSubpath = [NSMutableArray arrayWithArray:currentSubpath];
             [newSubpath addObject:num];
             NSArray *subpaths = [self allPossiblePathsForWord:[word substringFromIndex:1] withBoard:board subpath:newSubpath];
@@ -134,29 +138,29 @@ std::vector<int> neighbours(int i) {
     int secondScoreDiff = secondEval.myScore - secondEval.theirScore;
     if (ABS(firstScoreDiff - secondScoreDiff) > 2) {
         if (firstScoreDiff > secondScoreDiff) {
-            return NSOrderedDescending;
+            return NSOrderedAscending;
         }
-        return NSOrderedAscending;
+        return NSOrderedDescending;
     }
     int firstProtected = firstEval.myProtected - firstEval.theirProtected;
     int secondProtected = secondEval.myProtected - secondEval.theirProtected;
     if (ABS(firstProtected - secondProtected) > 2) {
         if (firstProtected > secondProtected) {
-            return NSOrderedDescending;
+            return NSOrderedAscending;
         }
-        return NSOrderedAscending;
+        return NSOrderedDescending;
     }
     if (firstScoreDiff > secondScoreDiff) {
-        return NSOrderedDescending;
+        return NSOrderedAscending;
     }
     if (secondScoreDiff > firstScoreDiff) {
-        return NSOrderedAscending;
-    }
-    if (firstProtected > secondProtected) {
         return NSOrderedDescending;
     }
-    if (secondProtected > firstProtected) {
+    if (firstProtected > secondProtected) {
         return NSOrderedAscending;
+    }
+    if (secondProtected > firstProtected) {
+        return NSOrderedDescending;
     }
     return NSOrderedSame;
 

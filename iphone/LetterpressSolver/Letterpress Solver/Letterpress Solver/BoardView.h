@@ -14,4 +14,6 @@
     Board *_board;
 }
 
+@property (nonatomic, strong) Board *board;
+
 @end

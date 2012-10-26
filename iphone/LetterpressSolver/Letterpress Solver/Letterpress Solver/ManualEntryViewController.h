@@ -16,9 +16,12 @@
     int _cursorLocation;
     CellOwner _selectedOwner;
     BoardView* _boardView;
+    NSArray* _foundWords;
 }
 
 @property (nonatomic, strong) IBOutlet BoardView* boardView;
+@property (nonatomic, strong) Board *board;
+@property (nonatomic, strong) NSArray *foundWords;
 
 -(IBAction)showKeyboard;
 -(IBAction)showWords;
