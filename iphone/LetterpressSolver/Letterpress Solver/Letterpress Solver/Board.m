@@ -19,4 +19,8 @@
     return self;
 }
 
+-(void)dealloc {
+    NSLog(@"WHERE AM I GOING!");
+}
+
 @end

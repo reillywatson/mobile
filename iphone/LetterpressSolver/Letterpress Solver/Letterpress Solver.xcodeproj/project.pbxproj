@@ -28,6 +28,7 @@
 		B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BA16391257004E6491 /* ManualEntryViewController.m */; };
 		B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6BD16399976004E6491 /* Evaluator.mm */; };
 		B4E0B6C1163999B4004E6491 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C0163999B4004E6491 /* Board.m */; };
+		B4E0B6C5163A1F30004E6491 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E0B6C4163A1F30004E6491 /* BoardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		B4E0B6BF163999B4004E6491 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		B4E0B6C0163999B4004E6491 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		B4E0B6C216399A25004E6491 /* CellOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOwner.h; sourceTree = "<group>"; };
+		B4E0B6C3163A1F30004E6491 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
+		B4E0B6C4163A1F30004E6491 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				B4E0B6BF163999B4004E6491 /* Board.h */,
 				B4E0B6C0163999B4004E6491 /* Board.m */,
 				B4E0B6C216399A25004E6491 /* CellOwner.h */,
+				B4E0B6C3163A1F30004E6491 /* BoardView.h */,
+				B4E0B6C4163A1F30004E6491 /* BoardView.m */,
 			);
 			path = "Letterpress Solver";
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				B4E0B6BB16391257004E6491 /* ManualEntryViewController.m in Sources */,
 				B4E0B6BE16399976004E6491 /* Evaluator.mm in Sources */,
 				B4E0B6C1163999B4004E6491 /* Board.m in Sources */,
+				B4E0B6C5163A1F30004E6491 /* BoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

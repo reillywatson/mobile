@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Board.h"
+#import "BoardView.h"
 
-@interface ManualEntryViewController : UICollectionViewController<UITextViewDelegate>
+@interface ManualEntryViewController : UIViewController<UITextViewDelegate> {
+    Board *_board;
+    BoardView *boardView;
+    UITextView *textView;
+    int _cursorLocation;
+}
 
 @end
